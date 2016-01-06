@@ -1,0 +1,1996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[00's Adventure]]></title>
+  <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2016-01-03T12:15:02.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[kidult00]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[00牌机器人2015版本更新记录]]></title>
+    <link href="http://yoursite.com/2015/12/25/my2015update/"/>
+    <id>http://yoursite.com/2015/12/25/my2015update/</id>
+    <published>2015-12-25T13:20:13.000Z</published>
+    <updated>2016-01-03T12:15:02.000Z</updated>
+    <content type="html"><![CDATA[<p>又到了写年底总结的时候。</p>
+<p>总觉得“总结”这个词有点儿消极——道理都明白，写出来洋洋洒洒，但一年好像又白过了。</p>
+<p>为什么我们不能像 APP 一样，写写今年最大的版本迭代都更新了什么？</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/00robot.png" alt=""></div>
+
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><ul>
+<li>路痴</li>
+<li>喜欢吃咸肉粽和甜豆花的南方人，同时也爱吃羊肉和凉皮~</li>
+<li>交互设计shi</li>
+<li>擅长走路、F2F熬鸡汤、碎碎念、搞卫生</li>
+</ul>
+<hr>
+<h2 id="What_u2019s_New"><a href="#What_u2019s_New" class="headerlink" title="What’s New"></a>What’s New</h2><p>Dec 25, 2015</p>
+<h3 id="1-_Hack__u548C_Pull"><a href="#1-_Hack__u548C_Pull" class="headerlink" title="1. Hack 和 Pull"></a>1. Hack 和 Pull</h3><p>首先刷新的是对这两个动词的认识。</p>
+<a id="more"></a>
+<h4 id="Hack"><a href="#Hack" class="headerlink" title="Hack"></a>Hack</h4><p>任何事物和体系都可以 hack，也应该 hack。 现有体系和规则，如果站在内部往外看，基本觉得是铜墙铁壁滴水不漏，让人不假思索就全盘接受。但如果你被打晕拖出去，醒来再看，可能瞬间就发现漏洞百出。系统内一些长期被奉为圭臬的规则，搞不好只是一开始时某个随机事件的偶然结果，结果就这么搞 siao 地固化下来。</p>
+<p>Hack 心态不是要推翻一切。只是鼓励我们从旁观者的角度，尽快抽取出游戏规则——如果可能、如果需要，最好改变游戏规则，甚至重新制定规则。</p>
+<p>哦对了，Hack也是学习任何东西首先应该具备的态度。</p>
+<h4 id="Pull"><a href="#Pull" class="headerlink" title="Pull"></a>Pull</h4><p>作为资深的信息焦虑机器人，robot00 知道自己接收信息的方式相当被动：电视里面放广告就看广告，朋友圈里转文章就看文章，畅销榜放着哪些书就看哪些书，大数据火了看大数据，芈月传火了看芈月传。可是我们生活在一个每18个月全球信息总量就会翻倍的世界。就这么对待越来越稀缺的注意力，真是有点儿戏。</p>
+<p>今年尝试从“被 push 模式”升级成“主动 pull 模式”。一方面减少花在支离破碎的信息源（尤其是微信）的时间，另一方面通过感兴趣的主题去找书、找 mooc、看 wiki、看 github、看微博微信豆瓣……</p>
+<p>从今年写读书笔记的经验来看，pull 和 push 两种模式真的差别简直巨大。</p>
+<p>今年写了三个“pull”系列：<a href="http://www.jianshu.com/users/2LSzkz/latest_articles" target="_blank" rel="external">「德意志笔记」、「中欧四国扫盲贴」、「场景化设计」</a></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/qr.png" alt=""></p>
+<p>&nbsp;</p>
+<p>每个系列都写得很痛苦：需要先查资料，看书看视频，要么是总结实际做过的项目。多个途径看完资料，然后抽出一个线头来串起要写的内容，再提炼观点，找资料找论据找栗子。这种强度跟随机读完一本书写一篇笔记完全不同。折腾过后，对主题的理解当然比孤立地读一本书来得要深刻。</p>
+<h3 id="2-__u5C11_u62D6_u5EF6_uFF0C_u4E0D_u7126_u8651"><a href="#2-__u5C11_u62D6_u5EF6_uFF0C_u4E0D_u7126_u8651" class="headerlink" title="2. 少拖延，不焦虑"></a>2. 少拖延，不焦虑</h3><p>这一年终于不再受拖延的困扰。并不是做到了不拖延，而是明白拖延的症结所在：</p>
+<ul>
+<li>没有意识到心智资源极端有限</li>
+<li>欲望太多，期望太高</li>
+<li>把时间花在事前选择判断，而不是产出结果</li>
+</ul>
+<p>懂得注意力、心力（will power）都是极端稀缺的资源以后，就明白该怎么对付拖延：</p>
+<ul>
+<li><p>精简欲望，逃出心力黑洞<br>无论是购买欲念，还是兴趣欲念，还是改变世界的欲念，1-2个就差不多了。少了没活力，多了伤身体。诸如做决定、无效的争论、坚持每天做 xxx，都特别耗心力。少做一件，估计能多活几天。选出最重要的几件事去劳心劳力就差不多了。</p>
+</li>
+<li><p>委派任务，购买服务<br>事情做不完，多半是做了太多可以由别人做的事情。如果调动资源的能力没有增强，事情却越积越多，怎么可能不拖延？想办法把不擅长的任务委派出去，或者更简单一点——购买服务，而不是自己亲手去做。比如雇一个人，买一个好一点 VPN，买一个 Alfred，能节省好多时间精力。</p>
+</li>
+<li><p><code>If</code> 纠结/患得患失 <code>Then</code> 开始动手<br>纠结的成因有两个：贪心，反馈不足。这时候如果停下来继续纠结，会进入恶性循环——反馈继续缺失，没法做出合理判断。只能告诉自己，一切都是 tradeoff，选出更重要的一个因素，然后往前推进，在做的过程中根据反馈不断调整。</p>
+</li>
+</ul>
+<h3 id="3-__u4F5C_u54C1_u4F5C_u54C1_u4F5C_u54C1"><a href="#3-__u4F5C_u54C1_u4F5C_u54C1_u4F5C_u54C1" class="headerlink" title="3. 作品作品作品"></a>3. 作品作品作品</h3><p>无论是开智群、YC 创业课、BVM 计划，都在反复强调两个字：作品。</p>
+<p>写了一年公众号，做了小小书童，开了学画大作战群，越来越明白作品的分量。</p>
+<p><a href="http://v.qq.com/page/b/o/l/b015562y5ol.html" target="_blank" rel="external">小小书童介绍视频</a></p>
+<p>学画大作战群每日合集:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/congjiangsuan.png" alt=""></p>
+<p>简书上记录今年共写了 7w 多字，获得 500 个喜欢：平均140个字才换来一个喜欢，正好是微博的长度……(当然，这可能只是说明 robot00 的文章实在不怎么吸引)</p>
+<p>从一个简单的想法，到用 Markdown 写出大纲，然后编辑、配图，在难用的公众平台编辑器中来回修改，同步发到简书、博客、豆瓣、KM 等等地方，还要想朋友圈广告词…… 这些事情做下来，才知道想要留下一点东西也是不容易。</p>
+<blockquote>
+<p>作品，逼人进行更多更优质的输入。<br>作品，逼人从无序变得有序。<br>作品，留下连接入口。<br>作品，创造更多可能性。</p>
+</blockquote>
+<p>不要忘记，基因的目标是复制，成功的标准就是数量。模因也一样。如果没有作品，模因根本没有生存机器。</p>
+<hr>
+<p>好了，道理够多了，如果超过三个，连自己都记不住。三个年度更新</p>
+<p>也不写什么自 high 型 “新年计划” 了。</p>
+<p><strong>用作品说话，明年见。</strong></p>
+<hr>
+<h3 id="Bonus"><a href="#Bonus" class="headerlink" title="Bonus"></a>Bonus</h3><p>值得推荐的工具</p>
+<ol>
+<li>Alfred：Mac 必备，用好 workflow，效率提升至少 500%</li>
+<li>Git：版本管理系统，请看「多用 Git 少缴税」</li>
+<li>Markdown：聚焦于内容的书写方式</li>
+<li>Sketch + Keynote：BP 视频都能用这个做，妥妥的</li>
+<li>Workflowy：树形列表工具，可以用做 PKM（个人知识管理） 索引，以及替代 to do list</li>
+</ol>
+<p>值得一读再读的书</p>
+<p><a href="http://book.douban.com/subject/26576861/" target="_blank" rel="external">自私的基因</a></p>
+<p><img src="http://img3.douban.com/mpic/s11214645.jpg" alt=""></p>
+<p><a href="http://book.douban.com/subject/6687032/" target="_blank" rel="external">经验的疆界</a></p>
+<p><img src="http://img3.doubanio.com/mpic/s6738709.jpg" alt=""></p>
+<p><a href="http://book.douban.com/subject/26576861/" target="_blank" rel="external">最好的告别</a></p>
+<p><img src="http://img3.douban.com/mpic/s28355811.jpg" alt=""></p>
+<p><a href="http://book.douban.com/subject/25985021/" target="_blank" rel="external">人类简史</a></p>
+<p><img src="http://img3.douban.com/mpic/s27814883.jpg" alt=""></p>
+<p><a href="http://book.douban.com/subject/26658379/" target="_blank" rel="external">必然</a></p>
+<p><img src="http://img3.douban.com/mpic/s28335050.jpg" alt=""></p>
+<hr>
+<p>节日快乐<br>新年快乐</p>
+<p>© 00<br>2015.12.25@ GZ</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>又到了写年底总结的时候。</p>
+<p>总觉得“总结”这个词有点儿消极——道理都明白，写出来洋洋洒洒，但一年好像又白过了。</p>
+<p>为什么我们不能像 APP 一样，写写今年最大的版本迭代都更新了什么？</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/00robot.png" alt=""></div>
+
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><ul>
+<li>路痴</li>
+<li>喜欢吃咸肉粽和甜豆花的南方人，同时也爱吃羊肉和凉皮~</li>
+<li>交互设计shi</li>
+<li>擅长走路、F2F熬鸡汤、碎碎念、搞卫生</li>
+</ul>
+<hr>
+<h2 id="What_u2019s_New"><a href="#What_u2019s_New" class="headerlink" title="What’s New"></a>What’s New</h2><p>Dec 25, 2015</p>
+<h3 id="1-_Hack__u548C_Pull"><a href="#1-_Hack__u548C_Pull" class="headerlink" title="1. Hack 和 Pull"></a>1. Hack 和 Pull</h3><p>首先刷新的是对这两个动词的认识。</p>]]>
+    
+    </summary>
+    
+      <category term="2015" scheme="http://yoursite.com/tags/2015/"/>
+    
+      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="叽歪" scheme="http://yoursite.com/categories/%E5%8F%BD%E6%AD%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[场景化设计系列之四：场景化设计六步法]]></title>
+    <link href="http://yoursite.com/2015/12/19/scenario-design-4/"/>
+    <id>http://yoursite.com/2015/12/19/scenario-design-4/</id>
+    <published>2015-12-19T02:14:12.000Z</published>
+    <updated>2016-01-03T13:51:25.000Z</updated>
+    <content type="html"><![CDATA[<p>终于进入本系列的真正主题：场景。如何在日常消费场景中影响用户行为，是这篇文章尝试探讨的问题。</p>
+<p>在真实场景中，虽然需要处理纷繁复杂的要素，但我们还是可以依据一定的思路和做法，各个击破，最终达到目的。以下是 00 总结的“场景化设计六步法”：</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/sixsteps.png" alt=""></div>
+
+<a id="more"></a>
+<h3 id="1-_u5212_u5206_u573A_u666F"><a href="#1-_u5212_u5206_u573A_u666F" class="headerlink" title="1.划分场景"></a>1.划分场景</h3><p>什么是场景？</p>
+<p>场景就好比真实故事（的片段）： 什么人，什么时候，在哪里，做什么，结果怎样。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/love_story.gif" alt=""></div><br>划分场景，是为了最终把大象塞进冰箱 —— 总得知道第一步是先打开冰箱门吧。<br><br>来看看 KK 新书「必然」里的一个场景描述：<br><br>&gt; 在我的“办公室”里，我会在额头上戴上一个增强现实面罩。这个面罩就像是一个弯曲的发带，大约有手掌那么宽。它与我的眼睛之间隔开了几英寸，以便保证我全天佩戴时尽可能舒适些。这个功能强大的面罩会在我周围投放虚拟屏幕。大约有12块大小不一的虚拟屏幕，面对大量数据我也可以用双手全力应对。在我一天的工作中，会与虚拟同事进行大量的交流，这个面罩能够提供足够好的分辨率和运行速度。由于我能在一个真实的房间里看到他们，所以我在现实中也完全在场。<br><br><br>场景并不复杂，我们每天都生活在其中。<br><br>又比如，外出吃饭是一个场景。仔细想想，如果不对这个看似简单实则复杂的大场景进行拆分，我们无法进行具体的设计。餐饮行业的用户场景包括：就餐决策，到店，排位等位，入座，点菜，用餐，结账……<br><br>其中高峰期的等位就是一个具体的场景。<br><br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/watingScene.png" alt=""></div>
+
+<p>将大的目标比如“提升翻台率”转换成为用户活动，并进一步拆分为小而具体的场景，是进行场景化设计的第一步。</p>
+<h3 id="2-__u8BC4_u4F30_u89E6_u70B9"><a href="#2-__u8BC4_u4F30_u89E6_u70B9" class="headerlink" title="2. 评估触点"></a>2. 评估触点</h3><p>我们不是迪士尼，也不是邓布利多，没办法对一个场景内的所有元素都提前设计好。回到目标上来，我们要做的事情是“影响用户行为”，而用户行为往往发生在一些关键节点上。比如餐厅等位，消费者的第一个行为节点，是看到人头攒动时去前台询问。那么前台的服务员和相关的宣传物料就是这个节点上与消费者接触的“触点”（touch point）。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/theCreationOfAdam.jpg" alt=""></div>
+
+
+<p>识别出重要的“触点”，就可以针对这些与用户发生直接接触、可能会影响他们行为的“界面”做设计。“触点”的形式有很多，可能是人（比如前台服务员），可能是一张传单，可能是手机界面，可能是 ATM 取款机，也可能是发票上的一行信息……那么如何识别和挑选出最有效的触点呢？</p>
+<h4 id="u89E6_u70B9_u8BC4_u4F30_u8C61_u9650"><a href="#u89E6_u70B9_u8BC4_u4F30_u8C61_u9650" class="headerlink" title="触点评估象限"></a>触点评估象限</h4><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/touchpoint-evaluation.png" alt=""></div>
+
+
+<p>通过以下两个维度，可以基本判断出触点是否有价值：</p>
+<h5 id="A-__u662F_u5426_u5FC5_u7ECF"><a href="#A-__u662F_u5426_u5FC5_u7ECF" class="headerlink" title="A. 是否必经"></a>A. 是否必经</h5><p>如果一个触点是用户必经的地点/行为节点，它便具有潜力。</p>
+<p>比如，进店时，需要推门而入，门把手会是一个必经的“地点”。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/wepayalipay.jpeg" alt=""></div>
+
+<p>比如，超市购物，收银台是每位顾客必经之路，收银员和显示屏是每个人都会接触到的“触点”。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/paydesk.jpg" alt=""></div>
+
+<h5 id="B-__u662F_u5426_u6C89_u6D78"><a href="#B-__u662F_u5426_u6C89_u6D78" class="headerlink" title="B. 是否沉浸"></a>B. 是否沉浸</h5><p>如果用户在一个触点停留时间长，而且需要投入注意力与之互动持续一段时间，这也会是一个重要的触点。如果涉及到整个活动过程中的决策点，比如吃饭这件事，购买决策阶段主要是看菜单点菜，那么菜单就是一个重要的触点。</p>
+<p>又比如，ATM。用户在使用 ATM 时，几乎是专心致志的，一般也会持续若干分钟。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/atm.jpg" alt=""></div><br>再拿出餐厅高峰期等位的例子，虽然用户停留时间长，但是注意力却不集中，所以这是一个有潜力但是也很难做复杂决策指引的触点。<br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/waiting.jpg" alt=""></div><br>再来比较一下超市的入口，虽然是必经路径，但是因为基本不会投入一丁点注意力(除非等人之类的)，所以是价值不高的触点。<br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/supermarketEntry.jpg" alt=""></div>
+
+<p><strong>小结：选取高价值的触点，是场景化设计的关键步骤。“必经”和“沉浸”两个维度，可以帮助我们比较快地判断触点的价值。</strong></p>
+<h3 id="3-_u5438_u5F15_u6CE8_u610F"><a href="#3-_u5438_u5F15_u6CE8_u610F" class="headerlink" title="3.吸引注意"></a>3.吸引注意</h3><blockquote>
+<p>“为什么我要关心这个？”</p>
+</blockquote>
+<p>没有用户会直接说出这句话，但这却是每个人在集中注意、产生行为之前必然会下意识思考的问题。服务做得再好，如果用户完全忽略我们希望传达的信息、根本没有考虑试一试的话，一切都白搭。</p>
+<p>怎样设计能吸引注意？</p>
+<ul>
+<li><p>简要下面这个说明物料，很多设计师会难以接受，甚至觉得“简陋”“丑”。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/instruction.png" alt=""></div>
+
+<p>可是在线下场景中，人们无法电光火石之间吸收大量信息，反而是这种“简单粗暴”的方式，才最容易引起人注意，最容易被吸收、被接受。</p>
+</li>
+<li><p>引发情感，如惊讶、好奇、会心一笑</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/sysucard.jpeg" alt=""></div>
+
+
+</li>
+</ul>
+<h3 id="4-_u5F71_u54CD_u51B3_u7B56"><a href="#4-_u5F71_u54CD_u51B3_u7B56" class="headerlink" title="4.影响决策"></a>4.影响决策</h3><p>当人们在触点受到指引产生兴趣后，我们需要进一步展示出清晰、有说服力的利益点，以影响决策，推动下一步行动。</p>
+<p>在<a href="http://www.jianshu.com/p/eb5a7e9d9502" target="_blank" rel="external">上一期工具箱</a>中讨论过动机分析工具，而这里的影响决策就是将动机外化出来，以激发目标。</p>
+<ul>
+<li>提供清晰直白的内容。避免使用专业名词，应该多用直接回答用户问题的话术，来帮助他们做出决定。</li>
+<li>给出推荐。人们看到行动指引或者选择时，更倾向于下一步行动。</li>
+<li>描述利益。还记得 <a href="http://www.jianshu.com/p/eb5a7e9d9502" target="_blank" rel="external">ESP</a> 吗？经济的、服务的、情感的动机，哪些能真正打动用户？</li>
+<li>二次包装。运用心理学原理，使用锚定效应、制造稀缺性、利用社会压力和社会认同，等等。</li>
+</ul>
+<p>比如，在客运站推广电子票的设计中，除了突出“不排队”这一服务上的特点，还尝试从情感角度，将使用电子票这种行为渲染为一种新潮时尚的方式。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/noline.png" alt=""></div>
+
+
+<h3 id="5-_u5F15_u5BFC_u884C_u52A8"><a href="#5-_u5F15_u5BFC_u884C_u52A8" class="headerlink" title="5.引导行动"></a>5.引导行动</h3><p>决策产生之后，来到了关键的第4步：引导行动。让我们回顾一下 MAT 模型：</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/bj-fogg-behavior-model-grapic.jpg" alt=""></div>
+
+
+<p>这时候，动机已经不是主要问题，需要重点解决的是能力和触发器的问题：</p>
+<ul>
+<li>提供用户正在寻找的信息（触发器）</li>
+<li>在合适地点、合适时间出现（触发器）</li>
+<li>简化使用过程（能力）</li>
+</ul>
+<p>在智慧客运的项目中，我们重新设计了扫码购票的物料，将乘客最熟悉、正在寻找的信息元素：目的地名称、车票样式具象化出来，让人知道下一步该怎么行动。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/lines.png" alt=""></div>
+
+
+<p>然后把自助购票的牌架，放到了售票厅入口处以及排队高峰时容易看到的地方，作为“触发器”促使乘客行动。</p>
+<p>在简化使用过程方面，将原本有多个页面，购票时间长达一分多种的手机购票页面，精简成扫码后一键即可购买：只需要选择人数，不需要选择日期、时间、目的地、班次等等信息。购票时间减少80%，直接的结果是 MAT 中的 “A” 得到明显提升，最终逐渐引导乘客从现金购票到购买电子票这一行为的改变。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/ticketH5.jpeg" alt=""></div>
+
+<h3 id="6-_u5F3A_u5316_u884C_u4E3A"><a href="#6-_u5F3A_u5316_u884C_u4E3A" class="headerlink" title="6.强化行为"></a>6.强化行为</h3><p>用户做出行为改变之后，任务还没有全部完成。持续的行为改变以及习惯养成才是我们的最终目的。于是在最后一步，需要进一步强化行为：</p>
+<ul>
+<li><p>具象化反馈<br>以前在做界面设计时，反馈从来不是交互设计师的障碍，反而是利器 —— 可以使用的反馈形式太多，而且都能有效引起注意。但是在线下场景中（尤其当涉及线上、线下界面频繁切换时），反馈系统往往残缺不全。</p>
+<p>比如在餐馆里吃饭，一些餐馆已经能够做到顾客自己用微信餐、吃完后自己用微信支付。但是支付成功后，顾客往往不确定是不是可以直接走了，还是得叫服务员过来确认一次。这是因为缺乏必要的反馈。</p>
+<p>在客运站里买票，人工售票自然不必说，即便是使用自助售票机，购票成功的反馈也是非常明确的：出票，找零，声音确认。但是如果用微信购票，购票成功只有界面上一个成功图标，怎么都感觉不太放心。</p>
+<p>于是我们在现场增加了一台大屏幕，购票成功实时显示，并且播放提示音。一方面让购票乘客即时确认，另一方面也作为一种可感知的宣传，触达到售票厅的其他乘客。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/tv.png" alt=""></div>
+
+
+</li>
+</ul>
+<ul>
+<li><p>多触点配合在一个触点发生的行为，想办法在另外一个触点进行强化。</p>
+<p>比如乘客购买电子票以后，进入候车厅，还可以享受到电子票的专用通道。完成一次乘坐后，会收到购买返程车票的代金券。多个触点轮番引导，目的都是为了强化“微信购票”这一行为。</p>
+</li>
+</ul>
+<hr>
+<p>以上就是场景化设计六步法。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/sixsteps.png" alt=""></div>
+
+
+<p>跟界面设计相比，场景化设计有许多不同的着眼点和方法。但是两者的核心仍然一致：从人的需求和行为出发，在有价值的触点设计出：</p>
+<ul>
+<li>易于发现和理解的信息</li>
+<li>激发动机的行动召唤</li>
+<li>简化行动</li>
+<li>恰到好处的反馈</li>
+</ul>
+<p>这六个步骤可能还远远不完善，希望将过往的经验总结出一个框架来跟大家探讨。期待同学们增添更多的想法、案例、讨论 :)</p>
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>终于进入本系列的真正主题：场景。如何在日常消费场景中影响用户行为，是这篇文章尝试探讨的问题。</p>
+<p>在真实场景中，虽然需要处理纷繁复杂的要素，但我们还是可以依据一定的思路和做法，各个击破，最终达到目的。以下是 00 总结的“场景化设计六步法”：</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/sixsteps.png" alt=""></div>]]>
+    
+    </summary>
+    
+      <category term="Design" scheme="http://yoursite.com/tags/Design/"/>
+    
+      <category term="o2o" scheme="http://yoursite.com/tags/o2o/"/>
+    
+      <category term="交互设计" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="体验" scheme="http://yoursite.com/tags/%E4%BD%93%E9%AA%8C/"/>
+    
+      <category term="场景" scheme="http://yoursite.com/tags/%E5%9C%BA%E6%99%AF/"/>
+    
+      <category term="服务设计" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[场景化设计系列之三：动机分析]]></title>
+    <link href="http://yoursite.com/2015/12/09/scenario-design-3/"/>
+    <id>http://yoursite.com/2015/12/09/scenario-design-3/</id>
+    <published>2015-12-09T15:56:50.000Z</published>
+    <updated>2016-01-03T13:51:20.000Z</updated>
+    <content type="html"><![CDATA[<p>「汤姆索亚历险记」里有一个大家熟知的故事：</p>
+<p>汤姆因为调皮捣蛋，被菠莉姨妈叫去刷墙。在刷墙时，小伙伴来凑热闹。汤姆灵机一动，想出一个妙招。他假装刷地很卖力，把刷墙当成了一个光荣的任务，还用艺术家的眼光不停打量刷过的墙。被勾起了好奇心的小伙伴要求试一试，汤姆很鸡贼地回绝了。伙伴们愈发羡慕和心痒，便用各种小玩意换取刷墙的机会。大家争先恐后地干得热火朝天，汤姆则悠闲地靠在一旁，不但完成了苦差，还得到了一堆小伙伴们用来换取刷墙机会的的“宝贝”。</p>
+<a id="more"></a>
+<p>明明给人免费刷墙，内心还高兴地不行 —— 动机到底是一股怎样的力量，推动着人们行动？</p>
+<p>设计，终究也是为了促成行动。线下场景中，影响并改变人的行为，并不容易。最容易碰到的两大问题是：</p>
+<ul>
+<li>用户没有做出我们期望的行为</li>
+<li>服务提供方不愿意改变现有做法<br>方案失效、无法执行只是表象，背后的根源到底是什么？</li>
+</ul>
+<p>斯坦福教授 BJ Fogg 总结出一个模型，为研究“行为改变”提供了一个基本框架。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/bj-fogg-behavior-model-grapic.jpg" alt=""></div>
+
+
+<p>某个行为的发生，需要：</p>
+<ul>
+<li>动机</li>
+<li>能力</li>
+<li>触发器</li>
+</ul>
+<p>其中，动机是行为的发动机，只有先解决了动机的问题，配合相应的能力和触发器，行为才有可能发生。（更多内容可以参考<a href="http://www.jianshu.com/p/0e2878b912f1" target="_blank" rel="external">你为什么不想做，想做也做不到？</a>）</p>
+<p>于是我们往场景化工具箱里，装备第一发工具：动机分析</p>
+<p><a href="http://www.uegeek.com/wp-content/uploads/2015/12/工具1.png" target="_blank" rel="external"><img src="http://www.uegeek.com/wp-content/uploads/2015/12/工具1.png" alt="工具1"></a></p>
+<p>过去，我们非常擅长于提升界面的可用性，减少使用的成本，也就是主要解决“能力问题”，但是很少思考如何强化用户动机（这更多是老板或产品经理的事呵？）</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/motivation-friction.jpg" alt=""></div>
+
+
+<p>动机理论是非常复杂的研究领域，关于需求、动机、目标、行为的理论非常多。其中一种简单的划分是将动机分为内部动机和外部动机。这里不打算借用马斯洛的模型，因为它集中在内部动机即由基本需要引起的动机上，跟线下商业环境中的行为不能很好地对应并指导行动。</p>
+<p>我们尝试直接从日常消费场景中观察总结，得出一个很粗浅的动机分类，目的是帮助我们增强同理心、寻找突破点：</p>
+<h3 id="u7528_u6237_u52A8_u673AESP"><a href="#u7528_u6237_u52A8_u673AESP" class="headerlink" title="用户动机ESP"></a>用户动机ESP</h3><p>在线下生活消费场景中，用户行为的主要动机大概有这么三类：</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/UserESP.png" alt=""><br><div class="image-caption"></div><br></div>
+
+<ul>
+<li><p>E：经济 Economy</p>
+<ul>
+<li>优惠</li>
+<li>特权</li>
+</ul>
+<p>在各种生活场景中，跟消费最直接相关的动机，一定是经济属性的：金钱或其他价值性的优惠，又或者是特权。比如，双十一的半价是大家疯狂的最主要原因，QQ 会员的几十项特权是大家长期付费的原因。</p>
+<p>尤其在那些<strong>供大于求</strong>、或者服务性质最强的一些行业场景，比如餐饮、零售、酒店，激烈竞争之下，服务差异化不足，或者已经进入价格完全反映服务价值的市场竞争成熟阶段，于是优惠成为了王道。</p>
+<p>比如，持续数个月的周四微信支付日，满10元减10元的优惠，引爆了便利店场景的绿色风暴。</p>
+</li>
+</ul>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/wepayday.jpg" alt=""><br><div class="image-caption"></div><br></div>
+
+<ul>
+<li><p>S：服务 Service</p>
+<ul>
+<li>便利</li>
+<li>高效</li>
+<li>舒适</li>
+</ul>
+<p>在一些供不应求或效率比较低下的行业，比如医疗、高峰期的公共交通，价值更多地通过便利性而不是经济利益体现出来，服务的提升能明显促使消费者做出选择。</p>
+<p>比如，客运站的微信电子票专用检票上车通道，极大加快了乘客上车的效率。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/specialentry.png" alt=""></div>
+</li>
+<li><p>P：心理 Psychology</p>
+<ul>
+<li>情感</li>
+<li>身份认同</li>
+<li>乐趣</li>
+<li>安全</li>
+</ul>
+</li>
+</ul>
+<p>在纷繁多样的线下场景中，很多时候价格、便利性的差异都不明显，因为它们往往需要服务提供方承担高额成本。这时候，能否提供心理方面的动机，成为制胜关键。当消费者面对10个选择，一样价格，服务无差，他们会如何选择？如果能引起好奇、乐趣、感动、自我或群体的认同、安全舒适等等的积极情感，一定是让人难以抗拒的选择。</p>
+<p>比如，微信公众号里的这款延误险，不但从“服务”维度提供了最便捷的全自动赔付，还从情感维度尝试传递“售罄稀缺感”，以及“倒计时强反馈”的娱乐玩法。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/yanwuxian.png" alt=""><br><div class="image-caption"></div><br></div>
+
+
+<h3 id="u5546_u6237_u52A8_u673ARER"><a href="#u5546_u6237_u52A8_u673ARER" class="headerlink" title="商户动机RER"></a>商户动机RER</h3><p>除了用户的动机，一定不能忽视商户的动机。场景化设计跟界面设计最大的不同，也许就是实施方法的不同。商户不再是跟我们天然同一条战线上的哆啦a梦攻城狮，他们有各自的诉求和难题。要让场景化设计变成现实，必须与实施方达成共识并合力实现，这比什么都更重要、也更困难。而了解商户的动机，是建立良好合作关系的基础。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/B-RER.png" alt=""><br><div class="image-caption"></div><br></div>
+
+
+<p>在真实世界的商业环境中，在非互联网的逻辑中，商户的直接动力包括：</p>
+<ul>
+<li><p>R：收益 Revenue</p>
+<ul>
+<li>顾客数量</li>
+<li>顾客消费</li>
+</ul>
+</li>
+<li><p>E：效率 Efficiency</p>
+<ul>
+<li>节省人力、成本，降低流程复杂度</li>
+<li>提升服务能力</li>
+<li>优化资源分配和流通</li>
+</ul>
+</li>
+<li><p>R：声誉 Reputation</p>
+<ul>
+<li>关注度</li>
+<li>影响力</li>
+<li>行业竞争力</li>
+</ul>
+</li>
+</ul>
+<p>如何将我们的目标与商户的目标相结合、相匹配，这是设计师最不擅长的问题之一。“用户”不再仅仅是使用者，还包括商户（这其中又有不同角色），甚至更多的角色，这是习惯于服务海量终端用户的设计师们难以跨越的认知障碍。RER 帮助我们理解更复杂的环境和角色，跳出自大而狭隘的“用户体验”牢笼。</p>
+<hr>
+<p>场景化工具箱的第一个工具，虽然并不能直接推导出具体方案的设计，但它是与用户、与商户进行有效沟通以及合作的基础。线下场景中，用户诉求和商业利益远比汤姆刷墙复杂，能不能直指人心，能不能无中生有地“创造需求”（主要是激发情感类动机），需要我们很好地把握需求供需双方的动机，从中找到致胜的破局点。</p>
+<hr>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>「汤姆索亚历险记」里有一个大家熟知的故事：</p>
+<p>汤姆因为调皮捣蛋，被菠莉姨妈叫去刷墙。在刷墙时，小伙伴来凑热闹。汤姆灵机一动，想出一个妙招。他假装刷地很卖力，把刷墙当成了一个光荣的任务，还用艺术家的眼光不停打量刷过的墙。被勾起了好奇心的小伙伴要求试一试，汤姆很鸡贼地回绝了。伙伴们愈发羡慕和心痒，便用各种小玩意换取刷墙的机会。大家争先恐后地干得热火朝天，汤姆则悠闲地靠在一旁，不但完成了苦差，还得到了一堆小伙伴们用来换取刷墙机会的的“宝贝”。</p>]]>
+    
+    </summary>
+    
+      <category term="Design" scheme="http://yoursite.com/tags/Design/"/>
+    
+      <category term="o2o" scheme="http://yoursite.com/tags/o2o/"/>
+    
+      <category term="交互设计" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="体验" scheme="http://yoursite.com/tags/%E4%BD%93%E9%AA%8C/"/>
+    
+      <category term="场景" scheme="http://yoursite.com/tags/%E5%9C%BA%E6%99%AF/"/>
+    
+      <category term="服务设计" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[场景化设计系列之二：新战场，新地图]]></title>
+    <link href="http://yoursite.com/2015/12/04/scenario-design-2/"/>
+    <id>http://yoursite.com/2015/12/04/scenario-design-2/</id>
+    <published>2015-12-04T03:10:35.000Z</published>
+    <updated>2016-01-03T13:51:31.000Z</updated>
+    <content type="html"><![CDATA[<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/map&amp;compass.png" alt=""></div>
+
+<p>&nbsp;</p>
+<p>这是欧洲战争史上一个真实的故事。</p>
+<hr>
+<p>一支几百人的小部队在瑞士与德国之间的崇山峻岭间迷路了。在盲目找路的过程中，给养越来越少，部队在深山里越陷越深。士气低迷自不必说，抱怨、指责的情绪日益高涨，指挥官一筹莫展。</p>
+<p>一天，他们发现山脚下有一座房子。但士兵们走进屋子时却大失所望——这是一间早就无人居住的房子，除了一些破旧的家具，一点食物也找不到。突然，一个士兵高兴地大叫起来，他在破柜子里发现了一张发黄的手绘地图。地图上画着一座座山峰，并用拉丁文标了山峰的名称。只可惜队伍里没人懂拉丁文。军官们传看了这张地图之后，一致认定这就是这个地区的地形图。所有的人都看到了希望，各种纷争顿时平息，士气为之一振。</p>
+<p>指挥官拿着这张地图想带领部队走出死亡之谷。但让他苦恼的是，这张地图太过简略，比例尺很不精确，有时沿着地图指引的方向行军，发现前面无路可走。但毕竟有胜于无。他们一边看地形，一边猜地图，两天之后，部队发现眼前是一大片平原，远处隐约可见几座村庄。</p>
+<p>指挥官一直珍藏着这张救了他一命的地图。几年以后，他拿出地图，向一个懂拉丁文的朋友讲述那段经历。这位朋友认真看完地图后摇摇头，意味深长地笑了笑，指着地图上方的那行字告诉指挥官，这是一张奥地利南部山区的地图。指挥官先是愕然，随后恍然大悟。两个朋友相视而笑。</p>
+<hr>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/1ship_dribble.jpg" alt=""></div><br>&nbsp;<br><br><a id="more"></a><br><br>拿着错误的地图找路，是我们常犯的毛病。在撒哈拉拿着威尼斯的地图，会奇怪“怎么找不到水？”…… 当然，故事还说明，比一张错误的地图糟糕得多的，是没有地图。<br><br>不管愿不愿意承认，我们都已经随潮流进入了一片全新的“战场”。设计的对象、环境、需求来源、实施、决策、资源等等，都与以往不一样。<br><br>进入陌生的战场，第一件应该做的事情，是去更新地图。<br><br>界面设计有界面设计的地图，人机交互有人机交互的地图。为不同的生活场景设计“智慧”的解决方案，我们需要怎样的地图？<br><br><strong>是 “O2O设计”地图吗？</strong><br><br>这里引用一下西贝的O2O 关系模型：<br><br><div class="image-package imagebubble"><img src="http://img1.iyiou.com/Editor/image/20150827/1440647571319716.jpg" alt=""><br><div class="image-caption"></div><br></div>
+
+
+<p>很清晰的总结。对于大 O2O 平台的设计，是一幅好地图。可惜，并非所有情况下，都存在一个“O2O 应用”。而且这个中间件，95%可能远没有大众点评 APP 那么强大，又或者，它必需由多个小中间件相互配合，它们之间的关系错综复杂。</p>
+<p>于是，再次自问：我们做的是 O2O 设计吗？设计师能设计“O2O”吗？这个问题跟“体验设计”简直是一样一样的。现实中，“设计”产品和体验的，根本就不是只有设计师，很可能（99%+）是老板，很可能是店长，很可能是一个系统长期形成的体系化做法，比如医院提供的服务。</p>
+<p>O2O 设计的是 Online 到 Offline 还是从 Offline 到 Online？这是个无聊该死的被概念局限的伪命题。只有当数字化渠道和工具不成熟、连接和切换效率低下、对实体世界影响很小的时候，或者更直白一些：两者没有整合成一个协作体系时，才会有 online 和 offline 如此泾渭分明的划分。</p>
+<p>当 online 部分已经成为常规的服务渠道和手段，它与 offline 的转化会变得更频繁、更自然。比如，现在我们去看电影，在查影讯、选影院、选位、支付、问询、取票、观影、评论、返券等等过程中，数次在手机、电影院、信息屏、工作人员等“界面”中来回切换，有人会刻意想起“哦我现在是在 offline 取票，现在 online 发表评论”吗？</p>
+<p>行业的发展速度让我们感到害怕。</p>
+<p>而我们仍然时常沉浸在 online 的界面设计中，对 offline 的问题要么视而不见，要么束手无策。当然，我们也可以争辩说，职责的划分已经决定了我们要干的事情。没错，可是该发生的改变还是会发生的。</p>
+<p><strong>如果我们需要的不是“O2O设计”地图，那么，是“服务设计”地图吗？</strong></p>
+<p>在没有接触过线下设计时，容易对服务设计有不切实际的“幻想”。尤其当我们对着漂亮的 Customer Journey Map，一种 God’s view 的虚假快感油然而生：一切尽在掌握嘛，你看，痛点辣么多，我们大有可为呀。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/2cjm.jpeg" alt=""></div>
+
+<p>&nbsp;<br>但现实是，设计师往往对服务全过程没有全面的理解，更别说有足够的影响力，同时也缺乏对改造服务的投入产出分析，往往难以打动制定服务的决策者。尤其，<strong><em>如果设计师不在提供服务的组织中，而只是一个第三方（甚至不是提供咨询服务的第三方），对服务的改造力会非常有限。</em></strong></p>
+<hr>
+<p>作为一个还在探索边界的设计师，我更愿意把我们正在做的事情定义为“场景化设计” —— 既不是掌控全局、无所不能的服务设计，也尽量不把 online 和 offline 简单割裂开来。</p>
+<p>这也许是一个不负责任、极不准确的定义，但是相比“体验设计”、“服务设计”、“交互设计”如此自大的词汇，“场景化设计”至少能提醒我，该聚焦什么，能影响什么。</p>
+<p>&nbsp;</p>
+<p>为什么“场景”会是一个更合适的单位？真实世界中，服务和用户的行为都发生在具体而真实的一个或多个场景中。想要达到一定目的，需要在场景中通过各种办法与用户沟通，引导和影响用户做出我们期望的行为。</p>
+<blockquote>
+<p>场景化设计的本质：通过服务流程、行为过程中的场景设计，影响人们的认知和行为，达到预期目的。</p>
+</blockquote>
+<p><span style="color: #999999">（再次强调，这一系列文章中提到的设计师，既不是真正的服务提供方，也不是受雇于甲方、提供解决方案的咨询顾问，这是最大的前提）</span></p>
+<p>在这样一个新战场中，加入了很多新角色：商家，服务员，第三方，监管单位，有关部门……</p>
+<p>我们的战斗目标，从原来的提高转化率、提高用户满意度等等的明确指标，变成如何在商家为用户创造价值的过程中，帮助用户提升体验，帮助商家创造价值，等等。</p>
+<p>从前，线上场景的典型设计问题包括：</p>
+<ul>
+<li>如何让任务效率更高？</li>
+<li>如何让操作体验更佳？</li>
+<li>如何让情感更愉悦？</li>
+</ul>
+<p>如今，线下设计的三座大山变成了：</p>
+<ul>
+<li>为什么没看到？</li>
+<li>为什么不使用？</li>
+<li>为什么不持续使用？</li>
+</ul>
+<p>而这三座（用户侧的）大山背后，反应了更深层的问题：</p>
+<ul>
+<li>核心商业诉求如何满足？</li>
+<li>用户体验和成本、效率如何平衡？</li>
+<li>现有商业模式的缺点是什么，是否到了改变的时机？</li>
+</ul>
+<p>必须找到新的地图，才能看清战场，知道新的敌人、隐藏 boss 到底是谁：</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/table2.png" alt=""></div><br><div class="image-package imagebubble"></div>
+
+
+<ol>
+<li><p>诉求是多方滴，目标是动态滴</p>
+<ul>
+<li>用户想要爽，优惠，快捷方便；</li>
+<li>商家想要成交，利润，客流，低成本，高效率，口碑；</li>
+<li>服务员想要效率，解决问题，奖金；</li>
+<li>有关部门想要合规、安定团结；</li>
+<li>我们的团队想要市场占有率，交易量</li>
+<li>……</li>
+</ul>
+</li>
+<li><p>信息环境复杂，任务流非线性</p>
+<ul>
+<li>真实环境中，也许同时存在数十、上百个有内容的平面/界面/人员</li>
+<li>很少有第一步、第二步、确定、发送的流程，行为都是非线性的</li>
+</ul>
+</li>
+<li><p>改造环境而不仅仅创造界面</p>
+<ul>
+<li>界面只是众多触点之一，需要改造环境才能最大限度影响行为</li>
+<li>需要全局考虑交互媒介和方式，现有的界面体验设计方法不足以支撑</li>
+</ul>
+</li>
+<li><p>投入产出和可实施性从前，要实现复杂功能或炫酷页面效果，缠着哆啦a梦般的开发 GG 就可以了。这导致两个结果：</p>
+<ul>
+<li>设计师对成本和投入产出完全无感，根据ROI进行决策的能力≈0</li>
+<li>没有不加班的攻城狮而现在，我们的哆啦a梦不再是一个人，决定方案能</li>
+</ul>
+<p>不能实现的因素可能包括：</p>
+<ul>
+<li>接口人的 KPI</li>
+<li>决策人的目标及喜好</li>
+<li>接口人和决策人的沟通</li>
+<li>钱钱钱</li>
+<li>场地场地场地</li>
+<li>人员人员人员</li>
+<li>若干第三方的能力<br>……</li>
+</ul>
+</li>
+</ol>
+<h3 id="u4E0D_u662F_u603B_u7ED3_u7684_u603B_u7ED3"><a href="#u4E0D_u662F_u603B_u7ED3_u7684_u603B_u7ED3" class="headerlink" title="不是总结的总结"></a>不是总结的总结</h3><p>虽然粗糙、模糊、不易读，还是尝试先勾勒一幅标出东南西北的地图：</p>
+<div class="image-package imagebubble"><img src="http://www.uegeek.com/wp-content/uploads/2015/06/table3.png" alt=""></div>
+
+<p>&nbsp;<br>全新战场，面对新的 boss，是时候配备新的武器了。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/4newbattle.jpg" alt=""></div>
+
+<p>&nbsp;</p>
+<p>敬请期待后续“场景化设计工具箱”。希望与更多同行、同学们一起探讨，往工具箱里增加更多好用的工具。</p>
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption" style="text-align: center">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/map&amp;compass.png" alt=""></div>
+
+<p>&nbsp;</p>
+<p>这是欧洲战争史上一个真实的故事。</p>
+<hr>
+<p>一支几百人的小部队在瑞士与德国之间的崇山峻岭间迷路了。在盲目找路的过程中，给养越来越少，部队在深山里越陷越深。士气低迷自不必说，抱怨、指责的情绪日益高涨，指挥官一筹莫展。</p>
+<p>一天，他们发现山脚下有一座房子。但士兵们走进屋子时却大失所望——这是一间早就无人居住的房子，除了一些破旧的家具，一点食物也找不到。突然，一个士兵高兴地大叫起来，他在破柜子里发现了一张发黄的手绘地图。地图上画着一座座山峰，并用拉丁文标了山峰的名称。只可惜队伍里没人懂拉丁文。军官们传看了这张地图之后，一致认定这就是这个地区的地形图。所有的人都看到了希望，各种纷争顿时平息，士气为之一振。</p>
+<p>指挥官拿着这张地图想带领部队走出死亡之谷。但让他苦恼的是，这张地图太过简略，比例尺很不精确，有时沿着地图指引的方向行军，发现前面无路可走。但毕竟有胜于无。他们一边看地形，一边猜地图，两天之后，部队发现眼前是一大片平原，远处隐约可见几座村庄。</p>
+<p>指挥官一直珍藏着这张救了他一命的地图。几年以后，他拿出地图，向一个懂拉丁文的朋友讲述那段经历。这位朋友认真看完地图后摇摇头，意味深长地笑了笑，指着地图上方的那行字告诉指挥官，这是一张奥地利南部山区的地图。指挥官先是愕然，随后恍然大悟。两个朋友相视而笑。</p>
+<hr>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/1ship_dribble.jpg" alt=""></div><br>&nbsp;<br><br>]]>
+    
+    </summary>
+    
+      <category term="Design" scheme="http://yoursite.com/tags/Design/"/>
+    
+      <category term="o2o" scheme="http://yoursite.com/tags/o2o/"/>
+    
+      <category term="交互设计" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="体验" scheme="http://yoursite.com/tags/%E4%BD%93%E9%AA%8C/"/>
+    
+      <category term="场景" scheme="http://yoursite.com/tags/%E5%9C%BA%E6%99%AF/"/>
+    
+      <category term="服务设计" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[场景化设计系列之一：转型之痛]]></title>
+    <link href="http://yoursite.com/2015/12/04/scenario-design-1/"/>
+    <id>http://yoursite.com/2015/12/04/scenario-design-1/</id>
+    <published>2015-12-04T02:54:55.000Z</published>
+    <updated>2016-01-03T13:51:13.000Z</updated>
+    <content type="html"><![CDATA[<p>这一系列的文章，写给转型中的自己，写给离开界面、走进真实世界的设计师——他们可能有很多名称：“体验设计师”、“O2O 体验设计师”、“服务设计师”、“互动设计师”……</p>
+<p>离开熟悉的环境，一切显得那么陌生，新鲜感夹杂着无知无能的羞愧一起迎面涌来。从虚拟的界面来到真实世界中的场景，设计师如何重新定位自己？如何应对新的挑战？如何发挥价值？</p>
+<p>每一天，疑问都在增加；每一天，不变的主题就是学习。时不时需要用可汗学院的宣传片 <a href="http://v.qq.com/boke/page/k/0/j/k01440ltwxj.html" target="_blank" rel="external">「You Can Learn Anything」</a> 来鼓励自己。</p>
+<p>而最好的鼓励，是把这些记录下来，让不足发现不足，让思考引起思考，让行动激发行动。</p>
+<p>场景化设计第一篇，我们先来聊聊天~</p>
+<a id="more"></a>
+<blockquote>
+<p>“站在风口，猪都能飞起来”——雷布斯</p>
+</blockquote>
+<p>因为雷总的魔性金句，最近，我们常有一种“此刻抬头望天，一群轻盈的猪正在乘风起航，扶摇九天之外”的古怪即视感。O2O 无疑是这两年最大的风口。创业者前赴后继投身这股浪潮中，野蛮地“改造”原本浑身痛点、但被习以为常的行业和服务。</p>
+<p>开始接触线下真实场景后，不少“纯Online”的从业者，会有一个感受：</p>
+<blockquote>
+<p>一切坚固的东西都烟消云散了。—— 马歇尔·伯曼</p>
+</blockquote>
+<p>十年前，从传统行业进入互联网淘金的人，大概就会有这样的感受。今天，当互联网从业者回到本来熟悉的线下世界，却也难逃同样的困境：从前所熟悉和奏效的认识、做法，大部分已失效。</p>
+<p>对互联网产品的设计师而言，一个时刻摆在眼前的问题是：“O2O用户体验设计怎么做？”</p>
+<p>这是一个危险的问题。</p>
+<p>“用户体验设计”这个词，本来就是一把双刃剑。一方面，通过相关概念的普及，国内互联网公司空前重视“体验”（至少“体验”不离口）。这让国内互联网产品的体验水平（至少是界面设计水平），成为世界一流。但是另一方面，原本被称作“美工”的设计师们，终于找到一把“尚方宝剑”，挟天子（用户）以令诸侯，将原本应该由公司全体员工关心的核心问题，狭隘成了一个部门的职责。拉起“体验”大旗以后，设计师发现，从职责到能力，自己hold 不住这个命题，于是又有了很多“设计师的话语权”的讨论。在热热闹闹的讨论、会议、布道、培训中，概念越炒越大，职位名称越来越花哨，但是有多少设计师认认真真地去提高能力，努力转型，挑起肩头越来越沉重的担子？</p>
+<p>曾经做过亿级用户产品的设计师，一定面对过很多很多困惑和迷茫。可是当设计的对象和领域扩展到线下以后，困惑和无力感每天还在增加，这让我对“设计师”这个岗位有了更多的质疑和思考。</p>
+<p>不少朋友以为，我所在的团队主要负责微信红包和支付后台系统的界面，实际上，我们团队在做的是这些（详情可查看“微信支付商户通”公众号）：</p>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/wepayall.png" alt=""><br><div class="image-caption"></div><br></div>
+
+<p>&nbsp;<br>每天，我都有一种离开火星老家，然后被抛弃在地球的感觉。地球人的想法和语言，根本就是从外星来的呢：</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/table1.png" alt=""></div>
+
+<p>&nbsp;<br>每天都要直面自己对行业的无知，认识以前接触不到的人，跟完全不同背景的人合作，接受设计方案不被采纳、起不了作用的现实。但也许这才是一个设计师成长的良好环境：</p>
+<blockquote>
+<p>Get your hands dirty and get shit done.</p>
+</blockquote>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/designforrealworld.jpeg" alt=""></div>
+
+
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>这一系列的文章，写给转型中的自己，写给离开界面、走进真实世界的设计师——他们可能有很多名称：“体验设计师”、“O2O 体验设计师”、“服务设计师”、“互动设计师”……</p>
+<p>离开熟悉的环境，一切显得那么陌生，新鲜感夹杂着无知无能的羞愧一起迎面涌来。从虚拟的界面来到真实世界中的场景，设计师如何重新定位自己？如何应对新的挑战？如何发挥价值？</p>
+<p>每一天，疑问都在增加；每一天，不变的主题就是学习。时不时需要用可汗学院的宣传片 <a href="http://v.qq.com/boke/page/k/0/j/k01440ltwxj.html">「You Can Learn Anything」</a> 来鼓励自己。</p>
+<p>而最好的鼓励，是把这些记录下来，让不足发现不足，让思考引起思考，让行动激发行动。</p>
+<p>场景化设计第一篇，我们先来聊聊天~</p>]]>
+    
+    </summary>
+    
+      <category term="Design" scheme="http://yoursite.com/tags/Design/"/>
+    
+      <category term="o2o" scheme="http://yoursite.com/tags/o2o/"/>
+    
+      <category term="交互设计" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="体验" scheme="http://yoursite.com/tags/%E4%BD%93%E9%AA%8C/"/>
+    
+      <category term="场景" scheme="http://yoursite.com/tags/%E5%9C%BA%E6%99%AF/"/>
+    
+      <category term="服务设计" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[中欧四国扫盲帖之六：欧洲建筑风格，建筑博物馆布拉格]]></title>
+    <link href="http://yoursite.com/2015/09/24/central-eu-6/"/>
+    <id>http://yoursite.com/2015/09/24/central-eu-6/</id>
+    <published>2015-09-24T02:32:09.000Z</published>
+    <updated>2016-01-03T14:06:39.000Z</updated>
+    <content type="html"><![CDATA[<p>布拉格被誉为“欧洲建筑博物馆”，必需单开一篇，来恶补建筑风格常识。</p>
+<p>照例借用几张脉络图帮助我们建立索引：</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/Architectural%20Styles%20Timeline.jpg" alt=""><br><div class="image-caption" style="text-align: center">Architectural Styles Timeline</div><br><div class="image-caption" style="text-align: center"></div><br></div>
+
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/timeline1.jpg" alt=""><br><div class="image-caption" style="text-align: center">via 知乎用户「坏萍菓」</div><br><div class="image-caption"></div><br></div>
+
+<p>因为中欧在古希腊古罗马时期基本处于蛮荒状态，所以略过。下面就按照“拜占庭式-罗曼式-哥特式-文艺复兴-巴洛克-其他”的顺序来一一扫盲：</p>
+<a id="more"></a>
+<h3 id="1-__u539A_u91CD_u5927_u9762_u5305__u2014_u2014__u7F57_u66FC_u5F0F_uFF08Romanesque_uFF09"><a href="#1-__u539A_u91CD_u5927_u9762_u5305__u2014_u2014__u7F57_u66FC_u5F0F_uFF08Romanesque_uFF09" class="headerlink" title="1. 厚重大面包 —— 罗曼式（Romanesque）"></a>1. 厚重大面包 —— 罗曼式（Romanesque）</h3><blockquote>
+<p>时代关键词：生活艰辛。。。<br>建筑关键词：傻大厚</p>
+<p>形象代言人：黑面包</p>
+</blockquote>
+<div class="image-package imagebubble"></div><br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-6cd76c58a1cb0224.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></div>
+
+<div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Speyer_Dom_meph666-2005-Feb-26.jpg/275px-Speyer_Dom_meph666-2005-Feb-26.jpg" alt=""><br><div class="image-caption">德国施派尔主教座堂</div><br></div>
+
+
+<p>中世纪的建筑可分为两个时期，前期为罗曼式建筑，后期发展为哥特式建筑。</p>
+<p>罗曼式教堂继承了古罗马建筑中的巴西利卡形式，采用半圆拱承重结构，但是应用不成熟，施工质量也不如古罗马时期。为了使建筑长期坚固不倒，以及抵抗拱结构产生的侧推力，墙体一般都很厚重，窗户被挤压的很小，内部昏暗。</p>
+<div class="image-package imagebubble"><img src="http://socrates.bmcc.cuny.edu/hbrockington/vault.gif" alt=""><br><div class="image-caption">十字拱</div><br></div>
+
+<h4 id="u5E03_u62C9_u683C_u7684_u7F57_u66FC_u5F0F_u5EFA_u7B51"><a href="#u5E03_u62C9_u683C_u7684_u7F57_u66FC_u5F0F_u5EFA_u7B51" class="headerlink" title="布拉格的罗曼式建筑"></a>布拉格的罗曼式建筑</h4><p>罗马式风格经法、德传到捷克，布拉格从10世纪到13世纪开始兴起和建造罗马式建筑。</p>
+<p>布拉格最著名的罗曼式建筑是布拉格城堡内的圣乔治大殿（bazilika sv. Jiří/Basilica of St George）</p>
+<div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-d6d9e20cc9e82a53.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">圣乔治大殿</div><br></div><br>在维希赫拉德高堡上的圣马丁圆顶教堂（rotunda sv. Martina）<br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-161194f7e8332ecb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">聖馬丁古圓屋</div><br></div><br>在新城的圣隆基纳教堂(rotunda sv. Longina)<br><div class="image-package imagebubble"><img src="http://www.digital-guide.cz/media/thumbs/digital_guide/pamatky_by_divine/Nove_Mesto/Rotunda_sv_Longina/001_Rotunda_Sv_Longina_jpg_800x800_q85.jpg" alt=""></div><br>在许多老城的楼房地下室里保存有罗马式建筑的拱顶和墙壁。保存最好的罗马式民居是在老城的宫希达特楼（dům pánů z Kunštátu），在这座楼的地下有带3个支柱的拱形罗马式宫殿建筑。<br><br><br>### 2. 卖萌洋葱头 —— 拜占庭式<br><br>&gt; 时代关键词：东西交融<br><br>&gt; 建筑关键词：有点萌<br><br>&gt; 形象代言人：洋葱头<br><br><div class="image-package imagebubble"></div><br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-49d99841008afc7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></div><br><div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/St_Basils_Cathedral-500px.jpg/200px-St_Basils_Cathedral-500px.jpg" alt=""><br><div class="image-caption">瓦西里升天大<em>教堂</em></div><br></div>
+
+<p>拜占庭（东罗马）在古罗马巴西利卡式的基础上，融合了东方（主要是波斯、两河流域、叙利亚等）艺术，形成了新的风格。对后来的东欧建筑和伊斯兰教建筑有很大影响。</p>
+<div class="image-package imagebubble"><img src="http://file.goturkey.cn/p/2013/f4cd3b5e3247d997bcbe6886034ce35b.jpg" alt=""><br><div class="image-caption">圣索菲亚大教堂</div><br></div><br>拜占庭建筑的主要特征是圆形穹顶。穹隅是指拱顶之间形成的三角形球面。穹隅的发明使得方形基座上可以搭建巨大的圆形穹顶，因而建筑高大宽阔，采光充分。<br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-323d9b3f17da34ef.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">穹隅</div><br></div>
+
+
+<h3 id="3-__u9AA8_u611F_u7389_u7C73_u68D2__u2014_u2014__u54E5_u7279_u5F0F"><a href="#3-__u9AA8_u611F_u7389_u7C73_u68D2__u2014_u2014__u54E5_u7279_u5F0F" class="headerlink" title="3. 骨感玉米棒 —— 哥特式"></a>3. 骨感玉米棒 —— 哥特式</h3><blockquote>
+<p>时代关键词：宗教<br>建筑关键词：骨感</p>
+<p>形象代言人：玉米</p>
+</blockquote>
+<div class="image-package imagebubble"></div><br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-1151f23e9cd5a51c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></div>
+
+
+<p>哥特式 Gothic 是中世纪欧洲形成的建筑风格，发源于12世纪的法国，持续至16世纪。中世纪最重要的就是宗教活动，教堂成为城市公共生活的中心。</p>
+<p>哥特式建筑从古罗马建筑、罗曼式建筑依靠拱和穹顶等各种块面的整体受力体系，转变为接近框架的受力体系。</p>
+<div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Gotic3d2.jpg/235px-Gotic3d2.jpg" alt=""></div>
+
+
+<p>建筑的整体风格高耸削瘦，以尖拱/尖券、肋骨拱顶、天窗、飞扶璧/飞券/飞拱、撑墙等为特征。内部尽可能减少墙体的宽度，可以填充大面积花窗玻璃，使整体建筑得以瘦身且室内空间明亮。室外部分通常密布着支撑部件，仿佛是没有拆卸的脚手架，给人一种瘦骨嶙峋的感觉。</p>
+<div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Coupe.cathedrale.Amiens.png" alt=""><br><div class="image-caption">法国亚眠大教堂双层飞扶壁</div><br></div>
+
+<p>随着时间的延续，拱肋变得越来越复杂和装饰性越强。</p>
+<div class="image-package imagebubble"><img src="http://www.alxw.com/uploads/allimg/130621/1012404a1-0.jpg" alt=""><br><div class="image-caption">米兰大教堂</div><br></div><br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-ebc63e7d9868dd22.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">兰斯主教堂</div><br></div>
+
+
+<h4 id="u5E03_u62C9_u683C_u7684_u54E5_u7279_u5F0F_u5EFA_u7B51"><a href="#u5E03_u62C9_u683C_u7684_u54E5_u7279_u5F0F_u5EFA_u7B51" class="headerlink" title="布拉格的哥特式建筑"></a>布拉格的哥特式建筑</h4><p>在布拉格，哥特式代表作有查理四世下令建造的圣维特大教堂（Staroměstská mostecká věž）</p>
+<div class="image-package imagebubble"><img src="https://lightbox3d.files.wordpress.com/2015/05/st-vitus-choirapse_hdr.jpg?w=1024&amp;h=679" alt=""></div>
+
+
+<p>这是罗马天主教布拉格总教区的主教座堂。位于布拉格城堡内，其中有许多波希米亚国王的坟墓。建于925年，在1060年扩建为罗曼式教堂，1344年查理四世下令在原教堂的基础上建造一座哥特式教堂，于20世纪初才修建完毕。20世纪教堂更换的彩色玻璃窗为阿尔丰斯·慕夏作品。</p>
+<p>还有查理大桥（Karlův most）和迪恩教堂（Týnský chrám ）</p>
+<div class="image-package imagebubble"><img src="http://cdn.nanxiongnandi.com/bing/CharlesBridge_ZH-CN1133294121.jpg" alt=""></div>
+
+
+<p>在布拉格还可以找到一系列小型哥特式教堂，如老城的圣杜哈教堂（kostel sv. Ducha），新城的圣彼得教堂（kostel sv. Petra）和圣母玛利亚·斯涅日娜教堂（kostel Panny Marie Sněžnékostel Panny Marie Sněžné）。哥特式民居宫殿式的代表建筑是老城广场上的石钟屋(U kamenného zvonu)。</p>
+<div class="image-package imagebubble"><img src="http://blog.idnes.cz/blog/19336/340528/Uzvonu6.jpg" alt=""></div>
+
+
+<h3 id="4-__u9AD8_u51B7_u51B0_u76AE_u6708_u997C__u2014_u2014__u6587_u827A_u590D_u5174_u5F0F_Renaissance"><a href="#4-__u9AD8_u51B7_u51B0_u76AE_u6708_u997C__u2014_u2014__u6587_u827A_u590D_u5174_u5F0F_Renaissance" class="headerlink" title="4. 高冷冰皮月饼 —— 文艺复兴式 Renaissance"></a>4. 高冷冰皮月饼 —— 文艺复兴式 Renaissance</h3><blockquote>
+<p>时代关键词：文艺复兴</p>
+<p>建筑关键词：复古，秩序</p>
+<p>形象代言人：冰皮月饼</p>
+</blockquote>
+<div class="image-package imagebubble"></div><br><div class="image-package imagebubble"><img src="http://images.meishij.net/p/20110830/2f9325115a1f0438855ee30eeda1abb5.jpg" alt=""><br><div class="image-caption">不好意思但是中秋真的快到了</div><br></div>
+
+<div class="image-package imagebubble"></div><br><div class="image-package imagebubble"><img src="http://cdn.wall88.com/51b8b3430a4a532358.jpg" alt=""><br><div class="image-caption">圣彼得大教堂</div><br></div>
+
+
+<p>14世纪在意大利随着文艺复兴而诞生的建筑风格。文艺复兴式风格把眼光投向探求人类本身和人的生活，描述世俗生活的乐趣。基於对中世纪神权至上的批判，和对人道主义的肯定，建筑师希望借助<strong>古典的比例</strong>来重新塑造理想中古典社会的协调秩序。</p>
+<ul>
+<li>强调建筑的比例如同人的比例，讲究秩序与规律，拥有严谨的立面和平面构图</li>
+<li>使用对称的形状，集中式，显得有条理性、整齐并稳定</li>
+<li>继承古希腊古罗马风格和柱式系统</li>
+<li>建筑轻快和透气，常常有敞开式的拱形长廊和修长的廊柱</li>
+<li>恢复「自然」，以尺规制图，以圆形和正方形为主</li>
+</ul>
+<div class="image-package imagebubble"><img src="http://www.aodili.info/tl_files/images/artilce/AAupdate/vienna-khm-gif.gif" alt=""><br><div class="image-caption">维也纳艺术历史博物馆</div><br></div>
+
+
+<p>晚期的文艺复兴建筑走向了两个极端：一边是教条的崇拜古代建筑，将文艺复兴建筑讲究的比例与条理发展的过于繁琐与僵化，变成了注重理性的古典主义建筑；另一边则向柱式严谨而完整的规则挑战，追求新颖，堆砌装饰与雕塑，玩弄手法，发展为了巴洛克式建筑。</p>
+<p>布拉格最著名的文艺复兴式建筑是皇家夏宫（Královský letohrádek）</p>
+<div class="image-package imagebubble"><img src="http://www.fototuristika.cz/data/wysiwyg/tips/391/image/Pra%C5%BEsk%C3%BD_hrad_7.jpg" alt=""></div>
+
+<p>白山上的星星夏宫（letohrádek Hvězda）</p>
+<div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-58f5bc7b0325dc07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">星星夏宫</div><br></div>
+
+
+<p>老城广场上的迪恩学校的门徽就是威尼斯文艺复兴风格在民宅建筑上的体现。布拉格最漂亮的文艺复兴式大门是克日娜街475号的双金熊。</p>
+<h3 id="5-_u6700_u70AB_u8D35_u65CF_u98CE__u2014_u2014__u5DF4_u6D1B_u514B_Baroque"><a href="#5-_u6700_u70AB_u8D35_u65CF_u98CE__u2014_u2014__u5DF4_u6D1B_u514B_Baroque" class="headerlink" title="5.最炫贵族风 —— 巴洛克 Baroque"></a>5.最炫贵族风 —— 巴洛克 Baroque</h3><blockquote>
+<p>时代关键词：炫富，争权</p>
+<p>建筑关键词：华丽丽，亮瞎眼</p>
+<p>形象代言人：鸡尾酒</p>
+</blockquote>
+<div class="image-package imagebubble"><img src="http://3.im.guokr.com/gkimage/zf/hf/6g/zfhf6g.png" alt=""></div><br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-da37951497b8e0c1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">四喷泉圣卡罗教堂</div><br></div>
+
+
+<p>17世纪欧洲强权扩张，掠夺海外殖民地累聚巨富，生活上提倡豪华享受，因此对建筑、音乐、美术也要求豪华生动、富于热情的情调。</p>
+<p>巴洛克艺术风格从17世纪初到18世纪流行欧洲。巴洛克源于葡萄牙语，意为不规则的珍珠，或指非同一般的，怪异的东西。巴洛克建筑的成因错综复杂（比如，是天主教会炫耀财富的产物），其风格本身也褒贬不一，可以算是建筑界的一朵奇葩。</p>
+<p>主要特征可以归纳为：</p>
+<ul>
+<li>炫富，大量使用贵重材料，充满装饰，一身珠光宝气</li>
+<li>繁复，空间组合复杂，装饰复杂，充满各种繁琐的形状图案</li>
+<li>标新立异，外形自由，用不完整构图代替完整形象，如断山花、巨型曲线等，以突出个性</li>
+<li>视觉冲击，造型上大量使用曲面，凹凸感、流动感极强</li>
+</ul>
+<p>在巴洛克教堂中，透视被用来造成空间的幻觉。最明显的就是屋顶内部，壁画会接着四壁的透视线再画上一两层，然后在檐口之上画更高远的天空，使得内部空间好像延伸到了空中。幻觉，就是巴洛克教堂想要带给参观者的感觉。</p>
+<div class="image-package imagebubble"><img src="http://a2.att.hudong.com/84/95/19300001358307131527958054344_950.jpg" alt=""><br><div class="image-caption">圣彼得广场</div><br></div>
+
+
+<p>巴洛克风格是在布拉格得到广泛运用和流行的、最有特色的风格。“布拉格的巴洛克”风格闻名于世。</p>
+<p>数得上巴洛克式建筑风格瑰宝的是圣米古拉斯大教堂（chrám sv. Mikuláše），它是小城广场最显著的象征之一。</p>
+<div class="image-package imagebubble"><img src="http://www.fototuristika.cz/data/wysiwyg/tips/400/image/kostel_sv.Mikul%C3%A1%C5%A1e_na_Mal%C3%A9_Stran%C4%9B_2.jpg" alt=""></div>
+
+
+<p>还有城堡区的切尔宁宫（Černínský palác），老城区的克拉姆-伽拉斯宫(Clam-Gallasův palác)，还有特洛亚贵族庄园（ Trojský zámek）。</p>
+<p>巴洛克式的民居住宅墙饰可以在小城广场的聂鲁达大街（Nerudova ulice）上观赏到。布拉格最漂亮的巴洛克式的群雕是查理大桥上由玛蒂阿斯·贝尔纳尔特·布洛纳（Matyáše Bernarda Brauna）创作的圣鲁伊特嘎尔特的梦群雕（Sen sv. Luitgardy）</p>
+<p>最后，来个超级巴洛克晃瞎你</p>
+<div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-0bff58cde1297149.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">圣地亚哥·德·贡波斯代拉教堂</div><br></div>
+
+
+<h3 id="u6D1B_u53EF_u53EF_u5F0F_Rococo"><a href="#u6D1B_u53EF_u53EF_u5F0F_Rococo" class="headerlink" title="洛可可式 Rococo"></a>洛可可式 Rococo</h3><div class="image-package imagebubble"><img src="http://www.evoketw.com/wp-content/uploads/2012/08/002-1.jpg" alt=""></div>
+
+<p>洛可可式建筑是巴洛克末期建筑风格的代表。洛可可风格其实更应该算是一种室内装饰风格。</p>
+<p>起源於18世纪的法国，以欧洲封建贵族文化的衰败为背景，表现了没落贵族阶层颓丧、浮华的审美理想和思想情绪。他们受不了古典主义的严肃理性和巴洛克的喧嚣放肆，追求华美和闲适。主要应用与室内设计，一开始是为了反对宫廷的繁文缛节艺术而兴起的。</p>
+<div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Gau1878.jpg" alt=""></div>
+
+<p>洛可可风格的基本特点是纤弱娇媚、华丽精巧、甜腻温柔、纷繁琐细。将贝类、树叶以极其丰富、半抽象的装饰形式表现出来，并充满了曲线花纹或漩涡花纹的装饰。室内用色明快（嫩绿、粉红、玫瑰红等鲜艳的浅色调），以优美纤巧的家具、小雕塑、装饰镜、绘画作品和挂毯对建筑物、浮雕和壁画进行补充，使得整个建筑犹如一件艺术品一般。</p>
+<p>洛可可风格在18世纪后半叶从法国流传到捷克，布拉格洛可可风格的代表作是老城广场上的金斯基宫（palác Kinských）</p>
+<div class="image-package imagebubble"><img src="http://cesko.svetadily.cz/userfiles/image/clanky/cesko/praha-palac-kinskych-1.jpg" alt=""></div>
+
+
+<h3 id="u5176_u4ED6"><a href="#u5176_u4ED6" class="headerlink" title="其他"></a>其他</h3><h4 id="u5386_u53F2_u4E3B_u4E49_u98CE_u683C"><a href="#u5386_u53F2_u4E3B_u4E49_u98CE_u683C" class="headerlink" title="历史主义风格"></a>历史主义风格</h4><p>在19世纪后半叶，大多数建筑师都从过去流行的建筑风格中汲取灵感，所以这个时期的风格也称为历史主义风格。产生了新文艺复兴式，新哥特式和新巴洛格式。</p>
+<p>布拉格最著名的新文艺复兴式建筑有民族剧院（Národní divadlo）</p>
+<div class="image-package imagebubble"><img src="http://www.tydeniky.cz/userdata/articles/2161/narodni-divadlo-noc.jpg" alt=""></div>
+
+
+<p>国家博物馆（Národní muzeum）</p>
+<div class="image-package imagebubble"><img src="http://media.novinky.cz/887/268877-top_foto1-sb91w.jpg?1357300020" alt=""></div>
+
+<p>鲁道尔夫宫（Rudolfinum）</p>
+<div class="image-package imagebubble"><img src="http://www.avantgarde-prague.com/media/gallery/original/prague-rudolfinum-1.jpg" alt=""></div>
+
+
+<h4 id="u65B0_u827A_u672F_u4E3B_u4E49_u98CE_u683C"><a href="#u65B0_u827A_u672F_u4E3B_u4E49_u98CE_u683C" class="headerlink" title="新艺术主义风格"></a>新艺术主义风格</h4><p>新艺术主义风格产生于19世纪末和20世纪初。它的名称源于拉丁语 secessio一词,意为离开，表示许多年轻的艺术家离开了当时的各种艺术组织，作为对当时陈旧和过时的艺术组织的抗议。新艺术风格可分为巴黎新艺术主义风格，维也纳新艺术主义风格和布拉格新艺术主义风格。</p>
+<p>新艺术主义风格的主要特色是表现幻想、细腻，常采用植物作装饰边框，外墙用金色，瓷器、灰泥装饰，窗户带有半截窗帘。布拉格新艺术主义风格风格首先出现在1861年的周年纪念建筑展中。这种风格表达和追求的是，期望新艺术主义风格的建筑能从19世纪宏大威严的建筑风格中摆脱出来。</p>
+<p>布拉格最漂亮的的新艺术风格的代表作是市民会馆（Obecní dům）</p>
+<div class="image-package imagebubble"><img src="http://www.sokolcamping.cz/wp-content/uploads/br%C3%A1na.jpg" alt=""></div><br>布拉格的中心火车站（Hlavní nádraží）<br><div class="image-package imagebubble"><img src="http://i.lidovky.cz/12/012/lngal/TER407113_fanta_hln2.jpg" alt=""></div>
+
+
+<p>新艺术主义风格的民居住宅楼主要分布在巴黎大街 (Pařížská ulice)。在瓦茨拉夫广场的下半部分矗立着新艺术主义风格的皇冠宫(palác Koruna)，它的顶部呈镶有珍珠的皇冠形状，在瓦茨拉夫广场再往上走可以看到另一处新艺术主义风格的建筑-欧洲宾馆（hotel Evropa），此外，老城广场上的胡斯像（pomník Jana Husa）也属于新艺术主义风格的作品。</p>
+<h4 id="u73B0_u4EE3_u5EFA_u7B51_u98CE_u683C"><a href="#u73B0_u4EE3_u5EFA_u7B51_u98CE_u683C" class="headerlink" title="现代建筑风格"></a>现代建筑风格</h4><p>布拉格第一个钢筋水泥混凝土的建筑，同时也成为捷克建筑史上分界线的建筑是卢采尔纳宫（budova paláce Lucerna），它位于瓦茨拉夫广场和沃基曲科娃（Vodičkova ulice）之间，建于1912年。</p>
+<div class="image-package imagebubble"><img src="http://www.stavebnictvi3000.cz/obr/clanky2/2011/10_kaspar_9.jpg" alt=""></div>
+
+
+<p>20世纪上半叶在布拉格主要流行的现代建筑风格是立体主义风格，提倡艺术和建筑风格中回归简单的几何图形。墙壁和外墙装饰被分割，用矩形片状做装饰。立体主义风格的代表作品是位于采莱特纳街上（Celetná ulice）的黑圣母楼（dům U černé matky Boží）,这栋楼非常巧妙地和旁边的老城区的巴洛克建筑风格的大厦融为一体。</p>
+<div class="image-package imagebubble"><img src="http://www.informuji.cz/data/201284192946.jpg" alt=""></div>
+
+
+<p>立体主义风格的民宅分布在老城区的洲际酒店（hotel Intercontinental）和比尔科瓦街（Bílkova ulice）。在30年代，还产生了强调功能性的功能主义风格，比如位于布拉格6区的洛索和姆莱罗别墅（Loosova nebo Mullerova vila na Praze 6）</p>
+<div class="image-package imagebubble"><img src="http://www.fototuristika.cz/data/wysiwyg/tips/786/image/m%C3%BCllerova_vila_2.jpg" alt=""></div>
+
+
+<p>巴巴别墅区（čtvrť na Babě）</p>
+<div class="image-package imagebubble"><img src="http://i.idnes.cz/10/032/maxi/WEB31dee5_Baba5_RobertRambousek.jpg" alt=""></div>
+
+
+<p>1989年以后，在布拉格市内建造了许多新的商业楼和写字楼，但其中大多数都不代表任何艺术流派。唯一的代表新时代建筑风格的是1996年建造的跳舞楼，它位于拉辛诺沃河岸（Rašínovo nábřeží）。</p>
+<div class="image-package imagebubble"><img src="http://itras.cz/fotogalerie/tancici-dum/velke/tancici-dum-065.jpg" alt=""></div>
+
+
+
+<h4 id="u4E3B_u8981_u53C2_u8003_u8D44_u6599"><a href="#u4E3B_u8981_u53C2_u8003_u8D44_u6599" class="headerlink" title="主要参考资料"></a>主要参考资料</h4><ul>
+<li>「艺术的故事」，贡布里希，2008</li>
+<li>「建筑设计视觉词典」，加文·安布罗斯，2009</li>
+<li><a href="http://www.wikipedia.org/" target="_blank" rel="external">wiki的数个建筑相关条目</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%BB%BA%E7%AD%91%E9%A3%8E%E6%A0%BC" target="_blank" rel="external">建筑风格</a></li>
+<li><a href="http://www.douban.com/link2/?url=http://movie.douban.com/subject/5350014/&amp;query=BBC.Churches.How.to.Read.Them&amp;cat_id=1002&amp;type=search&amp;pos=0" target="_blank" rel="external">如何读懂教堂</a></li>
+<li><a href="http://www.zhihu.com/question/24385368" target="_blank" rel="external">知乎：教堂的建筑风格有哪些？</a></li>
+<li><a href="http://www.sinostar.cz/index.files/architektura.htm" target="_blank" rel="external">布拉格各式建筑风格简介</a><br>&nbsp;</li>
+</ul>
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>布拉格被誉为“欧洲建筑博物馆”，必需单开一篇，来恶补建筑风格常识。</p>
+<p>照例借用几张脉络图帮助我们建立索引：</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/Architectural%20Styles%20Timeline.jpg" alt=""><br><div class="image-caption" style="text-align: center">Architectural Styles Timeline</div><br><div class="image-caption" style="text-align: center"></div><br></div>
+
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/timeline1.jpg" alt=""><br><div class="image-caption" style="text-align: center">via 知乎用户「坏萍菓」</div><br><div class="image-caption"></div><br></div>
+
+<p>因为中欧在古希腊古罗马时期基本处于蛮荒状态，所以略过。下面就按照“拜占庭式-罗曼式-哥特式-文艺复兴-巴洛克-其他”的顺序来一一扫盲：</p>]]>
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="Travel" scheme="http://yoursite.com/tags/Travel/"/>
+    
+      <category term="中欧" scheme="http://yoursite.com/tags/%E4%B8%AD%E6%AC%A7/"/>
+    
+      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
+    
+      <category term="哥特式" scheme="http://yoursite.com/tags/%E5%93%A5%E7%89%B9%E5%BC%8F/"/>
+    
+      <category term="巴洛克" scheme="http://yoursite.com/tags/%E5%B7%B4%E6%B4%9B%E5%85%8B/"/>
+    
+      <category term="布拉格" scheme="http://yoursite.com/tags/%E5%B8%83%E6%8B%89%E6%A0%BC/"/>
+    
+      <category term="建筑" scheme="http://yoursite.com/tags/%E5%BB%BA%E7%AD%91/"/>
+    
+      <category term="文艺复兴式" scheme="http://yoursite.com/tags/%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%E5%BC%8F/"/>
+    
+      <category term="洛可可" scheme="http://yoursite.com/tags/%E6%B4%9B%E5%8F%AF%E5%8F%AF/"/>
+    
+      <category term="罗曼式" scheme="http://yoursite.com/tags/%E7%BD%97%E6%9B%BC%E5%BC%8F/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[中欧四国扫盲帖之五：乱弹欧洲宗教]]></title>
+    <link href="http://yoursite.com/2015/09/23/central-eu-5/"/>
+    <id>http://yoursite.com/2015/09/23/central-eu-5/</id>
+    <published>2015-09-23T01:52:38.000Z</published>
+    <updated>2016-01-03T14:27:35.000Z</updated>
+    <content type="html"><![CDATA[<p>犹太教、基督教、天主教、东正教、新教，这几个宗教到底有什么瓜葛？</p>
+<p>先来一张脉络图：</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/eureligious.png" alt=""><br><div class="image-caption"></div><br></div>
+
+<a id="more"></a>
+<p>其实，他们信奉的，都是同一个神——上帝，天父，耶和华。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/comicfour.png" alt=""><br><div class="image-caption" style="text-align: center">via 同人战争（右至左：犹太，伊斯兰，天主，新教）</div><br></div><br>&nbsp;<br><br>犹太教从公元前2000年西亚地区的游牧民族希伯来人中产生，信奉圣经旧约。犹太教的教义和规范比较严格，且并没有以普度众生为目的。<br><br>&nbsp;<br><br><br>### 犹太教剥离出基督教<br><br>1世纪，传说中未婚先孕的玛利亚（当然犹太教是不会承认有这么个菇凉的……）在马槽中生出了耶稣，他自称是上帝之子。<br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/Jesus.png" alt=""><br><div class="image-caption" style="text-align: center">via stone 二混子</div>
+
+<div class="image-caption" style="text-align: center"></div><br></div><br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/merria.png" alt=""><br><div class="image-caption" style="text-align: center">via 同人战争</div><br></div>
+
+<p>一部分耶稣的粉丝坚决拥护他，于是从犹太教中分离出来，演变为基督教。基督教以解救世人为公司的上市目标，耶稣到处路演。而且不同于犹太教独占上帝，耶稣告诉信徒，上帝是大家的——于是基督教影响力越来越大，粉丝极速增长，远超过犹太教。</p>
+<p>耶稣虽然死在罗马人手上，但300年之后，基督教在罗马合法化。又过了100年，逆袭成为罗马国教。以及，出了一本耶稣的言行故事书——新约。</p>
+<p>基督教就是这么个从犹太教中离队创业成功，甩开老东家几条街的故事。</p>
+<p>&nbsp;</p>
+<h3 id="u57FA_u7763_u6559_u5265_u79BB_u51FA_u4E1C_u6B63_u6559"><a href="#u57FA_u7763_u6559_u5265_u79BB_u51FA_u4E1C_u6B63_u6559" class="headerlink" title="基督教剥离出东正教"></a>基督教剥离出东正教</h3><p>那么天主、东正和新教呢？其实，他们都是基督教，因为信奉同一个耶稣。</p>
+<p>罗马分裂成西罗马和东罗马之后，主教区留在了西罗马，东罗马面子挂不住啊必需得 copy &amp; paste 一套过来，于是11世纪，出现了东（以拜占庭为中心）、西罗马（以梵蒂冈为中心）两个教区，东边的变成了东正教。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/westvseast.png" alt=""></div>
+
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/westeastpope.png" alt=""><br><div class="image-caption" style="text-align: center">via stone 二混子</div><br></div>
+
+<p>除了从7世纪就出现的教义上的分歧之外，天主教和东正教最大的分歧在于宗教的组织与政权的关系上。</p>
+<p>在西罗马帝国，为了保持自身的权威，罗马教廷对于拉丁语的使用和维护罗马精神的中心地位表现得十分强硬，与帝国君主、封建主之间的势力斗争此消彼长。</p>
+<p>而在东罗马帝国，从君士坦丁一世起，教会与帝国之间的关系就非常密切。倾向于各个国家教会自治，从而产生了各国君主与具有权威的君士坦丁堡牧首相联合的模式。从长远来看，东正教教会对地方政权往往有依赖性。</p>
+<p>在对保加利亚实行教化的过程中，两个教派的分歧终于因为君士坦丁堡首牧提乌实行教会分立而正式形成。</p>
+<h3 id="u5929_u4E3B_u6559_u5265_u79BB_u51FA_u65B0_u6559"><a href="#u5929_u4E3B_u6559_u5265_u79BB_u51FA_u65B0_u6559" class="headerlink" title="天主教剥离出新教"></a>天主教剥离出新教</h3><p>那么，新教又是怎么回事？为什么现在国内提到的“基督教”其实多指“新教”？</p>
+<p>中世纪，天主教会攫取了权力和大量财富，教会腐败严重，还丧病地推出赎罪券这一杀手级产品，给自己抹了一把黑。</p>
+<p>这时候有个叫马丁路德的神父跳出来，跟大佬们叫板，成立了新的教派。“因信称义”（唯信仰得救）是路德神学的主要教义，他倡导人可以开掉中介（神职人员）直接跟上帝对话。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/religiousfight.png" alt=""><br><div class="image-caption" style="text-align: center">via 同人战争</div><br></div>
+
+<p>17世纪初，波西米亚地区成为宗教信仰冲突的焦点，民众大多数是新教徒，国王和统治者则是天主教徒。1618年，在关于是否关闭两座新教教堂的问题上发生冲突后，新教徒和王国的摄政官们（天主教徒）在布拉格城堡会晤。30名捷克人为反抗哈布斯堡王朝对新教徒的迫害，拒绝接受哈布斯堡皇室的斐迪南大公为国王，起义者冲进王宫将官员扔出窗外，引发欧洲天主教徒和新教徒之间的“三十年战争”。</p>
+<p>欧洲是天主教和新教势力左右互搏的主战场，所以他俩经常掐架也就不足为奇了。</p>
+<p>&nbsp;</p>
+<p>==============中国特色分割线===============</p>
+<p>天主教和新教都到中国来传教，但是新教传播的时候，一张脸撑成两张大，把自己称为基督教。悲催的天主教被人抢走了基督教这个名头，只能说自己是天主教。</p>
+<p>所以今天华人信徒普遍说的基督教，其实是新教。</p>
+<hr>
+<p>&nbsp;</p>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>犹太教、基督教、天主教、东正教、新教，这几个宗教到底有什么瓜葛？</p>
+<p>先来一张脉络图：</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/eureligious.png" alt=""><br><div class="image-caption"></div><br></div>]]>
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="Travel" scheme="http://yoursite.com/tags/Travel/"/>
+    
+      <category term="东正教" scheme="http://yoursite.com/tags/%E4%B8%9C%E6%AD%A3%E6%95%99/"/>
+    
+      <category term="中欧" scheme="http://yoursite.com/tags/%E4%B8%AD%E6%AC%A7/"/>
+    
+      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
+    
+      <category term="基督教" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%9D%A3%E6%95%99/"/>
+    
+      <category term="天主教" scheme="http://yoursite.com/tags/%E5%A4%A9%E4%B8%BB%E6%95%99/"/>
+    
+      <category term="宗教" scheme="http://yoursite.com/tags/%E5%AE%97%E6%95%99/"/>
+    
+      <category term="新教" scheme="http://yoursite.com/tags/%E6%96%B0%E6%95%99/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[中欧四国扫盲帖之四：捷克斯洛伐克，天鹅绒，苏台德]]></title>
+    <link href="http://yoursite.com/2015/09/21/central-eu-4/"/>
+    <id>http://yoursite.com/2015/09/21/central-eu-4/</id>
+    <published>2015-09-21T15:26:33.000Z</published>
+    <updated>2016-01-03T14:40:01.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="u6377_u514B_u548C_u65AF_u6D1B_u4F10_u514B_u7684_u5206_u5206_u5408_u5408"><a href="#u6377_u514B_u548C_u65AF_u6D1B_u4F10_u514B_u7684_u5206_u5206_u5408_u5408" class="headerlink" title="捷克和斯洛伐克的分分合合"></a>捷克和斯洛伐克的分分合合</h3><p>尽管从1526年起，哈布斯堡家族就开始了对捷克和斯洛伐克两个民族的统治，但实际上这两个民族一直界限分明。1867年，奥地利帝国改弦更张为奥匈帝国，捷克和斯洛伐克地区分别划归奥地利和匈牙利。</p>
+<a id="more"></a>
+<div class="image-package imagebubble">[<img src="http://www.uegeek.com/wp-content/uploads/2015/09/捷斯-comic.png" alt=""></div>
+
+<p>一战爆发的两年后，1916年捷克斯洛伐克民族理事会成立，促成联合部队组建，参与一战。1918年奥匈帝国兵败解体（哈布斯堡王朝也落下帷幕），波希米亚、摩拉维亚及斯洛伐克等地区组成捷克斯洛伐克共和国。</p>
+<p>二战爆发前夕，1938年英法与德意签定慕尼黑协定，使捷克斯洛伐克向德国让出波西米亚、摩拉维亚和西里西亚的日耳曼人语区（即苏台德区，从此埋下祸根）。</p>
+<div class="image-package imagebubble"><img src="https://img1.fold3.com/img/thumbnail/52623001/400/400/0_0_433_594.jpg" alt=""></div>
+
+
+<p>随后，斯洛伐克和罗塞尼亚宣布实行自治。希特勒控制下的斯洛伐克愈加法西斯化，布拉迪斯拉法宣告独立。</p>
+<p>二战期间，捷克各地均被纳粹严格控制。直到1945年4月，新政府成立，恢复了1937年时的边界。1947年，原本已经接受了马歇尔计划的捷克政府，在几天后又按照莫斯科的指示反悔。社会民主党拒绝同共产党合并，11位非共产党籍部长在1948年2月提出辞职。声势浩大的罢工运动爆发，这就是“布拉格二月事件”。6月，萨波托斯基当选共和国总理，共产党制度被确立。</p>
+<h3 id="u5929_u9E45_u7ED2_u9769_u547D_u548C_u5929_u9E45_u7ED2_u79BB_u5A5A"><a href="#u5929_u9E45_u7ED2_u9769_u547D_u548C_u5929_u9E45_u7ED2_u79BB_u5A5A" class="headerlink" title="天鹅绒革命和天鹅绒离婚"></a>天鹅绒革命和天鹅绒离婚</h3><p>1968年1月，杜布切克当选捷共中央第一书记，提出建立具有人道主义面貌的社会主义。4月，捷共中央通过反映改革策略的行动纲领，形成“布拉格之春”改革浪潮。此时捷克显示出越来越强烈的独立倾向，于是老大哥在1968年8月20日率25万华约成员国军队，一夜之间占领捷克全境，用坦克粉碎布拉格的改革浪潮。抗议苏联入侵运动持续到1969年。</p>
+<p>1969年1月1日，捷克斯洛伐克成为联邦共和国，由捷克社会主义共和国和斯洛伐克社会主义共和国组成。1970年苏联对捷克进行大清洗，50万人被开除出党。</p>
+<p>布拉格之春、苏军占领、大清洗这些事件，在电影「布拉格之恋」中均有体现。</p>
+<div class="image-package imagebubble"><img src="http://img3.douban.com/view/photo/photo/public/p1787620303.jpg" alt=""><br><div class="image-caption"></div><br></div>
+
+<p>大清洗之后，捷克政治上万马齐喑，经济上走入死胡同，社会矛盾进一步尖锐，最终导致了1989年的剧变。</p>
+<p>天鹅绒革命又称丝绒革命，狭义上是指捷克斯洛伐克于1989年的反共产党统治的民主化革命。1989年11月17日，布拉格学生示威运动被镇压后，由“人民论坛”领导的“天鹅绒革命”迅速蔓延开来。布拉格出现超过十万人的游行活动，要求政府结束共产党统治。11月30日，共产党统治地位被取消。</p>
+<p>从广义上讲，天鹅绒革命是和暴力革命对比而来的，指没有经过大规模的暴力冲突就实现了政权更迭，如天鹅绒般平与柔滑。</p>
+<div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/archive/1/1a/20090926165201!Albertov_deska.jpg" alt=""></div><br>天鹅绒革命开始的地方有一块纪念碑，写着著名的：<br><br>&gt; When - If not now ?<br>&gt; Who - If not us ?<br><br>天鹅绒革命促进了捷克斯洛伐克的民主化与和平移转政权。随着民主化的影响，斯洛伐克也出现了日益强烈的独立建国主张。1990年，捷克斯洛伐克更名为捷克和斯洛伐克联邦共和国。尽管如此，斯洛伐克民族主义者仍不满意，他们在1992年6月议会选举中斯洛伐克一方取得绝大多数议席，随后投票通过《主权宣言》。在11月联邦议会投票通过后，1993年1月1日捷克斯洛伐克正式分裂成两个国家。而这次斯洛伐克的和平独立与联邦体制的和平瓦解，也被称为“天鹅绒离婚”。<br><br><br>### 苏台德地区和苏台德问题<br><br>苏台德地区，指捷克摩拉维亚北部边境的苏台德山脉所处的地带。二战之前日耳曼人一直住在这里。<br><br>1938年希特勒支持这里以“回归德国”为目标的“汉伦党人”，为入侵捷克制造理由，而英法两国牺牲捷克的利益，在捷克代表缺席的情况下签订「慕尼黑协定」，将苏台德地区2.26万平方公里、人口300万的一块土地划归德国。<br><div class="image-package imagebubble"><img src="http://www.chuanjiaoban.com/userfiles/old/uploadfile/2009/1030/20091030091947654.jpg" alt=""></div>
+
+<p>1945年二战结束后，根据战胜国协定和捷克总统贝奈斯的法令，苏台德的日耳曼人被没收全部财产，强制遣返。 在战争中蒙受巨大损失而导致的复仇心理驱使之下，捷克人对苏台德地区的日耳曼民众实施了暴力掠夺和武力驱逐。</p>
+<p>60年来，被遣返的日耳曼人一直要求返回家乡和获得经济赔偿。东欧剧变后苏台德问题一直悬而未决，成为二战“后遗症”。1997年，德国捷克达成「德捷和解公告」，德方出资1.4亿马克，捷方出自2500万马克，成立“未来基金”协商解决苏台德问题。但由于“未来基金”金额与苏台德日耳曼人要求赔偿的金额相差太大，而且返乡要求无法落实，苏台德日耳曼人的游行仍在年年举行。</p>
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="u6377_u514B_u548C_u65AF_u6D1B_u4F10_u514B_u7684_u5206_u5206_u5408_u5408"><a href="#u6377_u514B_u548C_u65AF_u6D1B_u4F10_u514B_u7684_u5206_u5206_u5408_u5408" class="headerlink" title="捷克和斯洛伐克的分分合合"></a>捷克和斯洛伐克的分分合合</h3><p>尽管从1526年起，哈布斯堡家族就开始了对捷克和斯洛伐克两个民族的统治，但实际上这两个民族一直界限分明。1867年，奥地利帝国改弦更张为奥匈帝国，捷克和斯洛伐克地区分别划归奥地利和匈牙利。</p>]]>
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="Travel" scheme="http://yoursite.com/tags/Travel/"/>
+    
+      <category term="中欧" scheme="http://yoursite.com/tags/%E4%B8%AD%E6%AC%A7/"/>
+    
+      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
+    
+      <category term="捷克" scheme="http://yoursite.com/tags/%E6%8D%B7%E5%85%8B/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[中欧四国扫盲帖之三：哈布斯堡王朝和维也纳]]></title>
+    <link href="http://yoursite.com/2015/09/20/central-eu-3/"/>
+    <id>http://yoursite.com/2015/09/20/central-eu-3/</id>
+    <published>2015-09-20T12:37:07.000Z</published>
+    <updated>2016-01-03T14:39:53.000Z</updated>
+    <content type="html"><![CDATA[<div class="image-package imagebubble"><img src="http://a2.att.hudong.com/71/34/01300000310366130006343764935.jpg" alt=""></div><br>哈布斯堡王朝（Habsburg）是欧洲历史上统治领域最广的王室。大多数欧洲国家，都与哈布斯堡家族有着千丝万缕的联系。<br><br><a id="more"></a><br><br>先来看看阴谋论者最喜欢讨论的光明会（共济会里的精英团体）的13支家族派系：<br><br><em>   罗斯切尔德家族Rothschild（Bauer or Bower）（德裔犹太系统）- Pindar
+</em>   布鲁斯家族Bruce （犹太系统）<br><em>   卡文迪许家族Cavendish (肯尼迪 Kennedy，美系爱尔兰系统)
+</em>   梅地奇家族De Medici （犹太系统）<br><em>   汉诺威家族Hanover （日耳曼系统）
+</em>   <strong>哈布斯堡家族Hapsburg （欧洲王室系统）</strong><br><em>   克虏伯家族Krupp （条顿骑士—日耳曼系统）
+</em>   金雀花家族Plantagenet （法兰克—法兰西系统）<br><em>   洛克菲勒家族Rockefeller （盎格鲁撒克逊系统）
+</em>   罗曼诺夫家族Romanov （俄罗斯、瑞典）<br><em>   辛克莱家族Sinclair（St. Clair）
+</em>   华伯家族Warburg (del Banco) （美籍犹太系统）<br>*   温莎家族Windsor (Saxe-Coburg-Gothe) （英国王室系统）<br><br>以上全是声名显赫、手可遮天的大家族，其中就有称霸欧洲王室系统的哈布斯堡家族。<br><br>1020年，新崛起的德意志家族在山上修筑了雄峻的鹰堡，即哈布斯堡。1273年，与东方的元帝国建立几乎同时，鲁道夫一世被选举为神罗君主，哈布斯堡王朝建立。哈布斯堡家族攫取了阿尔卑斯山麓两侧大量领地，吞下了奥地利，从一个边疆小贵族一跃成为神罗西南方向最强大的诸侯。<br><br>这个家族的成员曾出任罗马人民的国王和神圣罗马帝国皇帝，奥地利公爵、大公、奥地利帝国皇帝，匈牙利国王，波希米亚国王，西班牙国王，葡萄牙国王，墨西哥皇帝和今法国、意大利、荷兰、比利时境内及南部斯拉夫地区若干王国、公国的国王、大公与公爵。<br><br>查理五世以后，哈布斯堡王朝分为奥地利分支和西班牙分支，以及始于玛丽亚·特雷西亚的哈布斯堡-洛林皇朝。<br><br>几乎把欧洲皇室变成了一家人，哈布斯堡家族是如何做到的？很简单，联姻。换句话说，就是靠结婚娶人家的女公爵女王占地盘。。。15世纪之后，哈布斯堡家族独占神圣罗马帝国皇帝宝座。来欣赏一下复杂的族谱：<br><div class="image-package imagebubble"><a href="https://upload.wikimedia.org/wikipedia/en/c/c3/Habsburg_Family_Tree.jpg" target="_blank" rel="external"><img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Habsburg_Family_Tree.jpg" alt=""></a></div><br>更详细的大图： <a href="http://www.chh.de.free.fr/archiv/Sonstiges/habsburg.php" target="_blank" rel="external">http://www.chh.de.free.fr/archiv/Sonstiges/habsburg.php</a><br><br><br>其中，”欧洲丈母娘”玛利亚·特蕾西亚生了16个孩子，除了5个孩子夭折以外，其余全部成为皇帝、皇后、女王。只是通过联姻和继承，哈布斯堡王室就把国土扩大到三大洲，勃艮第，西班牙，葡萄牙，匈牙利，波西米亚和美洲新大陆先后并入帝国。<br><br>哈布斯堡家族的斐迪南大公遇刺，成为一战导火索。兴盛了600年的王朝终于在战后分崩离析，帝国被共和国取代。<br><br><br>### 哈布斯堡的维也纳<br><br>哈布斯堡家族最初来到维也纳时，维也纳位于神圣罗马帝国的最东边，是坐落在边境上的偏远小镇，奥斯曼帝国或匈牙利随时可能入侵。<br><br>哈布斯堡家族唯一一位女性统治者玛利亚·特蕾西亚，在动荡的局势中登基。<br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/Kaiserin_Maria_Theresia.jpg" alt=""></div>
+
+<p>她执政期间，加强了中央集权，废除了王家领地的赋役，促使出现自耕农，还推行了义务教育，为奥地利奠定了现代化国家的基础，维也纳发展成欧洲最繁华的城市之一。</p>
+<p>奥地利的文化有一种融合的、兼容并蓄的气度。也只有这样的地方能够拥有无边的音乐，能够产生茜茜公主式的恋情。维也纳吸引了海顿、莫扎特、贝多芬、舒伯特、马勒、布鲁克纳、施特劳斯家族等等重要的作曲家，成为音乐之都。而特雷西亚女皇对巴洛克、洛可可风格的喜爱，也给后世留下了许多艺术瑰宝。</p>
+<p>参考资料:</p>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%93%88%E5%B8%83%E6%96%AF%E5%A0%A1%E7%8E%8B%E6%9C%9D" target="_blank" rel="external">哈布斯堡王朝</a></li>
+<li><a href="http://movie.douban.com/subject/24526724/" target="_blank" rel="external">哈布斯堡帝国</a></li>
+<li><a href="http://www.chh.de.free.fr/archiv/Sonstiges/habsburg.php" target="_blank" rel="external">哈布斯堡家族世系图</a></li>
+<li><a href="http://www.guokr.com/post/666395/" target="_blank" rel="external">哈布斯堡家族的下巴</a></li>
+</ul>
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<div class="image-package imagebubble"><img src="http://a2.att.hudong.com/71/34/01300000310366130006343764935.jpg" alt=""></div><br>哈布斯堡王朝（Habsburg）是欧洲历史上统治领域最广的王室。大多数欧洲国家，都与哈布斯堡家族有着千丝万缕的联系。<br><br>]]>
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="Travel" scheme="http://yoursite.com/tags/Travel/"/>
+    
+      <category term="中欧" scheme="http://yoursite.com/tags/%E4%B8%AD%E6%AC%A7/"/>
+    
+      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
+    
+      <category term="哈布斯堡王朝" scheme="http://yoursite.com/tags/%E5%93%88%E5%B8%83%E6%96%AF%E5%A0%A1%E7%8E%8B%E6%9C%9D/"/>
+    
+      <category term="奥地利" scheme="http://yoursite.com/tags/%E5%A5%A5%E5%9C%B0%E5%88%A9/"/>
+    
+      <category term="维也纳" scheme="http://yoursite.com/tags/%E7%BB%B4%E4%B9%9F%E7%BA%B3/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[中欧四国扫盲帖之二：“波西米亚”是什么鬼？]]></title>
+    <link href="http://yoursite.com/2015/09/19/central-eu-2/"/>
+    <id>http://yoursite.com/2015/09/19/central-eu-2/</id>
+    <published>2015-09-19T05:08:24.000Z</published>
+    <updated>2016-01-03T14:41:40.000Z</updated>
+    <content type="html"><![CDATA[<p>波西米亚（Bohemia）既不是食物（西米露），也不是战火纷飞的地方（波黑和克里米亚）</p>
+<div class="image-package imagebubble">  <a href="http://www.uegeek.com/wp-content/uploads/2015/09/波西米亚.png" target="_blank" rel="external"><img src="http://www.uegeek.com/wp-content/uploads/2015/09/波西米亚.png" alt="波西米亚"></a></div><br>它指一个区域，位置在今天包括布拉格在内的捷克共和国中西部地区。在历史上，它跟捷克民族的关系，可以类比”中华民族”和”黄河流域”的关系。<br><br><a id="more"></a><br><br>962年，奥托一世的加冕标志着神圣罗马帝国统治开始，波西米亚地区首先成为帝国的一部分。波西米亚其实是一个行省，占据了古捷克地区西部三分之二的区域，其中心便是布拉格。其他省还包括摩拉维亚和西里西亚。<br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/1250Bohemia.jpeg" alt=""><br><div class="image-caption" style="text-align: center">1250年的中欧</div><br></div><br>神圣罗马帝国的许多小王国中，波西米亚王国是唯一一个核心民族不是日耳曼人而是捷克人的国家。13世纪初，鄂图卡一世统治时期，波西米亚成为王国，捷克君主成为神圣罗马帝国七大选帝侯之一。<br><div class="image-package imagebubble"><img src="http://www.uegeek.com/wp-content/uploads/2015/09/7个选帝侯.jpeg" alt="7个选帝侯"></div><br><div class="image-package imagebubble"></div><br>关于神圣罗马帝国，可以参考这篇笔记：<a href="http://www.jianshu.com/p/2eb499b3f6f3" target="_blank" rel="external">德意志笔记之二：权力和信仰之争</a><br><br>&nbsp;<br><br>查理四世继承波西米亚王位后，于1355年成为德意志国王。查理四世的统治使捷克王国达到鼎盛，布拉格曾一度是圣神罗马帝国的中心。<br><br>历史上有好多个查理四世，请认准神圣罗马帝国商标~ 这时候，天朝上国正在折腾的主，是右手边这位：<br><div class="image-package imagebubble"><img src="http://www.uegeek.com/wp-content/uploads/2015/09/查理和朱元璋.png" alt="查理和朱元璋"></div><br><div class="image-caption" style="text-align: center">我们都素皇帝~</div><br>&nbsp;<br><br>从1440年起，波西米亚所有皇帝都来自哈布斯堡家族。<br><br>今天，“波希米亚”又指波希米亚主义，指一种艺术家气质、时尚潮流、反传统的生活模式。这个涵义出现在19世纪的法国。在法国人的想像中，“波希米亚人”会让他们联想到四处漂泊的吉普赛人，他们不受传统的束缚，或许还会带来一些神秘的启示。<br><div class="image-package imagebubble"><img src="http://new-img1.ol-img.com/84/735/li8Fg2W8KmW6.jpg" alt=""></div><br>现在，波希米亚主义（Bohemianism）指称那些希望过非传统生活风格的一群艺术家、作家与任何对传统不抱持幻想的人的一种生活方式。<br><br>而布波族（bobo）（亦被翻为 波波族、布尔乔亚波希米亚族），是 bourgeois bohemian（中产阶级式的波希米亚人）的缩写，为1980年代“雅痞”一词的衍生词，形容1990年代之后，因为信息时代的快速来临，随着高度的创作空间与快速的财富累积，而来到中上到上层阶级的新高级知识分子。布波族不等于雅痞。他们是信息时代的精英，兼具布尔乔亚〔中产阶级〕的消费能力与波希米亚人的创意与自由，并将创意和情感转化成为产品。布波族的崛起，带动了文化产业及美学经济的蓬勃发展。<br><div class="image-package imagebubble"><img src="http://img6.douban.com/lpic/s1085476.jpg" alt=""></div>
+
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>波西米亚（Bohemia）既不是食物（西米露），也不是战火纷飞的地方（波黑和克里米亚）</p>
+<div class="image-package imagebubble">  <a href="http://www.uegeek.com/wp-content/uploads/2015/09/波西米亚.png"><img src="http://www.uegeek.com/wp-content/uploads/2015/09/波西米亚.png" alt="波西米亚"></a></div><br>它指一个区域，位置在今天包括布拉格在内的捷克共和国中西部地区。在历史上，它跟捷克民族的关系，可以类比”中华民族”和”黄河流域”的关系。<br><br>]]>
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="Travel" scheme="http://yoursite.com/tags/Travel/"/>
+    
+      <category term="中欧" scheme="http://yoursite.com/tags/%E4%B8%AD%E6%AC%A7/"/>
+    
+      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
+    
+      <category term="捷克" scheme="http://yoursite.com/tags/%E6%8D%B7%E5%85%8B/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[中欧四国扫(ba)盲(gua)帖之一：“中欧”还是“东欧”？]]></title>
+    <link href="http://yoursite.com/2015/09/18/central-eu-1/"/>
+    <id>http://yoursite.com/2015/09/18/central-eu-1/</id>
+    <published>2015-09-18T13:37:38.000Z</published>
+    <updated>2016-01-03T14:48:14.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="u626B_u76F2_u8D34_u7531_u6765"><a href="#u626B_u76F2_u8D34_u7531_u6765" class="headerlink" title="扫盲贴由来"></a>扫盲贴由来</h3><p>出游的季节又要到了！在数次多么痛的领悟之下，00 决心要做好功课再出门，不再让去过Teotihuacan还对阿兹特克文明一无所知、到过博斯普鲁斯海峡还是看不进拜占庭和奥斯曼帝国历史的悲剧重演。</p>
+<p>虽然是临时抱佛脚的节奏，不过想了个主意：先列问题，再做功课。于是有了这个扫(ba)盲(gua)系列，希望在最后一周时间，威逼利诱自己去看看一直以来困扰的、有趣的问题。</p>
+<hr>
+<p>捷克、斯洛伐克、奥地利、匈牙利，这几个国家所在的区域，到底应该叫“中欧”还是“东欧”？</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/centralfour.png" alt=""><br><div class="image-caption"></div><br></div><br>作为地理专业的学生，自然对“中欧”的概念更熟悉，这次也终于有动力把这个问题再理一理。<br><br><a id="more"></a><br><br>中欧的历史，始于一千年前两个大佬——拜占庭帝国以及教皇的基友日耳曼民族，对该地区的基督教化。<br><br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/romevsdeutsch.png" alt=""><br><div class="image-caption"></div><br></div><br>德国、波兰、捷克、斯洛伐克、奥地利、匈牙利，这些传统地理意义上的“中欧”国家，在一战之前都处在德意志与奥匈帝国版图中。作为自然地理概念的“东欧”，本来只指俄罗斯，冷战时期才出现了范围更广的“东欧”这一政治地理概念。<br><br>wiki 上“中欧”条目是这么写的：<br><br>&gt; 中欧，欧洲中部，包括奥地利、捷克、德国、匈牙利、列支敦士登、波兰、斯洛伐克、瑞士。但受二战后冷战氛围的影响，奥地利、瑞士、列支敦士登、德国有时会被人们认为也是西欧国家的一部分，而捷克、斯洛伐克、波兰及匈牙利则也会被人普遍认为是东欧国家。<br><br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/mapofcentraleu.png" alt=""><br><div class="image-caption">欧洲分区</div><br></div>
+
+
+<p>今天，波、捷、匈、斯等国均自称“中欧国家”，以区别于罗马尼亚、保加利亚、阿尔巴尼亚、前南斯拉夫诸国等“巴尔干国家”，他们对“东欧”这个概念比较排斥。</p>
+<p>跟据亨廷顿的理论，被神圣罗马帝国统治过的匈牙利、捷克、斯洛伐克、斯洛文尼亚、克罗地亚，以及被德意志帝国和奥地利帝国统治过部分领土的波兰属于西方文明下属的<strong>天主教文明圈</strong>，不同程度地受德意志文化的影响（尤以曾有大量德国地主移民拓殖的波兰和捷克为最），大多数民众信奉罗马天主教（捷克例外，如今已是无宗教信仰者比例最高的国家之一），较早建立代议制民主政体，在东欧剧变后民主转型较为平和。被奥斯曼土耳其帝国长期统治的巴尔干半岛诸国（斯洛文尼亚和克罗地亚除外）大多属于<strong>东正教文化圈</strong>，这些国家的文明来自对拜占庭文化的学习和吸收，民众大多信奉东正教。</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/tianzhuvsdongzheng.jpg" alt=""><br><div class="image-caption">左边天主教，右边东正教</div><br></div><br>奥匈捷斯四国性格各异，想来也是有趣：捷克人很像德国人，冷静、理智、谨慎、现实、温和，没有想明白的事情不会盲目去做，对宗教传统淡薄，不喜欢正面与大国交锋，容易屈服、显得隐忍、实用主义心态明显。匈牙利是“好学生”的形象，无论追随希特勒还是斯大林时，而如今则是欧盟中的“优等生”。奥地利人则可以醉心于昔日的文化，天赐的山川风物，葡萄美酒和华尔兹，享受生活，显得潇洒、随意、散漫和自由自在。斯洛伐克呢？去了就知道了……<br><br><em> </em> <em><br><br>参考资料：
+
+</em> <a href="http://book.douban.com/subject/3332959/" target="_blank" rel="external">「中欧人文图志」，安德烈·瑟利耶，2008</a>;<br><em> <a href="http://book.douban.com/subject/6308034/" target="_blank" rel="external">「从“东欧”到“新欧洲”」，金雁，2011</a>;
+</em> 「Lonely Planet 中欧」，2014;<br><em> <a href="https://zh.wikipedia.org/wiki/%E4%B8%9C%E6%AC%A7" target="_blank" rel="external">东欧 wiki 条目</a>;
+</em> <a href="http://weknowmemes.com/2012/07/the-history-of-europe-as-told-through-country-balls/" target="_blank" rel="external">The History Of Europe As Told Through Country Balls</a>;<br><em> <a href="http://bbs.tianya.cn/post-no05-226029-1.shtml" target="_blank" rel="external">漫画欧洲史</a>
+
+</em> <em> </em><br><br><div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="u626B_u76F2_u8D34_u7531_u6765"><a href="#u626B_u76F2_u8D34_u7531_u6765" class="headerlink" title="扫盲贴由来"></a>扫盲贴由来</h3><p>出游的季节又要到了！在数次多么痛的领悟之下，00 决心要做好功课再出门，不再让去过Teotihuacan还对阿兹特克文明一无所知、到过博斯普鲁斯海峡还是看不进拜占庭和奥斯曼帝国历史的悲剧重演。</p>
+<p>虽然是临时抱佛脚的节奏，不过想了个主意：先列问题，再做功课。于是有了这个扫(ba)盲(gua)系列，希望在最后一周时间，威逼利诱自己去看看一直以来困扰的、有趣的问题。</p>
+<hr>
+<p>捷克、斯洛伐克、奥地利、匈牙利，这几个国家所在的区域，到底应该叫“中欧”还是“东欧”？</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/centralfour.png" alt=""><br><div class="image-caption"></div><br></div><br>作为地理专业的学生，自然对“中欧”的概念更熟悉，这次也终于有动力把这个问题再理一理。<br><br>]]>
+    
+    </summary>
+    
+      <category term="Travel" scheme="http://yoursite.com/tags/Travel/"/>
+    
+      <category term="中欧" scheme="http://yoursite.com/tags/%E4%B8%AD%E6%AC%A7/"/>
+    
+      <category term="匈牙利" scheme="http://yoursite.com/tags/%E5%8C%88%E7%89%99%E5%88%A9/"/>
+    
+      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
+    
+      <category term="奥地利" scheme="http://yoursite.com/tags/%E5%A5%A5%E5%9C%B0%E5%88%A9/"/>
+    
+      <category term="捷克" scheme="http://yoursite.com/tags/%E6%8D%B7%E5%85%8B/"/>
+    
+      <category term="斯洛伐克" scheme="http://yoursite.com/tags/%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[给自恋物种的三副猛药——读「人类简史」]]></title>
+    <link href="http://yoursite.com/2015/09/15/brief-history-of-humankind/"/>
+    <id>http://yoursite.com/2015/09/15/brief-history-of-humankind/</id>
+    <published>2015-09-15T14:46:04.000Z</published>
+    <updated>2016-01-03T14:50:48.000Z</updated>
+    <content type="html"><![CDATA[<p>如果说有一本书，不到五百页，没有一堆令人晕头转向的年份、人名、地名、称号，就能涵盖了人类如何崛起、影响现代生活甚巨的资本主义、一神教、自由人文主义、基因工程如何兴盛的人类历史重大脉络……那就是这本神奇的、同时摆放在“历史”和“畅销”分类里的「人类简史」。</p>
+<div class="image-package imagebubble"><img src="http://img3.douban.com/lpic/s27814883.jpg" alt=""></div>
+
+<p>与其说这是一部历史大众读物，不如说是一笺处方，开给历史学家们，更开给自恋如我们的这个物种。</p>
+<p>来来来，打开处方，看看是哪三副猛药：</p>
+<a id="more"></a>
+<h3 id="u7279_u522B_u5982_u4F60_uFF0C_u90A3_u53EA_u662F_u5E7B_u89C9"><a href="#u7279_u522B_u5982_u4F60_uFF0C_u90A3_u53EA_u662F_u5E7B_u89C9" class="headerlink" title="特别如你，那只是幻觉"></a>特别如你，那只是幻觉</h3><p>十万年前，地球上至少有6种不同的人，今天却只剩下我们这一科——称为智人（Homo sapiens）。从结果来看，智人作为最终胜出的生存者，似乎是赢得了演化的战争。不过作者一上来就掀翻了这块让全人类自我感觉良好的幕布。</p>
+<p>智人一直希望自己和其他动物有所不同，仿佛整个科就只有自己的存在。人类已经习惯以为自己是唯一的“人”，执着地寻找着证据，试图证明地球在某个时间点上只会有单一人种，而我们正是进化的最终果实。而事实是，多个人种共存是常态，而且智人在长达数百万年的时间内，都是弱小、边缘的生物，位于食物链的中间位置。一直到10万年前，智人十分偶然地学会使用火和语言，才突然跃居食物链顶端。这也许就是自恋的开端。</p>
+<h3 id="u6F14_u5316_u6CA1_u6709_u65B9_u5411_uFF0C_u5386_u53F2_u65E0_u4ECE_u6B63_u4E49"><a href="#u6F14_u5316_u6CA1_u6709_u65B9_u5411_uFF0C_u5386_u53F2_u65E0_u4ECE_u6B63_u4E49" class="headerlink" title="演化没有方向，历史无从正义"></a>演化没有方向，历史无从正义</h3><p>距今7万到3万年前，智人中出现了新的思维和沟通方式，这场认知革命让智人具备三种能力，奠定了与其他物种的区隔：</p>
+<ul>
+<li>能够传达大量环境信息</li>
+<li>能够传达八卦（社会关系信息），组织更大、更有凝聚力的团体。“讨论虚构的事物”是智人语言最独特的功能。不仅让人类拥有想象，而且可以“一起”想象。</li>
+<li>能够传达关于虚构概念的信息，使得大量陌生人之间可以合作、社会行为快速创新<br>一直以来，智人以进化胜利者自居。学会使用火，制造各种工具，发明语言，探索宇宙万物的秘密，建筑起宏伟的人类文明，经历认知革命、农业革命、科技革命……几乎是一个筚路蓝缕、屌丝逆袭的华丽故事。</li>
+</ul>
+<p>这时，作者又一把抓过这个剧本撕得粉碎：智人的演化，真的是“好”的、有“目的”、有“意义”的吗？</p>
+<p>记得第一次讨论“’发展’这个概念是否具有指向性，’好’的变化才是发展吗？”问题，是在薛德升老师的课堂上。长久以来，我们总是一厢情愿地相信，事物一直在“前进”，发展是“变得更好”。这种自信从何而来？</p>
+<p>智人在大约1万年前开始了农业革命——被作者称为史上最大骗局的一场变革。农业革命让食物总量增加，但量的增加并不代表吃得更好、过得更悠闲，反而只是造成人口爆炸，而且产生一群养尊处优、娇生惯养的精英分子。普遍来说，农民的工作要比采集者更辛苦，而且到头来的饮食还要更糟。</p>
+<p>这幕后的黑手既不是国王，不是牧师，也不是商人，而是那极少数的植物物种，其中包括小麦、稻米和马铃薯。人类以为自己驯化了植物，但其实是植物驯化了智人。从从无足轻重的野草变成无所不在的口粮，小麦的秘诀就在于操纵智人、为其所用。</p>
+<p>时至今日，画风已跟1万年前相差了10万个毕加索。我们以为自己省下了时间，其实是把生活的步调加速成过去的十倍快，于是整天忙忙碌碌、焦躁不安。我们从农业革命能学到的最重要一课，很可能就是<strong>物种演化上的成功并不代表个体的幸福</strong>。</p>
+<p>天生自然的生物学，可能性几乎无穷无尽。然而，文化却要求必须实现某些可能性，而又封闭了其他可能性。文化总会说，它只是禁止“不自然的事”。但从生物学的角度来看，这世界上根本没有什么是不自然的。<strong>只要有可能发生的事，就是自然</strong>。</p>
+<p>演化本来就没有唯一目的，只是我们更愿意相信以自己为主角的故事情节。</p>
+<h3 id="u57FA_u4E8E_u6545_u4E8B_u7684_u81EA_u6211_u7262_u7B3C"><a href="#u57FA_u4E8E_u6545_u4E8B_u7684_u81EA_u6211_u7262_u7B3C" class="headerlink" title="基于故事的自我牢笼"></a>基于故事的自我牢笼</h3><p>无论是现代国家、中世纪教堂、古老城市，任何大规模人类合作的根基，都在于某种只存在于集体想象中的虚构故事。除了存在与人类共同的想象之外，这个宇宙中根本没有神、没有国家、没有钱、没有人权、没有法律，也没有正义。<strong>我们相信某种秩序，并非因为它是客观的现实，而是因为相信它可以让人提升合作效率、打造更美好的社会。</strong></p>
+<p>虚构出来的组织能够正常运作，靠的是讲故事，而讲故事难就难在让人相信。于是，历史也就不断围绕这个问题打转：究竟某个人是如何说服数百万人去相信神、民族或是有限公司这些故事？</p>
+<p>自从认知革命之后，智人就能依据“人造直觉”——文化来迅速调整行为。但是在文化快车道上，智人不知不觉为自己建造了一个美轮美奂的牢笼，深陷在想象的秩序中汲汲营营。</p>
+<p>现代人之所以要花费大把银子到国外度假，因为他们真正相信了浪漫的消费主义神话。浪漫主义告诉我们，为了要尽量发挥潜力，就必须尽量积累不同的经验。必须体会不同的情感，尝试不同的关系，品尝不同的美食，还必须学会欣赏不同风格的音乐。而消费主义告诉我们，想要快乐，就该去买更多的产品和服务。鼓励多元多样的浪漫主义又与消费主义一拍即合，催生了贩卖各种“体验”的市场。</p>
+<p>追求各种欲望，我们乐此不疲，甚至发展出了极其精密的组织、制度、方法论、工具、仪式。但是很少人会突然抽风问一问：究竟为什么我们会想要这些？比如，从出生到死亡，男性必须一辈子不断通过各种仪式和表演来证明自己真是条汉子。而女性必需不断说服自己和其他人自己散发着女人味。如果仅仅是基因的计谋，为免也太过小题大做。其中又有多少文化和自我建构的成分，我们是怎么一步步催眠自己去相信这一切，甚至进入集体无意识状态？</p>
+<p>更可怕的是，这座华丽的牢笼自身可以生长演化。每一次我们以为自己打破了监狱的高墙、迈向自由的前方，其实只是到了另一间更大的监狱，把活动范围稍稍加以扩大。</p>
+<h3 id="u8FD9_u4E2A_u4E16_u754C_u4F1A_u597D_u5417_uFF1F"><a href="#u8FD9_u4E2A_u4E16_u754C_u4F1A_u597D_u5417_uFF1F" class="headerlink" title="这个世界会好吗？"></a>这个世界会好吗？</h3><p>支撑“人造直觉”这座华丽的文化牢笼的，是三种全球秩序：经济上的货币秩序，政治上的帝国秩序，宗教上的全球性宗教。</p>
+<p>金钱是有史以来最普遍也最有效的互信系统，能够跨越几乎所有文化鸿沟。宗教信仰的重点是自己相信，但金钱信仰的重点是别人相信。</p>
+<p>帝国是一种政治秩序，统治原本属于不同文化、有各自领地的民族，疆域无限扩张，它是造成民族多样性大幅减少的主因之一。</p>
+<p>而宗教的重要性，在于让脆弱的架构有了超人类的合法性。有了宗教之后，就能说法律并不只是人类自己的设计和想象，而是来自一种绝对的神圣最高权柄。这样一来，至少某些基本的法则便不容动摇，从而确保社会稳定。</p>
+<p>金钱+帝国+宗教，智人就这样躲进了自己一手构筑的堡垒中，每前进一步，都把本已在空中的阶梯垒得更高，却全然不知阶梯将通往何方。</p>
+<p>那么问题来了，如果后来的人并没有比较快乐，我们为什么要发展农业、城市、文字、钱币、帝国、科学和工业呢？究竟如何影响人类的幸福，这是我们对历史理解的最大空白之处。</p>
+<p>如果快乐是在于感受快感，想要更快乐，就得操纵生化系统。如果快乐是在于觉得生命有意义，想要更快乐，就得骗自己骗的更彻底。还有没有第三种可能呢？</p>
+<p>作者认为，佛教将会是人类的解药。欲念造成不满：遇到不喜欢的事就想躲开，遇到喜欢的就想维持并增加这份愉快。佛教倡导人们看清事物的本质而不是它带来的感受。虽然感受悲伤，但不要希望悲伤结束，于是虽然仍有悲伤，也能不再为此而困。虽然感受快乐，但不要希望快乐继续，于是虽然仍有快乐，也能不是去心中的平静。</p>
+<p>但，这真的是终极意义吗？人类要追求的是离苦得乐吗？如果我们一早已经获得内心平静，感觉生命充满喜乐，就真的圆满了吗？如果说没有什么值得动用我们的七情六欲，那为什么又要去追求平衡呢？作为生命的一种形态，作为亿万物种中独特的一支，我们的使命又是什么？</p>
+<p>这时，眼前不自觉出现了樱花的图景。怒放，绚烂，刹那芳华。这是不是才是生命该有的张力，也是每个物种存在的意义——顺其自然，绽放生命的张力，共同塑造养育我们的山川土地。</p>
+<p>是什么彰显了某个物种的独特性？这些独特性就是生命的张力，即便它将导致最终的灭亡。就像烟火，并不会因为最终注定成为灰烬而拒绝绽放。存在的意义，就是当下的存在本身，而不是繁衍、竞争、胜利、快乐、力量等等等等。生命的意义，就在于彰显生命力，呈现生命的过程和可能性，仅此而已。</p>
+<h3 id="u9898_u5916_uFF1A_u5199_u4F5C_u7684_u79D8_u5BC6"><a href="#u9898_u5916_uFF1A_u5199_u4F5C_u7684_u79D8_u5BC6" class="headerlink" title="题外：写作的秘密"></a>题外：写作的秘密</h3><p>一本书看完，除了回肠荡气的内容，还收获了写作的秘密。这本书不但全然没有一般历史书的陌生疏离枯燥感，而且读来让人欲罢不能。除了纵横开阖的视野和独特的叙述视角，还有两点特别值得琢磨和学习。</p>
+<h4 id="u5148_u6709_storyboard_uFF0C_u540E_u6709_u6587_u5B57"><a href="#u5148_u6709_storyboard_uFF0C_u540E_u6709_u6587_u5B57" class="headerlink" title="先有 storyboard，后有文字"></a>先有 storyboard，后有文字</h4><blockquote>
+<p>如果到200万年前的东非逛一逛，你很可能会看到一群很像人类的生物：有些妈妈一边哄着小婴儿，一边还得把玩疯的小孩抓回来，忙得团团转；有些年轻人对社会上种种规范气愤不满，也有些垂垂老矣的老人家只想图个清静；有肌肉猛男捶着自己的胸膛，只希望旁边的美女能够垂青；也有年长的充满智慧的大家长，对这一切早就习以为常。这些远古人类，和一般动物比起来就是没什么特别。他们万万没有想到，他们的后代某一天竟能在月球上漫步、分裂原子、了解基因码，还能写写历史书。<br>看这段文字时的感受，就是大脑忍不住脑补画面！想写出生动的文字，其实应该先把 storyboard 想好，每个镜头的布景怎样，人物怎样活动，情节如何展开，镜头如何转换……剩下的只不过是把脑海中具体生动的画面描述出来。</p>
+</blockquote>
+<p>再次佩服阳老写作班的神总结：大脑喜欢模式、喜欢惊奇、喜欢情感、喜欢捷径。</p>
+<h4 id="u7528_u95EE_u9898_u70B8_u5F00_u8111_u6D1E"><a href="#u7528_u95EE_u9898_u70B8_u5F00_u8111_u6D1E" class="headerlink" title="用问题炸开脑洞"></a>用问题炸开脑洞</h4><p>读文字为什么容易累？一是抽象含义转化为具象理解需要成本，二是无法保持长时间的刺激，让认知资源继续集中。作者很好地解决了第二个问题：问足够聪明的问题，给足够有趣的答案，让头脑有节奏地处于亢奋状态。</p>
+<p>随手抓个栗子：</p>
+<blockquote>
+<p>如果除了智人以外，尼安德特人或丹尼索瓦人也存活下来，这个世界会是什么模样？举例来说，宗教信仰会是什么样子？《圣经》会不会说尼安德特人也和智人一样有灵魂？耶稣牺牲自己，会不会是为了要洗净丹尼索瓦人的罪？《古兰经》会不会对所有人类物种一视同仁，都为他们在乐园里占个位子？孔子会不会说我们也要“仁者爱人”地对待尼安德特人和丹尼索瓦人？尼安德特人会不会在古罗马军团中服役，又会不会也服侍着中国庞大的朝廷？美国《独立宣言》所揭橥而坚信的“人生而自由平等”，指的会不会是所有“人属”的物种？马克思会不会呼吁所有人类物种的工人都该团结起来？<br>也许写作真的没有捷径。对人类共同命运的悲悯、执着于求解终极问题、澎湃的求知热情、深邃的忧患意识、个人情绪的极致表达，就是那些最好的技巧。</p>
+</blockquote>
+<p>&nbsp;</p>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>如果说有一本书，不到五百页，没有一堆令人晕头转向的年份、人名、地名、称号，就能涵盖了人类如何崛起、影响现代生活甚巨的资本主义、一神教、自由人文主义、基因工程如何兴盛的人类历史重大脉络……那就是这本神奇的、同时摆放在“历史”和“畅销”分类里的「人类简史」。</p>
+<div class="image-package imagebubble"><img src="http://img3.douban.com/lpic/s27814883.jpg" alt=""></div>
+
+<p>与其说这是一部历史大众读物，不如说是一笺处方，开给历史学家们，更开给自恋如我们的这个物种。</p>
+<p>来来来，打开处方，看看是哪三副猛药：</p>]]>
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="人类简史" scheme="http://yoursite.com/tags/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/"/>
+    
+      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[给自己开一张十年的支票]]></title>
+    <link href="http://yoursite.com/2015/09/14/10year-check/"/>
+    <id>http://yoursite.com/2015/09/14/10year-check/</id>
+    <published>2015-09-14T07:51:06.000Z</published>
+    <updated>2016-01-03T14:54:12.000Z</updated>
+    <content type="html"><![CDATA[<p>给自己开一张支票，没有金额，只有时间。十年，就是支票的金额，也是我最大的资产，能给到自己最阔绰的资源。如果拿着自己给自己的天使投资——仅有的、最珍贵的资源——要用这十年来做什么好？</p>
+<p>一切的节约，归根到底都是时间的节约。节约的时间用来干嘛？人想要的东西到底是什么？</p>
+<p>我想，大概是，哄自己开心。</p>
+<p>那么就开心地做这几件事吧：<br><a id="more"></a></p>
+<p></p>
+<p><section class="tn-Powered-by-XIUMI V5"></section><section class="tn-Powered-by-XIUMI V5"></section><section class="tn-Powered-by-XIUMI V5"></section></p>
+<h3 id="u4E00_u3001_u62D3_u5C55_28_u81EA_u5DF1_u7684_29_u77E5_u8BC6_u7586_u57DF"><a href="#u4E00_u3001_u62D3_u5C55_28_u81EA_u5DF1_u7684_29_u77E5_u8BC6_u7586_u57DF" class="headerlink" title="一、拓展(自己的)知识疆域"></a>一、拓展(自己的)知识疆域</h3><p><section class="tn-Powered-by-XIUMI V5"></section><section class="tn-Powered-by-XIUMI V5"></section><section class="tn-Powered-by-XIUMI V5">并没有野(neng)心(li)帮全人类拓展知识疆域，只是希望把自己所在的井底，变得稍微宽敞一点儿，不再为一些无谓的小事伤神。即便get不到诗与远方，也能够少一些苟且。当然，最重要的是在开疆拓土的过程中 high 起来，把自己哄得开开心心。</section></p>
+<p>经受了多年传统教育的毒害，以及十年post-school 的自我折腾，大概信服于几个公开的秘密：</p>
+<h4 id="1-__u505A_u77E5_u8BC6_u7684_u9ED1_u5BA2"><a href="#1-__u505A_u77E5_u8BC6_u7684_u9ED1_u5BA2" class="headerlink" title="1. 做知识的黑客"></a>1. 做知识的黑客</h4><p>能不能学、能不能学会，其实区别只在于心态。知识不是用来仰望的，是用来欣赏和 hack 的。学东西跟游戏里的升级打怪并无二致，需要有目标、有规则、有反馈、有自主行为，而游戏高手都会尽力破解规则，达到数值上限。</p>
+<h4 id="2-__u901A_u8FC7_u4E3B_u9898_u548C_u9879_u76EE_u5B66_u4E60"><a href="#2-__u901A_u8FC7_u4E3B_u9898_u548C_u9879_u76EE_u5B66_u4E60" class="headerlink" title="2. 通过主题和项目学习"></a>2. 通过主题和项目学习</h4><p>从小，我们被告知上学要上语文课、数学课、体育课……考试要求背这个那个，还有标准答案。而有趣和有效的学习过程，却都基本来自主动去研究一个领域问题，或者亲自动手把某样东西做出来。</p>
+<p>阅读也是类似，总是今天听说某本书挺有趣，明天畅销书榜又上榜一本新书，后天刷豆瓣又添了一本想读。虽然很多真正有用有趣的知识都来自“偶遇”，但是散兵游勇地做些布朗运动，毕竟没有心机婊般高举高打来得有效——以及，能收获更多肉体和精神上的痛苦和高潮。集中一个时期密集吸收和思考同一个主题的知识和问题，能最快建立起框架索引，发现模式和本质——既然投资了时间，还是不要做亏本生意。</p>
+<h4 id="3-__u4EE5_u6559_u4E3A_u5B66"><a href="#3-__u4EE5_u6559_u4E3A_u5B66" class="headerlink" title="3. 以教为学"></a>3. 以教为学</h4><p>唯一检验标准，不解释。</p>
+<h4 id="4-__u6267_u884C_u610F_u56FE"><a href="#4-__u6267_u884C_u610F_u56FE" class="headerlink" title="4. 执行意图"></a>4. 执行意图</h4><p>想多做少也好，拖延也好，眼高手低也好，虎头蛇尾也好，都不需要太当回事，更不需要如临大敌地战斗。每天对着傻乎乎的大脑直接说：if <strong><em> then </em></strong>（如果8点半到家，9点之前给自己拼个乐高雪糕出来），它就照做了，霸道总裁也能成绕指柔。</p>
+<h3 id="u4E8C_u3001_u6784_u5EFA_u5C0F_u5C0F_u7684_u4E4C_u6258_u90A6"><a href="#u4E8C_u3001_u6784_u5EFA_u5C0F_u5C0F_u7684_u4E4C_u6258_u90A6" class="headerlink" title="二、构建小小的乌托邦"></a>二、构建小小的乌托邦</h3><p>人活着的引擎，是希望。没有无缘无故的爱恨，也没有天长地久的希望。悲观主义者的乐观，也许来自自我推销的乌托邦。</p>
+<p>希望建起一个小小的乌托邦，是送给最爱我的两个人的乌托邦，也是送给自己的乌托邦。现在开始，十年时间，也许可以。</p>
+<h3 id="u4E09_u3001_u5B66_u4E60_u7231_u4E24_u4E2A_u4EBA"><a href="#u4E09_u3001_u5B66_u4E60_u7231_u4E24_u4E2A_u4EBA" class="headerlink" title="三、学习爱两个人"></a>三、学习爱两个人</h3><p>一个是自己，一个是最爱的你：</p>
+<blockquote>
+<p>学习怎么爱自己，想给你的那些最好的东西，也给自己一份；</p>
+<p>学习怎么成为自己，在别人贴过来的标签之上，有更耀眼的自我标签；</p>
+<p>学习怎么变得坚强，守护来之不易的温柔；</p>
+<p>学习怎么全然接受你，就像慢慢学会全然接受自己；</p>
+<p>学习怎么结伴去发现彼此的秘密，以及世界来不及细看的美好；</p>
+<p>学习怎么跟你分享生命中那些闪光的分秒，以及易逝的纯粹和感怀；</p>
+<p>学习怎么真正拥有，先懂得失去怎么接受；</p>
+<p>学习即使你从来没有来到我身边，或者我没能停驻在你的念想中，我依然会是一个独特的、部分为你而独特的人。</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>十年，出发啦</p>
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>给自己开一张支票，没有金额，只有时间。十年，就是支票的金额，也是我最大的资产，能给到自己最阔绰的资源。如果拿着自己给自己的天使投资——仅有的、最珍贵的资源——要用这十年来做什么好？</p>
+<p>一切的节约，归根到底都是时间的节约。节约的时间用来干嘛？人想要的东西到底是什么？</p>
+<p>我想，大概是，哄自己开心。</p>
+<p>那么就开心地做这几件事吧：<br>]]>
+    
+    </summary>
+    
+      <category term="00" scheme="http://yoursite.com/tags/00/"/>
+    
+      <category term="叽歪" scheme="http://yoursite.com/categories/%E5%8F%BD%E6%AD%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[带着镣铐跳舞的生存机器——读自私的基因[下]]]></title>
+    <link href="http://yoursite.com/2015/08/20/selfish-gene-2/"/>
+    <id>http://yoursite.com/2015/08/20/selfish-gene-2/</id>
+    <published>2015-08-20T13:04:11.000Z</published>
+    <updated>2016-01-03T15:00:34.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="u75C5_u6BD2_u7684_u75C5_u6BD2_uFF0C_u89C5_u6BCD_u7684_u89C5_u6BCD"><a href="#u75C5_u6BD2_u7684_u75C5_u6BD2_uFF0C_u89C5_u6BCD_u7684_u89C5_u6BCD" class="headerlink" title="病毒的病毒，觅母的觅母"></a>病毒的病毒，觅母的觅母</h3><p>续上一篇，基因力量之强大，我们已经有了很多理解。</p>
+<p>什么是生命？基因是否只有性细胞繁殖一条通路？如果仅就“能够进行复制”这一点出发，生命并不只有一种新式。病毒就是另一种形式的“基因”，它不去操控生存机器，而是直接附着在寄主那儿，有着非比寻常的自我复制和传播扩散能力。又比如，人类发明了不一样的“生命体”、自我繁殖能力更强——文化。</p>
+<p>道金斯再次抛出一个比自私的基因更有冲击力的概念：产生于人类文化“原始汤”中的<strong>文化传播单位或模仿单位</strong>—— Meme/觅母/模因。<br><a id="more"></a></p>
+<blockquote>
+<p>曲调、概念、妙句、时装、制锅或建造拱廊的方式等都是觅母。正如基因通过精子或卵子从一个个体转移到另一个个体，从而在基因库中进行繁殖一样，觅母通过从广义上说可以称为模仿的过程从一个大脑转移到另一个大脑，从而在觅母库中进行繁殖。当你把一个有生命力的觅母移植到我的心田上时，事实上你把我的大脑变成了这个觅母的宿主，使之成为传播这个觅母的工具，就象病毒寄生于一个宿主细胞的遗传机制一样。<br>看到这里，甚至让人产生一种阴谋论的想法：道金斯花了一本书说服读者接受自私基因的背后目的，其实是为了扩散这个关于觅母的“觅母”！觅母这个概念一抛出，立马就能在读者脑海中扎根生长。每个人的无数经验都可以用来浇灌这个幼小却挠人的概念。。</p>
+</blockquote>
+<p>能穿越时间的事物，才是真正牛逼。财富再多，200年后呢，1000年后呢？还不是灰飞烟灭。穿越时间长廊，谁最成功？物种吗？人类吗？是基因，是模因。</p>
+<p>这让人想到一个有趣的问题：最具病毒性、生命力的觅母都有哪些？让我试着举3个栗子来说明：</p>
+<ol>
+<li>让孩子赢在起跑线一个邪恶的觅母。哪个家长听了，不会感到（哪怕一丝）焦虑？有多少不理智的投资，都是因这句话而起？有多少家长，都不自觉地传播这句话？</li>
+<li>三大宗教宗教和其教义，应该是生命力最强大的大型显性觅母。人们自愿且虔诚地献身于复制它的事业中。宗教就像基因，操纵着信徒建立起生存机器——宗教组织，进一步有了宗教建筑、制度、文化等等。宗教和文化，同化过无数骁勇善战的民族，帮助多少人重建了世界观（其实是替代了个体原本孱弱的文化等位基因，嗯）</li>
+<li>时间这是个比宗教留存更久，对人类生活影响更大的隐性觅母。时间并不客观存在（关于这个的争议暂且忽略），但是从人类文明发端开始，对这个觅母的传播和巩固就没有停止过。时钟被发明，时间是不同民族和文化的公共语言，成为现代文明的根基，更不要说时间觅母成功借用“生命有限”的概念，成为现代文明的基本恐惧之一。<br>于是似乎可以总结一下觅母的特征：</li>
+</ol>
+<ul>
+<li>与日常生活息息相关</li>
+<li>极易理解、可以自动脑补并具象化，形成行动号召</li>
+<li>唤起内心深处的恐惧或欲望，是使人上瘾的 comfort<br>不得不承认，其实我们都是各种各样觅母的生存机器。只不过，作为机器本身，我们还可以产生全新的觅母。</li>
+</ul>
+<h3 id="u4E16_u754C_u5982_u4F55_u4ECE_u6B64_u4E0D_u540C"><a href="#u4E16_u754C_u5982_u4F55_u4ECE_u6B64_u4E0D_u540C" class="headerlink" title="世界如何从此不同"></a>世界如何从此不同</h3><p>书读完，世界观被刷新。</p>
+<p>我们观看世界到底获得了什么样的新维度呢？进化习得的生存策略，对我们的影响到底有多大？作为生存机器的我们，到底该追寻什么意义？我们有可能赢得进化战争吗？</p>
+<p>没法回答这些终极问题，但可以试着给自己列几条新的指南：</p>
+<h4 id="u8BA4_u8BC6_u4F5C_u4E3A_u751F_u5B58_u673A_u5668_u7684_u5C40_u9650_u6027"><a href="#u8BA4_u8BC6_u4F5C_u4E3A_u751F_u5B58_u673A_u5668_u7684_u5C40_u9650_u6027" class="headerlink" title="认识作为生存机器的局限性"></a>认识作为生存机器的局限性</h4><p>时至今日，人类大脑已经进化到一个程度，使我们得以背叛自身的自私基因。基因如何做到隔绝在机器体内而能够预测未来，是个难题。一个解决办法是预先赋予生存机器以学习能力。随着演化的进行，机器的精巧程度如此之高，基因已经将越来越多的决策交由机器自行判断。问题是，我们已经进入一个生存环境急剧变化的时代，生存机器常常来不及根据变化做出反应，更不要说潜藏在机器中间接操纵外部的基因了。人类根据基因过时的资料做出的决定，多半是错误的。作为人这类物种，我们看到蛇会本能害怕，看到高蛋白高热量的肉和糖会下意识兴奋，我们的认知始终有限，大脑容易短路而产生各种谬误…… 认识到一点，就是极好的~</p>
+<h4 id="u6210_u4E3A_u5C11_u6570_u6D3E_u4E5F_u6CA1_u4EC0_u4E48_u5927_u4E0D_u4E86"><a href="#u6210_u4E3A_u5C11_u6570_u6D3E_u4E5F_u6CA1_u4EC0_u4E48_u5927_u4E0D_u4E86" class="headerlink" title="成为少数派也没什么大不了"></a>成为少数派也没什么大不了</h4><p>受基因操纵的我们，生活在以生殖繁衍为主题的社会中，半完成任务半享受地按照预置程序认真运行着。我们死后可以遗留给后代的东西有两种：基因和模因/觅母。但如果我这台机器的出厂设置出了点小 bug，怎么办？几乎可以预见，我这辈子在基因方面无所贡献。但反正基因库压根不缺我一台机器呀！！</p>
+<p>任何“主流”，无外乎是已经足够强大基因和模因/觅母的统治环境。逃出基因的手掌心比较难，但是摆脱某些模因/觅母似乎可以做到。也许我可以选择成为某些模因/觅母的机器，勤勤恳恳地传播（已经有苗头，虽然不会是任何宗教）。或者，哪天我掌握了更高阶的玩法，成为制造觅母的机器，如同我的偶像们一样，短短一生，却留下财富无数（其实都是模因）。</p>
+<h4 id="u533A_u5206_u6E05_u695A_u654C_u4EBA_u548C_u670B_u53CB"><a href="#u533A_u5206_u6E05_u695A_u654C_u4EBA_u548C_u670B_u53CB" class="headerlink" title="区分清楚敌人和朋友"></a>区分清楚敌人和朋友</h4><p>作为生存机器的我们，很容易陷入到个体的竞争中。但是，进化中的合作可能远比竞争带来的收益大。物种与物种，个体与个体之间最大的“敌人”，也许是制定规则的“银行家”（见第十二章），而不是跟我们的阶级兄弟。将这个原则放大到其他领域，也同样适用。我们应该在生活的哪些方面追求零和博弈，又在哪些方面追求非零和博弈呢？这是个值得经常思考的问题。同最近流行的“从零到一”风潮类似，进化中的合作告诉我们，要去寻找增量，寻找系统中不合理的规则并联合其他力量一起去打破它，然后才能获得比原来存量市场大得多的回报。</p>
+<h4 id="u5BFB_u627E_u65B0_u7684_u4EF7_u503C"><a href="#u5BFB_u627E_u65B0_u7684_u4EF7_u503C" class="headerlink" title="寻找新的价值"></a>寻找新的价值</h4><p>只属于个体层面的价值、受基因无脑驱使而追逐的价值，其实并没有多大意思（比如生存、财富、安全感、社交）。我并不是说这些不重要，而是觉得既然这些是天然属性，本能就会使然。如果我们用 hack 游戏规则的角度来看，是不是可以通过钻研游戏规则找到一些好玩的玩法和彩蛋？有哪些能力，是我们被赋予原本用来运载基因，但是又可以为我们所用，去追逐其他更有意思的事物的？作为一台卑微的生存机器，我们是不是也能制造出穿越时间的“作品”？</p>
+<hr>
+<p>附</p>
+<p>道金斯 TED 演讲: <a href="http://open.163.com/movie/2014/6/B/F/M9SD9IA5R_M9SDQFSBF.html" target="_blank" rel="external">Militant atheism</a></p>
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="u75C5_u6BD2_u7684_u75C5_u6BD2_uFF0C_u89C5_u6BCD_u7684_u89C5_u6BCD"><a href="#u75C5_u6BD2_u7684_u75C5_u6BD2_uFF0C_u89C5_u6BCD_u7684_u89C5_u6BCD" class="headerlink" title="病毒的病毒，觅母的觅母"></a>病毒的病毒，觅母的觅母</h3><p>续上一篇，基因力量之强大，我们已经有了很多理解。</p>
+<p>什么是生命？基因是否只有性细胞繁殖一条通路？如果仅就“能够进行复制”这一点出发，生命并不只有一种新式。病毒就是另一种形式的“基因”，它不去操控生存机器，而是直接附着在寄主那儿，有着非比寻常的自我复制和传播扩散能力。又比如，人类发明了不一样的“生命体”、自我繁殖能力更强——文化。</p>
+<p>道金斯再次抛出一个比自私的基因更有冲击力的概念：产生于人类文化“原始汤”中的<strong>文化传播单位或模仿单位</strong>—— Meme/觅母/模因。<br>]]>
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="进化" scheme="http://yoursite.com/tags/%E8%BF%9B%E5%8C%96/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[报告：前方没有上帝出没——读自私的基因[上]]]></title>
+    <link href="http://yoursite.com/2015/08/20/selfish-gene-1/"/>
+    <id>http://yoursite.com/2015/08/20/selfish-gene-1/</id>
+    <published>2015-08-20T12:58:24.000Z</published>
+    <updated>2016-01-03T15:03:13.000Z</updated>
+    <content type="html"><![CDATA[<p>一句话：这是一本早读早超生的书，评分五星。</p>
+<div class="image-package imagebubble"><img src="http://img3.douban.com/lpic/s11214645.jpg" alt=""></div><br>笔记之前，介绍一下作者。理查德·道金斯（Richard Dawkins）是英国著名演化生物学家、动物行为学家和科普作家。相关资料网上很多，其中有一点值得一提，他同美国哲学家丹尼尔·丹尼特、神经科学家山姆·哈里斯和已故的英裔美国作家克里斯托弗·希钦斯常常一起被称为“新无神论的四骑士”。看完自私的基因，就能理解如果道金斯不是无神论者，那简直是见鬼了。<br><br><a id="more"></a><br><br><br>### 五星的理由<br><br>#### 升级世界观必备<br><br>世界观是神马？自从韩岳父送出一句“没有观过世界，哪来的世界观”，似乎把原本扒拉在这个词上面各种装逼的外衣全撕扯下拉，露出了丫本来的面目：世界观，不就是怎么看待世界嘛。那么，看遍了世界，就可以升级世界观了么？并不是。解决问题，必需跳到盒子之外。同理，升级世界观，得通过“升维”达成：原来是一维视角，得换成二维的，世界才能跟着（在你眼里）换个模样。<br><br>人的最大局限，无外乎“时”和“空”：无法穿越时间长廊，也无法跨越星辰大海。而有的理论，却能一下子把时空之锁打开，伴随“咔哒”一声解锁，身之所处原点的横纵坐标，瞬间延伸至无尽，不但有视野豁然开朗的惊奇，更多是面对赤裸裸的新世界时感到的孤立无援。高清无码的新世界让人因为信息过载而头脑发胀、倒吸一口凉气：以前我特么都是怎么过的呀……<br><br>以前看书少，这两年才接触这两本升级世界观的书，想来有点懊恼。一本是用来空间升维的《三体》（让你小时候不看科幻，开窍晚啊）。从三尺身躯占不到的几寸弹丸之地，一下跃进茫茫星系，在漆黑无边的宇宙黑暗森林中，尽物种之力也无法推迟哪怕一秒被降维攻击的灭顶之灾。另一本，就是用来时间升维的《自私的基因》。跟几乎永垂不朽的基因相比，人短短的一生简直短得来不及拿出手机拍照。物种的特征和习性，经过漫漫时间长河，才得以形成和稳定。一个人的爱恨情仇，又算得上什么呢？（已被洗脑状）<br><br>#### 有趣的人，写有趣的书<br><br>五星的理由，远不止惊世骇俗的论调。道金斯作为多本畅销书科普作家，深知怎么写一本有趣的书。这本书里的比喻之多、质量之高，让人恨不能想让道金斯也写写其他太不友好的学科科普。。。每每在读者将要费力脑补的节骨眼上，道金斯都能华丽丽地举出例子来帮助理解。比如用房间、书橱、设计图、卷、页来比喻细胞、DNA基因、染色体、等位基因，用桨手比喻合作的基因，简直让人忘记不能。又比如这个：<br>&gt; 个体是不稳定的，它们在不停地消失。染色体也像打出去不久的一副牌一样，混合以致被湮没。但牌本身虽经洗牌而仍存在。在这里，牌就是基因。基因不会被交换所破坏，它们只是调换伙伴再继续前进。<br>跟专业的科学论著不同，看道金斯的书，读者能感受到自己的存在，感受到这位立场鲜明的斗士时时刻刻在与我们对话，巧妙推销他的理论。无论是絮絮叨叨的实验描述，还是狡黠的自问自答，一位内里不老实但装作一本正经的萌萌哒教授形象，总是不经意浮现出来。<br><br>安利了那么多，是时候复习一下书中的精华了。<br><br>### 生命和进化的秘密<br><br>虽然书名是“自私的基因”（道金斯自己都承认书名并不理想），这本书的重点绝对不在“自私”而在“基因”，而且自私也不是我们理解的个体、主观的、道德意义上的自私，而是一种盲目的、无意识的、近乎出厂内置程序一般的生存命令，更多是自私的行为本身。<br><br>这本书惊世骇俗的观点，首当其冲是生存机器。<strong>驱动生命演化、生物生存繁殖的主角，是基因。而种类繁多的生物，都是基因用于繁殖演化的生存机器。个体会灭亡，基因却不朽。</strong><br><br>ps 道金斯对基因的定义：染色体物质的任何一部分，它能够作为一个自然选择的单位对连续若干代起作用。<br><br>生命最初从“原始汤”中偶然形成，其中有一种特殊的分子，属性逆天——能够自我复制。于是，生命的演化由此拉开序幕。生命的本质，就在于复制。不但得生存时间足够长、有数量保证，而且需要精确 copy 和 paste。当然，各种差错肯定会发生，但这又正好为更利于生存的变异提供了可能，最终形成了自然生态的终极大法——多样性。<br><br>道金斯指出，进化的单位是基因，而不是个体，不是种群，也不是物种。从基因的利益（这里可以理解为生存的机会）出发，才能解释看似矛盾的利他现象。复制基因的出现，不仅仅是为了生存，还是为自己制造赖以生存的容器，也就是各种生物体。能够生存下来的复制基因，都是那些为自己构造了生存机器以安居其中的复制基因。<br><br>演化到今天，远古时期的复制基因们安稳地寄居在庞大的“机器人”体内，通过迂回曲折的间接途径与外部世界联系，并通过遥控操纵外部世界。它们存在于我们的躯体内，创造了我们的肉体和心灵，而保存它们正是我们存在的终极理由。今天，我们称它们为基因，而我们就是它们的生存机器。<br><br>### 自然界上演的好戏——生存博弈<br><br>基因的生存机器们就这么日复一日、年复一年地履行着使命：帮助基因扩大在整个基因库/池中的数量。随着时间的推移，复制基因为了保证自己在世界上得以存在下去而采用的技巧和计谋也逐渐改进。基因驱使物种不断调整以形成稳定进化策略（达尔文“适者生存”的含义可以理解为稳定者生存），不同物种之间的策略相互纠缠和影响，形成了自然界蔚为壮观的生物景象。<br><br>成功基因的一个突出特性，是无情的自私，基因的自私通常会导致个体行为的自私。个体的自私会引发种群内的竞争，以及种群间的进犯与防守。事实上，自然界是一个充满博弈的地方。对一个鸟妈妈来说，到底该生多少鸟蛋，孵出多少雏鸟能都养活，生育所需精力如何与自我生存、种内竞争、抵御天敌进犯之间取得平衡，绝对都是超出脑容量的复杂判断。基因怎么办？在足够长的时间内操控生存机器进行冒险试验，最终达到动态平衡，即形成进化上的稳定策略（Evolutionarily Stable Strategy，简称ESS）。书中有大量例子，此处略过。<br><br>道金斯在这部分讲解了博弈论，特别是如何用零和游戏和非零和游戏看待进化策略形成，非常有趣。基因和生物之间的博弈，不仅发生在个体层面，甚至很大程度上影响了两性细胞的形态、两性分工、父母与子女的关系等等。如果我们把父母对子女无私的付出理解为对繁殖进行投资（收益者体内存在同样基因的可能性更大），如果我们理解女性因为对后代投资更多而在两性关系中处于劣势地位，如果我们发现性细胞如此迥异的形态和特性，其实来自于性细胞极端专业化的分工……难道不会对世界有全新的看法么？<br><br>比如，取书中一个问题举例：为什么生命要选择费力的减数分裂而不是更简单的有丝分裂？一个合理的解释是：“促进了在单个个体内积累那些以往分别出现于不同个体内的有利突变”。更加富有想象力的回答是“有一种操作其他基因中拷贝错误率的基因，如果交换对负责交换的基因有好处，这就是存在交换现象的充分理由”。<br><br>又比如在“两性战争”中道金斯总结道：在动物界中各种不同的繁殖制度——一雌一雄、雌雄乱交、“妻妾”等等——都可以理解为雌雄两性间利害冲突所造成的现象。雌雄两性的个体都“想要”在其一生中最大限度地增加它们的全部繁殖成果。由于精子和卵子之间在大小和数量方面存在根本差别，雄性个体一般来说大多倾向于雌雄乱交，而缺乏对后代的关注。雌性个体有两种可供利用的对抗策略：大丈夫策略和家庭幸福策略。<br><br>自然界太有趣，这种有趣因为有了生生不息、精于繁殖演化的基因，而变得五彩斑斓光怪陆离。<br><br>（笔记上篇完）<br><br><em> </em> *<br><br><div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>一句话：这是一本早读早超生的书，评分五星。</p>
+<div class="image-package imagebubble"><img src="http://img3.douban.com/lpic/s11214645.jpg" alt=""></div><br>笔记之前，介绍一下作者。理查德·道金斯（Richard Dawkins）是英国著名演化生物学家、动物行为学家和科普作家。相关资料网上很多，其中有一点值得一提，他同美国哲学家丹尼尔·丹尼特、神经科学家山姆·哈里斯和已故的英裔美国作家克里斯托弗·希钦斯常常一起被称为“新无神论的四骑士”。看完自私的基因，就能理解如果道金斯不是无神论者，那简直是见鬼了。<br><br>]]>
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="进化" scheme="http://yoursite.com/tags/%E8%BF%9B%E5%8C%96/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[7月读书笔记]]></title>
+    <link href="http://yoursite.com/2015/08/16/644782/"/>
+    <id>http://yoursite.com/2015/08/16/644782/</id>
+    <published>2015-08-16T11:23:27.000Z</published>
+    <updated>2016-01-03T15:09:34.000Z</updated>
+    <content type="html"><![CDATA[<p>7月一直没有发笔记，罪过。这个月还是看了书的，不过都是四星或以下，就偷懒发个合辑吧~</p>
+<h2 id="u4EC0_u4E48_u662F_u6218_u7565"><a href="#u4EC0_u4E48_u662F_u6218_u7565" class="headerlink" title="什么是战略"></a>什么是战略</h2><p>这本书是定位之父特劳特的经典。内容不多，读起来有点像大字报。想占领读者心智的作者，力图把几个观点“敲”进我们的脑袋。</p>
+<p>看看章节标题，基本就算看完半本书了：</p>
+<ul>
+<li>战略就是生存之道</li>
+<li>战略就是建立认知</li>
+<li>战略就是与众不同</li>
+<li>战略就是打败对手</li>
+<li>战略就是选择焦点</li>
+<li>战略就是追求简单</li>
+<li>战略就是领导方向</li>
+<li>战略就是实事求是</li>
+</ul>
+<p>看到这里不难理解为什么豆瓣上有不少二星的评分，简直是三大注意八项纪律的风格。不过抛开设计不太合理的篇章结构，特劳特对战略的理解还是很值得再三体会。</p>
+<a id="more"></a>
+<p>迈克尔·波特说：“战略就是创建一个有利的定位”。定位是神马？特劳特指出，定位不是在市场上面的位置，而是在客户心智中的位置——是人心中一闪而过的印象，这一品牌感知或说快照，在瞬间就决定了顾客是否接受你的产品。因而，商业组织之间相互竞争的是顾客心智，对公司而言最有价值的资源，是品牌所代表的心智资源。</p>
+<blockquote>
+<p>战略就是让你的企业和产品与众不同，形成核心竞争力。对受众而言，即是鲜明地建立品牌。</p>
+</blockquote>
+<p>心理学和认知科学告诉我们，人类的注意力非常有限，尤其是工作记忆，基本只能容纳7个组块。心智不但容量有限，还厌恶混乱，经常缺乏安全感，并且拒绝改变（任何改变人们态度的计划都会十分艰难）。顾客的心智就更加有限了，每天要面对爆炸的信息量、多如牛毛的品牌，要做成千上万的决策。再加上商品之间竞争激烈，每个品类基本只能给两个品牌留下心智空间，这就是定位理论中的“二元法则”。</p>
+<h3 id="u5B9A_u4F4D_u548C_u6218_u7565_u7684_u7ED3_u679C_u662F_u4E0E_u4F17_u4E0D_u540C"><a href="#u5B9A_u4F4D_u548C_u6218_u7565_u7684_u7ED3_u679C_u662F_u4E0E_u4F17_u4E0D_u540C" class="headerlink" title="定位和战略的结果是与众不同"></a>定位和战略的结果是与众不同</h3><p>那么，如何定位？如何制定品牌战略？</p>
+<p>定位就是如何在顾客的心智中实施差异化，使品牌进入心智并占据一席之地。大脑喜欢惊奇，大脑喜欢情感，大家都有的功能、特性、风格、价值观等等，根本不值得拿出来说。进入顾客心智的唯一方式，就是做到与众不同，而定位就是要想好怎么与众不同。</p>
+<p>而战略，负责如何做到与众不同。战略并不复杂，复杂的只是市场和信噪比太低的情报。战略全力打造理由，打造顾客买你的产品而不是选择竞争对手产品的理由，解决的是企业如何进入顾客心智而被选择的问题。</p>
+<p>给顾客一个无法拒绝的理由，就这么简单。</p>
+<blockquote>
+<p>战略的成败取决于是否将顾客心智视为战场。</p>
+</blockquote>
+<h3 id="u6218_u7565_u548C_u6218_u672F"><a href="#u6218_u7565_u548C_u6218_u672F" class="headerlink" title="战略和战术"></a>战略和战术</h3><p>战术是如何进入顾客心智，是一个有竞争差异的心智切入角度。战术以传播为导向，让顾客接受概念。战略以产品、服务或企业为导向。</p>
+<p>战略目的就是配置企业资源去促成战术优势实现，最大限度地利用和张扬战术优势。战略不是目标，而是企业一致性的经营方针。战略始终指向所选择的战术，整合企业所有的资源和运营活动，包括产品、价格、分销、广告—所有的一切，以促使战术的达成。</p>
+<p>所以在特劳特看来，先定战略再定战术是瞎扯，而应该是战略全力配合战术，营销战术导出企业战略（营销大师真是用绳命在摇旗呐喊）。战略负责做好全局规划，以达成与保持竞争优势。</p>
+<p>有效的领导，就是深入地思考组织的使命，鲜明地定义、建立它。领导者订立目标，订立优先次序，订立并维持标准。领导者必须把精力集中在顾客心智上，而顾客心智不受管理人员控制。</p>
+<h3 id="u95EE_u9898"><a href="#u95EE_u9898" class="headerlink" title="问题"></a>问题</h3><p>定位理论毕竟兴盛于上个世纪，是否能完全适应今天的商业环境呢？过去，消费者接触商品信息，做出购买决策，主要都是通过广告或是商场里看见产品后的短暂感知。所以之前的品牌特别强调认知快照。但是今天，产品、品牌与顾客的互动更加立体和多元，也许需要从多触点的长期交互考虑，而不是高举大锤，期望一次性敲入品牌认知。</p>
+<p>找到与众不同的定位固然没错，但我们需要新的玩法了。</p>
+<hr>
+<h2 id="u5546_u4E1A_u8BBE_u8BA1"><a href="#u5546_u4E1A_u8BBE_u8BA1" class="headerlink" title="商业设计"></a>商业设计</h2><div class="image-package imagebubble"><img src="http://img4.douban.com/lpic/s28010808.jpg" alt=""></div>
+
+<p>大公司创新为什么难？这本书能告诉你答案。</p>
+<p>公司从无到有，从小到大，会趋向于采用分析思维进行各种决策，以避免风险。但是各种数据、逻辑、分析，不一定指向最终的效果。以分析思维为代表的“可靠”和以直觉思维为代表的“有效”，看似水火不相容，但是成功的企业必须在取得两者平衡的基础上持续成长。可靠性目的是产生一致、可预见的结果。有效性目的是产生可以满足预期目标的结果。</p>
+<p>想要产生新知识，需要运用溯因逻辑，溯因逻辑即“可能是什么”的逻辑”。</p>
+<p>设计活动以探索谜题为起点。</p>
+<blockquote>
+<p>设计思维是指运用设计师的灵感和方法,设计出技术上可行,战略上可取且能满足顾客价值并抓住市场机会的思维方式.– tim brown</p>
+</blockquote>
+<p>商业领域的设计思维主要包括三个重要组成部分：</p>
+<ul>
+<li>深入、全面了解顾客；</li>
+<li>将各种可能性形象化、模型化并不断修订和完善；</li>
+<li>创建全新的活动体系，将最初的设想转变为实际操作</li>
+</ul>
+<p>为了能够创造出一个平衡有效性和可靠性的运营环境，企业需要从全新视角来分析组织的三要素：组织结构、运营流程和文化规范。</p>
+<h3 id="u9879_u76EE_u5BFC_u5411_u578B_u7EC4_u7EC7_u7ED3_u6784"><a href="#u9879_u76EE_u5BFC_u5411_u578B_u7EC4_u7EC7_u7ED3_u6784" class="headerlink" title="项目导向型组织结构"></a>项目导向型组织结构</h3><p>在那些根据不间断的连续任务来配置资源的公司中，每个职位、角色都已被严格设定，员工智慧把分内工作归结为“我的责任”，而不是“我们的责任”。他们只局限于自己的个体责任，全然不顾他人的责任和贡献。</p>
+<p>推动知识跨越知识漏斗最好的方式是项目制，也就是在既有条件的约束下，将某个问题从谜题推进至启发，或从启发推进至程式。“以工作整合人员”</p>
+<p>设计师的工作模式是：先设计出作品雏形，再广泛收集反馈意见，不断改进和完善。而管理者的行事习惯是直接提交最终成果。持续修订，构建雏形，征求意见，精炼完善，剔除瑕疵，反复运作。</p>
+<h3 id="u6784_u5EFA_u652F_u6301_u521B_u65B0_u7684_u6D41_u7A0B"><a href="#u6784_u5EFA_u652F_u6301_u521B_u65B0_u7684_u6D41_u7A0B" class="headerlink" title="构建支持创新的流程"></a>构建支持创新的流程</h3><p><strong>财务计划</strong><br>传统财务流程意在为高效运行现有启发或程式提供优质服务。然而为了实现有效性，财务计划应当只为那些致力于推动知识发展的活动设定预期目标和成本上限，不要有过多的其他约束。</p>
+<p><strong>薪酬体系</strong><br>设计工作室一般只为那些能够解决棘手问题的员工支付薪酬。塑造一种问题解决型的组织文化。</p>
+<p><strong>塑造能强化设计思维的文化氛围</strong><br>建立全新的行为规范，即影响员工行为的隐形规则和指导方针。对有效性导向的设计思维者而言，约束条件可以帮助他识别出创新的核心和精髓。约束条件不是告诉我们哪些事情难以做到，而是帮助我们重新界定需要解决的新问题，并找到新的发展机会。</p>
+<h3 id="u5E94_u5BF9_u963B_u529B"><a href="#u5E94_u5BF9_u963B_u529B" class="headerlink" title="应对阻力"></a>应对阻力</h3><p>推行设计思维有三个主要障碍：</p>
+<ul>
+<li>分析思维积累的学习优势</li>
+<li>关键利益相关者的可靠性导向</li>
+<li>可靠性和有效性之间的激烈对抗</li>
+</ul>
+<p>当团队是出于创造性目的或围绕某个棘手问题而聚集在一起时，大家愿意每天都来上班。如今，为那些最顶级的创新人才提供一项颇具挑战性的设计任务，这可能是公司留住优秀员工最有效的措施之一。 CEO 必需将自己定位为平衡组织可靠性和有效性的守护神，建立并维系相应的组织结构、业务流程以及准则规范。</p>
+<p>ps 某个部门离消费者越远，其可靠性倾向就会越强。</p>
+<h3 id="u6784_u5EFA_u8BBE_u8BA1_u601D_u7EF4_u77E5_u8BC6_u4F53_u7CFB"><a href="#u6784_u5EFA_u8BBE_u8BA1_u601D_u7EF4_u77E5_u8BC6_u4F53_u7CFB" class="headerlink" title="构建设计思维知识体系"></a>构建设计思维知识体系</h3><p>个人知识体系由立场（我是谁？我的目标是什么）、工具（通过哪些工具、运用哪些模式来梳理思维和认知世界？）、经验（拥有哪些经验才能提高敏锐度和技能水平？）组成。</p>
+<p>所谓专业度，是能够几乎本能的感受到重要的细微差别。一个人形成知识体系的起始方向非常重要，一旦在既定方向下开始培养知识体系，这个方向就很可能会被强化和放大，而很难被削弱或更改。</p>
+<p>立场</p>
+<p>设计思维者从来不会盲目幻想这个世界崇尚有效性或鼓励探索性，他们试图平衡可靠性和有效性，为了取得有效性结果而适当放弃一部分可靠性。设计思维者的立场是探索未知领域，拥抱可能带来的惊喜的各种机会，乐于处理那些在诸多方面尚不明确的复杂难题。</p>
+<p>工具</p>
+<p>观察、想象（推理-检验 循环）、构造。<br>溯因逻辑得出的结论不能被提前证明，这个缺点反而创造了机会：它指导人们不断修改和完善现有雏形，让人们持续开展新测试、得出新推论、提出新雏形，直到最终形成杰出的成功设计方案。<br>构造：如何才能让你的深刻见解和全新方案与你负责的商业体系融为一体。</p>
+<p>经验</p>
+<p>即使每次只做出一点点改变，也要通过不断培养独创性来有意识地坚持抵制这种消极趋势。</p>
+<h3 id="u9AD8_u6548_u5408_u4F5C"><a href="#u9AD8_u6548_u5408_u4F5C" class="headerlink" title="高效合作"></a>高效合作</h3><p>为了能够于处于可靠性和有效性两个极端的同事有效合作，设计思维者需要做好：</p>
+<ul>
+<li>不再盲目反对极端直觉思维者和极端分析思维者的意见，而是将不同观点视为推动自己提出创造性解决方案的有利机会</li>
+<li>换位思考，用移情方法理解两个极端的立场</li>
+<li>学习并掌握有效性和可靠性两种语言</li>
+<li>把大家不太熟悉的陌生概念，转化为人人都能听懂的通用语言（如类比，其他组织有类似的做法）</li>
+<li>如果需要用证据证明自己的观点，那么应该以对自己最有利的方式来调整证据的数量、规模或表现形式。</li>
+<li>设计思维者想要为直觉思维者创建一个富有成效的组织环境，唯一可选途径是移情互动、换位思考。</li>
+<li>可靠性导向的人把未来当成敌人，把过去当成朋友，所以设计思维者的关键任务之一是设法把未来转换成过去（比如迭代）。</li>
+</ul>
+<p>看完这本书，稍微有点绝望。很多事情必须得自上而下推行。</p>
+<hr>
+<h2 id="u4FE1_u4EFB_u4EE3_u7406"><a href="#u4FE1_u4EFB_u4EE3_u7406" class="headerlink" title="信任代理"></a>信任代理</h2><div class="image-package imagebubble"><img src="http://img4.douban.com/lpic/s6824659.jpg" alt=""></div>
+
+<p>有些书存在的意义是把某些问题讲明白。而有些书的存在，则是制造了强大的模因（meme），比如这本书。</p>
+<p>有些秘密，原来早已公诸于世，只是我们视而不见。</p>
+<hr>
+<h2 id="u521B_u65B0_u8005_u7684_u601D_u8003"><a href="#u521B_u65B0_u8005_u7684_u601D_u8003" class="headerlink" title="创新者的思考"></a>创新者的思考</h2><div class="image-package imagebubble"><img src="http://img3.douban.com/lpic/s24438434.jpg" alt=""></div>
+
+<p>大前研一教你思考商机~ 翻翻即可</p>
+<hr>
+<h2 id="u8D85_u7EA7_u65F6_u95F4_u6574_u7406_u672F"><a href="#u8D85_u7EA7_u65F6_u95F4_u6574_u7406_u672F" class="headerlink" title="超级时间整理术"></a>超级时间整理术</h2><div class="image-package imagebubble"><img src="http://img4.douban.com/lpic/s27271467.jpg" alt=""></div><br>诶，第一点还蛮值得参考并行动的，其他内容都太泛泛而谈了。两星。<br><br>哦，第一点建议是：清理不必要的东西。<br><br>—<br><br>## 只有医生知道<br><br><div class="image-package imagebubble"><img src="http://img4.douban.com/lpic/s24511478.jpg" alt=""></div>
+
+<p>推荐给所有妹子。</p>
+<p>协和产科医生写的书，语言平实而不失趣味。刚开始看的时候，脑补各种惊悚画面，导致睡前根本不敢翻开。过了两天慢慢适应，果真应验了那句话，恐惧来自未知。</p>
+<p>普通人都对自己的身体知之甚少。很多的健康问题，包括医患关系的紧张，其实都来源于恐慌、无知和沟通不足。身体是自己的，就应该负起责任，了解它，保护它。在颇为让人绝望的体制和残酷现状中，“治未病”远比“治病”更难却又更重要。</p>
+<p>只有医生知道2 我也会继续看的。</p>
+<hr>
+<h2 id="u6EDA_u86CB_u5427_u80BF_u7624_u541B"><a href="#u6EDA_u86CB_u5427_u80BF_u7624_u541B" class="headerlink" title="滚蛋吧肿瘤君"></a>滚蛋吧肿瘤君</h2><div class="image-package imagebubble"><img src="http://img4.douban.com/lpic/s20742806.jpg" alt=""></div>
+
+<p>生命总是会闪光，不要等到告别时才珍惜。</p>
+<p>熊顿已经离开两年，电影也快拍成，她留下的力量还在鼓励着越来越多的人。</p>
+<p>就是因为看完这本，才有冲动翻开了 只有医生知道 。</p>
+<hr>
+<h2 id="u7761_u7720_u7684_u79D1_u5B66"><a href="#u7761_u7720_u7684_u79D1_u5B66" class="headerlink" title="睡眠的科学"></a>睡眠的科学</h2><div class="image-package imagebubble"><img src="http://img4.douban.com/lpic/s27842858.jpg" alt=""></div>
+
+<p>因为失眠，买来这本并不在兴趣范围内的书。原来，我们关于睡眠有着那么多的误解。</p>
+<p>睡觉并不是浪费时间。</p>
+<p>睡眠可以分为5个阶段：4个非眼动睡眠阶段和快速眼动睡眠阶段（REM）。大脑在 REM 时期活跃度甚至超过清醒时，大部分的梦都发生在这个时期。</p>
+<p>浅睡阶段能巩固程序性记忆，深睡阶段让身体修复，REM 对记忆和学习有重要意义，更隐藏着大脑的很多秘密。</p>
+<p>想要更高产、更富有创造力？不是通过少睡挤出时间，而应该：</p>
+<p>多，睡，觉！</p>
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>7月一直没有发笔记，罪过。这个月还是看了书的，不过都是四星或以下，就偷懒发个合辑吧~</p>
+<h2 id="u4EC0_u4E48_u662F_u6218_u7565"><a href="#u4EC0_u4E48_u662F_u6218_u7565" class="headerlink" title="什么是战略"></a>什么是战略</h2><p>这本书是定位之父特劳特的经典。内容不多，读起来有点像大字报。想占领读者心智的作者，力图把几个观点“敲”进我们的脑袋。</p>
+<p>看看章节标题，基本就算看完半本书了：</p>
+<ul>
+<li>战略就是生存之道</li>
+<li>战略就是建立认知</li>
+<li>战略就是与众不同</li>
+<li>战略就是打败对手</li>
+<li>战略就是选择焦点</li>
+<li>战略就是追求简单</li>
+<li>战略就是领导方向</li>
+<li>战略就是实事求是</li>
+</ul>
+<p>看到这里不难理解为什么豆瓣上有不少二星的评分，简直是三大注意八项纪律的风格。不过抛开设计不太合理的篇章结构，特劳特对战略的理解还是很值得再三体会。</p>]]>
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[为真实世界设计]]></title>
+    <link href="http://yoursite.com/2015/06/23/designing-for-the-real-world/"/>
+    <id>http://yoursite.com/2015/06/23/designing-for-the-real-world/</id>
+    <published>2015-06-23T13:30:50.000Z</published>
+    <updated>2016-01-03T15:22:09.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/designforrealworld.jpeg" alt=""></p>
+<p>大家好,我是一个 (互联网公司的) (做了多年界面设计的) (交互) 设计师. 你在看这篇文章,我猜测:</p>
+<ul>
+<li>你或许也是设计师,至少是互联网从业者,再不然也听过交互设计、体验设计、服务设计、o2o 设计之类的名词</li>
+<li>你每天使用手机,戳屏幕不下500次</li>
+</ul>
+<p>当然,下面的猜测应该更靠谱:</p>
+<ul>
+<li>你生活在地球</li>
+<li>吃喝拉撒睡不靠戳屏幕完成</li>
+<li>一周以内,你总需要离开卧室,跟其他人见面和说话</li>
+</ul>
+<p>相信你明白”真实世界”的含义.我们常说的(人机)交互设计,大多发生在一个小小平面内,而不是真实环境中.今天,我想分享一下回到真实世界的感受.</p>
+<a id="more"></a>
+<h2 id="u6765_u81EA_u706B_u661F_u7684_u8BBE_u8BA1_u5E08"><a href="#u6765_u81EA_u706B_u661F_u7684_u8BBE_u8BA1_u5E08" class="headerlink" title="来自火星的设计师"></a>来自火星的设计师</h2><p>在设计师们的火星语中,体验设计、交互设计、o2o 设计大概说的都是一个意思: 如何让用户 happy 地做些他想做的事情.设计师的工作是提前想好一些路径,把用户看到的东西,做成容易看懂和容易使用的样子,帮助他们达到目的.在二次元中,设计师们做得还不错:</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/UI.png" alt=""></div>
+
+<p>有一天,火星上的设计师听说了”智慧生活”的图景:</p>
+<ul>
+<li>吃饭,不用找地儿,不用等位,不用喊服务员,不用等半天不上菜,不用担心结账不够现金</li>
+<li>逛街,知道好东西在哪买,不会错过超值的活动促销,不担心售后退换货</li>
+<li>出远门,不用排队买票,知道哪种交通方式最便捷,不用扛着大包小包赶时间</li>
+<li>生病了,不用爬着去医院排队挂号、排队看病、排队检查、排队拿药…</li>
+<li>…..</li>
+</ul>
+<p>[此处有广告: 智慧生活更多行业解决方案,请关注”微信支付商户通”公众号]</p>
+<p>“智慧生活”这个词汇本身好像在提醒我们,真实的生活场景中,处处都还不够便利呀.</p>
+<p>听到这里,设计师们心中燃起火光,觉得终于可以大干一场,于是坐上飞船来到地球.</p>
+<h2 id="u6B22_u8FCE_u6765_u5230_u771F_u5B9E_u4E16_u754C"><a href="#u6B22_u8FCE_u6765_u5230_u771F_u5B9E_u4E16_u754C" class="headerlink" title="欢迎来到真实世界"></a>欢迎来到真实世界</h2><p>自从踏上地球表面,一股气场从地表汹涌而来(简称”地气”),把设计师们震得心慌. 难道这就是传说中的<a href="https://en.wikipedia.org/wiki/Culture_shock" target="_blank" rel="external">Culture shock</a> ?</p>
+<p>被地气 shock 的表现往往是这样的:</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/designvsue.jpg" alt=""></div>
+
+<p>又比如说,看电影不仅仅是:</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/maoyan.png" alt=""></div>
+
+<p>还是这样的:</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/cinema.jpg" alt=""></div>
+
+<p>旅游不仅仅是看攻略:</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/qiongyou.png" alt=""></div>
+
+<p>还有各种万万没想到:</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/sleepairport.jpg" alt=""></div>
+
+<p>在真实世界中,很多火星上通用的法则似乎都失效了.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/table1.png" alt="table1"></p>
+<p><span style="line-height: 1.5">以前,设计师拿出一个方案,大家会 blablabla, 说这个按钮不对,那个输入框阴影多了一像素.可现在,一个方案抛出来,大家没什么反应,要不就是没法推进.</span></p>
+<p>为什么? 设计师们感到了不安,拿出火星设计手册,一条一条对照着思索起来.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/table2.png" alt="table2"></p>
+<p>列到这里设计师,恍然大悟</p>
+<blockquote>
+<p>原来,我身在地球呢!</p>
+</blockquote>
+<p>地球人不理我,也许因为:</p>
+<ul>
+<li><p>没有解决他们关心的问题除了好看不好看,还有太多头疼的问题等着地球人:</p>
+<ul>
+<li>今年业绩要达到 xxx, 该怎么办</li>
+<li>商场里的商户都要求改进统一收银系统,缩短核销周期,这个月我手下有没人可以干这个事?</li>
+<li>上级部门下周来检查工作,精神文明的宣传都得挂在最显眼的地方</li>
+<li>租的这个场地下个月到期,要搬哪里</li>
+<li>顾客最近抱怨服务员态度不好,是哪里出问题了?</li>
+<li>老板说微信粉丝不到10万,不批活动经费,该怎么涨粉?</li>
+<li>客户说想在公众号里查询购买记录,可是上半年没有开发经费了,怎么办?</li>
+<li>…</li>
+</ul>
+</li>
+<li><p>方案没有考虑周全</p>
+<ul>
+<li>“我们这里 wifi 信号不好,这个能用吗?”</li>
+<li>“那个地方光线暗, 你这个二维码看不清呢”</li>
+<li>“车主取车都会从另一侧电梯下来,这边没人走”</li>
+<li>“哦,顾客结账前已经知道了,你放这里没人看”</li>
+<li>“上级部门有要求,这个不能搬走”</li>
+<li>“来这玩的人都在网上买好票的,售票员推荐也没用啊”</li>
+<li>“你把保险取消了,我们收入减少一半,给条活路啊”</li>
+<li>…</li>
+</ul>
+</li>
+<li><p>甚至连用户都不够了解</p>
+<ul>
+<li>“扫一扫是用什么扫啊?”</li>
+<li>“你们有宣传吗?我怎么没看到?”</li>
+<li>“那个东西没用过,我还是习惯这个”</li>
+<li>“有优惠吗?没有的话我干嘛费这个力气”</li>
+<li>“我的手机好像不支持…什么,要先升级版本吗?”</li>
+<li>“朋友都说用那个就行,你这个好像有点麻烦”</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+<p>于是,Culture shock 的原因也就明了:</p>
+<blockquote>
+<p>需求不明,业务不熟,不懂用户,行动瘫痪</p>
+</blockquote>
+<h2 id="u4E0E_u4E0D_u786E_u5B9A_u6027_u5171_u821E_2C_u4E3A_u771F_u5B9E_u4E16_u754C_u8BBE_u8BA1"><a href="#u4E0E_u4E0D_u786E_u5B9A_u6027_u5171_u821E_2C_u4E3A_u771F_u5B9E_u4E16_u754C_u8BBE_u8BA1" class="headerlink" title="与不确定性共舞,为真实世界设计"></a>与不确定性共舞,为真实世界设计</h2><p>适应了地球文化,接受地气熏陶后,设计师们开始痛苦的反思.</p>
+<h3 id="u6211_u662F_u8C01_3F"><a href="#u6211_u662F_u8C01_3F" class="headerlink" title="我是谁?"></a>我是谁?</h3><p>我还是设计师,但不能只以界面体验和可用性要求自己.</p>
+<ul>
+<li>世界上本没有不会动手的设计师,分工细了,技能也就越来越残缺不齐;</li>
+<li>世界上本没有全栈设计师,不全面的设计师多了,全栈带上了褒义色彩</li>
+</ul>
+<h3 id="u4E3A_u8C01_u8BBE_u8BA1_3F"><a href="#u4E3A_u8C01_u8BBE_u8BA1_3F" class="headerlink" title="为谁设计?"></a>为谁设计?</h3><p>说好的用户体验设计呢?说好的以用户为中心呢?</p>
+<p>没错没错,即便在商业中,为客户提供服务才是最终的价值所在.可这毕竟是 Business, 如果没有聪明的模式, 在多方利益中找到微妙的平衡, 怎么持续?</p>
+<p>“用户体验设计”前,需要加上定语 “可持续商业模式下,对现阶段商业价值最大化的客户体验”.也就是,为人设计,为商业运营设计,或者说</p>
+<blockquote>
+<p>为真实世界设计</p>
+</blockquote>
+<h3 id="u8BBE_u8BA1_u4EC0_u4E48_3F"><a href="#u8BBE_u8BA1_u4EC0_u4E48_3F" class="headerlink" title="设计什么?"></a>设计什么?</h3><p>设计需要处理的,不再仅仅是界面上元素之间的关系(谁有谁无,谁大谁小,谁先谁后),还包括用户和界面的关系,更重要的是,<strong>用户和整个服务系统的关系</strong>.更进一步,设计不能只关注方案,必需花更多的精力推进设计实施.</p>
+<p>于是设计师的职责变成:</p>
+<p><strong>1. 设计环境要素(包括互动界面),改变消费者认知和行动,帮助他们达成目的,从而达到商业目的</strong></p>
+<p><strong>2. 平衡多方利益,影响合作方和团队,完成 1 的目标</strong></p>
+<p>这其中的难点包括:</p>
+<ul>
+<li>真实环境是什么样?用户在这些环境中是什么样?</li>
+<li>跟商业目的相关的用户认知和行为是什么?要改变什么(真的可以改变吗)?</li>
+<li>环境中哪些要素是重要的?哪些可以设计?</li>
+<li>“界面”有哪些(人也可以是界面)?各自发挥什么功能?</li>
+<li>有哪些利益相关者?他们直接的关系是什么?利益是什么?</li>
+<li>合作的基础是什么?团队的能力是什么?合作目标是什么?可行性在哪?资源如何获得?</li>
+<li>问题是什么?解决方案是什么?如何衡量?</li>
+</ul>
+<p>这些问题,在火星上并不常见.原来,火星和地球上的游戏规则并不一样,最终的大 BOSS 也不是同一个物种呐 :</p>
+<p><img src="http://www.uegeek.com/wp-content/uploads/2015/06/table3.png" alt="table3"></p>
+<p>地球真心不是个只靠脸吃饭的地方呢!</p>
+<h3 id="u8BBE_u8BA1_u5E08_u7684_u6B66_u5668"><a href="#u8BBE_u8BA1_u5E08_u7684_u6B66_u5668" class="headerlink" title="设计师的武器"></a>设计师的武器</h3><p>面对如此复杂的局面,设计师该怎么办?人微言轻,还不懂业务,人家为什么愿意听你的?</p>
+<p>别怕,我们好歹来自火星,一定有可以跟地球人交换的技能:</p>
+<ul>
+<li>对用户的理解我们知道如何跟海量用户打交道. 体验不好如何导致转化率低. 什么样的营销方式更有效</li>
+<li>设计语言选一些对方做的设计,提出改进建议,或者直接做出优化.</li>
+<li>团队资源是否可以资源互换?我们可以促成更多甚至是异业的合作.</li>
+<li>现学现卖某某最近做了一次活动效果很好,不妨试试.</li>
+</ul>
+<p>建立关系和沟通渠道之后,再齐心协力去解决问题,进一步建立起信任关系.</p>
+<h3 id="u5982_u4F55_u89E3_u51B3_u95EE_u9898"><a href="#u5982_u4F55_u89E3_u51B3_u95EE_u9898" class="headerlink" title="如何解决问题"></a>如何解决问题</h3><p>第一步:沉浸到环境中</p>
+<ul>
+<li>到现场了解运营状况,观察消费者行为</li>
+<li>向合作方获取行业信息,运营现状</li>
+<li><p>跟其他利益相关者接触,了解他们关心的问题</p>
+<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_3267.jpg" alt=""></div>
+
+</li>
+</ul>
+<p>第二步:发现机会,定义问题</p>
+<ul>
+<li>明确各利益相关方的商业目的、利益关系和角色(谁是主导)</li>
+<li>梳理出与商业目标相关的用户行为</li>
+<li><p>寻找现实与理想中用户行为的差距</p>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/bmc.jpg" alt=""><br><div class="image-caption">商业模式画布.jpg</div><br></div>
+
+</li>
+</ul>
+<p>第三步:提出方案,探讨可行性</p>
+<ul>
+<li>栗子打算另写一篇,此处省略5千字…</li>
+</ul>
+<h3 id="u5982_u4F55_u4FDD_u8BC1_u8BBE_u8BA1_u5B9E_u65BD"><a href="#u5982_u4F55_u4FDD_u8BC1_u8BBE_u8BA1_u5B9E_u65BD" class="headerlink" title="如何保证设计实施"></a>如何保证设计实施</h3><ul>
+<li>与各利益方沟通,建立关系和对话渠道</li>
+<li>理解对方的需求,提取共同目标和利益,强调价值点</li>
+<li>投入时间和精力,把方案细化到可以直接落地执行</li>
+<li>灵活应对各种变化,快速行动</li>
+</ul>
+<h2 id="u56DB-_u65E7_u8EAB_u4EFD_u4E0E_u65B0_u4E16_u754C"><a href="#u56DB-_u65E7_u8EAB_u4EFD_u4E0E_u65B0_u4E16_u754C" class="headerlink" title="四.旧身份与新世界"></a>四.旧身份与新世界</h2><p>火星一日,地球已三年.</p>
+<p>设计师们渐渐明白,服务对象变了,场景变了,问题也变了. 那么我们自身需要做些什么改变?</p>
+<p>当问题不再是我们熟悉、可控的界面,互联网设计师的价值还存在吗?</p>
+<p>在新世界中,价值不再由职位定义.设计师在真实世界中可以扮演不同角色:</p>
+<ul>
+<li>浅层介入:完成被分配的需求</li>
+<li>中度介入:协助者,补全必要环节,发挥设计能力解决问题</li>
+<li>深度介入:协调者,提供完整方案,对执行和质量负责</li>
+</ul>
+<p>能创造价值的人,必然有存在的价值.创造价值不能只靠头脑风暴和评估,得靠动手解决问题和达成目标.</p>
+<p>再次,<br>欢迎你,<br>回到真实世界.</p>
+<hr>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/designforrealworld.jpeg" alt=""></p>
+<p>大家好,我是一个 (互联网公司的) (做了多年界面设计的) (交互) 设计师. 你在看这篇文章,我猜测:</p>
+<ul>
+<li>你或许也是设计师,至少是互联网从业者,再不然也听过交互设计、体验设计、服务设计、o2o 设计之类的名词</li>
+<li>你每天使用手机,戳屏幕不下500次</li>
+</ul>
+<p>当然,下面的猜测应该更靠谱:</p>
+<ul>
+<li>你生活在地球</li>
+<li>吃喝拉撒睡不靠戳屏幕完成</li>
+<li>一周以内,你总需要离开卧室,跟其他人见面和说话</li>
+</ul>
+<p>相信你明白”真实世界”的含义.我们常说的(人机)交互设计,大多发生在一个小小平面内,而不是真实环境中.今天,我想分享一下回到真实世界的感受.</p>]]>
+    
+    </summary>
+    
+      <category term="Design" scheme="http://yoursite.com/tags/Design/"/>
+    
+      <category term="o2o" scheme="http://yoursite.com/tags/o2o/"/>
+    
+      <category term="交互设计" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="体验设计" scheme="http://yoursite.com/tags/%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[未来已来 --- 读「新经济,新规则」]]></title>
+    <link href="http://yoursite.com/2015/06/18/notes-of-new-rules-of-new-economy/"/>
+    <id>http://yoursite.com/2015/06/18/notes-of-new-rules-of-new-economy/</id>
+    <published>2015-06-18T01:52:19.000Z</published>
+    <updated>2016-01-03T15:23:23.000Z</updated>
+    <content type="html"><![CDATA[<p>人类一向喜欢预言.从远古时期开始,如何顺应变幻莫测的自然,填补对未知的恐惧,一直是人类的重要课题.比预言本身更有趣的,是人类对预言的态度—浑然不觉?惶惶不可终日?明白了要活在当下?更常见的情况是,面对难以理解的预言,人们往往只能用少得可怜的想象力尝试理解,却发现是徒劳.</p>
+<p>可是今天,我们与预言者同在.远见和智慧都可以被具象化,被书写和传播.这让身在新的技术和经济浪潮中却不自知的我们,有机会登上漩涡中一片高地,停留片刻,稍作观察.待到重新回到浪潮中,对秘密了然于胸的人们,也许可以不再随波逐流,成为弄潮儿.</p>
+<p>未来已来,只是分布不均.一起看看 KK 在「新经济,新规则」中给我们描绘的全新图景吧.</p>
+<a id="more"></a>
+<h2 id="u65B0_u7ECF_u6D4E"><a href="#u65B0_u7ECF_u6D4E" class="headerlink" title="新经济"></a>新经济</h2><p>新经济是属于科技的经济.科技不再是文化的副产品,它正在用更深刻的力量揭示着属于新时代的规律.科技虽然不能解决所有问题,甚至解决不了大部分问题,但是它做到了一件事—提供可能性和更多机遇.</p>
+<p>在新力量主导之下,产生了新的秩序.这股力量不再仅仅是一只看不见的手,它已是强大如气压和洋流一样的存在—虽不可抗,却大音希声,大象无形,身在其中,几乎难以感受它的力量.</p>
+<p>KK 对预言者的秘诀并没有太多保留:</p>
+<blockquote>
+<p>在对于网络经济如何运行的理解方面,生物隐喻比机械隐喻要有用得多.<br>同时也给出了最朴素的建议:<br>成功的基本规则是永恒不变的:专注于客户服务、提高产品质量、超越对手的表现、乐在其中.</p>
+</blockquote>
+<h2 id="u65B0_u89C4_u5219"><a href="#u65B0_u89C4_u5219" class="headerlink" title="新规则"></a>新规则</h2><h3 id="1-_u8702_u7FA4_u6BD4_u72EE_u5B50_u91CD_u8981"><a href="#1-_u8702_u7FA4_u6BD4_u72EE_u5B50_u91CD_u8981" class="headerlink" title="1.蜂群比狮子重要"></a>1.蜂群比狮子重要</h3><p>在丛林中,位于食物链顶端的狮子,数量较少,相互之间不需要太多协作,不必也无法形成网络.而蜂群的社群组成和结构则完全不同,还有那极富规则和韵律的蜂巢,节点之间几乎完全平等,并且建立起有序而紧密的连接.节点和连接,正是任何网络的要素.蜂群的隐喻,对应的是新经济中最重要的特征.</p>
+<p>未来,一切实体都会带有芯片,一切都将连成一体,相互感知和通信.这意味着什么?</p>
+<pre><code>一切都是实时; 
+信息传递不需要中介; 
+模式大量涌现; 
+....
+</code></pre><p>低智能的超高数量连接,能产生聪明得难以置信的智慧.暂且称之为”臭皮匠效应”好了.我们的大脑,我们的人体,全球广域网,都是这样的连接的产物.</p>
+<p>自上而下计划经济式的思路,越来越无法适应无所不在的复杂性.在复杂系统中,中心不需要直接连接所有分支,许多简易的部件相互连接,就可以形成某种程度自治的松散组块.就像编程语言中的模块化和接口封装.</p>
+<p>互联网的经验告诉我们,推动大众化网络连接最可靠的方式,是开拓草根民众的力量,去网罗、连接最分散的底层力量.加速网络中的信息流通,横向、向外、相互的流动,而不是中心化的流动.</p>
+<blockquote>
+<p>网络经济的游戏规则是,去发现那些曾经以为太小而被我们忽略的事物,让它们用最合适的方式去拥抱集群.如果说技术成功的标准时让人们对它习以为常,那么最好的长期策略就是去开发那些最终会与我们的生活融为一体的产品和服务.<br>KK 如是说.</p>
+</blockquote>
+<h3 id="2-_u7EA7_u6570_u6BD4_u52A0_u6CD5_u91CD_u8981"><a href="#2-_u7EA7_u6570_u6BD4_u52A0_u6CD5_u91CD_u8981" class="headerlink" title="2.级数比加法重要"></a>2.级数比加法重要</h3><p>从前,线性规律是解读世界最重要的规律.我们从可见的事物中推断出因果,认为已经获得真理.如今,我们掌握越来越多的”数据”,了解到事物本身客观存在的很多”侧面”,才发现原来”因果”是那么脆弱.大数据时代,相关代替了因果.</p>
+<p>在各种相关关系中,有那么一些节点,它们之间一旦建立联系,规模呈指数增长.这就是上帝赐予的秘密武器—复利.网络中每增加一个新成员,就会增加很多链接,价值也就越大.想想梅特卡夫定律和回报增值定律,随着网络用户增多,网络的价值在迅速膨胀,这种价值的急速膨胀又吸引更多的用户.</p>
+<p>等等,回报递增说的是马太效应?富则越富,最后岂不是变成寡头?网络内在逻辑是降低价格提高质量,本质上不促成垄断形成.因为当竞争收到遏制时,创新也会受到影响.在新的经济秩序中,创新远比价格重要.</p>
+<blockquote>
+<p>网络的确切定义:技术性矩阵的有机行为.网络催生联结,联结催生反馈循环.<br>你正在孕育的增长,是只能依靠单一团队的直接努力,还是具备回报递增、开放体系特点的网络效应?</p>
+</blockquote>
+<h3 id="3-_u666E_u53CA_u6BD4_u7A00_u6709_u91CD_u8981"><a href="#3-_u666E_u53CA_u6BD4_u7A00_u6709_u91CD_u8981" class="headerlink" title="3.普及比稀有重要"></a>3.普及比稀有重要</h3><blockquote>
+<p>一块虽小到却能不断变大的馅饼才是最大的.<br>供需关系是经济学中最重要的关系,我们对供不应求的理解特别深刻.稀缺意味着需求,意味着价值.</p>
+</blockquote>
+<p>网络经济告诉我们,流行比稀缺有效百倍,流通比占有重要百倍.普及可以驱动价值,开启封闭的系统,以及创造海量机会.人人都有邮件地址并能向任意一人发送邮件,于是电子邮件成为了互联网最为基础的服务.</p>
+<p>普及本身不再意味着因廉价、供过于求而导致饱和,而是通过创造系统和标准,极大提升生产和管理效率,满足每个单点的需求.普及意味着 meme 正在发挥作用.普及之所以盛行,不在于边际成本降到最低,而是普及之后将产生无与伦比的价值.</p>
+<p>网络经济中任何动作的价值,会随着网络传播呈指数增长,所以,尽可能多接触网络吧.最大限度地给予别人机会.吸引别人来以你为中心提供新的服务,或者附加到你的产品中.</p>
+<h3 id="4-_u514D_u8D39_u6BD4_u5229_u6DA6_u91CD_u8981"><a href="#4-_u514D_u8D39_u6BD4_u5229_u6DA6_u91CD_u8981" class="headerlink" title="4.免费比利润重要"></a>4.免费比利润重要</h3><p>供给和需求,一直由资源的稀缺性和人类的欲望所驱动.如今,出现了另一股力量:科技.科技创造需求,然后提供供给.</p>
+<p>所有能被复制的东西,无论实体还是虚拟,都遵守价格下降曲线,质量提高而价格下降.聪明的公司利用学习曲线,非常聪明的公司通过各种手段增加产量来加速学习曲线.如果价格不断趋近于免费,那么更好的策略是先人一步推行低价.</p>
+<p>人人都用微信,秘密不在于免费,而是人与人、个体与内容提供方、个体与服务提供方的沟通联系,都在这里完成.所有人连接起来之后,在微信上流通的信息和服务,已经远远超出了一个通讯工具本身的价值.</p>
+<p>公司如何在免费文化中生存?首先,把免费当做定价的终极策略.第二,核心产品免费的同时,高价出售其他服务.第三,遵循低价免费是为一项服务或商品最终免费做预演.免费思想会逼迫你想出更好的商业模式.</p>
+<p>在新科技的世界里,真正稀缺的是什么? —是人的注意力.免费赠送吸引人类注意力或思想份额,然后转化成市场份额.</p>
+<h3 id="5-_u7F51_u7EDC_u6BD4_u516C_u53F8_u91CD_u8981"><a href="#5-_u7F51_u7EDC_u6BD4_u516C_u53F8_u91CD_u8981" class="headerlink" title="5.网络比公司重要"></a>5.网络比公司重要</h3><p>把节点联系起来,让节点之间的信息和互动快速流通,价值将被成倍放大.人不会因为一个公司多牛逼而停留,但会在一个网络中不可自拔.</p>
+<p>人们为什么会加入到网络中来? 网络给予我们全新的身份认同,个人的忠诚从公司转向各种各样的网络平台和社区.</p>
+<p>商业网络本质上是一个生态群落,参与者的身份越多样化越好.网络经济中,每次交易所花精力越来越少,但建立这些交易间的共同准则所花费的精力越来越多.公司主要关注点已经从公司价值最大化转向网络价值最大化.</p>
+<p>制定标准的才是最大的玩家.但是标准未必意味着强硬的准则.微信对公众号的引导,更多通过提供”能力”和”工具”完成,而不是冗长的制度规则.</p>
+<blockquote>
+<p>做科技决策时,总是选择连接更多的连接、更开放的系统、应用更广的标准.</p>
+</blockquote>
+<h3 id="6-_u7A7A_u95F4_u6BD4_u573A_u6240_u91CD_u8981"><a href="#6-_u7A7A_u95F4_u6BD4_u573A_u6240_u91CD_u8981" class="headerlink" title="6.空间比场所重要"></a>6.空间比场所重要</h3><p>(还在大学读地理专业时,就很想探讨地理与网络空间的关系,可惜那时不知道 KK…)</p>
+<p>新经济在虚拟空间中而不是在场所中运行.能够突破物理坐标系的限制,意味着网络经济获得了更高维度的空间和能力.任何地域之间的信息传递,几乎已经没有时间差.空间中也不会因为实体增加而变得拥挤,于是无限连接成为可能.</p>
+<p>网络经济打破了许多产业的中间环节,甚至让供需两端直接产生交易.那么,中介真的会消失吗?并不会.当货架无限延伸后,只要匹配不是自动发生,即选择权只要还在消费者(需求方)手里,中介必将继续存在.因为需求方的注意力成为稀缺,中介的价值在于帮助供给方获得需求方的注意力,以及帮助双方完成交易.</p>
+<p>更进一步,网络中所有节点都是中介.因为供给方不再是一个节点,而是整个网络(至少是局部网络中的许多节点).当我购买了一个团队协作的服务,也许有 A 节点为我提供带宽, B 节点提供成员管理,C 节点提供工具界面, D 节点提供支付和售后…..</p>
+<p>网络经济为中间市场提供了新的机会.中间市场的困境是什么?我们可以通过目录和索引,直观了解一本书的观点.也能通过图书馆目录了解几百万本书中的观点.但是很难知悉某个专业领域中一万名专家的观点.互联网为解决这一困境提供了绝佳工具.每个人都有能力培育自己的网络.无数社区的存在,就是中间市场繁荣的最佳证据.</p>
+<h3 id="7-_u4FE1_u4EFB_u6BD4_u6280_u672F_u91CD_u8981"><a href="#7-_u4FE1_u4EFB_u6BD4_u6280_u672F_u91CD_u8981" class="headerlink" title="7.信任比技术重要"></a>7.信任比技术重要</h3><p>网络中的各种连接都是在建立一种关系:公司之间、客户之间、公司与客户之间、客户与政府之间、客户与机器之间、机器与物品之间…(关系经济意味着互动、对话、界面会越来越重要,交互设计师们,加油啊)生产力的重要性越来越低,建立关系和创造对话成为最主要的经济活动.互动越多,学习就越重要,关系与信任就越有必要.</p>
+<p>网络经济中,客户与公司员工之间的界限经常消失不见.那些排队使用 ATM 的人是高度进化的银行客户,还是不计报酬的银行柜员?当你在家做血压检测时,是不是同时在帮助医疗保险公司节省了一个有开支的环节?</p>
+<p>为了创造客户想要的东西,用户和制造者之间必须有大量的信息和信任交流.每一次互动,都是增进了解的机会.为客户定制产品,只能记忆偏好,然后在客户表达喜好前猜测客户想要什么.这是衡量任何亲密关系的标尺.</p>
+<p>大量领域的专家都出自最狂热的用户.谁拥有最聪明的客户,谁就能获胜.</p>
+<h3 id="8-_u9020_u5C71_u6BD4_u767B_u5C71_u91CD_u8981"><a href="#8-_u9020_u5C71_u6BD4_u767B_u5C71_u91CD_u8981" class="headerlink" title="8.造山比登山重要"></a>8.造山比登山重要</h3><p>生态系统总是处于动态平衡之中,不稳定、不均衡是常态,最优化不会持续太久.</p>
+<p>在网络经济中,想要知道哪座山最高并非易事.一个向着顶峰新市场攀登的公司,爬的可能只不过是一座小山丘.</p>
+<blockquote>
+<p>一代科技取得成功会产生一个副作用,公司关注点会缩窄,对拥有新一代技术的竞争者视而不见</p>
+<p>–&lt;掌握创新的动态&gt;,厄特巴克<br>公司越好,退路越少.一个公司能力越是综合,想只通过微小改变来转型就越难.因此成功公司在高度变化的环境之中更容易失败.在山顶回退,是为了避免短见,避免被意气风发遮盖了不远处更壮丽的高峰.</p>
+</blockquote>
+<h3 id="9-_u673A_u4F1A_u6BD4_u6548_u7387_u91CD_u8981"><a href="#9-_u673A_u4F1A_u6BD4_u6548_u7387_u91CD_u8981" class="headerlink" title="9.机会比效率重要"></a>9.机会比效率重要</h3><p>在工业时代,工人们的任务是找到把工作做得更好的方法.网络新经济的力量崛起后,和谐不再,乱流涌现,问题变成了”做哪那一份工作才是对的”.</p>
+<p>创新就是颠覆,永恒的创新即持续的颠覆.一滴水如果想永不干涸,必须融入到江河湖海中,随潮流而动.</p>
+<p>面对流变,只能拥抱变化.</p>
+<p>在新经济环境中的最优系统,是那些规矩少,临近混乱的系统.在系统中,成员之间形成足够共识,相互约束以避免陷入无政府状态.但是重复、浪费、不完整信息以及低效等弊病比比皆是.但低效也是艺术、新模式、新观念、亚文化群等的来源.低效换来的是灵活,随时调整和创新,这样才能在流变中把握住闪现的机会.创造更多新机遇,比起优化现状,收益要大得多.</p>
+<p>勇于面对混乱吧.与其一直解决问题,不如在流变中持续学习,寻找真正的机遇.</p>
+<h2 id="u65B0_u7ECF_u6D4E_u4E0B_u7684_u81EA_u95EE_u81EA_u7B54_u5217_u8868"><a href="#u65B0_u7ECF_u6D4E_u4E0B_u7684_u81EA_u95EE_u81EA_u7B54_u5217_u8868" class="headerlink" title="新经济下的自问自答列表"></a>新经济下的自问自答列表</h2><ul>
+<li>什么是原子该干的?什么是数字该干的?</li>
+<li>是否参与到了更大区域甚至是全球的流通?加速了什么流通?</li>
+<li>是建立网络,还是只有零散的节点?</li>
+<li>节点是什么?与其他节点的关系如何?</li>
+<li>有没有提供帮助节点建立连接的途径和工具?建立连接的速度有多快?是线性的吗?</li>
+<li>节点联系是否带来指数级增长?</li>
+<li>你提供的产品或服务最终会免费吗?你能免费赠送什么而不索取回报?赠品如何进入良性循环?</li>
+<li>什么样的人愿意加入你的网络?</li>
+<li>他们之间可以建立什么关系?你如何帮助他们?</li>
+<li>你有能力制定标准吗?</li>
+<li>怎样才能让数据流经实体物品呢?</li>
+<li>公司的竞争力由哪些技能组合构成?</li>
+<li>每一次看似成功的尝试,有没有更有趣的替代品?</li>
+<li>你的客户享受服务时,也在帮你产生内容或者制造价值吗?怎样帮助他们?</li>
+<li>怎样的投入让客户的替换成本很高?</li>
+<li>你拥有聪明的客户吗?你能帮助客户变得更聪明吗?</li>
+<li>什么是对的事情?怎样预判出机遇?</li>
+<li>……<br>这真是个没完没了,有趣之极的问题列表</li>
+</ul>
+<h2 id="u4E0D_u662F_u7ED3_u8BED_u7684_u7ED3_u8BED"><a href="#u4E0D_u662F_u7ED3_u8BED_u7684_u7ED3_u8BED" class="headerlink" title="不是结语的结语"></a>不是结语的结语</h2><blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>欢迎来到混乱、迷人的新世界</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</blockquote>
+<hr>
+<div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-b22b7f64dbf7db88.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="00的公众号，更多分享酝酿中……"><br><div class="image-caption" style="text-align: center">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>人类一向喜欢预言.从远古时期开始,如何顺应变幻莫测的自然,填补对未知的恐惧,一直是人类的重要课题.比预言本身更有趣的,是人类对预言的态度—浑然不觉?惶惶不可终日?明白了要活在当下?更常见的情况是,面对难以理解的预言,人们往往只能用少得可怜的想象力尝试理解,却发现是徒劳.</p>
+<p>可是今天,我们与预言者同在.远见和智慧都可以被具象化,被书写和传播.这让身在新的技术和经济浪潮中却不自知的我们,有机会登上漩涡中一片高地,停留片刻,稍作观察.待到重新回到浪潮中,对秘密了然于胸的人们,也许可以不再随波逐流,成为弄潮儿.</p>
+<p>未来已来,只是分布不均.一起看看 KK 在「新经济,新规则」中给我们描绘的全新图景吧.</p>]]>
+    
+    </summary>
+    
+      <category term="KK" scheme="http://yoursite.com/tags/KK/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="互联网+" scheme="http://yoursite.com/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[升级你的设计思维]]></title>
+    <link href="http://yoursite.com/2015/05/17/upgrade-your-design-thinking/"/>
+    <id>http://yoursite.com/2015/05/17/upgrade-your-design-thinking/</id>
+    <published>2015-05-17T14:05:12.000Z</published>
+    <updated>2016-01-03T15:29:10.000Z</updated>
+    <content type="html"><![CDATA[<p>上周在深圳湾听了熊子川的讲座”设计思维和精益创业”,获益良多.<a href="http://t.cn/R2wzizt" target="_blank" rel="external">分享的内容</a>已经公开,但还是觉得很有必要整理出自己的心得.</p>
+<h2 id="u91CD_u65B0_u7406_u89E3_u8BBE_u8BA1_u601D_u7EF4"><a href="#u91CD_u65B0_u7406_u89E3_u8BBE_u8BA1_u601D_u7EF4" class="headerlink" title="重新理解设计思维"></a>重新理解设计思维</h2><p>去年写过一篇文章 <a href="http://www.uegeek.com/ixd/designthinking" target="_blank" rel="external">说说设计思维</a>,整理了当时对设计思维的理解:</p>
+<ul>
+<li>以人为本</li>
+<li>开放和创新</li>
+<li>过程和试验</li>
+<li>可视化</li>
+</ul>
+<p>之前对设计思维的理解偏向”设计”,想理清设计在哪些方面区别于其他思维方式.听了子川对设计思维的剖析后,发现应该把重点放在对<strong>“思维”</strong>的理解.思维关乎观念和立场,是抽象的可复用的,如果只能在设计活动中使用,那不能称之为”思维”,顶多是方法和工具.</p>
+<p>那么,离开设计,设计思维还能如何帮助我们思考和解决问题,以及带来哪些价值?</p>
+<a id="more"></a>
+<h3 id="u8BBE_u8BA1_u6D3B_u52A8_u7684_u672C_u8D28"><a href="#u8BBE_u8BA1_u6D3B_u52A8_u7684_u672C_u8D28" class="headerlink" title="设计活动的本质"></a>设计活动的本质</h3><p>我们来重新考虑一下:设计是一项什么活动?</p>
+<blockquote>
+<p>设计是为解决问题/达到目的而做好提前安排.<br>设计不但强调”目的”,同时是一项关于”安排”的工作,所以再怎么强调”过程”也不为过.</p>
+</blockquote>
+<p>设计本质上也是 Problem solving 的问题,只不过更强调:</p>
+<ul>
+<li>解决人的问题</li>
+<li>可视化</li>
+<li>追求最和谐/平衡的关系</li>
+</ul>
+<p>那我们再来想想 Problem solving 的关键:</p>
+<ol>
+<li><p>准确定义问题</p>
+<ul>
+<li>理解遇到问题的人</li>
+<li>充分掌握问题产生的上下文信息</li>
+<li>从现象推导出真正的问题</li>
+</ul>
+</li>
+<li><p>提出优质解决方案</p>
+<ul>
+<li>从不同角度解决问题</li>
+<li>从不同层面解决问题</li>
+<li>同时兼顾人/商业/技术等等</li>
+</ul>
+</li>
+<li><p>实施方案去解决问题</p>
+<ul>
+<li>保证解决方案可行</li>
+<li>验证解决方案有效</li>
+<li>解决已知问题之余不产生新问题</li>
+</ul>
+</li>
+</ol>
+<h3 id="u8BBE_u8BA1_u601D_u7EF4_u6240_u8981_u89E3_u51B3_u7684_u95EE_u9898"><a href="#u8BBE_u8BA1_u601D_u7EF4_u6240_u8981_u89E3_u51B3_u7684_u95EE_u9898" class="headerlink" title="设计思维所要解决的问题"></a>设计思维所要解决的问题</h3><p>基于以上,我把设计思维理解为:</p>
+<blockquote>
+<p>寻求最优点/最优解的一种思维方式</p>
+</blockquote>
+<h4 id="1-__u5BFB_u6C42_u95EE_u9898_u6700_u4F18_u70B9_3A_u63A2_u7D22_u548C_u5F00_u53D1_u7684_u5E73_u8861"><a href="#1-__u5BFB_u6C42_u95EE_u9898_u6700_u4F18_u70B9_3A_u63A2_u7D22_u548C_u5F00_u53D1_u7684_u5E73_u8861" class="headerlink" title="1. 寻求问题最优点:探索和开发的平衡"></a>1. 寻求问题最优点:探索和开发的平衡</h4><p>探索的意思是充分获得信息和探索可能性,具有发散的特性;<br>开发的意思是聚焦于一个点,并通过行动产生改变,具有收敛的特性.</p>
+<p>大多数时候,无法解决问题是因为没有正确定义问题:</p>
+<div class="image-package imagebubble"><img src="http://www.uegeek.com/wp-content/uploads/2015/05/交集.png" alt=""></div>
+
+<p>解决问题的第一步永远是问对的问题.我们容易忽略这一步是因为:</p>
+<ul>
+<li>现象往往包含过多信息</li>
+<li>只获得局部/片面的信息</li>
+<li>问题与现象不对应</li>
+<li>问题有多个层次</li>
+</ul>
+<p>结果是:</p>
+<ul>
+<li>我们定义的问题其实跟现象无关</li>
+<li>我们定义的问题并不起关键作用</li>
+<li>每个人定义的问题都不尽相同,但大家以为已经一致</li>
+</ul>
+<p>那么设计思维给我们带来了 “发散”和”收敛” 框架,帮助找到不同阶段最优问题点:</p>
+<p><img src="http://www.uegeek.com/wp-content/uploads/2015/05/table1.png" alt="table1"></p>
+<p>我们面对问题(尤其是经过转述的问题)时,往往来不及做出以上信息收集和判断过程. 那么至少可以多问几个问题:</p>
+<ul>
+<li>是谁遇到这个问题?</li>
+<li>现象是什么?</li>
+<li>问题真的是这个而不是别的吗?</li>
+</ul>
+<h4 id="2-__u5BFB_u6C42_u65B9_u6848_u6700_u4F18_u89E3_3A_u5173_u7CFB_u7684_u5E73_u8861"><a href="#2-__u5BFB_u6C42_u65B9_u6848_u6700_u4F18_u89E3_3A_u5173_u7CFB_u7684_u5E73_u8861" class="headerlink" title="2. 寻求方案最优解:关系的平衡"></a>2. 寻求方案最优解:关系的平衡</h4><p>最优的设计方案,无非是在寻找当前情境下最平衡的”关系”:</p>
+<ul>
+<li>设计商业模式,是要找到价值/用户/渠道/业务/资源/收入/成本的最佳关系;</li>
+<li>建筑设计,是要寻找空间与人(各种活动)的最佳关系;</li>
+<li>交互设计,是要创建系统与用户最佳的”对话”过程—在交流的最佳时机提供合理的方式;</li>
+<li>平面/界面的视觉传达,是要找到元素之间最佳的关系—如何组合,如何展现;</li>
+</ul>
+<p>所有的设计,都得在 (商业)目标–人的需求–可行性 中取得平衡.</p>
+<p>如果这样,设计会不会最终沦为妥协和中庸? 别忘了我们有 “发散”/“收敛” 框架:</p>
+<p><img src="http://www.uegeek.com/wp-content/uploads/2015/05/table2.png" alt=""></p>
+<h4 id="3-__u5BFB_u6C42_u8FC7_u7A0B_u6700_u4F18_u89E3_3A_u53EF_u9A8C_u8BC1_u6027_u548C_u6548_u7387_u7684_u5E73_u8861"><a href="#3-__u5BFB_u6C42_u8FC7_u7A0B_u6700_u4F18_u89E3_3A_u53EF_u9A8C_u8BC1_u6027_u548C_u6548_u7387_u7684_u5E73_u8861" class="headerlink" title="3. 寻求过程最优解:可验证性和效率的平衡"></a>3. 寻求过程最优解:可验证性和效率的平衡</h4><p>在子川的分享中,有一个重要的观点:</p>
+<blockquote>
+<p>设计思维尝试解决的是可验证性和效率共存的问题<br>这个观点给我的启发不仅仅在于设计思维的定义,而是一语道破设计应该是一个”假设-验证”的循环过程.</p>
+</blockquote>
+<p>设计师身上有个通病—-“自恋”,很多时候(绝大多数时候吧)是先通过自己的经验和直觉给出方案,然后再想尽办法去找依据.于是,”审美是主观的”,”设计是主观的”成为很多设计问题的遮羞布/设计师的挡箭牌,看似激烈的讨论实质上是漫无目的地表达主观意愿.</p>
+<p>为什么?</p>
+<p>因为我们常常意识不到,观点不过是一种带有上下文信息的”假设”,而不是天然就有优有劣的”事实”.成功的设计最大的绊脚石,其实是我们的自负(不仅仅是设计师,还有老板/产品经理等等等等).</p>
+<p>如果把所有设计看成是待验证的方案,也许我们会将更多精力放在<strong>如何验证假设</strong>,而不是<strong>如何证明我是对的</strong>.</p>
+<p>ok, 如果我们转换了 mindset, 认为设计都是需要验证的,那么问题来了:未知那么多 ,假设那么多,不可能一一验证啊!没错,所以被效率和 deadline 掐住命运咽喉的时候,我们很自然会选择:</p>
+<ul>
+<li>经验</li>
+<li>领导的意见</li>
+</ul>
+<p>以上两位再厉害,也没办法在电光火石之间给出万全之策,何况这两位最大的弱点在于上下文信息极大缺失,会对明智的判断造成影响.那我们到底如何在<strong>有效和效率</strong>之间抉择?</p>
+<p>设计思维恰好善于解决有效性和效率的矛盾.我们完全可以在设计阶段进行多轮的假设-验证.这一点在精益创业部分会有更多阐述.</p>
+<p>寻找问题最优点,寻找方案最优解,寻找过程最优解—于是,设计思维是问题求解的一种途径,以及</p>
+<blockquote>
+<p>设计思维是寻求最优点/最优解的一种思维方式</p>
+</blockquote>
+<h2 id="u7528_u8BBE_u8BA1_u601D_u7EF4_u8FDB_u884C_u7CBE_u76CA_u521B_u4E1A"><a href="#u7528_u8BBE_u8BA1_u601D_u7EF4_u8FDB_u884C_u7CBE_u76CA_u521B_u4E1A" class="headerlink" title="用设计思维进行精益创业"></a>用设计思维进行精益创业</h2><p>虽说”幸福的人都是相似的,不幸的人各有各的不幸”,但创业失败的原因可以归为两大类:发散过度(想解决所有问题),收敛过早(模仿,没有特色和核心竞争力).</p>
+<p>让我们现学现用,用设计思维去优化创业过程.</p>
+<div class="image-package imagebubble"><img src="http://www.uegeek.com/wp-content/uploads/2015/05/BML.jpg" alt="BML"></div>
+
+<h3 id="u9700_u6C42_u6D4B_u8BD5"><a href="#u9700_u6C42_u6D4B_u8BD5" class="headerlink" title="需求测试"></a>需求测试</h3><p>在第一轮天才般的头脑风暴过后,我们有了很多的创业想法,到了收敛即筛选出有潜力想法的时候,可以用两个问题帮助收敛:</p>
+<ol>
+<li><p>用户假设</p>
+<ul>
+<li>这是什么样的一群人?</li>
+<li>如何群分他们和其他人群?</li>
+<li>如何找到他们?</li>
+</ul>
+</li>
+<li><p>问题假设</p>
+<ul>
+<li>这群人受什么问题困扰?</li>
+<li>问题出现的情境?</li>
+<li>问题严重吗?被重视吗?</li>
+<li>问题频繁出现吗?</li>
+</ul>
+</li>
+</ol>
+<p>明确用户假设和问题假设,可以帮助我们寻找最优问题,这是最容易忽略的两步.很多创业者对解决方案的描述非常清晰而具体,但是对用户和问题只有大概的感觉,描述起来含糊其辞,语焉不详.</p>
+<p>如果一些想法从理论和逻辑上能较好回答以上问题,我们可以进一步设计实验,去验证这些想法是否真正能够证明自己的价值所在.比如:</p>
+<ul>
+<li>能找到这样的人聊一聊吗?</li>
+<li>网络上有相关的讨论和社区吗?</li>
+<li>这个问题在哪里被提及/讨论/解决?</li>
+<li>跟这个问题相关的问题有哪些?受关注程度如何?</li>
+<li>已有或替代性解决方案解决了哪些问题?满意度如何?</li>
+</ul>
+<h3 id="u6D4B_u8BD5_u65B9_u6848_u539F_u578B"><a href="#u6D4B_u8BD5_u65B9_u6848_u539F_u578B" class="headerlink" title="测试方案原型"></a>测试方案原型</h3><p>当需求被验证后,我们开始迈出改变世界的第一步:给出最简单最粗糙的解决方案.这时候已经可以开始验证想法,并在反馈中不断迭代改进.</p>
+<div class="image-package imagebubble"><a href="http://www.uegeek.com/wp-content/uploads/2015/05/循环.jpg" target="_blank" rel="external"><img src="http://www.uegeek.com/wp-content/uploads/2015/05/循环.jpg" alt="循环"></a></div><br><div class="image-package imagebubble"></div><br>值得注意的是,要验证的 MVP (最小可用产品),而不是最小体验…一图胜千言:<br><br><a href="http://www.uegeek.com/wp-content/uploads/2015/05/spotify.jpg" target="_blank" rel="external"><img src="http://www.uegeek.com/wp-content/uploads/2015/05/spotify-764x1024.jpg" alt="spotify"></a><br><div class="image-package imagebubble"></div>
+
+<h3 id="u589E_u957F_u6D4B_u8BD5"><a href="#u589E_u957F_u6D4B_u8BD5" class="headerlink" title="增长测试"></a>增长测试</h3><p>概念 ok, 方案 ok , 产品也 ship 出去了,创业团队面临的下一个挑战是:增长.</p>
+<p><a href="http://www.uegeek.com/wp-content/uploads/2015/05/PMT.jpg" target="_blank" rel="external"><img src="http://www.uegeek.com/wp-content/uploads/2015/05/PMT.jpg" alt="PMT"></a></p>
+<div class="image-package imagebubble"></div><br>找到(假设的)增长模型,也去做测试.关于<a href="https://en.wikipedia.org/wiki/Growth_hacking" target="_blank" rel="external">Growth hacking</a>又是另一个话题了.<br><br><br>## 设计师的成长<br><br>&gt; 真正的成功永远在设计之外，如何提升思维技能，让设计变得不那么重要。<br><br>设计师最大的问题是:只会设计,导致狭隘地理解设计,还自我感觉良好.<br><br>设计说到底是世界观和方法论的组合(或者,思维方式+技能吧),但是只有世界观和方法论,而不去 get ur hands dirty,别说改变世界了,别人连看都看不见你.<br><br>设计师想要成长,想要承担更大的责任,得把设计技能练得纯熟,然后去学习其他领域的各种知识,并且在动手解决实际问题中提升自己.<br><br>当设计师不再仅仅关注可感知的设计,也许,世界就会悄悄改变.<br><br>共勉.<br><br><br><em> </em> *<br><br><div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>上周在深圳湾听了熊子川的讲座”设计思维和精益创业”,获益良多.<a href="http://t.cn/R2wzizt">分享的内容</a>已经公开,但还是觉得很有必要整理出自己的心得.</p>
+<h2 id="u91CD_u65B0_u7406_u89E3_u8BBE_u8BA1_u601D_u7EF4"><a href="#u91CD_u65B0_u7406_u89E3_u8BBE_u8BA1_u601D_u7EF4" class="headerlink" title="重新理解设计思维"></a>重新理解设计思维</h2><p>去年写过一篇文章 <a href="http://www.uegeek.com/ixd/designthinking">说说设计思维</a>,整理了当时对设计思维的理解:</p>
+<ul>
+<li>以人为本</li>
+<li>开放和创新</li>
+<li>过程和试验</li>
+<li>可视化</li>
+</ul>
+<p>之前对设计思维的理解偏向”设计”,想理清设计在哪些方面区别于其他思维方式.听了子川对设计思维的剖析后,发现应该把重点放在对<strong>“思维”</strong>的理解.思维关乎观念和立场,是抽象的可复用的,如果只能在设计活动中使用,那不能称之为”思维”,顶多是方法和工具.</p>
+<p>那么,离开设计,设计思维还能如何帮助我们思考和解决问题,以及带来哪些价值?</p>]]>
+    
+    </summary>
+    
+      <category term="Design" scheme="http://yoursite.com/tags/Design/"/>
+    
+      <category term="设计思维" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/"/>
+    
+      <category term="设计" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[送给自己的人生地图]]></title>
+    <link href="http://yoursite.com/2015/04/22/questions-as-map/"/>
+    <id>http://yoursite.com/2015/04/22/questions-as-map/</id>
+    <published>2015-04-21T16:53:26.000Z</published>
+    <updated>2016-01-03T15:31:13.000Z</updated>
+    <content type="html"><![CDATA[<p>作为一枚路痴 + 地理学专业出逃的人，对地图有着天然的亲切感。好嘛，“天然”是骗人的……事实是，我怀疑自己对地图的情感和依赖，除了来自于常常迷路产生的斯德哥尔摩综合症，还源自童年无数次拼世界地图、中国地图过程中yy出的破碎与重建的故事……</p>
+<p>地图主要有两大用途：大比例尺详图用来按图索骥，从 A 到 B ；小比例尺鸟瞰图提供 Bird’s eye view ，纵览全局。手中握着一份地图，心里总是多一份安定。缺乏安全感是一方面，可是啊，地图总能带给人一种释然——你看，世界比你所见要大得多呢！</p>
+<p>如果此刻，十年前的自己站在跟前，眼神会有多迷茫。可是今天，明明走过更多的路，看过更多的人和事，迷雾依旧不散。</p>
+<p>所以，得再送一份地图给自己。<a id="more"></a></p>
+<p>自从进入生活的迷宫，事情总是变得繁复而琐碎。劳劳碌碌，可好像一无所获。</p>
+<p>可是，“获”到底是什么？为什么是这些而不是其他？是自己真正想要的吗？怎样是获得？会再失去吗？获得了会怎样？得不到又会怎样？沿着这些问题，好像可以找到来时的路……</p>
+<p>耐心地发问，耐心地等自己回答，猛然发现，就算知道了再多道理，做了再多事情、挣了再多钱、被再多人认可、居然改变了世界，可如果没有回答内心那几个挥之不去的问题，真的算是走了一遭吗？</p>
+<p>“那几个”问题的差别，制造出了人与人的差异。每个人需要面对或选择面对的人生课题都不相同。虽说人生无法规划，总有太多偶然。但如果时时有几个问题牵引着，迷雾中的方向总是要更清晰一些，临到最后，离问题的答案也总会更接近一些吧。这些问题，也就是人生的地图了。如果没有回答（至少也得是探究过），会觉得生而有憾。</p>
+<blockquote>
+<p>世界是什么模样？（惑于学）</p>
+</blockquote>
+<ul>
+<li>跟我所见所了解都不相同的地方是什么样？</li>
+<li>没有人的地方是什么样？沙漠什么样？雨林什么样？岛屿什么样？大洋什么样？火山什么样？海峡什么样？……</li>
+<li>有人的地方是什么样？有哪些聚落类型？城市尺度 x 地理位置 x 文化 x 制度，会产生怎样的可能性？</li>
+<li>为什么会有这些自然景观和人造景观的差别？</li>
+</ul>
+<blockquote>
+<p>人和人造物的可能性是什么？（惑于业）</p>
+</blockquote>
+<ul>
+<li>人如何认知，如何思考，如何行动？</li>
+<li>机器可以做什么，是怎么做到的？</li>
+<li>人和机器的可能性边界在哪里？最终会合一吗？</li>
+<li>城市是一种高级“机器”吗？如果机器会拥有智能，那么城市呢？</li>
+</ul>
+<blockquote>
+<p>什么最值得追求？（惑于生）</p>
+</blockquote>
+<ul>
+<li>什么可以穿越时间、抵御熵？为什么？</li>
+<li>智慧是什么？如何获得？</li>
+<li>美从何而来？如何体现？</li>
+<li>自然为什么全是美？（也许是地理学的偏见吧，大尺度的美、生态系统的精妙，要比人造物的美震撼太多太多）</li>
+<li>美为什么脆弱？</li>
+<li>美可逆吗？</li>
+<li>美的密度高的人类行为（音乐/艺术/文学…）为什么“无用”</li>
+<li>爱从何而来？为何强大？作为基因的生存机器，爱是一种bug吗？</li>
+</ul>
+<p>每一个问题，用值得用一辈子解答。</p>
+<p>每一个问题领域中，能给出方方面面回答的，可以称之为专家；但只有那些能逼近问题本质的，才是大师。同时有那么多问题，注定只能是个好奇而肤浅的过客。可谁又不是过客呢？跟时间相比，其他的几乎都不重要；跟生活相比，时间几乎不值一提。能穿越时间、价值永驻的东西又有多少？做一个好奇且努力着不那么肤浅的过客，应该是件有意思的事情吧！</p>
+<p>怀着赤子之心来，发现了有趣的问题，带着问题一路向前去。生活好像就是这么简单。</p>
+<p>送给自己的人生地图，看一眼，再上路。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>作为一枚路痴 + 地理学专业出逃的人，对地图有着天然的亲切感。好嘛，“天然”是骗人的……事实是，我怀疑自己对地图的情感和依赖，除了来自于常常迷路产生的斯德哥尔摩综合症，还源自童年无数次拼世界地图、中国地图过程中yy出的破碎与重建的故事……</p>
+<p>地图主要有两大用途：大比例尺详图用来按图索骥，从 A 到 B ；小比例尺鸟瞰图提供 Bird’s eye view ，纵览全局。手中握着一份地图，心里总是多一份安定。缺乏安全感是一方面，可是啊，地图总能带给人一种释然——你看，世界比你所见要大得多呢！</p>
+<p>如果此刻，十年前的自己站在跟前，眼神会有多迷茫。可是今天，明明走过更多的路，看过更多的人和事，迷雾依旧不散。</p>
+<p>所以，得再送一份地图给自己。]]>
+    
+    </summary>
+    
+      <category term="叽歪" scheme="http://yoursite.com/categories/%E5%8F%BD%E6%AD%AA/"/>
+    
+  </entry>
+  
+</feed>
