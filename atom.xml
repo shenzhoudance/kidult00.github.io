@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-03T12:15:02.000Z</updated>
+  <updated>2016-01-08T07:27:12.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,88 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Happy New Year, Happy New Mac]]></title>
+    <link href="http://yoursite.com/2016/01/08/happynewyearhappynewmac/"/>
+    <id>http://yoursite.com/2016/01/08/happynewyearhappynewmac/</id>
+    <published>2016-01-08T07:03:38.000Z</published>
+    <updated>2016-01-08T07:27:12.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/mp-lumberjack33-10.png" alt=""></p>
+<p>到手一台新的 Mac，除了兴奋，需要做些什么才能最快用得顺手？去年00有三次新开 mac 的经历，所以列出了一个清单，感兴趣的朋友可以参考。<br><a id="more"></a></p>
+<h2 id="0-_u5F00_u7BB1"><a href="#0-_u5F00_u7BB1" class="headerlink" title="0.开箱"></a>0.开箱</h2><p>拍照啥的就不说了，记得拍一张序列号备用。如果是 iMac，以后有搬家装箱可能的话，最好把包装结构拍一张……</p>
+<h2 id="1-_u57FA_u672C_u8BBE_u7F6E"><a href="#1-_u57FA_u672C_u8BBE_u7F6E" class="headerlink" title="1.基本设置"></a>1.基本设置</h2><ul>
+<li>开机后打开设置，到「Trackpad」里面设置习惯的触控板手势</li>
+<li>更新系统至最新版本</li>
+<li>有必要的话，在 App Store 里下载最新版本的 Xcode</li>
+</ul>
+<h2 id="2-Homebrew__u5927_u6CD5"><a href="#2-Homebrew__u5927_u6CD5" class="headerlink" title="2.Homebrew 大法"></a>2.Homebrew 大法</h2><p>在新电脑上一个一个下载各软件最新版本很麻烦吧？Homebrew 帮你搞定！用 safari 打开 <a href="http://brew.sh" target="_blank" rel="external">http://brew.sh</a>  按说明在 terminal 里安装 Homebrew</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&#34;</span><br></pre></td></tr></table></figure>
+<p>安装 brew-cask：</p>
+<p><code>brew tap phinze/homebrew-cask</code> 或者<br><code>brew install brew-cask</code></p>
+<p>以后更新只需要：<code>brew update &amp;&amp; brew upgrade</code></p>
+<h2 id="3-VPN_u3001_u6D4F_u89C8_u5668_u548C_u8F93_u5165_u6CD5"><a href="#3-VPN_u3001_u6D4F_u89C8_u5668_u548C_u8F93_u5165_u6CD5" class="headerlink" title="3.VPN、浏览器和输入法"></a>3.VPN、浏览器和输入法</h2><ul>
+<li>安装你的 VPN 工具（我用的<a href="/twelve.rocks">12vpn</a>， 买了两年，用着还不错）</li>
+<li>安装好 Homebrew 后，安装命令行工具 <code>brew cask install iterm2</code></li>
+<li>安装浏览器 <code>brew cask install google-chrome</code>（可能需要开 vpn，如果不成功，需要手动下载安装），安装成功后，选择要同步的设置项</li>
+<li>下载安装 输入法</li>
+</ul>
+<h2 id="4-_u6548_u7387_u7FFB_u500D"><a href="#4-_u6548_u7387_u7FFB_u500D" class="headerlink" title="4.效率翻倍"></a>4.效率翻倍</h2><ul>
+<li><p>安装大管家 Alfred <code>brew cask install alfred</code>，导入 workflows。严重推荐以下 workflow：</p>
+<ul>
+<li>Douban：直接搜索豆瓣书、影、音，方便得不像话</li>
+<li>Youdao-Translate：快捷查词和翻译，学渣和学霸都必备</li>
+<li>chrome-bookmarks：chrome 书签搜索并打开，简直救了收藏夹整理无能者一命</li>
+<li>Copy-Path：快捷键复制当前文件夹路径，跟命令行绝配，尤其是 Git 重度患者</li>
+<li>其余：百度云盘搜索、淘宝搜索、计算器、日历、下载链接分析、自定义搜索、生成短链接和二维码等等，绝对能让 mac 效率提升至少 200%</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-_u57FA_u7840_u5E94_u7528"><a href="#5-_u57FA_u7840_u5E94_u7528" class="headerlink" title="5.基础应用"></a>5.基础应用</h2><ul>
+<li>安装 Markdown 编辑器 <code>brew cask install mou</code></li>
+<li>安装笔记应用 <code>brew cask install evernote</code></li>
+<li>安装代码编辑器 <code>brew cask install sublime-text</code></li>
+<li>安装文档同步工具，用 Airdrop 把原有文件传送到新电脑上</li>
+<li><p>安装 Git</p>
+<p>  按照Github提示，创建SSH秘钥：</p>
+<p>  <code>mkdir ~/.ssh</code> #创建ssh命令</p>
+<p>  <code>cd ~/.ssh</code><br>  <code>ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code> #注意更改Email地址</p>
+<p>  <code>pbcopy &lt; ~/.ssh/id_rsa.pub</code><br>  此时，pdcopy命令已经将id_rsa.pub内容复制到剪切板。</p>
+<p>  登录 github：<a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a>  点击Add an SSH Key，Title 部分填写一个所用电脑的名称，然后在Key部分填写之前通过pdcopy命令复制的内容。生成 key  <a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">https://help.github.com/articles/generating-ssh-keys/</a></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &#34;yourusername&#10;git config --global user.email &#34;youremail&#34;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>安装文献管理工具 Zotero <code>brew cask install zotero</code>，然后设置已经从之前电脑传过来的库</li>
+<li>安装视频播放器 <code>brew cask install vlc</code></li>
+<li>安装系统清理应用 CleanMyMac</li>
+<li>如果有需要，装个虚拟机吧！</li>
+</ul>
+<h2 id="6-_u5C04_u8BA1_u5E08_u5E94_u7528"><a href="#6-_u5C04_u8BA1_u5E08_u5E94_u7528" class="headerlink" title="6.射计师应用"></a>6.射计师应用</h2><ul>
+<li>Sketch 和插件管理工具 Sketch Toolbox</li>
+<li>SketchUp <code>brew cask install sketchup</code></li>
+<li>图片管理应用，比如Inboard</li>
+<li>图标库 Icons8 <code>brew cask install icons8</code></li>
+<li>其他就按各自的喜好吧</li>
+</ul>
+<hr>
+<p>清单暂时更新到这里。欢迎亲们推荐相见恨晚的应用和奇技淫巧~</p>
+<p>Happy New Year &amp; Happy New Macbook!</p>
+<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/mp-lumberjack33-10.png" alt=""></p>
+<p>到手一台新的 Mac，除了兴奋，需要做些什么才能最快用得顺手？去年00有三次新开 mac 的经历，所以列出了一个清单，感兴趣的朋友可以参考。<br>]]>
+    
+    </summary>
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+      <category term="Tips" scheme="http://yoursite.com/tags/Tips/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[00牌机器人2015版本更新记录]]></title>
@@ -1928,68 +2010,6 @@
       <category term="设计思维" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/"/>
     
       <category term="设计" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[送给自己的人生地图]]></title>
-    <link href="http://yoursite.com/2015/04/22/questions-as-map/"/>
-    <id>http://yoursite.com/2015/04/22/questions-as-map/</id>
-    <published>2015-04-21T16:53:26.000Z</published>
-    <updated>2016-01-03T15:31:13.000Z</updated>
-    <content type="html"><![CDATA[<p>作为一枚路痴 + 地理学专业出逃的人，对地图有着天然的亲切感。好嘛，“天然”是骗人的……事实是，我怀疑自己对地图的情感和依赖，除了来自于常常迷路产生的斯德哥尔摩综合症，还源自童年无数次拼世界地图、中国地图过程中yy出的破碎与重建的故事……</p>
-<p>地图主要有两大用途：大比例尺详图用来按图索骥，从 A 到 B ；小比例尺鸟瞰图提供 Bird’s eye view ，纵览全局。手中握着一份地图，心里总是多一份安定。缺乏安全感是一方面，可是啊，地图总能带给人一种释然——你看，世界比你所见要大得多呢！</p>
-<p>如果此刻，十年前的自己站在跟前，眼神会有多迷茫。可是今天，明明走过更多的路，看过更多的人和事，迷雾依旧不散。</p>
-<p>所以，得再送一份地图给自己。<a id="more"></a></p>
-<p>自从进入生活的迷宫，事情总是变得繁复而琐碎。劳劳碌碌，可好像一无所获。</p>
-<p>可是，“获”到底是什么？为什么是这些而不是其他？是自己真正想要的吗？怎样是获得？会再失去吗？获得了会怎样？得不到又会怎样？沿着这些问题，好像可以找到来时的路……</p>
-<p>耐心地发问，耐心地等自己回答，猛然发现，就算知道了再多道理，做了再多事情、挣了再多钱、被再多人认可、居然改变了世界，可如果没有回答内心那几个挥之不去的问题，真的算是走了一遭吗？</p>
-<p>“那几个”问题的差别，制造出了人与人的差异。每个人需要面对或选择面对的人生课题都不相同。虽说人生无法规划，总有太多偶然。但如果时时有几个问题牵引着，迷雾中的方向总是要更清晰一些，临到最后，离问题的答案也总会更接近一些吧。这些问题，也就是人生的地图了。如果没有回答（至少也得是探究过），会觉得生而有憾。</p>
-<blockquote>
-<p>世界是什么模样？（惑于学）</p>
-</blockquote>
-<ul>
-<li>跟我所见所了解都不相同的地方是什么样？</li>
-<li>没有人的地方是什么样？沙漠什么样？雨林什么样？岛屿什么样？大洋什么样？火山什么样？海峡什么样？……</li>
-<li>有人的地方是什么样？有哪些聚落类型？城市尺度 x 地理位置 x 文化 x 制度，会产生怎样的可能性？</li>
-<li>为什么会有这些自然景观和人造景观的差别？</li>
-</ul>
-<blockquote>
-<p>人和人造物的可能性是什么？（惑于业）</p>
-</blockquote>
-<ul>
-<li>人如何认知，如何思考，如何行动？</li>
-<li>机器可以做什么，是怎么做到的？</li>
-<li>人和机器的可能性边界在哪里？最终会合一吗？</li>
-<li>城市是一种高级“机器”吗？如果机器会拥有智能，那么城市呢？</li>
-</ul>
-<blockquote>
-<p>什么最值得追求？（惑于生）</p>
-</blockquote>
-<ul>
-<li>什么可以穿越时间、抵御熵？为什么？</li>
-<li>智慧是什么？如何获得？</li>
-<li>美从何而来？如何体现？</li>
-<li>自然为什么全是美？（也许是地理学的偏见吧，大尺度的美、生态系统的精妙，要比人造物的美震撼太多太多）</li>
-<li>美为什么脆弱？</li>
-<li>美可逆吗？</li>
-<li>美的密度高的人类行为（音乐/艺术/文学…）为什么“无用”</li>
-<li>爱从何而来？为何强大？作为基因的生存机器，爱是一种bug吗？</li>
-</ul>
-<p>每一个问题，用值得用一辈子解答。</p>
-<p>每一个问题领域中，能给出方方面面回答的，可以称之为专家；但只有那些能逼近问题本质的，才是大师。同时有那么多问题，注定只能是个好奇而肤浅的过客。可谁又不是过客呢？跟时间相比，其他的几乎都不重要；跟生活相比，时间几乎不值一提。能穿越时间、价值永驻的东西又有多少？做一个好奇且努力着不那么肤浅的过客，应该是件有意思的事情吧！</p>
-<p>怀着赤子之心来，发现了有趣的问题，带着问题一路向前去。生活好像就是这么简单。</p>
-<p>送给自己的人生地图，看一眼，再上路。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>作为一枚路痴 + 地理学专业出逃的人，对地图有着天然的亲切感。好嘛，“天然”是骗人的……事实是，我怀疑自己对地图的情感和依赖，除了来自于常常迷路产生的斯德哥尔摩综合症，还源自童年无数次拼世界地图、中国地图过程中yy出的破碎与重建的故事……</p>
-<p>地图主要有两大用途：大比例尺详图用来按图索骥，从 A 到 B ；小比例尺鸟瞰图提供 Bird’s eye view ，纵览全局。手中握着一份地图，心里总是多一份安定。缺乏安全感是一方面，可是啊，地图总能带给人一种释然——你看，世界比你所见要大得多呢！</p>
-<p>如果此刻，十年前的自己站在跟前，眼神会有多迷茫。可是今天，明明走过更多的路，看过更多的人和事，迷雾依旧不散。</p>
-<p>所以，得再送一份地图给自己。]]>
-    
-    </summary>
-    
-      <category term="叽歪" scheme="http://yoursite.com/categories/%E5%8F%BD%E6%AD%AA/"/>
     
   </entry>
   
