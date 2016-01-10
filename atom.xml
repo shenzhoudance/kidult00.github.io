@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-10T14:42:21.000Z</updated>
+  <updated>2016-01-10T14:48:56.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2016/01/10/from-wordpress-to-hexo/"/>
     <id>http://yoursite.com/2016/01/10/from-wordpress-to-hexo/</id>
     <published>2016-01-10T14:41:12.000Z</published>
-    <updated>2016-01-10T14:42:21.000Z</updated>
+    <updated>2016-01-10T14:48:56.000Z</updated>
     <content type="html"><![CDATA[<p>拖延了整整两年，今天终于把博客用 Hexo 托管到了 Github 上。(以下记录，仅适用于 Mac 系统)</p>
 <h2 id="Hexo_u662F_u5565"><a href="#Hexo_u662F_u5565" class="headerlink" title="Hexo是啥"></a>Hexo是啥</h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是由 Node.js 驱动的一款快速、简单且功能强大的博客框架。可以快速将 Markdown 格式的文档生成静态页面。是越来越笨重的 Wordpress 和麻烦的空间管理的替代方案。</p>
 <h2 id="u4E00-__u5B89_u88C5_Hexo"><a href="#u4E00-__u5B89_u88C5_Hexo" class="headerlink" title="一. 安装 Hexo"></a>一. 安装 Hexo</h2><p>首先翻看一遍 <a href="https://hexo.io/" target="_blank" rel="external">Hexo 官方文档</a></p>
@@ -27,85 +27,18 @@
 <p>cURL:</p>
 <figure class="highlight"><figcaption><span>curl</span><a href="https://raw.github.com/creationix/nvm/master/install.sh" target="_blank" rel="external">| sh```</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;Wget:&#10;&#10;```$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br></pre></td></tr></table></figure>
 <p>nvm 装好后，重启 terminal，然后安装 Node.js：</p>
-<figure class="highlight"><figcaption><span>nvm install 4```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#24403;&#28982;&#65292;&#20063;&#21487;&#20197;&#30452;&#25509;&#21040; [Node.js](http://nodejs.org/) &#23448;&#32593;&#19979;&#36733;[&#26368;&#26032;&#29256;&#26412;](https://nodejs.org/en/download/)&#23433;&#35013;&#12290;&#10;&#10;#### &#23433;&#35013; Git&#10;&#10;&#25353;&#29031;Github&#25552;&#31034;&#65292;&#21019;&#24314;SSH&#31192;&#38053;&#65306;&#10;&#9;&#9;&#10;```$ mkdir ~/.ssh``` #&#21019;&#24314;ssh&#21629;&#20196;&#10;&#9;&#10;```$ cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<figure class="highlight"><figcaption><span>ssh-keygen -t rsa -C "your_email@example.com"``` #注意更改Email地址</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#9;&#10;```$ pbcopy &#60; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-<p>此时，pdcopy命令已经将id_rsa.pub内容复制到剪切板。</p>
-<p>登录 github：<a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a>  点击Add an SSH Key，Title 部分填写一个所用电脑的名称，然后在Key部分填写之前通过pdcopy命令复制的内容。生成 key  <a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">https://help.github.com/articles/generating-ssh-keys/</a></p>
-<figure class="highlight"><figcaption><span>git config --global user.name "yourusername```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```$ git config --global user.email &#34;youremail&#34;</span><br></pre></td></tr></table></figure>
-<h3 id="2-_u5B89_u88C5_Hexo"><a href="#2-_u5B89_u88C5_Hexo" class="headerlink" title="2.安装 Hexo"></a>2.安装 Hexo</h3><p><code>$ npm install -g hexo-cli</code></p>
-<p>好了，这个时候如果报错，记得加 sudo</p>
-<p><code>$ sudo npm install -g hexo-cli</code></p>
-<h2 id="u4E8C-__u914D_u7F6E_Hexo"><a href="#u4E8C-__u914D_u7F6E_Hexo" class="headerlink" title="二. 配置 Hexo"></a>二. 配置 Hexo</h2><p>进入想要存放博客的文件夹，初始化设置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init&#10;$ npm install</span><br></pre></td></tr></table></figure>
-<p>初始化成功后，文件夹里会有这些东西：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#10;&#9500;&#9472;&#9472; _config.yml&#9;&#9;#&#37197;&#32622;&#25991;&#20214;&#10;&#9500;&#9472;&#9472; package.json&#9;#&#24212;&#29992;&#31243;&#24207;&#25968;&#25454;&#10;&#9500;&#9472;&#9472; scaffolds&#10;&#9500;&#9472;&#9472; source&#9;&#9;&#9;#&#32593;&#31449;&#20869;&#23481;&#10;|   &#9500;&#9472;&#9472; _drafts&#9;&#9;#&#33609;&#31295;&#10;|   &#9492;&#9472;&#9472; _posts&#9;&#9;#&#25991;&#31456;&#10;&#9492;&#9472;&#9472; themes&#9;&#9;&#9;#&#20027;&#39064;</span><br></pre></td></tr></table></figure>
-<p>配置文件的详细说明请查看<a href="https://hexo.io/docs/configuration.html" target="_blank" rel="external">官方文档</a>。</p>
-<h2 id="u4E09-__u4ECE_Wordpress__u8FC1_u79FB"><a href="#u4E09-__u4ECE_Wordpress__u8FC1_u79FB" class="headerlink" title="三. 从 Wordpress 迁移"></a>三. 从 Wordpress 迁移</h2><p>首先安装 hexo-migrator-wordpress 插件：</p>
-<p><code>$ npm install hexo-migrator-wordpress --save</code></p>
-<p>登录 Wordpress 后台，在“工具”-“导出”中导出所有记录。</p>
-<p><code>$ hexo migrate wordpress &lt;source&gt;</code></p>
-<p>source 是 Wordpress 导出文件的存放目录。</p>
-<p>Duang！妥妥地导入到 _posts 目录中了！</p>
-<h2 id="u56DB-__u672C_u5730_u8BBF_u95EE_u535A_u5BA2"><a href="#u56DB-__u672C_u5730_u8BBF_u95EE_u535A_u5BA2" class="headerlink" title="四. 本地访问博客"></a>四. 本地访问博客</h2><p>生成静态文件：<br><code>$ hexo generate</code></p>
-<p>启动本地服务<br><code>$ hexo server</code></p>
-<p>这时提示<br><code>Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</code></p>
-<p>然后在浏览器打开 <a href="http://0.0.0.0:4000/，就可以看到迁移好的博客啦！" target="_blank" rel="external">http://0.0.0.0:4000/，就可以看到迁移好的博客啦！</a></p>
-<h2 id="u4E94-__u6311_u9009_u4E3B_u9898"><a href="#u4E94-__u6311_u9009_u4E3B_u9898" class="headerlink" title="五. 挑选主题"></a>五. 挑选主题</h2><p>可参考 <a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">有那些好看的 Hexo 主题？</a></p>
-<p>下载主题：<code>git clone https://github.com/xxxx themes/xxx</code></p>
-<p>启用主题：克隆/下载 完成后，打开 站点配置文件 “_config.yml”，找到 theme 字段，并将其值更改为下载的主题名字。</p>
-<p>剩下的就根据主题使用文档，按照自己的喜好修改了。</p>
-<p>我选的 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NEXT主题</a> 胜在 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">说明文档</a> 超详细的~</p>
-<p>挑选好主题后还做了以下修改：</p>
-<ul>
-<li>增加了侧栏头像</li>
-<li>增加了社交网站链接</li>
-<li>增加了 RSS 链接</li>
-<li>重新整理了分类</li>
-<li>更新了建站时间</li>
-<li>增加了 DISUQS 评论模块</li>
-<li>增加了标签页页面</li>
-<li>增加了 JiaThis 分享</li>
-<li>增加了 PDF 文档展示</li>
-<li>增加了公益404页面</li>
-</ul>
-<p>待解决问题：</p>
-<ul>
-<li>增加 Google 分析</li>
-<li>站内搜索前端如何展现    </li>
-</ul>
-<h2 id="u516D-__u5B89_u88C5_u63D2_u4EF6"><a href="#u516D-__u5B89_u88C5_u63D2_u4EF6" class="headerlink" title="六. 安装插件"></a>六. 安装插件</h2><h3 id="u7AD9_u5185_u641C_u7D22"><a href="#u7AD9_u5185_u641C_u7D22" class="headerlink" title="站内搜索"></a>站内搜索</h3><p><a href="https://github.com/PaicHyperionDev/hexo-generator-search" target="_blank" rel="external">hexo-generator-search</a>插件为 Hexo3 提供搜索功能。</p>
-<p>安装：</p>
-<p><code>$ npm install hexo-generator-search --save</code></p>
-<h3 id="Feed"><a href="#Feed" class="headerlink" title="Feed"></a>Feed</h3><p><a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">hexo-generator-feed</a> 可以生成Atom 1.0 或 RSS 2.0 feed。</p>
-<p>安装：</p>
-<p><code>$ npm install hexo-generator-feed --save</code></p>
-<h3 id="Sitemap"><a href="#Sitemap" class="headerlink" title="Sitemap"></a>Sitemap</h3><p><a href="https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap" target="_blank" rel="external">说明</a></p>
-<p>安装：</p>
-<p><code>$ npm install hexo-generator-seo-friendly-sitemap --save</code></p>
-<h3 id="u5D4C_u5165_PDF"><a href="#u5D4C_u5165_PDF" class="headerlink" title="嵌入 PDF"></a>嵌入 PDF</h3><p><a href="https://github.com/superalsrk/hexo-pdf/" target="_blank" rel="external">hexo-pdf</a></p>
-<p>安装：</p>
-<p><code>$ npm install --save hexo-pdf</code></p>
-<p>添加：</p>
-<p><code>
-
-	<div class="row">
-	  <iframe src="http://nagland.github.io/viewer/web/viewer.html?val=http://7xov2f.com1.z0.glb.clouddn.com/bash_freshman.pdf" style="width:100%; height:550px"></iframe>
-	</div>
-
-
-</code></p>
-<h2 id="u4E03-__u914D_u7F6E_Github__u5E76_u4E0A_u4F20"><a href="#u4E03-__u914D_u7F6E_Github__u5E76_u4E0A_u4F20" class="headerlink" title="七. 配置 Github 并上传"></a>七. 配置 Github 并上传</h2><p>新建跟用户名同名的 repository，以“.github.io” 为后缀</p>
-<p>创建成功后，点击界面右侧的<code>Settings</code>，打开页面后找到<code>GitHub Pages</code>，点击<code>Launch automatic page generator</code>，生成 page。</p>
-<p>然后在网站配置文件 <code>_config.yml</code>文件中，找到<code>Deployment</code>，修改配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deploy:&#10;  type: git&#10;  repo: git@github.com:yourname/yourname.github.io.git&#10;  branch: master</span><br></pre></td></tr></table></figure>
-<p>如果使用 git 方式部署，执行 <code>npm install hexo-deployer-git --save</code>命令来安装插件。</p>
-<p>但是这时出现了错误提示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm ERR! Darwin 15.2.0&#10;npm ERR! argv &#34;/usr/local/bin/node&#34; &#34;/usr/local/bin/npm&#34; &#34;install&#34; &#34;hexo-deployer-git&#34; &#34;--save&#34;&#10;npm ERR! node v4.2.4&#10;npm ERR! npm  v2.14.12&#10;&#10;npm ERR! shasum check failed for /var/folders/n4/m1w5r2rj3y77vpn_s6g87s180000gn/T/npm-8320-c250e6be/registry.npmjs.org/moment/-/moment-2.11.0.tgz&#10;npm ERR! Expected: 584f5fb87c1f637f12937edce127dde2d206d705&#10;npm ERR! Actual:   f3f4cb5f46c790b29b9b7bdce8435fe70ad58dbd&#10;npm ERR! From:     https://registry.npmjs.org/moment/-/moment-2.11.0.tgz</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><figcaption><span>nvm install 4```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#24403;&#28982;&#65292;&#20063;&#21487;&#20197;&#30452;&#25509;&#21040; [Node.js](http://nodejs.org/) &#23448;&#32593;&#19979;&#36733;[&#26368;&#26032;&#29256;&#26412;](https://nodejs.org/en/download/)&#23433;&#35013;&#12290;&#10;&#10;#### &#23433;&#35013; Git&#10;&#10;&#25353;&#29031;Github&#25552;&#31034;&#65292;&#21019;&#24314;SSH&#31192;&#38053;&#65306;&#10;&#9;&#9;&#10;``$ mkdir ~/.ssh`` #&#21019;&#24314;ssh&#21629;&#20196;&#10;&#9;&#10;``$ cd ~/.ssh``&#10;&#10;``$ ssh-keygen -t rsa -C &#34;your_email@example.com&#34;`` #&#27880;&#24847;&#26356;&#25913;Email&#22320;&#22336;&#10;&#9;&#10;``$ pbcopy &#60; ~/.ssh/id_rsa.pub``&#10;&#10;&#27492;&#26102;&#65292;pdcopy&#21629;&#20196;&#24050;&#32463;&#23558;id_rsa.pub&#20869;&#23481;&#22797;&#21046;&#21040;&#21098;&#20999;&#26495;&#12290;&#10;&#9;&#10;&#30331;&#24405; github&#65306;https://github.com/settings/ssh  &#28857;&#20987;Add an SSH Key&#65292;Title &#37096;&#20998;&#22635;&#20889;&#19968;&#20010;&#25152;&#29992;&#30005;&#33041;&#30340;&#21517;&#31216;&#65292;&#28982;&#21518;&#22312;Key&#37096;&#20998;&#22635;&#20889;&#20043;&#21069;&#36890;&#36807;pdcopy&#21629;&#20196;&#22797;&#21046;&#30340;&#20869;&#23481;&#12290;&#29983;&#25104; key  https://help.github.com/articles/generating-ssh-keys/</span><br></pre></td></tr></table></figure>
+<p>$ git config –global user.name “yourusername<br>$ git config –global user.email “youremail”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#10;### 2.&#23433;&#35013; Hexo&#10;&#10;``$ npm install -g hexo-cli``&#10;&#10;&#22909;&#20102;&#65292;&#36825;&#20010;&#26102;&#20505;&#22914;&#26524;&#25253;&#38169;&#65292;&#35760;&#24471;&#21152; sudo&#10;&#10;``$ sudo npm install -g hexo-cli``&#10;&#10;## &#20108;. &#37197;&#32622; Hexo&#10;&#10;&#36827;&#20837;&#24819;&#35201;&#23384;&#25918;&#21338;&#23458;&#30340;&#25991;&#20214;&#22841;&#65292;&#21021;&#22987;&#21270;&#35774;&#32622;&#65306;</span><br></pre></td></tr></table></figure></p>
+<p>$ hexo init<br>$ npm install<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#21021;&#22987;&#21270;&#25104;&#21151;&#21518;&#65292;&#25991;&#20214;&#22841;&#37324;&#20250;&#26377;&#36825;&#20123;&#19996;&#35199;&#65306;</span><br></pre></td></tr></table></figure></p>
+<p>.<br>├── _config.yml        #配置文件<br>├── package.json    #应用程序数据<br>├── scaffolds<br>├── source            #网站内容<br>|   ├── _drafts        #草稿<br>|   └── _posts        #文章<br>└── themes            #主题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#10;&#37197;&#32622;&#25991;&#20214;&#30340;&#35814;&#32454;&#35828;&#26126;&#35831;&#26597;&#30475;[&#23448;&#26041;&#25991;&#26723;](https://hexo.io/docs/configuration.html)&#12290;&#10;&#10;## &#19977;. &#20174; Wordpress &#36801;&#31227;&#10;&#39318;&#20808;&#23433;&#35013; hexo-migrator-wordpress &#25554;&#20214;&#65306;&#10;&#10;``$ npm install hexo-migrator-wordpress --save``&#10;&#10;&#30331;&#24405; Wordpress &#21518;&#21488;&#65292;&#22312;&#8220;&#24037;&#20855;&#8221;-&#8220;&#23548;&#20986;&#8221;&#20013;&#23548;&#20986;&#25152;&#26377;&#35760;&#24405;&#12290;&#10;&#10;&#10;``$ hexo migrate wordpress &#60;source&#62;``&#10;&#10;source &#26159; Wordpress &#23548;&#20986;&#25991;&#20214;&#30340;&#23384;&#25918;&#30446;&#24405;&#12290;&#10;&#10;Duang&#65281;&#22949;&#22949;&#22320;&#23548;&#20837;&#21040; _posts &#30446;&#24405;&#20013;&#20102;&#65281;&#10;&#10;## &#22235;. &#26412;&#22320;&#35775;&#38382;&#21338;&#23458;&#10;&#29983;&#25104;&#38745;&#24577;&#25991;&#20214;&#65306;&#10;``$ hexo generate``&#10;&#10;&#21551;&#21160;&#26412;&#22320;&#26381;&#21153;&#10;``$ hexo server``&#10;&#10;&#36825;&#26102;&#25552;&#31034;&#10;``Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.``&#10;&#10;&#28982;&#21518;&#22312;&#27983;&#35272;&#22120;&#25171;&#24320; http://0.0.0.0:4000/&#65292;&#23601;&#21487;&#20197;&#30475;&#21040;&#36801;&#31227;&#22909;&#30340;&#21338;&#23458;&#21862;&#65281;&#10;&#10;## &#20116;. &#25361;&#36873;&#20027;&#39064;&#10;&#21487;&#21442;&#32771; [&#26377;&#37027;&#20123;&#22909;&#30475;&#30340; Hexo &#20027;&#39064;&#65311;](https://www.zhihu.com/question/24422335)&#10;&#10;&#19979;&#36733;&#20027;&#39064;&#65306;``git clone https://github.com/xxxx themes/xxx``&#10;&#10;&#21551;&#29992;&#20027;&#39064;&#65306;&#20811;&#38534;/&#19979;&#36733; &#23436;&#25104;&#21518;&#65292;&#25171;&#24320; &#31449;&#28857;&#37197;&#32622;&#25991;&#20214; &#8220;_config.yml&#8221;&#65292;&#25214;&#21040; theme &#23383;&#27573;&#65292;&#24182;&#23558;&#20854;&#20540;&#26356;&#25913;&#20026;&#19979;&#36733;&#30340;&#20027;&#39064;&#21517;&#23383;&#12290;&#10;&#10;&#21097;&#19979;&#30340;&#23601;&#26681;&#25454;&#20027;&#39064;&#20351;&#29992;&#25991;&#26723;&#65292;&#25353;&#29031;&#33258;&#24049;&#30340;&#21916;&#22909;&#20462;&#25913;&#20102;&#12290;&#10;&#10;&#25105;&#36873;&#30340; [NEXT&#20027;&#39064;](https://github.com/iissnan/hexo-theme-next) &#32988;&#22312; [&#35828;&#26126;&#25991;&#26723;](http://theme-next.iissnan.com/) &#36229;&#35814;&#32454;&#30340;~&#10;&#10;&#25361;&#36873;&#22909;&#20027;&#39064;&#21518;&#36824;&#20570;&#20102;&#20197;&#19979;&#20462;&#25913;&#65306;&#10;&#10;- &#22686;&#21152;&#20102;&#20391;&#26639;&#22836;&#20687;&#10;- &#22686;&#21152;&#20102;&#31038;&#20132;&#32593;&#31449;&#38142;&#25509;&#10;- &#22686;&#21152;&#20102; RSS &#38142;&#25509;&#10;- &#37325;&#26032;&#25972;&#29702;&#20102;&#20998;&#31867;&#10;- &#26356;&#26032;&#20102;&#24314;&#31449;&#26102;&#38388;&#10;- &#22686;&#21152;&#20102; DISUQS &#35780;&#35770;&#27169;&#22359;&#10;- &#22686;&#21152;&#20102;&#26631;&#31614;&#39029;&#39029;&#38754;&#10;- &#22686;&#21152;&#20102; JiaThis &#20998;&#20139;&#10;- &#22686;&#21152;&#20102; PDF &#25991;&#26723;&#23637;&#31034;&#10;- &#22686;&#21152;&#20102;&#20844;&#30410;404&#39029;&#38754;&#10;&#10;&#24453;&#35299;&#20915;&#38382;&#39064;&#65306;&#10;&#10;- &#22686;&#21152; Google &#20998;&#26512;&#10;- &#31449;&#20869;&#25628;&#32034;&#21069;&#31471;&#22914;&#20309;&#23637;&#29616;&#9;&#10; &#10;&#10;## &#20845;. &#23433;&#35013;&#25554;&#20214;&#10;&#10;### &#31449;&#20869;&#25628;&#32034;&#10;&#10;[hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search)&#25554;&#20214;&#20026; Hexo3 &#25552;&#20379;&#25628;&#32034;&#21151;&#33021;&#12290;&#10;&#10;&#23433;&#35013;&#65306;&#10;&#10;``$ npm install hexo-generator-search --save``&#10;&#10;### Feed &#10;[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) &#21487;&#20197;&#29983;&#25104;Atom 1.0 &#25110; RSS 2.0 feed&#12290;&#10;&#10;&#23433;&#35013;&#65306;&#10;&#10;``$ npm install hexo-generator-feed --save``&#10;&#10;### Sitemap &#10;[&#35828;&#26126;](https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap)&#10;&#10;&#23433;&#35013;&#65306;&#10;&#10;``$ npm install hexo-generator-seo-friendly-sitemap --save``&#10;&#10;### &#23884;&#20837; PDF &#10;[hexo-pdf](https://github.com/superalsrk/hexo-pdf/)&#10;&#10;&#23433;&#35013;&#65306;&#10;&#10;``$ npm install --save hexo-pdf``&#10;&#10;&#28155;&#21152;&#65306;&#10;&#10;``&#123;% pdf http://7xov2f.com1.z0.glb.clouddn.com/bash_freshman.pdf %&#125;``&#10;&#10;## &#19971;. &#37197;&#32622; Github &#24182;&#19978;&#20256;&#10;&#26032;&#24314;&#36319;&#29992;&#25143;&#21517;&#21516;&#21517;&#30340; repository&#65292;&#20197;&#8220;.github.io&#8221; &#20026;&#21518;&#32512;&#10;&#10;&#21019;&#24314;&#25104;&#21151;&#21518;&#65292;&#28857;&#20987;&#30028;&#38754;&#21491;&#20391;&#30340;``Settings``&#65292;&#25171;&#24320;&#39029;&#38754;&#21518;&#25214;&#21040;``GitHub Pages``&#65292;&#28857;&#20987;``Launch automatic page generator``&#65292;&#29983;&#25104; page&#12290;&#10;&#10;&#28982;&#21518;&#22312;&#32593;&#31449;&#37197;&#32622;&#25991;&#20214; ``_config.yml``&#25991;&#20214;&#20013;&#65292;&#25214;&#21040;``Deployment``&#65292;&#20462;&#25913;&#37197;&#32622;&#65306;</span><br></pre></td></tr></table></figure></p>
+<p>deploy:<br>  type: git<br>  repo: git@github.com:yourname/yourname.github.io.git<br>  branch: master<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#22914;&#26524;&#20351;&#29992; git &#26041;&#24335;&#37096;&#32626;&#65292;&#25191;&#34892; ``npm install hexo-deployer-git --save``&#21629;&#20196;&#26469;&#23433;&#35013;&#25554;&#20214;&#12290;&#10;&#10;&#20294;&#26159;&#36825;&#26102;&#20986;&#29616;&#20102;&#38169;&#35823;&#25552;&#31034;</span><br></pre></td></tr></table></figure></p>
+<p>npm ERR! Darwin 15.2.0<br>npm ERR! argv “/usr/local/bin/node” “/usr/local/bin/npm” “install” “hexo-deployer-git” “–save”<br>npm ERR! node v4.2.4<br>npm ERR! npm  v2.14.12</p>
+<p>npm ERR! shasum check failed for /var/folders/n4/m1w5r2rj3y77vpn_s6g87s180000gn/T/npm-8320-c250e6be/registry.npmjs.org/moment/-/moment-2.11.0.tgz<br>npm ERR! Expected: 584f5fb87c1f637f12937edce127dde2d206d705<br>npm ERR! Actual:   f3f4cb5f46c790b29b9b7bdce8435fe70ad58dbd<br>npm ERR! From:     <a href="https://registry.npmjs.org/moment/-/moment-2.11.0.tgz" target="_blank" rel="external">https://registry.npmjs.org/moment/-/moment-2.11.0.tgz</a><br>```</p>
 <p>尝试数次，最终先用 <code>npm install hexo-deployer-git</code> 安装，再执行<code>npm install hexo-deployer-git --save</code></p>
 <p>安装成功后，在当前目录进行 deploy 操作</p>
 <p><code>hexo d</code></p>
 <p>上传成功后，访问 yourname.github.io ，测试是否可以正常访问。</p>
-<h2 id="u516B-__u7ED1_u5B9A_u57DF_u540D"><a href="#u516B-__u7ED1_u5B9A_u57DF_u540D" class="headerlink" title="八. 绑定域名"></a>八. 绑定域名</h2><h3 id="u5728_Github__u91CC_u751F_u6210_CNAME__u6587_u4EF6"><a href="#u5728_Github__u91CC_u751F_u6210_CNAME__u6587_u4EF6" class="headerlink" title="在 Github 里生成 CNAME 文件"></a>在 Github 里生成 CNAME 文件</h3><p>为了绑定域名，首先在 Hexo 的 “public” 文件夹中新建一个CNAME文件（没有后缀），文件内容为你要设置的域名。目的是将你的域名（如 uegeek.com ）指向 Github 服务器。</p>
+<h2 id="u516B-__u7ED1_u5B9A_u57DF_u540D"><a href="#u516B-__u7ED1_u5B9A_u57DF_u540D" class="headerlink" title="八. 绑定域名"></a>八. 绑定域名</h2><h3 id="u5728_Github__u91CC_u751F_u6210_CNAME__u6587_u4EF6"><a href="#u5728_Github__u91CC_u751F_u6210_CNAME__u6587_u4EF6" class="headerlink" title="在 Github 里生成 CNAME 文件"></a>在 Github 里生成 CNAME 文件</h3><p>为了绑定域名，首先在 Hexo 的 “source” 文件夹中新建一个CNAME文件（没有后缀），文件内容为你要设置的域名。目的是将你的域名（如 uegeek.com ）指向 Github 服务器。</p>
 <p>Deploy 到 Github上去后大概需要几分钟生效。</p>
 <h3 id="u5728_DNS__u4E2D_u6DFB_u52A0_u89E3_u6790"><a href="#u5728_DNS__u4E2D_u6DFB_u52A0_u89E3_u6790" class="headerlink" title="在 DNS 中添加解析"></a>在 DNS 中添加解析</h3><p>几年前坑爹地在 Godaddy 买的域名，难用得要死，还时不时被墙。于是把 DNS 换成 国内的服务 <a href="https://www.dnspod.cn/" target="_blank" rel="external">Dnspod</a>。参考<a href="https://support.dnspod.cn/Kb/showarticle/tsid/42/" target="_blank" rel="external">Godaddy注册商域名修改DNS地址</a>。请擦亮眼看清楚 DNS Setting 在哪里设置……</p>
 <p><img src="http://7xjpra.com1.z0.glb.clouddn.com/godaddy.png" alt=""></p>
