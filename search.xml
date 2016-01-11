@@ -6,7 +6,8 @@
     <entry>
       <title><![CDATA[博客搬家记：从 Wordpress 到 Hexo+Github]]></title>
       <url>http://yoursite.com/2016/01/10/from-wordpress-to-hexo/</url>
-      <content type="html"><![CDATA[<p>拖延了整整两年，今天终于把博客用 Hexo 托管到了 Github 上。(以下记录，仅适用于 Mac 系统)</p>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/github&amp;hexo.png" alt=""></p>
+<p>拖延了整整两年，今天终于把博客用 Hexo 托管到了 Github 上。(以下记录，仅适用于 Mac 系统)</p>
 <h2 id="Hexo_u662F_u5565"><a href="#Hexo_u662F_u5565" class="headerlink" title="Hexo是啥"></a>Hexo是啥</h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是由 Node.js 驱动的一款快速、简单且功能强大的博客框架。可以快速将 Markdown 格式的文档生成静态页面。是越来越笨重的 Wordpress 和麻烦的空间管理的替代方案。<br><a id="more"></a></p>
 <h2 id="u4E00-__u5B89_u88C5_Hexo"><a href="#u4E00-__u5B89_u88C5_Hexo" class="headerlink" title="一. 安装 Hexo"></a>一. 安装 Hexo</h2><p>首先翻看一遍 <a href="https://hexo.io/" target="_blank" rel="external">Hexo 官方文档</a></p>
 <h3 id="1-_u73AF_u5883_u51C6_u5907"><a href="#1-_u73AF_u5883_u51C6_u5907" class="headerlink" title="1.环境准备"></a>1.环境准备</h3><h4 id="u5B89_u88C5_Node-js"><a href="#u5B89_u88C5_Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h4><p>推荐方法是用<a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a>安装 Node.js 。</p>
