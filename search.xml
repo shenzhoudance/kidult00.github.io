@@ -4,6 +4,104 @@
   
     
     <entry>
+      <title><![CDATA[第一周：概述和项目管理[FabNotes002]]]></title>
+      <url>http://yoursite.com/2016/02/19/fabnotes002/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>
+<a id="more"></a>
+<h3 id="u8BFE_u7A0B_u6982_u8FF0"><a href="#u8BFE_u7A0B_u6982_u8FF0" class="headerlink" title="课程概述"></a>课程概述</h3><p>很多人对<a href="http://fabacademy.org/" target="_blank" rel="external">FabAcademy</a> 课程的第一反应可能是 3D 打印。3D 打印早在上世纪80年代就出现了，它只是整个课程的一小部分。</p>
+<p><img src="http://ng.cba.mit.edu/show/13.07.Hull.png" alt=""></p>
+<p>而数控机器的出现，还要再早30年。</p>
+<p><img src="http://ng.cba.mit.edu/show/13.08.PopSci.png" alt=""></p>
+<p>在 Gershenfeld 教授看来，”数字化制造(digital fabriction)” 有两层含义</p>
+<ul>
+<li>直接含义：用电脑控制机器去制造东西；换句话说，我给你数据，然后你根据数据来做出东西</li>
+<li>深层含义：数字化整个制造过程，数字化材料本身；换句话说，我给你数据，让数据自己变成东西</li>
+</ul>
+<p>他也据此给出了数字化制造的路线图：</p>
+<ul>
+<li>1.0: computers control machines</li>
+<li>2.0: use machines to make machines</li>
+<li>3.0: put codes in materials</li>
+<li>4.0: put programs in materials</li>
+</ul>
+<p>Fablab 正处于第二个阶段，也就是说，目标是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#21046;&#36896;&#10;&#9;&#21487;&#20197;&#21046;&#36896;&#26426;&#22120;&#30340;&#10; &#26426;&#22120;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>工业制造的整个过程相当复杂，我们已经习惯于用不同的工具去处理不同的流程：CAD，扫描，切割，打印，开模…… 学霸教授正在捣鼓<a href="http://mods.cba.mit.edu/" target="_blank" rel="external">一个一站式工具</a> ，将所有工具整合起来。</p>
+<p>教授介绍了 <a href="http://fablab.io/" target="_blank" rel="external">Fablab</a> 发家哦不发展史，它的模式也是相当有生命力/有趣呢，感兴趣的朋友可以研究一下。</p>
+<h3 id="u9879_u76EE_u7BA1_u7406"><a href="#u9879_u76EE_u7BA1_u7406" class="headerlink" title="项目管理"></a>项目管理</h3><p>历时5个月的 FabAcademy 课程强度不小，所以 Gershenfeld 教授在第一堂课除了承诺大家“你们每一周一定都会忙得四脚朝天”，还安利了项目管理的要点：</p>
+<ul>
+<li><p>按时计划而不是按需计划</p>
+<p>  如果按照项目需要的时间来计划的话，每周时间都会不够用。建议按照每周投入的时间，提前计划要做什么事情，达到什么效果。</p>
+</li>
+<li><p>并行开发而不是串行开发</p>
+<p>  不要把项目拆分成必需先完成 A 才能开始 B 的模式，尽量让子项目并行，最终组合起来。</p>
+</li>
+<li><p>螺旋式开发而不是瀑布式开发</p>
+<p>  从MVP（Minimum Viable Product）着手。在项目最开始，就输出可以运行的版本，哪怕是“Hello world”。然后再逐渐叠加更多的东西，但应该保证每次都是可以正常工作的。</p>
+</li>
+<li><p>bottom-up vs top-down debugging</p>
+<p>  要么让整个东西跑通，然后一部分一部分移除，看看问题出在哪里；要么从最小可运行单元开始，一点点加东西，找出问题。</p>
+</li>
+</ul>
+<ul>
+<li><p>层级化，组块化</p>
+<p>  从“最小工作单元”开始搭建更大的系统。分别做好系统组件，再组装起来。</p>
+</li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><p><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></p>
+<p><a href="https://vimeo.com/153262283" target="_blank" rel="external">Week1 课程视频</a></p>
+<p><a href="http://academy.cba.mit.edu/classes/principles_practices/index.html" target="_blank" rel="external">Week1 课程 Slides</a></p>
+<p><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></p>
+<p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/" target="_blank" rel="external">我的作业网站</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[FabAcademy 可以学什么？[FabNotes001]]]></title>
+      <url>http://yoursite.com/2016/02/19/fabnotes001/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>
+<a id="more"></a>
+<h3 id="Fablab_u662F_u4E2A_u4EC0_u4E48_u7EC4_u7EC7"><a href="#Fablab_u662F_u4E2A_u4EC0_u4E48_u7EC4_u7EC7" class="headerlink" title="Fablab是个什么组织"></a>Fablab是个什么组织</h3><p><a href="http://fabacademy.org/" target="_blank" rel="external">FabAcademy</a> 是 MIT Fablab 开办的一个“虚拟学院”，目标是传播推广数字化、个性化制造理念和技能。</p>
+<p>与 MIT 另一个王牌 <a href="http://www.media.mit.edu/" target="_blank" rel="external">Medialab</a> 不同，Fablab 的野心在于：</p>
+<ul>
+<li>给数字化制造浪潮推波助澜</li>
+<li>教人怎么制造出几乎任何东西</li>
+<li>创立一种独特的分布式教育模式</li>
+</ul>
+<p>“数字制造(digital fabriction)” 大概就是现在很火的“工业4.0”概念吧。</p>
+<blockquote>
+<p>The development of digital fabrication is based on creating codes that don’t just describe things, they are things</p>
+</blockquote>
+<p>所以，Fablab 尝试教授的是：</p>
+<blockquote>
+<p>Turn Codes into Things.</p>
+</blockquote>
+<p>至于分布式模式，是指起源于 MIT 的 Fablab 在全球各地快速复制，通过 local Fablab 学习、实操、获得辅导、形成社群。</p>
+<p>2016年，全球已经有 <a href="https://www.fablabs.io/labs" target="_blank" rel="external">600+ 个 Fablab</a></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fablabsglobal.png" alt=""></p>
+<h3 id="u8BFE_u7A0B_u8BBE_u8BA1"><a href="#u8BFE_u7A0B_u8BBE_u8BA1" class="headerlink" title="课程设计"></a>课程设计</h3><p>每年 FabAcademy 课程历时5个月，每周通过在线教学学习一个新主题，并到线下实验室完成一个小项目：</p>
+<ul>
+<li>CAD</li>
+<li>机器切割</li>
+<li>电路设计和电子元件</li>
+<li>3D 扫描和打印</li>
+<li>数控机器</li>
+<li>嵌入式编程</li>
+<li>机器设计</li>
+<li>输入/输出设备</li>
+<li>模具和铸造</li>
+<li>复合材料</li>
+<li>网络和通讯</li>
+<li>界面和应用编程</li>
+<li>发明和商业化</li>
+</ul>
+<p>学期末会有一个 Final project，运用上所有学到的知识，做出实体的东西来。</p>
+<p>课程学习资料都可以在 <a href="http://archive.fabacademy.org/archives/2016/master/" target="_blank" rel="external">Fabacademy网站</a>上找到。学员的作业通过 <a href="http://git.fabacademy.org/" target="_blank" rel="external">Gitlab</a> 上传。</p>
+<p>每周的课程笔记会更新到我的 <a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">Gitbook</a>：</p>
+<p>也可以查看<a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/" target="_blank" rel="external">我的作业网站</a>。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[有一种天赋，叫做不放弃自己]]></title>
       <url>http://yoursite.com/2016/02/15/talentfornevergiveup/</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/nevergiveuptitle.png" alt=""></p>
