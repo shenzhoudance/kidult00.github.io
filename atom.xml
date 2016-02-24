@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-19T12:08:01.000Z</updated>
+  <updated>2016-02-24T11:38:45.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,75 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[作业1：用 Git 上传自己的网站[FabNotes003]]]></title>
+    <link href="http://yoursite.com/2016/02/24/fabnotes003/"/>
+    <id>http://yoursite.com/2016/02/24/fabnotes003/</id>
+    <published>2016-02-24T11:35:02.000Z</published>
+    <updated>2016-02-24T11:38:45.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>
+<a id="more"></a>
+<p> FabAcademy 第一周的作业是：</p>
+<blockquote>
+<p>用 Git 上传包含自我介绍、项目初步规划的网站到 Gitlab 站点上</p>
+</blockquote>
+<p>真是第一周就挖两个大坑呀：</p>
+<ul>
+<li>学 Git</li>
+<li>做网站</li>
+</ul>
+<p>好在之前都折腾过不止一次，已经摸出了大概的门道：</p>
+<ol>
+<li>安装 Git</li>
+<li>学习使用 Git</li>
+<li>注册 gitlab 帐号</li>
+<li>搭建网站 （Hexo 大法）</li>
+<li>写自我介绍和项目规划</li>
+<li>上传网站到 gitlab</li>
+</ol>
+<p>注：以下操作均在 Mac 下完成</p>
+<h3 id="1-__u5B89_u88C5_Git"><a href="#1-__u5B89_u88C5_Git" class="headerlink" title="1. 安装 Git"></a>1. 安装 Git</h3><p>翻看 <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="external">Git 官方的安装说明</a> :</p>
+<blockquote>
+<p>There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time. If you don’t have it installed already, it will prompt you to install it.</p>
+</blockquote>
+<p>Mac 下使用 Git 奏是方便！</p>
+<h3 id="2-__u5B66_u4E60_u4F7F_u7528_Git"><a href="#2-__u5B66_u4E60_u4F7F_u7528_Git" class="headerlink" title="2. 学习使用 Git"></a>2. 学习使用 Git</h3><p>曾经被 Git 折腾得晕头转向，写过学习笔记「<a href="http://www.uegeek.com/2015/03/18/learngit/" target="_blank" rel="external">多用 Git 少交税</a>」，正好用上。</p>
+<h3 id="3-__u6CE8_u518C_gitlab__u5E10_u53F7"><a href="#3-__u6CE8_u518C_gitlab__u5E10_u53F7" class="headerlink" title="3. 注册 gitlab 帐号"></a>3. 注册 gitlab 帐号</h3><p>FabAcademy 去年还要求用 Mercurial，谢天谢地，今年终于向 git 屈服。他们选择提供开源 git 部署服务的 Gitlab，用它来搭建 FabAcademy 自己的 git repository。</p>
+<p>注册过程很简单，到 <a href="/fablabs.io">fablabs.io</a> 网站注册。然后用注册号的帐号登录 <a href="http://git.fabacademy.org/" target="_blank" rel="external">git.fabacademy.org</a>。等到助教把学员添加到项目之后，就可以在“Your Projects” 里看到啦。 </p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/gitlabproject.png" alt=""></p>
+<p>下一步是按照<a href="http://git.fabacademy.org/help/ssh/README" target="_blank" rel="external">说明</a>，在“Profile Settings”里添加 SSH key，让服务端能识别出该接受哪些数据传输。</p>
+<p>添加密钥成功后，一切准备就绪。在本地找好合适的目录，用 <code>git clone</code> 命令把 project pull 下来。(学号可以到<a href="http://archive.fabacademy.org/archives/2016/master/students.html" target="_blank" rel="external">学员列表页面</a>找到)</p>
+<h3 id="4-__u642D_u5EFA_u7F51_u7AD9__uFF08Hexo__u5927_u6CD5_uFF09"><a href="#4-__u642D_u5EFA_u7F51_u7AD9__uFF08Hexo__u5927_u6CD5_uFF09" class="headerlink" title="4. 搭建网站 （Hexo 大法）"></a>4. 搭建网站 （Hexo 大法）</h3><p>搭建个人网站，是为了记录每周作业的过程，以及期末项目的进度。所以适合用 Wordpress 一类的工具来快速生成。教授推荐了 Jekyll ，但我依然毫不犹豫选择用 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> ，胜在够快够简单，模板质量也不错。</p>
+<p>当然，最直接的原因是我刚刚折腾过，把自己的博客从 Wordpress+自己购买的服务器，迁移到 Hexo 本地生成静态网页+ github 托管。折腾记录请看 <a href="http://www.jianshu.com/p/fd233d967e88" target="_blank" rel="external">博客搬家记：从 Wordpress 到 Hexo+Github</a>。</p>
+<p>过程中有一点需要特别注意。以为每个学员的网站是放在 FabAcademy 网站下面的子目录，所以需要在 Hexo 站点配置文件 “_config.yml” 设置父目录的 url ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># URL&#10;&#10;url: http://archive.fabacademy.org/&#10;root: /archives/2016/fablabshenzhen/students/yourid</span><br></pre></td></tr></table></figure>
+<h3 id="5-__u5199_u81EA_u6211_u4ECB_u7ECD_u548C_u9879_u76EE_u89C4_u5212"><a href="#5-__u5199_u81EA_u6211_u4ECB_u7ECD_u548C_u9879_u76EE_u89C4_u5212" class="headerlink" title="5. 写自我介绍和项目规划"></a>5. 写自我介绍和项目规划</h3><p>一开始就要想 final project 也是够头疼的。我打算做一款<a href="https://en.wikipedia.org/wiki/Theremin" target="_blank" rel="external">特雷门琴</a>出来，求熟悉的朋友支招~</p>
+<h3 id="6-__u4E0A_u4F20_u7F51_u7AD9_u5230_gitlab"><a href="#6-__u4E0A_u4F20_u7F51_u7AD9_u5230_gitlab" class="headerlink" title="6. 上传网站到 gitlab"></a>6. 上传网站到 gitlab</h3><p>网站搭建完毕，内容也准备好之后，就可以上传啦。</p>
+<p>在终端中进入本地站点目录，使用 <code>hexo generate</code> &amp; <code>hexo deploy</code> 两个命令生成最新的博客静态文件。最理想的效果应该是通过 hexo 直接 deploy 到目标的服务器地址。但是因为需要上传到子目录，但是一直没有找到 hexo 直接 deploy 到子目录的办法，只好用本办法凑合着用：拷贝本地 hexo 网站中的“public” 文件夹，替换已经 pull 下来的 gitlab 中自己文件夹中的内容，然后再用 git push 到 gitlab 上去：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add&#10;git commit -m &#34;your comment&#34;&#10;git push</span><br></pre></td></tr></table></figure>
+<p>上传后的效果可以到<a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/" target="_blank" rel="external">我的课程网站</a> 查看。</p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/153262283" target="_blank" rel="external">Week1 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/principles_practices/index.html" target="_blank" rel="external">Week1 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[第一周：概述和项目管理[FabNotes002]]]></title>
@@ -1712,28 +1781,6 @@
     <![CDATA[<h3 id="u75C5_u6BD2_u7684_u75C5_u6BD2_uFF0C_u89C5_u6BCD_u7684_u89C5_u6BCD"><a href="#u75C5_u6BD2_u7684_u75C5_u6BD2_uFF0C_u89C5_u6BCD_u7684_u89C5_u6BCD" class="headerlink" title="病毒的病毒，觅母的觅母"></a>病毒的病毒，觅母的觅母</h3><p>续上一篇，基因力量之强大，我们已经有了很多理解。</p>
 <p>什么是生命？基因是否只有性细胞繁殖一条通路？如果仅就“能够进行复制”这一点出发，生命并不只有一种新式。病毒就是另一种形式的“基因”，它不去操控生存机器，而是直接附着在寄主那儿，有着非比寻常的自我复制和传播扩散能力。又比如，人类发明了不一样的“生命体”、自我繁殖能力更强——文化。</p>
 <p>道金斯再次抛出一个比自私的基因更有冲击力的概念：产生于人类文化“原始汤”中的<strong>文化传播单位或模仿单位</strong>—— Meme/觅母/模因。<br>]]>
-    
-    </summary>
-    
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
-    
-      <category term="进化" scheme="http://yoursite.com/tags/%E8%BF%9B%E5%8C%96/"/>
-    
-      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[报告：前方没有上帝出没——读自私的基因[上]]]></title>
-    <link href="http://yoursite.com/2015/08/20/selfish-gene-1/"/>
-    <id>http://yoursite.com/2015/08/20/selfish-gene-1/</id>
-    <published>2015-08-20T12:58:24.000Z</published>
-    <updated>2016-01-03T15:03:13.000Z</updated>
-    <content type="html"><![CDATA[<p>一句话：这是一本早读早超生的书，评分五星。</p>
-<div class="image-package imagebubble"><img src="http://img3.douban.com/lpic/s11214645.jpg" alt=""></div><br>笔记之前，介绍一下作者。理查德·道金斯（Richard Dawkins）是英国著名演化生物学家、动物行为学家和科普作家。相关资料网上很多，其中有一点值得一提，他同美国哲学家丹尼尔·丹尼特、神经科学家山姆·哈里斯和已故的英裔美国作家克里斯托弗·希钦斯常常一起被称为“新无神论的四骑士”。看完自私的基因，就能理解如果道金斯不是无神论者，那简直是见鬼了。<br><br><a id="more"></a><br><br><br>### 五星的理由<br><br>#### 升级世界观必备<br><br>世界观是神马？自从韩岳父送出一句“没有观过世界，哪来的世界观”，似乎把原本扒拉在这个词上面各种装逼的外衣全撕扯下拉，露出了丫本来的面目：世界观，不就是怎么看待世界嘛。那么，看遍了世界，就可以升级世界观了么？并不是。解决问题，必需跳到盒子之外。同理，升级世界观，得通过“升维”达成：原来是一维视角，得换成二维的，世界才能跟着（在你眼里）换个模样。<br><br>人的最大局限，无外乎“时”和“空”：无法穿越时间长廊，也无法跨越星辰大海。而有的理论，却能一下子把时空之锁打开，伴随“咔哒”一声解锁，身之所处原点的横纵坐标，瞬间延伸至无尽，不但有视野豁然开朗的惊奇，更多是面对赤裸裸的新世界时感到的孤立无援。高清无码的新世界让人因为信息过载而头脑发胀、倒吸一口凉气：以前我特么都是怎么过的呀……<br><br>以前看书少，这两年才接触这两本升级世界观的书，想来有点懊恼。一本是用来空间升维的《三体》（让你小时候不看科幻，开窍晚啊）。从三尺身躯占不到的几寸弹丸之地，一下跃进茫茫星系，在漆黑无边的宇宙黑暗森林中，尽物种之力也无法推迟哪怕一秒被降维攻击的灭顶之灾。另一本，就是用来时间升维的《自私的基因》。跟几乎永垂不朽的基因相比，人短短的一生简直短得来不及拿出手机拍照。物种的特征和习性，经过漫漫时间长河，才得以形成和稳定。一个人的爱恨情仇，又算得上什么呢？（已被洗脑状）<br><br>#### 有趣的人，写有趣的书<br><br>五星的理由，远不止惊世骇俗的论调。道金斯作为多本畅销书科普作家，深知怎么写一本有趣的书。这本书里的比喻之多、质量之高，让人恨不能想让道金斯也写写其他太不友好的学科科普。。。每每在读者将要费力脑补的节骨眼上，道金斯都能华丽丽地举出例子来帮助理解。比如用房间、书橱、设计图、卷、页来比喻细胞、DNA基因、染色体、等位基因，用桨手比喻合作的基因，简直让人忘记不能。又比如这个：<br>&gt; 个体是不稳定的，它们在不停地消失。染色体也像打出去不久的一副牌一样，混合以致被湮没。但牌本身虽经洗牌而仍存在。在这里，牌就是基因。基因不会被交换所破坏，它们只是调换伙伴再继续前进。<br>跟专业的科学论著不同，看道金斯的书，读者能感受到自己的存在，感受到这位立场鲜明的斗士时时刻刻在与我们对话，巧妙推销他的理论。无论是絮絮叨叨的实验描述，还是狡黠的自问自答，一位内里不老实但装作一本正经的萌萌哒教授形象，总是不经意浮现出来。<br><br>安利了那么多，是时候复习一下书中的精华了。<br><br>### 生命和进化的秘密<br><br>虽然书名是“自私的基因”（道金斯自己都承认书名并不理想），这本书的重点绝对不在“自私”而在“基因”，而且自私也不是我们理解的个体、主观的、道德意义上的自私，而是一种盲目的、无意识的、近乎出厂内置程序一般的生存命令，更多是自私的行为本身。<br><br>这本书惊世骇俗的观点，首当其冲是生存机器。<strong>驱动生命演化、生物生存繁殖的主角，是基因。而种类繁多的生物，都是基因用于繁殖演化的生存机器。个体会灭亡，基因却不朽。</strong><br><br>ps 道金斯对基因的定义：染色体物质的任何一部分，它能够作为一个自然选择的单位对连续若干代起作用。<br><br>生命最初从“原始汤”中偶然形成，其中有一种特殊的分子，属性逆天——能够自我复制。于是，生命的演化由此拉开序幕。生命的本质，就在于复制。不但得生存时间足够长、有数量保证，而且需要精确 copy 和 paste。当然，各种差错肯定会发生，但这又正好为更利于生存的变异提供了可能，最终形成了自然生态的终极大法——多样性。<br><br>道金斯指出，进化的单位是基因，而不是个体，不是种群，也不是物种。从基因的利益（这里可以理解为生存的机会）出发，才能解释看似矛盾的利他现象。复制基因的出现，不仅仅是为了生存，还是为自己制造赖以生存的容器，也就是各种生物体。能够生存下来的复制基因，都是那些为自己构造了生存机器以安居其中的复制基因。<br><br>演化到今天，远古时期的复制基因们安稳地寄居在庞大的“机器人”体内，通过迂回曲折的间接途径与外部世界联系，并通过遥控操纵外部世界。它们存在于我们的躯体内，创造了我们的肉体和心灵，而保存它们正是我们存在的终极理由。今天，我们称它们为基因，而我们就是它们的生存机器。<br><br>### 自然界上演的好戏——生存博弈<br><br>基因的生存机器们就这么日复一日、年复一年地履行着使命：帮助基因扩大在整个基因库/池中的数量。随着时间的推移，复制基因为了保证自己在世界上得以存在下去而采用的技巧和计谋也逐渐改进。基因驱使物种不断调整以形成稳定进化策略（达尔文“适者生存”的含义可以理解为稳定者生存），不同物种之间的策略相互纠缠和影响，形成了自然界蔚为壮观的生物景象。<br><br>成功基因的一个突出特性，是无情的自私，基因的自私通常会导致个体行为的自私。个体的自私会引发种群内的竞争，以及种群间的进犯与防守。事实上，自然界是一个充满博弈的地方。对一个鸟妈妈来说，到底该生多少鸟蛋，孵出多少雏鸟能都养活，生育所需精力如何与自我生存、种内竞争、抵御天敌进犯之间取得平衡，绝对都是超出脑容量的复杂判断。基因怎么办？在足够长的时间内操控生存机器进行冒险试验，最终达到动态平衡，即形成进化上的稳定策略（Evolutionarily Stable Strategy，简称ESS）。书中有大量例子，此处略过。<br><br>道金斯在这部分讲解了博弈论，特别是如何用零和游戏和非零和游戏看待进化策略形成，非常有趣。基因和生物之间的博弈，不仅发生在个体层面，甚至很大程度上影响了两性细胞的形态、两性分工、父母与子女的关系等等。如果我们把父母对子女无私的付出理解为对繁殖进行投资（收益者体内存在同样基因的可能性更大），如果我们理解女性因为对后代投资更多而在两性关系中处于劣势地位，如果我们发现性细胞如此迥异的形态和特性，其实来自于性细胞极端专业化的分工……难道不会对世界有全新的看法么？<br><br>比如，取书中一个问题举例：为什么生命要选择费力的减数分裂而不是更简单的有丝分裂？一个合理的解释是：“促进了在单个个体内积累那些以往分别出现于不同个体内的有利突变”。更加富有想象力的回答是“有一种操作其他基因中拷贝错误率的基因，如果交换对负责交换的基因有好处，这就是存在交换现象的充分理由”。<br><br>又比如在“两性战争”中道金斯总结道：在动物界中各种不同的繁殖制度——一雌一雄、雌雄乱交、“妻妾”等等——都可以理解为雌雄两性间利害冲突所造成的现象。雌雄两性的个体都“想要”在其一生中最大限度地增加它们的全部繁殖成果。由于精子和卵子之间在大小和数量方面存在根本差别，雄性个体一般来说大多倾向于雌雄乱交，而缺乏对后代的关注。雌性个体有两种可供利用的对抗策略：大丈夫策略和家庭幸福策略。<br><br>自然界太有趣，这种有趣因为有了生生不息、精于繁殖演化的基因，而变得五彩斑斓光怪陆离。<br><br>（笔记上篇完）<br><br><em> </em> *<br><br><div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
-    <summary type="html">
-    <![CDATA[<p>一句话：这是一本早读早超生的书，评分五星。</p>
-<div class="image-package imagebubble"><img src="http://img3.douban.com/lpic/s11214645.jpg" alt=""></div><br>笔记之前，介绍一下作者。理查德·道金斯（Richard Dawkins）是英国著名演化生物学家、动物行为学家和科普作家。相关资料网上很多，其中有一点值得一提，他同美国哲学家丹尼尔·丹尼特、神经科学家山姆·哈里斯和已故的英裔美国作家克里斯托弗·希钦斯常常一起被称为“新无神论的四骑士”。看完自私的基因，就能理解如果道金斯不是无神论者，那简直是见鬼了。<br><br>]]>
     
     </summary>
     

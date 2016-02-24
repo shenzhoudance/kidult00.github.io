@@ -4,6 +4,59 @@
   
     
     <entry>
+      <title><![CDATA[作业1：用 Git 上传自己的网站[FabNotes003]]]></title>
+      <url>http://yoursite.com/2016/02/24/fabnotes003/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>
+<a id="more"></a>
+<p> FabAcademy 第一周的作业是：</p>
+<blockquote>
+<p>用 Git 上传包含自我介绍、项目初步规划的网站到 Gitlab 站点上</p>
+</blockquote>
+<p>真是第一周就挖两个大坑呀：</p>
+<ul>
+<li>学 Git</li>
+<li>做网站</li>
+</ul>
+<p>好在之前都折腾过不止一次，已经摸出了大概的门道：</p>
+<ol>
+<li>安装 Git</li>
+<li>学习使用 Git</li>
+<li>注册 gitlab 帐号</li>
+<li>搭建网站 （Hexo 大法）</li>
+<li>写自我介绍和项目规划</li>
+<li>上传网站到 gitlab</li>
+</ol>
+<p>注：以下操作均在 Mac 下完成</p>
+<h3 id="1-__u5B89_u88C5_Git"><a href="#1-__u5B89_u88C5_Git" class="headerlink" title="1. 安装 Git"></a>1. 安装 Git</h3><p>翻看 <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="external">Git 官方的安装说明</a> :</p>
+<blockquote>
+<p>There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time. If you don’t have it installed already, it will prompt you to install it.</p>
+</blockquote>
+<p>Mac 下使用 Git 奏是方便！</p>
+<h3 id="2-__u5B66_u4E60_u4F7F_u7528_Git"><a href="#2-__u5B66_u4E60_u4F7F_u7528_Git" class="headerlink" title="2. 学习使用 Git"></a>2. 学习使用 Git</h3><p>曾经被 Git 折腾得晕头转向，写过学习笔记「<a href="http://www.uegeek.com/2015/03/18/learngit/" target="_blank" rel="external">多用 Git 少交税</a>」，正好用上。</p>
+<h3 id="3-__u6CE8_u518C_gitlab__u5E10_u53F7"><a href="#3-__u6CE8_u518C_gitlab__u5E10_u53F7" class="headerlink" title="3. 注册 gitlab 帐号"></a>3. 注册 gitlab 帐号</h3><p>FabAcademy 去年还要求用 Mercurial，谢天谢地，今年终于向 git 屈服。他们选择提供开源 git 部署服务的 Gitlab，用它来搭建 FabAcademy 自己的 git repository。</p>
+<p>注册过程很简单，到 <a href="/fablabs.io">fablabs.io</a> 网站注册。然后用注册号的帐号登录 <a href="http://git.fabacademy.org/" target="_blank" rel="external">git.fabacademy.org</a>。等到助教把学员添加到项目之后，就可以在“Your Projects” 里看到啦。 </p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/gitlabproject.png" alt=""></p>
+<p>下一步是按照<a href="http://git.fabacademy.org/help/ssh/README" target="_blank" rel="external">说明</a>，在“Profile Settings”里添加 SSH key，让服务端能识别出该接受哪些数据传输。</p>
+<p>添加密钥成功后，一切准备就绪。在本地找好合适的目录，用 <code>git clone</code> 命令把 project pull 下来。(学号可以到<a href="http://archive.fabacademy.org/archives/2016/master/students.html" target="_blank" rel="external">学员列表页面</a>找到)</p>
+<h3 id="4-__u642D_u5EFA_u7F51_u7AD9__uFF08Hexo__u5927_u6CD5_uFF09"><a href="#4-__u642D_u5EFA_u7F51_u7AD9__uFF08Hexo__u5927_u6CD5_uFF09" class="headerlink" title="4. 搭建网站 （Hexo 大法）"></a>4. 搭建网站 （Hexo 大法）</h3><p>搭建个人网站，是为了记录每周作业的过程，以及期末项目的进度。所以适合用 Wordpress 一类的工具来快速生成。教授推荐了 Jekyll ，但我依然毫不犹豫选择用 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> ，胜在够快够简单，模板质量也不错。</p>
+<p>当然，最直接的原因是我刚刚折腾过，把自己的博客从 Wordpress+自己购买的服务器，迁移到 Hexo 本地生成静态网页+ github 托管。折腾记录请看 <a href="http://www.jianshu.com/p/fd233d967e88" target="_blank" rel="external">博客搬家记：从 Wordpress 到 Hexo+Github</a>。</p>
+<p>过程中有一点需要特别注意。以为每个学员的网站是放在 FabAcademy 网站下面的子目录，所以需要在 Hexo 站点配置文件 “_config.yml” 设置父目录的 url ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># URL&#10;&#10;url: http://archive.fabacademy.org/&#10;root: /archives/2016/fablabshenzhen/students/yourid</span><br></pre></td></tr></table></figure>
+<h3 id="5-__u5199_u81EA_u6211_u4ECB_u7ECD_u548C_u9879_u76EE_u89C4_u5212"><a href="#5-__u5199_u81EA_u6211_u4ECB_u7ECD_u548C_u9879_u76EE_u89C4_u5212" class="headerlink" title="5. 写自我介绍和项目规划"></a>5. 写自我介绍和项目规划</h3><p>一开始就要想 final project 也是够头疼的。我打算做一款<a href="https://en.wikipedia.org/wiki/Theremin" target="_blank" rel="external">特雷门琴</a>出来，求熟悉的朋友支招~</p>
+<h3 id="6-__u4E0A_u4F20_u7F51_u7AD9_u5230_gitlab"><a href="#6-__u4E0A_u4F20_u7F51_u7AD9_u5230_gitlab" class="headerlink" title="6. 上传网站到 gitlab"></a>6. 上传网站到 gitlab</h3><p>网站搭建完毕，内容也准备好之后，就可以上传啦。</p>
+<p>在终端中进入本地站点目录，使用 <code>hexo generate</code> &amp; <code>hexo deploy</code> 两个命令生成最新的博客静态文件。最理想的效果应该是通过 hexo 直接 deploy 到目标的服务器地址。但是因为需要上传到子目录，但是一直没有找到 hexo 直接 deploy 到子目录的办法，只好用本办法凑合着用：拷贝本地 hexo 网站中的“public” 文件夹，替换已经 pull 下来的 gitlab 中自己文件夹中的内容，然后再用 git push 到 gitlab 上去：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add&#10;git commit -m &#34;your comment&#34;&#10;git push</span><br></pre></td></tr></table></figure>
+<p>上传后的效果可以到<a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/" target="_blank" rel="external">我的课程网站</a> 查看。</p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/153262283" target="_blank" rel="external">Week1 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/principles_practices/index.html" target="_blank" rel="external">Week1 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[第一周：概述和项目管理[FabNotes002]]]></title>
       <url>http://yoursite.com/2016/02/19/fabnotes002/</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>
