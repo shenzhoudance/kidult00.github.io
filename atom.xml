@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-24T11:38:45.000Z</updated>
+  <updated>2016-02-25T01:58:31.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,12 +15,91 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[第二周：CAD [FabNotes004]]]></title>
+    <link href="http://yoursite.com/2016/02/25/fabnotes004/"/>
+    <id>http://yoursite.com/2016/02/25/fabnotes004/</id>
+    <published>2016-02-25T01:52:58.000Z</published>
+    <updated>2016-02-25T01:58:31.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>
+<a id="more"></a>
+<p>上课时，被教授给出的 <a href="http://academy.cba.mit.edu/classes/computer_design/index.html" target="_blank" rel="external">CAD tools list</a> 弄得老眼昏花……</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SketchUp&#10;123D&#10;Tinkercad&#10;Shapesmith&#10;Flood&#10;MatterMachine&#10;Blender Sverchok&#10;ZBrush&#10;Rhino Grasshopper Kangaroo &#10;FreeCAD&#10;AutoCAD Inventor Fusion 360 education&#10;SolidWorks DraftSight Visualization Xdesign&#10;Onshape&#10;Maya Alias 3ds Max&#10;Cinema 4D&#10;Catia&#10;Creo&#10;NX&#10;AC3D&#10;OpenSCAD&#10;Kokompe Kokopelli Antimony</span><br></pre></td></tr></table></figure>
+<p>光 3D 就有那么多，还没算上 2D 和 2.5D 的。更要命的是，学霸教授说：要求你们把这些全部都试一遍，再找出适合自己的…… 就差没当场口吐白沫……</p>
+<p>如此繁多的 3D 软件，大概可以分为两类：一类是偏艺术/雕塑的“狂拽炫酷吊炸天的自由成型派”，一类是偏工程的“高冷面瘫小叮当的精密机械派”。</p>
+<blockquote>
+<p>The parametric approach is typically used by engineers and architects because the file contains more specific dimensions, relationships, and can include a design history. </p>
+<p>The explicit approach is typically used by artists and industrial designers because it can be more flexible. Explicit modeling allows changes to be made on the fly and small changes are not necessarily related to any other defined point of the geometry. </p>
+</blockquote>
+<p>这么多工具到底要怎么选？除了以上的分类，又参考了几篇文章：</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_computer-aided_design_editors" target="_blank" rel="external">Comparison of computer-aided design editors</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_3D_computer_graphics_software" target="_blank" rel="external">Comparison of 3D computer graphics software</a></li>
+<li><a href="http://www.matterhackers.com/articles/finding-the-right-3d-modeling-software-for-you" target="_blank" rel="external">FINDING THE RIGHT 3D MODELING SOFTWARE FOR YOU</a></li>
+</ul>
+<p>然后列出了我的 list （有选择的感觉94好啊）</p>
+<p>2D 的就不用说了，工作原因，至少是半个熟练工：</p>
+<ul>
+<li>2D (栅格): Photoshop</li>
+<li>2D (矢量): Sketch    </li>
+</ul>
+<p>3D 的之前只用过 SketchUp，选起来确实费神：</p>
+<ul>
+<li><p>3D (parametric, 结构): Fusion 360</p>
+<p>  <img src="http://static-dc.autodesk.net/content/dam/autodesk/www/products/new-fusion-360/images/overview/fusion-360-logo.png" alt=""></p>
+<p>  AutoDesk 很良心地给 Fablab 学生提供免费1年的版本，当然不能错过啦。Fusion 360 在工程设计上还是挺强大的，同时不失自由造型的灵活性，3D 打印、CNC 也不在话下。于是第一个收入囊中。</p>
+</li>
+</ul>
+<ul>
+<li><p>3D (programmatic): <a href="https://github.com/mkeeter/antimony" target="_blank" rel="external">Antimony</a></p>
+<p>  Antimony 是 Fablab 的大牛自己开发的工具。如果接触过 <a href="https://developer.apple.com/library/mac/documentation/GraphicsImaging/Conceptual/QuartzComposerUserGuide/qc_intro/qc_intro.html" target="_blank" rel="external">Quartz composer</a> 之类的 <a href="https://en.wikipedia.org/wiki/Visual_programming_language" target="_blank" rel="external">node-based visual programming</a>的同学一定会觉得 Antimony 很好上手。</p>
+<p>  <img src="http://7xjpra.com1.z0.glb.clouddn.com/antimonys5.png" alt=""></p>
+<p>  拖面条线，控制输入参数和输出结果，突然觉得程序猿的世界友好了一些 XD</p>
+</li>
+</ul>
+<ul>
+<li><p>3D (parametric, 综合): Solidworks</p>
+<p>  Solidworks 似乎没什么好说的了，所有人都会提到（也是够贵的）。</p>
+</li>
+</ul>
+<ul>
+<li><p>3D (explicit): Blender</p>
+<p>  Blender 在影视、游戏、视觉特效、互动3D 应用等领域能力强悍。不过学习曲线也陡峭一些。教授一直说 Blender 好强大的。据说修改 STL 文件很好用。 (STL is a file format native to the stereolithography CAD software created by 3D Systems)</p>
+</li>
+<li><p>3D (parametric, 外型): Rhino</p>
+<p>  再留一个犀牛备用。据说转换格式很好用。</p>
+</li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/154077397" target="_blank" rel="external">Week2 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/computer_design/index.html" target="_blank" rel="external">Week2 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="CAD" scheme="http://yoursite.com/tags/CAD/"/>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[作业1：用 Git 上传自己的网站[FabNotes003]]]></title>
     <link href="http://yoursite.com/2016/02/24/fabnotes003/"/>
     <id>http://yoursite.com/2016/02/24/fabnotes003/</id>
     <published>2016-02-24T11:35:02.000Z</published>
-    <updated>2016-02-24T11:38:45.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>
+    <updated>2016-02-25T01:58:13.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>
 <a id="more"></a>
 <p> FabAcademy 第一周的作业是：</p>
 <blockquote>
@@ -69,7 +148,7 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>]]>
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>]]>
     
     </summary>
     
@@ -88,8 +167,8 @@
     <link href="http://yoursite.com/2016/02/19/fabnotes002/"/>
     <id>http://yoursite.com/2016/02/19/fabnotes002/</id>
     <published>2016-02-19T11:57:47.000Z</published>
-    <updated>2016-02-19T12:08:01.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>
+    <updated>2016-02-25T01:57:52.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
 <a id="more"></a>
 <h3 id="u8BFE_u7A0B_u6982_u8FF0"><a href="#u8BFE_u7A0B_u6982_u8FF0" class="headerlink" title="课程概述"></a>课程概述</h3><p>很多人对<a href="http://fabacademy.org/" target="_blank" rel="external">FabAcademy</a> 课程的第一反应可能是 3D 打印。3D 打印早在上世纪80年代就出现了，它只是整个课程的一小部分。</p>
 <p><img src="http://ng.cba.mit.edu/show/13.07.Hull.png" alt=""></p>
@@ -137,7 +216,7 @@
 <p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/" target="_blank" rel="external">我的作业网站</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>]]>
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>]]>
     
     </summary>
     
@@ -156,8 +235,8 @@
     <link href="http://yoursite.com/2016/02/19/fabnotes001/"/>
     <id>http://yoursite.com/2016/02/19/fabnotes001/</id>
     <published>2016-02-19T11:52:47.000Z</published>
-    <updated>2016-02-19T11:58:06.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>
+    <updated>2016-02-25T01:57:23.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>
 <a id="more"></a>
 <h3 id="Fablab_u662F_u4E2A_u4EC0_u4E48_u7EC4_u7EC7"><a href="#Fablab_u662F_u4E2A_u4EC0_u4E48_u7EC4_u7EC7" class="headerlink" title="Fablab是个什么组织"></a>Fablab是个什么组织</h3><p><a href="http://fabacademy.org/" target="_blank" rel="external">FabAcademy</a> 是 MIT Fablab 开办的一个“虚拟学院”，目标是传播推广数字化、个性化制造理念和技能。</p>
 <p>与 MIT 另一个王牌 <a href="http://www.media.mit.edu/" target="_blank" rel="external">Medialab</a> 不同，Fablab 的野心在于：</p>
@@ -199,7 +278,7 @@
 <p>也可以查看<a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/" target="_blank" rel="external">我的作业网站</a>。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>]]>
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>]]>
     
     </summary>
     
@@ -1737,58 +1816,6 @@
       <category term="00" scheme="http://yoursite.com/tags/00/"/>
     
       <category term="叽歪" scheme="http://yoursite.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[带着镣铐跳舞的生存机器——读自私的基因[下]]]></title>
-    <link href="http://yoursite.com/2015/08/20/selfish-gene-2/"/>
-    <id>http://yoursite.com/2015/08/20/selfish-gene-2/</id>
-    <published>2015-08-20T13:04:11.000Z</published>
-    <updated>2016-01-03T15:00:34.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="u75C5_u6BD2_u7684_u75C5_u6BD2_uFF0C_u89C5_u6BCD_u7684_u89C5_u6BCD"><a href="#u75C5_u6BD2_u7684_u75C5_u6BD2_uFF0C_u89C5_u6BCD_u7684_u89C5_u6BCD" class="headerlink" title="病毒的病毒，觅母的觅母"></a>病毒的病毒，觅母的觅母</h3><p>续上一篇，基因力量之强大，我们已经有了很多理解。</p>
-<p>什么是生命？基因是否只有性细胞繁殖一条通路？如果仅就“能够进行复制”这一点出发，生命并不只有一种新式。病毒就是另一种形式的“基因”，它不去操控生存机器，而是直接附着在寄主那儿，有着非比寻常的自我复制和传播扩散能力。又比如，人类发明了不一样的“生命体”、自我繁殖能力更强——文化。</p>
-<p>道金斯再次抛出一个比自私的基因更有冲击力的概念：产生于人类文化“原始汤”中的<strong>文化传播单位或模仿单位</strong>—— Meme/觅母/模因。<br><a id="more"></a></p>
-<blockquote>
-<p>曲调、概念、妙句、时装、制锅或建造拱廊的方式等都是觅母。正如基因通过精子或卵子从一个个体转移到另一个个体，从而在基因库中进行繁殖一样，觅母通过从广义上说可以称为模仿的过程从一个大脑转移到另一个大脑，从而在觅母库中进行繁殖。当你把一个有生命力的觅母移植到我的心田上时，事实上你把我的大脑变成了这个觅母的宿主，使之成为传播这个觅母的工具，就象病毒寄生于一个宿主细胞的遗传机制一样。<br>看到这里，甚至让人产生一种阴谋论的想法：道金斯花了一本书说服读者接受自私基因的背后目的，其实是为了扩散这个关于觅母的“觅母”！觅母这个概念一抛出，立马就能在读者脑海中扎根生长。每个人的无数经验都可以用来浇灌这个幼小却挠人的概念。。</p>
-</blockquote>
-<p>能穿越时间的事物，才是真正牛逼。财富再多，200年后呢，1000年后呢？还不是灰飞烟灭。穿越时间长廊，谁最成功？物种吗？人类吗？是基因，是模因。</p>
-<p>这让人想到一个有趣的问题：最具病毒性、生命力的觅母都有哪些？让我试着举3个栗子来说明：</p>
-<ol>
-<li>让孩子赢在起跑线一个邪恶的觅母。哪个家长听了，不会感到（哪怕一丝）焦虑？有多少不理智的投资，都是因这句话而起？有多少家长，都不自觉地传播这句话？</li>
-<li>三大宗教宗教和其教义，应该是生命力最强大的大型显性觅母。人们自愿且虔诚地献身于复制它的事业中。宗教就像基因，操纵着信徒建立起生存机器——宗教组织，进一步有了宗教建筑、制度、文化等等。宗教和文化，同化过无数骁勇善战的民族，帮助多少人重建了世界观（其实是替代了个体原本孱弱的文化等位基因，嗯）</li>
-<li>时间这是个比宗教留存更久，对人类生活影响更大的隐性觅母。时间并不客观存在（关于这个的争议暂且忽略），但是从人类文明发端开始，对这个觅母的传播和巩固就没有停止过。时钟被发明，时间是不同民族和文化的公共语言，成为现代文明的根基，更不要说时间觅母成功借用“生命有限”的概念，成为现代文明的基本恐惧之一。<br>于是似乎可以总结一下觅母的特征：</li>
-</ol>
-<ul>
-<li>与日常生活息息相关</li>
-<li>极易理解、可以自动脑补并具象化，形成行动号召</li>
-<li>唤起内心深处的恐惧或欲望，是使人上瘾的 comfort<br>不得不承认，其实我们都是各种各样觅母的生存机器。只不过，作为机器本身，我们还可以产生全新的觅母。</li>
-</ul>
-<h3 id="u4E16_u754C_u5982_u4F55_u4ECE_u6B64_u4E0D_u540C"><a href="#u4E16_u754C_u5982_u4F55_u4ECE_u6B64_u4E0D_u540C" class="headerlink" title="世界如何从此不同"></a>世界如何从此不同</h3><p>书读完，世界观被刷新。</p>
-<p>我们观看世界到底获得了什么样的新维度呢？进化习得的生存策略，对我们的影响到底有多大？作为生存机器的我们，到底该追寻什么意义？我们有可能赢得进化战争吗？</p>
-<p>没法回答这些终极问题，但可以试着给自己列几条新的指南：</p>
-<h4 id="u8BA4_u8BC6_u4F5C_u4E3A_u751F_u5B58_u673A_u5668_u7684_u5C40_u9650_u6027"><a href="#u8BA4_u8BC6_u4F5C_u4E3A_u751F_u5B58_u673A_u5668_u7684_u5C40_u9650_u6027" class="headerlink" title="认识作为生存机器的局限性"></a>认识作为生存机器的局限性</h4><p>时至今日，人类大脑已经进化到一个程度，使我们得以背叛自身的自私基因。基因如何做到隔绝在机器体内而能够预测未来，是个难题。一个解决办法是预先赋予生存机器以学习能力。随着演化的进行，机器的精巧程度如此之高，基因已经将越来越多的决策交由机器自行判断。问题是，我们已经进入一个生存环境急剧变化的时代，生存机器常常来不及根据变化做出反应，更不要说潜藏在机器中间接操纵外部的基因了。人类根据基因过时的资料做出的决定，多半是错误的。作为人这类物种，我们看到蛇会本能害怕，看到高蛋白高热量的肉和糖会下意识兴奋，我们的认知始终有限，大脑容易短路而产生各种谬误…… 认识到一点，就是极好的~</p>
-<h4 id="u6210_u4E3A_u5C11_u6570_u6D3E_u4E5F_u6CA1_u4EC0_u4E48_u5927_u4E0D_u4E86"><a href="#u6210_u4E3A_u5C11_u6570_u6D3E_u4E5F_u6CA1_u4EC0_u4E48_u5927_u4E0D_u4E86" class="headerlink" title="成为少数派也没什么大不了"></a>成为少数派也没什么大不了</h4><p>受基因操纵的我们，生活在以生殖繁衍为主题的社会中，半完成任务半享受地按照预置程序认真运行着。我们死后可以遗留给后代的东西有两种：基因和模因/觅母。但如果我这台机器的出厂设置出了点小 bug，怎么办？几乎可以预见，我这辈子在基因方面无所贡献。但反正基因库压根不缺我一台机器呀！！</p>
-<p>任何“主流”，无外乎是已经足够强大基因和模因/觅母的统治环境。逃出基因的手掌心比较难，但是摆脱某些模因/觅母似乎可以做到。也许我可以选择成为某些模因/觅母的机器，勤勤恳恳地传播（已经有苗头，虽然不会是任何宗教）。或者，哪天我掌握了更高阶的玩法，成为制造觅母的机器，如同我的偶像们一样，短短一生，却留下财富无数（其实都是模因）。</p>
-<h4 id="u533A_u5206_u6E05_u695A_u654C_u4EBA_u548C_u670B_u53CB"><a href="#u533A_u5206_u6E05_u695A_u654C_u4EBA_u548C_u670B_u53CB" class="headerlink" title="区分清楚敌人和朋友"></a>区分清楚敌人和朋友</h4><p>作为生存机器的我们，很容易陷入到个体的竞争中。但是，进化中的合作可能远比竞争带来的收益大。物种与物种，个体与个体之间最大的“敌人”，也许是制定规则的“银行家”（见第十二章），而不是跟我们的阶级兄弟。将这个原则放大到其他领域，也同样适用。我们应该在生活的哪些方面追求零和博弈，又在哪些方面追求非零和博弈呢？这是个值得经常思考的问题。同最近流行的“从零到一”风潮类似，进化中的合作告诉我们，要去寻找增量，寻找系统中不合理的规则并联合其他力量一起去打破它，然后才能获得比原来存量市场大得多的回报。</p>
-<h4 id="u5BFB_u627E_u65B0_u7684_u4EF7_u503C"><a href="#u5BFB_u627E_u65B0_u7684_u4EF7_u503C" class="headerlink" title="寻找新的价值"></a>寻找新的价值</h4><p>只属于个体层面的价值、受基因无脑驱使而追逐的价值，其实并没有多大意思（比如生存、财富、安全感、社交）。我并不是说这些不重要，而是觉得既然这些是天然属性，本能就会使然。如果我们用 hack 游戏规则的角度来看，是不是可以通过钻研游戏规则找到一些好玩的玩法和彩蛋？有哪些能力，是我们被赋予原本用来运载基因，但是又可以为我们所用，去追逐其他更有意思的事物的？作为一台卑微的生存机器，我们是不是也能制造出穿越时间的“作品”？</p>
-<hr>
-<p>附</p>
-<p>道金斯 TED 演讲: <a href="http://open.163.com/movie/2014/6/B/F/M9SD9IA5R_M9SDQFSBF.html" target="_blank" rel="external">Militant atheism</a></p>
-<hr>
-<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
-    <summary type="html">
-    <![CDATA[<h3 id="u75C5_u6BD2_u7684_u75C5_u6BD2_uFF0C_u89C5_u6BCD_u7684_u89C5_u6BCD"><a href="#u75C5_u6BD2_u7684_u75C5_u6BD2_uFF0C_u89C5_u6BCD_u7684_u89C5_u6BCD" class="headerlink" title="病毒的病毒，觅母的觅母"></a>病毒的病毒，觅母的觅母</h3><p>续上一篇，基因力量之强大，我们已经有了很多理解。</p>
-<p>什么是生命？基因是否只有性细胞繁殖一条通路？如果仅就“能够进行复制”这一点出发，生命并不只有一种新式。病毒就是另一种形式的“基因”，它不去操控生存机器，而是直接附着在寄主那儿，有着非比寻常的自我复制和传播扩散能力。又比如，人类发明了不一样的“生命体”、自我繁殖能力更强——文化。</p>
-<p>道金斯再次抛出一个比自私的基因更有冲击力的概念：产生于人类文化“原始汤”中的<strong>文化传播单位或模仿单位</strong>—— Meme/觅母/模因。<br>]]>
-    
-    </summary>
-    
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
-    
-      <category term="进化" scheme="http://yoursite.com/tags/%E8%BF%9B%E5%8C%96/"/>
-    
-      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
     
   </entry>
   
