@@ -4,9 +4,69 @@
   
     
     <entry>
+      <title><![CDATA[作业2：用CAD画特雷门琴的模型 [FabNotes005]]]></title>
+      <url>http://yoursite.com/2016/02/26/fabnotes005/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
+<a id="more"></a>
+<p>这周的作业是</p>
+<blockquote>
+<p>用 CAD 工具给 final project 建模</p>
+</blockquote>
+<p>我的 final project 打算做一个特雷门琴（具体是什么鬼，请关注后续笔记），它有一个巨大的优势 —— 造型简单！</p>
+<p><img src="http://cnet1.cbsistatic.com/hub/i/r/2013/11/02/a0d46b02-6de8-11e3-913e-14feb5ca9861/resize/570xauto/d9feb99e1358983a3e909096ea0aca72/01_UM_Project___Odd_Harmonics___LR.jpg" alt=""></p>
+<p>在网上找到 Moog 家最经典的一款，看起来很方整，适合我这个 3D 小白 XD。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Etherwave_Theremin_Kit.jpg" alt=""></p>
+<p>然后开始在 Fusion 360 里捣鼓起来。</p>
+<h2 id="u70ED_u8EAB"><a href="#u70ED_u8EAB" class="headerlink" title="热身"></a>热身</h2><p>因为对这个软件的经验完全为0，就先去官网过了一遍基础教程：<a href="http://www.autodesk.com/products/fusion-360/learn-training-tutorials" target="_blank" rel="external">Get started with Fusion 360 - 9 tutorials in under 50 minutes</a></p>
+<p>Fusion 360 的功能都按模块组织，很清晰：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fusionUI.png" alt=""></p>
+<p>画三维形状的基本步骤是：</p>
+<p>先在「sketch」模块里面画平面图 (btw 右下角对话框里的直角、平行等工具很实用)</p>
+<p><img src="http://www.autodesk.com/content/dam/autodesk/www/products/new-fusion-360/images/learning/fusion360-sketch-800x450.jpg" alt=""></p>
+<p>然后用 「creat」 里面的 「extrude」 拉出三维形状。</p>
+<h2 id="u5F00_u5DE5"><a href="#u5F00_u5DE5" class="headerlink" title="开工"></a>开工</h2><p>参考这张特雷门组装部件图，按照4个部分画出各个部件。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminS1200.png" alt=""></p>
+<ol>
+<li><p>底座</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s1.png" alt=""></p>
+<p> 在 Y 面画出「凹」字形，向 X 轴拉出形状。</p>
+</li>
+<li><p>盖子</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s2.png" alt=""></p>
+<p> 在 X 面画出倒「凹」字形，向 Y 轴拉出形状</p>
+</li>
+<li><p>画出天线 (带曲弧的控制音量，直的控制音高)</p>
+<p> 曲弧那里费了好大劲，最后用了暴力的办法：在 sketch 里面画圆形切直线（加 point 然后 trim ），拉出 3D 后再用「modify」里面的「Fillet」掉每个面的棱角……</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/antenna.png" alt=""></p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s3.png" alt=""></p>
+</li>
+<li><p>做垂直天线的接口和螺母</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s4.png" alt=""></p>
+</li>
+<li><p>在底座两侧打洞，然后组装</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s5.png" alt=""></p>
+<p> 透视图（螺丝和螺母的尺寸需要事先计算好）</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s5%20detail.png" alt=""></p>
+<p> (Fusion 的组装动画好浮夸啊……)</p>
+</li>
+<li><p>盖上盖子……</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s6.png" alt=""></p>
+</li>
+</ol>
+<p>3D 小白的简易版特雷门模型就画好了（左边天线还装反了，扶额……）</p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/154077397" target="_blank" rel="external">Week2 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/computer_design/index.html" target="_blank" rel="external">Week2 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[第二周：CAD [FabNotes004]]]></title>
       <url>http://yoursite.com/2016/02/25/fabnotes004/</url>
-      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
 <a id="more"></a>
 <p>上课时，被教授给出的 <a href="http://academy.cba.mit.edu/classes/computer_design/index.html" target="_blank" rel="external">CAD tools list</a> 弄得老眼昏花……</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SketchUp&#10;123D&#10;Tinkercad&#10;Shapesmith&#10;Flood&#10;MatterMachine&#10;Blender Sverchok&#10;ZBrush&#10;Rhino Grasshopper Kangaroo &#10;FreeCAD&#10;AutoCAD Inventor Fusion 360 education&#10;SolidWorks DraftSight Visualization Xdesign&#10;Onshape&#10;Maya Alias 3ds Max&#10;Cinema 4D&#10;Catia&#10;Creo&#10;NX&#10;AC3D&#10;OpenSCAD&#10;Kokompe Kokopelli Antimony</span><br></pre></td></tr></table></figure>
@@ -67,7 +127,7 @@
     <entry>
       <title><![CDATA[作业1：用 Git 上传自己的网站[FabNotes003]]]></title>
       <url>http://yoursite.com/2016/02/24/fabnotes003/</url>
-      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>
 <a id="more"></a>
 <p> FabAcademy 第一周的作业是：</p>
 <blockquote>
@@ -120,7 +180,7 @@
     <entry>
       <title><![CDATA[第一周：概述和项目管理[FabNotes002]]]></title>
       <url>http://yoursite.com/2016/02/19/fabnotes002/</url>
-      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>
 <a id="more"></a>
 <h3 id="u8BFE_u7A0B_u6982_u8FF0"><a href="#u8BFE_u7A0B_u6982_u8FF0" class="headerlink" title="课程概述"></a>课程概述</h3><p>很多人对<a href="http://fabacademy.org/" target="_blank" rel="external">FabAcademy</a> 课程的第一反应可能是 3D 打印。3D 打印早在上世纪80年代就出现了，它只是整个课程的一小部分。</p>
 <p><img src="http://ng.cba.mit.edu/show/13.07.Hull.png" alt=""></p>
@@ -172,7 +232,7 @@
     <entry>
       <title><![CDATA[FabAcademy 可以学什么？[FabNotes001]]]></title>
       <url>http://yoursite.com/2016/02/19/fabnotes001/</url>
-      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>
 <a id="more"></a>
 <h3 id="Fablab_u662F_u4E2A_u4EC0_u4E48_u7EC4_u7EC7"><a href="#Fablab_u662F_u4E2A_u4EC0_u4E48_u7EC4_u7EC7" class="headerlink" title="Fablab是个什么组织"></a>Fablab是个什么组织</h3><p><a href="http://fabacademy.org/" target="_blank" rel="external">FabAcademy</a> 是 MIT Fablab 开办的一个“虚拟学院”，目标是传播推广数字化、个性化制造理念和技能。</p>
 <p>与 MIT 另一个王牌 <a href="http://www.media.mit.edu/" target="_blank" rel="external">Medialab</a> 不同，Fablab 的野心在于：</p>

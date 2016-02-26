@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-25T01:58:31.000Z</updated>
+  <updated>2016-02-26T06:51:51.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,12 +15,82 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[作业2：用CAD画特雷门琴的模型 [FabNotes005]]]></title>
+    <link href="http://yoursite.com/2016/02/26/fabnotes005/"/>
+    <id>http://yoursite.com/2016/02/26/fabnotes005/</id>
+    <published>2016-02-26T06:51:51.000Z</published>
+    <updated>2016-02-26T06:51:51.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
+<a id="more"></a>
+<p>这周的作业是</p>
+<blockquote>
+<p>用 CAD 工具给 final project 建模</p>
+</blockquote>
+<p>我的 final project 打算做一个特雷门琴（具体是什么鬼，请关注后续笔记），它有一个巨大的优势 —— 造型简单！</p>
+<p><img src="http://cnet1.cbsistatic.com/hub/i/r/2013/11/02/a0d46b02-6de8-11e3-913e-14feb5ca9861/resize/570xauto/d9feb99e1358983a3e909096ea0aca72/01_UM_Project___Odd_Harmonics___LR.jpg" alt=""></p>
+<p>在网上找到 Moog 家最经典的一款，看起来很方整，适合我这个 3D 小白 XD。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Etherwave_Theremin_Kit.jpg" alt=""></p>
+<p>然后开始在 Fusion 360 里捣鼓起来。</p>
+<h2 id="u70ED_u8EAB"><a href="#u70ED_u8EAB" class="headerlink" title="热身"></a>热身</h2><p>因为对这个软件的经验完全为0，就先去官网过了一遍基础教程：<a href="http://www.autodesk.com/products/fusion-360/learn-training-tutorials" target="_blank" rel="external">Get started with Fusion 360 - 9 tutorials in under 50 minutes</a></p>
+<p>Fusion 360 的功能都按模块组织，很清晰：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fusionUI.png" alt=""></p>
+<p>画三维形状的基本步骤是：</p>
+<p>先在「sketch」模块里面画平面图 (btw 右下角对话框里的直角、平行等工具很实用)</p>
+<p><img src="http://www.autodesk.com/content/dam/autodesk/www/products/new-fusion-360/images/learning/fusion360-sketch-800x450.jpg" alt=""></p>
+<p>然后用 「creat」 里面的 「extrude」 拉出三维形状。</p>
+<h2 id="u5F00_u5DE5"><a href="#u5F00_u5DE5" class="headerlink" title="开工"></a>开工</h2><p>参考这张特雷门组装部件图，按照4个部分画出各个部件。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminS1200.png" alt=""></p>
+<ol>
+<li><p>底座</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s1.png" alt=""></p>
+<p> 在 Y 面画出「凹」字形，向 X 轴拉出形状。</p>
+</li>
+<li><p>盖子</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s2.png" alt=""></p>
+<p> 在 X 面画出倒「凹」字形，向 Y 轴拉出形状</p>
+</li>
+<li><p>画出天线 (带曲弧的控制音量，直的控制音高)</p>
+<p> 曲弧那里费了好大劲，最后用了暴力的办法：在 sketch 里面画圆形切直线（加 point 然后 trim ），拉出 3D 后再用「modify」里面的「Fillet」掉每个面的棱角……</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/antenna.png" alt=""></p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s3.png" alt=""></p>
+</li>
+<li><p>做垂直天线的接口和螺母</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s4.png" alt=""></p>
+</li>
+<li><p>在底座两侧打洞，然后组装</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s5.png" alt=""></p>
+<p> 透视图（螺丝和螺母的尺寸需要事先计算好）</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s5%20detail.png" alt=""></p>
+<p> (Fusion 的组装动画好浮夸啊……)</p>
+</li>
+<li><p>盖上盖子……</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s6.png" alt=""></p>
+</li>
+</ol>
+<p>3D 小白的简易版特雷门模型就画好了（左边天线还装反了，扶额……）</p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/154077397" target="_blank" rel="external">Week2 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/computer_design/index.html" target="_blank" rel="external">Week2 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[第二周：CAD [FabNotes004]]]></title>
     <link href="http://yoursite.com/2016/02/25/fabnotes004/"/>
     <id>http://yoursite.com/2016/02/25/fabnotes004/</id>
     <published>2016-02-25T01:52:58.000Z</published>
-    <updated>2016-02-25T01:58:31.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>
+    <updated>2016-02-26T06:50:49.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
 <a id="more"></a>
 <p>上课时，被教授给出的 <a href="http://academy.cba.mit.edu/classes/computer_design/index.html" target="_blank" rel="external">CAD tools list</a> 弄得老眼昏花……</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SketchUp&#10;123D&#10;Tinkercad&#10;Shapesmith&#10;Flood&#10;MatterMachine&#10;Blender Sverchok&#10;ZBrush&#10;Rhino Grasshopper Kangaroo &#10;FreeCAD&#10;AutoCAD Inventor Fusion 360 education&#10;SolidWorks DraftSight Visualization Xdesign&#10;Onshape&#10;Maya Alias 3ds Max&#10;Cinema 4D&#10;Catia&#10;Creo&#10;NX&#10;AC3D&#10;OpenSCAD&#10;Kokompe Kokopelli Antimony</span><br></pre></td></tr></table></figure>
@@ -77,7 +147,7 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>]]>
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>]]>
     
     </summary>
     
@@ -98,8 +168,8 @@
     <link href="http://yoursite.com/2016/02/24/fabnotes003/"/>
     <id>http://yoursite.com/2016/02/24/fabnotes003/</id>
     <published>2016-02-24T11:35:02.000Z</published>
-    <updated>2016-02-25T01:58:13.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>
+    <updated>2016-02-26T06:50:41.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>
 <a id="more"></a>
 <p> FabAcademy 第一周的作业是：</p>
 <blockquote>
@@ -148,7 +218,7 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>]]>
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>]]>
     
     </summary>
     
@@ -167,8 +237,8 @@
     <link href="http://yoursite.com/2016/02/19/fabnotes002/"/>
     <id>http://yoursite.com/2016/02/19/fabnotes002/</id>
     <published>2016-02-19T11:57:47.000Z</published>
-    <updated>2016-02-25T01:57:52.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
+    <updated>2016-02-26T06:50:31.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>
 <a id="more"></a>
 <h3 id="u8BFE_u7A0B_u6982_u8FF0"><a href="#u8BFE_u7A0B_u6982_u8FF0" class="headerlink" title="课程概述"></a>课程概述</h3><p>很多人对<a href="http://fabacademy.org/" target="_blank" rel="external">FabAcademy</a> 课程的第一反应可能是 3D 打印。3D 打印早在上世纪80年代就出现了，它只是整个课程的一小部分。</p>
 <p><img src="http://ng.cba.mit.edu/show/13.07.Hull.png" alt=""></p>
@@ -216,7 +286,7 @@
 <p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/" target="_blank" rel="external">我的作业网站</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>]]>
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>]]>
     
     </summary>
     
@@ -235,8 +305,8 @@
     <link href="http://yoursite.com/2016/02/19/fabnotes001/"/>
     <id>http://yoursite.com/2016/02/19/fabnotes001/</id>
     <published>2016-02-19T11:52:47.000Z</published>
-    <updated>2016-02-25T01:57:23.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>
+    <updated>2016-02-26T06:50:18.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>
 <a id="more"></a>
 <h3 id="Fablab_u662F_u4E2A_u4EC0_u4E48_u7EC4_u7EC7"><a href="#Fablab_u662F_u4E2A_u4EC0_u4E48_u7EC4_u7EC7" class="headerlink" title="Fablab是个什么组织"></a>Fablab是个什么组织</h3><p><a href="http://fabacademy.org/" target="_blank" rel="external">FabAcademy</a> 是 MIT Fablab 开办的一个“虚拟学院”，目标是传播推广数字化、个性化制造理念和技能。</p>
 <p>与 MIT 另一个王牌 <a href="http://www.media.mit.edu/" target="_blank" rel="external">Medialab</a> 不同，Fablab 的野心在于：</p>
@@ -278,7 +348,7 @@
 <p>也可以查看<a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/" target="_blank" rel="external">我的作业网站</a>。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week1.png" alt=""></p>]]>
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00fabnote.png" alt=""></p>]]>
     
     </summary>
     
@@ -1766,56 +1836,6 @@
       <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
     
       <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[给自己开一张十年的支票]]></title>
-    <link href="http://yoursite.com/2015/09/14/10year-check/"/>
-    <id>http://yoursite.com/2015/09/14/10year-check/</id>
-    <published>2015-09-14T07:51:06.000Z</published>
-    <updated>2016-01-03T14:54:12.000Z</updated>
-    <content type="html"><![CDATA[<p>给自己开一张支票，没有金额，只有时间。十年，就是支票的金额，也是我最大的资产，能给到自己最阔绰的资源。如果拿着自己给自己的天使投资——仅有的、最珍贵的资源——要用这十年来做什么好？</p>
-<p>一切的节约，归根到底都是时间的节约。节约的时间用来干嘛？人想要的东西到底是什么？</p>
-<p>我想，大概是，哄自己开心。</p>
-<p>那么就开心地做这几件事吧：<br><a id="more"></a></p>
-<p></p>
-<p><section class="tn-Powered-by-XIUMI V5"></section><section class="tn-Powered-by-XIUMI V5"></section><section class="tn-Powered-by-XIUMI V5"></section></p>
-<h3 id="u4E00_u3001_u62D3_u5C55_28_u81EA_u5DF1_u7684_29_u77E5_u8BC6_u7586_u57DF"><a href="#u4E00_u3001_u62D3_u5C55_28_u81EA_u5DF1_u7684_29_u77E5_u8BC6_u7586_u57DF" class="headerlink" title="一、拓展(自己的)知识疆域"></a>一、拓展(自己的)知识疆域</h3><p><section class="tn-Powered-by-XIUMI V5"></section><section class="tn-Powered-by-XIUMI V5"></section><section class="tn-Powered-by-XIUMI V5">并没有野(neng)心(li)帮全人类拓展知识疆域，只是希望把自己所在的井底，变得稍微宽敞一点儿，不再为一些无谓的小事伤神。即便get不到诗与远方，也能够少一些苟且。当然，最重要的是在开疆拓土的过程中 high 起来，把自己哄得开开心心。</section></p>
-<p>经受了多年传统教育的毒害，以及十年post-school 的自我折腾，大概信服于几个公开的秘密：</p>
-<h4 id="1-__u505A_u77E5_u8BC6_u7684_u9ED1_u5BA2"><a href="#1-__u505A_u77E5_u8BC6_u7684_u9ED1_u5BA2" class="headerlink" title="1. 做知识的黑客"></a>1. 做知识的黑客</h4><p>能不能学、能不能学会，其实区别只在于心态。知识不是用来仰望的，是用来欣赏和 hack 的。学东西跟游戏里的升级打怪并无二致，需要有目标、有规则、有反馈、有自主行为，而游戏高手都会尽力破解规则，达到数值上限。</p>
-<h4 id="2-__u901A_u8FC7_u4E3B_u9898_u548C_u9879_u76EE_u5B66_u4E60"><a href="#2-__u901A_u8FC7_u4E3B_u9898_u548C_u9879_u76EE_u5B66_u4E60" class="headerlink" title="2. 通过主题和项目学习"></a>2. 通过主题和项目学习</h4><p>从小，我们被告知上学要上语文课、数学课、体育课……考试要求背这个那个，还有标准答案。而有趣和有效的学习过程，却都基本来自主动去研究一个领域问题，或者亲自动手把某样东西做出来。</p>
-<p>阅读也是类似，总是今天听说某本书挺有趣，明天畅销书榜又上榜一本新书，后天刷豆瓣又添了一本想读。虽然很多真正有用有趣的知识都来自“偶遇”，但是散兵游勇地做些布朗运动，毕竟没有心机婊般高举高打来得有效——以及，能收获更多肉体和精神上的痛苦和高潮。集中一个时期密集吸收和思考同一个主题的知识和问题，能最快建立起框架索引，发现模式和本质——既然投资了时间，还是不要做亏本生意。</p>
-<h4 id="3-__u4EE5_u6559_u4E3A_u5B66"><a href="#3-__u4EE5_u6559_u4E3A_u5B66" class="headerlink" title="3. 以教为学"></a>3. 以教为学</h4><p>唯一检验标准，不解释。</p>
-<h4 id="4-__u6267_u884C_u610F_u56FE"><a href="#4-__u6267_u884C_u610F_u56FE" class="headerlink" title="4. 执行意图"></a>4. 执行意图</h4><p>想多做少也好，拖延也好，眼高手低也好，虎头蛇尾也好，都不需要太当回事，更不需要如临大敌地战斗。每天对着傻乎乎的大脑直接说：if <strong><em> then </em></strong>（如果8点半到家，9点之前给自己拼个乐高雪糕出来），它就照做了，霸道总裁也能成绕指柔。</p>
-<h3 id="u4E8C_u3001_u6784_u5EFA_u5C0F_u5C0F_u7684_u4E4C_u6258_u90A6"><a href="#u4E8C_u3001_u6784_u5EFA_u5C0F_u5C0F_u7684_u4E4C_u6258_u90A6" class="headerlink" title="二、构建小小的乌托邦"></a>二、构建小小的乌托邦</h3><p>人活着的引擎，是希望。没有无缘无故的爱恨，也没有天长地久的希望。悲观主义者的乐观，也许来自自我推销的乌托邦。</p>
-<p>希望建起一个小小的乌托邦，是送给最爱我的两个人的乌托邦，也是送给自己的乌托邦。现在开始，十年时间，也许可以。</p>
-<h3 id="u4E09_u3001_u5B66_u4E60_u7231_u4E24_u4E2A_u4EBA"><a href="#u4E09_u3001_u5B66_u4E60_u7231_u4E24_u4E2A_u4EBA" class="headerlink" title="三、学习爱两个人"></a>三、学习爱两个人</h3><p>一个是自己，一个是最爱的你：</p>
-<blockquote>
-<p>学习怎么爱自己，想给你的那些最好的东西，也给自己一份；</p>
-<p>学习怎么成为自己，在别人贴过来的标签之上，有更耀眼的自我标签；</p>
-<p>学习怎么变得坚强，守护来之不易的温柔；</p>
-<p>学习怎么全然接受你，就像慢慢学会全然接受自己；</p>
-<p>学习怎么结伴去发现彼此的秘密，以及世界来不及细看的美好；</p>
-<p>学习怎么跟你分享生命中那些闪光的分秒，以及易逝的纯粹和感怀；</p>
-<p>学习怎么真正拥有，先懂得失去怎么接受；</p>
-<p>学习即使你从来没有来到我身边，或者我没能停驻在你的念想中，我依然会是一个独特的、部分为你而独特的人。</p>
-</blockquote>
-<p>&nbsp;</p>
-<p>十年，出发啦</p>
-<hr>
-<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
-    <summary type="html">
-    <![CDATA[<p>给自己开一张支票，没有金额，只有时间。十年，就是支票的金额，也是我最大的资产，能给到自己最阔绰的资源。如果拿着自己给自己的天使投资——仅有的、最珍贵的资源——要用这十年来做什么好？</p>
-<p>一切的节约，归根到底都是时间的节约。节约的时间用来干嘛？人想要的东西到底是什么？</p>
-<p>我想，大概是，哄自己开心。</p>
-<p>那么就开心地做这几件事吧：<br>]]>
-    
-    </summary>
-    
-      <category term="00" scheme="http://yoursite.com/tags/00/"/>
-    
-      <category term="叽歪" scheme="http://yoursite.com/categories/%E5%8F%BD%E6%AD%AA/"/>
     
   </entry>
   
