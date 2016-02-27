@@ -891,29 +891,29 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/tags/CAD/</loc>
+        <lastmod>2016-02-27T15:10:16.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://yoursite.com/tags/Note/</loc>
-        <lastmod>2016-02-26T06:50:49.000Z</lastmod>
+        <lastmod>2016-02-27T15:11:40.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/Maker/</loc>
-        <lastmod>2016-02-26T06:50:49.000Z</lastmod>
+        <lastmod>2016-02-27T15:11:40.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/Fab/</loc>
-        <lastmod>2016-02-26T06:50:49.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/CAD/</loc>
-        <lastmod>2016-02-26T06:50:49.000Z</lastmod>
+        <lastmod>2016-02-27T15:11:40.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

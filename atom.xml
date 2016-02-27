@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-26T06:51:51.000Z</updated>
+  <updated>2016-02-27T15:11:40.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,11 +15,64 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[第三周：机器切割 [FabNotes006]]]></title>
+    <link href="http://yoursite.com/2016/02/27/fabnotes006/"/>
+    <id>http://yoursite.com/2016/02/27/fabnotes006/</id>
+    <published>2016-02-27T15:09:35.000Z</published>
+    <updated>2016-02-27T15:11:40.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>
+<a id="more"></a>
+<h2 id="CAD"><a href="#CAD" class="headerlink" title="CAD"></a>CAD</h2><p><a href="http://www.123dapp.com/make" target="_blank" rel="external">123D Make</a> 一类的工具都可以把 3D 物体分解成 2D 部件。之前介绍过的 <a href="https://github.com/mkeeter/antimony" target="_blank" rel="external">Antimony</a> 很适合用来设计需要参数化控制的部件。</p>
+<h2 id="CAM"><a href="#CAM" class="headerlink" title="CAM"></a>CAM</h2><p>FabAcademy 之前几年被各种不同的机器搞得头昏脑胀，于是干脆写了一个兼容几乎所有设备的 <a href="http://fabmodules.org/" target="_blank" rel="external">fab modules</a>。不论你输入哪种格式的文件，它都可以输出命令到不同的机器。 </p>
+<h2 id="Vinyl_cutter"><a href="#Vinyl_cutter" class="headerlink" title="Vinyl cutter"></a>Vinyl cutter</h2><p><a href="http://www.rolanddga.com/products/cutters/" target="_blank" rel="external">vinylcutter(电脑刻字机)</a> 应该是用途最广的切割工具了，它可以切标识、手工书、网版印刷、电线、多层电路、天线。</p>
+<h3 id="u6750_u6599"><a href="#u6750_u6599" class="headerlink" title="材料"></a>材料</h3><p>Vinyl(乙烯基)：</p>
+<p><img src="http://assets.skiptomylou.org/wp-content/uploads/2013/07/DSC_0149.jpg" alt=""></p>
+<p>Masking tape(纸胶带):</p>
+<p><img src="http://cdn.dick-blick.com/items/241/26/24126-group3ww-l.jpg" alt=""></p>
+<p>Transfer adhesive(转移胶膜):</p>
+<p><img src="http://www.staples-3p.com/s7/is/image/Staples/s0537631_sc7?$splssku$" alt=""></p>
+<p>Epoxy film(环氧树脂膜，可用于制作柔性电路):</p>
+<p><img src="http://bondingsource.com/wp-content/uploads/2015/05/ablefilm-550k.jpg" alt=""></p>
+<p>铜</p>
+<h3 id="u6B65_u9AA4"><a href="#u6B65_u9AA4" class="headerlink" title="步骤"></a>步骤</h3><p>设计要切割的图案， 最好存成 png/svg 格式。然后上传到 <a href="http://fabmodules.org/" target="_blank" rel="external">fab modules</a>，选择切割机，如下图的 「Roland vinyl (.camm)」， 然后选择切割的材质，如下图的「cut vinyl」。然后其他的设置选项就会出现在图片预览的右侧（cut depth 的值需要注意一下）。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/screenshot.png" alt=""></p>
+<h2 id="Laser_cutter"><a href="#Laser_cutter" class="headerlink" title="Laser cutter"></a>Laser cutter</h2><p>激光切割机可以做标记、切割、雕刻。</p>
+<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/halftone.jpg" alt="screen printing"></p>
+<p>这周的作业，是设计、切割出类似下图一样的[纸板乐高积木]:</p>
+<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/gik.png" alt="gik.png"> </p>
+<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/gik.jpg" alt=""></p>
+<p>这种组块化、需要用一个参数控制多个对象的设计，用<a href="https://github.com/mkeeter/antimony" target="_blank" rel="external">Antimony</a>再适合不过了：</p>
+<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/joints.jpg" alt=""></p>
+<p>注意: 用激光切割机切割瓦楞纸，容易因为温度过高而起火……需要做好排气排烟措施，同时机器操作时要有人值守。</p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/155004500" target="_blank" rel="external">Week3 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/computer_cutting/index.html" target="_blank" rel="external">Week3 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[作业2：用CAD画特雷门琴的模型 [FabNotes005]]]></title>
     <link href="http://yoursite.com/2016/02/26/fabnotes005/"/>
     <id>http://yoursite.com/2016/02/26/fabnotes005/</id>
-    <published>2016-02-26T06:51:51.000Z</published>
-    <updated>2016-02-26T06:51:51.000Z</updated>
+    <published>2016-02-26T06:47:34.000Z</published>
+    <updated>2016-02-27T15:10:16.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
 <a id="more"></a>
 <p>这周的作业是</p>
@@ -79,6 +132,14 @@
     <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>]]>
     
     </summary>
+    
+      <category term="CAD" scheme="http://yoursite.com/tags/CAD/"/>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
     
       <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
@@ -1759,81 +1820,6 @@
       <category term="捷克" scheme="http://yoursite.com/tags/%E6%8D%B7%E5%85%8B/"/>
     
       <category term="斯洛伐克" scheme="http://yoursite.com/tags/%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B/"/>
-    
-      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[给自恋物种的三副猛药——读「人类简史」]]></title>
-    <link href="http://yoursite.com/2015/09/15/brief-history-of-humankind/"/>
-    <id>http://yoursite.com/2015/09/15/brief-history-of-humankind/</id>
-    <published>2015-09-15T14:46:04.000Z</published>
-    <updated>2016-01-03T14:50:48.000Z</updated>
-    <content type="html"><![CDATA[<p>如果说有一本书，不到五百页，没有一堆令人晕头转向的年份、人名、地名、称号，就能涵盖了人类如何崛起、影响现代生活甚巨的资本主义、一神教、自由人文主义、基因工程如何兴盛的人类历史重大脉络……那就是这本神奇的、同时摆放在“历史”和“畅销”分类里的「人类简史」。</p>
-<div class="image-package imagebubble"><img src="http://img3.douban.com/lpic/s27814883.jpg" alt=""></div>
-
-<p>与其说这是一部历史大众读物，不如说是一笺处方，开给历史学家们，更开给自恋如我们的这个物种。</p>
-<p>来来来，打开处方，看看是哪三副猛药：</p>
-<a id="more"></a>
-<h3 id="u7279_u522B_u5982_u4F60_uFF0C_u90A3_u53EA_u662F_u5E7B_u89C9"><a href="#u7279_u522B_u5982_u4F60_uFF0C_u90A3_u53EA_u662F_u5E7B_u89C9" class="headerlink" title="特别如你，那只是幻觉"></a>特别如你，那只是幻觉</h3><p>十万年前，地球上至少有6种不同的人，今天却只剩下我们这一科——称为智人（Homo sapiens）。从结果来看，智人作为最终胜出的生存者，似乎是赢得了演化的战争。不过作者一上来就掀翻了这块让全人类自我感觉良好的幕布。</p>
-<p>智人一直希望自己和其他动物有所不同，仿佛整个科就只有自己的存在。人类已经习惯以为自己是唯一的“人”，执着地寻找着证据，试图证明地球在某个时间点上只会有单一人种，而我们正是进化的最终果实。而事实是，多个人种共存是常态，而且智人在长达数百万年的时间内，都是弱小、边缘的生物，位于食物链的中间位置。一直到10万年前，智人十分偶然地学会使用火和语言，才突然跃居食物链顶端。这也许就是自恋的开端。</p>
-<h3 id="u6F14_u5316_u6CA1_u6709_u65B9_u5411_uFF0C_u5386_u53F2_u65E0_u4ECE_u6B63_u4E49"><a href="#u6F14_u5316_u6CA1_u6709_u65B9_u5411_uFF0C_u5386_u53F2_u65E0_u4ECE_u6B63_u4E49" class="headerlink" title="演化没有方向，历史无从正义"></a>演化没有方向，历史无从正义</h3><p>距今7万到3万年前，智人中出现了新的思维和沟通方式，这场认知革命让智人具备三种能力，奠定了与其他物种的区隔：</p>
-<ul>
-<li>能够传达大量环境信息</li>
-<li>能够传达八卦（社会关系信息），组织更大、更有凝聚力的团体。“讨论虚构的事物”是智人语言最独特的功能。不仅让人类拥有想象，而且可以“一起”想象。</li>
-<li>能够传达关于虚构概念的信息，使得大量陌生人之间可以合作、社会行为快速创新<br>一直以来，智人以进化胜利者自居。学会使用火，制造各种工具，发明语言，探索宇宙万物的秘密，建筑起宏伟的人类文明，经历认知革命、农业革命、科技革命……几乎是一个筚路蓝缕、屌丝逆袭的华丽故事。</li>
-</ul>
-<p>这时，作者又一把抓过这个剧本撕得粉碎：智人的演化，真的是“好”的、有“目的”、有“意义”的吗？</p>
-<p>记得第一次讨论“’发展’这个概念是否具有指向性，’好’的变化才是发展吗？”问题，是在薛德升老师的课堂上。长久以来，我们总是一厢情愿地相信，事物一直在“前进”，发展是“变得更好”。这种自信从何而来？</p>
-<p>智人在大约1万年前开始了农业革命——被作者称为史上最大骗局的一场变革。农业革命让食物总量增加，但量的增加并不代表吃得更好、过得更悠闲，反而只是造成人口爆炸，而且产生一群养尊处优、娇生惯养的精英分子。普遍来说，农民的工作要比采集者更辛苦，而且到头来的饮食还要更糟。</p>
-<p>这幕后的黑手既不是国王，不是牧师，也不是商人，而是那极少数的植物物种，其中包括小麦、稻米和马铃薯。人类以为自己驯化了植物，但其实是植物驯化了智人。从从无足轻重的野草变成无所不在的口粮，小麦的秘诀就在于操纵智人、为其所用。</p>
-<p>时至今日，画风已跟1万年前相差了10万个毕加索。我们以为自己省下了时间，其实是把生活的步调加速成过去的十倍快，于是整天忙忙碌碌、焦躁不安。我们从农业革命能学到的最重要一课，很可能就是<strong>物种演化上的成功并不代表个体的幸福</strong>。</p>
-<p>天生自然的生物学，可能性几乎无穷无尽。然而，文化却要求必须实现某些可能性，而又封闭了其他可能性。文化总会说，它只是禁止“不自然的事”。但从生物学的角度来看，这世界上根本没有什么是不自然的。<strong>只要有可能发生的事，就是自然</strong>。</p>
-<p>演化本来就没有唯一目的，只是我们更愿意相信以自己为主角的故事情节。</p>
-<h3 id="u57FA_u4E8E_u6545_u4E8B_u7684_u81EA_u6211_u7262_u7B3C"><a href="#u57FA_u4E8E_u6545_u4E8B_u7684_u81EA_u6211_u7262_u7B3C" class="headerlink" title="基于故事的自我牢笼"></a>基于故事的自我牢笼</h3><p>无论是现代国家、中世纪教堂、古老城市，任何大规模人类合作的根基，都在于某种只存在于集体想象中的虚构故事。除了存在与人类共同的想象之外，这个宇宙中根本没有神、没有国家、没有钱、没有人权、没有法律，也没有正义。<strong>我们相信某种秩序，并非因为它是客观的现实，而是因为相信它可以让人提升合作效率、打造更美好的社会。</strong></p>
-<p>虚构出来的组织能够正常运作，靠的是讲故事，而讲故事难就难在让人相信。于是，历史也就不断围绕这个问题打转：究竟某个人是如何说服数百万人去相信神、民族或是有限公司这些故事？</p>
-<p>自从认知革命之后，智人就能依据“人造直觉”——文化来迅速调整行为。但是在文化快车道上，智人不知不觉为自己建造了一个美轮美奂的牢笼，深陷在想象的秩序中汲汲营营。</p>
-<p>现代人之所以要花费大把银子到国外度假，因为他们真正相信了浪漫的消费主义神话。浪漫主义告诉我们，为了要尽量发挥潜力，就必须尽量积累不同的经验。必须体会不同的情感，尝试不同的关系，品尝不同的美食，还必须学会欣赏不同风格的音乐。而消费主义告诉我们，想要快乐，就该去买更多的产品和服务。鼓励多元多样的浪漫主义又与消费主义一拍即合，催生了贩卖各种“体验”的市场。</p>
-<p>追求各种欲望，我们乐此不疲，甚至发展出了极其精密的组织、制度、方法论、工具、仪式。但是很少人会突然抽风问一问：究竟为什么我们会想要这些？比如，从出生到死亡，男性必须一辈子不断通过各种仪式和表演来证明自己真是条汉子。而女性必需不断说服自己和其他人自己散发着女人味。如果仅仅是基因的计谋，为免也太过小题大做。其中又有多少文化和自我建构的成分，我们是怎么一步步催眠自己去相信这一切，甚至进入集体无意识状态？</p>
-<p>更可怕的是，这座华丽的牢笼自身可以生长演化。每一次我们以为自己打破了监狱的高墙、迈向自由的前方，其实只是到了另一间更大的监狱，把活动范围稍稍加以扩大。</p>
-<h3 id="u8FD9_u4E2A_u4E16_u754C_u4F1A_u597D_u5417_uFF1F"><a href="#u8FD9_u4E2A_u4E16_u754C_u4F1A_u597D_u5417_uFF1F" class="headerlink" title="这个世界会好吗？"></a>这个世界会好吗？</h3><p>支撑“人造直觉”这座华丽的文化牢笼的，是三种全球秩序：经济上的货币秩序，政治上的帝国秩序，宗教上的全球性宗教。</p>
-<p>金钱是有史以来最普遍也最有效的互信系统，能够跨越几乎所有文化鸿沟。宗教信仰的重点是自己相信，但金钱信仰的重点是别人相信。</p>
-<p>帝国是一种政治秩序，统治原本属于不同文化、有各自领地的民族，疆域无限扩张，它是造成民族多样性大幅减少的主因之一。</p>
-<p>而宗教的重要性，在于让脆弱的架构有了超人类的合法性。有了宗教之后，就能说法律并不只是人类自己的设计和想象，而是来自一种绝对的神圣最高权柄。这样一来，至少某些基本的法则便不容动摇，从而确保社会稳定。</p>
-<p>金钱+帝国+宗教，智人就这样躲进了自己一手构筑的堡垒中，每前进一步，都把本已在空中的阶梯垒得更高，却全然不知阶梯将通往何方。</p>
-<p>那么问题来了，如果后来的人并没有比较快乐，我们为什么要发展农业、城市、文字、钱币、帝国、科学和工业呢？究竟如何影响人类的幸福，这是我们对历史理解的最大空白之处。</p>
-<p>如果快乐是在于感受快感，想要更快乐，就得操纵生化系统。如果快乐是在于觉得生命有意义，想要更快乐，就得骗自己骗的更彻底。还有没有第三种可能呢？</p>
-<p>作者认为，佛教将会是人类的解药。欲念造成不满：遇到不喜欢的事就想躲开，遇到喜欢的就想维持并增加这份愉快。佛教倡导人们看清事物的本质而不是它带来的感受。虽然感受悲伤，但不要希望悲伤结束，于是虽然仍有悲伤，也能不再为此而困。虽然感受快乐，但不要希望快乐继续，于是虽然仍有快乐，也能不是去心中的平静。</p>
-<p>但，这真的是终极意义吗？人类要追求的是离苦得乐吗？如果我们一早已经获得内心平静，感觉生命充满喜乐，就真的圆满了吗？如果说没有什么值得动用我们的七情六欲，那为什么又要去追求平衡呢？作为生命的一种形态，作为亿万物种中独特的一支，我们的使命又是什么？</p>
-<p>这时，眼前不自觉出现了樱花的图景。怒放，绚烂，刹那芳华。这是不是才是生命该有的张力，也是每个物种存在的意义——顺其自然，绽放生命的张力，共同塑造养育我们的山川土地。</p>
-<p>是什么彰显了某个物种的独特性？这些独特性就是生命的张力，即便它将导致最终的灭亡。就像烟火，并不会因为最终注定成为灰烬而拒绝绽放。存在的意义，就是当下的存在本身，而不是繁衍、竞争、胜利、快乐、力量等等等等。生命的意义，就在于彰显生命力，呈现生命的过程和可能性，仅此而已。</p>
-<h3 id="u9898_u5916_uFF1A_u5199_u4F5C_u7684_u79D8_u5BC6"><a href="#u9898_u5916_uFF1A_u5199_u4F5C_u7684_u79D8_u5BC6" class="headerlink" title="题外：写作的秘密"></a>题外：写作的秘密</h3><p>一本书看完，除了回肠荡气的内容，还收获了写作的秘密。这本书不但全然没有一般历史书的陌生疏离枯燥感，而且读来让人欲罢不能。除了纵横开阖的视野和独特的叙述视角，还有两点特别值得琢磨和学习。</p>
-<h4 id="u5148_u6709_storyboard_uFF0C_u540E_u6709_u6587_u5B57"><a href="#u5148_u6709_storyboard_uFF0C_u540E_u6709_u6587_u5B57" class="headerlink" title="先有 storyboard，后有文字"></a>先有 storyboard，后有文字</h4><blockquote>
-<p>如果到200万年前的东非逛一逛，你很可能会看到一群很像人类的生物：有些妈妈一边哄着小婴儿，一边还得把玩疯的小孩抓回来，忙得团团转；有些年轻人对社会上种种规范气愤不满，也有些垂垂老矣的老人家只想图个清静；有肌肉猛男捶着自己的胸膛，只希望旁边的美女能够垂青；也有年长的充满智慧的大家长，对这一切早就习以为常。这些远古人类，和一般动物比起来就是没什么特别。他们万万没有想到，他们的后代某一天竟能在月球上漫步、分裂原子、了解基因码，还能写写历史书。<br>看这段文字时的感受，就是大脑忍不住脑补画面！想写出生动的文字，其实应该先把 storyboard 想好，每个镜头的布景怎样，人物怎样活动，情节如何展开，镜头如何转换……剩下的只不过是把脑海中具体生动的画面描述出来。</p>
-</blockquote>
-<p>再次佩服阳老写作班的神总结：大脑喜欢模式、喜欢惊奇、喜欢情感、喜欢捷径。</p>
-<h4 id="u7528_u95EE_u9898_u70B8_u5F00_u8111_u6D1E"><a href="#u7528_u95EE_u9898_u70B8_u5F00_u8111_u6D1E" class="headerlink" title="用问题炸开脑洞"></a>用问题炸开脑洞</h4><p>读文字为什么容易累？一是抽象含义转化为具象理解需要成本，二是无法保持长时间的刺激，让认知资源继续集中。作者很好地解决了第二个问题：问足够聪明的问题，给足够有趣的答案，让头脑有节奏地处于亢奋状态。</p>
-<p>随手抓个栗子：</p>
-<blockquote>
-<p>如果除了智人以外，尼安德特人或丹尼索瓦人也存活下来，这个世界会是什么模样？举例来说，宗教信仰会是什么样子？《圣经》会不会说尼安德特人也和智人一样有灵魂？耶稣牺牲自己，会不会是为了要洗净丹尼索瓦人的罪？《古兰经》会不会对所有人类物种一视同仁，都为他们在乐园里占个位子？孔子会不会说我们也要“仁者爱人”地对待尼安德特人和丹尼索瓦人？尼安德特人会不会在古罗马军团中服役，又会不会也服侍着中国庞大的朝廷？美国《独立宣言》所揭橥而坚信的“人生而自由平等”，指的会不会是所有“人属”的物种？马克思会不会呼吁所有人类物种的工人都该团结起来？<br>也许写作真的没有捷径。对人类共同命运的悲悯、执着于求解终极问题、澎湃的求知热情、深邃的忧患意识、个人情绪的极致表达，就是那些最好的技巧。</p>
-</blockquote>
-<p>&nbsp;</p>
-<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
-    <summary type="html">
-    <![CDATA[<p>如果说有一本书，不到五百页，没有一堆令人晕头转向的年份、人名、地名、称号，就能涵盖了人类如何崛起、影响现代生活甚巨的资本主义、一神教、自由人文主义、基因工程如何兴盛的人类历史重大脉络……那就是这本神奇的、同时摆放在“历史”和“畅销”分类里的「人类简史」。</p>
-<div class="image-package imagebubble"><img src="http://img3.douban.com/lpic/s27814883.jpg" alt=""></div>
-
-<p>与其说这是一部历史大众读物，不如说是一笺处方，开给历史学家们，更开给自恋如我们的这个物种。</p>
-<p>来来来，打开处方，看看是哪三副猛药：</p>]]>
-    
-    </summary>
-    
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
-    
-      <category term="人类简史" scheme="http://yoursite.com/tags/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/"/>
-    
-      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
     
       <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
     

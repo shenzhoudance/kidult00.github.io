@@ -4,6 +4,43 @@
   
     
     <entry>
+      <title><![CDATA[第三周：机器切割 [FabNotes006]]]></title>
+      <url>http://yoursite.com/2016/02/27/fabnotes006/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>
+<a id="more"></a>
+<h2 id="CAD"><a href="#CAD" class="headerlink" title="CAD"></a>CAD</h2><p><a href="http://www.123dapp.com/make" target="_blank" rel="external">123D Make</a> 一类的工具都可以把 3D 物体分解成 2D 部件。之前介绍过的 <a href="https://github.com/mkeeter/antimony" target="_blank" rel="external">Antimony</a> 很适合用来设计需要参数化控制的部件。</p>
+<h2 id="CAM"><a href="#CAM" class="headerlink" title="CAM"></a>CAM</h2><p>FabAcademy 之前几年被各种不同的机器搞得头昏脑胀，于是干脆写了一个兼容几乎所有设备的 <a href="http://fabmodules.org/" target="_blank" rel="external">fab modules</a>。不论你输入哪种格式的文件，它都可以输出命令到不同的机器。 </p>
+<h2 id="Vinyl_cutter"><a href="#Vinyl_cutter" class="headerlink" title="Vinyl cutter"></a>Vinyl cutter</h2><p><a href="http://www.rolanddga.com/products/cutters/" target="_blank" rel="external">vinylcutter(电脑刻字机)</a> 应该是用途最广的切割工具了，它可以切标识、手工书、网版印刷、电线、多层电路、天线。</p>
+<h3 id="u6750_u6599"><a href="#u6750_u6599" class="headerlink" title="材料"></a>材料</h3><p>Vinyl(乙烯基)：</p>
+<p><img src="http://assets.skiptomylou.org/wp-content/uploads/2013/07/DSC_0149.jpg" alt=""></p>
+<p>Masking tape(纸胶带):</p>
+<p><img src="http://cdn.dick-blick.com/items/241/26/24126-group3ww-l.jpg" alt=""></p>
+<p>Transfer adhesive(转移胶膜):</p>
+<p><img src="http://www.staples-3p.com/s7/is/image/Staples/s0537631_sc7?$splssku$" alt=""></p>
+<p>Epoxy film(环氧树脂膜，可用于制作柔性电路):</p>
+<p><img src="http://bondingsource.com/wp-content/uploads/2015/05/ablefilm-550k.jpg" alt=""></p>
+<p>铜</p>
+<h3 id="u6B65_u9AA4"><a href="#u6B65_u9AA4" class="headerlink" title="步骤"></a>步骤</h3><p>设计要切割的图案， 最好存成 png/svg 格式。然后上传到 <a href="http://fabmodules.org/" target="_blank" rel="external">fab modules</a>，选择切割机，如下图的 「Roland vinyl (.camm)」， 然后选择切割的材质，如下图的「cut vinyl」。然后其他的设置选项就会出现在图片预览的右侧（cut depth 的值需要注意一下）。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/screenshot.png" alt=""></p>
+<h2 id="Laser_cutter"><a href="#Laser_cutter" class="headerlink" title="Laser cutter"></a>Laser cutter</h2><p>激光切割机可以做标记、切割、雕刻。</p>
+<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/halftone.jpg" alt="screen printing"></p>
+<p>这周的作业，是设计、切割出类似下图一样的[纸板乐高积木]:</p>
+<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/gik.png" alt="gik.png"> </p>
+<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/gik.jpg" alt=""></p>
+<p>这种组块化、需要用一个参数控制多个对象的设计，用<a href="https://github.com/mkeeter/antimony" target="_blank" rel="external">Antimony</a>再适合不过了：</p>
+<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/joints.jpg" alt=""></p>
+<p>注意: 用激光切割机切割瓦楞纸，容易因为温度过高而起火……需要做好排气排烟措施，同时机器操作时要有人值守。</p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/155004500" target="_blank" rel="external">Week3 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/computer_cutting/index.html" target="_blank" rel="external">Week3 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[作业2：用CAD画特雷门琴的模型 [FabNotes005]]]></title>
       <url>http://yoursite.com/2016/02/26/fabnotes005/</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
