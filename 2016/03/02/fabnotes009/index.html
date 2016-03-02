@@ -1,0 +1,859 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Fab,Maker,Note," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="00's Adventure" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description">
+<meta property="og:type" content="article">
+<meta property="og:title" content="作业4-制作电路板 [FabNotes009]">
+<meta property="og:url" content="http://yoursite.com/2016/03/02/fabnotes009/index.html">
+<meta property="og:site_name" content="00's Adventure">
+<meta property="og:description">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/week4.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456715597.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713553.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713554.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713555.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713556.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713557.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713581.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713589.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713558.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456730329.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713618.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713621.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713625.jpeg">
+<meta property="og:updated_time" content="2016-03-02T13:44:59.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="作业4-制作电路板 [FabNotes009]">
+<meta name="twitter:description">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    sidebar: 'always',
+    motion: true
+  };
+</script>
+
+  <title> 作业4-制作电路板 [FabNotes009] | 00's Adventure </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?816680a99713dbf6762e7f3a2e3f7a96";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">00's Adventure</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Why join the navy if you can be a pirate</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首頁
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分類
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            關於
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            歸檔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            標籤
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                作业4-制作电路板 [FabNotes009]
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            發表於
+            <time itemprop="dateCreated" datetime="2016-03-02T21:40:46+08:00" content="2016-03-02">
+              2016-03-02
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分類於
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/动手/" itemprop="url" rel="index">
+                    <span itemprop="name">动手</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2016/03/02/fabnotes009/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/03/02/fabnotes009/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>
+<a id="more"></a>
+<p>第四周作业是：</p>
+<blockquote>
+<p>Make an in-circuit programmer</p>
+</blockquote>
+<p>因为还没有学电路设计和元器件，本周只是按照已经设计好的一个下载器直接制作。我用的是 <a href="http://fab.cba.mit.edu/content/projects/fabispkey/index.html" target="_blank" rel="external">Andy’s FabISP</a> 设计。</p>
+<p>开工前，作为初学者需要仔细看看这个<a href="http://fab.cba.mit.edu/content/processes/PCB/modela2.html" target="_blank" rel="external">具体教程</a>和<a href="http://www.youtube.com/watch?v=XdamEhs2RIk&amp;list=PL-xEsC0ZUCUM42QNHaOOdoOwYg0j251dU&amp;index=1" target="_blank" rel="external">视频教程</a>。</p>
+<h2 id="u523B_u5370_u7535_u8DEF_u677F"><a href="#u523B_u5370_u7535_u8DEF_u677F" class="headerlink" title="刻印电路板"></a>刻印电路板</h2><p>实验室的铣床据说很高级，是全部机器里第二贵的 Roland SRM20</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456715597.jpeg" alt=""></p>
+<p>找出两个规格的立铣刀：1/64 bit end mill 用来刻表面，1/32 bit end mill 用来切边缘。<br><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713553.jpeg" alt=""></p>
+<p>然后材料是 FR1 铜板。</p>
+<h3 id="1-__u56FA_u5B9A"><a href="#1-__u56FA_u5B9A" class="headerlink" title="1. 固定"></a>1. 固定</h3><p>用双面胶把 FR1 板贴在衬底板上面。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713554.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713555.jpeg" alt=""></p>
+<h3 id="2-__u5B89_u88C5_u7ACB_u94E3_u5200"><a href="#2-__u5B89_u88C5_u7ACB_u94E3_u5200" class="headerlink" title="2. 安装立铣刀"></a>2. 安装立铣刀</h3><p>用两只手指夹住刀头（先用1/64的），放进刀孔里，然后用六角螺丝顺时针拧紧。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713556.jpeg" alt=""></p>
+<h3 id="3-__u6821_u96F6"><a href="#3-__u6821_u96F6" class="headerlink" title="3. 校零"></a>3. 校零</h3><p>上周小伙伴们折腾了一天 Fabmodule 也没有调教成功，于是直接在 Windows 下面用机器自带的软件 VPanel for SRM20。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713557.jpeg" alt=""></p>
+<p>先移动 X/Y 坐标到合适的位置。然后慢慢移动 Z 轴到将近板子表面的地方，然后打开机器盖子，用六角螺丝松开刀头，让刀头自然接触到板子上，再上紧螺丝。这时需要点右侧“Set Origin Point” X/Y 和 Z 的按钮，记录下原点位置，以便换刀头后可以恢复位置。</p>
+<p>然后点“CUT”按钮，选择要刻的文件。</p>
+<h3 id="4-__u5F00_u78E8"><a href="#4-__u5F00_u78E8" class="headerlink" title="4. 开磨"></a>4. 开磨</h3><p>选好文件后点“OUTPUT”，机器就开始工作了。</p>
+<p>刻好电路轨迹后，打开机器，松开刀头取出放回盒子里，然后换上 1/32 的刀头。移动到刚才已经记录好的原点位置。然后点“CUT”按钮选择外框的文件，发送到 SRM20。</p>
+<p>如果一切顺利，切好后的电路板长这样：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713581.jpeg" alt=""></p>
+<h3 id="5-__u6E05_u7406"><a href="#5-__u6E05_u7406" class="headerlink" title="5. 清理"></a>5. 清理</h3><p>打磨一下电路板表面和边缘的毛刺，然后用布或者水清洗一下，板子颜值瞬间提升：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713589.jpeg" alt=""></p>
+<h3 id="u8D9F_u8FC7_u7684_u5751"><a href="#u8D9F_u8FC7_u7684_u5751" class="headerlink" title="趟过的坑"></a>趟过的坑</h3><p>最开始刻印时，遇到了诡异的现象，好几个板子都被刻成的阴阳板：一半正常，一半没刻出来。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713558.jpeg" alt=""></p>
+<p>百思不得其解。好在塔妹在旁边提醒，是不是刀头松了呀。一拍大腿才醒悟过来，刚才还有一次刻完发现刀头直接躺在板子上了，我怎么就没反应过来呢！估计是一直记着教授上课时说，刀头不要拧太紧，刀头不要拧太紧…… </p>
+<p>于是义愤填膺地死死拧好刀头，就再也没有出现“阴阳板”了。</p>
+<h2 id="u710A_u63A5_u5143_u4EF6"><a href="#u710A_u63A5_u5143_u4EF6" class="headerlink" title="焊接元件"></a>焊接元件</h2><p>本周最大挑战是 —— 焊接!</p>
+<p>感谢小伙伴们已经准备好需要的元器件，还贴心地画出示意图：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456730329.jpeg" alt=""></p>
+<p>不过看到元件们一个个都长得太没有存在感，掉在地上用放大镜也不一定找得到，还是倒吸一口凉气 —— 这些玩意儿能焊么 😓</p>
+<p>挑了个头最大的 ATTINY44 下手。</p>
+<p>第一个零件花了快10分钟：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713618.jpeg" alt=""></p>
+<p>实验了几次，慢慢摸出一些门道：</p>
+<ul>
+<li>先用镊子把丫放好</li>
+<li>然后放下镊子，左手扯焊锡线，右手拿焊枪</li>
+<li>用焊枪头压着靠边的一个引脚</li>
+<li>把焊锡线末端放到焊枪头上</li>
+<li>瞪大眼睛，看到焊锡熔成液体状，拿开焊锡线，然后轻而快速地拿开焊枪</li>
+<li>如果凝固的接头很丑，可以再用焊枪头放过去融开，补一点焊锡，先快速拿开枪头，然后再迅速靠近，用尖头刮一刮再拿开</li>
+</ul>
+<p>一直用不好的是吸锡线，又细又厚，不太好吸。</p>
+<p>继续按照从大到小逆时针方向焊接其他元件：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713621.jpeg" alt=""></p>
+<p>眼花、手抖、大脑缺氧后，得到最终成果：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713625.jpeg" alt=""></p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/155713990-" target="_blank" rel="external">Week4 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/electronics_production/index.html" target="_blank" rel="external">Week4 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Fab/" rel="tag">#Fab</a>
+          
+            <a href="/tags/Maker/" rel="tag">#Maker</a>
+          
+            <a href="/tags/Note/" rel="tag">#Note</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/01/fabnotes008/" rel="next" title="第四周：制作电路板 [FabNotes008]">
+                <i class="fa fa-chevron-left"></i> 第四周：制作电路板 [FabNotes008]
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="http://7xjpra.com1.z0.glb.clouddn.com/avatar.png" alt="kidult00" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">kidult00</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description"></p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">126</span>
+              <span class="site-state-item-name">文章</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">分類</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">131</span>
+              <span class="site-state-item-name">標籤</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/twee/" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/qop/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 豆瓣
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/kidult/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 知乎
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/2LSzkz/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 简书
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.instagram.com/kidult00/" target="_blank">
+                  
+                    <i class="fa fa-instagram"></i> Instagram
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/kidult00/" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u523B_u5370_u7535_u8DEF_u677F"><span class="nav-number">1.</span> <span class="nav-text">刻印电路板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-__u56FA_u5B9A"><span class="nav-number">1.1.</span> <span class="nav-text">1. 固定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-__u5B89_u88C5_u7ACB_u94E3_u5200"><span class="nav-number">1.2.</span> <span class="nav-text">2. 安装立铣刀</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-__u6821_u96F6"><span class="nav-number">1.3.</span> <span class="nav-text">3. 校零</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-__u5F00_u78E8"><span class="nav-number">1.4.</span> <span class="nav-text">4. 开磨</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-__u6E05_u7406"><span class="nav-number">1.5.</span> <span class="nav-text">5. 清理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8D9F_u8FC7_u7684_u5751"><span class="nav-number">1.6.</span> <span class="nav-text">趟过的坑</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u710A_u63A5_u5143_u4EF6"><span class="nav-number">2.</span> <span class="nav-text">焊接元件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u8BFE_u7A0B_u8D44_u6E90"><span class="nav-number">2.1.</span> <span class="nav-text">课程资源</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2007 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kidult00</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+</div>
+
+<div class="theme-info">
+  主題 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+    
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'uegeek';
+      var disqus_identifier = '2016/03/02/fabnotes009/';
+      var disqus_title = '作业4-制作电路板 [FabNotes009]';
+      var disqus_url = 'http://yoursite.com/2016/03/02/fabnotes009/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>

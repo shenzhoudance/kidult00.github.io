@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-29T08:53:34.000Z</updated>
+  <updated>2016-03-02T13:44:59.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,168 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[作业4-制作电路板 [FabNotes009]]]></title>
+    <link href="http://yoursite.com/2016/03/02/fabnotes009/"/>
+    <id>http://yoursite.com/2016/03/02/fabnotes009/</id>
+    <published>2016-03-02T13:40:46.000Z</published>
+    <updated>2016-03-02T13:44:59.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>
+<a id="more"></a>
+<p>第四周作业是：</p>
+<blockquote>
+<p>Make an in-circuit programmer</p>
+</blockquote>
+<p>因为还没有学电路设计和元器件，本周只是按照已经设计好的一个下载器直接制作。我用的是 <a href="http://fab.cba.mit.edu/content/projects/fabispkey/index.html" target="_blank" rel="external">Andy’s FabISP</a> 设计。</p>
+<p>开工前，作为初学者需要仔细看看这个<a href="http://fab.cba.mit.edu/content/processes/PCB/modela2.html" target="_blank" rel="external">具体教程</a>和<a href="http://www.youtube.com/watch?v=XdamEhs2RIk&amp;list=PL-xEsC0ZUCUM42QNHaOOdoOwYg0j251dU&amp;index=1" target="_blank" rel="external">视频教程</a>。</p>
+<h2 id="u523B_u5370_u7535_u8DEF_u677F"><a href="#u523B_u5370_u7535_u8DEF_u677F" class="headerlink" title="刻印电路板"></a>刻印电路板</h2><p>实验室的铣床据说很高级，是全部机器里第二贵的 Roland SRM20</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456715597.jpeg" alt=""></p>
+<p>找出两个规格的立铣刀：1/64 bit end mill 用来刻表面，1/32 bit end mill 用来切边缘。<br><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713553.jpeg" alt=""></p>
+<p>然后材料是 FR1 铜板。</p>
+<h3 id="1-__u56FA_u5B9A"><a href="#1-__u56FA_u5B9A" class="headerlink" title="1. 固定"></a>1. 固定</h3><p>用双面胶把 FR1 板贴在衬底板上面。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713554.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713555.jpeg" alt=""></p>
+<h3 id="2-__u5B89_u88C5_u7ACB_u94E3_u5200"><a href="#2-__u5B89_u88C5_u7ACB_u94E3_u5200" class="headerlink" title="2. 安装立铣刀"></a>2. 安装立铣刀</h3><p>用两只手指夹住刀头（先用1/64的），放进刀孔里，然后用六角螺丝顺时针拧紧。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713556.jpeg" alt=""></p>
+<h3 id="3-__u6821_u96F6"><a href="#3-__u6821_u96F6" class="headerlink" title="3. 校零"></a>3. 校零</h3><p>上周小伙伴们折腾了一天 Fabmodule 也没有调教成功，于是直接在 Windows 下面用机器自带的软件 VPanel for SRM20。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713557.jpeg" alt=""></p>
+<p>先移动 X/Y 坐标到合适的位置。然后慢慢移动 Z 轴到将近板子表面的地方，然后打开机器盖子，用六角螺丝松开刀头，让刀头自然接触到板子上，再上紧螺丝。这时需要点右侧“Set Origin Point” X/Y 和 Z 的按钮，记录下原点位置，以便换刀头后可以恢复位置。</p>
+<p>然后点“CUT”按钮，选择要刻的文件。</p>
+<h3 id="4-__u5F00_u78E8"><a href="#4-__u5F00_u78E8" class="headerlink" title="4. 开磨"></a>4. 开磨</h3><p>选好文件后点“OUTPUT”，机器就开始工作了。</p>
+<p>刻好电路轨迹后，打开机器，松开刀头取出放回盒子里，然后换上 1/32 的刀头。移动到刚才已经记录好的原点位置。然后点“CUT”按钮选择外框的文件，发送到 SRM20。</p>
+<p>如果一切顺利，切好后的电路板长这样：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713581.jpeg" alt=""></p>
+<h3 id="5-__u6E05_u7406"><a href="#5-__u6E05_u7406" class="headerlink" title="5. 清理"></a>5. 清理</h3><p>打磨一下电路板表面和边缘的毛刺，然后用布或者水清洗一下，板子颜值瞬间提升：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713589.jpeg" alt=""></p>
+<h3 id="u8D9F_u8FC7_u7684_u5751"><a href="#u8D9F_u8FC7_u7684_u5751" class="headerlink" title="趟过的坑"></a>趟过的坑</h3><p>最开始刻印时，遇到了诡异的现象，好几个板子都被刻成的阴阳板：一半正常，一半没刻出来。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713558.jpeg" alt=""></p>
+<p>百思不得其解。好在塔妹在旁边提醒，是不是刀头松了呀。一拍大腿才醒悟过来，刚才还有一次刻完发现刀头直接躺在板子上了，我怎么就没反应过来呢！估计是一直记着教授上课时说，刀头不要拧太紧，刀头不要拧太紧…… </p>
+<p>于是义愤填膺地死死拧好刀头，就再也没有出现“阴阳板”了。</p>
+<h2 id="u710A_u63A5_u5143_u4EF6"><a href="#u710A_u63A5_u5143_u4EF6" class="headerlink" title="焊接元件"></a>焊接元件</h2><p>本周最大挑战是 —— 焊接!</p>
+<p>感谢小伙伴们已经准备好需要的元器件，还贴心地画出示意图：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456730329.jpeg" alt=""></p>
+<p>不过看到元件们一个个都长得太没有存在感，掉在地上用放大镜也不一定找得到，还是倒吸一口凉气 —— 这些玩意儿能焊么 😓</p>
+<p>挑了个头最大的 ATTINY44 下手。</p>
+<p>第一个零件花了快10分钟：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713618.jpeg" alt=""></p>
+<p>实验了几次，慢慢摸出一些门道：</p>
+<ul>
+<li>先用镊子把丫放好</li>
+<li>然后放下镊子，左手扯焊锡线，右手拿焊枪</li>
+<li>用焊枪头压着靠边的一个引脚</li>
+<li>把焊锡线末端放到焊枪头上</li>
+<li>瞪大眼睛，看到焊锡熔成液体状，拿开焊锡线，然后轻而快速地拿开焊枪</li>
+<li>如果凝固的接头很丑，可以再用焊枪头放过去融开，补一点焊锡，先快速拿开枪头，然后再迅速靠近，用尖头刮一刮再拿开</li>
+</ul>
+<p>一直用不好的是吸锡线，又细又厚，不太好吸。</p>
+<p>继续按照从大到小逆时针方向焊接其他元件：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713621.jpeg" alt=""></p>
+<p>眼花、手抖、大脑缺氧后，得到最终成果：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713625.jpeg" alt=""></p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/155713990-" target="_blank" rel="external">Week4 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/electronics_production/index.html" target="_blank" rel="external">Week4 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[第四周：制作电路板 [FabNotes008]]]></title>
+    <link href="http://yoursite.com/2016/03/01/fabnotes008/"/>
+    <id>http://yoursite.com/2016/03/01/fabnotes008/</id>
+    <published>2016-03-01T13:40:38.000Z</published>
+    <updated>2016-03-02T13:44:18.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>
+<a id="more"></a>
+<p>这周学习 PCB(Printed Circuit Board 印刷电路板) 制作。</p>
+<h2 id="u5236_u4F5C_u65B9_u6CD5"><a href="#u5236_u4F5C_u65B9_u6CD5" class="headerlink" title="制作方法"></a>制作方法</h2><p>PCB 制作方法可分为消除和加成两类：</p>
+<ul>
+<li><p>消除法（Subtractive）：利用化学品或机械将空白的电路板上不需要的地方除去</p>
+<ul>
+<li><p>丝网印刷：把设计好的电路图制成丝网遮罩，不需要的部分覆盖蜡或者不透水物料，然后把丝网遮罩放到空白线路板上面，再在丝网上油上不会被腐蚀的保护剂，把线路板放到腐蚀液中蚀刻（etching）。<br><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPxinYVx_CBrrmG4vJHpxM5WT2DLEL35p2Gp8o2D4zElLW7qh12g" alt=""></p>
+</li>
+<li><p>感光板：把设计好的电路图制在透光的胶片遮罩上，把需要的部分印成不透明的颜色，再在空白线路板上涂上感光颜料，将预备好的胶片遮罩放在电路板上照射强光数分钟，除去遮罩后用显影剂把电路板上的图案显示出来，然后腐蚀。</p>
+</li>
+<li>刻印：利用铣床或激光雕刻机直接把空白线路上不需要的部分除去。</li>
+</ul>
+</li>
+<li><p>加成法（Additive）：普遍做法是在一块预先镀上薄铜的基板上，覆盖光阻剂（D/F)，经紫外光曝光再显影，把需要的地方露出，然后利用电镀把线路板上正式线路铜厚增厚到所需要的规格,再镀上一层抗蚀刻阻剂－金属薄锡，最后除去光阻剂，再把光阻剂下的铜箔层蚀刻掉。</p>
+</li>
+</ul>
+<p>在实验室我们都用机器刻印的方式，虽然不适合量产，但是用来做快速原型很方便，也更环保一些。</p>
+<p>用来刻印的机器是 milling machine (铣床)， 1/64 bit endmill(立铣刀)用来刻电路轨迹，1/32 bit 立铣刀用来切出整块板的外缘。</p>
+<h2 id="u6750_u6599"><a href="#u6750_u6599" class="headerlink" title="材料"></a>材料</h2><p>常见的基材及主要成分有：</p>
+<ul>
+<li><a href="http://www.globallaminates.com/" target="_blank" rel="external">FR-1</a> ──酚醛棉纸，这基材通称电木板（比FR-2较高经济性）</li>
+<li>FR-2 ──酚醛棉纸，</li>
+<li>FR-3 ──棉纸（Cotton paper）、环氧树脂</li>
+<li>FR-4 ──玻璃布（Woven glass）、环氧树脂</li>
+<li>FR-5 ──玻璃布、环氧树脂</li>
+<li>FR-6 ──毛面玻璃、聚酯</li>
+<li>G-10 ──玻璃布、环氧树脂</li>
+<li>CEM-1 ──棉纸、环氧树脂（阻燃）</li>
+<li>CEM-2 ──棉纸、环氧树脂（非阻燃）</li>
+<li>CEM-3 ──玻璃布、环氧树脂</li>
+<li>CEM-4 ──玻璃布、环氧树脂</li>
+<li>CEM-5 ──玻璃布、多元酯</li>
+<li>AIN ──氮化铝</li>
+<li>SIC ──碳化硅</li>
+</ul>
+<p><a href="http://www2.dupont.com/Kapton/en_US/" target="_blank" rel="external">Kapton</a> / <a href="http://multimedia.3m.com/mws/media/37468O/3m-epoxy-film-electrical-tape-1.pdf" target="_blank" rel="external">#1 epoxy film(环氧胶膜)</a> / <a href="http://multimedia.3m.com/mws/media/104361O/tape-1126-copper-foil-with-conductive-adhesive.pdf" target="_blank" rel="external">#1126 copper tape(铜箔胶带)</a> 可用于制作柔性电路 (用刻字机).</p>
+<p>我们选 FR-1 用于机器刻印。</p>
+<h2 id="u523B_u5370_u6B65_u9AA4"><a href="#u523B_u5370_u6B65_u9AA4" class="headerlink" title="刻印步骤"></a>刻印步骤</h2><ul>
+<li>fixturing 装夹，紧固（用双面胶）</li>
+<li>underlay (衬底)</li>
+<li>orientation</li>
+<li>zeroing (针头刚好接触板面)</li>
+<li>set-screws (固定螺丝)</li>
+<li>lifetime</li>
+<li>deburring (去毛刺)</li>
+<li>cleaning</li>
+</ul>
+<p><a href="http://fab.cba.mit.edu/content/processes/PCB/modela2.html" target="_blank" rel="external">具体教程</a>, <a href="http://www.youtube.com/watch?v=XdamEhs2RIk&amp;list=PL-xEsC0ZUCUM42QNHaOOdoOwYg0j251dU&amp;index=1" target="_blank" rel="external">视频教程</a></p>
+<p>注意: 刻印线路之间要留出至少 5 mils</p>
+<h2 id="u7EC4_u88C5"><a href="#u7EC4_u88C5" class="headerlink" title="组装"></a>组装</h2><p>把元器件焊到电路上，接头需要做到光亮平滑。</p>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm8SCQo2xW86pTqXmaPVolVLSRS17msN0D_qCkvWC0mls4zR_n" alt=""></p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/155713990-" target="_blank" rel="external">Week4 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/electronics_production/index.html" target="_blank" rel="external">Week4 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[作业3：激光切割 [FabNotes007]]]></title>
@@ -1772,85 +1934,6 @@
 <div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
     <summary type="html">
     <![CDATA[<h3 id="u6377_u514B_u548C_u65AF_u6D1B_u4F10_u514B_u7684_u5206_u5206_u5408_u5408"><a href="#u6377_u514B_u548C_u65AF_u6D1B_u4F10_u514B_u7684_u5206_u5206_u5408_u5408" class="headerlink" title="捷克和斯洛伐克的分分合合"></a>捷克和斯洛伐克的分分合合</h3><p>尽管从1526年起，哈布斯堡家族就开始了对捷克和斯洛伐克两个民族的统治，但实际上这两个民族一直界限分明。1867年，奥地利帝国改弦更张为奥匈帝国，捷克和斯洛伐克地区分别划归奥地利和匈牙利。</p>]]>
-    
-    </summary>
-    
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
-    
-      <category term="Travel" scheme="http://yoursite.com/tags/Travel/"/>
-    
-      <category term="中欧" scheme="http://yoursite.com/tags/%E4%B8%AD%E6%AC%A7/"/>
-    
-      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
-    
-      <category term="捷克" scheme="http://yoursite.com/tags/%E6%8D%B7%E5%85%8B/"/>
-    
-      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[中欧四国扫盲帖之三：哈布斯堡王朝和维也纳]]></title>
-    <link href="http://yoursite.com/2015/09/20/central-eu-3/"/>
-    <id>http://yoursite.com/2015/09/20/central-eu-3/</id>
-    <published>2015-09-20T12:37:07.000Z</published>
-    <updated>2016-01-03T14:39:53.000Z</updated>
-    <content type="html"><![CDATA[<div class="image-package imagebubble"><img src="http://a2.att.hudong.com/71/34/01300000310366130006343764935.jpg" alt=""></div><br>哈布斯堡王朝（Habsburg）是欧洲历史上统治领域最广的王室。大多数欧洲国家，都与哈布斯堡家族有着千丝万缕的联系。<br><br><a id="more"></a><br><br>先来看看阴谋论者最喜欢讨论的光明会（共济会里的精英团体）的13支家族派系：<br><br><em>   罗斯切尔德家族Rothschild（Bauer or Bower）（德裔犹太系统）- Pindar
-</em>   布鲁斯家族Bruce （犹太系统）<br><em>   卡文迪许家族Cavendish (肯尼迪 Kennedy，美系爱尔兰系统)
-</em>   梅地奇家族De Medici （犹太系统）<br><em>   汉诺威家族Hanover （日耳曼系统）
-</em>   <strong>哈布斯堡家族Hapsburg （欧洲王室系统）</strong><br><em>   克虏伯家族Krupp （条顿骑士—日耳曼系统）
-</em>   金雀花家族Plantagenet （法兰克—法兰西系统）<br><em>   洛克菲勒家族Rockefeller （盎格鲁撒克逊系统）
-</em>   罗曼诺夫家族Romanov （俄罗斯、瑞典）<br><em>   辛克莱家族Sinclair（St. Clair）
-</em>   华伯家族Warburg (del Banco) （美籍犹太系统）<br>*   温莎家族Windsor (Saxe-Coburg-Gothe) （英国王室系统）<br><br>以上全是声名显赫、手可遮天的大家族，其中就有称霸欧洲王室系统的哈布斯堡家族。<br><br>1020年，新崛起的德意志家族在山上修筑了雄峻的鹰堡，即哈布斯堡。1273年，与东方的元帝国建立几乎同时，鲁道夫一世被选举为神罗君主，哈布斯堡王朝建立。哈布斯堡家族攫取了阿尔卑斯山麓两侧大量领地，吞下了奥地利，从一个边疆小贵族一跃成为神罗西南方向最强大的诸侯。<br><br>这个家族的成员曾出任罗马人民的国王和神圣罗马帝国皇帝，奥地利公爵、大公、奥地利帝国皇帝，匈牙利国王，波希米亚国王，西班牙国王，葡萄牙国王，墨西哥皇帝和今法国、意大利、荷兰、比利时境内及南部斯拉夫地区若干王国、公国的国王、大公与公爵。<br><br>查理五世以后，哈布斯堡王朝分为奥地利分支和西班牙分支，以及始于玛丽亚·特雷西亚的哈布斯堡-洛林皇朝。<br><br>几乎把欧洲皇室变成了一家人，哈布斯堡家族是如何做到的？很简单，联姻。换句话说，就是靠结婚娶人家的女公爵女王占地盘。。。15世纪之后，哈布斯堡家族独占神圣罗马帝国皇帝宝座。来欣赏一下复杂的族谱：<br><div class="image-package imagebubble"><a href="https://upload.wikimedia.org/wikipedia/en/c/c3/Habsburg_Family_Tree.jpg" target="_blank" rel="external"><img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Habsburg_Family_Tree.jpg" alt=""></a></div><br>更详细的大图： <a href="http://www.chh.de.free.fr/archiv/Sonstiges/habsburg.php" target="_blank" rel="external">http://www.chh.de.free.fr/archiv/Sonstiges/habsburg.php</a><br><br><br>其中，”欧洲丈母娘”玛利亚·特蕾西亚生了16个孩子，除了5个孩子夭折以外，其余全部成为皇帝、皇后、女王。只是通过联姻和继承，哈布斯堡王室就把国土扩大到三大洲，勃艮第，西班牙，葡萄牙，匈牙利，波西米亚和美洲新大陆先后并入帝国。<br><br>哈布斯堡家族的斐迪南大公遇刺，成为一战导火索。兴盛了600年的王朝终于在战后分崩离析，帝国被共和国取代。<br><br><br>### 哈布斯堡的维也纳<br><br>哈布斯堡家族最初来到维也纳时，维也纳位于神圣罗马帝国的最东边，是坐落在边境上的偏远小镇，奥斯曼帝国或匈牙利随时可能入侵。<br><br>哈布斯堡家族唯一一位女性统治者玛利亚·特蕾西亚，在动荡的局势中登基。<br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/Kaiserin_Maria_Theresia.jpg" alt=""></div>
-
-<p>她执政期间，加强了中央集权，废除了王家领地的赋役，促使出现自耕农，还推行了义务教育，为奥地利奠定了现代化国家的基础，维也纳发展成欧洲最繁华的城市之一。</p>
-<p>奥地利的文化有一种融合的、兼容并蓄的气度。也只有这样的地方能够拥有无边的音乐，能够产生茜茜公主式的恋情。维也纳吸引了海顿、莫扎特、贝多芬、舒伯特、马勒、布鲁克纳、施特劳斯家族等等重要的作曲家，成为音乐之都。而特雷西亚女皇对巴洛克、洛可可风格的喜爱，也给后世留下了许多艺术瑰宝。</p>
-<p>参考资料:</p>
-<ul>
-<li><a href="https://zh.wikipedia.org/wiki/%E5%93%88%E5%B8%83%E6%96%AF%E5%A0%A1%E7%8E%8B%E6%9C%9D" target="_blank" rel="external">哈布斯堡王朝</a></li>
-<li><a href="http://movie.douban.com/subject/24526724/" target="_blank" rel="external">哈布斯堡帝国</a></li>
-<li><a href="http://www.chh.de.free.fr/archiv/Sonstiges/habsburg.php" target="_blank" rel="external">哈布斯堡家族世系图</a></li>
-<li><a href="http://www.guokr.com/post/666395/" target="_blank" rel="external">哈布斯堡家族的下巴</a></li>
-</ul>
-<hr>
-<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
-    <summary type="html">
-    <![CDATA[<div class="image-package imagebubble"><img src="http://a2.att.hudong.com/71/34/01300000310366130006343764935.jpg" alt=""></div><br>哈布斯堡王朝（Habsburg）是欧洲历史上统治领域最广的王室。大多数欧洲国家，都与哈布斯堡家族有着千丝万缕的联系。<br><br>]]>
-    
-    </summary>
-    
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
-    
-      <category term="Travel" scheme="http://yoursite.com/tags/Travel/"/>
-    
-      <category term="中欧" scheme="http://yoursite.com/tags/%E4%B8%AD%E6%AC%A7/"/>
-    
-      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
-    
-      <category term="哈布斯堡王朝" scheme="http://yoursite.com/tags/%E5%93%88%E5%B8%83%E6%96%AF%E5%A0%A1%E7%8E%8B%E6%9C%9D/"/>
-    
-      <category term="奥地利" scheme="http://yoursite.com/tags/%E5%A5%A5%E5%9C%B0%E5%88%A9/"/>
-    
-      <category term="维也纳" scheme="http://yoursite.com/tags/%E7%BB%B4%E4%B9%9F%E7%BA%B3/"/>
-    
-      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[中欧四国扫盲帖之二：“波西米亚”是什么鬼？]]></title>
-    <link href="http://yoursite.com/2015/09/19/central-eu-2/"/>
-    <id>http://yoursite.com/2015/09/19/central-eu-2/</id>
-    <published>2015-09-19T05:08:24.000Z</published>
-    <updated>2016-01-03T14:41:40.000Z</updated>
-    <content type="html"><![CDATA[<p>波西米亚（Bohemia）既不是食物（西米露），也不是战火纷飞的地方（波黑和克里米亚）</p>
-<div class="image-package imagebubble">  <a href="http://www.uegeek.com/wp-content/uploads/2015/09/波西米亚.png" target="_blank" rel="external"><img src="http://www.uegeek.com/wp-content/uploads/2015/09/波西米亚.png" alt="波西米亚"></a></div><br>它指一个区域，位置在今天包括布拉格在内的捷克共和国中西部地区。在历史上，它跟捷克民族的关系，可以类比”中华民族”和”黄河流域”的关系。<br><br><a id="more"></a><br><br>962年，奥托一世的加冕标志着神圣罗马帝国统治开始，波西米亚地区首先成为帝国的一部分。波西米亚其实是一个行省，占据了古捷克地区西部三分之二的区域，其中心便是布拉格。其他省还包括摩拉维亚和西里西亚。<br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/1250Bohemia.jpeg" alt=""><br><div class="image-caption" style="text-align: center">1250年的中欧</div><br></div><br>神圣罗马帝国的许多小王国中，波西米亚王国是唯一一个核心民族不是日耳曼人而是捷克人的国家。13世纪初，鄂图卡一世统治时期，波西米亚成为王国，捷克君主成为神圣罗马帝国七大选帝侯之一。<br><div class="image-package imagebubble"><img src="http://www.uegeek.com/wp-content/uploads/2015/09/7个选帝侯.jpeg" alt="7个选帝侯"></div><br><div class="image-package imagebubble"></div><br>关于神圣罗马帝国，可以参考这篇笔记：<a href="http://www.jianshu.com/p/2eb499b3f6f3" target="_blank" rel="external">德意志笔记之二：权力和信仰之争</a><br><br>&nbsp;<br><br>查理四世继承波西米亚王位后，于1355年成为德意志国王。查理四世的统治使捷克王国达到鼎盛，布拉格曾一度是圣神罗马帝国的中心。<br><br>历史上有好多个查理四世，请认准神圣罗马帝国商标~ 这时候，天朝上国正在折腾的主，是右手边这位：<br><div class="image-package imagebubble"><img src="http://www.uegeek.com/wp-content/uploads/2015/09/查理和朱元璋.png" alt="查理和朱元璋"></div><br><div class="image-caption" style="text-align: center">我们都素皇帝~</div><br>&nbsp;<br><br>从1440年起，波西米亚所有皇帝都来自哈布斯堡家族。<br><br>今天，“波希米亚”又指波希米亚主义，指一种艺术家气质、时尚潮流、反传统的生活模式。这个涵义出现在19世纪的法国。在法国人的想像中，“波希米亚人”会让他们联想到四处漂泊的吉普赛人，他们不受传统的束缚，或许还会带来一些神秘的启示。<br><div class="image-package imagebubble"><img src="http://new-img1.ol-img.com/84/735/li8Fg2W8KmW6.jpg" alt=""></div><br>现在，波希米亚主义（Bohemianism）指称那些希望过非传统生活风格的一群艺术家、作家与任何对传统不抱持幻想的人的一种生活方式。<br><br>而布波族（bobo）（亦被翻为 波波族、布尔乔亚波希米亚族），是 bourgeois bohemian（中产阶级式的波希米亚人）的缩写，为1980年代“雅痞”一词的衍生词，形容1990年代之后，因为信息时代的快速来临，随着高度的创作空间与快速的财富累积，而来到中上到上层阶级的新高级知识分子。布波族不等于雅痞。他们是信息时代的精英，兼具布尔乔亚〔中产阶级〕的消费能力与波希米亚人的创意与自由，并将创意和情感转化成为产品。布波族的崛起，带动了文化产业及美学经济的蓬勃发展。<br><div class="image-package imagebubble"><img src="http://img6.douban.com/lpic/s1085476.jpg" alt=""></div>
-
-<hr>
-<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
-    <summary type="html">
-    <![CDATA[<p>波西米亚（Bohemia）既不是食物（西米露），也不是战火纷飞的地方（波黑和克里米亚）</p>
-<div class="image-package imagebubble">  <a href="http://www.uegeek.com/wp-content/uploads/2015/09/波西米亚.png"><img src="http://www.uegeek.com/wp-content/uploads/2015/09/波西米亚.png" alt="波西米亚"></a></div><br>它指一个区域，位置在今天包括布拉格在内的捷克共和国中西部地区。在历史上，它跟捷克民族的关系，可以类比”中华民族”和”黄河流域”的关系。<br><br>]]>
     
     </summary>
     
