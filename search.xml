@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title><![CDATA[作业5：3D 扫描和打印 [FabNotes011]]]></title>
+      <url>http://yoursite.com/2016/03/11/fabnotes011/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week5.png" alt=""></p>
+<a id="more"></a>
+<p>本周作业：</p>
+<ul>
+<li>设计和打印小型的 3D 物体</li>
+<li>3D 扫描一个物体</li>
+</ul>
+<h2 id="u8BBE_u8BA1_u548C_u6253_u5370_3D__u7269_u4F53"><a href="#u8BBE_u8BA1_u548C_u6253_u5370_3D__u7269_u4F53" class="headerlink" title="设计和打印 3D 物体"></a>设计和打印 3D 物体</h2><p>继续尝试用 Antimony 画 3D 傻白：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/71903c68cb1f63e8e5b4f44c7f10e61c.jpg" alt=""></p>
+<p>时间压力下，认怂画了个简单得面目全非的版本:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/designElizabeth.png" alt=""></p>
+<p>导出 .stl 文件：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/stlElizabeth.png" alt=""></p>
+<p>实验室的 3D 打印机都用 gcode 格式。于是打印之前需要用 cura 软件把 .stl 转成 .gcode ：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713584.jpeg" alt=""></p>
+<p>这台打印机是实验室自己组装的，有点酷:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713583.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713582.jpeg" alt=""></p>
+<p>用半小时打印了个测试版:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713585.jpeg" alt=""></p>
+<p>然后试了一下 Yang² 同学的这台:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713587.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713586.jpeg" alt=""></p>
+<p>用时 1 小时:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713619.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713620.jpeg" alt=""></p>
+<h2 id="3D__u626B_u63CF"><a href="#3D__u626B_u63CF" class="headerlink" title="3D 扫描"></a>3D 扫描</h2><p>第二个作业，3D 扫描一个物体。</p>
+<p>实验室里用的 3D 扫描仪是这款:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan1.jpeg" alt=""></p>
+<p>首先得 <a href="http://www.3dsystems.com/shop/sense/downloads" target="_blank" rel="external">下载和安装配套软件</a>.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan2.jpeg" alt=""></p>
+<p>扫描时需要保持一定距离:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan3.jpeg" alt=""></p>
+<p>经验是，物体形状越规则越好，镜头移动速度尽量匀速，而且环境光线尽可能单一无变化。否则，扫描过程中非常容易“失踪”:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan4.jpeg" alt=""></p>
+<p>最后，在小伙伴的帮助下，扫了本大叔的半身像:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan5.jpeg" alt=""></p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/156596002" target="_blank" rel="external">Week5 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/scanning_printing/index.html" target="_blank" rel="external">Week5 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[第五周：3D 扫描和打印 [FabNotes010]]]></title>
       <url>http://yoursite.com/2016/03/05/fabnotes010/</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week5.png" alt=""></p>
