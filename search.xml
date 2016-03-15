@@ -4,6 +4,82 @@
   
     
     <entry>
+      <title><![CDATA[第六周：电路设计[FabNotes012]]]></title>
+      <url>http://yoursite.com/2016/03/15/fabnotes012/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week6.png" alt=""></p>
+<a id="more"></a>
+<h2 id="u7535_u5B50_u5143_u4EF6"><a href="#u7535_u5B50_u5143_u4EF6" class="headerlink" title="电子元件"></a>电子元件</h2><ul>
+<li><p>resistor(电阻): I=V/R</p>
+<p>  <img src="http://media.digikey.com/Renders/Yageo%20Renders/CRSM%20PT1206_sml.jpg" alt=""></p>
+</li>
+<li><p>capacitor(电容): C = Q/V, I = C dV/dt</p>
+<ul>
+<li>unpolarized 无极，大多在1微法拉以下<br><img src="http://media.digikey.com/Renders/TDK%20Renders/X7R-1206_sml.jpg" alt=""></li>
+<li>polarized 有极，正极必须接高电位端，负极必须接低电位端<br><img src="http://media.digikey.com/photos/NessCap%20Photos/ESHSR-0010C0-002R7_sml.jpg" alt=""></li>
+</ul>
+</li>
+<li><p>crystal(时钟信号), resonator(晶体谐振器) </p>
+<p>  <img src="http://media.digikey.com/photos/NDK%20Photos/NX5032GA%20SERIES_sml.jpg" alt=""><br>  <img src="http://media.digikey.com/Photos/ECS%20Photos/CR23.7%20SERIES_sml.jpg" alt=""></p>
+</li>
+<li><p>inductor(电感): V = L dI/dt, 对交流信号进行隔离、滤波或与电容器、电阻器等组成谐振电路</p>
+<p>  <img src="http://media.digikey.com/photos/Panasonic%20Photos/ELL-CTV%20SERIES_sml.jpg" alt=""></p>
+</li>
+<li><p>diode(二极管): 电流从 anode(正极) 流向 cathode(负极)，LED（发光二极管）</p>
+<p>  <img src="http://oimagea5.ydstatic.com/image?url=http://swordrock.files.wordpress.com/2010/08/diode.jpg&amp;product=PICDICT" alt=""><br>  <img src="http://media.digikey.com/Renders/STMicro%20Renders/497;%20SOD123;%20;%202_sml.jpg" alt=""><br>  <img src="http://media.digikey.com/photos/Lite%20On%20Photos/LTST-C150AKT,LTST-C150CKT,LTST-C150EKT,LTST-C150GKT,LTST-C150YKT_sml.jpg" alt=""></p>
+</li>
+<li><p>transistor(晶体管)</p>
+<ul>
+<li>bipolar(双极的): collector(集电极), emitter(发射器), base current gain(基极电流增益)</li>
+<li>mosfet(金属氧化物半导体场效应晶体管):<br><img src="http://media.digikey.com/Renders/~~Pkg.Case%20or%20Series/SOT-23-3%20PKG_sml.jpg" alt=""></li>
+</ul>
+</li>
+<li><p>regulator(调节器)</p>
+</li>
+<li><p>op-amp(运算放大器)</p>
+<p>  <img src="http://media.digikey.com/Renders/~~Pkg.Case%20or%20Series/TSOT-23-5_sml.jpg" alt=""></p>
+</li>
+<li><p>microcontroller(微控制器)</p>
+<p>  <img src="http://media.digikey.com/Renders/~~Pkg.Case%20or%20Series/14-SOIC_sml.jpg" alt=""></p>
+<p>  AVR</p>
+</li>
+<li><p><a href="http://academy.cba.mit.edu/classes/input_devices/index.html" target="_blank" rel="external">sensors</a>(传感器)</p>
+</li>
+<li><a href="http://academy.cba.mit.edu/classes/output_devices/index.html" target="_blank" rel="external">actuators</a>(驱动器)</li>
+</ul>
+<h2 id="u7535_u8DEF"><a href="#u7535_u8DEF" class="headerlink" title="电路"></a>电路</h2><p>基尔霍夫第一定律(基尔霍夫电流定律):在任何一个节点（结）电路，流入该节点的总和电流等于流出该节点的电流的总和，或：在点网络在导体会议的电流的代数和为零。</p>
+<blockquote>
+<p>power: P = I<sup>2</sup> , R = I V</p>
+</blockquote>
+<p><img src="http://www.52rd.com/User/Upload/2012/2012062856149881.jpg" alt=""></p>
+<p>i1 + i4 =i2-i3</p>
+<p>基尔霍夫第二一定律(基尔霍夫电压定律):沿着闭合回路所有元件两端的电势差（电压）的代数和等于零。或者，换句话说，沿着闭合回路的所有电动势的代数和等于所有电压降的代数和。</p>
+<h2 id="u8BBE_u8BA1_u7535_u8DEF_u56FE"><a href="#u8BBE_u8BA1_u7535_u8DEF_u56FE" class="headerlink" title="设计电路图"></a>设计电路图</h2><ul>
+<li>schematic entry (电路图输入)</li>
+<li>component placement (放置元件)</li>
+<li>(auto)routing (布线)</li>
+<li>simulation （模拟）</li>
+<li>fabrication (制造)</li>
+</ul>
+<p>工具：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">123D Circuits, Virtual Breadboard, Fritzing&#10;Eagle &#10;DesignSpark, MultiSIM, BLUE&#10;KiCad(*), gEDA&#10;Altium, Circuit Maker, PCBWorks(*)&#10;OrCAD, Cadence, Synopsys, Mentor, Tanner, Magic&#10;Gnucap, Qucs, Oregano, Multisim (simulation tools)&#10;Verilog VHDL (programming)</span><br></pre></td></tr></table></figure>
+<p><a href="http://kokompe.cba.mit.edu/index.html" target="_blank" rel="external">Fab Modules tutorial</a></p>
+<h2 id="u66F4_u591A_u8D44_u6599"><a href="#u66F4_u591A_u8D44_u6599" class="headerlink" title="更多资料"></a>更多资料</h2><ul>
+<li><a href="http://fab.cba.mit.edu/classes/MAS.862/" target="_blank" rel="external">The Physics of Information Technology</a>. </li>
+<li><a href="http://users.physics.harvard.edu/~horowitz/aoe/" target="_blank" rel="external">The Art of Electronics</a></li>
+<li><a href="http://baike.baidu.com/subview/131449/15794082.htm" target="_blank" rel="external">基尔霍夫定律</a></li>
+<li><a href="https://www.youtube.com/watch?v=YKzJJyJO198" target="_blank" rel="external">基尔霍夫定律youtube</a></li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/157476225" target="_blank" rel="external">Week6 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/electronics_design/index.html" target="_blank" rel="external">Week6 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[作业5：3D 扫描和打印 [FabNotes011]]]></title>
       <url>http://yoursite.com/2016/03/11/fabnotes011/</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week5.png" alt=""></p>

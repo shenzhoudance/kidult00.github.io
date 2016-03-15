@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-11T15:06:10.000Z</updated>
+  <updated>2016-03-15T08:33:28.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,98 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[第六周：电路设计[FabNotes012]]]></title>
+    <link href="http://yoursite.com/2016/03/15/fabnotes012/"/>
+    <id>http://yoursite.com/2016/03/15/fabnotes012/</id>
+    <published>2016-03-15T08:32:32.000Z</published>
+    <updated>2016-03-15T08:33:28.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week6.png" alt=""></p>
+<a id="more"></a>
+<h2 id="u7535_u5B50_u5143_u4EF6"><a href="#u7535_u5B50_u5143_u4EF6" class="headerlink" title="电子元件"></a>电子元件</h2><ul>
+<li><p>resistor(电阻): I=V/R</p>
+<p>  <img src="http://media.digikey.com/Renders/Yageo%20Renders/CRSM%20PT1206_sml.jpg" alt=""></p>
+</li>
+<li><p>capacitor(电容): C = Q/V, I = C dV/dt</p>
+<ul>
+<li>unpolarized 无极，大多在1微法拉以下<br><img src="http://media.digikey.com/Renders/TDK%20Renders/X7R-1206_sml.jpg" alt=""></li>
+<li>polarized 有极，正极必须接高电位端，负极必须接低电位端<br><img src="http://media.digikey.com/photos/NessCap%20Photos/ESHSR-0010C0-002R7_sml.jpg" alt=""></li>
+</ul>
+</li>
+<li><p>crystal(时钟信号), resonator(晶体谐振器) </p>
+<p>  <img src="http://media.digikey.com/photos/NDK%20Photos/NX5032GA%20SERIES_sml.jpg" alt=""><br>  <img src="http://media.digikey.com/Photos/ECS%20Photos/CR23.7%20SERIES_sml.jpg" alt=""></p>
+</li>
+<li><p>inductor(电感): V = L dI/dt, 对交流信号进行隔离、滤波或与电容器、电阻器等组成谐振电路</p>
+<p>  <img src="http://media.digikey.com/photos/Panasonic%20Photos/ELL-CTV%20SERIES_sml.jpg" alt=""></p>
+</li>
+<li><p>diode(二极管): 电流从 anode(正极) 流向 cathode(负极)，LED（发光二极管）</p>
+<p>  <img src="http://oimagea5.ydstatic.com/image?url=http://swordrock.files.wordpress.com/2010/08/diode.jpg&amp;product=PICDICT" alt=""><br>  <img src="http://media.digikey.com/Renders/STMicro%20Renders/497;%20SOD123;%20;%202_sml.jpg" alt=""><br>  <img src="http://media.digikey.com/photos/Lite%20On%20Photos/LTST-C150AKT,LTST-C150CKT,LTST-C150EKT,LTST-C150GKT,LTST-C150YKT_sml.jpg" alt=""></p>
+</li>
+<li><p>transistor(晶体管)</p>
+<ul>
+<li>bipolar(双极的): collector(集电极), emitter(发射器), base current gain(基极电流增益)</li>
+<li>mosfet(金属氧化物半导体场效应晶体管):<br><img src="http://media.digikey.com/Renders/~~Pkg.Case%20or%20Series/SOT-23-3%20PKG_sml.jpg" alt=""></li>
+</ul>
+</li>
+<li><p>regulator(调节器)</p>
+</li>
+<li><p>op-amp(运算放大器)</p>
+<p>  <img src="http://media.digikey.com/Renders/~~Pkg.Case%20or%20Series/TSOT-23-5_sml.jpg" alt=""></p>
+</li>
+<li><p>microcontroller(微控制器)</p>
+<p>  <img src="http://media.digikey.com/Renders/~~Pkg.Case%20or%20Series/14-SOIC_sml.jpg" alt=""></p>
+<p>  AVR</p>
+</li>
+<li><p><a href="http://academy.cba.mit.edu/classes/input_devices/index.html" target="_blank" rel="external">sensors</a>(传感器)</p>
+</li>
+<li><a href="http://academy.cba.mit.edu/classes/output_devices/index.html" target="_blank" rel="external">actuators</a>(驱动器)</li>
+</ul>
+<h2 id="u7535_u8DEF"><a href="#u7535_u8DEF" class="headerlink" title="电路"></a>电路</h2><p>基尔霍夫第一定律(基尔霍夫电流定律):在任何一个节点（结）电路，流入该节点的总和电流等于流出该节点的电流的总和，或：在点网络在导体会议的电流的代数和为零。</p>
+<blockquote>
+<p>power: P = I<sup>2</sup> , R = I V</p>
+</blockquote>
+<p><img src="http://www.52rd.com/User/Upload/2012/2012062856149881.jpg" alt=""></p>
+<p>i1 + i4 =i2-i3</p>
+<p>基尔霍夫第二一定律(基尔霍夫电压定律):沿着闭合回路所有元件两端的电势差（电压）的代数和等于零。或者，换句话说，沿着闭合回路的所有电动势的代数和等于所有电压降的代数和。</p>
+<h2 id="u8BBE_u8BA1_u7535_u8DEF_u56FE"><a href="#u8BBE_u8BA1_u7535_u8DEF_u56FE" class="headerlink" title="设计电路图"></a>设计电路图</h2><ul>
+<li>schematic entry (电路图输入)</li>
+<li>component placement (放置元件)</li>
+<li>(auto)routing (布线)</li>
+<li>simulation （模拟）</li>
+<li>fabrication (制造)</li>
+</ul>
+<p>工具：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">123D Circuits, Virtual Breadboard, Fritzing&#10;Eagle &#10;DesignSpark, MultiSIM, BLUE&#10;KiCad(*), gEDA&#10;Altium, Circuit Maker, PCBWorks(*)&#10;OrCAD, Cadence, Synopsys, Mentor, Tanner, Magic&#10;Gnucap, Qucs, Oregano, Multisim (simulation tools)&#10;Verilog VHDL (programming)</span><br></pre></td></tr></table></figure>
+<p><a href="http://kokompe.cba.mit.edu/index.html" target="_blank" rel="external">Fab Modules tutorial</a></p>
+<h2 id="u66F4_u591A_u8D44_u6599"><a href="#u66F4_u591A_u8D44_u6599" class="headerlink" title="更多资料"></a>更多资料</h2><ul>
+<li><a href="http://fab.cba.mit.edu/classes/MAS.862/" target="_blank" rel="external">The Physics of Information Technology</a>. </li>
+<li><a href="http://users.physics.harvard.edu/~horowitz/aoe/" target="_blank" rel="external">The Art of Electronics</a></li>
+<li><a href="http://baike.baidu.com/subview/131449/15794082.htm" target="_blank" rel="external">基尔霍夫定律</a></li>
+<li><a href="https://www.youtube.com/watch?v=YKzJJyJO198" target="_blank" rel="external">基尔霍夫定律youtube</a></li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/157476225" target="_blank" rel="external">Week6 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/electronics_design/index.html" target="_blank" rel="external">Week6 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week6.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[作业5：3D 扫描和打印 [FabNotes011]]]></title>
@@ -1734,234 +1826,6 @@
       <category term="设计" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="设计" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[中欧四国扫盲帖之六：欧洲建筑风格，建筑博物馆布拉格]]></title>
-    <link href="http://yoursite.com/2015/09/24/central-eu-6/"/>
-    <id>http://yoursite.com/2015/09/24/central-eu-6/</id>
-    <published>2015-09-24T02:32:09.000Z</published>
-    <updated>2016-01-03T14:06:39.000Z</updated>
-    <content type="html"><![CDATA[<p>布拉格被誉为“欧洲建筑博物馆”，必需单开一篇，来恶补建筑风格常识。</p>
-<p>照例借用几张脉络图帮助我们建立索引：</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/Architectural%20Styles%20Timeline.jpg" alt=""><br><div class="image-caption" style="text-align: center">Architectural Styles Timeline</div><br><div class="image-caption" style="text-align: center"></div><br></div>
-
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/timeline1.jpg" alt=""><br><div class="image-caption" style="text-align: center">via 知乎用户「坏萍菓」</div><br><div class="image-caption"></div><br></div>
-
-<p>因为中欧在古希腊古罗马时期基本处于蛮荒状态，所以略过。下面就按照“拜占庭式-罗曼式-哥特式-文艺复兴-巴洛克-其他”的顺序来一一扫盲：</p>
-<a id="more"></a>
-<h3 id="1-__u539A_u91CD_u5927_u9762_u5305__u2014_u2014__u7F57_u66FC_u5F0F_uFF08Romanesque_uFF09"><a href="#1-__u539A_u91CD_u5927_u9762_u5305__u2014_u2014__u7F57_u66FC_u5F0F_uFF08Romanesque_uFF09" class="headerlink" title="1. 厚重大面包 —— 罗曼式（Romanesque）"></a>1. 厚重大面包 —— 罗曼式（Romanesque）</h3><blockquote>
-<p>时代关键词：生活艰辛。。。<br>建筑关键词：傻大厚</p>
-<p>形象代言人：黑面包</p>
-</blockquote>
-<div class="image-package imagebubble"></div><br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-6cd76c58a1cb0224.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></div>
-
-<div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Speyer_Dom_meph666-2005-Feb-26.jpg/275px-Speyer_Dom_meph666-2005-Feb-26.jpg" alt=""><br><div class="image-caption">德国施派尔主教座堂</div><br></div>
-
-
-<p>中世纪的建筑可分为两个时期，前期为罗曼式建筑，后期发展为哥特式建筑。</p>
-<p>罗曼式教堂继承了古罗马建筑中的巴西利卡形式，采用半圆拱承重结构，但是应用不成熟，施工质量也不如古罗马时期。为了使建筑长期坚固不倒，以及抵抗拱结构产生的侧推力，墙体一般都很厚重，窗户被挤压的很小，内部昏暗。</p>
-<div class="image-package imagebubble"><img src="http://socrates.bmcc.cuny.edu/hbrockington/vault.gif" alt=""><br><div class="image-caption">十字拱</div><br></div>
-
-<h4 id="u5E03_u62C9_u683C_u7684_u7F57_u66FC_u5F0F_u5EFA_u7B51"><a href="#u5E03_u62C9_u683C_u7684_u7F57_u66FC_u5F0F_u5EFA_u7B51" class="headerlink" title="布拉格的罗曼式建筑"></a>布拉格的罗曼式建筑</h4><p>罗马式风格经法、德传到捷克，布拉格从10世纪到13世纪开始兴起和建造罗马式建筑。</p>
-<p>布拉格最著名的罗曼式建筑是布拉格城堡内的圣乔治大殿（bazilika sv. Jiří/Basilica of St George）</p>
-<div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-d6d9e20cc9e82a53.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">圣乔治大殿</div><br></div><br>在维希赫拉德高堡上的圣马丁圆顶教堂（rotunda sv. Martina）<br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-161194f7e8332ecb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">聖馬丁古圓屋</div><br></div><br>在新城的圣隆基纳教堂(rotunda sv. Longina)<br><div class="image-package imagebubble"><img src="http://www.digital-guide.cz/media/thumbs/digital_guide/pamatky_by_divine/Nove_Mesto/Rotunda_sv_Longina/001_Rotunda_Sv_Longina_jpg_800x800_q85.jpg" alt=""></div><br>在许多老城的楼房地下室里保存有罗马式建筑的拱顶和墙壁。保存最好的罗马式民居是在老城的宫希达特楼（dům pánů z Kunštátu），在这座楼的地下有带3个支柱的拱形罗马式宫殿建筑。<br><br><br>### 2. 卖萌洋葱头 —— 拜占庭式<br><br>&gt; 时代关键词：东西交融<br><br>&gt; 建筑关键词：有点萌<br><br>&gt; 形象代言人：洋葱头<br><br><div class="image-package imagebubble"></div><br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-49d99841008afc7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></div><br><div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/St_Basils_Cathedral-500px.jpg/200px-St_Basils_Cathedral-500px.jpg" alt=""><br><div class="image-caption">瓦西里升天大<em>教堂</em></div><br></div>
-
-<p>拜占庭（东罗马）在古罗马巴西利卡式的基础上，融合了东方（主要是波斯、两河流域、叙利亚等）艺术，形成了新的风格。对后来的东欧建筑和伊斯兰教建筑有很大影响。</p>
-<div class="image-package imagebubble"><img src="http://file.goturkey.cn/p/2013/f4cd3b5e3247d997bcbe6886034ce35b.jpg" alt=""><br><div class="image-caption">圣索菲亚大教堂</div><br></div><br>拜占庭建筑的主要特征是圆形穹顶。穹隅是指拱顶之间形成的三角形球面。穹隅的发明使得方形基座上可以搭建巨大的圆形穹顶，因而建筑高大宽阔，采光充分。<br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-323d9b3f17da34ef.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">穹隅</div><br></div>
-
-
-<h3 id="3-__u9AA8_u611F_u7389_u7C73_u68D2__u2014_u2014__u54E5_u7279_u5F0F"><a href="#3-__u9AA8_u611F_u7389_u7C73_u68D2__u2014_u2014__u54E5_u7279_u5F0F" class="headerlink" title="3. 骨感玉米棒 —— 哥特式"></a>3. 骨感玉米棒 —— 哥特式</h3><blockquote>
-<p>时代关键词：宗教<br>建筑关键词：骨感</p>
-<p>形象代言人：玉米</p>
-</blockquote>
-<div class="image-package imagebubble"></div><br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-1151f23e9cd5a51c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></div>
-
-
-<p>哥特式 Gothic 是中世纪欧洲形成的建筑风格，发源于12世纪的法国，持续至16世纪。中世纪最重要的就是宗教活动，教堂成为城市公共生活的中心。</p>
-<p>哥特式建筑从古罗马建筑、罗曼式建筑依靠拱和穹顶等各种块面的整体受力体系，转变为接近框架的受力体系。</p>
-<div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Gotic3d2.jpg/235px-Gotic3d2.jpg" alt=""></div>
-
-
-<p>建筑的整体风格高耸削瘦，以尖拱/尖券、肋骨拱顶、天窗、飞扶璧/飞券/飞拱、撑墙等为特征。内部尽可能减少墙体的宽度，可以填充大面积花窗玻璃，使整体建筑得以瘦身且室内空间明亮。室外部分通常密布着支撑部件，仿佛是没有拆卸的脚手架，给人一种瘦骨嶙峋的感觉。</p>
-<div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Coupe.cathedrale.Amiens.png" alt=""><br><div class="image-caption">法国亚眠大教堂双层飞扶壁</div><br></div>
-
-<p>随着时间的延续，拱肋变得越来越复杂和装饰性越强。</p>
-<div class="image-package imagebubble"><img src="http://www.alxw.com/uploads/allimg/130621/1012404a1-0.jpg" alt=""><br><div class="image-caption">米兰大教堂</div><br></div><br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-ebc63e7d9868dd22.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">兰斯主教堂</div><br></div>
-
-
-<h4 id="u5E03_u62C9_u683C_u7684_u54E5_u7279_u5F0F_u5EFA_u7B51"><a href="#u5E03_u62C9_u683C_u7684_u54E5_u7279_u5F0F_u5EFA_u7B51" class="headerlink" title="布拉格的哥特式建筑"></a>布拉格的哥特式建筑</h4><p>在布拉格，哥特式代表作有查理四世下令建造的圣维特大教堂（Staroměstská mostecká věž）</p>
-<div class="image-package imagebubble"><img src="https://lightbox3d.files.wordpress.com/2015/05/st-vitus-choirapse_hdr.jpg?w=1024&amp;h=679" alt=""></div>
-
-
-<p>这是罗马天主教布拉格总教区的主教座堂。位于布拉格城堡内，其中有许多波希米亚国王的坟墓。建于925年，在1060年扩建为罗曼式教堂，1344年查理四世下令在原教堂的基础上建造一座哥特式教堂，于20世纪初才修建完毕。20世纪教堂更换的彩色玻璃窗为阿尔丰斯·慕夏作品。</p>
-<p>还有查理大桥（Karlův most）和迪恩教堂（Týnský chrám ）</p>
-<div class="image-package imagebubble"><img src="http://cdn.nanxiongnandi.com/bing/CharlesBridge_ZH-CN1133294121.jpg" alt=""></div>
-
-
-<p>在布拉格还可以找到一系列小型哥特式教堂，如老城的圣杜哈教堂（kostel sv. Ducha），新城的圣彼得教堂（kostel sv. Petra）和圣母玛利亚·斯涅日娜教堂（kostel Panny Marie Sněžnékostel Panny Marie Sněžné）。哥特式民居宫殿式的代表建筑是老城广场上的石钟屋(U kamenného zvonu)。</p>
-<div class="image-package imagebubble"><img src="http://blog.idnes.cz/blog/19336/340528/Uzvonu6.jpg" alt=""></div>
-
-
-<h3 id="4-__u9AD8_u51B7_u51B0_u76AE_u6708_u997C__u2014_u2014__u6587_u827A_u590D_u5174_u5F0F_Renaissance"><a href="#4-__u9AD8_u51B7_u51B0_u76AE_u6708_u997C__u2014_u2014__u6587_u827A_u590D_u5174_u5F0F_Renaissance" class="headerlink" title="4. 高冷冰皮月饼 —— 文艺复兴式 Renaissance"></a>4. 高冷冰皮月饼 —— 文艺复兴式 Renaissance</h3><blockquote>
-<p>时代关键词：文艺复兴</p>
-<p>建筑关键词：复古，秩序</p>
-<p>形象代言人：冰皮月饼</p>
-</blockquote>
-<div class="image-package imagebubble"></div><br><div class="image-package imagebubble"><img src="http://images.meishij.net/p/20110830/2f9325115a1f0438855ee30eeda1abb5.jpg" alt=""><br><div class="image-caption">不好意思但是中秋真的快到了</div><br></div>
-
-<div class="image-package imagebubble"></div><br><div class="image-package imagebubble"><img src="http://cdn.wall88.com/51b8b3430a4a532358.jpg" alt=""><br><div class="image-caption">圣彼得大教堂</div><br></div>
-
-
-<p>14世纪在意大利随着文艺复兴而诞生的建筑风格。文艺复兴式风格把眼光投向探求人类本身和人的生活，描述世俗生活的乐趣。基於对中世纪神权至上的批判，和对人道主义的肯定，建筑师希望借助<strong>古典的比例</strong>来重新塑造理想中古典社会的协调秩序。</p>
-<ul>
-<li>强调建筑的比例如同人的比例，讲究秩序与规律，拥有严谨的立面和平面构图</li>
-<li>使用对称的形状，集中式，显得有条理性、整齐并稳定</li>
-<li>继承古希腊古罗马风格和柱式系统</li>
-<li>建筑轻快和透气，常常有敞开式的拱形长廊和修长的廊柱</li>
-<li>恢复「自然」，以尺规制图，以圆形和正方形为主</li>
-</ul>
-<div class="image-package imagebubble"><img src="http://www.aodili.info/tl_files/images/artilce/AAupdate/vienna-khm-gif.gif" alt=""><br><div class="image-caption">维也纳艺术历史博物馆</div><br></div>
-
-
-<p>晚期的文艺复兴建筑走向了两个极端：一边是教条的崇拜古代建筑，将文艺复兴建筑讲究的比例与条理发展的过于繁琐与僵化，变成了注重理性的古典主义建筑；另一边则向柱式严谨而完整的规则挑战，追求新颖，堆砌装饰与雕塑，玩弄手法，发展为了巴洛克式建筑。</p>
-<p>布拉格最著名的文艺复兴式建筑是皇家夏宫（Královský letohrádek）</p>
-<div class="image-package imagebubble"><img src="http://www.fototuristika.cz/data/wysiwyg/tips/391/image/Pra%C5%BEsk%C3%BD_hrad_7.jpg" alt=""></div>
-
-<p>白山上的星星夏宫（letohrádek Hvězda）</p>
-<div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-58f5bc7b0325dc07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">星星夏宫</div><br></div>
-
-
-<p>老城广场上的迪恩学校的门徽就是威尼斯文艺复兴风格在民宅建筑上的体现。布拉格最漂亮的文艺复兴式大门是克日娜街475号的双金熊。</p>
-<h3 id="5-_u6700_u70AB_u8D35_u65CF_u98CE__u2014_u2014__u5DF4_u6D1B_u514B_Baroque"><a href="#5-_u6700_u70AB_u8D35_u65CF_u98CE__u2014_u2014__u5DF4_u6D1B_u514B_Baroque" class="headerlink" title="5.最炫贵族风 —— 巴洛克 Baroque"></a>5.最炫贵族风 —— 巴洛克 Baroque</h3><blockquote>
-<p>时代关键词：炫富，争权</p>
-<p>建筑关键词：华丽丽，亮瞎眼</p>
-<p>形象代言人：鸡尾酒</p>
-</blockquote>
-<div class="image-package imagebubble"><img src="http://3.im.guokr.com/gkimage/zf/hf/6g/zfhf6g.png" alt=""></div><br><div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-da37951497b8e0c1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">四喷泉圣卡罗教堂</div><br></div>
-
-
-<p>17世纪欧洲强权扩张，掠夺海外殖民地累聚巨富，生活上提倡豪华享受，因此对建筑、音乐、美术也要求豪华生动、富于热情的情调。</p>
-<p>巴洛克艺术风格从17世纪初到18世纪流行欧洲。巴洛克源于葡萄牙语，意为不规则的珍珠，或指非同一般的，怪异的东西。巴洛克建筑的成因错综复杂（比如，是天主教会炫耀财富的产物），其风格本身也褒贬不一，可以算是建筑界的一朵奇葩。</p>
-<p>主要特征可以归纳为：</p>
-<ul>
-<li>炫富，大量使用贵重材料，充满装饰，一身珠光宝气</li>
-<li>繁复，空间组合复杂，装饰复杂，充满各种繁琐的形状图案</li>
-<li>标新立异，外形自由，用不完整构图代替完整形象，如断山花、巨型曲线等，以突出个性</li>
-<li>视觉冲击，造型上大量使用曲面，凹凸感、流动感极强</li>
-</ul>
-<p>在巴洛克教堂中，透视被用来造成空间的幻觉。最明显的就是屋顶内部，壁画会接着四壁的透视线再画上一两层，然后在檐口之上画更高远的天空，使得内部空间好像延伸到了空中。幻觉，就是巴洛克教堂想要带给参观者的感觉。</p>
-<div class="image-package imagebubble"><img src="http://a2.att.hudong.com/84/95/19300001358307131527958054344_950.jpg" alt=""><br><div class="image-caption">圣彼得广场</div><br></div>
-
-
-<p>巴洛克风格是在布拉格得到广泛运用和流行的、最有特色的风格。“布拉格的巴洛克”风格闻名于世。</p>
-<p>数得上巴洛克式建筑风格瑰宝的是圣米古拉斯大教堂（chrám sv. Mikuláše），它是小城广场最显著的象征之一。</p>
-<div class="image-package imagebubble"><img src="http://www.fototuristika.cz/data/wysiwyg/tips/400/image/kostel_sv.Mikul%C3%A1%C5%A1e_na_Mal%C3%A9_Stran%C4%9B_2.jpg" alt=""></div>
-
-
-<p>还有城堡区的切尔宁宫（Černínský palác），老城区的克拉姆-伽拉斯宫(Clam-Gallasův palác)，还有特洛亚贵族庄园（ Trojský zámek）。</p>
-<p>巴洛克式的民居住宅墙饰可以在小城广场的聂鲁达大街（Nerudova ulice）上观赏到。布拉格最漂亮的巴洛克式的群雕是查理大桥上由玛蒂阿斯·贝尔纳尔特·布洛纳（Matyáše Bernarda Brauna）创作的圣鲁伊特嘎尔特的梦群雕（Sen sv. Luitgardy）</p>
-<p>最后，来个超级巴洛克晃瞎你</p>
-<div class="image-package imagebubble"><img src="http://upload-images.jianshu.io/upload_images/149-0bff58cde1297149.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><div class="image-caption">圣地亚哥·德·贡波斯代拉教堂</div><br></div>
-
-
-<h3 id="u6D1B_u53EF_u53EF_u5F0F_Rococo"><a href="#u6D1B_u53EF_u53EF_u5F0F_Rococo" class="headerlink" title="洛可可式 Rococo"></a>洛可可式 Rococo</h3><div class="image-package imagebubble"><img src="http://www.evoketw.com/wp-content/uploads/2012/08/002-1.jpg" alt=""></div>
-
-<p>洛可可式建筑是巴洛克末期建筑风格的代表。洛可可风格其实更应该算是一种室内装饰风格。</p>
-<p>起源於18世纪的法国，以欧洲封建贵族文化的衰败为背景，表现了没落贵族阶层颓丧、浮华的审美理想和思想情绪。他们受不了古典主义的严肃理性和巴洛克的喧嚣放肆，追求华美和闲适。主要应用与室内设计，一开始是为了反对宫廷的繁文缛节艺术而兴起的。</p>
-<div class="image-package imagebubble"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Gau1878.jpg" alt=""></div>
-
-<p>洛可可风格的基本特点是纤弱娇媚、华丽精巧、甜腻温柔、纷繁琐细。将贝类、树叶以极其丰富、半抽象的装饰形式表现出来，并充满了曲线花纹或漩涡花纹的装饰。室内用色明快（嫩绿、粉红、玫瑰红等鲜艳的浅色调），以优美纤巧的家具、小雕塑、装饰镜、绘画作品和挂毯对建筑物、浮雕和壁画进行补充，使得整个建筑犹如一件艺术品一般。</p>
-<p>洛可可风格在18世纪后半叶从法国流传到捷克，布拉格洛可可风格的代表作是老城广场上的金斯基宫（palác Kinských）</p>
-<div class="image-package imagebubble"><img src="http://cesko.svetadily.cz/userfiles/image/clanky/cesko/praha-palac-kinskych-1.jpg" alt=""></div>
-
-
-<h3 id="u5176_u4ED6"><a href="#u5176_u4ED6" class="headerlink" title="其他"></a>其他</h3><h4 id="u5386_u53F2_u4E3B_u4E49_u98CE_u683C"><a href="#u5386_u53F2_u4E3B_u4E49_u98CE_u683C" class="headerlink" title="历史主义风格"></a>历史主义风格</h4><p>在19世纪后半叶，大多数建筑师都从过去流行的建筑风格中汲取灵感，所以这个时期的风格也称为历史主义风格。产生了新文艺复兴式，新哥特式和新巴洛格式。</p>
-<p>布拉格最著名的新文艺复兴式建筑有民族剧院（Národní divadlo）</p>
-<div class="image-package imagebubble"><img src="http://www.tydeniky.cz/userdata/articles/2161/narodni-divadlo-noc.jpg" alt=""></div>
-
-
-<p>国家博物馆（Národní muzeum）</p>
-<div class="image-package imagebubble"><img src="http://media.novinky.cz/887/268877-top_foto1-sb91w.jpg?1357300020" alt=""></div>
-
-<p>鲁道尔夫宫（Rudolfinum）</p>
-<div class="image-package imagebubble"><img src="http://www.avantgarde-prague.com/media/gallery/original/prague-rudolfinum-1.jpg" alt=""></div>
-
-
-<h4 id="u65B0_u827A_u672F_u4E3B_u4E49_u98CE_u683C"><a href="#u65B0_u827A_u672F_u4E3B_u4E49_u98CE_u683C" class="headerlink" title="新艺术主义风格"></a>新艺术主义风格</h4><p>新艺术主义风格产生于19世纪末和20世纪初。它的名称源于拉丁语 secessio一词,意为离开，表示许多年轻的艺术家离开了当时的各种艺术组织，作为对当时陈旧和过时的艺术组织的抗议。新艺术风格可分为巴黎新艺术主义风格，维也纳新艺术主义风格和布拉格新艺术主义风格。</p>
-<p>新艺术主义风格的主要特色是表现幻想、细腻，常采用植物作装饰边框，外墙用金色，瓷器、灰泥装饰，窗户带有半截窗帘。布拉格新艺术主义风格风格首先出现在1861年的周年纪念建筑展中。这种风格表达和追求的是，期望新艺术主义风格的建筑能从19世纪宏大威严的建筑风格中摆脱出来。</p>
-<p>布拉格最漂亮的的新艺术风格的代表作是市民会馆（Obecní dům）</p>
-<div class="image-package imagebubble"><img src="http://www.sokolcamping.cz/wp-content/uploads/br%C3%A1na.jpg" alt=""></div><br>布拉格的中心火车站（Hlavní nádraží）<br><div class="image-package imagebubble"><img src="http://i.lidovky.cz/12/012/lngal/TER407113_fanta_hln2.jpg" alt=""></div>
-
-
-<p>新艺术主义风格的民居住宅楼主要分布在巴黎大街 (Pařížská ulice)。在瓦茨拉夫广场的下半部分矗立着新艺术主义风格的皇冠宫(palác Koruna)，它的顶部呈镶有珍珠的皇冠形状，在瓦茨拉夫广场再往上走可以看到另一处新艺术主义风格的建筑-欧洲宾馆（hotel Evropa），此外，老城广场上的胡斯像（pomník Jana Husa）也属于新艺术主义风格的作品。</p>
-<h4 id="u73B0_u4EE3_u5EFA_u7B51_u98CE_u683C"><a href="#u73B0_u4EE3_u5EFA_u7B51_u98CE_u683C" class="headerlink" title="现代建筑风格"></a>现代建筑风格</h4><p>布拉格第一个钢筋水泥混凝土的建筑，同时也成为捷克建筑史上分界线的建筑是卢采尔纳宫（budova paláce Lucerna），它位于瓦茨拉夫广场和沃基曲科娃（Vodičkova ulice）之间，建于1912年。</p>
-<div class="image-package imagebubble"><img src="http://www.stavebnictvi3000.cz/obr/clanky2/2011/10_kaspar_9.jpg" alt=""></div>
-
-
-<p>20世纪上半叶在布拉格主要流行的现代建筑风格是立体主义风格，提倡艺术和建筑风格中回归简单的几何图形。墙壁和外墙装饰被分割，用矩形片状做装饰。立体主义风格的代表作品是位于采莱特纳街上（Celetná ulice）的黑圣母楼（dům U černé matky Boží）,这栋楼非常巧妙地和旁边的老城区的巴洛克建筑风格的大厦融为一体。</p>
-<div class="image-package imagebubble"><img src="http://www.informuji.cz/data/201284192946.jpg" alt=""></div>
-
-
-<p>立体主义风格的民宅分布在老城区的洲际酒店（hotel Intercontinental）和比尔科瓦街（Bílkova ulice）。在30年代，还产生了强调功能性的功能主义风格，比如位于布拉格6区的洛索和姆莱罗别墅（Loosova nebo Mullerova vila na Praze 6）</p>
-<div class="image-package imagebubble"><img src="http://www.fototuristika.cz/data/wysiwyg/tips/786/image/m%C3%BCllerova_vila_2.jpg" alt=""></div>
-
-
-<p>巴巴别墅区（čtvrť na Babě）</p>
-<div class="image-package imagebubble"><img src="http://i.idnes.cz/10/032/maxi/WEB31dee5_Baba5_RobertRambousek.jpg" alt=""></div>
-
-
-<p>1989年以后，在布拉格市内建造了许多新的商业楼和写字楼，但其中大多数都不代表任何艺术流派。唯一的代表新时代建筑风格的是1996年建造的跳舞楼，它位于拉辛诺沃河岸（Rašínovo nábřeží）。</p>
-<div class="image-package imagebubble"><img src="http://itras.cz/fotogalerie/tancici-dum/velke/tancici-dum-065.jpg" alt=""></div>
-
-
-
-<h4 id="u4E3B_u8981_u53C2_u8003_u8D44_u6599"><a href="#u4E3B_u8981_u53C2_u8003_u8D44_u6599" class="headerlink" title="主要参考资料"></a>主要参考资料</h4><ul>
-<li>「艺术的故事」，贡布里希，2008</li>
-<li>「建筑设计视觉词典」，加文·安布罗斯，2009</li>
-<li><a href="http://www.wikipedia.org/" target="_blank" rel="external">wiki的数个建筑相关条目</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E5%BB%BA%E7%AD%91%E9%A3%8E%E6%A0%BC" target="_blank" rel="external">建筑风格</a></li>
-<li><a href="http://www.douban.com/link2/?url=http://movie.douban.com/subject/5350014/&amp;query=BBC.Churches.How.to.Read.Them&amp;cat_id=1002&amp;type=search&amp;pos=0" target="_blank" rel="external">如何读懂教堂</a></li>
-<li><a href="http://www.zhihu.com/question/24385368" target="_blank" rel="external">知乎：教堂的建筑风格有哪些？</a></li>
-<li><a href="http://www.sinostar.cz/index.files/architektura.htm" target="_blank" rel="external">布拉格各式建筑风格简介</a><br>&nbsp;</li>
-</ul>
-<hr>
-<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
-    <summary type="html">
-    <![CDATA[<p>布拉格被誉为“欧洲建筑博物馆”，必需单开一篇，来恶补建筑风格常识。</p>
-<p>照例借用几张脉络图帮助我们建立索引：</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/Architectural%20Styles%20Timeline.jpg" alt=""><br><div class="image-caption" style="text-align: center">Architectural Styles Timeline</div><br><div class="image-caption" style="text-align: center"></div><br></div>
-
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/timeline1.jpg" alt=""><br><div class="image-caption" style="text-align: center">via 知乎用户「坏萍菓」</div><br><div class="image-caption"></div><br></div>
-
-<p>因为中欧在古希腊古罗马时期基本处于蛮荒状态，所以略过。下面就按照“拜占庭式-罗曼式-哥特式-文艺复兴-巴洛克-其他”的顺序来一一扫盲：</p>]]>
-    
-    </summary>
-    
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
-    
-      <category term="Travel" scheme="http://yoursite.com/tags/Travel/"/>
-    
-      <category term="中欧" scheme="http://yoursite.com/tags/%E4%B8%AD%E6%AC%A7/"/>
-    
-      <category term="历史" scheme="http://yoursite.com/tags/%E5%8E%86%E5%8F%B2/"/>
-    
-      <category term="哥特式" scheme="http://yoursite.com/tags/%E5%93%A5%E7%89%B9%E5%BC%8F/"/>
-    
-      <category term="巴洛克" scheme="http://yoursite.com/tags/%E5%B7%B4%E6%B4%9B%E5%85%8B/"/>
-    
-      <category term="布拉格" scheme="http://yoursite.com/tags/%E5%B8%83%E6%8B%89%E6%A0%BC/"/>
-    
-      <category term="建筑" scheme="http://yoursite.com/tags/%E5%BB%BA%E7%AD%91/"/>
-    
-      <category term="文艺复兴式" scheme="http://yoursite.com/tags/%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%E5%BC%8F/"/>
-    
-      <category term="洛可可" scheme="http://yoursite.com/tags/%E6%B4%9B%E5%8F%AF%E5%8F%AF/"/>
-    
-      <category term="罗曼式" scheme="http://yoursite.com/tags/%E7%BD%97%E6%9B%BC%E5%BC%8F/"/>
-    
-      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
     
   </entry>
   

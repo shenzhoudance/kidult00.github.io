@@ -899,21 +899,21 @@
 
     <url>
         <loc>http://yoursite.com/tags/Note/</loc>
-        <lastmod>2016-03-11T15:06:10.000Z</lastmod>
+        <lastmod>2016-03-15T08:33:28.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/Maker/</loc>
-        <lastmod>2016-03-11T15:06:10.000Z</lastmod>
+        <lastmod>2016-03-15T08:33:28.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/Fab/</loc>
-        <lastmod>2016-03-11T15:06:10.000Z</lastmod>
+        <lastmod>2016-03-15T08:33:28.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
