@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-15T08:33:28.000Z</updated>
+  <updated>2016-03-19T14:33:31.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,95 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[作业6：电路设计[FabNotes013]]]></title>
+    <link href="http://yoursite.com/2016/03/16/fabnotes013/"/>
+    <id>http://yoursite.com/2016/03/16/fabnotes013/</id>
+    <published>2016-03-16T08:38:59.000Z</published>
+    <updated>2016-03-19T14:33:31.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week6.png" alt=""></p>
+<a id="more"></a>
+<p>学习电路设计这周的作业是：</p>
+<blockquote>
+<p>Redraw the echo hello-world board</p>
+<ul>
+<li>add (at least) a button and LED (with current-limiting resistor)</li>
+<li>check the design rules, and make it</li>
+<li>extra credit: simulate its operation</li>
+</ul>
+</blockquote>
+<p>也就是从零开始设计一块电路板,并且动手做粗来。</p>
+<p>这时，电路小白有点方，扒出别人的作业开始照猫画虎。</p>
+<h3 id="1-__u5BFC_u5165_u5143_u4EF6_u5E93"><a href="#1-__u5BFC_u5165_u5143_u4EF6_u5E93" class="headerlink" title="1. 导入元件库"></a>1. 导入元件库</h3><p>电路设计的软件有很多，选了据说功能最强大的 Eagle（主要是以前同学的教程基本都是用的 Eagle）。Eagle 提供了海量的电子元件库，而且 FabAcademy 作业的库也已经有人整理好了。在开工之前，先下载元件库并导入到 Eagle。</p>
+<p>Eagle 界面的功能图标简直让人抓瞎，完全看不懂什么意思，只好一个一个悬停等看 tooltip。顶部工具栏有一个好像三个温度计的图标，用来导入元件库。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01eagleUseLib.png" alt=""></p>
+<h3 id="2-__u9009_u62E9_u5143_u4EF6_u5230_u753B_u5E03"><a href="#2-__u9009_u62E9_u5143_u4EF6_u5230_u753B_u5E03" class="headerlink" title="2. 选择元件到画布"></a>2. 选择元件到画布</h3><p>Eagle 主要分成两种文件/视图：schemetic 用于元件布局和指定元件关系，保存为 .sch 文件；board 用于生成线路，保存为 .brd 文件。</p>
+<p>元件库准备就绪后，我们需要把电路中用到的所有元件一口气都找出来，加到设计中。首先，把最重要的微控制器 ATtiny44 找到。在 FAB 元件库中选择 ATTINY44-SSU ，然后点「ok」，鼠标放置到合适的位置上，再点击，元件就放好了。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/001lib.png" alt=""></p>
+<p>放好一个元件后，按下「esc」键，可以快速回到元件选择面板，继续添加其他元件：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/002eagleComponents.png" alt=""></p>
+<h3 id="3-__u5B8C_u6210_u7535_u8DEF_u8BBE_u8BA1"><a href="#3-__u5B8C_u6210_u7535_u8DEF_u8BBE_u8BA1" class="headerlink" title="3. 完成电路设计"></a>3. 完成电路设计</h3><p>所有元件添加好以后，需要对元件名、值、引脚等做出相应的修改。其中最关键的是，将每个需要用到的引脚，拉出一条线，并且打上需要连接元件的标签。这个过程会用到下面这些功能：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03eageltool.png" alt=""></p>
+<p>这一步坑很多。必需仔仔细细检查每一个引脚的标签到底有没有打对。而且从引脚引出来的线不能跟引脚本身重合，而只能恰好在接触的地方有一个交点。如果在设计视图没有把所有细节弄对，到电路板视图时，就会死活连不好。推倒重来几次后，终于完成了 schematic 视图：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/003eagleScheme.png" alt=""></p>
+<h3 id="4-__u751F_u6210_u7535_u8DEF_u677F"><a href="#4-__u751F_u6210_u7535_u8DEF_u677F" class="headerlink" title="4. 生成电路板"></a>4. 生成电路板</h3><p>点击元件库按钮旁边的 “Generate/Switch to board” 按钮，来到鸡(zhe)冻(mo)人(si)心(ni)的电路板视图：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01eagleUseLib.png" alt=""></p>
+<p>程序会根据设计视图中，所有元件的连接关系，自动打好虚拟连接线（黄色的细线，不能在 board 视图中删除，必需回到 schemetic 视图中修改引脚关系）。 </p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/004eaglesendtoboard.png" alt=""></p>
+<p>把所有元件拖到白色矩形框内，用 move / rotate 等命令去调整元件的位置和摆放。这时最好把 Grid 设置中的网格改小一些，不然难对齐。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/005eagelgrid.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/006ealgearrange.png" alt=""></p>
+<p>看上去所有元件已经各就各位。下面要开始拉线路轨迹了。这时可以再使用一下 “Ratsnest” 命令，清除掉冗余的连接线。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/007eagleRatsnest.png" alt=""></p>
+<p>试着用了一下 Autorouter 自动连线功能，但是效果并不好，有些线没连上，走线也比较混乱：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/008eagleautoroute.png" alt=""></p>
+<h3 id="5-__u624B_u52A8_u8FDE_u7EBF"><a href="#5-__u624B_u52A8_u8FDE_u7EBF" class="headerlink" title="5. 手动连线"></a>5. 手动连线</h3><p>自动连线的美梦破裂，只好自己动手。选中一个引脚，视图中会高亮出要跟这个引脚连接的所有引脚，拉出线路按照横平竖直拐角45°的规则，把它们都连起来。每连接好两个脚，细黄线就会消失，说明连对了。到最后没有黄色细线剩下，就说明全部连完鸟。连线时有个小技巧：右键可以快速切换连线的类型（直线/向下45°角/向上45°角）</p>
+<p>连线完成之后，可以在图层管理中，隐藏掉除了“top”以外的所有图层，就能看到颜值提升的成品了：<br><img src="http://7xjpra.com1.z0.glb.clouddn.com/010eageldone-1.png" alt=""></p>
+<p><a href="https://app.box.com/s/aaymx4rv9zuroshc6rktvhyweq8mw65i" target="_blank" rel="external">Downlong my eagle files</a></p>
+<h3 id="6-__u5BFC_u51FA"><a href="#6-__u5BFC_u51FA" class="headerlink" title="6. 导出"></a>6. 导出</h3><p>导出电路板 traces 图层时，只选择显示“top”层就够了。这里需要勾选上“Monochrome”单色选项，方便导出成黑白图像，给到 fab module 做识别。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/011eagelexport.png" alt=""></p>
+<p>然后，隐藏除了 “Dimension” 之外的其他图层，导出电路板边框：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/012eagelallprint-1.png" alt=""></p>
+<h3 id="7-__u5207_u5272"><a href="#7-__u5207_u5272" class="headerlink" title="7. 切割"></a>7. 切割</h3><p>又到了 milling 时间。把刚才导出的 png 文件传到 fab modules 里。png 用的 1500 dpi ，效果看起来还不错：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/013fabmodels.png" alt=""></p>
+<p>折腾了好几次贴板、换头、校准、调零，开切：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/014echomilling.jpeg" alt=""></p>
+<p>新换的 1/64 刀头果然比较给力。除了名字那里有点毁，切好的板子一副良民模样：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/015echoboarddone.jpeg" alt=""></p>
+<h3 id="8-__u7EC4_u88C5"><a href="#8-__u7EC4_u88C5" class="headerlink" title="8. 组装"></a>8. 组装</h3><p>终于到了最后一步，组装元件。</p>
+<p>从一大堆元件包中，一个一个翻出需要用到的元件，简直不能更崩溃 —— 丫们一个比一个小，恨不得五指全变镊子才抓得住。居然花了差不多20分钟才凑齐所有元件。为了保险起见，先在白纸上把大家摆好，然后用笔画出连线。一会照着连就是了。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/016echocomponents.jpeg" alt=""></p>
+<p>焊元件过程还是相当愉快的，虽然还是掌握不好焊第一个引脚时的技巧，手一抖就歪掉…… 但已经比第一次熟练多了。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/017echosolderingdone.jpeg" alt=""></p>
+<p>全部焊完以后才发现……有放大镜，我为什么没有看到…………</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/018myechoboard.jpeg" alt=""></p>
+<h2 id="u66F4_u591A_u8D44_u6599"><a href="#u66F4_u591A_u8D44_u6599" class="headerlink" title="更多资料"></a>更多资料</h2><ul>
+<li><a href="http://www.jeremyblum.com/category/eagle-tutorials/" target="_blank" rel="external">JeremyBlum’s eagle tutorials</a></li>
+<li><a href="http://www.geek-workshop.com/thread-670-1-1.html" target="_blank" rel="external">EAGLE官方教程视频</a></li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/157476225" target="_blank" rel="external">Week6 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/electronics_design/index.html" target="_blank" rel="external">Week6 课程 Slides</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week6.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[第六周：电路设计[FabNotes012]]]></title>
@@ -1741,73 +1830,6 @@
 <p>指挥官一直珍藏着这张救了他一命的地图。几年以后，他拿出地图，向一个懂拉丁文的朋友讲述那段经历。这位朋友认真看完地图后摇摇头，意味深长地笑了笑，指着地图上方的那行字告诉指挥官，这是一张奥地利南部山区的地图。指挥官先是愕然，随后恍然大悟。两个朋友相视而笑。</p>
 <hr>
 <div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/1ship_dribble.jpg" alt=""></div><br>&nbsp;<br><br>]]>
-    
-    </summary>
-    
-      <category term="Design" scheme="http://yoursite.com/tags/Design/"/>
-    
-      <category term="o2o" scheme="http://yoursite.com/tags/o2o/"/>
-    
-      <category term="交互设计" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="体验" scheme="http://yoursite.com/tags/%E4%BD%93%E9%AA%8C/"/>
-    
-      <category term="场景" scheme="http://yoursite.com/tags/%E5%9C%BA%E6%99%AF/"/>
-    
-      <category term="服务设计" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="设计" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="设计" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[场景化设计系列之一：转型之痛]]></title>
-    <link href="http://yoursite.com/2015/12/04/scenario-design-1/"/>
-    <id>http://yoursite.com/2015/12/04/scenario-design-1/</id>
-    <published>2015-12-04T02:54:55.000Z</published>
-    <updated>2016-01-03T13:51:13.000Z</updated>
-    <content type="html"><![CDATA[<p>这一系列的文章，写给转型中的自己，写给离开界面、走进真实世界的设计师——他们可能有很多名称：“体验设计师”、“O2O 体验设计师”、“服务设计师”、“互动设计师”……</p>
-<p>离开熟悉的环境，一切显得那么陌生，新鲜感夹杂着无知无能的羞愧一起迎面涌来。从虚拟的界面来到真实世界中的场景，设计师如何重新定位自己？如何应对新的挑战？如何发挥价值？</p>
-<p>每一天，疑问都在增加；每一天，不变的主题就是学习。时不时需要用可汗学院的宣传片 <a href="http://v.qq.com/boke/page/k/0/j/k01440ltwxj.html" target="_blank" rel="external">「You Can Learn Anything」</a> 来鼓励自己。</p>
-<p>而最好的鼓励，是把这些记录下来，让不足发现不足，让思考引起思考，让行动激发行动。</p>
-<p>场景化设计第一篇，我们先来聊聊天~</p>
-<a id="more"></a>
-<blockquote>
-<p>“站在风口，猪都能飞起来”——雷布斯</p>
-</blockquote>
-<p>因为雷总的魔性金句，最近，我们常有一种“此刻抬头望天，一群轻盈的猪正在乘风起航，扶摇九天之外”的古怪即视感。O2O 无疑是这两年最大的风口。创业者前赴后继投身这股浪潮中，野蛮地“改造”原本浑身痛点、但被习以为常的行业和服务。</p>
-<p>开始接触线下真实场景后，不少“纯Online”的从业者，会有一个感受：</p>
-<blockquote>
-<p>一切坚固的东西都烟消云散了。—— 马歇尔·伯曼</p>
-</blockquote>
-<p>十年前，从传统行业进入互联网淘金的人，大概就会有这样的感受。今天，当互联网从业者回到本来熟悉的线下世界，却也难逃同样的困境：从前所熟悉和奏效的认识、做法，大部分已失效。</p>
-<p>对互联网产品的设计师而言，一个时刻摆在眼前的问题是：“O2O用户体验设计怎么做？”</p>
-<p>这是一个危险的问题。</p>
-<p>“用户体验设计”这个词，本来就是一把双刃剑。一方面，通过相关概念的普及，国内互联网公司空前重视“体验”（至少“体验”不离口）。这让国内互联网产品的体验水平（至少是界面设计水平），成为世界一流。但是另一方面，原本被称作“美工”的设计师们，终于找到一把“尚方宝剑”，挟天子（用户）以令诸侯，将原本应该由公司全体员工关心的核心问题，狭隘成了一个部门的职责。拉起“体验”大旗以后，设计师发现，从职责到能力，自己hold 不住这个命题，于是又有了很多“设计师的话语权”的讨论。在热热闹闹的讨论、会议、布道、培训中，概念越炒越大，职位名称越来越花哨，但是有多少设计师认认真真地去提高能力，努力转型，挑起肩头越来越沉重的担子？</p>
-<p>曾经做过亿级用户产品的设计师，一定面对过很多很多困惑和迷茫。可是当设计的对象和领域扩展到线下以后，困惑和无力感每天还在增加，这让我对“设计师”这个岗位有了更多的质疑和思考。</p>
-<p>不少朋友以为，我所在的团队主要负责微信红包和支付后台系统的界面，实际上，我们团队在做的是这些（详情可查看“微信支付商户通”公众号）：</p>
-<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/wepayall.png" alt=""><br><div class="image-caption"></div><br></div>
-
-<p>&nbsp;<br>每天，我都有一种离开火星老家，然后被抛弃在地球的感觉。地球人的想法和语言，根本就是从外星来的呢：</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/table1.png" alt=""></div>
-
-<p>&nbsp;<br>每天都要直面自己对行业的无知，认识以前接触不到的人，跟完全不同背景的人合作，接受设计方案不被采纳、起不了作用的现实。但也许这才是一个设计师成长的良好环境：</p>
-<blockquote>
-<p>Get your hands dirty and get shit done.</p>
-</blockquote>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/designforrealworld.jpeg" alt=""></div>
-
-
-<hr>
-<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
-    <summary type="html">
-    <![CDATA[<p>这一系列的文章，写给转型中的自己，写给离开界面、走进真实世界的设计师——他们可能有很多名称：“体验设计师”、“O2O 体验设计师”、“服务设计师”、“互动设计师”……</p>
-<p>离开熟悉的环境，一切显得那么陌生，新鲜感夹杂着无知无能的羞愧一起迎面涌来。从虚拟的界面来到真实世界中的场景，设计师如何重新定位自己？如何应对新的挑战？如何发挥价值？</p>
-<p>每一天，疑问都在增加；每一天，不变的主题就是学习。时不时需要用可汗学院的宣传片 <a href="http://v.qq.com/boke/page/k/0/j/k01440ltwxj.html">「You Can Learn Anything」</a> 来鼓励自己。</p>
-<p>而最好的鼓励，是把这些记录下来，让不足发现不足，让思考引起思考，让行动激发行动。</p>
-<p>场景化设计第一篇，我们先来聊聊天~</p>]]>
     
     </summary>
     
