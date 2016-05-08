@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-03T08:35:20.000Z</updated>
+  <updated>2016-05-08T14:46:27.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,264 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[作业8：刻板焊接烧程序[FabNotes017]]]></title>
+    <link href="http://yoursite.com/2016/05/08/fabnotes017/"/>
+    <id>http://yoursite.com/2016/05/08/fabnotes017/</id>
+    <published>2016-05-08T14:35:37.000Z</published>
+    <updated>2016-05-08T14:46:27.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week8.png" alt=""></p>
+<a id="more"></a>
+<p>这周的作业是</p>
+<blockquote>
+<p>阅读一款微处理器的说明</p>
+<p>制作电路板并编写程序使其运行</p>
+</blockquote>
+<h3 id="u7B2C_u4E00_u8F6E_u5C1D_u8BD5_3A__u81EA_u5DF1_u5236_u4F5C_ISP"><a href="#u7B2C_u4E00_u8F6E_u5C1D_u8BD5_3A__u81EA_u5DF1_u5236_u4F5C_ISP" class="headerlink" title="第一轮尝试: 自己制作 ISP"></a>第一轮尝试: 自己制作 ISP</h3><p>ISP 是为 AVR 芯片制作的编程器，这里有详细的 <a href="http://archive.fabacademy.org/archives/2016/doc/programming_FabISP.html" target="_blank" rel="external">DIY ISP 教程</a>。</p>
+<p>依着教程画葫芦：</p>
+<ul>
+<li><a href="http://www.obdev.at/products/crosspack/index.html" target="_blank" rel="external">下载安装 Crosspack AVR</a></li>
+<li>Get Make </li>
+<li>下载固件 <a href="http://www.as220.org/fabacademy/downloads/fabISP_mac.0.8.2_firmware.zip" target="_blank" rel="external">FabISP Firmware for MacOS 10.8.2</a></li>
+<li>解压固件，命令行进入解压后的目录</li>
+<li>用编辑器打开 Makefile</li>
+<li><p>将模式由 “avrisp2” 改为 “usbtiny”</p>
+<p>  也就是找到以下代码，将注释转移到 “avrisp2”那一行，然后保存文件</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#AVRDUDE = avrdude -c usbtiny -p $(DEVICE) # edit this line for your programmer</span></span><br><span class="line">AVRDUDE = avrdude -c avrisp2 -P usb -p $(DEVICE) <span class="comment"># edit this line for your programmer</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>命令行进入固件目录，输入命令 <code>make clean</code></p>
+<p>  如果正常，将返回结果 <code>rm -f main.hex main.lst main.obj main.cof main.list main.map main.eep.hex main.elf *.o usbdrv/*.o main.s usbdrv/oddebug.s usbdrv/usbdrv.s</code></p>
+<p>  但是这时出现了错误：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">kidults-NMB:fabISP_mac.<span class="number">0.8</span>.<span class="number">2</span>_firmware kidult$ make hex</span><br><span class="line">avr-gcc -Wall -Os -DF_CPU=<span class="number">20000000</span>	 -Iusbdrv -I. -DDEBUG_LEVEL=<span class="number">0</span> -mmcu=attiny44 -c usbdrv/usbdrv.c -o usbdrv/usbdrv.o</span><br><span class="line">make: avr-gcc: No such file or directory</span><br><span class="line">make: *** [usbdrv/usbdrv.o] Error <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>  好吧，忘记插我的 FabISP 到电脑了……插好后再试，ok 的：</p>
+<p>  <img src="http://7xjpra.com1.z0.glb.clouddn.com/FabISPMakeHex.png" alt=""></p>
+</li>
+<li><p>下一步，需要设置 fuse，让板子能使用外部的 clock ：输入命令 <code>make fuse</code></p>
+<p>  又出现了错误：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">avrdude -c usbtiny -p attiny44  -U hfuse:w:<span class="number">0</span>xDF:m -U lfuse:w:<span class="number">0</span>xFF:m</span><br><span class="line">avrdude: Error: Could not find USBtiny device (<span class="number">0</span>x1781/<span class="number">0</span>xc9f)</span><br><span class="line">avrdude done.  Thank you.</span><br><span class="line">make: *** [fuse] Error <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>  查了一圈 google，搞不明白为什么。似乎是 GCC 编译问题，或者是我的板子有问题。第一轮尝试以失败告终。</p>
+</li>
+</ul>
+<h3 id="u7B2C_u4E8C_u8F6E_u5C1D_u8BD5_3A__u4F7F_u7528_u73B0_u6210_u7684_USBtinyISP"><a href="#u7B2C_u4E8C_u8F6E_u5C1D_u8BD5_3A__u4F7F_u7528_u73B0_u6210_u7684_USBtinyISP" class="headerlink" title="第二轮尝试: 使用现成的 USBtinyISP"></a>第二轮尝试: 使用现成的 USBtinyISP</h3><p>首先，下载 <a href="http://academy.cba.mit.edu/classes/embedded_programming/hello.ftdi.44.echo.c" target="_blank" rel="external">hello.ftdi.44.echo.c</a>, <a href="http://academy.cba.mit.edu/classes/embedded_programming/hello.ftdi.44.echo.c.make" target="_blank" rel="external">hello.ftdi.44.echo.c.make</a> 。然后将板子连接到 USBtinyISP:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/usbtinyisp.jpeg" alt=""></p>
+<p>此处需要吐槽一下 New MacBook，只有一个 typeC 接口，一开始 USBtinyISP 接上去灯不亮，以为是我的 typeC 转接口坏了。试了大半个晚上后放弃。第二天试了一下连在另一台 MacBook Pro 上，USBtinyISP 的灯又亮了。插回到 New MacBook，依然不亮，怀疑是不是数据线坏了，又折腾半个晚上。偶然间又发现，充满电再插 USBtinyISP 会亮……所以问题可能出在 typeC 转接口对 USB 供电不足……</p>
+<p>折腾两三个晚上，终于到下一步。命令行进入前面下载好的两个文件的目录，输入命令：<br> <code>make -f hello.ftdi.44.echo.c.make</code></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/ISPmakefile.png" alt=""></p>
+<p>Make 成功了。然后是 <code>sudo make -f hello.ftdi.44.echo.c.make program-usbtiny-fuses</code></p>
+<p>又出现错误提示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">avr-objcopy -O ihex hello.ftdi.<span class="number">44</span>.echo.out hello.ftdi.<span class="number">44</span>.echo.c.hex;\</span><br><span class="line">	avr-size --mcu=attiny44 --format=avr hello.ftdi.<span class="number">44</span>.echo.out</span><br><span class="line">AVR Memory Usage</span><br><span class="line">----------------</span><br><span class="line">Device: attiny44</span><br><span class="line"></span><br><span class="line">Program:     <span class="number">758</span> bytes (<span class="number">18.5</span>% Full)</span><br><span class="line">(.text + .data + .bootloader)</span><br><span class="line"></span><br><span class="line">Data:         <span class="number">64</span> bytes (<span class="number">25.0</span>% Full)</span><br><span class="line">(.data + .bss + .noinit)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">avrdude -p t44 -P usb -c usbtiny -U lfuse:w:<span class="number">0</span>x5E:m</span><br><span class="line"></span><br><span class="line">avrdude: initialization failed, rc=-<span class="number">1</span></span><br><span class="line">         Double check connections and try again, or use -F to override</span><br><span class="line">         this check.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">avrdude done.  Thank you.</span><br><span class="line"></span><br><span class="line">make: *** [program-usbtiny-fuses] Error <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>又开始到处 Google。查看了一下 <a href="http://archive.fabacademy.org/archives/2016/doc/fuses.html" target="_blank" rel="external">fuse 的含义</a> ：</p>
+<blockquote>
+<p>What are the fuses?</p>
+<p>There are 3 bytes of permanent storage in the chip called ‘fuse low byte’, ‘fuse high byte’ and ‘fuse extended byte’. These bytes are called fuses and can be reprogrammed as many times as you want and determines the behaviour of the chip. To do that, their value is not erased when the chip is powered off or reprogrammed.</p>
+<p>Each microchip has its own definition for the values that must have the fuses. </p>
+</blockquote>
+<p>将错误信息复制到 Google，找到了之前的<a href="http://fab.cba.mit.edu/classes/863.12/people/laia.mogassoldevila/projects/p6.html" target="_blank" rel="external">fab note</a>。里面让安装<a href="http://www.ftdichip.com/Drivers/VCP.htm" target="_blank" rel="external">FTDI 芯片的驱动</a>。然并卵，安装好驱动依然是错误提示。</p>
+<p>肯定是板子出问题了。需要去实验室重新刻板子和焊电路。但是实验室扩建装修中，一眨眼几个星期就过去了………………</p>
+<h3 id="u7B2C_u4E09_u8F6E_u5C1D_u8BD5"><a href="#u7B2C_u4E09_u8F6E_u5C1D_u8BD5" class="headerlink" title="第三轮尝试"></a>第三轮尝试</h3><p>终于盼到实验室重新开放，在空气质量500的房间中刻板子，然后搜刮了元器件回家打算自己焊。好不容易把东西凑齐，开工后发现焊锡太粗太劣质，根本没法焊。重新买了焊锡线，开工后崩溃地发现，电烙铁没有买配焊台的，调不了温度，焊枪温度太高，很容易把板子上面的铜面焊焦了。可好的板子都用完了，还是没有重新作出电路板来。</p>
+<p>等到周末，又去到实验室老老实实刻板子，焊元件。</p>
+<p>电路板完成后，连上 USBtinyISP，终于 fuse 成功：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/boardfuseok.png" alt=""></p>
+<p>下一步</p>
+<p><code>make -f hello.ftdi.44.echo.c.make program-usbtiny</code></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/boardfusemake.png" alt=""></p>
+<p>现在，可以将程序烧录到板子上了。</p>
+<p>照着教程下载 <a href="http://academy.cba.mit.edu/classes/input_devices/python/term.py" target="_blank" rel="external">term.py</a>，输入命令 <code>python term.py /dev/ttyUSB0 115200</code>，继续是熟悉的错误提示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"term.py"</span>, line <span class="number">89</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    ser = serial.Serial(port,speed)</span><br><span class="line">  File <span class="string">"/Library/Python/2.7/site-packages/serial/serialutil.py"</span>, line <span class="number">180</span>, <span class="keyword">in</span> __init__</span><br><span class="line">    self.open()</span><br><span class="line">  File <span class="string">"/Library/Python/2.7/site-packages/serial/serialposix.py"</span>, line <span class="number">294</span>, <span class="keyword">in</span> open</span><br><span class="line">    <span class="keyword">raise</span> SerialException(msg.errno, <span class="string">"could not open port %s: %s"</span> % (self._port, msg))</span><br><span class="line">serial.serialutil.SerialException: [Errno <span class="number">2</span>] could <span class="keyword">not</span> open port /dev/ttyUSB0: [Errno <span class="number">2</span>] No such file <span class="keyword">or</span> directory: <span class="string">'/dev/ttyUSB0'</span></span><br></pre></td></tr></table></figure>
+<p>已经处在崩溃边缘，实验室的小伙伴提醒我用 Arduino 去烧程序。于是振作着继续尝试：</p>
+<ol>
+<li><p>添加板子</p>
+<p> 打开 Arduino 的设置，在 “Additional Boards Manager URLs:” 里填上</p>
+<blockquote>
+<p><a href="https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json" target="_blank" rel="external">https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json</a></p>
+</blockquote>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/arduinoAddBoard.png" alt=""></p>
+<p> 然后找到菜单里的 “Tools &gt; Board” ，打开 boards manager 。滚到列表底部，可以看到 “ATtiny”.<br> <img src="http://highlowtech.org/wp-content/uploads/2011/10/boards-manager.png" alt=""></p>
+<p> 安装，然后关闭 boards manager。</p>
+</li>
+<li><p>设置</p>
+<p> 设置 board:”ATtiny”, Processor:”ATtiny44”, Clock:”20 MHz”, Port:”USB”</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/arduinosetting.png" alt=""></p>
+</li>
+<li><p>修改程序</p>
+<p> Load Arduino 自带的 Blink example, 把 13 号引脚改为 7:</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/arduinochangepin.png" alt=""></p>
+</li>
+<li><p>Burn Bootloader</p>
+</li>
+<li><p>成功了！</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/boardsucceed.jpeg" alt=""></p>
+</li>
+</ol>
+<hr>
+<p>一周的作业用了快两个月才完成，觉得毕业希望已经渺茫…………</p>
+<hr>
+<h3 id="u53C2_u8003_u8D44_u6599"><a href="#u53C2_u8003_u8D44_u6599" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="http://highlowtech.org/?p=1695" target="_blank" rel="external">Programming an ATtiny w/ Arduino 1.6 (or 1.0)</a></li>
+<li><a href="http://www.instructables.com/id/Arduino-Examples-2-Use-an-Arduino-as-a-FTDI-Progr/" target="_blank" rel="external">Use an Arduino as a FTDI Programmer</a></li>
+<li><a href="http://fabacademy.org/archives/2015/eu/students/koch.juliette/week7.html" target="_blank" rel="external">classmate’s note1</a></li>
+<li><a href="http://fabacademy.org/archives/2015/eu/students/aloy_ciller.mariona/p/module-seven.html" target="_blank" rel="external">classmate’s note2</a></li>
+<li><a href="http://fabacademy.org/archives/2015/eu/students/escario_mendez.alejandro/embedded_programming.html" target="_blank" rel="external">classmate’s note3</a></li>
+<li><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/408/Web/#p=week_08__embedded_programming" target="_blank" rel="external">classmate’s note4</a></li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/159242917" target="_blank" rel="external">Week8 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/index.html" target="_blank" rel="external">Week8 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week8.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[第八周：嵌入式编程[FabNotes016]]]></title>
+    <link href="http://yoursite.com/2016/05/01/fabnotes016/"/>
+    <id>http://yoursite.com/2016/05/01/fabnotes016/</id>
+    <published>2016-05-01T14:35:32.000Z</published>
+    <updated>2016-05-08T14:37:37.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week8.png" alt=""></p>
+<a id="more"></a> 
+<p>这周学习 <a href="http://academy.cba.mit.edu/classes/embedded_programming/index.html" target="_blank" rel="external">嵌入式编程</a>.</p>
+<h2 id="u5FAE_u5904_u7406_u5668/_u5FAE_u63A7_u5236_u5668"><a href="#u5FAE_u5904_u7406_u5668/_u5FAE_u63A7_u5236_u5668" class="headerlink" title="微处理器/微控制器"></a>微处理器/微控制器</h2><p>依然是填鸭式地猛灌新名词：</p>
+<ul>
+<li>内存: registers, SRAM(静态存储器), DRAM(动态随机存取记忆体), EEPROM(只读存储器), FLASH(闪存), fuse</li>
+<li>外设: A/D(模拟数字转换 Analog to Digital), comparator, D/A, timer/counter/PWM(脉宽调制), USART(串行通信), USB</li>
+<li>word size: 8, 16, 32, 64</li>
+<li>芯片家族: <a href="http://www.faqs.org/faqs/microcontroller-faq/8051/" target="_blank" rel="external">8051</a>, <a href="http://www.microchip.com/pagehandler/en-us/products/picmicrocontrollers" target="_blank" rel="external">PIC</a>, <a href="http://www.ti.com/lsds/ti/microcontroller/16-bit_msp430/overview.page" target="_blank" rel="external">MSP</a>, <a href="http://www.atmel.com/products/microcontrollers/avr/default.aspx" target="_blank" rel="external">AVR </a>(我们用到的), <a href="http://www.arm.com/" target="_blank" rel="external">ARM</a>  <a href="http://www.st.com/web/en/catalog/mmc/FM141/SC1169" target="_blank" rel="external">STM32</a>  <a href="https://www.mbed.com/en/" target="_blank" rel="external">mbed</a>, <a href="http://www.cypress.com/psoc/?source=CY-ENG-HEADER" target="_blank" rel="external">PSoC</a>  <a href="http://www.xmos.com/en/products" target="_blank" rel="external">xCORE</a>  <a href="http://www.parallax.com/microcontrollers/propeller" target="_blank" rel="external">Propeller</a></li>
+<li>供应商: <a href="http://octopart.com/" target="_blank" rel="external">Octopart</a>, <a href="http://www.digikey.com/" target="_blank" rel="external">Digi-Key</a>, <a href="http://www.mouser.com/" target="_blank" rel="external">Mouser</a>, <a href="http://www.newark.com/" target="_blank" rel="external">Newark</a>, <a href="http://www.farnell.com/" target="_blank" rel="external">Farnell</a>, <a href="http://www.sparkfun.com/" target="_blank" rel="external">SparkFun</a>, <a href="https://www.adafruit.com/" target="_blank" rel="external">Adafruit</a></li>
+<li>时钟<ul>
+<li>种类:<ul>
+<li>RC (10%, 1% calibrated 校准)</li>
+<li>ceramic 陶瓷 (0.5%)</li>
+<li>quartz 石英 (50 ppm)<ul>
+<li>PLL 锁相环</li>
+<li>instruction cycles 指令周期</li>
+<li>overclocking 超频</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="u5F00_u53D1"><a href="#u5F00_u53D1" class="headerlink" title="开发"></a>开发</h2><ul>
+<li>in-system development (加载程序到处理器)<ul>
+<li>ISP: 用来跟编程器交互的程序 <ul>
+<li>引导程序(bootloader): <a href="http://arduino.cc/en/Main/Bootloader" target="_blank" rel="external">Arduino</a>, <a href="http://www.atmel.com/images/doc8457.pdf" target="_blank" rel="external">DFU</a>, <a href="https://github.com/micronucleus/micronucleus" target="_blank" rel="external">Micronucleus</a></li>
+<li>JTAG 主控器, PDI 并行数据接口</li>
+<li>ICE</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>编程器<ul>
+<li>ISP<ul>
+<li><a href="http://academy.cba.mit.edu/classes/electronics_production/index.html" target="_blank" rel="external">FabISP</a></li>
+<li><a href="http://www.nongnu.org/avrdude/" target="_blank" rel="external">avrdude</a><ul>
+<li>JTAG, PDI</li>
+</ul>
+</li>
+<li><a href="http://www.digikey.com/product-detail/en/ATATMEL-ICE-BASIC/ATATMEL-ICE-BASIC-ND" target="_blank" rel="external">Atmel-ICE</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>汇编语言: <a href="http://fab.cba.mit.edu/about/fab/hello/ftdi/hello.ftdi.44.echo.hex" target="_blank" rel="external">hex file</a>, <a href="http://academy.cba.mit.edu/classes/embedded_programming/doc0856.pdf" target="_blank" rel="external">instruction set, opcodes</a>, <a href="http://academy.cba.mit.edu/classes/embedded_programming/doc1022.pdf" target="_blank" rel="external">mnemonics, directives, expressions</a>, <a href="http://www.nongnu.org/avr-libc/user-manual/overview.html" target="_blank" rel="external">avr-as</a>, <a href="http://www.avr-asm-tutorial.net/gavrasm/index_en.html" target="_blank" rel="external">gavrasm</a></li>
+<li>C 语言 (Arduino 底层语言): 需要用编译器将 C 语言代码转成十六进制代码(hex codes)<ul>
+<li>AVR 依据 <a href="http://gcc.gnu.org/" target="_blank" rel="external">GCC (the GNU Compiler Collection)</a> 而设计. <a href="http://www.nongnu.org/avr-libc/user-manual/index.html" target="_blank" rel="external">AVR Libc</a> 提供 C 语言和 AVR 通信的库</li>
+<li>OS X 请用 <a href="https://www.obdev.at/products/crosspack/index.html" target="_blank" rel="external">CrossPack for AVR</a></li>
+<li>在课程中，我们<strong>使用 GCC 将 C 语言代码编译成 AVR 可以读懂的十六进制代码</strong></li>
+</ul>
+</li>
+<li>IDE<ul>
+<li>写程序, 编译, 加载到处理器</li>
+<li><a href="http://www.atmel.com/Microsite/atmel-studio/default.aspx" target="_blank" rel="external">Atmel Studio</a>, <a href="http://www.eclipse.org/" target="_blank" rel="external">Eclipse</a>, <a href="http://avr-eclipse.sourceforge.net/wiki/index.php/The_AVR_Eclipse_Plugin" target="_blank" rel="external">AVR</a>, <a href="http://codebender.cc" target="_blank" rel="external">CodeBender</a></li>
+</ul>
+</li>
+<li>Interpreters(一般都很慢): <a href="https://micropython.org/" target="_blank" rel="external">Python</a>, <a href="http://code.google.com/p/dk-basic/" target="_blank" rel="external">BASIC</a>, <a href="http://amforth.sourceforge.net/" target="_blank" rel="external">FORTH</a>, <a href="http://www.instructables.com/id/AVRSH-A-Command-Interpreter-Shell-for-ArduinoAVR/" target="_blank" rel="external">AVRSH</a>, Javascript(<a href="http://www.espruino.com/" target="_blank" rel="external">Espruino</a>, <a href="https://tessel.io/" target="_blank" rel="external">Tessel</a>, <a href="http://iop.io/" target="_blank" rel="external">iop.io</a>)</li>
+</ul>
+<h2 id="u4E3B_u673A_u901A_u8BAF"><a href="#u4E3B_u673A_u901A_u8BAF" class="headerlink" title="主机通讯"></a>主机通讯</h2><ul>
+<li>有一些与串口通讯的库，比如 python 的 <a href="https://github.com/pyserial/pyserial" target="_blank" rel="external">pyserial</a></li>
+<li><p><a href="http://www.ftdichip.com/" target="_blank" rel="external">FTDI</a>: 提供 USB 与其他模块的通信连接(包括模块、线缆、集成电路等) </p>
+<ul>
+<li><p><a href="http://search.digikey.com/us/en/products/TTL-232R-5V/768-1028-ND/2003493" target="_blank" rel="external">连接线</a></p>
+<p><img src="http://media.digikey.com/photos/FTDI%20(Future%20Tech%20Devices\" alt="">/TTL-232R-5V_sml.jpg)</p>
+</li>
+<li><p><a href="http://www.intra2net.com/en/developer/libftdi/" target="_blank" rel="external">libFTDI</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="u677F_u5B50"><a href="#u677F_u5B50" class="headerlink" title="板子"></a>板子</h2><ul>
+<li><p>AVR</p>
+<ul>
+<li><p><a href="http://www.digikey.com/product-detail/en/ATXMEGAE5-XPLD/ATXMEGAE5-XPLD-ND" target="_blank" rel="external">Atmel</a> AVR系列是一种基于改进的哈佛结构、8位～32位精简指令集（RISC）的微控制器 </p>
+<p>  <img src="http://media.digikey.com/Photos/Atmel%20Photos/ATXMEGAE5-XPLD.JPG" alt=""></p>
+</li>
+<li><p><a href="http://www.arduino.cc/" target="_blank" rel="external">Arduino</a>: 开发板 + C 语言库 + IDE + 烧录程序 + 头文件</p>
+<p>  <img src="https://www.arduino.cc/new_home/assets/illu-arduino-UNO.png" alt=""></p>
+</li>
+<li><p>XMEGA: AVR 较新的系列</p>
+<ul>
+<li><a href="http://www.atmel.com/Images/doc7925.pdf" target="_blank" rel="external">features</a></li>
+<li>toolchain: <a href="https://www.obdev.at/products/crosspack/index.html" target="_blank" rel="external">CrossPack for OS X</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ARM</p>
+<ul>
+<li>ARM 是主流的手机处理器架构</li>
+<li><a href="http://www.st.com/web/en/catalog/mmc/FM141/SC1169" target="_blank" rel="external">STM32</a></li>
+<li><p><a href="http://www.raspberrypi.org/" target="_blank" rel="external">Rasberry Pi</a></p>
+<p>  <img src="https://www.raspberrypi.org/wp-content/uploads/2016/02/Pi_3_Model_B-01.png" alt=""></p>
+</li>
+<li><p><a href="http://beagleboard.org/" target="_blank" rel="external">BeagleBone</a></p>
+</li>
+<li><a href="http://pandaboard.org/" target="_blank" rel="external">PandaBoard</a></li>
+<li><a href="https://developer.ubuntu.com/en/snappy/" target="_blank" rel="external">Snappy</a></li>
+</ul>
+</li>
+<li><a href="http://www.digikey.com/product-detail/en/CY8CKIT-049-42XX/428-3344-ND" target="_blank" rel="external">PSoC</a>: 芯片上的可编程系统 windows only<br>  <img src="http://media.digikey.com/photos/Cypress%20Semi%20Photos/CY8CKIT-049-42XX.jpg" alt=""></li>
+</ul>
+<h2 id="u66F4_u591A_u8D44_u6599"><a href="#u66F4_u591A_u8D44_u6599" class="headerlink" title="更多资料"></a>更多资料</h2><p><a href="http://academy.cba.mit.edu/classes/embedded_programming/doc8183.pdf" target="_blank" rel="external">AVR chip data sheets</a></p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/159242917" target="_blank" rel="external">Week8 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/index.html" target="_blank" rel="external">Week8 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week8.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[作业7：用Shopbot做电吉他[FabNotes015]]]></title>
@@ -1456,257 +1714,6 @@
       <category term="Tips" scheme="http://yoursite.com/tags/Tips/"/>
     
       <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[00牌机器人2015版本更新记录]]></title>
-    <link href="http://yoursite.com/2015/12/25/my2015update/"/>
-    <id>http://yoursite.com/2015/12/25/my2015update/</id>
-    <published>2015-12-25T13:20:13.000Z</published>
-    <updated>2016-01-03T12:15:02.000Z</updated>
-    <content type="html"><![CDATA[<p>又到了写年底总结的时候。</p>
-<p>总觉得“总结”这个词有点儿消极——道理都明白，写出来洋洋洒洒，但一年好像又白过了。</p>
-<p>为什么我们不能像 APP 一样，写写今年最大的版本迭代都更新了什么？</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/00robot.png" alt=""></div>
-
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><ul>
-<li>路痴</li>
-<li>喜欢吃咸肉粽和甜豆花的南方人，同时也爱吃羊肉和凉皮~</li>
-<li>交互设计shi</li>
-<li>擅长走路、F2F熬鸡汤、碎碎念、搞卫生</li>
-</ul>
-<hr>
-<h2 id="What_u2019s_New"><a href="#What_u2019s_New" class="headerlink" title="What’s New"></a>What’s New</h2><p>Dec 25, 2015</p>
-<h3 id="1-_Hack__u548C_Pull"><a href="#1-_Hack__u548C_Pull" class="headerlink" title="1. Hack 和 Pull"></a>1. Hack 和 Pull</h3><p>首先刷新的是对这两个动词的认识。</p>
-<a id="more"></a>
-<h4 id="Hack"><a href="#Hack" class="headerlink" title="Hack"></a>Hack</h4><p>任何事物和体系都可以 hack，也应该 hack。 现有体系和规则，如果站在内部往外看，基本觉得是铜墙铁壁滴水不漏，让人不假思索就全盘接受。但如果你被打晕拖出去，醒来再看，可能瞬间就发现漏洞百出。系统内一些长期被奉为圭臬的规则，搞不好只是一开始时某个随机事件的偶然结果，结果就这么搞 siao 地固化下来。</p>
-<p>Hack 心态不是要推翻一切。只是鼓励我们从旁观者的角度，尽快抽取出游戏规则——如果可能、如果需要，最好改变游戏规则，甚至重新制定规则。</p>
-<p>哦对了，Hack也是学习任何东西首先应该具备的态度。</p>
-<h4 id="Pull"><a href="#Pull" class="headerlink" title="Pull"></a>Pull</h4><p>作为资深的信息焦虑机器人，robot00 知道自己接收信息的方式相当被动：电视里面放广告就看广告，朋友圈里转文章就看文章，畅销榜放着哪些书就看哪些书，大数据火了看大数据，芈月传火了看芈月传。可是我们生活在一个每18个月全球信息总量就会翻倍的世界。就这么对待越来越稀缺的注意力，真是有点儿戏。</p>
-<p>今年尝试从“被 push 模式”升级成“主动 pull 模式”。一方面减少花在支离破碎的信息源（尤其是微信）的时间，另一方面通过感兴趣的主题去找书、找 mooc、看 wiki、看 github、看微博微信豆瓣……</p>
-<p>从今年写读书笔记的经验来看，pull 和 push 两种模式真的差别简直巨大。</p>
-<p>今年写了三个“pull”系列：<a href="http://www.jianshu.com/users/2LSzkz/latest_articles" target="_blank" rel="external">「德意志笔记」、「中欧四国扫盲贴」、「场景化设计」</a></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/qr.png" alt=""></p>
-<p>&nbsp;</p>
-<p>每个系列都写得很痛苦：需要先查资料，看书看视频，要么是总结实际做过的项目。多个途径看完资料，然后抽出一个线头来串起要写的内容，再提炼观点，找资料找论据找栗子。这种强度跟随机读完一本书写一篇笔记完全不同。折腾过后，对主题的理解当然比孤立地读一本书来得要深刻。</p>
-<h3 id="2-__u5C11_u62D6_u5EF6_uFF0C_u4E0D_u7126_u8651"><a href="#2-__u5C11_u62D6_u5EF6_uFF0C_u4E0D_u7126_u8651" class="headerlink" title="2. 少拖延，不焦虑"></a>2. 少拖延，不焦虑</h3><p>这一年终于不再受拖延的困扰。并不是做到了不拖延，而是明白拖延的症结所在：</p>
-<ul>
-<li>没有意识到心智资源极端有限</li>
-<li>欲望太多，期望太高</li>
-<li>把时间花在事前选择判断，而不是产出结果</li>
-</ul>
-<p>懂得注意力、心力（will power）都是极端稀缺的资源以后，就明白该怎么对付拖延：</p>
-<ul>
-<li><p>精简欲望，逃出心力黑洞<br>无论是购买欲念，还是兴趣欲念，还是改变世界的欲念，1-2个就差不多了。少了没活力，多了伤身体。诸如做决定、无效的争论、坚持每天做 xxx，都特别耗心力。少做一件，估计能多活几天。选出最重要的几件事去劳心劳力就差不多了。</p>
-</li>
-<li><p>委派任务，购买服务<br>事情做不完，多半是做了太多可以由别人做的事情。如果调动资源的能力没有增强，事情却越积越多，怎么可能不拖延？想办法把不擅长的任务委派出去，或者更简单一点——购买服务，而不是自己亲手去做。比如雇一个人，买一个好一点 VPN，买一个 Alfred，能节省好多时间精力。</p>
-</li>
-<li><p><code>If</code> 纠结/患得患失 <code>Then</code> 开始动手<br>纠结的成因有两个：贪心，反馈不足。这时候如果停下来继续纠结，会进入恶性循环——反馈继续缺失，没法做出合理判断。只能告诉自己，一切都是 tradeoff，选出更重要的一个因素，然后往前推进，在做的过程中根据反馈不断调整。</p>
-</li>
-</ul>
-<h3 id="3-__u4F5C_u54C1_u4F5C_u54C1_u4F5C_u54C1"><a href="#3-__u4F5C_u54C1_u4F5C_u54C1_u4F5C_u54C1" class="headerlink" title="3. 作品作品作品"></a>3. 作品作品作品</h3><p>无论是开智群、YC 创业课、BVM 计划，都在反复强调两个字：作品。</p>
-<p>写了一年公众号，做了小小书童，开了学画大作战群，越来越明白作品的分量。</p>
-<p><a href="http://v.qq.com/page/b/o/l/b015562y5ol.html" target="_blank" rel="external">小小书童介绍视频</a></p>
-<p>学画大作战群每日合集:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/congjiangsuan.png" alt=""></p>
-<p>简书上记录今年共写了 7w 多字，获得 500 个喜欢：平均140个字才换来一个喜欢，正好是微博的长度……(当然，这可能只是说明 robot00 的文章实在不怎么吸引)</p>
-<p>从一个简单的想法，到用 Markdown 写出大纲，然后编辑、配图，在难用的公众平台编辑器中来回修改，同步发到简书、博客、豆瓣、KM 等等地方，还要想朋友圈广告词…… 这些事情做下来，才知道想要留下一点东西也是不容易。</p>
-<blockquote>
-<p>作品，逼人进行更多更优质的输入。<br>作品，逼人从无序变得有序。<br>作品，留下连接入口。<br>作品，创造更多可能性。</p>
-</blockquote>
-<p>不要忘记，基因的目标是复制，成功的标准就是数量。模因也一样。如果没有作品，模因根本没有生存机器。</p>
-<hr>
-<p>好了，道理够多了，如果超过三个，连自己都记不住。三个年度更新</p>
-<p>也不写什么自 high 型 “新年计划” 了。</p>
-<p><strong>用作品说话，明年见。</strong></p>
-<hr>
-<h3 id="Bonus"><a href="#Bonus" class="headerlink" title="Bonus"></a>Bonus</h3><p>值得推荐的工具</p>
-<ol>
-<li>Alfred：Mac 必备，用好 workflow，效率提升至少 500%</li>
-<li>Git：版本管理系统，请看「多用 Git 少缴税」</li>
-<li>Markdown：聚焦于内容的书写方式</li>
-<li>Sketch + Keynote：BP 视频都能用这个做，妥妥的</li>
-<li>Workflowy：树形列表工具，可以用做 PKM（个人知识管理） 索引，以及替代 to do list</li>
-</ol>
-<p>值得一读再读的书</p>
-<p><a href="http://book.douban.com/subject/26576861/" target="_blank" rel="external">自私的基因</a></p>
-<p><img src="http://img3.douban.com/mpic/s11214645.jpg" alt=""></p>
-<p><a href="http://book.douban.com/subject/6687032/" target="_blank" rel="external">经验的疆界</a></p>
-<p><img src="http://img3.doubanio.com/mpic/s6738709.jpg" alt=""></p>
-<p><a href="http://book.douban.com/subject/26576861/" target="_blank" rel="external">最好的告别</a></p>
-<p><img src="http://img3.douban.com/mpic/s28355811.jpg" alt=""></p>
-<p><a href="http://book.douban.com/subject/25985021/" target="_blank" rel="external">人类简史</a></p>
-<p><img src="http://img3.douban.com/mpic/s27814883.jpg" alt=""></p>
-<p><a href="http://book.douban.com/subject/26658379/" target="_blank" rel="external">必然</a></p>
-<p><img src="http://img3.douban.com/mpic/s28335050.jpg" alt=""></p>
-<hr>
-<p>节日快乐<br>新年快乐</p>
-<p>© 00<br>2015.12.25@ GZ</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>又到了写年底总结的时候。</p>
-<p>总觉得“总结”这个词有点儿消极——道理都明白，写出来洋洋洒洒，但一年好像又白过了。</p>
-<p>为什么我们不能像 APP 一样，写写今年最大的版本迭代都更新了什么？</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/00robot.png" alt=""></div>
-
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><ul>
-<li>路痴</li>
-<li>喜欢吃咸肉粽和甜豆花的南方人，同时也爱吃羊肉和凉皮~</li>
-<li>交互设计shi</li>
-<li>擅长走路、F2F熬鸡汤、碎碎念、搞卫生</li>
-</ul>
-<hr>
-<h2 id="What_u2019s_New"><a href="#What_u2019s_New" class="headerlink" title="What’s New"></a>What’s New</h2><p>Dec 25, 2015</p>
-<h3 id="1-_Hack__u548C_Pull"><a href="#1-_Hack__u548C_Pull" class="headerlink" title="1. Hack 和 Pull"></a>1. Hack 和 Pull</h3><p>首先刷新的是对这两个动词的认识。</p>]]>
-    
-    </summary>
-    
-      <category term="2015" scheme="http://yoursite.com/tags/2015/"/>
-    
-      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="叽歪" scheme="http://yoursite.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[场景化设计系列之四：场景化设计六步法]]></title>
-    <link href="http://yoursite.com/2015/12/19/scenario-design-4/"/>
-    <id>http://yoursite.com/2015/12/19/scenario-design-4/</id>
-    <published>2015-12-19T02:14:12.000Z</published>
-    <updated>2016-01-03T13:51:25.000Z</updated>
-    <content type="html"><![CDATA[<p>终于进入本系列的真正主题：场景。如何在日常消费场景中影响用户行为，是这篇文章尝试探讨的问题。</p>
-<p>在真实场景中，虽然需要处理纷繁复杂的要素，但我们还是可以依据一定的思路和做法，各个击破，最终达到目的。以下是 00 总结的“场景化设计六步法”：</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/sixsteps.png" alt=""></div>
-
-<a id="more"></a>
-<h3 id="1-_u5212_u5206_u573A_u666F"><a href="#1-_u5212_u5206_u573A_u666F" class="headerlink" title="1.划分场景"></a>1.划分场景</h3><p>什么是场景？</p>
-<p>场景就好比真实故事（的片段）： 什么人，什么时候，在哪里，做什么，结果怎样。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/love_story.gif" alt=""></div><br>划分场景，是为了最终把大象塞进冰箱 —— 总得知道第一步是先打开冰箱门吧。<br><br>来看看 KK 新书「必然」里的一个场景描述：<br><br>&gt; 在我的“办公室”里，我会在额头上戴上一个增强现实面罩。这个面罩就像是一个弯曲的发带，大约有手掌那么宽。它与我的眼睛之间隔开了几英寸，以便保证我全天佩戴时尽可能舒适些。这个功能强大的面罩会在我周围投放虚拟屏幕。大约有12块大小不一的虚拟屏幕，面对大量数据我也可以用双手全力应对。在我一天的工作中，会与虚拟同事进行大量的交流，这个面罩能够提供足够好的分辨率和运行速度。由于我能在一个真实的房间里看到他们，所以我在现实中也完全在场。<br><br><br>场景并不复杂，我们每天都生活在其中。<br><br>又比如，外出吃饭是一个场景。仔细想想，如果不对这个看似简单实则复杂的大场景进行拆分，我们无法进行具体的设计。餐饮行业的用户场景包括：就餐决策，到店，排位等位，入座，点菜，用餐，结账……<br><br>其中高峰期的等位就是一个具体的场景。<br><br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/watingScene.png" alt=""></div>
-
-<p>将大的目标比如“提升翻台率”转换成为用户活动，并进一步拆分为小而具体的场景，是进行场景化设计的第一步。</p>
-<h3 id="2-__u8BC4_u4F30_u89E6_u70B9"><a href="#2-__u8BC4_u4F30_u89E6_u70B9" class="headerlink" title="2. 评估触点"></a>2. 评估触点</h3><p>我们不是迪士尼，也不是邓布利多，没办法对一个场景内的所有元素都提前设计好。回到目标上来，我们要做的事情是“影响用户行为”，而用户行为往往发生在一些关键节点上。比如餐厅等位，消费者的第一个行为节点，是看到人头攒动时去前台询问。那么前台的服务员和相关的宣传物料就是这个节点上与消费者接触的“触点”（touch point）。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/theCreationOfAdam.jpg" alt=""></div>
-
-
-<p>识别出重要的“触点”，就可以针对这些与用户发生直接接触、可能会影响他们行为的“界面”做设计。“触点”的形式有很多，可能是人（比如前台服务员），可能是一张传单，可能是手机界面，可能是 ATM 取款机，也可能是发票上的一行信息……那么如何识别和挑选出最有效的触点呢？</p>
-<h4 id="u89E6_u70B9_u8BC4_u4F30_u8C61_u9650"><a href="#u89E6_u70B9_u8BC4_u4F30_u8C61_u9650" class="headerlink" title="触点评估象限"></a>触点评估象限</h4><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/touchpoint-evaluation.png" alt=""></div>
-
-
-<p>通过以下两个维度，可以基本判断出触点是否有价值：</p>
-<h5 id="A-__u662F_u5426_u5FC5_u7ECF"><a href="#A-__u662F_u5426_u5FC5_u7ECF" class="headerlink" title="A. 是否必经"></a>A. 是否必经</h5><p>如果一个触点是用户必经的地点/行为节点，它便具有潜力。</p>
-<p>比如，进店时，需要推门而入，门把手会是一个必经的“地点”。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/wepayalipay.jpeg" alt=""></div>
-
-<p>比如，超市购物，收银台是每位顾客必经之路，收银员和显示屏是每个人都会接触到的“触点”。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/paydesk.jpg" alt=""></div>
-
-<h5 id="B-__u662F_u5426_u6C89_u6D78"><a href="#B-__u662F_u5426_u6C89_u6D78" class="headerlink" title="B. 是否沉浸"></a>B. 是否沉浸</h5><p>如果用户在一个触点停留时间长，而且需要投入注意力与之互动持续一段时间，这也会是一个重要的触点。如果涉及到整个活动过程中的决策点，比如吃饭这件事，购买决策阶段主要是看菜单点菜，那么菜单就是一个重要的触点。</p>
-<p>又比如，ATM。用户在使用 ATM 时，几乎是专心致志的，一般也会持续若干分钟。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/atm.jpg" alt=""></div><br>再拿出餐厅高峰期等位的例子，虽然用户停留时间长，但是注意力却不集中，所以这是一个有潜力但是也很难做复杂决策指引的触点。<br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/waiting.jpg" alt=""></div><br>再来比较一下超市的入口，虽然是必经路径，但是因为基本不会投入一丁点注意力(除非等人之类的)，所以是价值不高的触点。<br><div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/supermarketEntry.jpg" alt=""></div>
-
-<p><strong>小结：选取高价值的触点，是场景化设计的关键步骤。“必经”和“沉浸”两个维度，可以帮助我们比较快地判断触点的价值。</strong></p>
-<h3 id="3-_u5438_u5F15_u6CE8_u610F"><a href="#3-_u5438_u5F15_u6CE8_u610F" class="headerlink" title="3.吸引注意"></a>3.吸引注意</h3><blockquote>
-<p>“为什么我要关心这个？”</p>
-</blockquote>
-<p>没有用户会直接说出这句话，但这却是每个人在集中注意、产生行为之前必然会下意识思考的问题。服务做得再好，如果用户完全忽略我们希望传达的信息、根本没有考虑试一试的话，一切都白搭。</p>
-<p>怎样设计能吸引注意？</p>
-<ul>
-<li><p>简要下面这个说明物料，很多设计师会难以接受，甚至觉得“简陋”“丑”。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/instruction.png" alt=""></div>
-
-<p>可是在线下场景中，人们无法电光火石之间吸收大量信息，反而是这种“简单粗暴”的方式，才最容易引起人注意，最容易被吸收、被接受。</p>
-</li>
-<li><p>引发情感，如惊讶、好奇、会心一笑</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/sysucard.jpeg" alt=""></div>
-
-
-</li>
-</ul>
-<h3 id="4-_u5F71_u54CD_u51B3_u7B56"><a href="#4-_u5F71_u54CD_u51B3_u7B56" class="headerlink" title="4.影响决策"></a>4.影响决策</h3><p>当人们在触点受到指引产生兴趣后，我们需要进一步展示出清晰、有说服力的利益点，以影响决策，推动下一步行动。</p>
-<p>在<a href="http://www.jianshu.com/p/eb5a7e9d9502" target="_blank" rel="external">上一期工具箱</a>中讨论过动机分析工具，而这里的影响决策就是将动机外化出来，以激发目标。</p>
-<ul>
-<li>提供清晰直白的内容。避免使用专业名词，应该多用直接回答用户问题的话术，来帮助他们做出决定。</li>
-<li>给出推荐。人们看到行动指引或者选择时，更倾向于下一步行动。</li>
-<li>描述利益。还记得 <a href="http://www.jianshu.com/p/eb5a7e9d9502" target="_blank" rel="external">ESP</a> 吗？经济的、服务的、情感的动机，哪些能真正打动用户？</li>
-<li>二次包装。运用心理学原理，使用锚定效应、制造稀缺性、利用社会压力和社会认同，等等。</li>
-</ul>
-<p>比如，在客运站推广电子票的设计中，除了突出“不排队”这一服务上的特点，还尝试从情感角度，将使用电子票这种行为渲染为一种新潮时尚的方式。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/noline.png" alt=""></div>
-
-
-<h3 id="5-_u5F15_u5BFC_u884C_u52A8"><a href="#5-_u5F15_u5BFC_u884C_u52A8" class="headerlink" title="5.引导行动"></a>5.引导行动</h3><p>决策产生之后，来到了关键的第4步：引导行动。让我们回顾一下 MAT 模型：</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/bj-fogg-behavior-model-grapic.jpg" alt=""></div>
-
-
-<p>这时候，动机已经不是主要问题，需要重点解决的是能力和触发器的问题：</p>
-<ul>
-<li>提供用户正在寻找的信息（触发器）</li>
-<li>在合适地点、合适时间出现（触发器）</li>
-<li>简化使用过程（能力）</li>
-</ul>
-<p>在智慧客运的项目中，我们重新设计了扫码购票的物料，将乘客最熟悉、正在寻找的信息元素：目的地名称、车票样式具象化出来，让人知道下一步该怎么行动。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/lines.png" alt=""></div>
-
-
-<p>然后把自助购票的牌架，放到了售票厅入口处以及排队高峰时容易看到的地方，作为“触发器”促使乘客行动。</p>
-<p>在简化使用过程方面，将原本有多个页面，购票时间长达一分多种的手机购票页面，精简成扫码后一键即可购买：只需要选择人数，不需要选择日期、时间、目的地、班次等等信息。购票时间减少80%，直接的结果是 MAT 中的 “A” 得到明显提升，最终逐渐引导乘客从现金购票到购买电子票这一行为的改变。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/ticketH5.jpeg" alt=""></div>
-
-<h3 id="6-_u5F3A_u5316_u884C_u4E3A"><a href="#6-_u5F3A_u5316_u884C_u4E3A" class="headerlink" title="6.强化行为"></a>6.强化行为</h3><p>用户做出行为改变之后，任务还没有全部完成。持续的行为改变以及习惯养成才是我们的最终目的。于是在最后一步，需要进一步强化行为：</p>
-<ul>
-<li><p>具象化反馈<br>以前在做界面设计时，反馈从来不是交互设计师的障碍，反而是利器 —— 可以使用的反馈形式太多，而且都能有效引起注意。但是在线下场景中（尤其当涉及线上、线下界面频繁切换时），反馈系统往往残缺不全。</p>
-<p>比如在餐馆里吃饭，一些餐馆已经能够做到顾客自己用微信餐、吃完后自己用微信支付。但是支付成功后，顾客往往不确定是不是可以直接走了，还是得叫服务员过来确认一次。这是因为缺乏必要的反馈。</p>
-<p>在客运站里买票，人工售票自然不必说，即便是使用自助售票机，购票成功的反馈也是非常明确的：出票，找零，声音确认。但是如果用微信购票，购票成功只有界面上一个成功图标，怎么都感觉不太放心。</p>
-<p>于是我们在现场增加了一台大屏幕，购票成功实时显示，并且播放提示音。一方面让购票乘客即时确认，另一方面也作为一种可感知的宣传，触达到售票厅的其他乘客。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/tv.png" alt=""></div>
-
-
-</li>
-</ul>
-<ul>
-<li><p>多触点配合在一个触点发生的行为，想办法在另外一个触点进行强化。</p>
-<p>比如乘客购买电子票以后，进入候车厅，还可以享受到电子票的专用通道。完成一次乘坐后，会收到购买返程车票的代金券。多个触点轮番引导，目的都是为了强化“微信购票”这一行为。</p>
-</li>
-</ul>
-<hr>
-<p>以上就是场景化设计六步法。</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/sixsteps.png" alt=""></div>
-
-
-<p>跟界面设计相比，场景化设计有许多不同的着眼点和方法。但是两者的核心仍然一致：从人的需求和行为出发，在有价值的触点设计出：</p>
-<ul>
-<li>易于发现和理解的信息</li>
-<li>激发动机的行动召唤</li>
-<li>简化行动</li>
-<li>恰到好处的反馈</li>
-</ul>
-<p>这六个步骤可能还远远不完善，希望将过往的经验总结出一个框架来跟大家探讨。期待同学们增添更多的想法、案例、讨论 :)</p>
-<hr>
-<div class="image-package imagebubble"><br><img src="http://7xjpra.com1.z0.glb.clouddn.com/qrcode_for_gh_48d79033755a_258.jpg" alt=""><br><div class="image-caption">00的公众号，更多分享酝酿中……</div><br></div>]]></content>
-    <summary type="html">
-    <![CDATA[<p>终于进入本系列的真正主题：场景。如何在日常消费场景中影响用户行为，是这篇文章尝试探讨的问题。</p>
-<p>在真实场景中，虽然需要处理纷繁复杂的要素，但我们还是可以依据一定的思路和做法，各个击破，最终达到目的。以下是 00 总结的“场景化设计六步法”：</p>
-<div class="image-package imagebubble"><img src="http://7xjpra.com1.z0.glb.clouddn.com/sixsteps.png" alt=""></div>]]>
-    
-    </summary>
-    
-      <category term="Design" scheme="http://yoursite.com/tags/Design/"/>
-    
-      <category term="o2o" scheme="http://yoursite.com/tags/o2o/"/>
-    
-      <category term="交互设计" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="体验" scheme="http://yoursite.com/tags/%E4%BD%93%E9%AA%8C/"/>
-    
-      <category term="场景" scheme="http://yoursite.com/tags/%E5%9C%BA%E6%99%AF/"/>
-    
-      <category term="服务设计" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="设计" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="设计" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
