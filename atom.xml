@@ -273,39 +273,44 @@
   </entry>
   
   <entry>
-    <title><![CDATA[作业7：用Shopbot做电吉他[FabNotes015]]]></title>
+    <title><![CDATA[作业7：用CNC做乐谱架[FabNotes015]]]></title>
     <link href="http://yoursite.com/2016/04/03/fabnotes015/"/>
     <id>http://yoursite.com/2016/04/03/fabnotes015/</id>
     <published>2016-04-03T08:34:17.000Z</published>
-    <updated>2016-04-03T08:35:20.000Z</updated>
+    <updated>2016-07-12T15:19:42.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week7.png" alt=""></p>
 <a id="more"></a>
 <p>这周的作业是</p>
 <blockquote>
 <p>make something big</p>
 </blockquote>
-<p>辣么，就试着做一把简易的 CNC 吉他吧！</p>
-<p><img src="http://cdn.instructables.com/FOK/JETZ/ICLRZT1N/FOKJETZICLRZT1N.MEDIUM.jpg" alt=""></p>
-<h3 id="u8BBE_u8BA1"><a href="#u8BBE_u8BA1" class="headerlink" title="设计"></a>设计</h3><p>依旧是用 Fusion 360 来 3D 建模。再简易的吉他也是够复杂的。先在网上看了一大圈教程和视频。</p>
-<p>Autodesk 用户论坛里有一些<a href="https://forums.autodesk.com/t5/design-validate-document/beginner-question-arch-top-guitar-model/td-p/5564290/highlight/true" target="_blank" rel="external">详细的讨论</a> 。<a href="https://discuss.inventables.com/search?q=guitar" target="_blank" rel="external">Inventables 论坛的系列教程也不错</a> Youtube 上有个用 Fusion 360 自由形状工具创建吉他琴身的教程，可以一步一步跟着画:</p>
-<p><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0ahUKEwjI37zejM7LAhVX7mMKHVxBBNcQtwIIHzAB&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DMNZQMK_aw7M&amp;usg=AFQjCNHqD4eORnK1A38sbemxJJhblGVc1g&amp;sig2=34K72vsxx0u2BJKIvg5J-w&amp;bvm=bv.117218890,d.cGc" target="_blank" rel="external">Modeling a Guitar in Fusion 360 with T-Splines - YouTube</a></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fusionguitartutor.png" alt=""></p>
-<p>看教程看的头昏眼花，还是开工吧！</p>
-<p>琴身:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/cncguitarbody1_shrink.png" alt=""></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/cncguitarbody2_shrink.png" alt=""></p>
-<p>琴颈:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/cncguitarneckbody1.png" alt=""></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/cncguitarneckbody2.png" alt=""></p>
-<p>其他零部件暂时省略了。</p>
-<h3 id="u5236_u4F5C"><a href="#u5236_u4F5C" class="headerlink" title="制作"></a>制作</h3><p>实验室正在装修，Shopbot还用不了啊啊啊。回头更新这部分。</p>
-<h3 id="u53C2_u8003_u8D44_u6599"><a href="#u53C2_u8003_u8D44_u6599" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
-<li><a href="http://www.instructables.com/id/Make-a-Guitar-with-CNC/" target="_blank" rel="external">Make a Guitar with CNC</a></li>
-<li><a href="http://www.notcot.com/archives/2009/09/rickenbacker-gu.php" target="_blank" rel="external">RICKENBACKER GUITAR FACTORY TOUR </a></li>
-<li><a href="https://forums.autodesk.com/t5/design-validate-document/beginner-question-arch-top-guitar-model/td-p/5564290/highlight/true" target="_blank" rel="external">Beginner question, arch top guitar model</a></li>
-<li><a href="https://www.youtube.com/user/trideciple" target="_blank" rel="external">Highline Guitars</a></li>
-<li><a href="http://www.guitarbuilding.org/" target="_blank" rel="external">STEM-Guitar-Guitarbuilding</a></li>
-</ul>
+<p>实验室帅气的 Shopbop 用不了好心塞，原本 CNC(Computer Numerical Control) 吉他的美梦破灭。辣么，就做个简单的谱架吧。</p>
+<h3 id="u8BBE_u8BA1"><a href="#u8BBE_u8BA1" class="headerlink" title="设计"></a>设计</h3><p>在 Fusion 360 里画出四个部件：底座，支架，底板和背板。因为制作材料的厚度还不确定，所以需要把所有部件的厚度设为可调整的参数：在Modify-Parameter 里面新建自定义参数，然后在 sketch 中画图形以及拉伸时，用已经设定的参数作为长度。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabweek7standdesign.png" alt=""></p>
+<p>东西比较大，为保险起见，先用激光切割机做了 demo 测试：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467164820.jpeg" alt=""></p>
+<p>有点萌：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467164822.jpeg" alt=""></p>
+<h3 id="u5207_u5272"><a href="#u5207_u5272" class="headerlink" title="切割"></a>切割</h3><p>现在来真的了。这是一台 CNC machine SW1325：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467542883.jpeg" alt=""></p>
+<p>把文件导到 CAD 里并微调：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467542887.jpeg" alt=""></p>
+<p>材料用的是 9 mm 的中纤板（MDF）： </p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467542888.jpeg" alt=""></p>
+<p>立铣刀直径 4.00 mm，高度 30.00 mm：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467542895.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467542894.jpeg" alt=""></p>
+<p>校零，回原点，选速度：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467542905.jpeg" alt=""></p>
+<p><a href="https://youtu.be/yE0kisxhJcI" target="_blank" rel="external">作业时的视频</a></p>
+<h3 id="u7EC4_u88C5"><a href="#u7EC4_u88C5" class="headerlink" title="组装"></a>组装</h3><p>只有四块完全没有难度……</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467543068.jpeg" alt=""></p>
+<p>先把底座和支架插好：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467543077.jpeg" alt=""></p>
+<p>然后是底板和背板：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467543083.jpeg" alt=""></p>
+<p>噔噔噔，看上去还不错，就是个子有点矮 XD</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467543086.jpeg" alt=""></p>
 <h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
 <li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
 <li><a href="https://vimeo.com/158372791" target="_blank" rel="external">Week7 课程视频</a></li>

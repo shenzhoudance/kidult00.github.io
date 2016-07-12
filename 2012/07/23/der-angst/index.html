@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -21,18 +27,45 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Note,心理学," />
@@ -46,7 +79,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -70,27 +103,29 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: '',
-    sidebar: 'always',
-    motion: true
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2012/07/23/der-angst/"/>
 
   <title> 你好，恐惧 | 00's Adventure </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -108,7 +143,16 @@
 
 
 
-  <div class="container one-column page-post-detail">
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -137,15 +181,15 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首頁
+            首页
           </a>
         </li>
       
@@ -153,9 +197,9 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分類
+            分类
           </a>
         </li>
       
@@ -163,9 +207,9 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            關於
+            关于
           </a>
         </li>
       
@@ -173,9 +217,9 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            歸檔
+            归档
           </a>
         </li>
       
@@ -183,28 +227,40 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            標籤
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
-            
-            公益404
+            标签
           </a>
         </li>
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
   
 </nav>
 
@@ -213,8 +269,9 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -245,7 +302,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            發表於
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2012-07-23T23:12:28+08:00" content="2012-07-23">
               2012-07-23
             </time>
@@ -253,7 +313,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分類於
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/读书/" itemprop="url" rel="index">
@@ -271,28 +335,32 @@
           
             
               <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2012/07/23/der-angst/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2012/07/23/der-angst/" itemprop="commentsCount"></span>
-              </a>
-            </span>
+                &nbsp; | &nbsp;
+                <a href="/2012/07/23/der-angst/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2012/07/23/der-angst/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
           
 
+          
+          
+
+          
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><p>“唯一需要恐惧的，是恐惧本身”第一次看到这句话时，深以为然。过后转念一想，不对啊，又是一句正确的废话。恐惧临头的时候，难道奢望自己拍拍胸口就气冲丹田脸不变色心不跳？何况恐惧的形态多种多样，说不准什么时候自己被完全控制了还浑然不觉。</p>
+        <p>“唯一需要恐惧的，是恐惧本身”第一次看到这句话时，深以为然。过后转念一想，不对啊，又是一句正确的废话。恐惧临头的时候，难道奢望自己拍拍胸口就气冲丹田脸不变色心不跳？何况恐惧的形态多种多样，说不准什么时候自己被完全控制了还浑然不觉。</p>
 <p>每天对着这个timeline，那个sns，正确的废话们出镜率越来越高，但是吃再多的信息快餐，灌多少锅心灵鸡汤，还不如实实在在看一本好书。《<a href="http://book.douban.com/subject/2282946/" target="_blank" rel="external">直面内心的恐惧</a>》就是这样一本书。<br><a id="more"></a><br>如果没被这本书的副标题——“分裂、忧郁、强迫、歇斯底里四大人格心理分析” 唬住，翻开书，发现作者想探讨是四种恐惧的基本类型。恐惧，让我们不自觉地一直逃避某些东西，形成一定的思维和行为模式，慢慢成为难以改变的性格。一旦失去对某种恐惧的控制，生活总会偏离正常的轨道，我们知道有些什么地方不太对劲，但因为是自己一直以来固有的模式，也就听之任之了。作者想寻找所有极端、病态的行为的心理根源，帮助生活在恐惧中（不一定自知）的人们去挣脱如影随形的束缚，以塑造更健全的心理和人格。</p>
 <p>应该很难再找到一本心理学的书，把思路和章节组织得如此清晰。作者根据“与自我/他人的关系”（类比做自转/公转）和“与事物的关系”（类比做向心力/离心力）画出两条坐标轴，四种恐惧正好分布在四个象限：</p>
 <ol>
@@ -340,7 +408,42 @@
 <blockquote>
 <p>如果有一个人厘清了自己为什么害怕交出自己，因而对生命与周遭的人敞开心灵，有勇气让个性自由发展，主宰自己的生活，不再因缺乏安全感而害怕；接着，他接受了生命事物终将消逝的事实，活得有声有色又有意义：接受世界上以及生活中的规范与法律，知道既定事实毋须回避，但不因此而惧怕自由被剥夺——假如真有这样一个人，我们想当然要颁奖表扬他的成熟与完美。但如果这些目标我们都只能稍微靠近一点儿的话，正表示完美的人性与成熟是我们想象中的目标，他并非人类捏造出来的理想，而是我们把人安放到宇宙井然有序的系统之中。</p>
 </blockquote>
-</span>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/qrcode.jpg" alt="kidult00 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫码关注 00 的笔记本</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>支持原创，五毛钱不嫌少~</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/paycode.png" alt="kidult00 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
       
     </div>
 
@@ -411,25 +514,26 @@
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
       <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
       </div>
     
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -447,41 +551,47 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目錄
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            本站概覽
+            站点概览
           </li>
         </ul>
       
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://7xjpra.com1.z0.glb.clouddn.com/avatar.png" alt="kidult00" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="http://7xjpra.com1.z0.glb.clouddn.com/avatar.png"
+               alt="kidult00" />
           <p class="site-author-name" itemprop="name">kidult00</p>
+          <p class="site-description motion-element" itemprop="description"></p>
         </div>
-        <p class="site-description motion-element" itemprop="description"></p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">134</span>
-              <span class="site-state-item-name">文章</span>
+              <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">5</span>
-              <span class="site-state-item-name">分類</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">131</span>
-              <span class="site-state-item-name">標籤</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">131</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -498,50 +608,56 @@
           
             
               <span class="links-of-author-item">
-                <a href="http://weibo.com/twee/" target="_blank">
+                <a href="http://weibo.com/twee/" target="_blank" title="Weibo">
                   
-                    <i class="fa fa-weibo"></i> Weibo
+                    <i class="fa fa-fw fa-weibo"></i>
                   
+                  Weibo
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://douban.com/people/qop/" target="_blank">
+                <a href="http://douban.com/people/qop/" target="_blank" title="豆瓣">
                   
-                    <i class="fa fa-globe"></i> 豆瓣
+                    <i class="fa fa-fw fa-globe"></i>
                   
+                  豆瓣
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://www.zhihu.com/people/kidult/" target="_blank">
+                <a href="http://www.zhihu.com/people/kidult/" target="_blank" title="知乎">
                   
-                    <i class="fa fa-globe"></i> 知乎
+                    <i class="fa fa-fw fa-globe"></i>
                   
+                  知乎
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://www.jianshu.com/users/2LSzkz/" target="_blank">
+                <a href="http://www.jianshu.com/users/2LSzkz/" target="_blank" title="简书">
                   
-                    <i class="fa fa-globe"></i> 简书
+                    <i class="fa fa-fw fa-globe"></i>
                   
+                  简书
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://www.instagram.com/kidult00/" target="_blank">
+                <a href="https://www.instagram.com/kidult00/" target="_blank" title="Instagram">
                   
-                    <i class="fa fa-instagram"></i> Instagram
+                    <i class="fa fa-fw fa-instagram"></i>
                   
+                  Instagram
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://github.com/kidult00/" target="_blank">
+                <a href="https://github.com/kidult00/" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-github"></i> GitHub
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
@@ -550,18 +666,20 @@
 
         
         
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
@@ -570,9 +688,6 @@
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E00_u3001_u5206_u88C2"><span class="nav-number">1.</span> <span class="nav-text">一、分裂</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u4EBA_u683C_u7279_u5F81"><span class="nav-number">1.1.</span> <span class="nav-text">人格特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u7AE5_u5E74_u6210_u56E0"><span class="nav-number">1.2.</span> <span class="nav-text">童年成因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6050_u60E7_u4EC0_u4E48_uFF1F"><span class="nav-number">1.3.</span> <span class="nav-text">恐惧什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u884C_u4E3A_u6A21_u5F0F"><span class="nav-number">1.4.</span> <span class="nav-text">行为模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5982_u4F55_u514B_u670D"><span class="nav-number">1.5.</span> <span class="nav-text">如何克服</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E8C_u3001_u5FE7_u90C1"><span class="nav-number">2.</span> <span class="nav-text">二、忧郁</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u4EBA_u683C_u7279_u5F81-1"><span class="nav-number">2.1.</span> <span class="nav-text">人格特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u7AE5_u5E74_u6210_u56E0-1"><span class="nav-number">2.2.</span> <span class="nav-text">童年成因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6050_u60E7_u4EC0_u4E48_uFF1F-1"><span class="nav-number">2.3.</span> <span class="nav-text">恐惧什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u884C_u4E3A_u6A21_u5F0F-1"><span class="nav-number">2.4.</span> <span class="nav-text">行为模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5982_u4F55_u514B_u670D-1"><span class="nav-number">2.5.</span> <span class="nav-text">如何克服</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E09_u3001_u5F3A_u8FEB"><span class="nav-number">3.</span> <span class="nav-text">三、强迫</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u4EBA_u683C_u7279_u5F81-2"><span class="nav-number">3.1.</span> <span class="nav-text">人格特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u7AE5_u5E74_u6210_u56E0-2"><span class="nav-number">3.2.</span> <span class="nav-text">童年成因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6050_u60E7_u4EC0_u4E48_uFF1F-2"><span class="nav-number">3.3.</span> <span class="nav-text">恐惧什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u884C_u4E3A_u6A21_u5F0F-2"><span class="nav-number">3.4.</span> <span class="nav-text">行为模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5982_u4F55_u514B_u670D-2"><span class="nav-number">3.5.</span> <span class="nav-text">如何克服</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u56DB_u3001_u6B47_u65AF_u5E95_u91CC"><span class="nav-number">4.</span> <span class="nav-text">四、歇斯底里</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u4EBA_u683C_u7279_u5F81-3"><span class="nav-number">4.1.</span> <span class="nav-text">人格特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u7AE5_u5E74_u6210_u56E0-3"><span class="nav-number">4.2.</span> <span class="nav-text">童年成因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6050_u60E7_u4EC0_u4E48_uFF1F-3"><span class="nav-number">4.3.</span> <span class="nav-text">恐惧什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u884C_u4E3A_u6A21_u5F0F-3"><span class="nav-number">4.4.</span> <span class="nav-text">行为模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5982_u4F55_u514B_u670D-3"><span class="nav-number">4.5.</span> <span class="nav-text">如何克服</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6700_u540E"><span class="nav-number">5.</span> <span class="nav-text">最后</span></a></li></ol></div>
             
           </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
-          </div>
         </section>
       
 
@@ -580,7 +695,8 @@
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -590,45 +706,107 @@
   &copy;  2007 - 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">kidult00</span>
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  主題 -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Muse
   </a>
 </div>
 
+        
 
-
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
   
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
   
 
   
-    
-    
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
 
   
 
     <script type="text/javascript">
       var disqus_shortname = 'uegeek';
       var disqus_identifier = '2012/07/23/der-angst/';
-      var disqus_title = '你好，恐惧';
+      var disqus_title = "你好，恐惧";
       var disqus_url = 'http://yoursite.com/2012/07/23/der-angst/';
 
       function run_disqus_script(disqus_script){
@@ -647,192 +825,144 @@
   
 
 
-  
 
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
   
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
-
-
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
-
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
-
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
-
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
-
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
     }
+    var path = "/" + search_path;
+    // monitor main search box;
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
     }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
 
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
             });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
+            proceedsearch();
         }
-      }
-    };
-  });
-</script>
+    });}
 
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
 
+    });
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
 
   
-  
 
   
+
   
 
 </body>

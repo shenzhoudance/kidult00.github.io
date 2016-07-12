@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2016/04/03/fabnotes015/</loc>
+        <lastmod>2016-07-12T15:19:42.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2016/05/08/fabnotes017/</loc>
         <lastmod>2016-05-08T14:46:27.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,14 +25,6 @@
     <url>
         <loc>http://yoursite.com/2016/05/01/fabnotes016/</loc>
         <lastmod>2016-05-08T14:37:37.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/2016/04/03/fabnotes015/</loc>
-        <lastmod>2016-04-03T08:35:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
