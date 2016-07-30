@@ -4,6 +4,406 @@
   
     
     <entry>
+      <title><![CDATA[作业11：输入设备[FabNotes023]]]></title>
+      <url>http://yoursite.com/2016/07/30/fabnotes023/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11.png" alt=""></p>
+<a id="more"></a> 
+<h1 id="u4F5C_u4E1A11_uFF1A_u8F93_u5165_u8BBE_u5907_5BFabNotes023_5D"><a href="#u4F5C_u4E1A11_uFF1A_u8F93_u5165_u8BBE_u5907_5BFabNotes023_5D" class="headerlink" title="作业11：输入设备[FabNotes023]"></a>作业11：输入设备[FabNotes023]</h1><blockquote>
+<p>给微控制器电路增加一个传感器，测量感兴趣的值</p>
+</blockquote>
+<p>这周开始，芯片 Attiny45 将会频繁出场:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/attiny45.jpg" alt=""></p>
+<h3 id="u7535_u8DEF_u8BBE_u8BA1"><a href="#u7535_u8DEF_u8BBE_u8BA1" class="headerlink" title="电路设计"></a>电路设计</h3><p>尝试用 phototransistor （光电晶体管）作为输入模块，去控制 LED 。</p>
+<p>在 Eagle 先画 schematic:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11-eagle-sch.png" alt=""></p>
+<p>然后生成 board。可以先用 autorouter 自动布线，然后再根据需要手动调整。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11-eagle-brd.png" alt=""></p>
+<p>在完成设计之前，需要用 ERC 命令检查 schematic 的错误，用 DRC 检查 board 的错误。根据机器刀头的尺寸，设置线路间隔为 16mil 。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/setDRCclearance.png" alt=""></p>
+<p>全部仔细检查后，再分别把 top 图层和 dimension 图层输出为两个 png 文件，要注意勾选单色输出：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/input-trace.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/input-outline.png" alt=""></p>
+<p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/uploads/Week15EagleFiles.zip" target="_blank" rel="external">Download the eagle sch &amp; brd &amp; png files</a>.</p>
+<h3 id="u7535_u8DEF_u677F_u5236_u4F5C"><a href="#u7535_u8DEF_u677F_u5236_u4F5C" class="headerlink" title="电路板制作"></a>电路板制作</h3><p>依然使用 Roland SMR-20 刻电路板，用 1/64 刀头刻线路，1/32 切割外框。在 fabmodules.org 里面，设置输入的 png 图像 dpi 为 1500 ，然后计算雕刻路径：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11-fabmodule.png" alt=""></p>
+<p>将元件们焊好：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/wee11-board.jpeg" alt=""></p>
+<h3 id="u7A0B_u5E8F"><a href="#u7A0B_u5E8F" class="headerlink" title="程序"></a>程序</h3><p>这周开始用 Arduino 写程序。在上传之前，需要选好板子的类型以及芯片。 Attiny45 使用 8 MHz 内频。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/arduinosetting8m.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11-arduino.png" alt=""></p>
+<p>代码如下，也可以<a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/uploads/Week11-code-myinput.ino" target="_blank" rel="external">到这里下载</a>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;  // set pin numbers:&#10;const int buttonPin = 3;     // the number of the pushbutton pin&#10;const int ledPin =  4;      // the number of the LED pin&#10;&#10;// variables will change:&#10;int buttonState = 0;         // variable for reading the pushbutton status&#10;&#10;void setup() &#123;&#10;  // initialize the LED pin as an output:&#10;  pinMode(ledPin, OUTPUT);&#10;  // initialize the pushbutton pin as an input:&#10;  pinMode(buttonPin, INPUT);&#10;&#125;&#10;&#10;void loop() &#123;&#10;  // read the state of the pushbutton value:&#10;  buttonState = digitalRead(buttonPin);&#10;&#10;  // check if the pushbutton is pressed.&#10;  // if it is, the buttonState is HIGH:&#10;  if (buttonState == HIGH) &#123;&#10;    // turn LED on:&#10;    digitalWrite(ledPin, HIGH);&#10;  &#125; else &#123;&#10;    // turn LED off:&#10;    digitalWrite(ledPin, LOW);&#10;  &#125;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<p>在这个简单的电路程序中，光电晶体管起到开关的作用，根据光亮控制电路中 LED 的明灭：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11-on.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11-off.jpeg" alt=""></p>
+<h3 id="u8BD5_u9A8C1_uFF1A_u7528_Python__u548C_u4E32_u53E3_u901A_u4FE1"><a href="#u8BD5_u9A8C1_uFF1A_u7528_Python__u548C_u4E32_u53E3_u901A_u4FE1" class="headerlink" title="试验1：用 Python 和串口通信"></a>试验1：用 Python 和串口通信</h3><p>制作一块带有光电晶体管的板子：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/hello.light.45.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11mylightboard.jpeg" alt=""></p>
+<p>下载 <a href="http://academy.cba.mit.edu/classes/input_devices/light/hello.light.45.c" target="_blank" rel="external">hello.light.45.c</a> 和 <a href="http://academy.cba.mit.edu/classes/input_devices/light/hello.light.45.make" target="_blank" rel="external">makefile</a>。在 terminal cd 进入文件夹，输入命令 <code>make -f hello.light.45.make</code></p>
+<p>得到回应：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avr-gcc -mmcu=attiny45 -Wall -Os -DF_CPU=8000000 -I./ -o hello.button.45.out hello.button.45.c&#10;avr-objcopy -O ihex hello.button.45.out hello.button.45.c.hex;\&#10;&#9;avr-size --mcu=attiny45 --format=avr hello.button.45.out&#10;AVR Memory Usage&#10;----------------&#10;Device: attiny45&#10;&#10;Program:     364 bytes (8.9% Full)&#10;(.text + .data + .bootloader)&#10;&#10;Data:          0 bytes (0.0% Full)&#10;(.data + .bss + .noinit)</span><br></pre></td></tr></table></figure>
+<p>然后输入命令： <code>sudo make -f hello.light.45.make program-usbtiny</code></p>
+<p>得到回应：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avr-objcopy -O ihex hello.light.45.out hello.light.45.c.hex;\&#10;&#9;avr-size --mcu=attiny45 --format=avr hello.light.45.out&#10;AVR Memory Usage&#10;----------------&#10;Device: attiny45&#10;&#10;Program:     502 bytes (12.3% Full)&#10;(.text + .data + .bootloader)&#10;&#10;Data:          1 bytes (0.4% Full)&#10;(.data + .bss + .noinit)&#10;&#10;&#10;avrdude -p t45 -P usb -c usbtiny -U flash:w:hello.light.45.c.hex&#10;&#10;avrdude: AVR device initialized and ready to accept instructions&#10;&#10;Reading | ################################################## | 100% 0.00s&#10;&#10;avrdude: Device signature = 0x1e9206&#10;avrdude: NOTE: &#34;flash&#34; memory has been specified, an erase cycle will be performed&#10;         To disable this feature, specify the -D option.&#10;avrdude: erasing chip&#10;avrdude: reading input file &#34;hello.light.45.c.hex&#34;&#10;avrdude: input file hello.light.45.c.hex auto detected as Intel Hex&#10;avrdude: writing flash (502 bytes):&#10;&#10;Writing | ################################################## | 100% 0.74s&#10;&#10;avrdude: 502 bytes of flash written&#10;avrdude: verifying flash memory against hello.light.45.c.hex:&#10;avrdude: load data flash data from input file hello.light.45.c.hex:&#10;avrdude: input file hello.light.45.c.hex auto detected as Intel Hex&#10;avrdude: input file hello.light.45.c.hex contains 502 bytes&#10;avrdude: reading on-chip flash data:&#10;&#10;Reading | ################################################## | 100% 0.94s&#10;&#10;avrdude: verifying ...&#10;avrdude: 502 bytes of flash verified</span><br></pre></td></tr></table></figure>
+<p>Python 程序可以<a href="http://academy.cba.mit.edu/classes/input_devices/light/hello.light.45.py" target="_blank" rel="external">在这里下载</a>.</p>
+<p>用 USB to TTL 连接好板子并运行程序：</p>
+<p><code>python hello.light.45.py /dev/ttyUSB0</code></p>
+<p>这时出现错误提示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):&#10;  File &#34;hello.light.45.py&#34;, line 62, in &#60;module&#62;&#10;    ser = serial.Serial(port,9600)&#10;  File &#34;/Library/Python/2.7/site-packages/serial/serialutil.py&#34;, line 180, in __init__&#10;    self.open()&#10;  File &#34;/Library/Python/2.7/site-packages/serial/serialposix.py&#34;, line 294, in open&#10;    raise SerialException(msg.errno, &#34;could not open port %s: %s&#34; % (self._port, msg))&#10;serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: &#39;/dev/ttyUSB0&#39;</span><br></pre></td></tr></table></figure>
+<p>Google 一下这个问题 <a href="http://answers.ros.org/question/41275/failed-to-open-port-devttyusb0/" target="_blank" rel="external">Failed to open port /dev/ttyUSB0 - ROS Answers: Open Source Q&amp;A Forum</a>。</p>
+<p>问题可能是因为我还没有装 FTDI （用于 USB 和串口通信）驱动。 </p>
+<p>使用命令 <code>ls /dev/tty*</code> 可以列出当前可用的串口。确实没有 /dev/tty.usbserial-A400gwhT 串口。所以我尝试安装 FTDI 驱动 - <a href="http://www.ftdichip.com/Drivers/D2XX.htm" target="_blank" rel="external">D2XX Direct Drivers</a> 以及 <a href="http://www.ftdichip.com/Drivers/VCP.htm" target="_blank" rel="external">Virtual COM Port Drivers</a>。但是依然不成功。</p>
+<p>接着，Google 到这一篇 <a href="https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/all#mac" target="_blank" rel="external">How to Install FTDI Drivers - learn.sparkfun.com</a> 照着再装了一遍驱动。重启电脑后，插入 FTDI 2 USB 设备， /dev/tty.usbserial-A400gwhT 总算出现在串口列表中。</p>
+<p>接着，尝试用新的串口运行程序：</p>
+<p><code>python hello.light.45.py /dev/tty.usbserial-A400gwhT 9600</code></p>
+<p>继续看到错误提示：</p>
+<p><code>command line: hello.light.45.py serial_port</code></p>
+<p>到 python 程序中仔细看了看，将 len(sys.argv) 从 2 改为 3:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if (len(sys.argv) != 3):&#10;   print &#34;command line: hello.light.45.py serial_port&#34;&#10;   sys.exit()&#10;port = sys.argv[1]</span><br></pre></td></tr></table></figure>
+<p>问题解决：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1464706293.jpeg" alt=""></p>
+<p><a href="https://youtu.be/GiuYhmkRabA" target="_blank" rel="external">测试视频</a></p>
+<h3 id="u5B9E_u9A8C2_uFF1A_u5F00_u5173"><a href="#u5B9E_u9A8C2_uFF1A_u5F00_u5173" class="headerlink" title="实验2：开关"></a>实验2：开关</h3><p>做了一个带开关的板子：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/hello.button.45.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11myswitchboard.jpeg" alt=""></p>
+<p>下载 <a href="http://academy.cba.mit.edu/classes/input_devices/button/hello.button.45.c" target="_blank" rel="external">hello.button.45.c</a> 和 <a href="http://academy.cba.mit.edu/classes/input_devices/button/hello.button.45.make" target="_blank" rel="external">makefile</a>。 在 terminal cd 进入文件夹，运行命令： <code>make -f hello.button.45.make</code> 和 <code>sudo make -f hello.button.45.make program-usbtiny</code>。都正常。</p>
+<p>然后用 TTL 2 USB 连接板子：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1464706284.jpeg" alt=""></p>
+<p>运行命令</p>
+<p><code>python term.py /dev/tty.usbserial-A400gwhT 9600</code></p>
+<p>每按一次按钮，屏幕打出一个“du”：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1464706285.jpeg" alt=""></p>
+<p><a href="https://youtu.be/WI6ty3sx18U" target="_blank" rel="external">测试视频</a></p>
+<h3 id="u5B9E_u9A8C3_uFF1A_u6E29_u5EA6_u4F20_u611F_u5668"><a href="#u5B9E_u9A8C3_uFF1A_u6E29_u5EA6_u4F20_u611F_u5668" class="headerlink" title="实验3：温度传感器"></a>实验3：温度传感器</h3><p>做了一个带有温度传感器的板子：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/hello.temp.45.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11mytempboard.jpeg" alt=""></p>
+<p>下载 <a href="http://academy.cba.mit.edu/classes/input_devices/temp/hello.temp.45.c" target="_blank" rel="external">hello.temp.45.c</a> 和 <a href="http://academy.cba.mit.edu/classes/input_devices/temp/hello.temp.45.make" target="_blank" rel="external">makefile</a>。输入命令 <code>make -f hello.button.45.make</code> 和 <code>sudo make -f hello.button.45.make program-usbtiny</code>。</p>
+<p>然后运行程序 <code>python hello.temp.45.py /dev/tty.usbserial-A400gwhT 9600</code> 。传感器开始实时监测温度变化。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1464706291.jpeg" alt=""></p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/162721990" target="_blank" rel="external">Week11 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/input_devices/" target="_blank" rel="external">Week11 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[第十一周：输入设备[FabNotes022]]]></title>
+      <url>http://yoursite.com/2016/07/29/fabnotes022/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11.png" alt=""></p>
+<a id="more"></a> 
+<p>这周学习 <a href="http://academy.cba.mit.edu/classes/input_devices/" target="_blank" rel="external">输入设备</a>.</p>
+<h2 id="u901A_u4FE1"><a href="#u901A_u4FE1" class="headerlink" title="通信"></a>通信</h2><ul>
+<li><a href="https://github.com/pyserial/pyserial" target="_blank" rel="external">pySerial</a>: Python与串口通信<ul>
+<li><a href="http://pyserial.readthedocs.org/en/latest/tools.html#module-serial.tools.miniterm" target="_blank" rel="external">miniterm</a>: pySerial 的操作终端</li>
+<li>实例文件<a href="http://academy.cba.mit.edu/classes/input_devices/python/rx.py" target="_blank" rel="external">rx.py</a>, <a href="http://academy.cba.mit.edu/classes/input_devices/python/term.py" target="_blank" rel="external">term.py</a></li>
+</ul>
+</li>
+<li><a href="https://www.npmjs.com/package/serialport" target="_blank" rel="external">serialport</a>: 跟 js 交互</li>
+<li><a href="https://developer.chrome.com/apps/serial" target="_blank" rel="external">chrome.serial</a></li>
+<li><a href="https://wicg.github.io/webusb/" target="_blank" rel="external">WebUSB API</a></li>
+<li>bit timing 位定时: 关键参数 xxx bits/sec</li>
+<li>clocks (10% RC, 1% RC calibrated, .5% resonator, 50 ppm crystal)</li>
+</ul>
+<h2 id="u5F00_u5173"><a href="#u5F00_u5173" class="headerlink" title="开关"></a>开关</h2><p>button 按钮开关</p>
+<p><img src="http://media.digikey.com/Photos/Omron%20Elect%20Photos/B3SN-3112_sml.jpg" alt=""></p>
+<p>slide 滑动开关</p>
+<p><img src="http://media.digikey.com/photos/CK%20Comp%20Photos/AYZ0102AGRL_sml.jpg" alt=""></p>
+<h2 id="u8FD0_u52A8"><a href="#u8FD0_u52A8" class="headerlink" title="运动"></a>运动</h2><p>pyroelectric 热释电红外PIR运动传感器探测器模块</p>
+<p>测量身体的热辐射，检测活动和变化。</p>
+<p><a href="http://academy.cba.mit.edu/classes/input_devices/motion/hello.HC-SR501.mp4" target="_blank" rel="external">test motion module video</a></p>
+<p><img src="http://academy.cba.mit.edu/classes/input_devices/motion/hello.HC-SR501.jpg" alt=""></p>
+<h2 id="u8DDD_u79BB"><a href="#u8DDD_u79BB" class="headerlink" title="距离"></a>距离</h2><p>sonar 声纳</p>
+<p>Ultrasonic Module HC-SR04 Distance Sensor</p>
+<p><img src="http://academy.cba.mit.edu/classes/input_devices/sonar/hello.HC-SR04.jpg" alt=""></p>
+<p><a href="http://academy.cba.mit.edu/classes/input_devices/sonar/hello.HC-SR04.mp4" target="_blank" rel="external">test video</a></p>
+<h2 id="u78C1_u573A"><a href="#u78C1_u573A" class="headerlink" title="磁场"></a>磁场</h2><p>Hall effect:霍尔效应是指当固体导体放置在一个磁场内，且有电流通过时，导体内的电荷载子受到洛伦兹力而偏向一边，继而产生电压（霍尔电压）的现像。电压所引致的电场力会平衡洛伦兹力。</p>
+<p><img src="http://media.digikey.com/Renders/Allegro%20Microsystems%20Renders/SOT-23-3_sml.jpg" alt=""></p>
+<p><a href="http://academy.cba.mit.edu/classes/input_devices/mag/hello.mag.45.js.mp4" target="_blank" rel="external">test video</a></p>
+<h2 id="u6E29_u5EA6"><a href="#u6E29_u5EA6" class="headerlink" title="温度"></a>温度</h2><p>NTC 负温度系数热敏电阻(Negative Tempperature Coefficient Thermistor) 热敏电阻: 电阻阻值随温度而上升。温度越高，敏感度越低。</p>
+<p><img src="http://media.digikey.com/Renders/Amphenol%20Renders/NHQ1206_sml.jpg" alt=""></p>
+<p>RTD thermistors: lower temperature, more sensitive （NTC table）</p>
+<p><img src="http://media.digikey.com/Renders/Vishay%20Beyschlag%20Renders/MFU%201206%20(3216%20metric\" alt="">_sml.jpg)</p>
+<p><a href="http://academy.cba.mit.edu/classes/input_devices/temp/hello.temp.45.mp4" target="_blank" rel="external">test video</a></p>
+<h2 id="u5149"><a href="#u5149" class="headerlink" title="光"></a>光</h2><p>phototransistor 光电晶体管</p>
+<p><img src="http://academy.cba.mit.edu/classes/input_devices/light/hello.light.45.jpg" alt=""></p>
+<p><a href="http://academy.cba.mit.edu/classes/input_devices/light/hello.light.45.mp4" target="_blank" rel="external">test video</a></p>
+<h2 id="u52A0_u901F_uFF0C_u65B9_u5411_uFF0C_u65CB_u8F6C"><a href="#u52A0_u901F_uFF0C_u65B9_u5411_uFF0C_u65CB_u8F6C" class="headerlink" title="加速，方向，旋转"></a>加速，方向，旋转</h2><p>3D accelerometer I2C</p>
+<p><img src="http://media.digikey.com/Renders/~~Pkg.Case%20or%20Series/14-LGA%20PKG_sml.jpg" alt=""></p>
+<p><img src="http://academy.cba.mit.edu/classes/input_devices/accel/hello.ADXL343.jpg" alt=""></p>
+<p><a href="http://academy.cba.mit.edu/classes/input_devices/accel/hello.ADXL343.mp4" target="_blank" rel="external">test video</a></p>
+<h2 id="u58F0_u97F3"><a href="#u58F0_u97F3" class="headerlink" title="声音"></a>声音</h2><p>MEMS,  Microphones  &gt;  Knowles SPU0414HR5H-SB-7</p>
+<p><img src="http://media.digikey.com/Photos/Knowles%20Acoustics%20Photos/SPU0414HR5H-SB_sml.jpg" alt=""></p>
+<p><a href="http://academy.cba.mit.edu/classes/input_devices/mic/hello.SPU0414HR5H.mp4" target="_blank" rel="external">test video</a></p>
+<h2 id="step_response__u9636_u8DC3_u54CD_u5E94"><a href="#step_response__u9636_u8DC3_u54CD_u5E94" class="headerlink" title="step response 阶跃响应"></a>step response 阶跃响应</h2><p>resistance 电阻, capacitance 电容, inductance 电感, position 位置, pressure 压力, proximity 接近度, tilt 倾斜, acceleration 加速, humidity 湿度 </p>
+<p>project: <a href="http://fab.cba.mit.edu/classes/863.10/people/matt.blackshaw/week8.html" target="_blank" rel="external">touchpad</a>, <a href="http://fab.cba.mit.edu/classes/863.11/people/matthew.keeter/multitouch/index.html" target="_blank" rel="external">multitouch</a>, …</p>
+<p>loading (<a href="http://academy.cba.mit.edu/classes/input_devices/step/hello.load.45.mp4" target="_blank" rel="external">test video</a>)</p>
+<p>transmit-receive (<a href="http://academy.cba.mit.edu/classes/input_devices/step/hello.txrx.45.mp4" target="_blank" rel="external">test video</a>)</p>
+<p>dielectric spectroscopy measurement 介电谱测量</p>
+<h2 id="u9707_u52A8"><a href="#u9707_u52A8" class="headerlink" title="震动"></a>震动</h2><p>piezo 压电</p>
+<p><img src="http://www.jameco.com/Jameco/Products/ProdImag/1956784.jpg" alt=""></p>
+<h2 id="u538B_u529B"><a href="#u538B_u529B" class="headerlink" title="压力"></a>压力</h2><p><a href="http://www.interlinkelectronics.com/standard-products.php" target="_blank" rel="external">force sensing resistor 力敏电阻</a></p>
+<p><img src="http://www.interlinkelectronics.com/assets/images/FSR400_short.jpg" alt=""></p>
+<p><a href="http://www.omega.com/guides/straingages.html" target="_blank" rel="external">strain gauge 应变仪</a></p>
+<p><img src="http://www.omega.com/Pressure/images/SGD_LINEAR1-AXIS_s.jpg" alt=""></p>
+<p><a href="http://www.omega.com/prodinfo/loadcells.html" target="_blank" rel="external">load cell 称重传感器</a></p>
+<p><img src="http://www.omega.com/Pressure/images/LCGD_s.jpg" alt=""></p>
+<h2 id="u56FE_u50CF"><a href="#u56FE_u50CF" class="headerlink" title="图像"></a>图像</h2><p><a href="http://www.amazon.com/sunkee-OV7670-640X480-Compatible-Interface/dp/B00AZWVZKW" target="_blank" rel="external">module</a></p>
+<p><img src="http://ecx.images-amazon.com/images/I/71MO-CLyIAL._SL1200_.jpg" alt=""></p>
+<p><a href="https://www.google.com/search?channel=fs&amp;q=webcam&amp;ie=utf-8&amp;oe=utf-8#channel=fs&amp;q=webcam&amp;tbm=shop&amp;tbs=cat:312,vw:l,p_ord:p" target="_blank" rel="external">cameras</a>, <a href="https://www.google.com/search?channel=fs&amp;q=embedded+linux+board&amp;ie=utf-8&amp;oe=utf-8#channel=fs&amp;q=embedded+linux+board&amp;tbm=shop" target="_blank" rel="external">boards</a></p>
+<p><a href="http://opencv.org/" target="_blank" rel="external">OpenCV</a>: 视屏处理库</p>
+<p><a href="https://int80k.com/libuvc/doc/" target="_blank" rel="external">libuvc: a cross-platform library for USB video devices</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API" target="_blank" rel="external">WebRTC</a>:WebRTC (Web Real-Time Communications)  使 Web 应用程序和网站来捕获和可选流媒体音频/视频,以及浏览器之间任意数据交换，而不需要一个中介。</p>
+<h2 id="u66F4_u591A_u8D44_u6599"><a href="#u66F4_u591A_u8D44_u6599" class="headerlink" title="更多资料"></a>更多资料</h2><ul>
+<li><a href="http://www.cambridge.org/us/academic/subjects/physics/general-and-classical-physics/physics-information-technology?format=PB&amp;isbn=9780521210225" target="_blank" rel="external">The Physics of Information Technology</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/input_devices/meas.pdf" target="_blank" rel="external">Basics of Measuring the Dielectric<br>Properties of Materials</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/input_devices/DS.pdf" target="_blank" rel="external">Measure the Difference</a></li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/162721990" target="_blank" rel="external">Week11 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/input_devices/" target="_blank" rel="external">Week11 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[作业10：机械和机器设计[FabNotes021]]]></title>
+      <url>http://yoursite.com/2016/07/28/fabnotes021/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week10.png" alt=""></p>
+<a id="more"></a> 
+<p>小组作业的第二部分，让机器动起来~ <a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/" target="_blank" rel="external">我们的小组项目网站</a></p>
+<p>我们对上周的设计做了一些改进：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek10finaldesign.jpg" alt=""></p>
+<p>接下来，需要使用 <a href="https://github.com/nadya/pygestalt" target="_blank" rel="external">gestalt 框架</a> (A control system framework for personal fabrication)让机器动起来。Fab academy 网站上有一份很详细的教程 <a href="http://archive.fabacademy.org/archives/2016/doc/MachineMakingNotes.html" target="_blank" rel="external">Getting Started With Gestalt Nodes</a>。 </p>
+<p>FabNet</p>
+<blockquote>
+<p><a href="http://mtm.cba.mit.edu/fabinabox/dev/fabnet/overview.html" target="_blank" rel="external">Fabnet</a> is a multi-drop network, meaning that multiple modules (a.k.a. nodes) share a single set of communication wires.</p>
+</blockquote>
+<p><img src="http://mtm.cba.mit.edu/fabinabox/dev/fabnet/system.png" alt=""></p>
+<p>步骤:</p>
+<ol>
+<li>用 FTDI USB 和电脑连接</li>
+<li>将 Gestalt Node 连接到 Fabnet</li>
+<li>供电 12V-24V/7.5V</li>
+</ol>
+<p>然后制作连接 Fabnet 的电路板：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek10board.png" alt=""></p>
+<p>下载 Gestalt Node 的固件到板子上</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek10Node.jpg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek10gestal.jpg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek10assembly.jpg" alt=""></p>
+<p>用 wxGestalt 写程序</p>
+<p><a href="http://archive.fabacademy.org/archives/2016/doc/projects/wxgestalt.html" target="_blank" rel="external">wxGestalt</a> 是个控制 Gestalt nodes 的简易 Python IDE。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/wxGestalt.png" alt=""></p>
+<ol>
+<li><p>机器设置</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Machine%20Setup.png" alt=""></p>
+</li>
+<li><p>识别结点</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Identify%20the%20nodes.jpg" alt=""></p>
+</li>
+<li><p>IDE</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IDE.png" alt=""></p>
+</li>
+</ol>
+<p>最后，开动机器！</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Run%20the%20machine.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek10video.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek10enjoy.png" alt=""></p>
+<p><a href="https://vimeo.com/164062063" target="_blank" rel="external">Vimeo 视频:  https://vimeo.com/164062063</a></p>
+<p><a href="https://youtu.be/QKijCreOzgY" target="_blank" rel="external">Youtube 视频: https://youtu.be/QKijCreOzgY</a></p>
+<p><a href="https://app.box.com/s/ewyr37biexatam9ypsxmsmbkr6fnacdo" target="_blank" rel="external">项目源代码</a>.</p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/161805560" target="_blank" rel="external">Week10 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/machine_design/index.html" target="_blank" rel="external">Week10 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[第十周：机器设计[FabNotes020]]]></title>
+      <url>http://yoursite.com/2016/07/27/fabnotes020/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week10.png" alt=""></p>
+<a id="more"></a> 
+<p>这周学习 <a href="http://academy.cba.mit.edu/classes/machine_design/index.html" target="_blank" rel="external">机器设计</a>.</p>
+<p><a href="http://mtm.cba.mit.edu/machines/stages/" target="_blank" rel="external">modular</a></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/149-ea2f7a275a820b93.gif?imageMogr2/auto-orient/strip" alt=""></p>
+<p><a href="http://mtm.cba.mit.edu/machines/mtm_snap-lock/index.html" target="_blank" rel="external">machines</a></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/149-511c3c79fb4db413.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>Open loop is where you tell the machine what to do and hope it does it.</p>
+<p>Close loop is much cheaper and easier to manipulated.</p>
+<p><a href="http://www.amazon.com/gp/reader/0135897637/ref=sib_dp_pt#reader-link" target="_blank" rel="external">PID, acceleration, model predictive control</a></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/149-1b1fb8c07437fd28.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>proportional control</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/149-8be4610579d25b88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>PID(比例积分微分控制) - Proportional, Integral, Derivative</p>
+<p><a href="http://mods.cba.mit.edu/" target="_blank" rel="external">dataflow</a> machine controls</p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/161805560" target="_blank" rel="external">Week10 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/machine_design/index.html" target="_blank" rel="external">Week10 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[作业9：制作一台简单机器[FabNotes019]]]></title>
+      <url>http://yoursite.com/2016/07/26/fabnotes019/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week9.png" alt=""></p>
+<a id="more"></a> 
+<p>这周的作业是</p>
+<blockquote>
+<p>小组作业</p>
+<p>  做一台机器,包括终端执行器,建造被动部分和手动操作部分</p>
+</blockquote>
+<p>我们小组做的是一台自动切蛋卷的机器  - -</p>
+<p>这两周的作业让我第一次深刻体会到工科的特点：所有东西都需要准确计算，才能正常工作。</p>
+<h3 id="u6D4B_u91CF"><a href="#u6D4B_u91CF" class="headerlink" title="测量"></a>测量</h3><p>Fablab 提供了这周课程的一些零部件，我们先用游标卡尺把它们的尺寸都量好。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek9measure.png" alt=""></p>
+<p>然后仔细读 MTM 的教程：</p>
+<ul>
+<li><a href="http://mtm.cba.mit.edu/machines/science/" target="_blank" rel="external">The Machines that Make Project at the MIT Center for Bits and Atoms</a></li>
+<li><a href="http://monograph.io/james/m-mtm" target="_blank" rel="external">We have another spot for documentation here.</a></li>
+</ul>
+<p><img src="http://mtm.cba.mit.edu/machines/science/img/fold.png" alt=""></p>
+<h3 id="u8BBE_u8BA1"><a href="#u8BBE_u8BA1" class="headerlink" title="设计"></a>设计</h3><p>原本打算直接用教程里面 cardboard 的源文件，但是实验室的纸板厚度和硬度都不理想，只好放弃。只能选择激光切割薄木板再拼接，不能按照原来可折叠的特性去设计，需要重新在 Fusion 360 里建模。</p>
+<p>开始设计前，最好先把所有参数都设好，在画图形时就可以直接调用参数，方便最后随时根据材料调整厚度。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek9parameters.png" alt=""></p>
+<p>然后一个部件一个部件地画出来：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek9design2.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek9design3.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek9design4.png" alt=""></p>
+<h3 id="u5207_u5272_u548C_u7EC4_u88C5"><a href="#u5207_u5272_u548C_u7EC4_u88C5" class="headerlink" title="切割和组装"></a>切割和组装</h3><p>实验室的薄木板尺寸很小，只有 450 mm x 300 mm，不得不分成两部分切割，再把它们拼起来。</p>
+<p>在 CoralDraw 里面设置切割参数：</p>
+<ul>
+<li>speed: 2.7</li>
+<li>power: 97</li>
+</ul>
+<p>正式切割前，先来试验一下参数是不是对得上：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467164794.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467164795.jpeg" alt=""></p>
+<p>看起来没问题：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467164796.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467164798.jpeg" alt=""></p>
+<p>再做了一些调整，然后才开始切割和组装：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467164797.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467164799.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467164801.jpeg" alt=""></p>
+<p>机器结构做好了，下周任务是让它动起来~</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467164802.jpeg" alt=""></p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/160915398" target="_blank" rel="external">Week9 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/mechanical_design/index.html" target="_blank" rel="external">Week9 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[第九周：机械设计[FabNotes018]]]></title>
+      <url>http://yoursite.com/2016/07/25/fabnotes018/</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week9.png" alt=""></p>
+<a id="more"></a> 
+<p>这周学习 <a href="http://academy.cba.mit.edu/classes/mechanical_design/index.html" target="_blank" rel="external">机械设计</a>.</p>
+<h2 id="u539F_u7406"><a href="#u539F_u7406" class="headerlink" title="原理"></a>原理</h2><ul>
+<li><p>stress-strain 应力</p>
+<p>  物体由于外因（受力、湿度、温度场变化等）而变形时，在物体内各部分之间产生相互作用的内力，以抵抗外因的作用，并试图恢复到变形前的位置。</p>
+<p>  <img src="https://www.nde-ed.org/EducationResources/CommunityCollege/Materials/Graphics/Mechanical/Stain.gif" alt=""></p>
+</li>
+<li><p>moduli 模</p>
+</li>
+<li>elastic 弹性, plastic flow</li>
+<li>friction 摩擦</li>
+<li>spalling 剥落</li>
+<li>hysteresis 磁滞</li>
+<li><p>backlash 反弹</p>
+<p>  <img src="http://upload-images.jianshu.io/upload_images/149-3491cbf5781b76ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+</li>
+<li><p>flexure 弯曲</p>
+</li>
+<li>force loops 力循环</li>
+<li>elastic averaging 弹性平均</li>
+<li>kinematic coupling 运动学耦合 </li>
+</ul>
+<h2 id="Materials"><a href="#Materials" class="headerlink" title="Materials"></a>Materials</h2><ul>
+<li><a href="http://www.mcmaster.com/#plastic-raw-materials" target="_blank" rel="external">plastic 塑料</a> : <a href="http://www.mcmaster.com/#hdpe/=11st3m6" target="_blank" rel="external">Rigid HDPE Polyethylene</a> 很适合做机械部件</li>
+<li><a href="http://www.mcmaster.com/#metal-raw-materials" target="_blank" rel="external">metal 金属</a></li>
+<li><a href="http://www.mcmaster.com/#ceramic-raw-materials" target="_blank" rel="external">ceramic 陶瓷</a></li>
+<li><a href="http://www.mcmaster.com/#rubber-raw-materials" target="_blank" rel="external">rubber 橡胶</a> </li>
+<li><a href="http://www.mcmaster.com/#foam-rubber-raw-materials" target="_blank" rel="external">foam 泡沫</a></li>
+</ul>
+<p>fasteners （紧固件）: <a href="http://www.mcmaster.com/#nuts/" target="_blank" rel="external">nuts</a> 螺母, <a href="http://www.mcmaster.com/#bolts/" target="_blank" rel="external">bolts</a> 螺栓, <a href="http://www.mcmaster.com/#standard-washers/" target="_blank" rel="external">washers</a> 垫圈</p>
+<p>pins （开口销）</p>
+<p><img src="http://images2.mcmaster.com/mvA/Contents/gfx/Intermediate%20Pages/93772a121p1-land.png?ver=1358507042" alt=""></p>
+<p>framing （框架）: <a href="http://www.mcmaster.com/#metal-extrusions" target="_blank" rel="external">metal</a>, <a href="http://www.mcmaster.com/#plastic-extrusions" target="_blank" rel="external">plastic</a>, <a href="http://www.mcmaster.com/#t-slotted-extrusions" target="_blank" rel="external">t-slot</a>, <a href="http://mtm.cba.mit.edu/machines/mtm_snap-lock/" target="_blank" rel="external">self-aligning</a></p>
+<p><img src="http://images2.mcmaster.com/mvA/Contents/gfx/Intermediate%20Pages/47065t223p1-i02f-land.png?ver=1325862897" alt="t-slot"></p>
+<p>drive(驱动): </p>
+<ul>
+<li><a href="http://www.mcmaster.com/#standard-gears/" target="_blank" rel="external">gears 齿轮</a></li>
+<li><p><a href="http://www.mcmaster.com/#roller-chain-sprockets/" target="_blank" rel="external">sprockets 链轮</a></p>
+<p>  <img src="http://images2.mcmaster.com/mvA/contents/gfx/small/6793k149p1-d03b-abbr.png?ver=1399555020" alt=""></p>
+</li>
+<li><p><a href="http://www.mcmaster.com/#drive-belts/" target="_blank" rel="external">belts 传送皮带</a></p>
+<p>  <img src="http://images1.mcmaster.com/mvA/Contents/gfx/Intermediate%20Pages/6075kp1-land.png?ver=1306947969" alt=""></p>
+</li>
+<li><p><a href="http://www.mcmaster.com/#roller-chain/" target="_blank" rel="external">chains 链条</a></p>
+</li>
+<li><p><a href="http://www.mcmaster.com/#rotary-shafts/" target="_blank" rel="external">shafts 转动轴</a></p>
+<p>  <img src="http://images1.mcmaster.com/mvA/contents/gfx/small/5947k15p1-abbr.png?ver=1300264695" alt=""></p>
+</li>
+<li><p><a href="http://www.mcmaster.com/#threaded-studs/" target="_blank" rel="external">rods 螺纹钉</a></p>
+</li>
+<li><a href="http://www.mcmaster.com/#acme-precision-threaded-nuts/" target="_blank" rel="external">nuts</a></li>
+</ul>
+<p>guide: <a href="http://www.mcmaster.com/#ground-rods/" target="_blank" rel="external">shafts</a>, <a href="http://www.mcmaster.com/#guide-rails/" target="_blank" rel="external">rails 导轨</a>, <a href="http://www.mcmaster.com/#drawer-slides/" target="_blank" rel="external">slides</a></p>
+<p><img src="http://images2.mcmaster.com/mvA/contents/gfx/small/11435a12c1-h02ds.png?ver=1362042882" alt=""></p>
+<p>couplers 耦合器: <a href="http://www.mcmaster.com/#standard-shaft-couplings/" target="_blank" rel="external">shafts</a>, <a href="http://www.mcmaster.com/#universal-joints/" target="_blank" rel="external">joints</a></p>
+<p><img src="http://images2.mcmaster.com/mvA/contents/gfx/small/6408k142-k75p4-d03c-abbr.png?ver=1370867901" alt=""><br><img src="http://images2.mcmaster.com/mvA/contents/gfx/small/6443k49p1-d03c-abbr.png?ver=1371457960" alt=""></p>
+<p>bearings 轴承: </p>
+<ul>
+<li><p><a href="http://www.mcmaster.com/#standard-ball-and-roller-bearings/" target="_blank" rel="external">ball</a></p>
+<p>  <img src="http://images2.mcmaster.com/mvA/contents/gfx/small/5972k820p99-d03c-digital-abbr.png?ver=1430908298" alt=""></p>
+</li>
+<li><p><a href="http://www.mcmaster.com/#standard-thrust-bearings/" target="_blank" rel="external">thrust 推力轴承</a></p>
+</li>
+<li><p><a href="http://www.mcmaster.com/#standard-linear-bearings/" target="_blank" rel="external">linear 直线轴承</a></p>
+<p>  <img src="http://images2.mcmaster.com/mvA/contents/gfx/small/9338t1p1-d03c-abbr.png?ver=1430379913" alt=""></p>
+</li>
+<li><p><a href="http://www.mcmaster.com/#turntables/" target="_blank" rel="external">rotary 回转轴承</a></p>
+<p>  <img src="http://images2.mcmaster.com/mvA/contents/gfx/small/2900t312p1-e01f-abbr.png?ver=1363356226" alt=""></p>
+</li>
+<li><p><a href="http://www.mcmaster.com/#standard-sleeve-bearings/" target="_blank" rel="external">sleeve 滑动轴承</a></p>
+<p>  <img src="http://images1.mcmaster.com/mvA/contents/gfx/small/6391k214p1-d03c-digital-abbr.png?ver=1426783345" alt=""></p>
+</li>
+</ul>
+<p>rotary: <a href="http://www.mcmaster.com/#wheels/" target="_blank" rel="external">wheels</a>, <a href="http://www.mcmaster.com/#pulleys/" target="_blank" rel="external">pulleys 滑轮</a>, <a href="http://www.mcmaster.com/#standard-casters/" target="_blank" rel="external">casters 脚轮</a></p>
+<p><img src="http://images1.mcmaster.com/mvA/Contents/gfx/Intermediate%20Pages/roundbeltpulleysp2-d03b-land.png?ver=1415273394" alt=""><br><img src="http://images2.mcmaster.com/mvA/contents/gfx/attribute/2399t6p1-e01e-ms-land.png?ver=1363859877" alt=""></p>
+<p>lubricants 润滑剂</p>
+<h2 id="u53C2_u8003_u94FE_u63A5"><a href="#u53C2_u8003_u94FE_u63A5" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://solidmechanics.org/" target="_blank" rel="external">Applied Mechanics of Solids</a></p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/160915398" target="_blank" rel="external">Week9 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/mechanical_design/index.html" target="_blank" rel="external">Week9 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[作业8：刻板焊接烧程序[FabNotes017]]]></title>
       <url>http://yoursite.com/2016/05/08/fabnotes017/</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week8.png" alt=""></p>
