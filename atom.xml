@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-30T14:42:09.000Z</updated>
+  <updated>2016-07-31T12:41:41.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,245 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[作业12：做模具[FabNotes025]]]></title>
+    <link href="http://yoursite.com/2016/07/31/fabnotes025/"/>
+    <id>http://yoursite.com/2016/07/31/fabnotes025/</id>
+    <published>2016-07-31T12:39:46.000Z</published>
+    <updated>2016-07-31T12:41:41.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week12.png" alt=""></p>
+<a id="more"></a> 
+<p>这周的作业是</p>
+<blockquote>
+<p>设计一个 3D 模具，用机器雕刻出来，然后用它来翻模</p>
+</blockquote>
+<h3 id="u8BBE_u8BA1"><a href="#u8BBE_u8BA1" class="headerlink" title="设计"></a>设计</h3><p>既然是模具，不如来做俄罗斯方块的组件吧 :)</p>
+<p>用 Fusion 360 设计模具。首先需要设置模具统一的参数：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek12design1.png" alt=""></p>
+<p>画平面图：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek12design2.png" alt=""></p>
+<p>拉出形状：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week12positivemold.png" alt=""></p>
+<p>然后是用雕刻机雕刻，再用木板框住，倒入筑模材料，等待成型。图中蓝色部分是用来雕刻的蜡，棕色部分是木框。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week12positivemoldcast1.png" alt=""></p>
+<p>设计好后，将模具导出成 <a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/uploads/Week12-positiveSTL.stl" target="_blank" rel="external">stl 文件</a>.</p>
+<h3 id="u673A_u5668_u96D5_u523B"><a href="#u673A_u5668_u96D5_u523B" class="headerlink" title="机器雕刻"></a>机器雕刻</h3><p>使用 MODELA Player4 打开导出的 stl 文件。材料选择塑造用蜡</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek12u105.png" alt=""></p>
+<p>设置：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek12cnc2.png" alt=""></p>
+<p>tool - 3mm Square</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek12cnc3.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek12cnc4.png" alt=""></p>
+<p>我们使用 SRM-20 机器来雕刻。跟 PCB 雕刻类似，也需要调零。点击 Output 后开始计算雕刻路径。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek12cnc7.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467877070.jpeg" alt=""></p>
+<p>雕刻完成后，用木框围好四边，倒入准备好的硅胶。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week121210.JPG" alt=""></p>
+<p>模具做好以后，就可以倒入材料开始翻模。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Snip20160707_13.png" alt=""></p>
+<p>最后的俄罗斯方块效果并不理想，看来是模具的尺寸太小，需要对设计图做一些改进。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_1422.JPG" alt=""></p>
+<h3 id="u5176_u4ED6_u8BD5_u9A8C"><a href="#u5176_u4ED6_u8BD5_u9A8C" class="headerlink" title="其他试验"></a>其他试验</h3><p>用 3D 打印模具，用来制作模的 negative 部分。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/stlElizabeth.png" alt=""></p>
+<p>3D 打印好之前做的 Elizabeth 作为生成模具的形状 ：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1463817901.jpeg" alt=""></p>
+<p>然后是准备筑模需要的材料</p>
+<ul>
+<li>PMC-121/30 URETHANE MOLD COMPOUND (PART A)</li>
+<li>PMC-121/30 WET RUBBER MOLD COMPOUND (PART B)</li>
+<li>塑料杯</li>
+<li>手套</li>
+<li>搅拌棒</li>
+<li>护目镜</li>
+</ul>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1463817904.jpeg" alt=""></p>
+<p>以 1：1 的比例混合化合物：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1463817910.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1463818811.jpeg" alt=""></p>
+<p>充分搅拌：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1463817913.jpeg" alt=""></p>
+<p>把 3D 模型放进去：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1463817915.jpeg" alt=""></p>
+<p>固定好位置：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1463817918.jpeg" alt=""></p>
+<p>材料固化成橡胶状大约需要 16 个小时：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1464706271.jpeg" alt=""></p>
+<p>接着，用石膏翻出另一个傻白。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1464706273.jpeg" alt=""></p>
+<p>以 47:100 的比例混合石膏粉和水：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1464706277.jpeg" alt=""></p>
+<p>导入模中等待干燥：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1464706280.jpeg" alt=""></p>
+<p>一个新的石膏傻白粗来了:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1465544598.jpeg" alt=""></p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/163576093" target="_blank" rel="external">Week12 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/molding_casting/index.html" target="_blank" rel="external">Week12 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week12.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab - Maker - Note" scheme="http://yoursite.com/tags/Fab-Maker-Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[第十二周：模具和铸件[FabNotes024]]]></title>
+    <link href="http://yoursite.com/2016/07/31/fabnotes024/"/>
+    <id>http://yoursite.com/2016/07/31/fabnotes024/</id>
+    <published>2016-07-31T12:39:41.000Z</published>
+    <updated>2016-07-31T12:40:59.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week12.png" alt=""></p>
+<a id="more"></a> 
+<p>这周学习<a href="http://academy.cba.mit.edu/classes/molding_casting/index.html" target="_blank" rel="external">Molding and Casting</a>.</p>
+<h2 id="u6A21_u5177"><a href="#u6A21_u5177" class="headerlink" title="模具"></a>模具</h2><h3 id="u79CD_u7C7B"><a href="#u79CD_u7C7B" class="headerlink" title="种类"></a>种类</h3><ul>
+<li><p>injection 注射 (sprue浇口, runner流道, gate, vent通气孔, parting line分模线, flashing)</p>
+<p>  <img src="http://7xjpra.com1.z0.glb.clouddn.com/InjectionMoldingMachine.png" alt=""></p>
+<p>  <img src="http://7xjpra.com1.z0.glb.clouddn.com/InjectionMoldingConcepts.jpg" alt=""></p>
+</li>
+<li><p>insert 插入</p>
+</li>
+<li><p>vacuum 抽真空</p>
+<p>  <img src="http://pressureforming.co.uk/wp-content/uploads/2013/03/vacuum-forming.jpg" alt=""></p>
+</li>
+<li><p>blow (make bottles) 吹塑</p>
+<p>  <img src="http://www.custompartnet.com/wu/images/blow-molding/blow-molding-small.png" alt=""></p>
+</li>
+<li><p>rotational 旋转成型</p>
+<p>  <img src="http://images.machinedesign.com/images/archive/501226700200jpg_00000046623.jpg" alt=""></p>
+</li>
+<li><p>flexible, soft</p>
+</li>
+</ul>
+<h3 id="u6750_u6599"><a href="#u6750_u6599" class="headerlink" title="材料"></a>材料</h3><ul>
+<li><p><a href="http://www.dickblick.com/products/amaco-flexwax-moldmaking-material/" target="_blank" rel="external">low-temp wax </a></p>
+<p>  <img src="http://cdn.dick-blick.com/items/335/04/33504-OA2ww-m.jpg" alt=""></p>
+</li>
+<li><p><a href="http://www.machinablewax.com/" target="_blank" rel="external">machineable wax</a>  – main material</p>
+<p>  <img src="http://www.machinablewax.com/_cw4-tmplt-ft1/site-graphics/turbine.jpg" alt=""></p>
+</li>
+<li><p><a href="http://www.homedepot.com/p/Owens-Corning-FOAMULAR-250-2-in-x-2-ft-x-8-ft-Tongue-and-Groove-R-10-Insulation-Sheathing-24DD/100320335;jsessionid=74981E47F38F811D1292C013E929B414" target="_blank" rel="external">rigid foam</a> (make large mold)</p>
+<p>  <img src="http://www.menards.com/main/items/media/OWENS002/ProductLarge/Foam2502x4x8.jpg" alt=""></p>
+</li>
+<li><p><a href="http://www.dickblick.com/products/blick-studio-gesso/" target="_blank" rel="external">gesso 石膏</a>, hot air</p>
+</li>
+<li><p>alginate gel 藻酸胶 (制作面部/面具)</p>
+<p>  <img src="http://cdn.dick-blick.com/items/335/23/33523-1005-3-2ww-m.jpg" alt=""></p>
+</li>
+<li><p>urethane <a href="http://www.smooth-on.com/PMC=-121---Easy-/c1144/index.html" target="_blank" rel="external">rubber</a> 聚氨酯橡胶, <a href="http://www.smooth-on.com/Urethane-Plastic-a/c5/index.html" target="_blank" rel="external">plastic</a> (very strong)</p>
+</li>
+<li><p>silicone 硅胶</p>
+</li>
+<li><p><a href="http://www.dowcorning.com/applications/search/products/Details.aspx?prod=01064291&amp;type=PROD" target="_blank" rel="external">PDMS 聚二甲基硅氧烷,硅橡胶,硅氧烷</a> (polydimethylsiloxane)</p>
+</li>
+<li><a href="http://www.dickblick.com/products/amaco-rubber-latex/" target="_blank" rel="external">latex 乳胶</a> (paint)</li>
+<li><a href="http://www.mcmaster.com/#thermoplastics" target="_blank" rel="external">thermoplastic 热塑性塑料</a>, <a href="http://www.mcmaster.com/#thermosets" target="_blank" rel="external">thermoset</a> polymers 热固性聚合物</li>
+<li><p>calcium sulfate 硫酸钙</p>
+<ul>
+<li>desicant干燥剂, coagulant凝结剂, plaster石膏, gypsum石膏, drywall</li>
+<li><a href="http://plaster.com/DryStone.html" target="_blank" rel="external">DryStone</a></li>
+</ul>
+</li>
+<li><p>Portland cement 硅酸盐水泥</p>
+<ul>
+<li>calcium silicate 硅酸钙, aluminum/iron oxide 铝/铁氧化物, calcium sulfate 硫酸钙</li>
+<li>Hydro-Stone</li>
+</ul>
+</li>
+<li><a href="http://fabacademy.org/archives/2015/as/students/wang.tse-kang/week09.html" target="_blank" rel="external">metal casting 金属铸件</a><ul>
+<li><a href="http://www.rotometals.com/product-p/lmp281.htm" target="_blank" rel="external">Cerrotru</a>, <a href="http://www.rotometals.com/SearchResults.asp?Search=zamak" target="_blank" rel="external">Zamak h 合金</a>, <a href="http://fab.cba.mit.edu/classes/863.15/doc/tutorials/sandcasting/index.html" target="_blank" rel="external">aluminum 铝合金</a><br><img src="http://cdn3.volusion.com/tfqy4.mpkx6/v/vspfiles/photos/LMP281-2T.gif?1441187719" alt=""></li>
+<li>clay sand 粘土砂</li>
+</ul>
+</li>
+<li><a href="http://academy.cba.mit.edu/classes/molding_casting/glass.png" target="_blank" rel="external">glass</a></li>
+<li><a href="http://www.aremco.com/" target="_blank" rel="external">ceramic 陶瓷</a></li>
+<li>food</li>
+</ul>
+<h3 id="u6DFB_u52A0_u5242"><a href="#u6DFB_u52A0_u5242" class="headerlink" title="添加剂"></a><a href="http://www.westmarine.com/fiberglass-fillers" target="_blank" rel="external">添加剂</a></h3><ul>
+<li>fibers 纤维(tension 张力, compression 压缩比, composites复合材料)</li>
+<li>fillers 填料: density 密度, conductivity 导电率, flexibility 柔韧性, color, …</li>
+</ul>
+<h3 id="u8FC7_u7A0B"><a href="#u8FC7_u7A0B" class="headerlink" title="过程"></a>过程</h3><ul>
+<li>试验</li>
+<li>混合 (不要混入空气)</li>
+<li>浇筑</li>
+<li>气泡<ul>
+<li>vibration 振动, vacuum 抽真空, pressure 压力</li>
+</ul>
+</li>
+<li>curing 固化 <ul>
+<li>polymerization 聚合</li>
+<li>cross-linking 交联</li>
+<li>hydration 水合作用</li>
+<li>endothermic 吸热, exothermic 放热</li>
+</ul>
+</li>
+<li>demolding 脱模<ul>
+<li>taper 锥拔</li>
+<li><a href="http://www.smooth-on.com/Release-Agents-and/c9_1123_1169/index.html" target="_blank" rel="external">release agents 脱模剂</a><ul>
+<li>dilute dish soap 稀肥皂, vaseline 凡士林, talc 滑石粉, …</li>
+</ul>
+</li>
+<li>deformation 变形</li>
+</ul>
+</li>
+<li>储存</li>
+<li>shelf life 保质期</li>
+</ul>
+<h3 id="u5B89_u5168"><a href="#u5B89_u5168" class="headerlink" title="安全"></a>安全</h3><ul>
+<li><a href="https://us.vwr.com/store/search/searchMSDS.jsp?tabId=msdsSearch" target="_blank" rel="external">MSDS 材料安全性数据表</a>: SDS search</li>
+<li>ventilation 通风</li>
+<li>保护: 手套, 面罩</li>
+<li>废物处理</li>
+</ul>
+<h2 id="u8F6F_u4EF6"><a href="#u8F6F_u4EF6" class="headerlink" title="软件"></a>软件</h2><ul>
+<li>ShopBot VCarvePro</li>
+<li><p>fab modules</p>
+<ul>
+<li><p>image, mold</p>
+<p><img src="http://academy.cba.mit.edu/classes/molding_casting/hello.mold.png" alt="mold"></p>
+</li>
+<li><p>stl, toolpath, mold</p>
+<p>  <a href="http://academy.cba.mit.edu/classes/molding_casting/sample.mp4" target="_blank" rel="external">calculating path in fabmodules</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="u5176_u4ED6_u8D44_u6599"><a href="#u5176_u4ED6_u8D44_u6599" class="headerlink" title="其他资料"></a>其他资料</h2><ul>
+<li><a href="https://www.youtube.com/watch?v=RMjtmsr3CqA" target="_blank" rel="external">Plastic Injection Molding</a></li>
+<li><a href="http://fab.cba.mit.edu/classes/863.11/people/janice.wang/MAS863.11Site/MoldingCats.html" target="_blank" rel="external">Molding and Casting, or, Confessions of a Cat Lady</a></li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/163576093" target="_blank" rel="external">Week12 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/molding_casting/index.html" target="_blank" rel="external">Week12 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week12.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[作业11：输入设备[FabNotes023]]]></title>
@@ -1523,163 +1762,6 @@
     <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>]]>
     
     </summary>
-    
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[作业2：用CAD画特雷门琴的模型 [FabNotes005]]]></title>
-    <link href="http://yoursite.com/2016/02/26/fabnotes005/"/>
-    <id>http://yoursite.com/2016/02/26/fabnotes005/</id>
-    <published>2016-02-26T06:47:34.000Z</published>
-    <updated>2016-02-27T15:10:16.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
-<a id="more"></a>
-<p>这周的作业是</p>
-<blockquote>
-<p>用 CAD 工具给 final project 建模</p>
-</blockquote>
-<p>我的 final project 打算做一个特雷门琴（具体是什么鬼，请关注后续笔记），它有一个巨大的优势 —— 造型简单！</p>
-<p><img src="http://cnet1.cbsistatic.com/hub/i/r/2013/11/02/a0d46b02-6de8-11e3-913e-14feb5ca9861/resize/570xauto/d9feb99e1358983a3e909096ea0aca72/01_UM_Project___Odd_Harmonics___LR.jpg" alt=""></p>
-<p>在网上找到 Moog 家最经典的一款，看起来很方整，适合我这个 3D 小白 XD。</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Etherwave_Theremin_Kit.jpg" alt=""></p>
-<p>然后开始在 Fusion 360 里捣鼓起来。</p>
-<h2 id="u70ED_u8EAB"><a href="#u70ED_u8EAB" class="headerlink" title="热身"></a>热身</h2><p>因为对这个软件的经验完全为0，就先去官网过了一遍基础教程：<a href="http://www.autodesk.com/products/fusion-360/learn-training-tutorials" target="_blank" rel="external">Get started with Fusion 360 - 9 tutorials in under 50 minutes</a></p>
-<p>Fusion 360 的功能都按模块组织，很清晰：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fusionUI.png" alt=""></p>
-<p>画三维形状的基本步骤是：</p>
-<p>先在「sketch」模块里面画平面图 (btw 右下角对话框里的直角、平行等工具很实用)</p>
-<p><img src="http://www.autodesk.com/content/dam/autodesk/www/products/new-fusion-360/images/learning/fusion360-sketch-800x450.jpg" alt=""></p>
-<p>然后用 「creat」 里面的 「extrude」 拉出三维形状。</p>
-<h2 id="u5F00_u5DE5"><a href="#u5F00_u5DE5" class="headerlink" title="开工"></a>开工</h2><p>参考这张特雷门组装部件图，按照4个部分画出各个部件。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminS1200.png" alt=""></p>
-<ol>
-<li><p>底座</p>
-<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s1.png" alt=""></p>
-<p> 在 Y 面画出「凹」字形，向 X 轴拉出形状。</p>
-</li>
-<li><p>盖子</p>
-<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s2.png" alt=""></p>
-<p> 在 X 面画出倒「凹」字形，向 Y 轴拉出形状</p>
-</li>
-<li><p>画出天线 (带曲弧的控制音量，直的控制音高)</p>
-<p> 曲弧那里费了好大劲，最后用了暴力的办法：在 sketch 里面画圆形切直线（加 point 然后 trim ），拉出 3D 后再用「modify」里面的「Fillet」掉每个面的棱角……</p>
-<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/antenna.png" alt=""></p>
-<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s3.png" alt=""></p>
-</li>
-<li><p>做垂直天线的接口和螺母</p>
-<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s4.png" alt=""></p>
-</li>
-<li><p>在底座两侧打洞，然后组装</p>
-<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s5.png" alt=""></p>
-<p> 透视图（螺丝和螺母的尺寸需要事先计算好）</p>
-<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s5%20detail.png" alt=""></p>
-<p> (Fusion 的组装动画好浮夸啊……)</p>
-</li>
-<li><p>盖上盖子……</p>
-<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/thereminbox%20s6.png" alt=""></p>
-</li>
-</ol>
-<p>3D 小白的简易版特雷门模型就画好了（左边天线还装反了，扶额……）</p>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/154077397" target="_blank" rel="external">Week2 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/computer_design/index.html" target="_blank" rel="external">Week2 课程 Slides</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="CAD" scheme="http://yoursite.com/tags/CAD/"/>
-    
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[第二周：CAD [FabNotes004]]]></title>
-    <link href="http://yoursite.com/2016/02/25/fabnotes004/"/>
-    <id>http://yoursite.com/2016/02/25/fabnotes004/</id>
-    <published>2016-02-25T01:52:58.000Z</published>
-    <updated>2016-02-26T06:50:49.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>
-<a id="more"></a>
-<p>上课时，被教授给出的 <a href="http://academy.cba.mit.edu/classes/computer_design/index.html" target="_blank" rel="external">CAD tools list</a> 弄得老眼昏花……</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SketchUp&#10;123D&#10;Tinkercad&#10;Shapesmith&#10;Flood&#10;MatterMachine&#10;Blender Sverchok&#10;ZBrush&#10;Rhino Grasshopper Kangaroo &#10;FreeCAD&#10;AutoCAD Inventor Fusion 360 education&#10;SolidWorks DraftSight Visualization Xdesign&#10;Onshape&#10;Maya Alias 3ds Max&#10;Cinema 4D&#10;Catia&#10;Creo&#10;NX&#10;AC3D&#10;OpenSCAD&#10;Kokompe Kokopelli Antimony</span><br></pre></td></tr></table></figure>
-<p>光 3D 就有那么多，还没算上 2D 和 2.5D 的。更要命的是，学霸教授说：要求你们把这些全部都试一遍，再找出适合自己的…… 就差没当场口吐白沫……</p>
-<p>如此繁多的 3D 软件，大概可以分为两类：一类是偏艺术/雕塑的“狂拽炫酷吊炸天的自由成型派”，一类是偏工程的“高冷面瘫小叮当的精密机械派”。</p>
-<blockquote>
-<p>The parametric approach is typically used by engineers and architects because the file contains more specific dimensions, relationships, and can include a design history. </p>
-<p>The explicit approach is typically used by artists and industrial designers because it can be more flexible. Explicit modeling allows changes to be made on the fly and small changes are not necessarily related to any other defined point of the geometry. </p>
-</blockquote>
-<p>这么多工具到底要怎么选？除了以上的分类，又参考了几篇文章：</p>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Comparison_of_computer-aided_design_editors" target="_blank" rel="external">Comparison of computer-aided design editors</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Comparison_of_3D_computer_graphics_software" target="_blank" rel="external">Comparison of 3D computer graphics software</a></li>
-<li><a href="http://www.matterhackers.com/articles/finding-the-right-3d-modeling-software-for-you" target="_blank" rel="external">FINDING THE RIGHT 3D MODELING SOFTWARE FOR YOU</a></li>
-</ul>
-<p>然后列出了我的 list （有选择的感觉94好啊）</p>
-<p>2D 的就不用说了，工作原因，至少是半个熟练工：</p>
-<ul>
-<li>2D (栅格): Photoshop</li>
-<li>2D (矢量): Sketch    </li>
-</ul>
-<p>3D 的之前只用过 SketchUp，选起来确实费神：</p>
-<ul>
-<li><p>3D (parametric, 结构): Fusion 360</p>
-<p>  <img src="http://static-dc.autodesk.net/content/dam/autodesk/www/products/new-fusion-360/images/overview/fusion-360-logo.png" alt=""></p>
-<p>  AutoDesk 很良心地给 Fablab 学生提供免费1年的版本，当然不能错过啦。Fusion 360 在工程设计上还是挺强大的，同时不失自由造型的灵活性，3D 打印、CNC 也不在话下。于是第一个收入囊中。</p>
-</li>
-</ul>
-<ul>
-<li><p>3D (programmatic): <a href="https://github.com/mkeeter/antimony" target="_blank" rel="external">Antimony</a></p>
-<p>  Antimony 是 Fablab 的大牛自己开发的工具。如果接触过 <a href="https://developer.apple.com/library/mac/documentation/GraphicsImaging/Conceptual/QuartzComposerUserGuide/qc_intro/qc_intro.html" target="_blank" rel="external">Quartz composer</a> 之类的 <a href="https://en.wikipedia.org/wiki/Visual_programming_language" target="_blank" rel="external">node-based visual programming</a>的同学一定会觉得 Antimony 很好上手。</p>
-<p>  <img src="http://7xjpra.com1.z0.glb.clouddn.com/antimonys5.png" alt=""></p>
-<p>  拖面条线，控制输入参数和输出结果，突然觉得程序猿的世界友好了一些 XD</p>
-</li>
-</ul>
-<ul>
-<li><p>3D (parametric, 综合): Solidworks</p>
-<p>  Solidworks 似乎没什么好说的了，所有人都会提到（也是够贵的）。</p>
-</li>
-</ul>
-<ul>
-<li><p>3D (explicit): Blender</p>
-<p>  Blender 在影视、游戏、视觉特效、互动3D 应用等领域能力强悍。不过学习曲线也陡峭一些。教授一直说 Blender 好强大的。据说修改 STL 文件很好用。 (STL is a file format native to the stereolithography CAD software created by 3D Systems)</p>
-</li>
-<li><p>3D (parametric, 外型): Rhino</p>
-<p>  再留一个犀牛备用。据说转换格式很好用。</p>
-</li>
-</ul>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/154077397" target="_blank" rel="external">Week2 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/computer_design/index.html" target="_blank" rel="external">Week2 课程 Slides</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week2.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="CAD" scheme="http://yoursite.com/tags/CAD/"/>
     
       <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
     
