@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://uegeek.com/"/>
-  <updated>2016-07-31T12:41:41.000Z</updated>
+  <updated>2016-08-06T14:35:17.000Z</updated>
   <id>http://uegeek.com/</id>
   
   <author>
@@ -13,6 +13,526 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[fabnotes031]]></title>
+    <link href="http://uegeek.com/fabnotes031.html"/>
+    <id>http://uegeek.com/fabnotes031.html</id>
+    <published>2016-08-07T14:25:12.000Z</published>
+    <updated>2016-08-06T14:35:17.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15.png" alt=""></p>
+<a id="more"></a> 
+<p>这周的作业是</p>
+<blockquote>
+<p>设计和搭建一个连接至少两个处理器的有线/无线网络</p>
+</blockquote>
+<h3 id="u7535_u8DEF_u8BBE_u8BA1"><a href="#u7535_u8DEF_u8BBE_u8BA1" class="headerlink" title="电路设计"></a>电路设计</h3><p>设计了两块电路板。一块是有 Attiny45 的桥接板：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek15bridge.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabweek15-bridge-brd.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bridge-trace.png" alt=""></p>
+<p>另外一块也是 Attiny45，作为受控节点：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek15node.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabweek15-node-brd.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/node-trace.png" alt=""></p>
+<p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/uploads/Week15EagleFiles.zip" target="_blank" rel="external">电路设计文件</a></p>
+<h3 id="u5236_u4F5C_u7535_u8DEF_u677F"><a href="#u5236_u4F5C_u7535_u8DEF_u677F" class="headerlink" title="制作电路板"></a>制作电路板</h3><p>继续使用 Roland SMR-20 雕刻板子。</p>
+<p>在 fabmodules 中，将导出的电路 png 文件dpi 设为 1500，计算出路径，然后完成雕刻和切割：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15milling.jpeg" alt=""></p>
+<p>焊接贴片元件：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15soldering.jpeg" alt=""></p>
+<p>烧固件：</p>
+<p><code>make -f hello.bus.45.make</code></p>
+<p><code>sudo make -f hello.bus.45.make program-usbtiny</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avr-objcopy -O ihex hello.bus.45.out hello.bus.45.c.hex;\&#10;&#9;avr-size --mcu=attiny45 --format=avr hello.bus.45.out&#10;AVR Memory Usage&#10;----------------&#10;Device: attiny45&#10;&#10;Program:     768 bytes (18.8% Full)&#10;(.text + .data + .bootloader)&#10;&#10;Data:          4 bytes (1.6% Full)&#10;(.data + .bss + .noinit)&#10;&#10;&#10;avrdude -p t45 -P usb -c usbtiny -U flash:w:hello.bus.45.c.hex&#10;&#10;avrdude: AVR device initialized and ready to accept instructions&#10;&#10;Reading | ################################################## | 100% 0.01s&#10;&#10;avrdude: Device signature = 0x1e9206&#10;avrdude: NOTE: &#34;flash&#34; memory has been specified, an erase cycle will be performed&#10;         To disable this feature, specify the -D option.&#10;avrdude: erasing chip&#10;avrdude: reading input file &#34;hello.bus.45.c.hex&#34;&#10;avrdude: input file hello.bus.45.c.hex auto detected as Intel Hex&#10;avrdude: writing flash (768 bytes):&#10;&#10;Writing | ################################################## | 100% 1.07s&#10;&#10;avrdude: 768 bytes of flash written&#10;avrdude: verifying flash memory against hello.bus.45.c.hex:&#10;avrdude: load data flash data from input file hello.bus.45.c.hex:&#10;avrdude: input file hello.bus.45.c.hex auto detected as Intel Hex&#10;avrdude: input file hello.bus.45.c.hex contains 768 bytes&#10;avrdude: reading on-chip flash data:&#10;&#10;Reading | ################################################## | 100% 1.48s&#10;&#10;avrdude: verifying ...&#10;avrdude: 768 bytes of flash verified&#10;&#10;avrdude: safemode: Fuses OK (H:FF, E:DF, L:62)&#10;&#10;avrdude done.  Thank you.</span><br></pre></td></tr></table></figure>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15bridgemake.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15nodemake.jpeg" alt=""></p>
+<h3 id="u8FD0_u884C_u7A0B_u5E8F"><a href="#u8FD0_u884C_u7A0B_u5E8F" class="headerlink" title="运行程序"></a>运行程序</h3><p>在 terminal 中运行 python 程序，需要制定串口名字和波特率：</p>
+<p><code>python term.py /dev/tty.usbserial-A400gwhT 9600</code></p>
+<p><a href="https://app.box.com/s/5wzbvgpsmuqsy420a5zp691ez4cy8nce" target="_blank" rel="external">程序代码</a>.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15videosnap.png" alt=""></p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/abXJHjT0VnU" frameborder="0" allowfullscreen></iframe></div>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/166236939" target="_blank" rel="external">Week15 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/networking_communications/index.html" target="_blank" rel="external">Week15 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Arduino" scheme="http://uegeek.com/tags/Arduino/"/>
+    
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[第十五周：网络和通信[FabNotes030]]]></title>
+    <link href="http://uegeek.com/fabnotes030.html"/>
+    <id>http://uegeek.com/fabnotes030.html</id>
+    <published>2016-08-06T14:25:07.000Z</published>
+    <updated>2016-08-06T14:33:53.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15.png" alt=""></p>
+<a id="more"></a>    
+<p>这周学习<a href="http://academy.cba.mit.edu/classes/networking_communications/index.html" target="_blank" rel="external">网络通信</a>.</p>
+<h2 id="u4E32_u53E3"><a href="#u4E32_u53E3" class="headerlink" title="串口"></a>串口</h2><p>asynchronous 异步</p>
+<ul>
+<li><a href="http://www.maxim-ic.com/app-notes/index.mvp/id/723" target="_blank" rel="external">RS-232, RS-422, RS-485</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/networking_communications/bus/bus.mp4" target="_blank" rel="external">video</a></li>
+</ul>
+<p><a href="http://www.nxp.com/documents/user_manual/UM10204.pdf" target="_blank" rel="external">I2C</a></p>
+<ul>
+<li>TWI</li>
+<li>USI</li>
+<li>software</li>
+<li><a href="http://arduino.cc/en/reference/wire" target="_blank" rel="external">library</a></li>
+</ul>
+<p>SPI <a href="http://arduino.cc/en/Reference/SPI" target="_blank" rel="external">library</a></p>
+<p><a href="http://www.usb.org/" target="_blank" rel="external">USB</a></p>
+<ul>
+<li><a href="http://www.atmel.com/Images/doc8360.pdf" target="_blank" rel="external">AVR</a>, <a href="http://www.fourwalledcubicle.com/LUFA.php" target="_blank" rel="external">LUFA</a></li>
+<li><a href="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/user_manual/CD00158241.pdf" target="_blank" rel="external">STM32</a></li>
+<li><a href="http://www.obdev.at/products/vusb/index.html" target="_blank" rel="external">V-USB</a></li>
+</ul>
+<h2 id="OSI_layers"><a href="#OSI_layers" class="headerlink" title="OSI layers"></a>OSI layers</h2><p><img src="http://0.tqn.com/d/compnetworking/1/0/g/basics_osimodel.jpg" alt=""></p>
+<ul>
+<li>7: application 应用 (HTTP)</li>
+<li>6: presentation 表现层 (SSL)</li>
+<li>5: session 会话 (RPC)</li>
+<li>4: transport 传输 (TCP, UDP)</li>
+<li>3: network 网络 (IP)</li>
+<li>2: data link 数据链路 (MAC)</li>
+<li>1: physical 物理层 (PHY) </li>
+</ul>
+<h2 id="u7269_u7406_u4ECB_u8D28"><a href="#u7269_u7406_u4ECB_u8D28" class="headerlink" title="物理介质"></a>物理介质</h2><ul>
+<li>capacity: bandwidth * log_2 (signal/noise)</li>
+<li><p>wired</p>
+<pre><code>single-ended, differential, powerline
+open collector, open drain
+transmission (pass) gate, tri-state
+transmission line
+waveguide
+TIA RS232, 422, 485
+802.3 ethernet
+   chip module
+SONET optical fiber
+</code></pre></li>
+<li><p>wireless</p>
+<ul>
+<li><a href="http://www.fcc.gov/" target="_blank" rel="external">FCC</a>, <a href="http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&amp;sid=896fdfef3883114171de384cf10702ce&amp;rgn=div5&amp;view=text&amp;node=47:1.0.1.1.16&amp;idno=47" target="_blank" rel="external">Part 15</a>, <a href="http://www.fcc.gov/Bureaus/OPP/working_papers/oppwp38chart.pdf" target="_blank" rel="external">ISM</a></li>
+<li><a href="http://www.ieee802.org/11/" target="_blank" rel="external">802.11</a>, <a href="http://www.wi-fi.org/" target="_blank" rel="external">Wi-Fi</a></li>
+<li><a href="http://www.wi-fi.org/" target="_blank" rel="external">Wi-Fi</a>, <a href="http://www.zigbee.org/" target="_blank" rel="external">ZigBee</a></li>
+<li><a href="http://www.ietf.org/dyn/wg/charter/6lowpan-charter.html" target="_blank" rel="external">6LoWPAN</a></li>
+<li><a href="http://www.bluetooth.com/" target="_blank" rel="external">Bluetooth</a></li>
+<li>optical: <a href="http://www.atmel.com/Images/doc2534.pdf" target="_blank" rel="external">transmitter</a>, <a href="http://www.atmel.com/Images/doc1473.pdf" target="_blank" rel="external">receiver</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="modulation__u8C03_u5236"><a href="#modulation__u8C03_u5236" class="headerlink" title="modulation 调制"></a><a href="http://www.crcpress.com/product/isbn/9780849309670" target="_blank" rel="external">modulation 调制</a></h2><ul>
+<li>PCM: Pulse-Code Modulation 脉冲编码调制</li>
+<li>PPM: Pulse-Position Modulation</li>
+<li>OOK: On-Off Keying 通断键控</li>
+<li>FSK: Frequency-Shift Keying 频移键控</li>
+<li>BPSK: Binary Phase-Shift Keying 二进制相移键控</li>
+<li>QAM: Quadrature Amplitude Modulation 求积分振幅变调</li>
+<li>OFDM: Orthogonal Frequency-Division Multiplexing 正交频分多路</li>
+<li>FHSS: Frequency-Hopping Spread Spectrum 跳频扩频</li>
+<li>DSSS: Direct-Sequence Spread Spectrum 直接序列扩频</li>
+<li>UWB:  Ultra-WideBand 超宽带</li>
+</ul>
+<h2 id="channel_sharing__u4FE1_u9053_u5171_u4EAB"><a href="#channel_sharing__u4FE1_u9053_u5171_u4EAB" class="headerlink" title="channel sharing 信道共享"></a><a href="http://authors.phptr.com/tanenbaumcn4/" target="_blank" rel="external">channel sharing 信道共享</a></h2><ul>
+<li>ALOHA</li>
+<li>Master-Slave</li>
+<li>Token Ring</li>
+<li>TDMA: Time-Division Multiple Access 时分多址</li>
+<li>FDMA: Frequency-Divsion Multiple Access 频分多址</li>
+<li><p>CSMA: Carrier-Sense Multiple Access 载波监听</p>
+<ul>
+<li>CD: Collision Detection</li>
+<li>CA: Collision Avoidance</li>
+<li>1-persistent: transmit when clear</li>
+<li>nonpersistent: random backoff</li>
+<li>p-persistent: probability to transmit</li>
+</ul>
+</li>
+<li><p>CDMA: Code-Division Multiple Access 码分多址</p>
+</li>
+<li>MIMO: Multiple-Input Multiple-Output 多输入多输出</li>
+<li>PDMA”: Physical-Division Multiple Access</li>
+</ul>
+<h2 id="errors__u9519_u8BEF"><a href="#errors__u9519_u8BEF" class="headerlink" title="errors 错误"></a><a href="http://www.cambridge.org/us/academic/subjects/physics/general-and-classical-physics/physics-information-technology" target="_blank" rel="external">errors 错误</a></h2><ul>
+<li>detection, correction</li>
+<li>block, convolution codes</li>
+<li>parity, checksum, Hamming, Reed-Solomon, Turbo</li>
+</ul>
+<h2 id="networking__u7F51_u7EDC"><a href="#networking__u7F51_u7EDC" class="headerlink" title="networking 网络"></a><a href="http://authors.phptr.com/tanenbaumcn4/" target="_blank" rel="external">networking 网络</a></h2><ul>
+<li><a href="http://www.ietf.org/" target="_blank" rel="external">Internet protocols</a><ul>
+<li><a href="http://www.ietf.org/rfc/rfc0791.txt" target="_blank" rel="external">IPv4</a>, <a href="http://www.ietf.org/rfc/rfc2460.txt" target="_blank" rel="external">IPv6</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc1035.txt" target="_blank" rel="external">DNS</a>, <a href="http://www.ietf.org/rfc/rfc2131.txt" target="_blank" rel="external">DHCP 动态主机配置协议</a>, <a href="http://www.ietf.org/rfc/rfc1631.txt" target="_blank" rel="external">NAT</a>, <a href="http://www.ietf.org/rfc/rfc1918.txt" target="_blank" rel="external">private</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc768.txt" target="_blank" rel="external">UDP (User Datagram Protocol)用户报文协议</a>, <a href="http://www.ietf.org/rfc/rfc793.txt" target="_blank" rel="external">TCP (Transmission Control Protocol)传输控制协议</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc2616.txt" target="_blank" rel="external">HTTP 超文本传输协议</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc4271.txt" target="_blank" rel="external">BGP (Border Gateway Protocol) 边界网关协议</a>, <a href="http://www.ietf.org/rfc/rfc3561.txt" target="_blank" rel="external">AODV</a></li>
+<li><a href="http://docs.python.org/library/socket.html" target="_blank" rel="external">sockets</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc1055.txt" target="_blank" rel="external">SLIP</a></li>
+</ul>
+</li>
+<li><a href="http://academy.cba.mit.edu/classes/networking_communications/APTP/notes.html" target="_blank" rel="external">APTP</a></li>
+</ul>
+<h2 id="RF__u5C04_u9891"><a href="#RF__u5C04_u9891" class="headerlink" title="RF 射频"></a>RF 射频</h2><ul>
+<li><a href="http://www.arrl.org/shop/" target="_blank" rel="external">radios</a>: oscillator, mixer, PA, LNA, IF, I/Q, demod, baseband, filters</li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-047166782X.html" target="_blank" rel="external">antennas</a>: Q, antenna gain, impedance matching</li>
+<li>single-chip<ul>
+<li>MICRF (300-470 MHz)</li>
+<li>MRF49XA (433/868/915 MHz)</li>
+<li>nRF905 (433/868/915 MHz)</li>
+<li>nRF24L01+ (2.4 GHz ISM)</li>
+<li>CC2541 (2.4 GHz Bluetooth)</li>
+<li>ESP8266 (2.4 GHz Wi-Fi)</li>
+</ul>
+</li>
+<li><a href="http://gnuradio.org/" target="_blank" rel="external">software radio</a></li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/166236939" target="_blank" rel="external">Week15 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/networking_communications/index.html" target="_blank" rel="external">Week15 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[作业14：合成材料[FabNotes029]]]></title>
+    <link href="http://uegeek.com/fabnotes029.html"/>
+    <id>http://uegeek.com/fabnotes029.html</id>
+    <published>2016-08-05T14:25:02.000Z</published>
+    <updated>2016-08-06T14:31:11.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week14.png" alt=""></p>
+<a id="more"></a>   
+<p>这周的作业是</p>
+<blockquote>
+<p>设计和制作一个 3D 模具，在此基础上制造加入纤维的合成材料</p>
+</blockquote>
+<h3 id="u8BBE_u8BA1"><a href="#u8BBE_u8BA1" class="headerlink" title="设计"></a>设计</h3><p>这周的作业灵感来自 Lego 盒子的盖子。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467781168.jpeg" alt=""></p>
+<p>在 Fusion 360 里设计模型：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/FabWeek14lego.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/FabWeek14legoall.png" alt=""></p>
+<p><a href="https://app.box.com/s/cpzpng6p7zbpm4wy94gijms35rgz6cpx" target="_blank" rel="external">设计文件</a>.</p>
+<h3 id="u673A_u5668_u96D5_u523B"><a href="#u673A_u5668_u96D5_u523B" class="headerlink" title="机器雕刻"></a>机器雕刻</h3><p>跟小伙伴们奔到 Fablab XH 借用机器： CNC Router VR1212B。</p>
+<p>换 6mm 的刀头：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768859.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768860.jpeg" alt=""></p>
+<p>参数设置，路径计算：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/FabWeek14CNCSetting.jpg" alt=""></p>
+<p>速度和给进值：</p>
+<ul>
+<li>Chip load: ~ 0.001-0.010” = feed rate (inches per minute) / (RPM x number of flutes)</li>
+<li>Cut depth: ~ tool diameter</li>
+<li>Step-over: ~ tool diameter/2</li>
+</ul>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768861.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768863.jpeg" alt=""></p>
+<p>合成材料的模具做好了：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768865.jpeg" alt=""></p>
+<h3 id="u5408_u6210"><a href="#u5408_u6210" class="headerlink" title="合成"></a>合成</h3><p>我们使用的是抽真空法，材料用的环氧树脂和麻布。</p>
+<p>第一步，先用保鲜膜把模具包好，这样成模以后才好取出。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768978.jpeg" alt=""></p>
+<p>接着，把麻布剪成小块，方便涂抹材料粘贴。在胡教授的帮助下，我们买来新的环氧树脂和固化剂：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768979.jpeg" alt=""></p>
+<p>1：1 混合环氧树脂和固化剂，并充分搅拌：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768980.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768981.jpeg" alt=""></p>
+<p>把麻布一层一层覆盖到模具上：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768983.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768982.jpeg" alt=""></p>
+<p>完成后，放进真空袋：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768984.jpeg" alt=""></p>
+<p>把空气抽出：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768985.jpeg" alt=""></p>
+<p>密封好的真空袋放置一个晚上。第二天，模具硬化，可以取出了：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768986.jpeg" alt=""></p>
+<p>边缘有一些变形，其他部分都 ok：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467769000.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467769001.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467769002.jpeg" alt=""></p>
+<hr>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/165323734" target="_blank" rel="external">Week14 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/composites/index.html" target="_blank" rel="external">Week14 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week14.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[第十四周：合成材料[FabNotes028]]]></title>
+    <link href="http://uegeek.com/fabnotes028.html"/>
+    <id>http://uegeek.com/fabnotes028.html</id>
+    <published>2016-08-03T14:24:57.000Z</published>
+    <updated>2016-08-06T14:30:19.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week14.png" alt=""></p>
+<a id="more"></a>  
+<p>这周学习<a href="http://academy.cba.mit.edu/classes/composites/index.html" target="_blank" rel="external">合成材料</a>.</p>
+<h2 id="u6750_u6599"><a href="#u6750_u6599" class="headerlink" title="材料"></a>材料</h2><p>compression 压缩比 vs tension 张力</p>
+<ul>
+<li>epoxy + carbon fiber 环氧树脂+碳纤维</li>
+<li>concrete + rebar 混凝土+钢筋</li>
+<li>fiberglass 玻璃纤维</li>
+<li>FR1, FR4</li>
+<li>tire 轮胎</li>
+<li>adobe 土砖</li>
+<li>wood 木材 </li>
+</ul>
+<p>fiber 纤维</p>
+<ul>
+<li>chopped 短纤维, filament 灯丝, tape, fabric</li>
+<li>glass 玻璃</li>
+<li>carbon 碳</li>
+<li><p>aramid 芳纶, Kevlar 凯芙拉,芳纶纤维布</p>
+<p>  <img src="http://img.nauticexpo.com/images_ne/photo-mg/39168-345411.jpg" alt=""></p>
+</li>
+<li><p>natural: cotton 棉花, silk 丝, bamboo 竹, wood 木, linen 亚麻, burlap 粗麻布, …</p>
+</li>
+</ul>
+<p>matrix</p>
+<ul>
+<li>epoxy 环氧树脂</li>
+<li>polyester 聚酯,涤纶</li>
+<li>phenolic 酚醛树脂</li>
+<li>urethane 尿烷,氨基甲酸乙酯</li>
+<li>wax 蜡</li>
+<li>cement 水泥</li>
+<li>natural: plant resins 植物树脂, sugars, …</li>
+</ul>
+<h2 id="u4F9B_u5E94_u5546"><a href="#u4F9B_u5E94_u5546" class="headerlink" title="供应商"></a>供应商</h2><ul>
+<li><a href="http://www.mcmaster.com/#garolite" target="_blank" rel="external">McMaster-Carr</a></li>
+<li><a href="http://www.cstsales.com/" target="_blank" rel="external">CST</a></li>
+<li><a href="http://www.westsystem.com/" target="_blank" rel="external">West System</a></li>
+<li><a href="http://www.aeromarineproducts.com/" target="_blank" rel="external">AeroMarine</a></li>
+<li><a href="http://www.jamestowndistributors.com/" target="_blank" rel="external">Jamestown Distributors</a></li>
+<li><a href="http://www.fiberglasssupply.com/" target="_blank" rel="external">Fiberglass Supply</a></li>
+<li><a href="https://entropyresins.com/" target="_blank" rel="external">Entropy Resins</a></li>
+<li><a href="http://www.smooth-on.com/" target="_blank" rel="external">Smooth-On</a></li>
+<li><a href="http://www.ashland.com/solutions/products-services/composite-products-and-services" target="_blank" rel="external">Ashland</a></li>
+<li><a href="http://www.duponttateandlyle.com/products_susterra" target="_blank" rel="external">DuPont</a></li>
+<li><a href="http://www.uscomposites.com/" target="_blank" rel="external">US Composites</a></li>
+<li><a href="http://www.hexcel.com/" target="_blank" rel="external">Hexcel</a></li>
+<li><a href="http://www.exelcomposites.com/" target="_blank" rel="external">Exel</a></li>
+<li><a href="http://www.exelcomposites.com/" target="_blank" rel="external">Exel</a></li>
+<li><a href="http://www.gurit.com/" target="_blank" rel="external">Gurit</a></li>
+</ul>
+<h2 id="u8BBE_u8BA1"><a href="#u8BBE_u8BA1" class="headerlink" title="设计"></a>设计</h2><ul>
+<li>plies 板层</li>
+<li>radius of curvature 曲率</li>
+<li>cores</li>
+<li>spar 晶石, rib, skin</li>
+<li>digital   </li>
+</ul>
+<h2 id="u6D41_u7A0B"><a href="#u6D41_u7A0B" class="headerlink" title="流程"></a>流程</h2><ul>
+<li>cutting, darts, net-shape</li>
+<li>compaction 压实, infusion 浸泡, volume fraction 体积分数</li>
+<li>coupons</li>
+<li>open, closed mold</li>
+<li>wet lay-up, pre-preg, RTM, VARTM</li>
+<li><p>compression molding 压缩模塑法</p>
+<p>   press, clamps, hydrostatic 静压轴承,铃静力轴承,液体静压轴承</p>
+</li>
+<li><p><a href="http://www.westsystem.com/ss/assets/HowTo-Publications/Vacuum-Bagging-Techniques.pdf" target="_blank" rel="external">vacuum bagging 抽真空法</a></p>
+<p>   mold, release, laminate层压板, core, peel ply, bleeder分压器, breather, bag, sealant tape密封, pump</p>
+</li>
+<li><p>autoclave 高压锅</p>
+</li>
+<li>pultrusion 拉挤成型</li>
+<li>trimming</li>
+<li>clear coat</li>
+</ul>
+<h2 id="u6A21_u5177"><a href="#u6A21_u5177" class="headerlink" title="模具"></a>模具</h2><ul>
+<li>machined</li>
+<li>folded</li>
+<li>skinned</li>
+</ul>
+<h2 id="u5B89_u5168"><a href="#u5B89_u5168" class="headerlink" title="安全"></a>安全</h2><ul>
+<li>particles 悬浮颗粒, inhalation 吸入, rashes 皮疹</li>
+<li>respirators, googles, gloves</li>
+<li>fumes 废气, ventilation 通风</li>
+<li>exotherm 放热速度</li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/165323734" target="_blank" rel="external">Week14 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/composites/index.html" target="_blank" rel="external">Week14 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week14.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[作业13：输出设备[FabNotes027]]]></title>
+    <link href="http://uegeek.com/fabnotes027.html"/>
+    <id>http://uegeek.com/fabnotes027.html</id>
+    <published>2016-08-02T14:24:52.000Z</published>
+    <updated>2016-08-06T14:32:25.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13.png" alt=""></p>
+<a id="more"></a>  
+<p>这周的作业是</p>
+<blockquote>
+<p>给微控制器电路板增加输出元件</p>
+</blockquote>
+<h3 id="u7535_u8DEF_u677F_u8BBE_u8BA1"><a href="#u7535_u8DEF_u677F_u8BBE_u8BA1" class="headerlink" title="电路板设计"></a>电路板设计</h3><p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13-eagle-sch.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13-eagle-brd.png" alt=""></p>
+<p>用 ERC 和 DRC 工具检查错误。确保没有错误后，导出黑白 png 文件。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/output-trace.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/output-outline.png" alt=""></p>
+<p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/uploads/Week13-OutputEagleFiles.zip" target="_blank" rel="external">电路设计源文件</a></p>
+<h3 id="u7535_u8DEF_u677F_u5236_u4F5C"><a href="#u7535_u8DEF_u677F_u5236_u4F5C" class="headerlink" title="电路板制作"></a>电路板制作</h3><p>依旧是用 Roland SMR-20 雕刻电路板。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13fabmodule.png" alt=""></p>
+<p>1/64 刀头刻线路， 1/32 刀头切边缘。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13milledboard.jpeg" alt=""></p>
+<p>焊元件</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13soderedboard.jpeg" alt=""></p>
+<p>然后烧程序</p>
+<p><code>make -f hello.RGB.45.make</code></p>
+<p><code>sudo make -f hello.RGB.45.make program-usbtiny</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avr-objcopy -O ihex hello.RGB.45.out hello.RGB.45.c.hex;\&#10;&#9;avr-size --mcu=attiny45 --format=avr hello.RGB.45.out&#10;AVR Memory Usage&#10;----------------&#10;Device: attiny45&#10;&#10;Program:     338 bytes (8.3% Full)&#10;(.text + .data + .bootloader)&#10;&#10;Data:          0 bytes (0.0% Full)&#10;(.data + .bss + .noinit)&#10;&#10;&#10;avrdude -p t45 -P usb -c usbtiny -U flash:w:hello.RGB.45.c.hex&#10;&#10;avrdude: AVR device initialized and ready to accept instructions&#10;&#10;Reading | ################################################## | 100% 0.01s&#10;&#10;avrdude: Device signature = 0x1e9206&#10;avrdude: NOTE: &#34;flash&#34; memory has been specified, an erase cycle will be performed&#10;         To disable this feature, specify the -D option.&#10;avrdude: erasing chip&#10;avrdude: reading input file &#34;hello.RGB.45.c.hex&#34;&#10;avrdude: input file hello.RGB.45.c.hex auto detected as Intel Hex&#10;avrdude: writing flash (338 bytes):&#10;&#10;Writing | ################################################## | 100% 0.49s&#10;&#10;avrdude: 338 bytes of flash written&#10;avrdude: verifying flash memory against hello.RGB.45.c.hex:&#10;avrdude: load data flash data from input file hello.RGB.45.c.hex:&#10;avrdude: input file hello.RGB.45.c.hex auto detected as Intel Hex&#10;avrdude: input file hello.RGB.45.c.hex contains 338 bytes&#10;avrdude: reading on-chip flash data:&#10;&#10;Reading | ################################################## | 100% 0.72s&#10;&#10;avrdude: verifying ...&#10;avrdude: 338 bytes of flash verified&#10;&#10;avrdude: safemode: Fuses OK (H:FF, E:DF, L:62)&#10;&#10;avrdude done.  Thank you.</span><br></pre></td></tr></table></figure>
+<h3 id="u7F16_u7A0B"><a href="#u7F16_u7A0B" class="headerlink" title="编程"></a>编程</h3><p>在 Arduino 里面写程序。要先选好 ATtiny 板子，ATtiny45 芯片和 8 MHz internal clock。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/arduinosetting8m.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13-Arduino.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int led1 = 1;           // the PWM pin the LED is attached to&#10;int led2 = 2;&#10;int led3 = 0;&#10;int brightness = 0;    // how bright the LED is&#10;int fadeAmount = 5;    // how many points to fade the LED by&#10;&#10;// the setup routine runs once when you press reset:&#10;void setup() &#123;&#10;  // declare pin 1,2,3 to be an output:&#10;  pinMode(led1, OUTPUT);&#10;  pinMode(led2, OUTPUT);&#10;  pinMode(led3, OUTPUT);&#10;&#125;&#10;&#10;// the loop routine runs over and over again forever:&#10;void loop() &#123;&#10;  // set the brightness of pin 1,2,3:&#10;  analogWrite(led1, brightness);&#10;  analogWrite(led2, brightness);&#10;  analogWrite(led3, brightness);&#10;&#10;  // change the brightness for next time through the loop:&#10;  brightness = brightness + fadeAmount;&#10;&#10;  // reverse the direction of the fading at the ends of the fade:&#10;  if (brightness == 0 || brightness == 255) &#123;&#10;    fadeAmount = -fadeAmount ;&#10;  &#125;&#10;  // wait for 30 milliseconds to see the dimming effect&#10;  delay(30);&#10;&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/uploads/Week13-MyRGB.ino" target="_blank" rel="external">代码下载</a>.</p>
+<p>程序写好之后， Burn Bootloader 上传到电路板上。LED 开始工作：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13final.png" alt=""></p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/Comn24MekQg" frameborder="0" allowfullscreen></iframe></div>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/164447297" target="_blank" rel="external">Week13 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/molding_casting/index.html" target="_blank" rel="external">Week13 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Arduino" scheme="http://uegeek.com/tags/Arduino/"/>
+    
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[第十三周：输出设备[FabNotes026]]]></title>
+    <link href="http://uegeek.com/fabnotes026.html"/>
+    <id>http://uegeek.com/fabnotes026.html</id>
+    <published>2016-08-01T14:24:45.000Z</published>
+    <updated>2016-08-06T14:26:37.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13.png" alt=""></p>
+<a id="more"></a>  
+<p>这周学习<a href="http://academy.cba.mit.edu/classes/output_devices/index.html" target="_blank" rel="external">输出设备</a>.</p>
+<h3 id="RGB_LED"><a href="#RGB_LED" class="headerlink" title="RGB LED"></a>RGB LED</h3><p><img src="http://media.digikey.com/photos/Cree%20Photos/CLV1A-FKB-CK1N1G1BB7R4S3_sml.jpg" alt=""></p>
+<h3 id="LED__u70B9_u9635"><a href="#LED__u70B9_u9635" class="headerlink" title="LED 点阵"></a>LED 点阵</h3><p><a href="http://www.maxim-ic.com/app-notes/index.mvp/id/1880" target="_blank" rel="external">Charlieplexing</a></p>
+<p><img src="https://www.maximintegrated.com/en/images/appnotes/1880/DI217Fig01T.gif" alt=""></p>
+<h3 id="LCD"><a href="#LCD" class="headerlink" title="LCD"></a>LCD</h3><p><a href="http://academy.cba.mit.edu/classes/output_devices/44780.pdf" target="_blank" rel="external">44780</a></p>
+<p><img src="http://media.digikey.com/photos/Lumex%20Photos/LCM-S01602DTR%5EM_sml.jpg" alt=""></p>
+<h3 id="u89C6_u9891"><a href="#u89C6_u9891" class="headerlink" title="视频"></a>视频</h3><p><a href="https://code.google.com/archive/p/arduino-tvout/" target="_blank" rel="external">arduino-tvout</a></p>
+<p><img src="http://farm5.static.flickr.com/4087/5225072558_5f5f760037.jpg" alt=""></p>
+<p><a href="https://github.com/davidcranor/Thinner-Client" target="_blank" rel="external">Thinner-Client</a></p>
+<h3 id="u626C_u58F0_u5668"><a href="#u626C_u58F0_u5668" class="headerlink" title="扬声器"></a>扬声器</h3><p>MOSFET 场效应晶体管- The metal–oxide–semiconductor field-effect transistor</p>
+<p><img src="http://media.digikey.com/photos/Mallory%20Sonalert%20Products%20Photos/PSR-23F08S-JQ_sml.jpg" alt=""></p>
+<ul>
+<li>floating gates</li>
+<li>gate resistors 门电阻</li>
+<li>low-pass filters 低通滤波器</li>
+<li>class D amplifiers</li>
+</ul>
+<h3 id="u9A6C_u8FBE"><a href="#u9A6C_u8FBE" class="headerlink" title="马达"></a>马达</h3><p><a href="https://www.jameco.com/webapp/wcs/stores/servlet/StoreCatalogDrillDownView?langId=-1&amp;storeId=10001&amp;catalogId=10001&amp;categoryName=cat_3515&amp;subCategoryName=Electromechanical%20%2F%20Motors%20%2F%20DC%20Direct%20Drive&amp;category=351530" target="_blank" rel="external">brush DC motor</a></p>
+<p><img src="http://media.digikey.com/Renders/Allegro%20Microsystems%20Renders/8-SOIC%20EXP%20PAD_sml.jpg" alt=""></p>
+<p>brushless DC motor (BLDC)</p>
+<p><a href="http://www.hobbyking.com/hobbyking/store/__84__189__Servos_and_parts-All_Servos.html" target="_blank" rel="external">servo motor</a></p>
+<p><a href="http://www.jameco.com/webapp/wcs/stores/servlet/StoreCatalogDrillDownView?langId=-1&amp;storeId=10001&amp;catalogId=10001&amp;categoryName=cat_3515&amp;subCategoryName=Electromechanical%20%2F%20Motors%20%2F%20Stepper&amp;category=351580" target="_blank" rel="external">stepper motor</a>: unipolar, bipolar</p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/164447297" target="_blank" rel="external">Week13 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/molding_casting/index.html" target="_blank" rel="external">Week13 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
+    
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
+    
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
+    
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[作业12：做模具[FabNotes025]]]></title>
@@ -258,7 +778,7 @@
     <link href="http://uegeek.com/fabnotes023.html"/>
     <id>http://uegeek.com/fabnotes023.html</id>
     <published>2016-07-30T14:38:53.000Z</published>
-    <updated>2016-07-30T14:42:09.000Z</updated>
+    <updated>2016-08-06T14:32:06.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11.png" alt=""></p>
 <a id="more"></a> 
 <h1 id="u4F5C_u4E1A11_uFF1A_u8F93_u5165_u8BBE_u5907_5BFabNotes023_5D"><a href="#u4F5C_u4E1A11_uFF1A_u8F93_u5165_u8BBE_u5907_5BFabNotes023_5D" class="headerlink" title="作业11：输入设备[FabNotes023]"></a>作业11：输入设备[FabNotes023]</h1><blockquote>
@@ -345,6 +865,8 @@
     <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11.png" alt=""></p>]]>
     
     </summary>
+    
+      <category term="Arduino" scheme="http://uegeek.com/tags/Arduino/"/>
     
       <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
@@ -754,7 +1276,7 @@
     <link href="http://uegeek.com/fabnotes017.html"/>
     <id>http://uegeek.com/fabnotes017.html</id>
     <published>2016-05-08T14:35:37.000Z</published>
-    <updated>2016-05-08T14:46:27.000Z</updated>
+    <updated>2016-08-06T14:31:40.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week8.png" alt=""></p>
 <a id="more"></a>
 <p>这周的作业是</p>
@@ -861,6 +1383,8 @@
     <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week8.png" alt=""></p>]]>
     
     </summary>
+    
+      <category term="Arduino" scheme="http://uegeek.com/tags/Arduino/"/>
     
       <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
@@ -1316,450 +1840,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week6.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[作业5：3D 扫描和打印 [FabNotes011]]]></title>
-    <link href="http://uegeek.com/fabnotes011.html"/>
-    <id>http://uegeek.com/fabnotes011.html</id>
-    <published>2016-03-11T15:04:59.000Z</published>
-    <updated>2016-03-11T15:06:10.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week5.png" alt=""></p>
-<a id="more"></a>
-<p>本周作业：</p>
-<ul>
-<li>设计和打印小型的 3D 物体</li>
-<li>3D 扫描一个物体</li>
-</ul>
-<h2 id="u8BBE_u8BA1_u548C_u6253_u5370_3D__u7269_u4F53"><a href="#u8BBE_u8BA1_u548C_u6253_u5370_3D__u7269_u4F53" class="headerlink" title="设计和打印 3D 物体"></a>设计和打印 3D 物体</h2><p>继续尝试用 Antimony 画 3D 傻白：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/71903c68cb1f63e8e5b4f44c7f10e61c.jpg" alt=""></p>
-<p>时间压力下，认怂画了个简单得面目全非的版本:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/designElizabeth.png" alt=""></p>
-<p>导出 .stl 文件：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/stlElizabeth.png" alt=""></p>
-<p>实验室的 3D 打印机都用 gcode 格式。于是打印之前需要用 cura 软件把 .stl 转成 .gcode ：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713584.jpeg" alt=""></p>
-<p>这台打印机是实验室自己组装的，有点酷:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713583.jpeg" alt=""></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713582.jpeg" alt=""></p>
-<p>用半小时打印了个测试版:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713585.jpeg" alt=""></p>
-<p>然后试了一下 Yang² 同学的这台:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713587.jpeg" alt=""></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713586.jpeg" alt=""></p>
-<p>用时 1 小时:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713619.jpeg" alt=""></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713620.jpeg" alt=""></p>
-<h2 id="3D__u626B_u63CF"><a href="#3D__u626B_u63CF" class="headerlink" title="3D 扫描"></a>3D 扫描</h2><p>第二个作业，3D 扫描一个物体。</p>
-<p>实验室里用的 3D 扫描仪是这款:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan1.jpeg" alt=""></p>
-<p>首先得 <a href="http://www.3dsystems.com/shop/sense/downloads" target="_blank" rel="external">下载和安装配套软件</a>.</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan2.jpeg" alt=""></p>
-<p>扫描时需要保持一定距离:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan3.jpeg" alt=""></p>
-<p>经验是，物体形状越规则越好，镜头移动速度尽量匀速，而且环境光线尽可能单一无变化。否则，扫描过程中非常容易“失踪”:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan4.jpeg" alt=""></p>
-<p>最后，在小伙伴的帮助下，扫了本大叔的半身像:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan5.jpeg" alt=""></p>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/156596002" target="_blank" rel="external">Week5 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/scanning_printing/index.html" target="_blank" rel="external">Week5 课程 Slides</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week5.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[第五周：3D 扫描和打印 [FabNotes010]]]></title>
-    <link href="http://uegeek.com/fabnotes010.html"/>
-    <id>http://uegeek.com/fabnotes010.html</id>
-    <published>2016-03-05T14:08:34.000Z</published>
-    <updated>2016-03-05T14:09:49.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week5.png" alt=""></p>
-<a id="more"></a>
-<h2 id="u4E00-_3D__u6253_u5370"><a href="#u4E00-_3D__u6253_u5370" class="headerlink" title="一. 3D 打印"></a>一. 3D 打印</h2><p>这个技术其实一点也不新鲜啦，<a href="http://www.3dsystems.com/30-years-innovation" target="_blank" rel="external">Chuck Hull</a> 在上世纪 80 年代发明了 3D 打印。</p>
-<p><img src="http://www.3dsystems.com/sites/www.3dsystems.com/files/styles/basicpage-banner-xxl/public/30-anniversary-banner_0.jpg" alt=""></p>
-<h3 id="3D__u6253_u5370_u7684_u5C40_u9650"><a href="#3D__u6253_u5370_u7684_u5C40_u9650" class="headerlink" title="3D 打印的局限"></a>3D 打印的局限</h3><ul>
-<li>材料: ABS(丙烯腈—丁二烯—苯乙烯,ABS塑料), HIPS, acrylic(亚克力), PLA(easier to print)</li>
-<li>分辨率: 需要留意最小厚度、边缘厚度和清晰度，形状空隙和偏差值。</li>
-<li>耗时: 以小时算</li>
-<li>成本: 取决于机器和材料。 <a href="http://www.shapeways.com/materials" target="_blank" rel="external">这个网站整理了 3D 打印耗材</a>。</li>
-</ul>
-<h3 id="u6253_u5370_u6280_u672F"><a href="#u6253_u5370_u6280_u672F" class="headerlink" title="打印技术"></a>打印技术</h3><ul>
-<li>stereolithography(立体平版印刷)：SLA，Direct Metal Printing (DMP)</li>
-<li><a href="http://www.3dsystems.com/3d-printers/production/overview" target="_blank" rel="external">selective laser sintering(SLS)</a></li>
-<li><a href="http://www.stratasys.com/3d-printers" target="_blank" rel="external">fused-deposition molding(FDM 熔融沉积成型)</a>, <a href="http://web.media.mit.edu/~neri/MATTER.MEDIA/Publications/Additive%20Manufacturing%20of%20Optically%20Transparent%20Glass.pdf" target="_blank" rel="external">extrusion(挤出/喷出)</a>, <a href="http://www.contourcrafting.org/" target="_blank" rel="external">contour crafting</a></li>
-<li><a href="http://www.3dsystems.com/3d-printers/personal/overview" target="_blank" rel="external">ink-jet binder(喷墨粘结剂)</a></li>
-<li><a href="http://www.3dsystems.com/3d-printers/professional/overview" target="_blank" rel="external">ProJet</a>, <a href="http://www.stratasys.com/3d-printers/design-series/objet260-connex3" target="_blank" rel="external">PolyJet</a>. 可实现高分辨率彩色打印。</li>
-<li><a href="http://www.mcortechnologies.com/" target="_blank" rel="external">cut sheets</a></li>
-<li><a href="http://carbon3d.com/" target="_blank" rel="external">CLIP</a>, <a href="https://www.ted.com/talks/joe_desimone_what_if_3d_printing_was_25x_faster" target="_blank" rel="external">TED talk about this</a></li>
-<li><a href="http://www.nanoscribe.de/en/applications/micro-rapid-prototyping/" target="_blank" rel="external">two photon(光子)</a></li>
-</ul>
-<h3 id="u6253_u5370_u673A"><a href="#u6253_u5370_u673A" class="headerlink" title="打印机"></a>打印机</h3><p>MAKE 杂志每年会做一个 <a href="http://makezine.com/2015/11/04/digital-fabrication-shootout-winners/" target="_blank" rel="external">3D 打印机评选</a>。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/makelist.jpeg" alt=""></p>
-<h3 id="u6587_u4EF6_u683C_u5F0F"><a href="#u6587_u4EF6_u683C_u5F0F" class="headerlink" title="文件格式"></a>文件格式</h3><ul>
-<li>STL 是主流，虽然是个笨重的格式，而且没有包含单位信息，需要在打印机另外设置</li>
-<li><a href="http://usa.autodesk.com/alias/" target="_blank" rel="external">OBJ</a>, <a href="http://usa.autodesk.com/3ds-max/" target="_blank" rel="external">3ds</a> by 3D MAX</li>
-<li><a href="http://www.web3d.org/x3d-vrml-most-widely-used-3d-formats" target="_blank" rel="external">VRML, X3D</a></li>
-<li>不要用 DXF …</li>
-</ul>
-<h3 id="u8F6F_u4EF6"><a href="#u8F6F_u4EF6" class="headerlink" title="软件"></a>软件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">123D&#10;SketchUp&#10;Fusion 360&#10;SolidWorks&#10;Rhino Grasshopper&#10;Blender&#10;FreeCAD&#10;OpenSCAD&#10;Antimony&#10;VTK&#10;MeshLab netfabb meshmixer&#10;Geomagic&#10;ReplicatorG Skeinforge Slic3r Cura</span><br></pre></td></tr></table></figure>
-<h2 id="u4E8C-_3D__u626B_u63CF"><a href="#u4E8C-_3D__u626B_u63CF" class="headerlink" title="二. 3D 扫描"></a>二. 3D 扫描</h2><p>最常用的三类 3D 扫描技术 ：</p>
-<ul>
-<li>位移(Displacement): 位移设备使用单点激光束投射来测量高度、厚度、或对象的位置。 </li>
-<li>剖面(Profile): 线路剖面设备使用投影激光束，创建物体轮廓的剖面。在激光下移动物体，生成的多个剖面可以组合成完整的 3D 形状。</li>
-<li>快照(Snapshot): 快照设备使用结构光（非激光）和立体视觉生成完整的三维数据。 </li>
-</ul>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/3dscan.png" alt=""></p>
-<h2 id="u66F4_u591A_u8D44_u6599"><a href="#u66F4_u591A_u8D44_u6599" class="headerlink" title="更多资料"></a>更多资料</h2><ul>
-<li>Stratasys’s course <a href="http://www.stratasys.com/industries/education/educators/curriculum/downloads" target="_blank" rel="external">Introduction to 3D Printing: From Design to Fabrication</a>. </li>
-<li><a href="https://www.additively.com/en/" target="_blank" rel="external">Additively is the 3D printing platform for professionals</a></li>
-<li><a href="http://lmi3d.com/sites/default/files/EBOOK_A_Simple_Guide_To_3D.pdf" target="_blank" rel="external">A Simple Guide To Understanding 3D Scanning Technologies</a></li>
-<li><a href="http://www.rapidform.com/3d-scanners/" target="_blank" rel="external">A guide to 3D scanner technology</a></li>
-</ul>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/156596002" target="_blank" rel="external">Week5 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/scanning_printing/index.html" target="_blank" rel="external">Week5 课程 Slides</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week5.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[作业4-制作电路板 [FabNotes009]]]></title>
-    <link href="http://uegeek.com/fabnotes009.html"/>
-    <id>http://uegeek.com/fabnotes009.html</id>
-    <published>2016-03-02T13:40:46.000Z</published>
-    <updated>2016-03-02T13:44:59.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>
-<a id="more"></a>
-<p>第四周作业是：</p>
-<blockquote>
-<p>Make an in-circuit programmer</p>
-</blockquote>
-<p>因为还没有学电路设计和元器件，本周只是按照已经设计好的一个下载器直接制作。我用的是 <a href="http://fab.cba.mit.edu/content/projects/fabispkey/index.html" target="_blank" rel="external">Andy’s FabISP</a> 设计。</p>
-<p>开工前，作为初学者需要仔细看看这个<a href="http://fab.cba.mit.edu/content/processes/PCB/modela2.html" target="_blank" rel="external">具体教程</a>和<a href="http://www.youtube.com/watch?v=XdamEhs2RIk&amp;list=PL-xEsC0ZUCUM42QNHaOOdoOwYg0j251dU&amp;index=1" target="_blank" rel="external">视频教程</a>。</p>
-<h2 id="u523B_u5370_u7535_u8DEF_u677F"><a href="#u523B_u5370_u7535_u8DEF_u677F" class="headerlink" title="刻印电路板"></a>刻印电路板</h2><p>实验室的铣床据说很高级，是全部机器里第二贵的 Roland SRM20</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456715597.jpeg" alt=""></p>
-<p>找出两个规格的立铣刀：1/64 bit end mill 用来刻表面，1/32 bit end mill 用来切边缘。<br><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713553.jpeg" alt=""></p>
-<p>然后材料是 FR1 铜板。</p>
-<h3 id="1-__u56FA_u5B9A"><a href="#1-__u56FA_u5B9A" class="headerlink" title="1. 固定"></a>1. 固定</h3><p>用双面胶把 FR1 板贴在衬底板上面。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713554.jpeg" alt=""></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713555.jpeg" alt=""></p>
-<h3 id="2-__u5B89_u88C5_u7ACB_u94E3_u5200"><a href="#2-__u5B89_u88C5_u7ACB_u94E3_u5200" class="headerlink" title="2. 安装立铣刀"></a>2. 安装立铣刀</h3><p>用两只手指夹住刀头（先用1/64的），放进刀孔里，然后用六角螺丝顺时针拧紧。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713556.jpeg" alt=""></p>
-<h3 id="3-__u6821_u96F6"><a href="#3-__u6821_u96F6" class="headerlink" title="3. 校零"></a>3. 校零</h3><p>上周小伙伴们折腾了一天 Fabmodule 也没有调教成功，于是直接在 Windows 下面用机器自带的软件 VPanel for SRM20。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713557.jpeg" alt=""></p>
-<p>先移动 X/Y 坐标到合适的位置。然后慢慢移动 Z 轴到将近板子表面的地方，然后打开机器盖子，用六角螺丝松开刀头，让刀头自然接触到板子上，再上紧螺丝。这时需要点右侧“Set Origin Point” X/Y 和 Z 的按钮，记录下原点位置，以便换刀头后可以恢复位置。</p>
-<p>然后点“CUT”按钮，选择要刻的文件。</p>
-<h3 id="4-__u5F00_u78E8"><a href="#4-__u5F00_u78E8" class="headerlink" title="4. 开磨"></a>4. 开磨</h3><p>选好文件后点“OUTPUT”，机器就开始工作了。</p>
-<p>刻好电路轨迹后，打开机器，松开刀头取出放回盒子里，然后换上 1/32 的刀头。移动到刚才已经记录好的原点位置。然后点“CUT”按钮选择外框的文件，发送到 SRM20。</p>
-<p>如果一切顺利，切好后的电路板长这样：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713581.jpeg" alt=""></p>
-<h3 id="5-__u6E05_u7406"><a href="#5-__u6E05_u7406" class="headerlink" title="5. 清理"></a>5. 清理</h3><p>打磨一下电路板表面和边缘的毛刺，然后用布或者水清洗一下，板子颜值瞬间提升：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713589.jpeg" alt=""></p>
-<h3 id="u8D9F_u8FC7_u7684_u5751"><a href="#u8D9F_u8FC7_u7684_u5751" class="headerlink" title="趟过的坑"></a>趟过的坑</h3><p>最开始刻印时，遇到了诡异的现象，好几个板子都被刻成的阴阳板：一半正常，一半没刻出来。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713558.jpeg" alt=""></p>
-<p>百思不得其解。好在塔妹在旁边提醒，是不是刀头松了呀。一拍大腿才醒悟过来，刚才还有一次刻完发现刀头直接躺在板子上了，我怎么就没反应过来呢！估计是一直记着教授上课时说，刀头不要拧太紧，刀头不要拧太紧…… </p>
-<p>于是义愤填膺地死死拧好刀头，就再也没有出现“阴阳板”了。</p>
-<h2 id="u710A_u63A5_u5143_u4EF6"><a href="#u710A_u63A5_u5143_u4EF6" class="headerlink" title="焊接元件"></a>焊接元件</h2><p>本周最大挑战是 —— 焊接!</p>
-<p>感谢小伙伴们已经准备好需要的元器件，还贴心地画出示意图：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456730329.jpeg" alt=""></p>
-<p>不过看到元件们一个个都长得太没有存在感，掉在地上用放大镜也不一定找得到，还是倒吸一口凉气 —— 这些玩意儿能焊么 😓</p>
-<p>挑了个头最大的 ATTINY44 下手。</p>
-<p>第一个零件花了快10分钟：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713618.jpeg" alt=""></p>
-<p>实验了几次，慢慢摸出一些门道：</p>
-<ul>
-<li>先用镊子把丫放好</li>
-<li>然后放下镊子，左手扯焊锡线，右手拿焊枪</li>
-<li>用焊枪头压着靠边的一个引脚</li>
-<li>把焊锡线末端放到焊枪头上</li>
-<li>瞪大眼睛，看到焊锡熔成液体状，拿开焊锡线，然后轻而快速地拿开焊枪</li>
-<li>如果凝固的接头很丑，可以再用焊枪头放过去融开，补一点焊锡，先快速拿开枪头，然后再迅速靠近，用尖头刮一刮再拿开</li>
-</ul>
-<p>一直用不好的是吸锡线，又细又厚，不太好吸。</p>
-<p>继续按照从大到小逆时针方向焊接其他元件：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713621.jpeg" alt=""></p>
-<p>眼花、手抖、大脑缺氧后，得到最终成果：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1456713625.jpeg" alt=""></p>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/155713990-" target="_blank" rel="external">Week4 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/electronics_production/index.html" target="_blank" rel="external">Week4 课程 Slides</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[第四周：制作电路板 [FabNotes008]]]></title>
-    <link href="http://uegeek.com/fabnotes008.html"/>
-    <id>http://uegeek.com/fabnotes008.html</id>
-    <published>2016-03-01T13:40:38.000Z</published>
-    <updated>2016-03-02T13:44:18.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>
-<a id="more"></a>
-<p>这周学习 PCB(Printed Circuit Board 印刷电路板) 制作。</p>
-<h2 id="u5236_u4F5C_u65B9_u6CD5"><a href="#u5236_u4F5C_u65B9_u6CD5" class="headerlink" title="制作方法"></a>制作方法</h2><p>PCB 制作方法可分为消除和加成两类：</p>
-<ul>
-<li><p>消除法（Subtractive）：利用化学品或机械将空白的电路板上不需要的地方除去</p>
-<ul>
-<li><p>丝网印刷：把设计好的电路图制成丝网遮罩，不需要的部分覆盖蜡或者不透水物料，然后把丝网遮罩放到空白线路板上面，再在丝网上油上不会被腐蚀的保护剂，把线路板放到腐蚀液中蚀刻（etching）。<br><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPxinYVx_CBrrmG4vJHpxM5WT2DLEL35p2Gp8o2D4zElLW7qh12g" alt=""></p>
-</li>
-<li><p>感光板：把设计好的电路图制在透光的胶片遮罩上，把需要的部分印成不透明的颜色，再在空白线路板上涂上感光颜料，将预备好的胶片遮罩放在电路板上照射强光数分钟，除去遮罩后用显影剂把电路板上的图案显示出来，然后腐蚀。</p>
-</li>
-<li>刻印：利用铣床或激光雕刻机直接把空白线路上不需要的部分除去。</li>
-</ul>
-</li>
-<li><p>加成法（Additive）：普遍做法是在一块预先镀上薄铜的基板上，覆盖光阻剂（D/F)，经紫外光曝光再显影，把需要的地方露出，然后利用电镀把线路板上正式线路铜厚增厚到所需要的规格,再镀上一层抗蚀刻阻剂－金属薄锡，最后除去光阻剂，再把光阻剂下的铜箔层蚀刻掉。</p>
-</li>
-</ul>
-<p>在实验室我们都用机器刻印的方式，虽然不适合量产，但是用来做快速原型很方便，也更环保一些。</p>
-<p>用来刻印的机器是 milling machine (铣床)， 1/64 bit endmill(立铣刀)用来刻电路轨迹，1/32 bit 立铣刀用来切出整块板的外缘。</p>
-<h2 id="u6750_u6599"><a href="#u6750_u6599" class="headerlink" title="材料"></a>材料</h2><p>常见的基材及主要成分有：</p>
-<ul>
-<li><a href="http://www.globallaminates.com/" target="_blank" rel="external">FR-1</a> ──酚醛棉纸，这基材通称电木板（比FR-2较高经济性）</li>
-<li>FR-2 ──酚醛棉纸，</li>
-<li>FR-3 ──棉纸（Cotton paper）、环氧树脂</li>
-<li>FR-4 ──玻璃布（Woven glass）、环氧树脂</li>
-<li>FR-5 ──玻璃布、环氧树脂</li>
-<li>FR-6 ──毛面玻璃、聚酯</li>
-<li>G-10 ──玻璃布、环氧树脂</li>
-<li>CEM-1 ──棉纸、环氧树脂（阻燃）</li>
-<li>CEM-2 ──棉纸、环氧树脂（非阻燃）</li>
-<li>CEM-3 ──玻璃布、环氧树脂</li>
-<li>CEM-4 ──玻璃布、环氧树脂</li>
-<li>CEM-5 ──玻璃布、多元酯</li>
-<li>AIN ──氮化铝</li>
-<li>SIC ──碳化硅</li>
-</ul>
-<p><a href="http://www2.dupont.com/Kapton/en_US/" target="_blank" rel="external">Kapton</a> / <a href="http://multimedia.3m.com/mws/media/37468O/3m-epoxy-film-electrical-tape-1.pdf" target="_blank" rel="external">#1 epoxy film(环氧胶膜)</a> / <a href="http://multimedia.3m.com/mws/media/104361O/tape-1126-copper-foil-with-conductive-adhesive.pdf" target="_blank" rel="external">#1126 copper tape(铜箔胶带)</a> 可用于制作柔性电路 (用刻字机).</p>
-<p>我们选 FR-1 用于机器刻印。</p>
-<h2 id="u523B_u5370_u6B65_u9AA4"><a href="#u523B_u5370_u6B65_u9AA4" class="headerlink" title="刻印步骤"></a>刻印步骤</h2><ul>
-<li>fixturing 装夹，紧固（用双面胶）</li>
-<li>underlay (衬底)</li>
-<li>orientation</li>
-<li>zeroing (针头刚好接触板面)</li>
-<li>set-screws (固定螺丝)</li>
-<li>lifetime</li>
-<li>deburring (去毛刺)</li>
-<li>cleaning</li>
-</ul>
-<p><a href="http://fab.cba.mit.edu/content/processes/PCB/modela2.html" target="_blank" rel="external">具体教程</a>, <a href="http://www.youtube.com/watch?v=XdamEhs2RIk&amp;list=PL-xEsC0ZUCUM42QNHaOOdoOwYg0j251dU&amp;index=1" target="_blank" rel="external">视频教程</a></p>
-<p>注意: 刻印线路之间要留出至少 5 mils</p>
-<h2 id="u7EC4_u88C5"><a href="#u7EC4_u88C5" class="headerlink" title="组装"></a>组装</h2><p>把元器件焊到电路上，接头需要做到光亮平滑。</p>
-<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm8SCQo2xW86pTqXmaPVolVLSRS17msN0D_qCkvWC0mls4zR_n" alt=""></p>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/155713990-" target="_blank" rel="external">Week4 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/electronics_production/index.html" target="_blank" rel="external">Week4 课程 Slides</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[作业3：激光切割 [FabNotes007]]]></title>
-    <link href="http://uegeek.com/fabnotes007.html"/>
-    <id>http://uegeek.com/fabnotes007.html</id>
-    <published>2016-02-29T08:51:26.000Z</published>
-    <updated>2016-02-29T08:53:34.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>
-<a id="more"></a>
-<p>第三周的作业：</p>
-<blockquote>
-<p>设计并制作一套参数化「乐高」组件 (a parametric press-fit construction kit)</p>
-</blockquote>
-<p>Press-fit 意思是可以重复组装和拆卸的接头(类似乐高)。这个作业的目的，是让我们理解怎样通过设计制造一套组件，来生成很多不同的东西。</p>
-<p>要做乐高嘛，自然就想到七巧板了。于是用 Antimony 来画图。</p>
-<h2 id="u719F_u6089_Antimony"><a href="#u719F_u6089_Antimony" class="headerlink" title="熟悉 Antimony"></a>熟悉 Antimony</h2><p><a href="http://www.mattkeeter.com/projects/antimony/3/" target="_blank" rel="external">Antimony</a> 是个强大的 “node-based” 参数化 CAD 工具。它把每个形状当做具有多个可调参数的对象，由外部输入参数控制形状生成，也可以输出计算结果作为另一个对象的输入。如果你用过 OSX 下的动画原型工具 Quartz composer 或者 Origami，很快就可以上手 Antimony 啦。</p>
-<p>安装好程序之后，找到作者 Matt Keeter 录制的 <a href="http://www.mattkeeter.com/projects/antimony/3/" target="_blank" rel="external">基本教程</a>。跟着教程练习做了个螺丝刀把手：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/antimonyprac.png" alt=""></p>
-<p>Antimony 生成 .stl文件很方便。Matt Keeter 还写了一个 stl 文件预览工具：<a href="http://www.mattkeeter.com/projects/fstl/" target="_blank" rel="external">fstl</a>，预览效果如丝般顺滑啊强烈推荐！</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/antimonytest.png" alt=""></p>
-<p>小吐槽：用 MacBook 的 trackpad，无法自由旋转 antimony 里的预览视图，必需接个鼠标（按住右键拖动旋转）。</p>
-<h2 id="u8BBE_u8BA1"><a href="#u8BBE_u8BA1" class="headerlink" title="设计"></a>设计</h2><p>为了做这周的作业才知道七巧板英文名叫 <a href="https://en.wikipedia.org/wiki/Tangram" target="_blank" rel="external">Tangram</a>。一开始有点不知道从何着手，先去网上搜一搜:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/tangram_math.jpg" alt=""></p>
-<p>发现自己连小学的几何公式都快忘了。。。</p>
-<p>在 antimony 新建文件，创建 「2D」 矩形。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/antimonys1.png" alt=""></p>
-<p>我们要在七巧板的每一个组件都切出 press-fit 的接口，以便可以互相拼接。这时候就需要用到 「Difference」命令，从完整的形状减去预留的接口。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/antimonys2.png" alt=""></p>
-<p>看起来是酱紫的：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/antimonys4.png" alt=""></p>
-<p>不同位置和尺寸的接口，需要通过「Translate」和「Rotate」命令来指定。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/antimonys3.png" alt=""></p>
-<p>我们将接口的尺寸设为一个输出对象，就可以保证多个接口的尺寸完全一样。不过随着对象越来越多，在 antimony 里面拖线也是挺痛苦的 - -<br><img src="http://7xjpra.com1.z0.glb.clouddn.com/antimonys5.png" alt=""></p>
-<p>这里可以<a href="https://app.box.com/s/qfndi1fv6vhbyu6gr9rfzxfjnzxoj68o" target="_blank" rel="external">下载我的 Tangram antimony 源文件</a> ，以及用于切割的 <a href="https://app.box.com/s/6cdjvc3lr6gsh1rz6gguic5m02iu451d" target="_blank" rel="external">pdf</a> 文件。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Tangram-1.png" alt=""></p>
-<h2 id="u5207_u5272"><a href="#u5207_u5272" class="headerlink" title="切割"></a>切割</h2><p>周末从广州滚到深圳，第一次来到 szoil 实验室。怀着鸡冻的心情，先练习用激光切割机画了个群主雕:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/FullSizeRender%203_shrink.jpg" alt=""></p>
-<p>Fabmodules 确实很好用。首先从电脑中选择设计文件，读取之后选择机器类型，以及要切割的材料。下一步是设置关键的参数，有几个烦人的参数需要在开切前测试一下。</p>
-<p>我先试了 speed 4% ，power 90%，仍然没有切穿实验室买的瓦楞纸板。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_9517_shrink.JPG" alt=""></p>
-<p>于是获得经验值：切割又厚又硬的材料（比如厚纸板）时，机器的 「power」需要接近 100%，「speed」需要低于 2%。</p>
-<p>另外一个更烦人的参数是 x,y 坐标位置，因为它会随着 dpi 变化。数学渣如我只好每次切之前先用废纸板来测试位置。</p>
-<p>切了几次，终于像模像样了：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_9524_shrink.JPG" alt=""></p>
-<p>不过还是没有完全切穿，掰起来挺费力：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_9525_shrink.JPG" alt=""></p>
-<p>Tangram press-fit kit</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_9526_shrink.JPG" alt=""></p>
-<p>切完纸板，再试试用亚克力做个 3D 小黄人~</p>
-<p>部件图之前已经画好，继续按部就班：</p>
-<ol>
-<li><p>上传 svg 文件到 fabmodules</p>
-<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_9535_shrink.JPG" alt=""></p>
-</li>
-<li><p>选择「cut acrylic」, 设置 units/in 为 50, power 90, speed 0.8, 并且测试坐标位置</p>
-</li>
-<li><p>用「calculate」命令生成 cutting path</p>
-</li>
-<li><p>在机器内放好亚克力板, 然后发送已经生成的 path 到切割机</p>
-</li>
-<li><p>按下切割机上的 「start/stop」按钮，开始切割</p>
-</li>
-</ol>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_9536_shrink.JPG" alt=""></p>
-<p>整个过程用时 18 分钟。</p>
-<p>问题：切割机还是没有成功切穿一些小的部件，或者把环形边缘直接烧坏了，囧。 </p>
-<p>不过时间不多，把部件一块块敲出来:</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_9537_shrink.JPG" alt=""></p>
-<p>最后一步，就是用胶水把每一片贴起来…… Multi-layer minion 就弄好了：<br><img src="http://7xjpra.com1.z0.glb.clouddn.com/007miniondone.jpeg" alt=""></p>
-<p>感觉简直可以用来哄妹子！</p>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/155004500" target="_blank" rel="external">Week3 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/computer_cutting/index.html" target="_blank" rel="external">Week3 课程 Slides</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[第三周：机器切割 [FabNotes006]]]></title>
-    <link href="http://uegeek.com/fabnotes006.html"/>
-    <id>http://uegeek.com/fabnotes006.html</id>
-    <published>2016-02-27T15:09:35.000Z</published>
-    <updated>2016-02-27T15:11:40.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>
-<a id="more"></a>
-<h2 id="CAD"><a href="#CAD" class="headerlink" title="CAD"></a>CAD</h2><p><a href="http://www.123dapp.com/make" target="_blank" rel="external">123D Make</a> 一类的工具都可以把 3D 物体分解成 2D 部件。之前介绍过的 <a href="https://github.com/mkeeter/antimony" target="_blank" rel="external">Antimony</a> 很适合用来设计需要参数化控制的部件。</p>
-<h2 id="CAM"><a href="#CAM" class="headerlink" title="CAM"></a>CAM</h2><p>FabAcademy 之前几年被各种不同的机器搞得头昏脑胀，于是干脆写了一个兼容几乎所有设备的 <a href="http://fabmodules.org/" target="_blank" rel="external">fab modules</a>。不论你输入哪种格式的文件，它都可以输出命令到不同的机器。 </p>
-<h2 id="Vinyl_cutter"><a href="#Vinyl_cutter" class="headerlink" title="Vinyl cutter"></a>Vinyl cutter</h2><p><a href="http://www.rolanddga.com/products/cutters/" target="_blank" rel="external">vinylcutter(电脑刻字机)</a> 应该是用途最广的切割工具了，它可以切标识、手工书、网版印刷、电线、多层电路、天线。</p>
-<h3 id="u6750_u6599"><a href="#u6750_u6599" class="headerlink" title="材料"></a>材料</h3><p>Vinyl(乙烯基)：</p>
-<p><img src="http://assets.skiptomylou.org/wp-content/uploads/2013/07/DSC_0149.jpg" alt=""></p>
-<p>Masking tape(纸胶带):</p>
-<p><img src="http://cdn.dick-blick.com/items/241/26/24126-group3ww-l.jpg" alt=""></p>
-<p>Transfer adhesive(转移胶膜):</p>
-<p><img src="http://www.staples-3p.com/s7/is/image/Staples/s0537631_sc7?$splssku$" alt=""></p>
-<p>Epoxy film(环氧树脂膜，可用于制作柔性电路):</p>
-<p><img src="http://bondingsource.com/wp-content/uploads/2015/05/ablefilm-550k.jpg" alt=""></p>
-<p>铜</p>
-<h3 id="u6B65_u9AA4"><a href="#u6B65_u9AA4" class="headerlink" title="步骤"></a>步骤</h3><p>设计要切割的图案， 最好存成 png/svg 格式。然后上传到 <a href="http://fabmodules.org/" target="_blank" rel="external">fab modules</a>，选择切割机，如下图的 「Roland vinyl (.camm)」， 然后选择切割的材质，如下图的「cut vinyl」。然后其他的设置选项就会出现在图片预览的右侧（cut depth 的值需要注意一下）。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/screenshot.png" alt=""></p>
-<h2 id="Laser_cutter"><a href="#Laser_cutter" class="headerlink" title="Laser cutter"></a>Laser cutter</h2><p>激光切割机可以做标记、切割、雕刻。</p>
-<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/halftone.jpg" alt="screen printing"></p>
-<p>这周的作业，是设计、切割出类似下图一样的[纸板乐高积木]:</p>
-<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/gik.png" alt="gik.png"> </p>
-<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/gik.jpg" alt=""></p>
-<p>这种组块化、需要用一个参数控制多个对象的设计，用<a href="https://github.com/mkeeter/antimony" target="_blank" rel="external">Antimony</a>再适合不过了：</p>
-<p><img src="http://academy.cba.mit.edu/classes/computer_cutting/joints.jpg" alt=""></p>
-<p>注意: 用激光切割机切割瓦楞纸，容易因为温度过高而起火……需要做好排气排烟措施，同时机器操作时要有人值守。</p>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/155004500" target="_blank" rel="external">Week3 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/computer_cutting/index.html" target="_blank" rel="external">Week3 课程 Slides</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>]]>
     
     </summary>
     

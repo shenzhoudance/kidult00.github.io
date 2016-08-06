@@ -4,6 +4,426 @@
   
     
     <entry>
+      <title><![CDATA[fabnotes031]]></title>
+      <url>http://uegeek.com/fabnotes031.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15.png" alt=""></p>
+<a id="more"></a> 
+<p>这周的作业是</p>
+<blockquote>
+<p>设计和搭建一个连接至少两个处理器的有线/无线网络</p>
+</blockquote>
+<h3 id="u7535_u8DEF_u8BBE_u8BA1"><a href="#u7535_u8DEF_u8BBE_u8BA1" class="headerlink" title="电路设计"></a>电路设计</h3><p>设计了两块电路板。一块是有 Attiny45 的桥接板：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek15bridge.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabweek15-bridge-brd.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bridge-trace.png" alt=""></p>
+<p>另外一块也是 Attiny45，作为受控节点：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabWeek15node.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/fabweek15-node-brd.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/node-trace.png" alt=""></p>
+<p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/uploads/Week15EagleFiles.zip" target="_blank" rel="external">电路设计文件</a></p>
+<h3 id="u5236_u4F5C_u7535_u8DEF_u677F"><a href="#u5236_u4F5C_u7535_u8DEF_u677F" class="headerlink" title="制作电路板"></a>制作电路板</h3><p>继续使用 Roland SMR-20 雕刻板子。</p>
+<p>在 fabmodules 中，将导出的电路 png 文件dpi 设为 1500，计算出路径，然后完成雕刻和切割：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15milling.jpeg" alt=""></p>
+<p>焊接贴片元件：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15soldering.jpeg" alt=""></p>
+<p>烧固件：</p>
+<p><code>make -f hello.bus.45.make</code></p>
+<p><code>sudo make -f hello.bus.45.make program-usbtiny</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avr-objcopy -O ihex hello.bus.45.out hello.bus.45.c.hex;\&#10;&#9;avr-size --mcu=attiny45 --format=avr hello.bus.45.out&#10;AVR Memory Usage&#10;----------------&#10;Device: attiny45&#10;&#10;Program:     768 bytes (18.8% Full)&#10;(.text + .data + .bootloader)&#10;&#10;Data:          4 bytes (1.6% Full)&#10;(.data + .bss + .noinit)&#10;&#10;&#10;avrdude -p t45 -P usb -c usbtiny -U flash:w:hello.bus.45.c.hex&#10;&#10;avrdude: AVR device initialized and ready to accept instructions&#10;&#10;Reading | ################################################## | 100% 0.01s&#10;&#10;avrdude: Device signature = 0x1e9206&#10;avrdude: NOTE: &#34;flash&#34; memory has been specified, an erase cycle will be performed&#10;         To disable this feature, specify the -D option.&#10;avrdude: erasing chip&#10;avrdude: reading input file &#34;hello.bus.45.c.hex&#34;&#10;avrdude: input file hello.bus.45.c.hex auto detected as Intel Hex&#10;avrdude: writing flash (768 bytes):&#10;&#10;Writing | ################################################## | 100% 1.07s&#10;&#10;avrdude: 768 bytes of flash written&#10;avrdude: verifying flash memory against hello.bus.45.c.hex:&#10;avrdude: load data flash data from input file hello.bus.45.c.hex:&#10;avrdude: input file hello.bus.45.c.hex auto detected as Intel Hex&#10;avrdude: input file hello.bus.45.c.hex contains 768 bytes&#10;avrdude: reading on-chip flash data:&#10;&#10;Reading | ################################################## | 100% 1.48s&#10;&#10;avrdude: verifying ...&#10;avrdude: 768 bytes of flash verified&#10;&#10;avrdude: safemode: Fuses OK (H:FF, E:DF, L:62)&#10;&#10;avrdude done.  Thank you.</span><br></pre></td></tr></table></figure>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15bridgemake.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15nodemake.jpeg" alt=""></p>
+<h3 id="u8FD0_u884C_u7A0B_u5E8F"><a href="#u8FD0_u884C_u7A0B_u5E8F" class="headerlink" title="运行程序"></a>运行程序</h3><p>在 terminal 中运行 python 程序，需要制定串口名字和波特率：</p>
+<p><code>python term.py /dev/tty.usbserial-A400gwhT 9600</code></p>
+<p><a href="https://app.box.com/s/5wzbvgpsmuqsy420a5zp691ez4cy8nce" target="_blank" rel="external">程序代码</a>.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15videosnap.png" alt=""></p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/abXJHjT0VnU" frameborder="0" allowfullscreen></iframe></div>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/166236939" target="_blank" rel="external">Week15 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/networking_communications/index.html" target="_blank" rel="external">Week15 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[第十五周：网络和通信[FabNotes030]]]></title>
+      <url>http://uegeek.com/fabnotes030.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15.png" alt=""></p>
+<a id="more"></a>    
+<p>这周学习<a href="http://academy.cba.mit.edu/classes/networking_communications/index.html" target="_blank" rel="external">网络通信</a>.</p>
+<h2 id="u4E32_u53E3"><a href="#u4E32_u53E3" class="headerlink" title="串口"></a>串口</h2><p>asynchronous 异步</p>
+<ul>
+<li><a href="http://www.maxim-ic.com/app-notes/index.mvp/id/723" target="_blank" rel="external">RS-232, RS-422, RS-485</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/networking_communications/bus/bus.mp4" target="_blank" rel="external">video</a></li>
+</ul>
+<p><a href="http://www.nxp.com/documents/user_manual/UM10204.pdf" target="_blank" rel="external">I2C</a></p>
+<ul>
+<li>TWI</li>
+<li>USI</li>
+<li>software</li>
+<li><a href="http://arduino.cc/en/reference/wire" target="_blank" rel="external">library</a></li>
+</ul>
+<p>SPI <a href="http://arduino.cc/en/Reference/SPI" target="_blank" rel="external">library</a></p>
+<p><a href="http://www.usb.org/" target="_blank" rel="external">USB</a></p>
+<ul>
+<li><a href="http://www.atmel.com/Images/doc8360.pdf" target="_blank" rel="external">AVR</a>, <a href="http://www.fourwalledcubicle.com/LUFA.php" target="_blank" rel="external">LUFA</a></li>
+<li><a href="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/user_manual/CD00158241.pdf" target="_blank" rel="external">STM32</a></li>
+<li><a href="http://www.obdev.at/products/vusb/index.html" target="_blank" rel="external">V-USB</a></li>
+</ul>
+<h2 id="OSI_layers"><a href="#OSI_layers" class="headerlink" title="OSI layers"></a>OSI layers</h2><p><img src="http://0.tqn.com/d/compnetworking/1/0/g/basics_osimodel.jpg" alt=""></p>
+<ul>
+<li>7: application 应用 (HTTP)</li>
+<li>6: presentation 表现层 (SSL)</li>
+<li>5: session 会话 (RPC)</li>
+<li>4: transport 传输 (TCP, UDP)</li>
+<li>3: network 网络 (IP)</li>
+<li>2: data link 数据链路 (MAC)</li>
+<li>1: physical 物理层 (PHY) </li>
+</ul>
+<h2 id="u7269_u7406_u4ECB_u8D28"><a href="#u7269_u7406_u4ECB_u8D28" class="headerlink" title="物理介质"></a>物理介质</h2><ul>
+<li>capacity: bandwidth * log_2 (signal/noise)</li>
+<li><p>wired</p>
+<pre><code>single-ended, differential, powerline
+open collector, open drain
+transmission (pass) gate, tri-state
+transmission line
+waveguide
+TIA RS232, 422, 485
+802.3 ethernet
+   chip module
+SONET optical fiber
+</code></pre></li>
+<li><p>wireless</p>
+<ul>
+<li><a href="http://www.fcc.gov/" target="_blank" rel="external">FCC</a>, <a href="http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&amp;sid=896fdfef3883114171de384cf10702ce&amp;rgn=div5&amp;view=text&amp;node=47:1.0.1.1.16&amp;idno=47" target="_blank" rel="external">Part 15</a>, <a href="http://www.fcc.gov/Bureaus/OPP/working_papers/oppwp38chart.pdf" target="_blank" rel="external">ISM</a></li>
+<li><a href="http://www.ieee802.org/11/" target="_blank" rel="external">802.11</a>, <a href="http://www.wi-fi.org/" target="_blank" rel="external">Wi-Fi</a></li>
+<li><a href="http://www.wi-fi.org/" target="_blank" rel="external">Wi-Fi</a>, <a href="http://www.zigbee.org/" target="_blank" rel="external">ZigBee</a></li>
+<li><a href="http://www.ietf.org/dyn/wg/charter/6lowpan-charter.html" target="_blank" rel="external">6LoWPAN</a></li>
+<li><a href="http://www.bluetooth.com/" target="_blank" rel="external">Bluetooth</a></li>
+<li>optical: <a href="http://www.atmel.com/Images/doc2534.pdf" target="_blank" rel="external">transmitter</a>, <a href="http://www.atmel.com/Images/doc1473.pdf" target="_blank" rel="external">receiver</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="modulation__u8C03_u5236"><a href="#modulation__u8C03_u5236" class="headerlink" title="modulation 调制"></a><a href="http://www.crcpress.com/product/isbn/9780849309670" target="_blank" rel="external">modulation 调制</a></h2><ul>
+<li>PCM: Pulse-Code Modulation 脉冲编码调制</li>
+<li>PPM: Pulse-Position Modulation</li>
+<li>OOK: On-Off Keying 通断键控</li>
+<li>FSK: Frequency-Shift Keying 频移键控</li>
+<li>BPSK: Binary Phase-Shift Keying 二进制相移键控</li>
+<li>QAM: Quadrature Amplitude Modulation 求积分振幅变调</li>
+<li>OFDM: Orthogonal Frequency-Division Multiplexing 正交频分多路</li>
+<li>FHSS: Frequency-Hopping Spread Spectrum 跳频扩频</li>
+<li>DSSS: Direct-Sequence Spread Spectrum 直接序列扩频</li>
+<li>UWB:  Ultra-WideBand 超宽带</li>
+</ul>
+<h2 id="channel_sharing__u4FE1_u9053_u5171_u4EAB"><a href="#channel_sharing__u4FE1_u9053_u5171_u4EAB" class="headerlink" title="channel sharing 信道共享"></a><a href="http://authors.phptr.com/tanenbaumcn4/" target="_blank" rel="external">channel sharing 信道共享</a></h2><ul>
+<li>ALOHA</li>
+<li>Master-Slave</li>
+<li>Token Ring</li>
+<li>TDMA: Time-Division Multiple Access 时分多址</li>
+<li>FDMA: Frequency-Divsion Multiple Access 频分多址</li>
+<li><p>CSMA: Carrier-Sense Multiple Access 载波监听</p>
+<ul>
+<li>CD: Collision Detection</li>
+<li>CA: Collision Avoidance</li>
+<li>1-persistent: transmit when clear</li>
+<li>nonpersistent: random backoff</li>
+<li>p-persistent: probability to transmit</li>
+</ul>
+</li>
+<li><p>CDMA: Code-Division Multiple Access 码分多址</p>
+</li>
+<li>MIMO: Multiple-Input Multiple-Output 多输入多输出</li>
+<li>PDMA”: Physical-Division Multiple Access</li>
+</ul>
+<h2 id="errors__u9519_u8BEF"><a href="#errors__u9519_u8BEF" class="headerlink" title="errors 错误"></a><a href="http://www.cambridge.org/us/academic/subjects/physics/general-and-classical-physics/physics-information-technology" target="_blank" rel="external">errors 错误</a></h2><ul>
+<li>detection, correction</li>
+<li>block, convolution codes</li>
+<li>parity, checksum, Hamming, Reed-Solomon, Turbo</li>
+</ul>
+<h2 id="networking__u7F51_u7EDC"><a href="#networking__u7F51_u7EDC" class="headerlink" title="networking 网络"></a><a href="http://authors.phptr.com/tanenbaumcn4/" target="_blank" rel="external">networking 网络</a></h2><ul>
+<li><a href="http://www.ietf.org/" target="_blank" rel="external">Internet protocols</a><ul>
+<li><a href="http://www.ietf.org/rfc/rfc0791.txt" target="_blank" rel="external">IPv4</a>, <a href="http://www.ietf.org/rfc/rfc2460.txt" target="_blank" rel="external">IPv6</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc1035.txt" target="_blank" rel="external">DNS</a>, <a href="http://www.ietf.org/rfc/rfc2131.txt" target="_blank" rel="external">DHCP 动态主机配置协议</a>, <a href="http://www.ietf.org/rfc/rfc1631.txt" target="_blank" rel="external">NAT</a>, <a href="http://www.ietf.org/rfc/rfc1918.txt" target="_blank" rel="external">private</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc768.txt" target="_blank" rel="external">UDP (User Datagram Protocol)用户报文协议</a>, <a href="http://www.ietf.org/rfc/rfc793.txt" target="_blank" rel="external">TCP (Transmission Control Protocol)传输控制协议</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc2616.txt" target="_blank" rel="external">HTTP 超文本传输协议</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc4271.txt" target="_blank" rel="external">BGP (Border Gateway Protocol) 边界网关协议</a>, <a href="http://www.ietf.org/rfc/rfc3561.txt" target="_blank" rel="external">AODV</a></li>
+<li><a href="http://docs.python.org/library/socket.html" target="_blank" rel="external">sockets</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc1055.txt" target="_blank" rel="external">SLIP</a></li>
+</ul>
+</li>
+<li><a href="http://academy.cba.mit.edu/classes/networking_communications/APTP/notes.html" target="_blank" rel="external">APTP</a></li>
+</ul>
+<h2 id="RF__u5C04_u9891"><a href="#RF__u5C04_u9891" class="headerlink" title="RF 射频"></a>RF 射频</h2><ul>
+<li><a href="http://www.arrl.org/shop/" target="_blank" rel="external">radios</a>: oscillator, mixer, PA, LNA, IF, I/Q, demod, baseband, filters</li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-047166782X.html" target="_blank" rel="external">antennas</a>: Q, antenna gain, impedance matching</li>
+<li>single-chip<ul>
+<li>MICRF (300-470 MHz)</li>
+<li>MRF49XA (433/868/915 MHz)</li>
+<li>nRF905 (433/868/915 MHz)</li>
+<li>nRF24L01+ (2.4 GHz ISM)</li>
+<li>CC2541 (2.4 GHz Bluetooth)</li>
+<li>ESP8266 (2.4 GHz Wi-Fi)</li>
+</ul>
+</li>
+<li><a href="http://gnuradio.org/" target="_blank" rel="external">software radio</a></li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/166236939" target="_blank" rel="external">Week15 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/networking_communications/index.html" target="_blank" rel="external">Week15 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[作业14：合成材料[FabNotes029]]]></title>
+      <url>http://uegeek.com/fabnotes029.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week14.png" alt=""></p>
+<a id="more"></a>   
+<p>这周的作业是</p>
+<blockquote>
+<p>设计和制作一个 3D 模具，在此基础上制造加入纤维的合成材料</p>
+</blockquote>
+<h3 id="u8BBE_u8BA1"><a href="#u8BBE_u8BA1" class="headerlink" title="设计"></a>设计</h3><p>这周的作业灵感来自 Lego 盒子的盖子。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467781168.jpeg" alt=""></p>
+<p>在 Fusion 360 里设计模型：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/FabWeek14lego.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/FabWeek14legoall.png" alt=""></p>
+<p><a href="https://app.box.com/s/cpzpng6p7zbpm4wy94gijms35rgz6cpx" target="_blank" rel="external">设计文件</a>.</p>
+<h3 id="u673A_u5668_u96D5_u523B"><a href="#u673A_u5668_u96D5_u523B" class="headerlink" title="机器雕刻"></a>机器雕刻</h3><p>跟小伙伴们奔到 Fablab XH 借用机器： CNC Router VR1212B。</p>
+<p>换 6mm 的刀头：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768859.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768860.jpeg" alt=""></p>
+<p>参数设置，路径计算：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/FabWeek14CNCSetting.jpg" alt=""></p>
+<p>速度和给进值：</p>
+<ul>
+<li>Chip load: ~ 0.001-0.010” = feed rate (inches per minute) / (RPM x number of flutes)</li>
+<li>Cut depth: ~ tool diameter</li>
+<li>Step-over: ~ tool diameter/2</li>
+</ul>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768861.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768863.jpeg" alt=""></p>
+<p>合成材料的模具做好了：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768865.jpeg" alt=""></p>
+<h3 id="u5408_u6210"><a href="#u5408_u6210" class="headerlink" title="合成"></a>合成</h3><p>我们使用的是抽真空法，材料用的环氧树脂和麻布。</p>
+<p>第一步，先用保鲜膜把模具包好，这样成模以后才好取出。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768978.jpeg" alt=""></p>
+<p>接着，把麻布剪成小块，方便涂抹材料粘贴。在胡教授的帮助下，我们买来新的环氧树脂和固化剂：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768979.jpeg" alt=""></p>
+<p>1：1 混合环氧树脂和固化剂，并充分搅拌：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768980.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768981.jpeg" alt=""></p>
+<p>把麻布一层一层覆盖到模具上：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768983.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768982.jpeg" alt=""></p>
+<p>完成后，放进真空袋：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768984.jpeg" alt=""></p>
+<p>把空气抽出：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768985.jpeg" alt=""></p>
+<p>密封好的真空袋放置一个晚上。第二天，模具硬化，可以取出了：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467768986.jpeg" alt=""></p>
+<p>边缘有一些变形，其他部分都 ok：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467769000.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467769001.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1467769002.jpeg" alt=""></p>
+<hr>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/165323734" target="_blank" rel="external">Week14 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/composites/index.html" target="_blank" rel="external">Week14 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[第十四周：合成材料[FabNotes028]]]></title>
+      <url>http://uegeek.com/fabnotes028.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week14.png" alt=""></p>
+<a id="more"></a>  
+<p>这周学习<a href="http://academy.cba.mit.edu/classes/composites/index.html" target="_blank" rel="external">合成材料</a>.</p>
+<h2 id="u6750_u6599"><a href="#u6750_u6599" class="headerlink" title="材料"></a>材料</h2><p>compression 压缩比 vs tension 张力</p>
+<ul>
+<li>epoxy + carbon fiber 环氧树脂+碳纤维</li>
+<li>concrete + rebar 混凝土+钢筋</li>
+<li>fiberglass 玻璃纤维</li>
+<li>FR1, FR4</li>
+<li>tire 轮胎</li>
+<li>adobe 土砖</li>
+<li>wood 木材 </li>
+</ul>
+<p>fiber 纤维</p>
+<ul>
+<li>chopped 短纤维, filament 灯丝, tape, fabric</li>
+<li>glass 玻璃</li>
+<li>carbon 碳</li>
+<li><p>aramid 芳纶, Kevlar 凯芙拉,芳纶纤维布</p>
+<p>  <img src="http://img.nauticexpo.com/images_ne/photo-mg/39168-345411.jpg" alt=""></p>
+</li>
+<li><p>natural: cotton 棉花, silk 丝, bamboo 竹, wood 木, linen 亚麻, burlap 粗麻布, …</p>
+</li>
+</ul>
+<p>matrix</p>
+<ul>
+<li>epoxy 环氧树脂</li>
+<li>polyester 聚酯,涤纶</li>
+<li>phenolic 酚醛树脂</li>
+<li>urethane 尿烷,氨基甲酸乙酯</li>
+<li>wax 蜡</li>
+<li>cement 水泥</li>
+<li>natural: plant resins 植物树脂, sugars, …</li>
+</ul>
+<h2 id="u4F9B_u5E94_u5546"><a href="#u4F9B_u5E94_u5546" class="headerlink" title="供应商"></a>供应商</h2><ul>
+<li><a href="http://www.mcmaster.com/#garolite" target="_blank" rel="external">McMaster-Carr</a></li>
+<li><a href="http://www.cstsales.com/" target="_blank" rel="external">CST</a></li>
+<li><a href="http://www.westsystem.com/" target="_blank" rel="external">West System</a></li>
+<li><a href="http://www.aeromarineproducts.com/" target="_blank" rel="external">AeroMarine</a></li>
+<li><a href="http://www.jamestowndistributors.com/" target="_blank" rel="external">Jamestown Distributors</a></li>
+<li><a href="http://www.fiberglasssupply.com/" target="_blank" rel="external">Fiberglass Supply</a></li>
+<li><a href="https://entropyresins.com/" target="_blank" rel="external">Entropy Resins</a></li>
+<li><a href="http://www.smooth-on.com/" target="_blank" rel="external">Smooth-On</a></li>
+<li><a href="http://www.ashland.com/solutions/products-services/composite-products-and-services" target="_blank" rel="external">Ashland</a></li>
+<li><a href="http://www.duponttateandlyle.com/products_susterra" target="_blank" rel="external">DuPont</a></li>
+<li><a href="http://www.uscomposites.com/" target="_blank" rel="external">US Composites</a></li>
+<li><a href="http://www.hexcel.com/" target="_blank" rel="external">Hexcel</a></li>
+<li><a href="http://www.exelcomposites.com/" target="_blank" rel="external">Exel</a></li>
+<li><a href="http://www.exelcomposites.com/" target="_blank" rel="external">Exel</a></li>
+<li><a href="http://www.gurit.com/" target="_blank" rel="external">Gurit</a></li>
+</ul>
+<h2 id="u8BBE_u8BA1"><a href="#u8BBE_u8BA1" class="headerlink" title="设计"></a>设计</h2><ul>
+<li>plies 板层</li>
+<li>radius of curvature 曲率</li>
+<li>cores</li>
+<li>spar 晶石, rib, skin</li>
+<li>digital   </li>
+</ul>
+<h2 id="u6D41_u7A0B"><a href="#u6D41_u7A0B" class="headerlink" title="流程"></a>流程</h2><ul>
+<li>cutting, darts, net-shape</li>
+<li>compaction 压实, infusion 浸泡, volume fraction 体积分数</li>
+<li>coupons</li>
+<li>open, closed mold</li>
+<li>wet lay-up, pre-preg, RTM, VARTM</li>
+<li><p>compression molding 压缩模塑法</p>
+<p>   press, clamps, hydrostatic 静压轴承,铃静力轴承,液体静压轴承</p>
+</li>
+<li><p><a href="http://www.westsystem.com/ss/assets/HowTo-Publications/Vacuum-Bagging-Techniques.pdf" target="_blank" rel="external">vacuum bagging 抽真空法</a></p>
+<p>   mold, release, laminate层压板, core, peel ply, bleeder分压器, breather, bag, sealant tape密封, pump</p>
+</li>
+<li><p>autoclave 高压锅</p>
+</li>
+<li>pultrusion 拉挤成型</li>
+<li>trimming</li>
+<li>clear coat</li>
+</ul>
+<h2 id="u6A21_u5177"><a href="#u6A21_u5177" class="headerlink" title="模具"></a>模具</h2><ul>
+<li>machined</li>
+<li>folded</li>
+<li>skinned</li>
+</ul>
+<h2 id="u5B89_u5168"><a href="#u5B89_u5168" class="headerlink" title="安全"></a>安全</h2><ul>
+<li>particles 悬浮颗粒, inhalation 吸入, rashes 皮疹</li>
+<li>respirators, googles, gloves</li>
+<li>fumes 废气, ventilation 通风</li>
+<li>exotherm 放热速度</li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/165323734" target="_blank" rel="external">Week14 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/composites/index.html" target="_blank" rel="external">Week14 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[作业13：输出设备[FabNotes027]]]></title>
+      <url>http://uegeek.com/fabnotes027.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13.png" alt=""></p>
+<a id="more"></a>  
+<p>这周的作业是</p>
+<blockquote>
+<p>给微控制器电路板增加输出元件</p>
+</blockquote>
+<h3 id="u7535_u8DEF_u677F_u8BBE_u8BA1"><a href="#u7535_u8DEF_u677F_u8BBE_u8BA1" class="headerlink" title="电路板设计"></a>电路板设计</h3><p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13-eagle-sch.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13-eagle-brd.png" alt=""></p>
+<p>用 ERC 和 DRC 工具检查错误。确保没有错误后，导出黑白 png 文件。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/output-trace.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/output-outline.png" alt=""></p>
+<p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/uploads/Week13-OutputEagleFiles.zip" target="_blank" rel="external">电路设计源文件</a></p>
+<h3 id="u7535_u8DEF_u677F_u5236_u4F5C"><a href="#u7535_u8DEF_u677F_u5236_u4F5C" class="headerlink" title="电路板制作"></a>电路板制作</h3><p>依旧是用 Roland SMR-20 雕刻电路板。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13fabmodule.png" alt=""></p>
+<p>1/64 刀头刻线路， 1/32 刀头切边缘。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13milledboard.jpeg" alt=""></p>
+<p>焊元件</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13soderedboard.jpeg" alt=""></p>
+<p>然后烧程序</p>
+<p><code>make -f hello.RGB.45.make</code></p>
+<p><code>sudo make -f hello.RGB.45.make program-usbtiny</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avr-objcopy -O ihex hello.RGB.45.out hello.RGB.45.c.hex;\&#10;&#9;avr-size --mcu=attiny45 --format=avr hello.RGB.45.out&#10;AVR Memory Usage&#10;----------------&#10;Device: attiny45&#10;&#10;Program:     338 bytes (8.3% Full)&#10;(.text + .data + .bootloader)&#10;&#10;Data:          0 bytes (0.0% Full)&#10;(.data + .bss + .noinit)&#10;&#10;&#10;avrdude -p t45 -P usb -c usbtiny -U flash:w:hello.RGB.45.c.hex&#10;&#10;avrdude: AVR device initialized and ready to accept instructions&#10;&#10;Reading | ################################################## | 100% 0.01s&#10;&#10;avrdude: Device signature = 0x1e9206&#10;avrdude: NOTE: &#34;flash&#34; memory has been specified, an erase cycle will be performed&#10;         To disable this feature, specify the -D option.&#10;avrdude: erasing chip&#10;avrdude: reading input file &#34;hello.RGB.45.c.hex&#34;&#10;avrdude: input file hello.RGB.45.c.hex auto detected as Intel Hex&#10;avrdude: writing flash (338 bytes):&#10;&#10;Writing | ################################################## | 100% 0.49s&#10;&#10;avrdude: 338 bytes of flash written&#10;avrdude: verifying flash memory against hello.RGB.45.c.hex:&#10;avrdude: load data flash data from input file hello.RGB.45.c.hex:&#10;avrdude: input file hello.RGB.45.c.hex auto detected as Intel Hex&#10;avrdude: input file hello.RGB.45.c.hex contains 338 bytes&#10;avrdude: reading on-chip flash data:&#10;&#10;Reading | ################################################## | 100% 0.72s&#10;&#10;avrdude: verifying ...&#10;avrdude: 338 bytes of flash verified&#10;&#10;avrdude: safemode: Fuses OK (H:FF, E:DF, L:62)&#10;&#10;avrdude done.  Thank you.</span><br></pre></td></tr></table></figure>
+<h3 id="u7F16_u7A0B"><a href="#u7F16_u7A0B" class="headerlink" title="编程"></a>编程</h3><p>在 Arduino 里面写程序。要先选好 ATtiny 板子，ATtiny45 芯片和 8 MHz internal clock。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/arduinosetting8m.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13-Arduino.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int led1 = 1;           // the PWM pin the LED is attached to&#10;int led2 = 2;&#10;int led3 = 0;&#10;int brightness = 0;    // how bright the LED is&#10;int fadeAmount = 5;    // how many points to fade the LED by&#10;&#10;// the setup routine runs once when you press reset:&#10;void setup() &#123;&#10;  // declare pin 1,2,3 to be an output:&#10;  pinMode(led1, OUTPUT);&#10;  pinMode(led2, OUTPUT);&#10;  pinMode(led3, OUTPUT);&#10;&#125;&#10;&#10;// the loop routine runs over and over again forever:&#10;void loop() &#123;&#10;  // set the brightness of pin 1,2,3:&#10;  analogWrite(led1, brightness);&#10;  analogWrite(led2, brightness);&#10;  analogWrite(led3, brightness);&#10;&#10;  // change the brightness for next time through the loop:&#10;  brightness = brightness + fadeAmount;&#10;&#10;  // reverse the direction of the fading at the ends of the fade:&#10;  if (brightness == 0 || brightness == 255) &#123;&#10;    fadeAmount = -fadeAmount ;&#10;  &#125;&#10;  // wait for 30 milliseconds to see the dimming effect&#10;  delay(30);&#10;&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/uploads/Week13-MyRGB.ino" target="_blank" rel="external">代码下载</a>.</p>
+<p>程序写好之后， Burn Bootloader 上传到电路板上。LED 开始工作：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13final.png" alt=""></p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/Comn24MekQg" frameborder="0" allowfullscreen></iframe></div>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/164447297" target="_blank" rel="external">Week13 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/molding_casting/index.html" target="_blank" rel="external">Week13 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[第十三周：输出设备[FabNotes026]]]></title>
+      <url>http://uegeek.com/fabnotes026.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week13.png" alt=""></p>
+<a id="more"></a>  
+<p>这周学习<a href="http://academy.cba.mit.edu/classes/output_devices/index.html" target="_blank" rel="external">输出设备</a>.</p>
+<h3 id="RGB_LED"><a href="#RGB_LED" class="headerlink" title="RGB LED"></a>RGB LED</h3><p><img src="http://media.digikey.com/photos/Cree%20Photos/CLV1A-FKB-CK1N1G1BB7R4S3_sml.jpg" alt=""></p>
+<h3 id="LED__u70B9_u9635"><a href="#LED__u70B9_u9635" class="headerlink" title="LED 点阵"></a>LED 点阵</h3><p><a href="http://www.maxim-ic.com/app-notes/index.mvp/id/1880" target="_blank" rel="external">Charlieplexing</a></p>
+<p><img src="https://www.maximintegrated.com/en/images/appnotes/1880/DI217Fig01T.gif" alt=""></p>
+<h3 id="LCD"><a href="#LCD" class="headerlink" title="LCD"></a>LCD</h3><p><a href="http://academy.cba.mit.edu/classes/output_devices/44780.pdf" target="_blank" rel="external">44780</a></p>
+<p><img src="http://media.digikey.com/photos/Lumex%20Photos/LCM-S01602DTR%5EM_sml.jpg" alt=""></p>
+<h3 id="u89C6_u9891"><a href="#u89C6_u9891" class="headerlink" title="视频"></a>视频</h3><p><a href="https://code.google.com/archive/p/arduino-tvout/" target="_blank" rel="external">arduino-tvout</a></p>
+<p><img src="http://farm5.static.flickr.com/4087/5225072558_5f5f760037.jpg" alt=""></p>
+<p><a href="https://github.com/davidcranor/Thinner-Client" target="_blank" rel="external">Thinner-Client</a></p>
+<h3 id="u626C_u58F0_u5668"><a href="#u626C_u58F0_u5668" class="headerlink" title="扬声器"></a>扬声器</h3><p>MOSFET 场效应晶体管- The metal–oxide–semiconductor field-effect transistor</p>
+<p><img src="http://media.digikey.com/photos/Mallory%20Sonalert%20Products%20Photos/PSR-23F08S-JQ_sml.jpg" alt=""></p>
+<ul>
+<li>floating gates</li>
+<li>gate resistors 门电阻</li>
+<li>low-pass filters 低通滤波器</li>
+<li>class D amplifiers</li>
+</ul>
+<h3 id="u9A6C_u8FBE"><a href="#u9A6C_u8FBE" class="headerlink" title="马达"></a>马达</h3><p><a href="https://www.jameco.com/webapp/wcs/stores/servlet/StoreCatalogDrillDownView?langId=-1&amp;storeId=10001&amp;catalogId=10001&amp;categoryName=cat_3515&amp;subCategoryName=Electromechanical%20%2F%20Motors%20%2F%20DC%20Direct%20Drive&amp;category=351530" target="_blank" rel="external">brush DC motor</a></p>
+<p><img src="http://media.digikey.com/Renders/Allegro%20Microsystems%20Renders/8-SOIC%20EXP%20PAD_sml.jpg" alt=""></p>
+<p>brushless DC motor (BLDC)</p>
+<p><a href="http://www.hobbyking.com/hobbyking/store/__84__189__Servos_and_parts-All_Servos.html" target="_blank" rel="external">servo motor</a></p>
+<p><a href="http://www.jameco.com/webapp/wcs/stores/servlet/StoreCatalogDrillDownView?langId=-1&amp;storeId=10001&amp;catalogId=10001&amp;categoryName=cat_3515&amp;subCategoryName=Electromechanical%20%2F%20Motors%20%2F%20Stepper&amp;category=351580" target="_blank" rel="external">stepper motor</a>: unipolar, bipolar</p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/164447297" target="_blank" rel="external">Week13 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/molding_casting/index.html" target="_blank" rel="external">Week13 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[作业12：做模具[FabNotes025]]]></title>
       <url>http://uegeek.com/fabnotes025.html</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week12.png" alt=""></p>
