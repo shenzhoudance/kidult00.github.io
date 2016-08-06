@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="PDF,Software,Tip," />
+  <meta name="keywords" content="Fab,Maker,Note," />
 
 
 
@@ -88,22 +88,27 @@
 
 
 
-<meta name="description" content="论文终于交上去了，明天要答辩了，中午在做ppt的间隙中打算休息一下把论文word转一个PDF，谁知遇到了不少问题，倒腾了半天才弄好。
-1、下载word另存为pdf的插件Save As PDF and XPS(for word2007) (下载1,下载2),安装,在word中”Save as”选项中就会出现”PDF or XPF”选项,可以选择要转换的页数,设定好后开始转换.
-2、一般来说转换问题就">
+<meta name="description">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Word2007如何转PDF(软件下载)">
-<meta property="og:url" content="http://uegeek.com/title.html">
+<meta property="og:title" content="作业8：刻板焊接烧程序[FabNotes017]">
+<meta property="og:url" content="http://uegeek.com/fabnotes017">
 <meta property="og:site_name" content="00's Adventure">
-<meta property="og:description" content="论文终于交上去了，明天要答辩了，中午在做ppt的间隙中打算休息一下把论文word转一个PDF，谁知遇到了不少问题，倒腾了半天才弄好。
-1、下载word另存为pdf的插件Save As PDF and XPS(for word2007) (下载1,下载2),安装,在word中”Save as”选项中就会出现”PDF or XPF”选项,可以选择要转换的页数,设定好后开始转换.
-2、一般来说转换问题就">
-<meta property="og:updated_time" content="2016-01-06T12:38:42.000Z">
+<meta property="og:description">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/week8.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/FabISPMakeHex.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/usbtinyisp.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/ISPmakefile.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/boardfuseok.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/boardfusemake.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/arduinoAddBoard.png">
+<meta property="og:image" content="http://highlowtech.org/wp-content/uploads/2011/10/boards-manager.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/arduinosetting.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/arduinochangepin.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/boardsucceed.jpeg">
+<meta property="og:updated_time" content="2016-05-08T14:46:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Word2007如何转PDF(软件下载)">
-<meta name="twitter:description" content="论文终于交上去了，明天要答辩了，中午在做ppt的间隙中打算休息一下把论文word转一个PDF，谁知遇到了不少问题，倒腾了半天才弄好。
-1、下载word另存为pdf的插件Save As PDF and XPS(for word2007) (下载1,下载2),安装,在word中”Save as”选项中就会出现”PDF or XPF”选项,可以选择要转换的页数,设定好后开始转换.
-2、一般来说转换问题就">
+<meta name="twitter:title" content="作业8：刻板焊接烧程序[FabNotes017]">
+<meta name="twitter:description">
 
 
 
@@ -124,9 +129,9 @@
 
 
 
-  <link rel="canonical" href="http://uegeek.com/title.html"/>
+  <link rel="canonical" href="http://uegeek.com/fabnotes017"/>
 
-  <title> Word2007如何转PDF(软件下载) | 00's Adventure </title>
+  <title> 作业8：刻板焊接烧程序[FabNotes017] | 00's Adventure </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -308,7 +313,7 @@
             
             
               
-                Word2007如何转PDF(软件下载)
+                作业8：刻板焊接烧程序[FabNotes017]
               
             
           </h1>
@@ -320,8 +325,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2007-05-20T18:49:50+08:00" content="2007-05-20">
-              2007-05-20
+            <time itemprop="dateCreated" datetime="2016-05-08T22:35:37+08:00" content="2016-05-08">
+              2016-05-08
             </time>
           </span>
 
@@ -350,8 +355,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/title.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="title.html" itemprop="commentsCount"></span>
+                <a href="/fabnotes017#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="fabnotes017" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -374,13 +379,107 @@
       
 
       
-        <p>论文终于交上去了，明天要答辩了，中午在做ppt的间隙中打算休息一下把论文word转一个PDF，谁知遇到了不少问题，倒腾了半天才弄好。</p>
-<p>1、下载word另存为pdf的插件Save As PDF and XPS(for word2007) (<a href="http://d.namipan.com/d/910c28393fab710151e784efbd2df448342621e498510800" target="_blank" rel="external">下载1</a>,<a href="http://www.box.net/shared/6dyuyo58n2" target="_blank" rel="external">下载2</a>),安装,在word中”Save as”选项中就会出现”PDF or XPF”选项,可以选择要转换的页数,设定好后开始转换.</p>
-<p>2、一般来说转换问题就解决了,但我的论文中有好多emf格式的图片,转换到PDF后图片有问题,所以要替换成jpg格式的图片.所以又找了个<a href="http://123x.xdowns.com/123up/uploadFile/2007-5/ha_PDFEditor_1.52911.rar" target="_blank" rel="external">PDF编辑器</a> (链接可下载),将PDF里面的图片替换掉.</p>
-<p>3、图片转换.找了半天没看到emf格式的转换软件,一怒之下干脆截图-_-| .</p>
-<p>4、图片替换好后保存.又有问题了,一到某一页就出错自动关闭.找不出原因,只好重新生成一个PDF,把那一页单独导出,再将有问题的PDF除去那一页导出,再加入正常的单页….呼,还以为大功告成,结果一看文件大小—16m! 昏倒.</p>
-<p>5、醒过来后满世界找PDF压缩软件,找到一个但没效果.只好重头做.At last,终于搞出一个正常大小的PDF….</p>
-<p>一看时间,又浪费了好久.明天要答辩的啊,阿门….</p>
+        <p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week8.png" alt=""></p>
+<a id="more"></a>
+<p>这周的作业是</p>
+<blockquote>
+<p>阅读一款微处理器的说明</p>
+<p>制作电路板并编写程序使其运行</p>
+</blockquote>
+<h3 id="u7B2C_u4E00_u8F6E_u5C1D_u8BD5_3A__u81EA_u5DF1_u5236_u4F5C_ISP"><a href="#u7B2C_u4E00_u8F6E_u5C1D_u8BD5_3A__u81EA_u5DF1_u5236_u4F5C_ISP" class="headerlink" title="第一轮尝试: 自己制作 ISP"></a>第一轮尝试: 自己制作 ISP</h3><p>ISP 是为 AVR 芯片制作的编程器，这里有详细的 <a href="http://archive.fabacademy.org/archives/2016/doc/programming_FabISP.html" target="_blank" rel="external">DIY ISP 教程</a>。</p>
+<p>依着教程画葫芦：</p>
+<ul>
+<li><a href="http://www.obdev.at/products/crosspack/index.html" target="_blank" rel="external">下载安装 Crosspack AVR</a></li>
+<li>Get Make </li>
+<li>下载固件 <a href="http://www.as220.org/fabacademy/downloads/fabISP_mac.0.8.2_firmware.zip" target="_blank" rel="external">FabISP Firmware for MacOS 10.8.2</a></li>
+<li>解压固件，命令行进入解压后的目录</li>
+<li>用编辑器打开 Makefile</li>
+<li><p>将模式由 “avrisp2” 改为 “usbtiny”</p>
+<p>  也就是找到以下代码，将注释转移到 “avrisp2”那一行，然后保存文件</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#AVRDUDE = avrdude -c usbtiny -p $(DEVICE) # edit this line for your programmer</span></span><br><span class="line">AVRDUDE = avrdude -c avrisp2 -P usb -p $(DEVICE) <span class="comment"># edit this line for your programmer</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>命令行进入固件目录，输入命令 <code>make clean</code></p>
+<p>  如果正常，将返回结果 <code>rm -f main.hex main.lst main.obj main.cof main.list main.map main.eep.hex main.elf *.o usbdrv/*.o main.s usbdrv/oddebug.s usbdrv/usbdrv.s</code></p>
+<p>  但是这时出现了错误：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">kidults-NMB:fabISP_mac.<span class="number">0.8</span>.<span class="number">2</span>_firmware kidult$ make hex</span><br><span class="line">avr-gcc -Wall -Os -DF_CPU=<span class="number">20000000</span>	 -Iusbdrv -I. -DDEBUG_LEVEL=<span class="number">0</span> -mmcu=attiny44 -c usbdrv/usbdrv.c -o usbdrv/usbdrv.o</span><br><span class="line">make: avr-gcc: No such file or directory</span><br><span class="line">make: *** [usbdrv/usbdrv.o] Error <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>  好吧，忘记插我的 FabISP 到电脑了……插好后再试，ok 的：</p>
+<p>  <img src="http://7xjpra.com1.z0.glb.clouddn.com/FabISPMakeHex.png" alt=""></p>
+</li>
+<li><p>下一步，需要设置 fuse，让板子能使用外部的 clock ：输入命令 <code>make fuse</code></p>
+<p>  又出现了错误：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">avrdude -c usbtiny -p attiny44  -U hfuse:w:<span class="number">0</span>xDF:m -U lfuse:w:<span class="number">0</span>xFF:m</span><br><span class="line">avrdude: Error: Could not find USBtiny device (<span class="number">0</span>x1781/<span class="number">0</span>xc9f)</span><br><span class="line">avrdude done.  Thank you.</span><br><span class="line">make: *** [fuse] Error <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>  查了一圈 google，搞不明白为什么。似乎是 GCC 编译问题，或者是我的板子有问题。第一轮尝试以失败告终。</p>
+</li>
+</ul>
+<h3 id="u7B2C_u4E8C_u8F6E_u5C1D_u8BD5_3A__u4F7F_u7528_u73B0_u6210_u7684_USBtinyISP"><a href="#u7B2C_u4E8C_u8F6E_u5C1D_u8BD5_3A__u4F7F_u7528_u73B0_u6210_u7684_USBtinyISP" class="headerlink" title="第二轮尝试: 使用现成的 USBtinyISP"></a>第二轮尝试: 使用现成的 USBtinyISP</h3><p>首先，下载 <a href="http://academy.cba.mit.edu/classes/embedded_programming/hello.ftdi.44.echo.c" target="_blank" rel="external">hello.ftdi.44.echo.c</a>, <a href="http://academy.cba.mit.edu/classes/embedded_programming/hello.ftdi.44.echo.c.make" target="_blank" rel="external">hello.ftdi.44.echo.c.make</a> 。然后将板子连接到 USBtinyISP:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/usbtinyisp.jpeg" alt=""></p>
+<p>此处需要吐槽一下 New MacBook，只有一个 typeC 接口，一开始 USBtinyISP 接上去灯不亮，以为是我的 typeC 转接口坏了。试了大半个晚上后放弃。第二天试了一下连在另一台 MacBook Pro 上，USBtinyISP 的灯又亮了。插回到 New MacBook，依然不亮，怀疑是不是数据线坏了，又折腾半个晚上。偶然间又发现，充满电再插 USBtinyISP 会亮……所以问题可能出在 typeC 转接口对 USB 供电不足……</p>
+<p>折腾两三个晚上，终于到下一步。命令行进入前面下载好的两个文件的目录，输入命令：<br> <code>make -f hello.ftdi.44.echo.c.make</code></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/ISPmakefile.png" alt=""></p>
+<p>Make 成功了。然后是 <code>sudo make -f hello.ftdi.44.echo.c.make program-usbtiny-fuses</code></p>
+<p>又出现错误提示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">avr-objcopy -O ihex hello.ftdi.<span class="number">44</span>.echo.out hello.ftdi.<span class="number">44</span>.echo.c.hex;\</span><br><span class="line">	avr-size --mcu=attiny44 --format=avr hello.ftdi.<span class="number">44</span>.echo.out</span><br><span class="line">AVR Memory Usage</span><br><span class="line">----------------</span><br><span class="line">Device: attiny44</span><br><span class="line"></span><br><span class="line">Program:     <span class="number">758</span> bytes (<span class="number">18.5</span>% Full)</span><br><span class="line">(.text + .data + .bootloader)</span><br><span class="line"></span><br><span class="line">Data:         <span class="number">64</span> bytes (<span class="number">25.0</span>% Full)</span><br><span class="line">(.data + .bss + .noinit)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">avrdude -p t44 -P usb -c usbtiny -U lfuse:w:<span class="number">0</span>x5E:m</span><br><span class="line"></span><br><span class="line">avrdude: initialization failed, rc=-<span class="number">1</span></span><br><span class="line">         Double check connections and try again, or use -F to override</span><br><span class="line">         this check.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">avrdude done.  Thank you.</span><br><span class="line"></span><br><span class="line">make: *** [program-usbtiny-fuses] Error <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>又开始到处 Google。查看了一下 <a href="http://archive.fabacademy.org/archives/2016/doc/fuses.html" target="_blank" rel="external">fuse 的含义</a> ：</p>
+<blockquote>
+<p>What are the fuses?</p>
+<p>There are 3 bytes of permanent storage in the chip called ‘fuse low byte’, ‘fuse high byte’ and ‘fuse extended byte’. These bytes are called fuses and can be reprogrammed as many times as you want and determines the behaviour of the chip. To do that, their value is not erased when the chip is powered off or reprogrammed.</p>
+<p>Each microchip has its own definition for the values that must have the fuses. </p>
+</blockquote>
+<p>将错误信息复制到 Google，找到了之前的<a href="http://fab.cba.mit.edu/classes/863.12/people/laia.mogassoldevila/projects/p6.html" target="_blank" rel="external">fab note</a>。里面让安装<a href="http://www.ftdichip.com/Drivers/VCP.htm" target="_blank" rel="external">FTDI 芯片的驱动</a>。然并卵，安装好驱动依然是错误提示。</p>
+<p>肯定是板子出问题了。需要去实验室重新刻板子和焊电路。但是实验室扩建装修中，一眨眼几个星期就过去了………………</p>
+<h3 id="u7B2C_u4E09_u8F6E_u5C1D_u8BD5"><a href="#u7B2C_u4E09_u8F6E_u5C1D_u8BD5" class="headerlink" title="第三轮尝试"></a>第三轮尝试</h3><p>终于盼到实验室重新开放，在空气质量500的房间中刻板子，然后搜刮了元器件回家打算自己焊。好不容易把东西凑齐，开工后发现焊锡太粗太劣质，根本没法焊。重新买了焊锡线，开工后崩溃地发现，电烙铁没有买配焊台的，调不了温度，焊枪温度太高，很容易把板子上面的铜面焊焦了。可好的板子都用完了，还是没有重新作出电路板来。</p>
+<p>等到周末，又去到实验室老老实实刻板子，焊元件。</p>
+<p>电路板完成后，连上 USBtinyISP，终于 fuse 成功：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/boardfuseok.png" alt=""></p>
+<p>下一步</p>
+<p><code>make -f hello.ftdi.44.echo.c.make program-usbtiny</code></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/boardfusemake.png" alt=""></p>
+<p>现在，可以将程序烧录到板子上了。</p>
+<p>照着教程下载 <a href="http://academy.cba.mit.edu/classes/input_devices/python/term.py" target="_blank" rel="external">term.py</a>，输入命令 <code>python term.py /dev/ttyUSB0 115200</code>，继续是熟悉的错误提示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"term.py"</span>, line <span class="number">89</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    ser = serial.Serial(port,speed)</span><br><span class="line">  File <span class="string">"/Library/Python/2.7/site-packages/serial/serialutil.py"</span>, line <span class="number">180</span>, <span class="keyword">in</span> __init__</span><br><span class="line">    self.open()</span><br><span class="line">  File <span class="string">"/Library/Python/2.7/site-packages/serial/serialposix.py"</span>, line <span class="number">294</span>, <span class="keyword">in</span> open</span><br><span class="line">    <span class="keyword">raise</span> SerialException(msg.errno, <span class="string">"could not open port %s: %s"</span> % (self._port, msg))</span><br><span class="line">serial.serialutil.SerialException: [Errno <span class="number">2</span>] could <span class="keyword">not</span> open port /dev/ttyUSB0: [Errno <span class="number">2</span>] No such file <span class="keyword">or</span> directory: <span class="string">'/dev/ttyUSB0'</span></span><br></pre></td></tr></table></figure>
+<p>已经处在崩溃边缘，实验室的小伙伴提醒我用 Arduino 去烧程序。于是振作着继续尝试：</p>
+<ol>
+<li><p>添加板子</p>
+<p> 打开 Arduino 的设置，在 “Additional Boards Manager URLs:” 里填上</p>
+<blockquote>
+<p><a href="https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json" target="_blank" rel="external">https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json</a></p>
+</blockquote>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/arduinoAddBoard.png" alt=""></p>
+<p> 然后找到菜单里的 “Tools &gt; Board” ，打开 boards manager 。滚到列表底部，可以看到 “ATtiny”.<br> <img src="http://highlowtech.org/wp-content/uploads/2011/10/boards-manager.png" alt=""></p>
+<p> 安装，然后关闭 boards manager。</p>
+</li>
+<li><p>设置</p>
+<p> 设置 board:”ATtiny”, Processor:”ATtiny44”, Clock:”20 MHz”, Port:”USB”</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/arduinosetting.png" alt=""></p>
+</li>
+<li><p>修改程序</p>
+<p> Load Arduino 自带的 Blink example, 把 13 号引脚改为 7:</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/arduinochangepin.png" alt=""></p>
+</li>
+<li><p>Burn Bootloader</p>
+</li>
+<li><p>成功了！</p>
+<p> <img src="http://7xjpra.com1.z0.glb.clouddn.com/boardsucceed.jpeg" alt=""></p>
+</li>
+</ol>
+<hr>
+<p>一周的作业用了快两个月才完成，觉得毕业希望已经渺茫…………</p>
+<hr>
+<h3 id="u53C2_u8003_u8D44_u6599"><a href="#u53C2_u8003_u8D44_u6599" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="http://highlowtech.org/?p=1695" target="_blank" rel="external">Programming an ATtiny w/ Arduino 1.6 (or 1.0)</a></li>
+<li><a href="http://www.instructables.com/id/Arduino-Examples-2-Use-an-Arduino-as-a-FTDI-Progr/" target="_blank" rel="external">Use an Arduino as a FTDI Programmer</a></li>
+<li><a href="http://fabacademy.org/archives/2015/eu/students/koch.juliette/week7.html" target="_blank" rel="external">classmate’s note1</a></li>
+<li><a href="http://fabacademy.org/archives/2015/eu/students/aloy_ciller.mariona/p/module-seven.html" target="_blank" rel="external">classmate’s note2</a></li>
+<li><a href="http://fabacademy.org/archives/2015/eu/students/escario_mendez.alejandro/embedded_programming.html" target="_blank" rel="external">classmate’s note3</a></li>
+<li><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/408/Web/#p=week_08__embedded_programming" target="_blank" rel="external">classmate’s note4</a></li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/159242917" target="_blank" rel="external">Week8 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/index.html" target="_blank" rel="external">Week8 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
 
       
     </div>
@@ -424,11 +523,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/PDF/" rel="tag">#PDF</a>
+            <a href="/tags/Fab/" rel="tag">#Fab</a>
           
-            <a href="/tags/Software/" rel="tag">#Software</a>
+            <a href="/tags/Maker/" rel="tag">#Maker</a>
           
-            <a href="/tags/Tip/" rel="tag">#Tip</a>
+            <a href="/tags/Note/" rel="tag">#Note</a>
           
         </div>
       
@@ -437,12 +536,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/fabnotes016" rel="next" title="第八周：嵌入式编程[FabNotes016]">
+                <i class="fa fa-chevron-left"></i> 第八周：嵌入式编程[FabNotes016]
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/title.html" rel="prev" title="To SYSU 03GISers">
-                To SYSU 03GISers <i class="fa fa-chevron-right"></i>
+              <a href="/fabnotes018" rel="prev" title="第九周：机械设计[FabNotes018]">
+                第九周：机械设计[FabNotes018] <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -656,7 +759,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C_u4E00_u8F6E_u5C1D_u8BD5_3A__u81EA_u5DF1_u5236_u4F5C_ISP"><span class="nav-number">1.</span> <span class="nav-text">第一轮尝试: 自己制作 ISP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C_u4E8C_u8F6E_u5C1D_u8BD5_3A__u4F7F_u7528_u73B0_u6210_u7684_USBtinyISP"><span class="nav-number">2.</span> <span class="nav-text">第二轮尝试: 使用现成的 USBtinyISP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C_u4E09_u8F6E_u5C1D_u8BD5"><span class="nav-number">3.</span> <span class="nav-text">第三轮尝试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u53C2_u8003_u8D44_u6599"><span class="nav-number">4.</span> <span class="nav-text">参考资料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8BFE_u7A0B_u8D44_u6E90"><span class="nav-number">5.</span> <span class="nav-text">课程资源</span></a></li></ol></div>
             
           </div>
         </section>
@@ -776,9 +879,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'uegeek';
-      var disqus_identifier = 'title.html';
-      var disqus_title = "Word2007如何转PDF(软件下载)";
-      var disqus_url = 'http://uegeek.com/title.html';
+      var disqus_identifier = 'fabnotes017';
+      var disqus_title = "作业8：刻板焊接烧程序[FabNotes017]";
+      var disqus_url = 'http://uegeek.com/fabnotes017';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');

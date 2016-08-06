@@ -1,0 +1,953 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="25InLB4z-lcgUPp1i4Bq6PLaiiF9ntGvLioTu-1Yp3Y" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="2008,总结," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="00's Adventure" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="又走到了一年的最后一天。回看2007的年度总结，一些事历历在目，一些事恍如隔世。刚刚看完爱枣报年终特刊，2008，大家过得都不容易。对我来说，又是重要的一年，不但完成了一个不大不小的愿望和挑战，而且在痛苦中寻找出路，开始转型。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2008这一年">
+<meta property="og:url" content="http://uegeek.com/2008all">
+<meta property="og:site_name" content="00's Adventure">
+<meta property="og:description" content="又走到了一年的最后一天。回看2007的年度总结，一些事历历在目，一些事恍如隔世。刚刚看完爱枣报年终特刊，2008，大家过得都不容易。对我来说，又是重要的一年，不但完成了一个不大不小的愿望和挑战，而且在痛苦中寻找出路，开始转型。">
+<meta property="og:updated_time" content="2016-01-06T00:43:11.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2008这一年">
+<meta name="twitter:description" content="又走到了一年的最后一天。回看2007的年度总结，一些事历历在目，一些事恍如隔世。刚刚看完爱枣报年终特刊，2008，大家过得都不容易。对我来说，又是重要的一年，不但完成了一个不大不小的愿望和挑战，而且在痛苦中寻找出路，开始转型。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://uegeek.com/2008all"/>
+
+  <title> 2008这一年 | 00's Adventure </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-12755583-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?816680a99713dbf6762e7f3a2e3f7a96";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">00's Adventure</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Why join the navy if you can be a pirate</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                2008这一年
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2008-12-31T23:00:28+08:00" content="2008-12-31">
+              2008-12-31
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/叽歪/" itemprop="url" rel="index">
+                    <span itemprop="name">叽歪</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2008all#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2008all" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>又走到了一年的最后一天。回看2007的年度总结，一些事历历在目，一些事恍如隔世。刚刚看完<a href="http://www.izaobao.com/1554.html" target="_blank" rel="external">爱枣报年终特刊</a>，2008，大家过得都不容易。对我来说，又是重要的一年，不但完成了一个不大不小的愿望和挑战，而且在痛苦中寻找出路，开始转型。<br><a id="more"></a></p>
+<p><strong>先是感谢这一年身边和远方的亲友</strong>：</p>
+<ul>
+<li>老爸老妈为我担心了整整一个月，现在又得操心我工作的事，希望来年能让你们安心。</li>
+<li>谢谢朱老师的无条件支持，给我最大的空间和保障，让我完成了在以前看起来是不可能的任务。</li>
+<li>谢谢魏老大，有你在我就不会六神无主。谢谢中心的兄弟姐妹，尤其是整天被我唠叨得烦了的晓静和南同学，还有其他右翼的童鞋们，让小小地下室充满我整天赖在这里的理应。</li>
+<li>谢谢07人文的童鞋们，大家现在见得少了，祝大家都能找到好工作。</li>
+<li>谢谢猪头，今年经历的那么多惶恐与迷茫，你都陪我度过。谢谢好久没有联系过的朋友们，我正想着你们。特别是离开大陆的亲爱的猴、hj、pp、丸子、皮仔，希望你们都过得好。</li>
+<li>谢谢今年认识的全国各地的互助游朋友们，是你们帮助我完成了我的梦想。谢谢芝芝，你给我的不但是旅途中最让人温暖的帮助，而且还有你的传奇故事和去远方的勇气。谢谢杭州地主、上海地主、苏州地主特别是仲一和光明顶、青岛地主、北京地主、太原地主、西安地主、成都和重庆地主，一路上被我蹭饭的涛祖、葫芦、兆头他们、龙哥，当然还有可爱的广州地主。</li>
+<li>感谢今年在求职路上给予我帮助的很多人，谢谢你们，希望不会让你们失望。</li>
+</ul>
+<p>例牌流水账：</p>
+<p>1月：《cat》(<a href="http://linjie.yo2.cn/go/621384.html" target="_blank" rel="external">观后感</a>)登陆羊城，2008在艾云灿事件中拉开了不平凡不平安的序幕。</p>
+<p>2月：回到家，天冷了，长江流域的<a href="http://linjie.yo2.cn/articles/%e6%9c%aa%e6%9d%a530%e5%b9%b4%e5%86%85%e4%bd%8e%e6%b8%a9%e5%86%bb%e5%ae%b3%e6%9c%89%e5%8f%af%e8%83%bd%e9%a2%91%e5%8f%91.html" target="_blank" rel="external">低温雨雪冰冻灾害</a>开始了，还好处在灾区的边缘，一边冷得发抖一边看着新闻，回想着去年那个温暖的冬天。鼠年，第二个本命年轰然而至，没有买red under，老妈给了一串玉珠:P</p>
+<p>3月：TOEFL炼狱月。不知道为什么头脑发热报了名，而且还确定了以后不继续研究僧……现在想起对着屏幕倒计时软件练口语的日子，觉得还是有压力的日子才是人过的日子……3.30 在仲恺对着电脑，精神高度紧张过了四小时，完成了iBT的bt经历，有兴趣的考僧可以看看：<a href="http://linjie.yo2.cn/go/627223.html" target="_blank" rel="external">不是机经</a>。自我折磨的后果还挺丰厚，竟然坚持了一个月7点多起床，并且到现在基本没睡过离谱的懒觉。发誓不写blog的<a href="http://linjie.yo2.cn/archives#2008-03" target="_blank" rel="external">这个月</a>是今年最高产(转载 囧)的一个月，3.14更是看得我头昏眼花，“脑残”和“做人不能太cnn”“五毛党”开始大行其道。</p>
+<p>4月：<a href="http://linjie.yo2.cn/articles/sysu-_-200833.html" target="_blank" rel="external">SYSU的春天很美</a>。考完iBT的这个月很堕落。虽然很多事要做，但是还是百无聊赖地弄了个免费域名搭起了我的<a href="http://linjie.yo2.cn/go/627817.html" target="_blank" rel="external">第n个blog</a>——<a href="http://www.weblust.cn/" target="_blank" rel="external">微辣</a>。对于没有印象的四月，我百分之百肯定我很颓地挥霍掉了。</p>
+<p>5月：很痛苦地跟老大一起写一篇老板风格的论文，还没写完就跑回家了，因为暑假都不能回家了，得提前回去安抚一下老爸老妈。在回学校的火车上，我全然不知千里之外的汶川发生了地震，没有人知道这场灾难将会怎样改变每个人的生活。5.28，三分钟的防空警报响彻全国。<a href="http://linjie.yo2.cn/articles/mymouring.html" target="_blank" rel="external">希望这个冬天，不要太冷</a>。</p>
+<p>6月：大学里最后一个考试的季节，在ppt猛于虎的催逼下，在越来越模糊的记忆力导致的力不从心的绝望中，发现自己比一年前老了，发现自己已经走到了学生生涯的边缘。毕业生的故事依然在上演着，喊喽的激情更甚往年，兄弟姐妹们又走了一拨。半罐嘉士伯让我<a href="http://linjie.yo2.cn/articles/%e5%85%ad%e6%9c%88%e6%b5%81%e6%b0%b4.html" target="_blank" rel="external">过敏</a>了一星期，过了一周猴子+熊猫的生活让我对我的酒量彻底绝望。</p>
+<p>7月：最煎熬的一个月。因为8月要论文调研了，我的<a href="http://linjie.yo2.cn/articles/travel_08.html" target="_blank" rel="external">年度愿望</a>要开工了。找文献，看文献/瞌睡，订路线，选访谈对象，联系，写提纲，买装备，订行程，组织我的后方苦力，做好各种最坏结果的处理方案(真bt –_-)……经常失眠的一个月，焦虑70%，兴奋30%。当然，奥运也就<a href="http://linjie.yo2.cn/articles/olympic_list.html" target="_blank" rel="external">离我一步步远去</a>了。</p>
+<p>8月–9月：继续团团转了十多天，8.13<a href="http://linjie.yo2.cn/articles/08trip_813.html" target="_blank" rel="external">出发了</a>，40l的背包差点没扛住，所幸一路都顺利。杭州西湖边发呆，暴走上海，苏州园林里迷路，青岛看海，天津五大道迷路，北京四处蹭饭，太原风尘仆仆，西安华山看日出，成都住美女家，重庆爬坡。见到了各地的互助游地主，得到了大家热情的帮助，谢谢大家啊！希望以后有机会接待你们的回访！<a href="http://linjie.yo2.cn/articles/category/travel" target="_blank" rel="external">游记</a>到现在还没写完，大囧…… 9.13安全回到家,老爸老妈终于松了一口气,一切perfect,在家过了平淡而意义重大的中秋。感谢老天和所有帮助我的人，让我多年的预谋、今年的目标得以实现。    刚回到学校，回到久违的地下室和电脑前，又被拉到三水进行项目调研，好久没做项目了，规划到底是个咩？</p>
+<p>10月：时间一下子来到了10月，而我还没意识到这意味着什么，也不知道金融海啸的浪尖离我们越来越近。回到学校安定下来，发现要开始找工作了。10.14做好简历，听了第一场宣讲会，11.25第一次笔试，艰难的求职历程开始了。盲目地看招聘信息，盲目地投简历，盲目地网申，盲目地被bs……时间在盲目的状态下总是过的特别快。</p>
+<p>11月：4号毕业论文开题，而三天前我还没弄清楚我的问题到底是什么，惶恐。虽然顺利通过，不过开完题后再没有下文了，自己离学术真是越来越远了。进入海投阶段，感受着就业寒冬的阵阵凉意。11.22处女面，现在想来这一天值得纪念，不是面得好，是因为回来以后我开始真正思考我到底是一个什么样的人，我到底想干什么，我到底能干什么。11月剩下的日子很纠结，想到要放弃六年整个大学阶段的积累，想到要在一个完全没有经验没有优势的行业从最低层做起，想到会受到很多质疑，想到完全没谱的未来，有时就离消极就只差半步了。不过我很走运，虽然并没有企业喜欢的outgoing、aggressive等等符合成功人士特征的完美性格，但是终于明白性格是无法改变的，我应该为我的性格寻找合适的工作，而不是强迫自己去做不适合自己的工作。更走运的是，我有明确的兴趣，而且它指向了一个有前途的行业。于是我做出了决定，暂时不知道它正不正确，不知道它是不是跟我以前做出的重要决定一样，现在看来多少有点荒谬。</p>
+<p>12月：也许是找到了方向，结束了海投，效率变得高起来，也不再像11月那样焦虑和绝望。12.3号招聘会投了6家面了三家，20号之前的面试高峰虽然都是小公司，但是对自己有了重新的认识，知道了什么是我要的，什么是我不愿意做的——我还是固执和任性。过了相当漫长的一周，之前的面试没有任何音信。在等待中我又恢复了中断一年的rss阅读。果然兴趣才是真正的动力所在。一切的改变都是因为你采取了行动。明年，给我一个惊喜吧。</p>
+<p><a href="mailto:wish@2008.12.31" target="_blank" rel="external">wish@2008.12.31</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/qrcode.jpg" alt="kidult00 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫码关注 00 的笔记本</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>支持原创，五毛钱不嫌少~</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/paycode.png" alt="kidult00 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/2008/" rel="tag">#2008</a>
+          
+            <a href="/tags/总结/" rel="tag">#总结</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/travel-08" rel="next" title="一月浓缩多功能型游走计划">
+                <i class="fa fa-chevron-left"></i> 一月浓缩多功能型游走计划
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/toughday" rel="prev" title="人是这样变傻的....">
+                人是这样变傻的.... <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://7xjpra.com1.z0.glb.clouddn.com/avatar.png"
+               alt="kidult00" />
+          <p class="site-author-name" itemprop="name">kidult00</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">142</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">123</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/twee/" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/qop/" target="_blank" title="豆瓣">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/kidult/" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/2LSzkz/" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.instagram.com/kidult00/" target="_blank" title="Instagram">
+                  
+                    <i class="fa fa-fw fa-instagram"></i>
+                  
+                  Instagram
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/kidult00/" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank" rel="external nofollow">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2007 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kidult00</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io" rel="external nofollow">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'uegeek';
+      var disqus_identifier = '2008all';
+      var disqus_title = "2008这一年";
+      var disqus_url = 'http://uegeek.com/2008all';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
