@@ -3,9 +3,9 @@
   <title><![CDATA[00's Adventure]]></title>
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
+  <link href="http://uegeek.com/"/>
   <updated>2016-07-31T12:41:41.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://uegeek.com/</id>
   
   <author>
     <name><![CDATA[kidult00]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[作业12：做模具[FabNotes025]]]></title>
-    <link href="http://yoursite.com/2016/07/31/fabnotes025/"/>
-    <id>http://yoursite.com/2016/07/31/fabnotes025/</id>
+    <link href="http://uegeek.com/2016/07/31/fabnotes025/"/>
+    <id>http://uegeek.com/2016/07/31/fabnotes025/</id>
     <published>2016-07-31T12:39:46.000Z</published>
     <updated>2016-07-31T12:41:41.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week12.png" alt=""></p>
@@ -98,16 +98,16 @@
     
     </summary>
     
-      <category term="Fab - Maker - Note" scheme="http://yoursite.com/tags/Fab-Maker-Note/"/>
+      <category term="Fab - Maker - Note" scheme="http://uegeek.com/tags/Fab-Maker-Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[第十二周：模具和铸件[FabNotes024]]]></title>
-    <link href="http://yoursite.com/2016/07/31/fabnotes024/"/>
-    <id>http://yoursite.com/2016/07/31/fabnotes024/</id>
+    <link href="http://uegeek.com/2016/07/31/fabnotes024/"/>
+    <id>http://uegeek.com/2016/07/31/fabnotes024/</id>
     <published>2016-07-31T12:39:41.000Z</published>
     <updated>2016-07-31T12:40:59.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week12.png" alt=""></p>
@@ -243,20 +243,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[作业11：输入设备[FabNotes023]]]></title>
-    <link href="http://yoursite.com/2016/07/30/fabnotes023/"/>
-    <id>http://yoursite.com/2016/07/30/fabnotes023/</id>
+    <link href="http://uegeek.com/2016/07/30/fabnotes023/"/>
+    <id>http://uegeek.com/2016/07/30/fabnotes023/</id>
     <published>2016-07-30T14:38:53.000Z</published>
     <updated>2016-07-30T14:42:09.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11.png" alt=""></p>
@@ -346,20 +346,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[第十一周：输入设备[FabNotes022]]]></title>
-    <link href="http://yoursite.com/2016/07/29/fabnotes022/"/>
-    <id>http://yoursite.com/2016/07/29/fabnotes022/</id>
+    <link href="http://uegeek.com/2016/07/29/fabnotes022/"/>
+    <id>http://uegeek.com/2016/07/29/fabnotes022/</id>
     <published>2016-07-29T14:38:49.000Z</published>
     <updated>2016-07-30T14:43:24.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11.png" alt=""></p>
@@ -444,20 +444,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[作业10：机械和机器设计[FabNotes021]]]></title>
-    <link href="http://yoursite.com/2016/07/28/fabnotes021/"/>
-    <id>http://yoursite.com/2016/07/28/fabnotes021/</id>
+    <link href="http://uegeek.com/2016/07/28/fabnotes021/"/>
+    <id>http://uegeek.com/2016/07/28/fabnotes021/</id>
     <published>2016-07-28T14:38:44.000Z</published>
     <updated>2016-07-30T14:44:17.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week10.png" alt=""></p>
@@ -517,20 +517,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[第十周：机器设计[FabNotes020]]]></title>
-    <link href="http://yoursite.com/2016/07/27/fabnotes020/"/>
-    <id>http://yoursite.com/2016/07/27/fabnotes020/</id>
+    <link href="http://uegeek.com/2016/07/27/fabnotes020/"/>
+    <id>http://uegeek.com/2016/07/27/fabnotes020/</id>
     <published>2016-07-27T14:38:40.000Z</published>
     <updated>2016-07-30T14:45:38.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week10.png" alt=""></p>
@@ -561,20 +561,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[作业9：制作一台简单机器[FabNotes019]]]></title>
-    <link href="http://yoursite.com/2016/07/26/fabnotes019/"/>
-    <id>http://yoursite.com/2016/07/26/fabnotes019/</id>
+    <link href="http://uegeek.com/2016/07/26/fabnotes019/"/>
+    <id>http://uegeek.com/2016/07/26/fabnotes019/</id>
     <published>2016-07-26T14:38:35.000Z</published>
     <updated>2016-07-30T14:46:29.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week9.png" alt=""></p>
@@ -632,20 +632,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[第九周：机械设计[FabNotes018]]]></title>
-    <link href="http://yoursite.com/2016/07/25/fabnotes018/"/>
-    <id>http://yoursite.com/2016/07/25/fabnotes018/</id>
+    <link href="http://uegeek.com/2016/07/25/fabnotes018/"/>
+    <id>http://uegeek.com/2016/07/25/fabnotes018/</id>
     <published>2016-07-25T14:38:26.000Z</published>
     <updated>2016-07-30T14:49:41.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week9.png" alt=""></p>
@@ -739,20 +739,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[作业8：刻板焊接烧程序[FabNotes017]]]></title>
-    <link href="http://yoursite.com/2016/05/08/fabnotes017/"/>
-    <id>http://yoursite.com/2016/05/08/fabnotes017/</id>
+    <link href="http://uegeek.com/2016/05/08/fabnotes017/"/>
+    <id>http://uegeek.com/2016/05/08/fabnotes017/</id>
     <published>2016-05-08T14:35:37.000Z</published>
     <updated>2016-05-08T14:46:27.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week8.png" alt=""></p>
@@ -862,20 +862,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[第八周：嵌入式编程[FabNotes016]]]></title>
-    <link href="http://yoursite.com/2016/05/01/fabnotes016/"/>
-    <id>http://yoursite.com/2016/05/01/fabnotes016/</id>
+    <link href="http://uegeek.com/2016/05/01/fabnotes016/"/>
+    <id>http://uegeek.com/2016/05/01/fabnotes016/</id>
     <published>2016-05-01T14:35:32.000Z</published>
     <updated>2016-05-08T14:37:37.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week8.png" alt=""></p>
@@ -997,20 +997,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[作业7：用CNC做乐谱架[FabNotes015]]]></title>
-    <link href="http://yoursite.com/2016/04/03/fabnotes015/"/>
-    <id>http://yoursite.com/2016/04/03/fabnotes015/</id>
+    <link href="http://uegeek.com/2016/04/03/fabnotes015/"/>
+    <id>http://uegeek.com/2016/04/03/fabnotes015/</id>
     <published>2016-04-03T08:34:17.000Z</published>
     <updated>2016-07-12T15:19:42.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week7.png" alt=""></p>
@@ -1059,20 +1059,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[第七周：数控机器[FabNotes014]]]></title>
-    <link href="http://yoursite.com/2016/03/30/fabnotes014/"/>
-    <id>http://yoursite.com/2016/03/30/fabnotes014/</id>
+    <link href="http://uegeek.com/2016/03/30/fabnotes014/"/>
+    <id>http://uegeek.com/2016/03/30/fabnotes014/</id>
     <published>2016-03-30T08:30:50.000Z</published>
     <updated>2016-04-03T08:32:35.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week7.png" alt=""></p>
@@ -1138,20 +1138,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[作业6：电路设计[FabNotes013]]]></title>
-    <link href="http://yoursite.com/2016/03/16/fabnotes013/"/>
-    <id>http://yoursite.com/2016/03/16/fabnotes013/</id>
+    <link href="http://uegeek.com/2016/03/16/fabnotes013/"/>
+    <id>http://uegeek.com/2016/03/16/fabnotes013/</id>
     <published>2016-03-16T08:38:59.000Z</published>
     <updated>2016-03-19T14:33:31.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week6.png" alt=""></p>
@@ -1227,20 +1227,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[第六周：电路设计[FabNotes012]]]></title>
-    <link href="http://yoursite.com/2016/03/15/fabnotes012/"/>
-    <id>http://yoursite.com/2016/03/15/fabnotes012/</id>
+    <link href="http://uegeek.com/2016/03/15/fabnotes012/"/>
+    <id>http://uegeek.com/2016/03/15/fabnotes012/</id>
     <published>2016-03-15T08:32:32.000Z</published>
     <updated>2016-03-15T08:33:28.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week6.png" alt=""></p>
@@ -1319,20 +1319,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[作业5：3D 扫描和打印 [FabNotes011]]]></title>
-    <link href="http://yoursite.com/2016/03/11/fabnotes011/"/>
-    <id>http://yoursite.com/2016/03/11/fabnotes011/</id>
+    <link href="http://uegeek.com/2016/03/11/fabnotes011/"/>
+    <id>http://uegeek.com/2016/03/11/fabnotes011/</id>
     <published>2016-03-11T15:04:59.000Z</published>
     <updated>2016-03-11T15:06:10.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week5.png" alt=""></p>
@@ -1385,20 +1385,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[第五周：3D 扫描和打印 [FabNotes010]]]></title>
-    <link href="http://yoursite.com/2016/03/05/fabnotes010/"/>
-    <id>http://yoursite.com/2016/03/05/fabnotes010/</id>
+    <link href="http://uegeek.com/2016/03/05/fabnotes010/"/>
+    <id>http://uegeek.com/2016/03/05/fabnotes010/</id>
     <published>2016-03-05T14:08:34.000Z</published>
     <updated>2016-03-05T14:09:49.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week5.png" alt=""></p>
@@ -1456,20 +1456,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[作业4-制作电路板 [FabNotes009]]]></title>
-    <link href="http://yoursite.com/2016/03/02/fabnotes009/"/>
-    <id>http://yoursite.com/2016/03/02/fabnotes009/</id>
+    <link href="http://uegeek.com/2016/03/02/fabnotes009/"/>
+    <id>http://uegeek.com/2016/03/02/fabnotes009/</id>
     <published>2016-03-02T13:40:46.000Z</published>
     <updated>2016-03-02T13:44:59.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>
@@ -1537,20 +1537,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[第四周：制作电路板 [FabNotes008]]]></title>
-    <link href="http://yoursite.com/2016/03/01/fabnotes008/"/>
-    <id>http://yoursite.com/2016/03/01/fabnotes008/</id>
+    <link href="http://uegeek.com/2016/03/01/fabnotes008/"/>
+    <id>http://uegeek.com/2016/03/01/fabnotes008/</id>
     <published>2016-03-01T13:40:38.000Z</published>
     <updated>2016-03-02T13:44:18.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week4.png" alt=""></p>
@@ -1618,20 +1618,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[作业3：激光切割 [FabNotes007]]]></title>
-    <link href="http://yoursite.com/2016/02/29/fabnotes007/"/>
-    <id>http://yoursite.com/2016/02/29/fabnotes007/</id>
+    <link href="http://uegeek.com/2016/02/29/fabnotes007/"/>
+    <id>http://uegeek.com/2016/02/29/fabnotes007/</id>
     <published>2016-02-29T08:51:26.000Z</published>
     <updated>2016-02-29T08:53:34.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>
@@ -1710,20 +1710,20 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[第三周：机器切割 [FabNotes006]]]></title>
-    <link href="http://yoursite.com/2016/02/27/fabnotes006/"/>
-    <id>http://yoursite.com/2016/02/27/fabnotes006/</id>
+    <link href="http://uegeek.com/2016/02/27/fabnotes006/"/>
+    <id>http://uegeek.com/2016/02/27/fabnotes006/</id>
     <published>2016-02-27T15:09:35.000Z</published>
     <updated>2016-02-27T15:11:40.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week3.png" alt=""></p>
@@ -1763,13 +1763,13 @@
     
     </summary>
     
-      <category term="Fab" scheme="http://yoursite.com/tags/Fab/"/>
+      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
     
-      <category term="Maker" scheme="http://yoursite.com/tags/Maker/"/>
+      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
     
-      <category term="Note" scheme="http://yoursite.com/tags/Note/"/>
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
     
-      <category term="动手" scheme="http://yoursite.com/categories/%E5%8A%A8%E6%89%8B/"/>
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
