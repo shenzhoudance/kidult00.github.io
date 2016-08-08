@@ -4,6 +4,491 @@
   
     
     <entry>
+      <title><![CDATA[作业18：项目版权声明[FabNotes036]]]></title>
+      <url>http://uegeek.com/fabnotes036.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week18.png" alt=""></p>
+<a id="more"></a> 
+<blockquote>
+<p>develop a plan for dissemination of your final project</p>
+<p>  prepare a summary slide (presentation.png, 1280x1024) and video clip (presentation.mp4, 1080p HTML5, &lt; ~minute, &lt; ~10 MB)<br>      in your root directory</p>
+</blockquote>
+<h3 id="Project_or_Product"><a href="#Project_or_Product" class="headerlink" title="Project or Product"></a>Project or Product</h3><p><a href="http://archive.fabacademy.org/archives/2016/fablabshenzhen/students/417/Project-Plan/" target="_blank" rel="external">My final project is a Mini Soundbot</a>. This project was made for fab academy 2016 final project. Most of code are based on open source software and I have no plan for commerciallise. </p>
+<p>I see it less as a product but more as an open source project, people who like music or have some idea about theremin can play, share ideas, code. </p>
+<p>Maybe it can help school kids to learn sensor and frequency of notes. They could learn ultra-sonic sensor working by detecting distance between objects. And by playing the sounds, they would have sense of different notes. I’d personally be very interested in thinking about play and toys like that.</p>
+<h3 id="License"><a href="#License" class="headerlink" title="License"></a>License</h3><p>For the design part of my project, I would like to release them under <strong>‘<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="external">Creative Commons — Attribution-NonCommercial 4.0 International License</a>’</strong>. </p>
+<p><img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt=""></p>
+<blockquote>
+<p>You are free to:</p>
+<p>Share — copy and redistribute the material in any medium or format<br>Adapt — remix, transform, and build upon the material</p>
+<p>The licensor cannot revoke these freedoms as long as you follow the license terms.</p>
+<p>Under the following terms:</p>
+<p>Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p>
+<p>NonCommercial — You may not use the material for commercial purposes.<br>No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</p>
+</blockquote>
+<p>And for the program and application part, I’d like to use <a href="http://academy.cba.mit.edu/classes/invention_IP_business/license.txt" target="_blank" rel="external">fab lab</a> licenses:</p>
+<blockquote>
+<p>(c) Lin Jie 2016-7</p>
+<p>This work may be reproduced, modified, distributed, performed, and displayed for any purpose, but must acknowledge “Mini Soundbot”. Copyright is retained and must be preserved. The work is provided as is; no warranty is provided, and users accept all liability.</p>
+</blockquote>
+<h3 id="Final_presentation"><a href="#Final_presentation" class="headerlink" title="Final presentation"></a>Final presentation</h3><p>Slide:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/presentation.png" alt=""></p>
+<p>Video:</p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/PgKtiaQ3u-M" frameborder="0" allowfullscreen></iframe></div>
+<p><a href="https://youtu.be/PgKtiaQ3u-M" target="_blank" rel="external">Mini SoundBot - Youtube</a></p>
+<p><a href="https://vimeo.com/171525141" target="_blank" rel="external">Mini SoundBot - Vimeo</a></p>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/167147349" target="_blank" rel="external">Week18 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/invention_IP_business/index.html" target="_blank" rel="external">Week18 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[第十八周：发明，专利和收入[FabNotes035]]]></title>
+      <url>http://uegeek.com/fabnotes035.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week18.png" alt=""></p>
+<a id="more"></a> 
+<p>This week is about <a href="http://academy.cba.mit.edu/classes/invention_IP_business/index.html" target="_blank" rel="external">Invention, Intellectual Property, and Income</a>.</p>
+<h2 id="Invention"><a href="#Invention" class="headerlink" title="Invention"></a>Invention</h2><p>   research, development<br>   ready, fire, aim<br>   traffic, pain<br>   ecosystems</p>
+<h2 id="Intellectual_property"><a href="#Intellectual_property" class="headerlink" title="Intellectual property"></a>Intellectual property</h2><p>patents</p>
+<ul>
+<li>types<ul>
+<li>utility (20 years from filing)</li>
+<li>design (15 years from grant)</li>
+</ul>
+</li>
+<li>search</li>
+<li>disclosure<ul>
+<li>private</li>
+<li>public<pre><code>US: 1 year to file
+most international: can&apos;t file
+</code></pre></li>
+<li>defensive</li>
+</ul>
+</li>
+<li>provisional<ul>
+<li>1 year to convert</li>
+<li>included in term</li>
+</ul>
+</li>
+<li>full<ul>
+<li>teaching</li>
+<li>specification, claims</li>
+<li>types:<pre><code>composition,
+method,
+apparatus,
+manufacture
+</code></pre></li>
+</ul>
+</li>
+<li>examination<ul>
+<li>novel, non-obvious, useful</li>
+<li>(im)possibility</li>
+<li>genes, business processes, software</li>
+</ul>
+</li>
+<li>Patent Cooperation Treaty (PCT)<ul>
+<li>nationalization</li>
+<li>EPO</li>
+</ul>
+</li>
+<li>precedence:<br>   first to file vs first to invent </li>
+<li>maintenance</li>
+<li>litigation<ul>
+<li>defense</li>
+<li>identify infringement</li>
+<li>barriers to infringement</li>
+<li>troll, NPE</li>
+<li>~ $100, $1k, $10k, $100k</li>
+</ul>
+</li>
+</ul>
+<p>copyrights</p>
+<ul>
+<li>original works of authorship</li>
+<li>designs, software, circuits, mask works</li>
+<li>reproduce, modify, distribute, perform, display</li>
+<li>secured on creation</li>
+<li>notice of copyright</li>
+<li>registration</li>
+<li>lifetime + 70 years</li>
+<li>licenses: <pre><code>open-source vs free,
+Creative Commons,
+GPL,
+LGPL,
+BSD,
+MIT/X11,
+Apache,
+fab lab
+</code></pre></li>
+</ul>
+<p>trademarks</p>
+<ul>
+<li>establishment</li>
+<li>registration</li>
+<li>protection</li>
+</ul>
+<h2 id="Income"><a href="#Income" class="headerlink" title="Income"></a>Income</h2><ul>
+<li>motivations:<pre><code>financial,
+cultural,
+social
+</code></pre></li>
+<li>sources<pre><code>products,
+consumables,
+licenses,
+advertising,
+platforms,
+infrastructure,
+services:
+   operation,
+   customization,
+   education,
+   research,
+   impact
+</code></pre></li>
+<li>types<ul>
+<li>for-profit:<pre><code>sole proprietor,
+partnership,
+limited liability company (LLC),
+corporation
+</code></pre></li>
+<li>non-profit<pre><code>501(c)(3)
+</code></pre></li>
+<li>hybrid</li>
+</ul>
+</li>
+<li>funding:<pre><code>VC,
+incubator,
+angel,
+friends &amp; family,
+crowdsource,
+loan,
+purchase commitment,
+bootstrap
+</code></pre></li>
+<li>lifecycle<ul>
+<li>(failure of) business plan</li>
+<li>(need for) management team</li>
+<li>(problems in) scaling</li>
+<li>(pressure for) exit</li>
+</ul>
+</li>
+</ul>
+<h2 id="accelerator/incubator/manufacturer"><a href="#accelerator/incubator/manufacturer" class="headerlink" title="accelerator/incubator/manufacturer"></a>accelerator/incubator/manufacturer</h2><ul>
+<li>PCH, Highway 1</li>
+<li>Flextronics, Flex</li>
+<li>Dragon, Bolt</li>
+<li>SEEED, HAX</li>
+<li>Factory For All</li>
+<li>Fab Lab Made</li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/167147349" target="_blank" rel="external">Week18 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/invention_IP_business/index.html" target="_blank" rel="external">Week18 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[作业17：应用[FabNotes034]]]></title>
+      <url>http://uegeek.com/fabnotes034.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week17.png" alt=""></p>
+<a id="more"></a> 
+<blockquote>
+<p>propose a final project<br> that integrates the range of units covered, answering:</p>
+<ul>
+<li>what will it do?</li>
+<li>who’s done what beforehand?</li>
+<li>what materials and components will be required?</li>
+<li>where will they come from?</li>
+<li>how much will it cost?</li>
+<li>what parts and systems will be made?</li>
+<li>what processes will be used?</li>
+<li>what tasks need to be completed?</li>
+<li>what questions need to be answered?</li>
+<li>what is the schedule?</li>
+<li><p>how will it be evaluated?</p>
+<p>projects can be separate or joint, but need to show individual mastery<br>  of the skills covered</p>
+<p>where possible, you should make rather than buy the parts of your project</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="Final_project_proposal"><a href="#Final_project_proposal" class="headerlink" title="Final project proposal"></a>Final project proposal</h3><p>My final project is making a theremin-like instrument.</p>
+<h4 id="what_will_it_do_3F"><a href="#what_will_it_do_3F" class="headerlink" title="what will it do?"></a>what will it do?</h4><p>You can play a song with your hand but without touching anything. It’s like touchless instrument.</p>
+<h4 id="who_u2019s_done_what_beforehand_3F"><a href="#who_u2019s_done_what_beforehand_3F" class="headerlink" title="who’s done what beforehand?"></a>who’s done what beforehand?</h4><p>Many electronics and maker have made theremin. Gaudilab even made a opensource library <a href="http://www.gaudi.ch/OpenTheremin/" target="_blank" rel="external">Open.Theremin</a>. I’d like to make a simple version. And also some simplier projects <a href="http://www.instructables.com/id/Ultrasonic-Theremin/" target="_blank" rel="external">like this</a>.</p>
+<h4 id="what_materials_and_components_will_be_required_3F"><a href="#what_materials_and_components_will_be_required_3F" class="headerlink" title="what materials and components will be required?"></a>what materials and components will be required?</h4><p>Hardware</p>
+<ul>
+<li>ATTiny 45 chip</li>
+<li>Ultrasonic sensor HC-SR04</li>
+<li>AVRISPSMD</li>
+<li>FTDI-SMD-HEADER</li>
+<li>RES 10.0K OHM 1206 SMD</li>
+<li>CAP CER 1UF 1206</li>
+<li>Dupont Line</li>
+</ul>
+<p>Software</p>
+<ul>
+<li>Arduino IDE</li>
+<li>New Ping Library for Arduino IDE</li>
+<li><a href="http://openframeworks.cc/" target="_blank" rel="external">OpenFrameworks</a> </li>
+<li><a href="/github.com/micknoise/Maximilian">Maximillian / ofxMaxim</a> addon for OpenFrameworks</li>
+</ul>
+<p>Housing</p>
+<ul>
+<li>basswood</li>
+<li>3D Printing PLA connection parts</li>
+</ul>
+<h4 id="where_will_they_come_from_3F"><a href="#where_will_they_come_from_3F" class="headerlink" title="where will they come from?"></a>where will they come from?</h4><ul>
+<li>Local electronic vender</li>
+<li>Taobao</li>
+<li>wood suply</li>
+<li>Inventory from our fablab</li>
+</ul>
+<h4 id="how_much_will_it_cost_3F"><a href="#how_much_will_it_cost_3F" class="headerlink" title="how much will it cost?"></a>how much will it cost?</h4><table>
+<thead>
+<tr>
+<th>item</th>
+<th>quantity</th>
+<th>cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Attiny 45</td>
+<td>1</td>
+<td>$ 2</td>
+</tr>
+<tr>
+<td>HC-SR04</td>
+<td>1</td>
+<td>$ 1</td>
+</tr>
+<tr>
+<td>AVRISPSMD</td>
+<td>1</td>
+<td>$ 1</td>
+</tr>
+<tr>
+<td>FTDI-SMD-HEADER</td>
+<td>1</td>
+<td>$ 1</td>
+</tr>
+<tr>
+<td>RES 10.0K OHM 1206 SMD</td>
+<td>2</td>
+<td>$ 0.1</td>
+</tr>
+<tr>
+<td>CAP CER 1UF 1206</td>
+<td>1</td>
+<td>$ 0.1</td>
+</tr>
+<tr>
+<td>Dupont Line</td>
+<td>5</td>
+<td>$ 0.1</td>
+</tr>
+<tr>
+<td>basswood</td>
+<td>2</td>
+<td>$ 10</td>
+</tr>
+<tr>
+<td>3D Printing PLA</td>
+<td>1</td>
+<td>$1</td>
+</tr>
+<tr>
+<td>glue</td>
+<td>1</td>
+<td>$ 1</td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td></td>
+<td><strong>$ 17</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="what_parts_and_systems_will_be_made_3F"><a href="#what_parts_and_systems_will_be_made_3F" class="headerlink" title="what parts and systems will be made?"></a>what parts and systems will be made?</h4><ul>
+<li>the circut</li>
+<li>the program</li>
+<li>the box</li>
+</ul>
+<h4 id="what_processes_will_be_used_3F"><a href="#what_processes_will_be_used_3F" class="headerlink" title="what processes will be used?"></a>what processes will be used?</h4><ul>
+<li>Project plan (Week1, Week17)</li>
+<li>Design the circut (Week6 - Electronics Design)</li>
+<li>Make the PCB (Week4 - Electronic Production)</li>
+<li>Make the circut (Week8 - Embedded Programming, Week11 - Input Devices, Week13 - Output Devices, Week15 - Networking and Communications)</li>
+<li>Test the instrument (Week16 - Interface and Application Programming)</li>
+<li>Design the housing (Week2 - CAD, Week9 - Mechanical Design, Week10 - Machine Design)</li>
+<li>Make the housing (Week3 - Computer-controlled cutting, Week7 - Computer-controlled machining)</li>
+<li>Design and make other components (Week5 - 3D scanning and printing, Week12 - Casting and Molding, Week14 - Composites)</li>
+<li>Assembly and test</li>
+</ul>
+<h4 id="what_tasks_need_to_be_completed_3F"><a href="#what_tasks_need_to_be_completed_3F" class="headerlink" title="what tasks need to be completed?"></a>what tasks need to be completed?</h4><ul>
+<li>study theremin principls</li>
+<li>design schematic in eagle</li>
+<li>design board in eagle</li>
+<li>buy components</li>
+<li>mill the borad</li>
+<li>soldering</li>
+<li>coding</li>
+<li>test input &amp; output part</li>
+<li>design housing parts</li>
+<li>making housing parts</li>
+<li>assemble</li>
+<li>test</li>
+</ul>
+<h4 id="what_questions_need_to_be_answered_3F"><a href="#what_questions_need_to_be_answered_3F" class="headerlink" title="what questions need to be answered?"></a>what questions need to be answered?</h4><ul>
+<li>theremin’s principl</li>
+<li>how the circut works</li>
+<li>how to program input and output</li>
+<li>…</li>
+</ul>
+<h4 id="what_is_the_schedule_3F"><a href="#what_is_the_schedule_3F" class="headerlink" title="what is the schedule?"></a>what is the schedule?</h4><ul>
+<li>study theremin principls (6.9-6.11)</li>
+<li>design schematic in eagle (6.12)</li>
+<li>design board in eagle (6.13)</li>
+<li>buy components (6.15)</li>
+<li>mill the borad (6.18)</li>
+<li>soldering (6.18)</li>
+<li>coding (6.12-6.18)</li>
+<li>test input &amp; output part (6.19)</li>
+<li>design housing parts (6.13-6.15)</li>
+<li>making housing parts (6.18-6.19)</li>
+<li>assemble (6.19)</li>
+<li>test (6.20-6.21)</li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/168070090" target="_blank" rel="external">Week17 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/applications_implications/index.html" target="_blank" rel="external">Week17 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[作业16：界面和应用编程[FabNotes033]]]></title>
+      <url>http://uegeek.com/fabnotes033.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week16.png" alt=""></p>
+<a id="more"></a> 
+<p>这周的作业是</p>
+<blockquote>
+<p>为输入/输出设备写一个应用程序</p>
+</blockquote>
+<p>为之前做的这个检测光线的板子做个小应用好了。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11mylightboard.jpeg" alt=""></p>
+<p>先试着让板子跟串口通讯，看看元件是不是正常传送检测值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#include &#34;SoftwareSerial.h&#34;&#10; &#10;const int analogInPin =  A3;  // Analog input pin that the potentiometer is attached to&#10;int sensorValue = 0;        // value read from the pot&#10; &#10;const int Rx = 2; // this is physical pin 7&#10;const int Tx = 7; // this is physical pin 6&#10;SoftwareSerial mySerial(Rx, Tx);&#10; &#10;void setup() &#123;&#10;  pinMode(Rx, INPUT);&#10;  pinMode(Tx, OUTPUT);&#10;  mySerial.begin(9600); // send serial data at 9600 bits/sec&#10;&#125;&#10;&#10;void loop()&#123;&#10;  sensorValue = analogRead(analogInPin);&#10;  mySerial.println(sensorValue);&#10;  delay(500);&#10;&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1465544599.jpeg" alt=""></p>
+<p>光电晶体管工作正常。 </p>
+<p><a href="https://youtu.be/IOLJht_QtZU" target="_blank" rel="external">Video</a></p>
+<p>下一步，在 processing 里面写界面的程序。当检测到光线变暗时，界面提示 “-_- It’s dark!” ，如果光线变亮，提示 “it’s getting light ”：<br><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1465547042.jpeg" alt=""></p>
+<p>The code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import processing.serial.*;&#10;Serial myPort;&#10;int lf = 10;&#10; &#10;void setup()&#123;&#10;  size(300,300);&#10;  myPort = new Serial(this,&#34;/dev/tty.usbserial-A400gwhT&#34;,9600);&#10;  textAlign(CENTER, CENTER);&#10;  fill(255);&#10;  textSize(20);&#10;&#125;&#10; &#10;void draw()&#123;&#10;  while(myPort.available() &#62; 0)&#123;&#10;    String str = myPort.readStringUntil(lf);&#10;&#10;    if(str!=null)&#123;&#10;      int value = Integer.parseInt(trim(str));&#10; &#10;       if (value &#62;900) &#123;&#10;        print(&#34;it&#39;s dark &#34;);&#10;        println(value);&#10;        background(0,0,0);&#10;        text(&#34;-_- It&#39;s dark! &#34;,150,120);&#10;        text(value,150,200);&#10;       &#125; &#10;       else&#123;&#10;        print(&#34;it&#39;s getting light &#34;);&#10;        println(value);&#10;        background(204,153,0);&#10;        text(&#34;:P It&#39;s getting light &#34;,150,120);&#10;        text(value,150,200);&#10;       &#125;&#10;    &#125;&#10;  &#125;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<div class="video-container"><iframe src="//www.youtube.com/embed/O1mLcUZq9NM" frameborder="0" allowfullscreen></iframe></div>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/167147349" target="_blank" rel="external">Week16 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/interface_application_programming/index.html" target="_blank" rel="external">Week16 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[第十六周：界面和应用编程[FabNotes032]]]></title>
+      <url>http://uegeek.com/fabnotes032.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week16.png" alt=""></p>
+<a id="more"></a> 
+<p>这周学习<a href="http://academy.cba.mit.edu/classes/interface_application_programming/index.html" target="_blank" rel="external">界面和应用编程</a>.</p>
+<h2 id="u7F16_u7A0B_u8BED_u8A00"><a href="#u7F16_u7A0B_u8BED_u8A00" class="headerlink" title="编程语言"></a>编程语言</h2><ul>
+<li><a href="http://helloworldcollection.de/" target="_blank" rel="external">hello world</a></li>
+<li><a href="http://publications.gbdirect.co.uk/c_book/" target="_blank" rel="external">C</a>, <a href="http://gcc.gnu.org/" target="_blank" rel="external">GCC</a>, <a href="http://gcc.gnu.org/projects/cxx0x.html" target="_blank" rel="external">C++</a>, <a href="http://www.gnu.org/software/gdb/" target="_blank" rel="external">GDB (debugger)</a>, <a href="http://www.gnu.org/software/ddd/" target="_blank" rel="external">DDD (graphical viewer)</a></li>
+<li><a href="http://www.java.com/" target="_blank" rel="external">Java</a>, <a href="http://openjdk.java.net/" target="_blank" rel="external">OpenJDK</a>, <a href="http://icedtea.classpath.org/wiki/Main_Page" target="_blank" rel="external">IcedTea</a>, <a href="http://www.scala-lang.org/" target="_blank" rel="external">Scala</a>, <a href="http://developer.android.com/index.html" target="_blank" rel="external">Android</a></li>
+<li><a href="https://www.haskell.org/" target="_blank" rel="external">Haskell</a></li>
+<li><a href="http://processing.org/" target="_blank" rel="external">Processing</a>, <a href="http://www.wiring.org.co/" target="_blank" rel="external">Wiring</a>, <a href="http://www.arduino.cc/" target="_blank" rel="external">Arduino</a></li>
+<li>data flow: <a href="http://www.ni.com/labview/" target="_blank" rel="external">LabVIEW</a>, <a href="http://www.mathworks.com/products/simulink/" target="_blank" rel="external">Simulink</a>, <a href="http://cycling74.com/" target="_blank" rel="external">Max (for music)</a>, <a href="http://puredata.info/" target="_blank" rel="external">Pd</a>, <a href="http://scratch.mit.edu/" target="_blank" rel="external">Scratch (for kids)</a>, <a href="http://appinventor.mit.edu/" target="_blank" rel="external">App Inventor</a>, <a href="http://www.grasshopper3d.com/" target="_blank" rel="external">Grasshopper</a>, <a href="http://www.fireflyexperiments.com/" target="_blank" rel="external">Firefly</a></li>
+<li><a href="http://www.gnu.org/s/bash/" target="_blank" rel="external">Bash</a>, <a href="http://www.tcl.tk/" target="_blank" rel="external">Tcl</a></li>
+<li>Interpretive language: <a href="http://www.python.org/" target="_blank" rel="external">Python</a>, <a href="http://docs.python.org/tutorial/" target="_blank" rel="external">tutorial</a>, <a href="http://www.perl.org/" target="_blank" rel="external">Perl</a>, <a href="http://www.ruby-lang.org/en/" target="_blank" rel="external">Ruby</a></li>
+<li><a href="http://www.ecmascript.org/" target="_blank" rel="external">JavaScript</a>, <a href="http://www.ecmascript.org/" target="_blank" rel="external">JavaScript</a>, <a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a>, <a href="https://developers.google.com/v8/" target="_blank" rel="external">V8 (Google Chrome)</a>, <a href="https://www.npmjs.org/" target="_blank" rel="external">npm (package manager for node)</a>, <a href="https://www.npmjs.org/" target="_blank" rel="external">npm</a>, <a href="https://webassembly.github.io/" target="_blank" rel="external">WebAssembly (compile js)</a></li>
+<li><a href="http://tryapl.org/" target="_blank" rel="external">APL</a></li>
+</ul>
+<h2 id="u8BBE_u5907_u63A5_u53E3"><a href="#u8BBE_u5907_u63A5_u53E3" class="headerlink" title="设备接口"></a>设备接口</h2><ul>
+<li>for serial communication: <a href="http://www.camiresearch.com/Data_Com_Basics/RS232_standard.html" target="_blank" rel="external">RS/EIA/TIA 232/422/485</a>, <a href="https://github.com/pyserial/pyserial" target="_blank" rel="external">pySerial</a>, <a href="https://www.npmjs.org/package/serialport" target="_blank" rel="external">serialport</a>, <a href="https://www.npmjs.org/package/serialport" target="_blank" rel="external">serialport</a></li>
+<li>USB - serial:<a href="http://www.ftdichip.com/" target="_blank" rel="external">FTDI</a>, <a href="http://www.intra2net.com/en/developer/libftdi/" target="_blank" rel="external">libFTDI</a>, <a href="http://packages.ubuntu.com/python-ftdi" target="_blank" rel="external">python-ftdi</a>, <a href="https://www.npmjs.com/package/ftdi" target="_blank" rel="external">node ftdi lib</a></li>
+<li><a href="http://www.usb.org/" target="_blank" rel="external">USB</a>, <a href="http://sourceforge.net/apps/trac/pyusb/" target="_blank" rel="external">PyUSB</a>, <a href="https://www.npmjs.com/package/usb" target="_blank" rel="external">node usb lib</a> </li>
+<li><a href="http://www.irda.org/" target="_blank" rel="external">IrDA</a>, <a href="https://pypi.python.org/pypi/irda" target="_blank" rel="external">python-irda</a></li>
+<li><a href="http://www.ni.com/gpib/" target="_blank" rel="external">GPIB</a>, <a href="http://www.ni.com/visa/" target="_blank" rel="external">VISA</a>, <a href="https://pyvisa.readthedocs.io/en/stable/" target="_blank" rel="external">PyVISA: Control your instruments with Python — PyVISA 1.8 documentation</a></li>
+<li>IOT: <a href="http://mqtt.org/" target="_blank" rel="external">MQTT</a>, <a href="http://xmpp.org/about-xmpp/" target="_blank" rel="external">XMPP</a></li>
+<li>Native netwrok interface: <a href="http://docs.python.org/2/library/socket.html" target="_blank" rel="external">socket</a>, <a href="https://nodejs.org/api/dgram.html" target="_blank" rel="external">dgram</a>, <a href="https://nodejs.org/api/net.html" target="_blank" rel="external">net</a>, <a href="https://www.npmjs.org/package/ws" target="_blank" rel="external">node websocket package</a></li>
+</ul>
+<h2 id="u6570_u636E_u63A5_u53E3"><a href="#u6570_u636E_u63A5_u53E3" class="headerlink" title="数据接口"></a>数据接口</h2><ul>
+<li>sheet: <a href="https://www.libreoffice.org/discover/calc/" target="_blank" rel="external">Calc</a>, <a href="https://www.google.com/sheets/about/" target="_blank" rel="external">Sheets</a></li>
+<li>py sheet: <a href="http://manns.github.io/pyspread/" target="_blank" rel="external">Pyspread</a>, <a href="http://pandas.pydata.org/" target="_blank" rel="external">Pandas</a></li>
+<li><a href="https://www.mysql.com/" target="_blank" rel="external">MySQL</a>, <a href="https://www.mongodb.org/" target="_blank" rel="external">MongoDB</a></li>
+</ul>
+<h2 id="u7528_u6237_u754C_u9762"><a href="#u7528_u6237_u754C_u9762" class="headerlink" title="用户界面"></a>用户界面</h2><ul>
+<li><a href="http://www.tcl.tk/" target="_blank" rel="external">Tk</a>, <a href="http://www.pythonware.com/library/tkinter/introduction/index.htm" target="_blank" rel="external">Tkinter</a>: <a href="http://academy.cba.mit.edu/classes/input_devices/step/hello.load.45.py" target="_blank" rel="external">hello.load.45.py</a></li>
+<li><a href="http://wxwidgets.org/" target="_blank" rel="external">wxWidgets</a>, <a href="http://www.wxpython.org/" target="_blank" rel="external">wxPython</a>: <a href="http://kokompe.cba.mit.edu/index.html" target="_blank" rel="external">panel_png_path.py</a></li>
+<li><a href="http://qt.digia.com/" target="_blank" rel="external">Qt (antimony)</a>, <a href="http://wiki.python.org/moin/PyQt" target="_blank" rel="external">PyQt</a></li>
+<li><a href="http://www.gtk.org/" target="_blank" rel="external">GTK</a>, <a href="http://www.pygtk.org/" target="_blank" rel="external">PyGTK</a></li>
+<li><a href="http://www.pygtk.org/" target="_blank" rel="external">PyGTK</a>, <a href="http://www.modrana.org/pyclutter_tutorial/tutorial/html/sec-pyclutter.html" target="_blank" rel="external">PyClutter</a></li>
+<li><a href="http://kivy.org/" target="_blank" rel="external">Kivy</a>(cross platform)</li>
+<li><a href="http://www.w3.org/TR/html5/forms.html" target="_blank" rel="external">forms</a>, <a href="http://www.w3.org/TR/html5/forms.html" target="_blank" rel="external">forms</a></li>
+<li>Framworks: <a href="http://requirejs.org/" target="_blank" rel="external">Require</a>, <a href="http://requirejs.org/" target="_blank" rel="external">Require</a>, <a href="https://angularjs.org/" target="_blank" rel="external">Angular</a>, <a href="https://angularjs.org/" target="_blank" rel="external">Angular</a>, <a href="http://emberjs.com/" target="_blank" rel="external">Ember</a>, <a href="http://emberjs.com/" target="_blank" rel="external">Ember</a>, <a href="https://www.meteor.com/" target="_blank" rel="external">Meteor</a>, <a href="https://babeljs.io/" target="_blank" rel="external">Babel</a></li>
+</ul>
+<h2 id="u56FE_u5F62"><a href="#u56FE_u5F62" class="headerlink" title="图形"></a>图形</h2><ul>
+<li>low level: <a href="http://www.x.org/" target="_blank" rel="external">X Windows</a></li>
+<li>java: <a href="http://www.oracle.com/technetwork/java/index.html" target="_blank" rel="external">AWT, JFC, Swing</a></li>
+<li><a href="http://www.w3.org/TR/2dcontext/" target="_blank" rel="external">Canvas</a></li>
+<li><a href="http://www.w3.org/TR/SVG/" target="_blank" rel="external">SVG</a></li>
+<li>3D graphics: <a href="http://www.khronos.org/webgl/" target="_blank" rel="external">WebGL</a>, <a href="http://threejs.org/" target="_blank" rel="external">Three.js</a></li>
+<li><a href="http://www.opengl.org/" target="_blank" rel="external">OpenGL</a>, <a href="http://www.opengl.org/resources/libraries/glut/" target="_blank" rel="external">GLUT</a>, <a href="http://www.opengl.org/resources/libraries/glut/" target="_blank" rel="external">GLUT</a></li>
+<li>CG: <a href="http://renderman.pixar.com/view/non-commercial-renderman" target="_blank" rel="external">RenderMan</a>, <a href="http://renderman.pixar.com/view/non-commercial-renderman" target="_blank" rel="external">RenderMan</a>, <a href="http://www.renderpixie.com/" target="_blank" rel="external">Pixie</a></li>
+<li>complex data: <a href="http://www.vtk.org/" target="_blank" rel="external">VTK</a>, <a href="http://www.vtk.org/Wiki/VTK/Writing_VTK_files_using_python" target="_blank" rel="external">pyvtk</a>, <a href="http://www.vtk.org/Wiki/VTK/Writing_VTK_files_using_python" target="_blank" rel="external">pyvtk</a></li>
+<li>3D BIO data: <a href="http://www.openvdb.org/" target="_blank" rel="external">OpenVDB</a></li>
+<li>Game engine: <a href="https://unity3d.com/webplayer" target="_blank" rel="external">Unity</a></li>
+<li>GPU: <a href="https://developer.nvidia.com/cuda-zone" target="_blank" rel="external">CUDA</a>, <a href="https://www.khronos.org/opencl/" target="_blank" rel="external">OpenCL</a></li>
+</ul>
+<h2 id="u591A_u5A92_u4F53"><a href="#u591A_u5A92_u4F53" class="headerlink" title="多媒体"></a>多媒体</h2><ul>
+<li><a href="http://www.libsdl.org/" target="_blank" rel="external">SDL</a>, <a href="http://www.pygame.org/" target="_blank" rel="external">Pygame</a></li>
+<li><a href="http://www.openframeworks.cc/" target="_blank" rel="external">openFrameworks</a>, <a href="http://code.google.com/p/openframeworks-python-bindings/downloads/list" target="_blank" rel="external">ofpython</a></li>
+<li><a href="http://www.html5rocks.com/en/features/multimedia" target="_blank" rel="external">HTML5</a>, <a href="http://www.webrtc.org/" target="_blank" rel="external">WebRTC (realtime audio &amp; video)</a></li>
+</ul>
+<h2 id="u6570_u5B66"><a href="#u6570_u5B66" class="headerlink" title="数学"></a>数学</h2><ul>
+<li><a href="http://www.scipy.org/" target="_blank" rel="external">SciPy</a>, <a href="http://www.numpy.org/" target="_blank" rel="external">NumPy</a>, <a href="http://ipython.org/" target="_blank" rel="external">IPython</a>, <a href="http://jupyter.org/" target="_blank" rel="external">Jupyter</a></li>
+<li>low level lib: <a href="http://www.netlib.org/" target="_blank" rel="external">Netlib</a>, <a href="http://www.netlib.org/blas/" target="_blank" rel="external">BLAS</a>, <a href="http://www.netlib.org/linpack/" target="_blank" rel="external">LINPACK</a>, <a href="http://www.netlib.org/lapack/" target="_blank" rel="external">LAPACK</a></li>
+<li><a href="http://www.mathworks.com/" target="_blank" rel="external">MATLAB</a>, <a href="http://www.gnu.org/software/octave/" target="_blank" rel="external">Octave</a></li>
+<li><a href="http://matplotlib.org/" target="_blank" rel="external">matplotlib</a>, <a href="http://stanford.edu/~mwaskom/software/seaborn/" target="_blank" rel="external">Seaborn</a></li>
+<li><a href="http://www.r-project.org/" target="_blank" rel="external">R</a>, <a href="http://rpy.sourceforge.net/" target="_blank" rel="external">RPy</a>, <a href="http://ggplot2.org/" target="_blank" rel="external">ggplot2</a></li>
+<li>symbolic: <a href="http://www.wolfram.com/" target="_blank" rel="external">Mathematica</a>, <a href="http://www.wolfram.com/" target="_blank" rel="external">Mathematica</a>, <a href="http://docs.sympy.org/" target="_blank" rel="external">SymPy</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays" target="_blank" rel="external">typed arrays</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Performance/Using_web_workers" target="_blank" rel="external">web workers</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader" target="_blank" rel="external">file reader</a></li>
+<li><a href="http://mathjs.org/" target="_blank" rel="external">Math.js</a>, <a href="http://mathjs.org/" target="_blank" rel="external">Math.js</a>, <a href="https://www.npmjs.org/package/science" target="_blank" rel="external">Science.js</a></li>
+<li><a href="http://www.jqplot.com/" target="_blank" rel="external">jqPlot</a>, <a href="http://d3js.org/" target="_blank" rel="external">D3</a>, <a href="http://www.highcharts.com/" target="_blank" rel="external">Highcharts</a></li>
+<li><a href="http://www.rle.mit.edu/dspg/pub_books.html" target="_blank" rel="external">signal processing</a>, <a href="http://www.cambridge.org/us/academic/subjects/physics/computational-science-and-modelling/nature-mathematical-modeling" target="_blank" rel="external">modeling</a></li>
+</ul>
+<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
+<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
+<li><a href="https://vimeo.com/167147349" target="_blank" rel="external">Week16 课程视频</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/interface_application_programming/index.html" target="_blank" rel="external">Week16 课程大纲</a></li>
+<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
+<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[作业15：网络和通信[FabNotes031]]]></title>
       <url>http://uegeek.com/fabnotes031.html</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week15.png" alt=""></p>
