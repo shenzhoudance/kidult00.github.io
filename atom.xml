@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://uegeek.com/"/>
-  <updated>2016-08-10T14:23:24.000Z</updated>
+  <updated>2016-08-10T15:14:11.000Z</updated>
   <id>http://uegeek.com/</id>
   
   <author>
@@ -19,15 +19,16 @@
     <link href="http://uegeek.com/fabnotes-finalproject.html"/>
     <id>http://uegeek.com/fabnotes-finalproject.html</id>
     <published>2016-08-10T14:20:48.000Z</published>
-    <updated>2016-08-10T14:23:24.000Z</updated>
+    <updated>2016-08-10T15:14:11.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/%5BFabFinal%5DVideoTitle1.jpg" alt=""></p>
 <a id="more"></a> 
-<h3 id="u8D77_u6E90"><a href="#u8D77_u6E90" class="headerlink" title="起源"></a>起源</h3><p>在开始的开始，我打算做一个特雷门琴 <a href="https://en.wikipedia.org/wiki/Theremin" target="_blank" rel="external">Theremin</a>。它是一种奇葩乐器，1919年由俄国物理学家 Theremin 教授发明，也是世界上第一种不需要身体接触就可以演奏的乐器。</p>
+<h3 id="u8D77_u6E90"><a href="#u8D77_u6E90" class="headerlink" title="起源"></a>起源</h3><p>在开始的开始，我打算做一个特雷门琴 <a href="https://en.wikipedia.org/wiki/Theremin" target="_blank" rel="external">Theremin</a>。它是一种奇葩乐器，1919年由俄国物理学家 Theremin 教授发明，也是世界上第一种不需要身体接触就可以演奏的乐器（电子音乐的鼻祖）。</p>
 <p><img src="http://cnet1.cbsistatic.com/hub/i/r/2013/11/02/a0d46b02-6de8-11e3-913e-14feb5ca9861/resize/570xauto/d9feb99e1358983a3e909096ea0aca72/01_UM_Project___Odd_Harmonics___LR.jpg" alt=""></p>
-<p>但是，在研究特雷门亲的原理时，被复杂的电路和声学原理吓得有点懵：</p>
+<p>但是，在研究特雷门琴的原理时，被复杂的电路和声学原理吓得有点懵：</p>
 <p><img src="http://farm4.staticflickr.com/3739/9533739769_8714d81f89.jpg" alt=""></p>
 <p><img src="http://7xjpra.com1.z0.glb.clouddn.com/opentheremin_place_v2_web.png" alt=""></p>
-<p>认怂了以后，调整原计划为一个简化版本：做一个迷你机器人，如果在机器人面前移动手的位置，机器人就会根据手掌距离自己的距离，发出不同声调的音符。你可以在不碰机器人的情况下，指挥它演奏一段乐曲。既不是完整的特雷门琴，也不是机器人瓦力，只好叫做特雷·瓦力 （英文名 Mini Soundbot 又名迷你骚包）</p>
+<p>认怂了以后，调整原计划为一个简化版本：做一个迷你机器人，如果在机器人面前移动手的位置，机器人就会根据手掌距离自己的距离，发出不同声调的音符。你可以在不碰机器人的情况下，指挥它演奏一段乐曲。</p>
+<p>因为既不是完整的特雷门琴，也不是机器人瓦力，只好叫做特雷·瓦力 （英文名 Mini Soundbot 又名迷你骚包）</p>
 <p>草得不能再草的草图：</p>
 <p><img src="http://7xjpra.com1.z0.glb.clouddn.com/projectsketch.jpeg" alt=""></p>
 <h3 id="u9879_u76EE_u8BA1_u5212"><a href="#u9879_u76EE_u8BA1_u5212" class="headerlink" title="项目计划"></a>项目计划</h3><p>期末作业的截止完成时间是 6.22，时间不多，必需做好时间计划。</p>
@@ -249,13 +250,17 @@
 <p> 项目管理很重要，即便只是个人项目。如果没有确切的时间表和关键任务列表，整个过程会变得地狱般忙乱。一旦把看似复杂的整个项目拆解成任务列表，并且明确每个任务的期限，每一步行动就有了目标，也就没有太多的时间去焦虑。更重要的是，把每个任务需要产出的结果和标准给出来，会更明确下一步要做什么，以及做到什么程度就应该继续下一个任务，而不是无休止的纠缠于细节。</p>
 </li>
 <li><p>学习了音频和音乐制作的一些原理</p>
-<p> 如果通过程序将传感器信号转换成为有规律的音符。音阶和频率都很有意思（有时候也让人摸不着头脑），当然，还有不少音乐制作的基础概念，比如 propagation 传播， amplitude 振幅，frequency 频率和timbre 音色。</p>
+<p> 如何通过程序将传感器信号转换成为有规律的音符。音阶和频率都很有意思（有时候也让人摸不着头脑），当然，还有不少音乐制作的基础概念，比如 propagation 传播， amplitude 振幅，frequency 频率和timbre 音色。</p>
 </li>
 <li><p>使用第三方框架和插件来提高效率</p>
 <p> 在开源的世界和神奇的 github，不用再重复造轮子，有大量的优秀的项目和组件库等着被挖宝，虽然仔细地读文档和看例子挺费时间，但相比自己去实现复杂的功能，这个投入的性价比实在太高了。</p>
 </li>
 </ol>
-<h3 id="u5F85_u5B8C_u5584_u90E8_u5206"><a href="#u5F85_u5B8C_u5584_u90E8_u5206" class="headerlink" title="待完善部分"></a>待完善部分</h3><p>程序的稳定性依然有待改善。目前只做到了音阶的转换，但是没有实现特雷门琴的另一个主要特性：用手掌距离的远近控制音量大小。更有趣的做法是，做一个可以自动播放旋律的装置，而不是手工去演奏。</p>
+<h3 id="u5F85_u5B8C_u5584_u90E8_u5206"><a href="#u5F85_u5B8C_u5584_u90E8_u5206" class="headerlink" title="待完善部分"></a>待完善部分</h3><ul>
+<li>程序的稳定性依然有待改善</li>
+<li>目前只做到了音阶的转换，但是没有实现特雷门琴的另一个主要特性：用手掌距离的远近控制音量大小</li>
+<li>更有趣的做法是，做一个可以自动播放旋律的装置，而不是手工去演奏。</li>
+</ul>
 <h2 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h2><p>特雷门原理图：</p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Block_diagram_Theremin.png" alt=""></p>
 <ul>
@@ -276,6 +281,13 @@
 <li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
 <li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
 </ul>
+<h3 id="u81F4_u8C22"><a href="#u81F4_u8C22" class="headerlink" title="致谢"></a>致谢</h3><p>这半年，要感谢很多人：实验室的小伙伴，guru 们，工作上的小伙伴，被我拒绝周末约饭的小伙伴们，谢谢大家对我的理解和支持。</p>
+<p>特别感谢在我发出攒学费帖之后，慷慨赞助的各位 （如有遗漏，一定是我人品问题，请原谅）：</p>
+<blockquote>
+<p>妙音，simba，phoebe，洁菁，寒塘月色，柚柚柚，fuckwisdom，陈宇，suer，麦子，大园，z.xh，jessie，free，路遥，kyle，健莹，煎蛋，yue，小木子，samper，范偲，张轩铭，许豆浆，安静，贺嘉50，立颖，flujoo，王莹，俊辉，小泉，陈阳 x2，Mango 芒果，馒头先生，塔拉，莫楠，蕉哥，计海彪，魏雷，erin，sasa，超 net，萦雅，毛毛 x3，沈浪，apple 熊，润悟，夏影，jasper，青溪，张昀儿，阳老 x5，大妈，欣怡，班长，hawa，氦</p>
+</blockquote>
+<p>以及给每一篇笔记打赏和留言、给我极大鼓励的朋友们。过程很难熬，好在有你们的鼓励。</p>
+<p>鞠躬，谢谢！！</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/%5BFabFinal%5DVideoTitle1.jpg" alt=""></p>]]>
