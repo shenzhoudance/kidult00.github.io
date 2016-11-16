@@ -112,7 +112,7 @@
     <link href="http://uegeek.com/mindlego4-bayes.html"/>
     <id>http://uegeek.com/mindlego4-bayes.html</id>
     <published>2016-10-30T13:25:57.000Z</published>
-    <updated>2016-11-16T13:28:58.000Z</updated>
+    <updated>2016-11-16T13:36:51.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Bayes&#39;_Theorem_MMB_01.jpg" alt=""></p>
 <a id="more"></a> 
 <p>感谢大家对标题党 00 的宽容，这篇文章的完整标题应该是：很傻很天真 - 但是拥有迷妹万千 - 不黄很暴力 - 十分钟提高智商的贝叶斯定理。</p>
@@ -164,41 +164,11 @@
 <p>用贝叶斯定理进行计算，步骤是这样的：</p>
 <p>令 <code>S</code> 表示患病事件，<code>N</code>表示未患病事件，<code>Y</code>表示检验结果为阳性事件。</p>
 <p>我们想要计算的是，在检验结果为阳性的条件下，张三确实「叶贝死」的概率： </p>
-<p>$$P(S|Y)=\frac{P(Y|S)P(S)}{P(Y)}$$</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-fomula2.jpeg" alt=""></p>
 <p>从题目中找到公式右边的三个变量：</p>
-<table>
-<thead>
-<tr>
-<th>变量</th>
-<th>含义</th>
-<th>题目描述</th>
-<th>值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>P(Y\</td>
-<td>S)</td>
-<td>患病时检验结果为阳性的概率</td>
-<td>在患者确实得病的情况下，它有 99.9 %的可能呈现阳性</td>
-<td>0.999</td>
-</tr>
-<tr>
-<td>P(S)</td>
-<td>患病的概率</td>
-<td>某种疾病的发病率是0.0001</td>
-<td>0.0001</td>
-</tr>
-<tr>
-<td>P(Y)</td>
-<td>检验结果为阳性的概率</td>
-<td>某种疾病的发病率是0.0001，在患者确实得病的情况下，它有 99.9% 的可能呈现阳性；患者没有得病的情况下，它有 0.1% 的可能呈现阳性</td>
-<td>0.0001*0.999+0.9999*0.001</td>
-</tr>
-</tbody>
-</table>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-table1.jpeg" alt=""></p>
 <p>将表格中的值代入上面公式可得</p>
-<p>$$P(S|Y)=\frac{0.999\cdot0.0001}{0.0001\cdot0.999+0.9999\cdot0.001}=0.090834697$$</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-fomula3.jpeg" alt=""></p>
 <p>结果为：9%</p>
 <h2 id="u5973/_u7537_u795E_u5230_u5E95_u7231_u4E0D_u7231_u6211"><a href="#u5973/_u7537_u795E_u5230_u5E95_u7231_u4E0D_u7231_u6211" class="headerlink" title="女/男神到底爱不爱我"></a>女/男神到底爱不爱我</h2><p>正襟危坐这么久，终于可以回到正题胡说八道了。</p>
 <blockquote>
@@ -207,7 +177,7 @@
 <p>世界上不知道有多少痴汉，每天在痴痴地等着某个微信好友头像出现新消息提示。每发出一条消息，心中就有一群问题如羊驼般呼啸而过：ta 在忙吗？会不会看不到我的消息？一分钟过去了他还是没有回我的消息，我要不要再等等？刚才那条消息会不会太无聊了啊我自己可能都懒得回我怎么这么蠢啊？不过说不定 ta 今天心情好或者正在无聊地等车呢？不知道其他人给他发消息他会秒回呢还是要等高冷的一小时？哎呀如果 ta 回复了我该说些什么呢？啊啊啊什么时候可以见到 ta？我们都认识这么久了 ta 对我到底有没有意思呢？…………</p>
 <p>生活在这些问题中，实在是太可怕了。</p>
 <p>自黑党的痴汉们，做痴汉也要做得有极客范。用贝叶斯定理来帮助我们 YY 吧！把羊驼们哄回羊圈，沐浴斋戒，摊开纸笔，写下通往未知和答案的神奇公式：</p>
-<p>$$P(喜欢一个人|回微信)=\frac{P(回微信|喜欢一个人)P(喜欢一个人)}{P(回微信)}$$</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-fomula6.jpeg" alt=""></p>
 <ul>
 <li>P(喜欢一个人|回微信)：回复微信的情况下喜欢一个人的概率</li>
 <li>P(回微信|喜欢一个人)：喜欢一个人时会回复微信的概率</li>
@@ -215,36 +185,10 @@
 <li>P(回微信)：女/男神正常情况下回复微信的概率</li>
 </ul>
 <p>假设你通过八卦、潜伏、收买人心、纯粹臆想等花式调研，获得了以下情报：</p>
-<table>
-<thead>
-<tr>
-<th>情报</th>
-<th>高冷女神 C</th>
-<th>阳光男神 S</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>P(回微信\</td>
-<td>喜欢一个人)</td>
-<td>50%</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>P(喜欢一个人)</td>
-<td>0.1%</td>
-<td>5%</td>
-</tr>
-<tr>
-<td>P(回微信)</td>
-<td>10%</td>
-<td>90%</td>
-</tr>
-</tbody>
-</table>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-table2.jpeg" alt=""></p>
 <p>那么计算的结果是：</p>
-<p>$$P(女神喜欢你)=\frac{0.5\cdot0.001}{0.1}=0.5\% $$</p>
-<p>$$P(男神喜欢你)=\frac{1\cdot0.05}{0.9}=5.6\% $$</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-fomula4.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-fomula5.jpeg" alt=""></p>
 <p>结论1：女神真难追啊！</p>
 <p>结论2：少年你想多了，这概率比 P2P 的投资回报率还低，还是乖乖回家提升自己吧！</p>
 <p>结论3：愚蠢的人类，用微信就想推断女/男神的心？有本事约去旅行看看？</p>
