@@ -5,10 +5,10 @@
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
@@ -31,7 +31,7 @@
 
   
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -65,9 +65,9 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Design,service design,服务设计,设计," />
@@ -81,7 +81,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
@@ -108,24 +108,35 @@ Day 1：服务设计峰会
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Muse',
     sidebar: {"position":"left","display":"always"},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
 
-
   <link rel="canonical" href="http://uegeek.com/2014ixdcnotes-servicedesign.html"/>
+
+
+
+
 
   <title> IxDC大会笔记1——服务设计峰会 | 00's Adventure </title>
 </head>
@@ -279,6 +290,8 @@ Day 1：服务设计峰会
   
 </nav>
 
+
+
  </div>
     </header>
 
@@ -292,13 +305,26 @@ Day 1：服务设计峰会
     
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://uegeek.com/2014ixdcnotes-servicedesign.html">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="kidult00">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://7xjpra.com1.z0.glb.clouddn.com/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="00's Adventure">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="00's Adventure" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -317,24 +343,30 @@ Day 1：服务设计峰会
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-07-17T00:15:42+08:00" content="2014-07-17">
-              2014-07-17
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Дата создания записи" itemprop="dateCreated datePublished" datetime="2014-07-17T00:15:42+08:00">
+                2014-07-17
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/设计/" itemprop="url" rel="index">
                     <span itemprop="name">设计</span>
                   </a>
@@ -342,7 +374,6 @@ Day 1：服务设计峰会
 
                 
                 
-
               
             </span>
           
@@ -350,9 +381,9 @@ Day 1：服务设计峰会
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
                 <a href="/2014ixdcnotes-servicedesign.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014ixdcnotes-servicedesign.html" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014ixdcnotes-servicedesign.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -364,6 +395,9 @@ Day 1：服务设计峰会
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -437,7 +471,7 @@ Day 1：服务设计峰会
         
 <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
     <img id="wechat_subscriber_qcode" src="/uploads/qrcode.jpg" alt="kidult00 wechat" style="width: 200px; max-width: 100%;"/>
-    <div>扫码关注 00 的笔记本</div>
+    <div>扫码关注 00 的公众号</div>
 </div>
 
 
@@ -467,17 +501,18 @@ Day 1：服务设计峰会
       
     </div>
 
+
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/Design/" rel="tag">#Design</a>
+            <a href="/tags/Design/" rel="tag"># Design</a>
           
-            <a href="/tags/service-design/" rel="tag">#service design</a>
+            <a href="/tags/service-design/" rel="tag"># service design</a>
           
-            <a href="/tags/服务设计/" rel="tag">#服务设计</a>
+            <a href="/tags/服务设计/" rel="tag"># 服务设计</a>
           
-            <a href="/tags/设计/" rel="tag">#设计</a>
+            <a href="/tags/设计/" rel="tag"># 设计</a>
           
         </div>
       
@@ -491,6 +526,8 @@ Day 1：服务设计峰会
               </a>
             
           </div>
+
+          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -583,7 +620,7 @@ Day 1：服务设计峰会
         </ul>
       
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xjpra.com1.z0.glb.clouddn.com/avatar.png"
@@ -691,7 +728,7 @@ Day 1：服务设计峰会
         
         
           <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank" rel="external nofollow">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
               <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
             </a>
           </div>
@@ -700,19 +737,27 @@ Day 1：服务设计峰会
         
         
 
+        
+
+
       </section>
 
       
+      <!--noindex-->
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
+
             
               
             
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E00_u3001_u4EC0_u4E48_u662F_u670D_u52A1_u8BBE_u8BA1_uFF1F"><span class="nav-number">1.</span> <span class="nav-text">一、什么是服务设计？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E8C_u3001_u670D_u52A1_u8BBE_u8BA1_u4E3A_u4F55_u5174_u8D77_uFF1F"><span class="nav-number">2.</span> <span class="nav-text">二、服务设计为何兴起？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E09_u3001_u670D_u52A1_u8BBE_u8BA1_u9886_u57DF"><span class="nav-number">3.</span> <span class="nav-text">三、服务设计领域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u56DB_u3001_u670D_u52A1_u8BBE_u8BA1_u7684_u5173_u952E_u601D_u60F3"><span class="nav-number">4.</span> <span class="nav-text">四、服务设计的关键思想</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-_u5168_u5C40_u89C6_u89D2"><span class="nav-number">4.1.</span> <span class="nav-text">1.全局视角</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-_u95EE_u5BF9_u7684_u95EE_u9898"><span class="nav-number">4.2.</span> <span class="nav-text">2.问对的问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-_u4EE5_u4EBA_u4E3A_u672C"><span class="nav-number">4.3.</span> <span class="nav-text">3.以人为本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-_u8BBE_u8BA1_u601D_u7EF4_u548C_u65B9_u6CD5"><span class="nav-number">4.4.</span> <span class="nav-text">4.设计思维和方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-_u9488_u5BF9_u4F53_u9A8C_u91CD_u65B0_u8BBE_u8BA1_u6574_u4E2A_u6D41_u7A0B"><span class="nav-number">4.5.</span> <span class="nav-text">5.针对体验重新设计整个流程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-_u56E2_u961F_u53C2_u4E0E"><span class="nav-number">4.6.</span> <span class="nav-text">6.团队参与</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E94_u3001_u8BBE_u8BA1_u5E08_u89D2_u8272_u4EE5_u53CA_u5982_u4F55_u63A8_u52A8"><span class="nav-number">5.</span> <span class="nav-text">五、设计师角色以及如何推动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u516D_u3001_u5982_u4F55_u8861_u91CF_u670D_u52A1_u8BBE_u8BA1_u7684_u597D_u574F_u548C_u4EF7_u503C"><span class="nav-number">6.</span> <span class="nav-text">六、如何衡量服务设计的好坏和价值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E03_u3001_u670D_u52A1_u8BBE_u8BA1_u548C_u521B_u65B0"><span class="nav-number">7.</span> <span class="nav-text">七、服务设计和创新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u516B_u3001_u8DE8_u6587_u5316_u7684_u670D_u52A1_u8BBE_u8BA1"><span class="nav-number">8.</span> <span class="nav-text">八、跨文化的服务设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E5D_u3001_u5982_u4F55_u5E73_u8861_u5546_u4E1A_u548C_u8BBE_u8BA1_u7684_u4EBA_u6587_u5173_u6000"><span class="nav-number">9.</span> <span class="nav-text">九、如何平衡商业和设计的人文关怀</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5341_u3001_u8BBE_u8BA1_u5E08_u7684_u4FEE_u70BC"><span class="nav-number">10.</span> <span class="nav-text">十、设计师的修炼</span></a></li></ol></div>
             
+
           </div>
         </section>
+      <!--/noindex-->
       
 
     </div>
@@ -735,16 +780,18 @@ Day 1：服务设计峰会
   <span class="author" itemprop="copyrightHolder">kidult00</span>
 </div>
 
+
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io" rel="external nofollow">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
   主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>
 </div>
+
 
         
 
@@ -778,46 +825,46 @@ Day 1：服务设计峰会
 
 
   
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
@@ -830,10 +877,11 @@ Day 1：服务设计峰会
     <script type="text/javascript">
       var disqus_shortname = 'uegeek';
       var disqus_identifier = '2014ixdcnotes-servicedesign.html';
-      var disqus_title = "IxDC大会笔记1——服务设计峰会";
-      var disqus_url = 'http://uegeek.com/2014ixdcnotes-servicedesign.html';
 
-      function run_disqus_script(disqus_script){
+      var disqus_title = "IxDC大会笔记1——服务设计峰会";
+
+
+      function run_disqus_script(disqus_script) {
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
@@ -842,11 +890,19 @@ Day 1：服务设计峰会
       }
 
       run_disqus_script('count.js');
+
       
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
         run_disqus_script('embed.js');
       
+
     </script>
   
+
 
 
 
@@ -859,7 +915,7 @@ Day 1：服务设计峰会
     // Search DB path;
     var search_path = "search.xml";
     if (search_path.length == 0) {
-       search_path = "search.xml";
+      search_path = "search.xml";
     }
     var path = "/" + search_path;
     // monitor main search box;
@@ -867,99 +923,95 @@ Day 1：服务设计峰会
     function proceedsearch() {
       $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
       $('.popup').toggle();
-
     }
     // search function;
     var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
+      'use strict';
+      $.ajax({
         url: path,
         dataType: "xml",
         async: true,
         success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
                     }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
                     }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
         }
-    });}
+      });}
 
     // handle and trigger popup window;
     $('.popup-trigger').click(function(e) {
@@ -969,7 +1021,6 @@ Day 1：服务设计峰会
       } else {
         proceedsearch();
       };
-
     });
 
     $('.popup-btn-close').click(function(e){
@@ -988,8 +1039,23 @@ Day 1：服务设计峰会
   
 
   
-<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
+
+  
 
 
 </body>

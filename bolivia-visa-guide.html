@@ -5,10 +5,10 @@
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
@@ -31,7 +31,7 @@
 
   
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -65,9 +65,9 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Travel,签证," />
@@ -81,7 +81,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
@@ -104,24 +104,35 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Muse',
     sidebar: {"position":"left","display":"always"},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
 
-
   <link rel="canonical" href="http://uegeek.com/bolivia-visa-guide.html"/>
+
+
+
+
 
   <title> 天煞的玻利维亚旅游签证攻略 | 00's Adventure </title>
 </head>
@@ -275,6 +286,8 @@
   
 </nav>
 
+
+
  </div>
     </header>
 
@@ -288,13 +301,26 @@
     
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://uegeek.com/bolivia-visa-guide.html">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="kidult00">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://7xjpra.com1.z0.glb.clouddn.com/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="00's Adventure">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="00's Adventure" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -313,24 +339,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2013-11-30T23:13:25+08:00" content="2013-11-30">
-              2013-11-30
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Дата создания записи" itemprop="dateCreated datePublished" datetime="2013-11-30T23:13:25+08:00">
+                2013-11-30
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/行走/" itemprop="url" rel="index">
                     <span itemprop="name">行走</span>
                   </a>
@@ -338,7 +370,6 @@
 
                 
                 
-
               
             </span>
           
@@ -346,9 +377,9 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
                 <a href="/bolivia-visa-guide.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="bolivia-visa-guide.html" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="bolivia-visa-guide.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -360,6 +391,9 @@
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -473,7 +507,7 @@
         
 <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
     <img id="wechat_subscriber_qcode" src="/uploads/qrcode.jpg" alt="kidult00 wechat" style="width: 200px; max-width: 100%;"/>
-    <div>扫码关注 00 的笔记本</div>
+    <div>扫码关注 00 的公众号</div>
 </div>
 
 
@@ -503,13 +537,14 @@
       
     </div>
 
+
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/Travel/" rel="tag">#Travel</a>
+            <a href="/tags/Travel/" rel="tag"># Travel</a>
           
-            <a href="/tags/签证/" rel="tag">#签证</a>
+            <a href="/tags/签证/" rel="tag"># 签证</a>
           
         </div>
       
@@ -523,6 +558,8 @@
               </a>
             
           </div>
+
+          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -615,7 +652,7 @@
         </ul>
       
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xjpra.com1.z0.glb.clouddn.com/avatar.png"
@@ -723,7 +760,7 @@
         
         
           <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank" rel="external nofollow">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
               <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
             </a>
           </div>
@@ -732,19 +769,27 @@
         
         
 
+        
+
+
       </section>
 
       
+      <!--noindex-->
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
+
             
               
             
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u66F4_u65B0_uFF1A_u73B0_u5728_u5DF2_u7ECF_u4E0D_u9700_u8981_u65E0_u72AF_u7F6A_u8BB0_u5F55_u8BC1_u660E_uFF01"><span class="nav-number">1.</span> <span class="nav-text"> 更新：现在已经不需要无犯罪记录证明！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E00_u3001_u4E0B_u5B9A_u51B3_u5FC3"><span class="nav-number">1.1.</span> <span class="nav-text">一、下定决心</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E8C_u3001_u51C6_u5907_u6750_u6599"><span class="nav-number">1.2.</span> <span class="nav-text">二、准备材料</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u2460_u501F_u51FA_u6237_u53E3_u5361_uFF08_u5982_u679C_u6237_u53E3_u662F_u96C6_u4F53_u6237_uFF09"><span class="nav-number">1.2.1.</span> <span class="nav-text">①借出户口卡（如果户口是集体户）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u2461_u627E_u4E00_u5BB6_u516C_u8BC1_u5904_u529E_u7406_u65E0_u72AF_u7F6A_u8BB0_u5F55_u516C_u8BC1_uFF08_u542B_u7FFB_u8BD1_uFF09"><span class="nav-number">1.2.2.</span> <span class="nav-text">②找一家公证处办理无犯罪记录公证（含翻译）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u2462_u53D6_u516C_u8BC1_u5E76_u5F00_u4ECB_u7ECD_u4FE1"><span class="nav-number">1.2.3.</span> <span class="nav-text">③取公证并开介绍信</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u2463_u5230_u5E7F_u4E1C_u7701_u5916_u4E8B_u670D_u52A1_u4E2D_u5FC3_u8BA4_u8BC1_u90E8_u529E_u7406_u65E0_u72AF_u7F6A_u8BB0_u5F55_u53CC_u8BA4_u8BC1"><span class="nav-number">1.2.4.</span> <span class="nav-text">④到广东省外事服务中心认证部办理无犯罪记录双认证</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u2464_u5230_u94F6_u884C_u529E_u5B58_u6B3E_u8BC1_u660E"><span class="nav-number">1.2.5.</span> <span class="nav-text">⑤到银行办存款证明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u2465_u8054_u7CFB_u73BB_u5F53_u5730_u65C5_u884C_u793E_u7D22_u8981_u884C_u7A0B_u5B89_u6392"><span class="nav-number">1.2.6.</span> <span class="nav-text">⑥联系玻当地旅行社索要行程安排</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u2466_u5230_u643A_u7A0B_u7F51_u51FA_u673A_u7968_u9884_u8BA2_u5355"><span class="nav-number">1.2.7.</span> <span class="nav-text">⑦到携程网出机票预订单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u2467_u51C6_u5907_u7167_u7247"><span class="nav-number">1.2.8.</span> <span class="nav-text">⑧准备照片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u2468_u6253_u9EC4_u70ED_u75C5_u75AB_u82D7"><span class="nav-number">1.2.9.</span> <span class="nav-text">⑨打黄热病疫苗</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u2469_u51C6_u5907_u9152_u5E97_u9884_u8BA2_u5355"><span class="nav-number">1.2.10.</span> <span class="nav-text">⑩准备酒店预订单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u246A_u62FF_u5230_u53CC_u8BA4_u8BC1_u7684_u516C_u8BC1_u4E66_uFF08_u90A3_u4E00_u523B_u592A_u9E21_u51BB_u4EBA_u5FC3_u4E86_uFF09"><span class="nav-number">1.2.11.</span> <span class="nav-text">⑪拿到双认证的公证书（那一刻太鸡冻人心了）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u246B_u7528_u82F1_u8BED_u6216_u897F_u73ED_u7259_u8BED_u586B_u5199_u7B7E_u8BC1_u7533_u8BF7_u8868"><span class="nav-number">1.2.12.</span> <span class="nav-text">⑫用英语或西班牙语填写签证申请表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u246C_u6309_u8981_u6C42_u590D_u5370_u5168_u90E8_u6750_u6599"><span class="nav-number">1.2.13.</span> <span class="nav-text">⑬按要求复印全部材料</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u246D_u5982_u679C_u9700_u8981_u4ED6_u4EBA_u4EE3_u8868_u9001_u7B7E_uFF0C_u51C6_u5907_u597D_u6709_u81EA_u5DF1_u7B7E_u540D_u7684_u59D4_u6258_u4E66"><span class="nav-number">1.2.14.</span> <span class="nav-text">⑭如果需要他人代表送签，准备好有自己签名的委托书</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E09_u3001_u9001_u7B7E"><span class="nav-number">1.3.</span> <span class="nav-text">三、送签</span></a></li></ol></li></ol></div>
             
+
           </div>
         </section>
+      <!--/noindex-->
       
 
     </div>
@@ -767,16 +812,18 @@
   <span class="author" itemprop="copyrightHolder">kidult00</span>
 </div>
 
+
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io" rel="external nofollow">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
   主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>
 </div>
+
 
         
 
@@ -810,46 +857,46 @@
 
 
   
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
@@ -862,10 +909,11 @@
     <script type="text/javascript">
       var disqus_shortname = 'uegeek';
       var disqus_identifier = 'bolivia-visa-guide.html';
-      var disqus_title = "天煞的玻利维亚旅游签证攻略";
-      var disqus_url = 'http://uegeek.com/bolivia-visa-guide.html';
 
-      function run_disqus_script(disqus_script){
+      var disqus_title = "天煞的玻利维亚旅游签证攻略";
+
+
+      function run_disqus_script(disqus_script) {
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
@@ -874,11 +922,19 @@
       }
 
       run_disqus_script('count.js');
+
       
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
         run_disqus_script('embed.js');
       
+
     </script>
   
+
 
 
 
@@ -891,7 +947,7 @@
     // Search DB path;
     var search_path = "search.xml";
     if (search_path.length == 0) {
-       search_path = "search.xml";
+      search_path = "search.xml";
     }
     var path = "/" + search_path;
     // monitor main search box;
@@ -899,99 +955,95 @@
     function proceedsearch() {
       $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
       $('.popup').toggle();
-
     }
     // search function;
     var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
+      'use strict';
+      $.ajax({
         url: path,
         dataType: "xml",
         async: true,
         success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
                     }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
                     }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
         }
-    });}
+      });}
 
     // handle and trigger popup window;
     $('.popup-trigger').click(function(e) {
@@ -1001,7 +1053,6 @@
       } else {
         proceedsearch();
       };
-
     });
 
     $('.popup-btn-close').click(function(e){
@@ -1020,8 +1071,23 @@
   
 
   
-<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
+
+  
 
 
 </body>
