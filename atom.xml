@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://uegeek.com/"/>
-  <updated>2016-11-16T13:29:42.000Z</updated>
+  <updated>2016-12-05T02:51:43.000Z</updated>
   <id>http://uegeek.com/</id>
   
   <author>
@@ -13,6 +13,526 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[产品经理的用研手册03 - 成也需求，败也需求]]></title>
+    <link href="http://uegeek.com/pm-ur-handbook3.html"/>
+    <id>http://uegeek.com/pm-ur-handbook3.html</id>
+    <published>2016-12-05T02:33:47.000Z</published>
+    <updated>2016-12-05T02:51:43.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article3-titu.jpg" alt=""></p>
+<a id="more"></a> 
+<blockquote>
+<p>如果你根本不知道自己在讨论什么，那么对其强求精确是毫无意义的。 —— 冯·诺依曼</p>
+</blockquote>
+<p>我们用「产品」这个词来表示那些试图满足一系列复合期望的产物。复合意味着它们来自许多人。找到谁是这些「人」，是明确需求的一个主要部分。上一篇，00 分享了一些如何分类和描述用户的经验：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article2-qr.png" alt=""></p>
+<p>接下来，我们将要走进需求的沼泽，深入产品开发险恶的腹地，看看需求这个妖孽如何把众多产品经理拖入泥潭之中。</p>
+<p>需求很关键，可现实往往是，人们不知道自己想要什么；而且，产品经理不知道人们想要什么；雪上加霜的是，产品经理不知道人们不知道他们想要什么……产品开发再高效也好，都是一种浪费。认真探索需求，我们才不会做出然并卵的产品。</p>
+<p>关于万恶的需求，有两个最最关键的问题：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-MostImportAboutRequirement.jpg" alt=""></p>
+<p>能清楚回答第一个问题，是合格的产品经理，能正确回答第二个问题，才是好的产品经理。</p>
+<h2 id="u9700_u6C42_u662F_u4EC0_u4E48"><a href="#u9700_u6C42_u662F_u4EC0_u4E48" class="headerlink" title="需求是什么"></a>需求是什么</h2><p>从前，有一只狡猾的妖孽，叫做「需求」。</p>
+<p>它长着一张模糊的脸，而且是一张会千变万化的脸，最善于迷惑那些苦苦寻找它的人。不同的人看到这个妖孽，描述出来的样貌都不一样，似乎从来没有人能识别它的真面目 —— 还是说，它就没有真面目？（摊手）</p>
+<h3 id="u533A_u5206_u9700_u6C42_u548C_u89E3_u51B3_u65B9_u6848"><a href="#u533A_u5206_u9700_u6C42_u548C_u89E3_u51B3_u65B9_u6848" class="headerlink" title="区分需求和解决方案"></a>区分需求和解决方案</h3><p>人们之所以经常被需求妖孽所迷惑，还因为他/她/它经常跟另外一个妖孽「解决方案」互换躯壳，所以懵圈的人们经常追着「解决方案」喊「需求」。为了早日让需求妖孽现身，我们需要练就一双区分它俩的废眼，哦不，慧眼。</p>
+<p>举个栗子</p>
+<blockquote>
+<p>在编辑模块中，用户需要一个预览页面</p>
+</blockquote>
+<p>在抓需求妖孽的时候，一不留神，我们会在急忙之中抓过来一只解决方案妖孽，睁眼瞎地指着它说：呔！这就是需求，快给我拿下~ 这个例子中，预览页面就是被误捉的解决方案妖孽，而需求妖孽还在附近不知道哪个角落悠闲地游荡着。</p>
+<p>捉错妖孽，会给我们制造很多麻烦：</p>
+<ul>
+<li>误解实际的需求</li>
+<li>带着过多假设和预判去思考</li>
+<li>错过更佳的解决方案</li>
+</ul>
+<p>在这里，00 介绍一个识别两只妖孽的简便方法。</p>
+<p>需求妖孽往往这样长着这样的嘴脸：</p>
+<blockquote>
+<p>我想【达到什么目的】</p>
+</blockquote>
+<p>需求一般应该带有更多关于状态、行为、态度的描述。</p>
+<p>解决方案则往往可以这样描述：</p>
+<blockquote>
+<p>我要【有什么特点的东西】</p>
+</blockquote>
+<p>它已经开始描述对象是什么样子。</p>
+<p>来来来，下面进入栗子时间。我们活捉一只妖孽，听听它说了些什么。</p>
+<blockquote>
+<p>我想要一个循环播放的按钮</p>
+</blockquote>
+<p>嗯哼？</p>
+<p>开始描述对象了。这厮是解决方案妖孽！</p>
+<p>别着急把它推开，每当我们发现又捉错了妖孽时，不妨对它进行逼问，它会老实告诉你需求妖孽的藏身之处。逼问的方法很简单，只有三个字 ——「为什么」：</p>
+<blockquote>
+<p>S 妖：我想要一个循环播放的按钮</p>
+<p>你：为什么？</p>
+<p>S 妖：我想循环播放歌曲</p>
+<p>你：为什么？</p>
+<p>S 妖：我想连续播放喜欢的歌曲</p>
+<p>你：为什么？</p>
+<p>S 妖：你是复读机么？…… 我想在睡前连续播放喜欢的歌曲</p>
+<p>你：为什么？</p>
+<p>W 妖：妈呀救命这是复读机妖……我希望在不能/不想人为操作重复播放时，我喜欢的歌曲能够连续播放</p>
+</blockquote>
+<p>逼问过程中，需求妖孽自动现形了！这就是歪歪歪复读机大法。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-Solution&amp;Requirement.jpg" alt=""></p>
+<p>在更具体的需求描述中，类似场景信息如「睡前」、体验预期如「不想人为操作」、隐含需求「播放喜欢的歌曲」等，都会浮现，这对具体的方案设计提供了更多决策信息。</p>
+<p>更多关于用户需求的挖掘和分析，请留意本系列后续的文章。</p>
+<h3 id="u533A_u5206_u7528_u6237_u9700_u6C42_u548C_u4E1A_u52A1_u9700_u6C42"><a href="#u533A_u5206_u7528_u6237_u9700_u6C42_u548C_u4E1A_u52A1_u9700_u6C42" class="headerlink" title="区分用户需求和业务需求"></a>区分用户需求和业务需求</h3><p>好了，需求妖孽总算抓到了。</p>
+<p>不过这厮可不是省油的灯，一不留神，它又使出分身术，变成两个妖孽：一个叫用户需求妖，一个叫业务需求妖。用人间的话来说，用户需求是「用户想要什么」，业务需求是「我们应该怎么做」。</p>
+<p>难道用户想要的不就是我们应该做的吗？是，也不是。</p>
+<p>用户想要的是结果，我们应该做的是保证得到这个结果的所有环节，包括用户看到的每一个界面、从他们那里得到的输入数据、帐户生成和标识、数据存储和传输、计算、请求、加密等等等等，全部都是业务需求。</p>
+<p>业务需要达到一定的使用量、访问量、购买量、转化率，这些需求都跟用户需求有关，但实际要做的远不止用户所表述的需求。用户并不需要注册，但是业务需要获取和保存用户信息；用户不需要统计上报自己的数据，但是业务需要数据辅助分析和决策，等等。</p>
+<p>你的团队，如何处理业务需求和用户需求的关系？</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-2kindsorequirement.jpg" alt=""></p>
+<h2 id="u9700_u6C42_u503C_u4E0D_u503C_u5F97_u505A"><a href="#u9700_u6C42_u503C_u4E0D_u503C_u5F97_u505A" class="headerlink" title="需求值不值得做"></a>需求值不值得做</h2><p>需求捉妖过程对产品经理来说，已经足够有挑战了，但真正的好(da)戏(keng)还在后面。</p>
+<p>产品开发的资源永远有限，哪些该做？哪些该先做？</p>
+<p>关于值得不值得的问题，实质是 ROI （投入产出比）的问题。如果能算清「用多大成本实现了多大价值」这笔账，做出合理的判断应该不难。</p>
+<p>困难的是，这笔账似乎永远都是一笔糊涂账。</p>
+<p>我们来尝试理理思路。</p>
+<p>帮助用户实现价值，业务和产品就有价值，从而获得收益。假设这个推论成立，那么问题可以描述成：哪些需求可以放大用户价值？想一想平时我们离不开的产品，它们带来了哪些价值，为什么离不开？00 总结了一个判断用户价值的简易公式：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-ValueFormula.jpg" alt=""></p>
+<h3 id="u9700_u6C42_u5F3A_u5EA6"><a href="#u9700_u6C42_u5F3A_u5EA6" class="headerlink" title="需求强度"></a>需求强度</h3><p>人们有多需要一个东西，由两个问题决定：</p>
+<ul>
+<li>有多痛/痒？</li>
+<li>有多稀缺？</li>
+</ul>
+<p>痛痒的问题，其实就是我们常说的是否「刚需」。但是刚需也因人而异，比如说，VPN 对我来说是刚需，对我妈则不是。那么怎么可以更好判断出痛点/痒点呢？</p>
+<p>一个角度，是从使用者自身出发，分析这个需求的四个特性：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-ValueMatrix.jpg" alt=""></p>
+<ul>
+<li>价值：比如，多大程度上帮我省钱省时间，实现人生目标</li>
+<li>预期：比如，买个旅行机票，帮我把签证都办了</li>
+<li>可陈述程度：比如，美颜只是显性的，万人迷是隐性的</li>
+<li>已满足程度：这个就不用距离了</li>
+</ul>
+<p>另外一个角度，则是从外部同类产品的比较来看，著名的 Kano 模型：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-ValueKano.jpg" alt=""></p>
+<p>根据满意程度和重要程度划分功能需求：</p>
+<ul>
+<li>及格线：大家都有的你没有，就会被骂辣鸡</li>
+<li>备胎线：恰好达到行业平均水平，也只是个可以当备胎的良民</li>
+<li>粉丝线：人无我优，远超期望，用户一接触就会内心惊呼「卧槽」，然后路转粉，粉转脑残粉</li>
+</ul>
+<p>以上是痛/痒问题。稀缺问题则比较好理解。市场上有哪些同类或类似的解决方案？你的产品有多独特？用户通过什么渠道接触到？这些渠道你有多大的份额、影响力、把控能力？物以稀为贵，稀少的东西，总是能加强痛点和痒点。</p>
+<h3 id="u4F7F_u7528_u9891_u7387"><a href="#u4F7F_u7528_u9891_u7387" class="headerlink" title="使用频率"></a>使用频率</h3><p>判断出需求强度以后，还需要考虑使用频率。典型的例子是旅行市场，需求巨大，但就是频率太低，活跃度和留存率都不好做。考虑使用频率，可以从用户比例和场景频率两个维度出发。</p>
+<ul>
+<li>多大比例用户想要？</li>
+<li>需求场景的频率如何？</li>
+</ul>
+<p>这两个问题虽然很难得到准确的数据，但是仍然要想办法估算。上一篇文章介绍的用户快照这个时候就能够派上用场。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserSnapshotTemp.jpg" alt=""></p>
+<ul>
+<li>如果与实现用户的行为目标强相关，使用频率应该较高。比如，电商平台的购物车功能</li>
+<li>如果最重要的用户类型需要它，使用频率相对较高。比如，某直播平台最重要的用户类型是游戏玩家，那么主播的游戏等级可能就变得重要</li>
+<li>典型场景的客观发生频率较高，使用频率应该较高。比如，用来 p 朋友圈图片的工具</li>
+<li>典型场景在用户生活中地位重要，使用频率相对较高。比如，每天上下班要在地铁里呆上两小时，看书听歌看视频的频率就会更高。</li>
+</ul>
+<p>花了这么长的篇幅分析了如何判断用户价值，这只是 ROI 的 R （Return）部分，至于 I （Investment）的分析又是另一门学问。毕竟这个系列写的是用研手册，产品经理专职范畴内的难题，就不继续展开了。</p>
+<h2 id="u8B66_u60D5_u4F2A_u9700_u6C42"><a href="#u8B66_u60D5_u4F2A_u9700_u6C42" class="headerlink" title="警惕伪需求"></a>警惕伪需求</h2><p>需求妖孽之所以是妖孽，不但因为行踪诡秘，而且容易被冒名顶替。伪需求们是资源的黑洞，怎么填都填不满。如何识别伪需求呢？它们一般会以这些面目出现：</p>
+<p>伪装成解决方案。这个上文已经仔细分析过。</p>
+<p>伪装成常见场景。作为果粉 + watch 黑，00 一直觉得 Apple Watch 把边缘场景成功伪装成常见场景。在一个手机不离身的时代，手表真正能替代手机的场景有多少呢？</p>
+<p>伪装成大部分人的需求，实际上只是枝节需求。如果不清楚自己产品的用户类型，不清楚哪类用户是最重要的，这种伪装就容易蒙混过关。比如当年已经做出来但没有最终上线的微信朋友圈滤镜功能。滤镜多好啊，大家都需要，Instagram 是成功案例，新浪微博有，QQ 空间也有，为什么不做呢？微信一定能做出强大好用的滤镜，但是，微信为什么要提供一款滤镜功能呢？大家发朋友圈的动机到底是什么呢？如果没有好友关系的沉淀，丰富有趣的互动方式和氛围，就算在微信里面再造一个 Instagram 又有什么意义呢？</p>
+<p>伪装成可以脱离商业模式而存在。这是最可怕的伪装。没人不喜欢 Kano 模型中远超预期的功能，但是这些功能为什么往往大家都没有提供？原因多半是：不经济，不可持续。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-SudoValue.jpg" alt=""></p>
+<p>关于折磨人的需求，就讨论到这里。</p>
+<p>下一篇我们介绍用户研究主要能解答什么类型的问题。</p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article3-titu.jpg" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="产品经理" scheme="http://uegeek.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+      <category term="用户研究" scheme="http://uegeek.com/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/"/>
+    
+      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
+    
+      <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[产品经理的用研手册02 - 你真的懂用户吗？]]></title>
+    <link href="http://uegeek.com/pm-ur-handbook2.html"/>
+    <id>http://uegeek.com/pm-ur-handbook2.html</id>
+    <published>2016-12-02T02:34:12.000Z</published>
+    <updated>2016-12-05T02:49:11.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article2-titu.png" alt=""></p>
+<a id="more"></a> 
+<p>​如果你错过了本系列的第一篇，请戳：<br>​<br>​<img src="http://7xjpra.com1.z0.glb.clouddn.com/article1-qr.png" alt=""><br>​</p>
+<p>产品经理经常会被问起一个问题：</p>
+<blockquote>
+<p>你们产品都是哪些人在用？</p>
+</blockquote>
+<p>这时候，很多产品经理只能支支吾吾的挤出类似「女性」、「25-30岁」、「白领」几个无力的词汇，发现自己其实描述不清楚谁是目标用户。</p>
+<p>不同产品的用户，少则几百，多则数亿，每个人看起来都不太一样，应该怎么理解和描述他们呢？</p>
+<p>先抛开产品和用户不谈，想一想我们是如何认识世界的。</p>
+<p>为了认识植物和动物，把它们分成不同的种、属、科；为了更深入品尝天朝的美食，分成八大菜系；为了理解不同的音乐，分成摇滚、民谣、爵士等不同风格；为了在电商网站更容易找到商品，出现了庞杂的分类……</p>
+<p>为了增进理解，我们最常干的一件事情是：分类。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-AppGroupByColor.jpg" alt=""></p>
+<h2 id="u7528_u6237_u5982_u4F55_u5206_u7C7B_uFF1F"><a href="#u7528_u6237_u5982_u4F55_u5206_u7C7B_uFF1F" class="headerlink" title="用户如何分类？"></a>用户如何分类？</h2><p>那么，接下来的问题是：如何有效分类？</p>
+<p>答案是：找到<strong>合适的维度</strong>。</p>
+<p>八大菜系有地缘和饮食文化传统作为区分，那么用户应该按什么维度划分呢？</p>
+<p>最容易想到的，当然是人口统计学信息：性别、年龄、职业、收入、地域等。这些信息容易获取，容易描述。</p>
+<p>可是容易获得不代表容易使用。比如，一款健康饮料的主要用户群是 25-30 岁之间的女性，然后呢？意味着什么？写公众号推送的时候，要多用粉红色的图片吗？……</p>
+<p>那么，用「高端」、「低端」划分呢？问题是，怎么准确定义「高端」呢？高端是收入高、什么都懂、喜欢高逼格的设计吗？即便条件都满足，如果你做的是一款功能强大的 VPN 客户端，是根本没需要也没时间钻研的「高端」人士需要呢，还是一群为了追踪麻豆 twitter 更新的疯狂高中生更需要？</p>
+<p>再想想，还有哪些用户属性对产品决策有帮助？</p>
+<table>
+<thead>
+<tr>
+<th>分类维度</th>
+<th>用户属性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人口统计学信息</td>
+<td>性别、年龄、职业、地域</td>
+</tr>
+<tr>
+<td>接触产品的渠道</td>
+<td>设备、操作系统、平台、网站、App</td>
+</tr>
+<tr>
+<td>需求动机</td>
+<td>需求、使用动机、留存原因、产品选择偏好</td>
+</tr>
+<tr>
+<td>使用行为</td>
+<td>使用场景、操作习惯、使用频率、付费意愿</td>
+</tr>
+<tr>
+<td>操作经验</td>
+<td>使用功能的广度和深度、同类产品使用时长</td>
+</tr>
+</tbody>
+</table>
+<p>在互联网产品设计中，更加关注用户如何看待、使用产品，如何与产品互动，这是一个相对连续的过程，人口属性特征并不是影响用户行为的主要因素。<strong>真正区分用户如何使用和看待产品的，是目标和行为。</strong></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-HowtoBetterCategories.jpg" alt=""></p>
+<h3 id="u76EE_u6807"><a href="#u76EE_u6807" class="headerlink" title="目标"></a>目标</h3><p>我们最关心用户产生的各种行为，比如会不会购买、用多长时间浏览、是否能顺利使用某些功能，等等。而驱动行为的，是目标。毕竟，行为只是手段，目标才是终点。</p>
+<p>比如，知识型工作者，每天会遇到相对独立的信息片段，需要快速记录、存储起来，方便日后查找。那么他们会需要一个记录工具，会在常用的设备上有类似的使用行为。</p>
+<p>如果我们能首先关注用户的目标，就能够更好地解读用户需求，以及不同用户群体之间的差异。</p>
+<p>不过，目标有时候也很容易让人困惑，比如：</p>
+<blockquote>
+<p>我想买到最便宜的站立办公台</p>
+<p>我想有人帮忙打扫卫生，而我只要舒服地躺在沙发上</p>
+<p>我想迎娶白富美，走上人生巅峰</p>
+</blockquote>
+<p>你会发现，这些目标的层次不同。有些目标，我们知道该怎么有针对性地提供解决方案。但是类似走上人生巅峰的目标，我们则不知所措。</p>
+<p>那么，如何更清晰地描述目标？</p>
+<p>诺曼在「情感化设计」中，将设计目的分为本能、行为、反思三个层次。Alan Cooper 据此划分出用户目标的三个层次：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-HowtoBetterCategories%20Copy.jpg" alt=""></p>
+<h4 id="1-_u884C_u4E3A_u76EE_u6807"><a href="#1-_u884C_u4E3A_u76EE_u6807" class="headerlink" title="1.行为目标"></a>1.行为目标</h4><p>用户在使用某个具体产品时进行操作的动机，在他们心目中期望的结果。因为行为的处理过程，会影响本能和反思的反应，因此，<strong>行为目标是决定产品整体体验最为显著的因素之一</strong>。比如，以下这些可以称为行为目标：</p>
+<ul>
+<li>在回家之前清理办公桌</li>
+<li>基于数据做出明智的商业决策</li>
+<li>买到想要的东西然后离开 </li>
+<li>发朋友圈之前修饰照片</li>
+</ul>
+<p>行为目标是产品行为、任务、外观和感觉的基础。</p>
+<h4 id="2-_u4F53_u9A8C_u76EE_u6807"><a href="#2-_u4F53_u9A8C_u76EE_u6807" class="headerlink" title="2.体验目标"></a>2.体验目标</h4><p>体验目标表达了人们在使用产品或者与产品交互时所期望的感受。它让人们关注于产品的视觉和听觉特性，以及互动过程中的感受。比如：</p>
+<ul>
+<li>有乐趣</li>
+<li>感觉酷、时髦或者放松</li>
+<li>保持注意力集中，很清醒</li>
+<li>一切尽在掌控之中，感觉棒棒哒</li>
+</ul>
+<h4 id="3-_u957F_u671F_u76EE_u6807"><a href="#3-_u957F_u671F_u76EE_u6807" class="headerlink" title="3.长期目标"></a>3.长期目标</h4><p>长期目标描述用户的长期期望、动机和自我形象的特征，表达了用户的个人渴望甚至是人生目标，是深层的驱动力和动机。它通常超越了产品设计的情境，能够解释为什么用户要尽力完成各种行为目标。比如：</p>
+<ul>
+<li>过美好的生活</li>
+<li>成就一番事业</li>
+<li>成为某个方面的行家</li>
+<li>让周围的人喜欢并尊敬我</li>
+</ul>
+<p>现在，我们可以区分这些目标的层次了</p>
+<blockquote>
+<p>我想买到最便宜的站立办公台 —— 行为目标</p>
+<p>我想有人帮我打扫卫生，而我只要舒服地躺在沙发上 —— 体验目标</p>
+<p>我想迎娶白富美，走上人生巅峰 —— 长期目标</p>
+</blockquote>
+<p>在对待目标这件事情上：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-DifPMDifGoal-1.jpg" alt=""></p>
+<ul>
+<li>不合格的产品经理直接无视，已经在画交互图；        </li>
+<li>普通产品经理首先关注行为目标，能否帮助用户达成行为目标，直接决定了产品的基础价值；</li>
+<li>文艺产品经理关注体验目标，比如上面打扫卫生的例子，用户在意的并不是打扫得多干净，而是躺在沙发上啃啃薯片就能看着家里变干净的快感；</li>
+<li>神级产品经理直抵人生目标。什么样的产品用起来时尚时尚最时尚？</li>
+</ul>
+<h3 id="u5178_u578B_u4F7F_u7528_u573A_u666F"><a href="#u5178_u578B_u4F7F_u7528_u573A_u666F" class="headerlink" title="典型使用场景"></a>典型使用场景</h3><p>通过行为目标、体验目标和长期目标，我们能基本区分出不同的用户。但是这还不够，目标相同的人，一定有类似的行为吗？也不一定，因为具体行为由场景触发，而场景包含了更丰富的信息：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserScenario.jpg" alt=""></p>
+<ul>
+<li>时间：用户一般在什么时间段，或者什么事情的前后使用产品？</li>
+<li>地点：用户在什么场合、通过什么设备和什么渠道接触和使用产品？</li>
+<li>目标：用户的行为目标、体验目标和长期目标分别是什么？</li>
+<li>行为：为了达成目标，最核心的行动步骤有哪些？</li>
+<li>痛点：这个过程中，有哪些让人难受、不符合预期的地方？</li>
+<li>策略：为了达成目标，用户会采取什么样的做法提升效率和效果？</li>
+</ul>
+<h2 id="u7528_u6237_u5FEB_u7167_u5361_u7247_u6A21_u677F"><a href="#u7528_u6237_u5FEB_u7167_u5361_u7247_u6A21_u677F" class="headerlink" title="用户快照卡片模板"></a>用户快照卡片模板</h2><p>我们把用户目标和典型使用场景的要素串联起来，拼成描述用户快照的模板：</p>
+<p>典型用户小 P</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#23567; P &#20351;&#29992;&#20135;&#21697;&#30340;&#20027;&#35201;&#30446;&#30340;&#26159;&#12304;&#34892;&#20026;&#30446;&#26631;&#12305;&#12290;&#9;&#9;&#10;&#10;&#20182;&#19968;&#33324;&#20250;&#22312;&#12304;&#22330;&#26223;1&#26102;&#38388;&#12305;&#12304;&#22330;&#26223;1&#22320;&#28857;&#12305;&#35775;&#38382;&#20135;&#21697;&#65292;&#9;&#9;&#10;&#36827;&#34892;&#12304;&#34892;&#20026;&#12305;&#12290;&#9;&#9;&#10;&#36825;&#20010;&#36807;&#31243;&#65292;&#20182;&#24076;&#26395;&#12304;&#20307;&#39564;&#30446;&#26631;&#12305;&#65292;&#9;&#9;&#10;&#20294;&#26159;&#20182;&#21457;&#29616;&#12304;&#30171;&#28857;&#12305;&#65292;&#9;&#9;&#10;&#19968;&#33324;&#20182;&#20250;&#12304;&#31574;&#30053;&#12305;&#12290;&#9;&#9;&#10;&#10;&#23567; P &#21487;&#33021;&#36824;&#20250;&#22312;&#12304;&#22330;&#26223;2&#26102;&#38388;&#12305;&#12304;&#22330;&#26223;2&#22320;&#28857;&#12305;&#35775;&#38382;&#20135;&#21697;&#65292;&#9;&#9;&#10;&#36827;&#34892;&#12304;&#34892;&#20026;&#12305;&#12290;&#9;&#9;&#10;&#36825;&#20010;&#36807;&#31243;&#65292;&#20182;&#24076;&#26395;&#12304;&#20307;&#39564;&#30446;&#26631;&#12305;&#65292;&#9;&#9;&#10;&#20294;&#26159;&#20182;&#21457;&#29616;&#12304;&#30171;&#28857;&#12305;&#65292;&#9;&#9;&#10;&#19968;&#33324;&#20182;&#20250;&#12304;&#31574;&#30053;&#12305;&#12290;&#9;&#9;&#9;&#10;&#10;&#32463;&#24120;&#20351;&#29992;&#20135;&#21697;&#65292;&#33021;&#35753;&#23567; P &#24863;&#35273;&#12304;&#38271;&#26399;&#30446;&#26631;&#12305;</span><br></pre></td></tr></table></figure>
+<p>典型用户小 D</p>
+<p>典型用户小 E</p>
+<p>……</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserSnapshotTemp.jpg" alt=""></p>
+<p>练习：假设我们根据目标和行为模式，把某电商的用户分成三种类型：</p>
+<ul>
+<li>完成任务型（老公被委派买日常用品的任务）</li>
+<li>体验乐趣型（经常淘出好东西的购物推荐达人）</li>
+<li>明智决策型（为买到性价比高的跑步机的发烧友）</li>
+</ul>
+<p>试着用卡片模板，写出更详细的用户快照。</p>
+<h2 id="u4E3A_u4EC0_u4E48_u662F_u5FEB_u7167_u800C_u4E0D_u662F_u6A21_u578B_u3001_u89D2_u8272_u6216_u5176_u4ED6_uFF1F"><a href="#u4E3A_u4EC0_u4E48_u662F_u5FEB_u7167_u800C_u4E0D_u662F_u6A21_u578B_u3001_u89D2_u8272_u6216_u5176_u4ED6_uFF1F" class="headerlink" title="为什么是快照而不是模型、角色或其他？"></a>为什么是快照而不是模型、角色或其他？</h2><p>这样的用户描述，我把它称作用户快照。</p>
+<p>快照得来成本低，包含较丰富的信息但可能不全面，甚至有失偏颇 —— 毕竟只是一瞬间的捕捉。</p>
+<p>它可能有偏差，甚至是错误的。这个快照只是一个假设，有待验证。所以它不能成为用户模型、用户角色、用户画像，因为，这个过程并没有加入真实的用户信息，很多理解和描述还有待验证。</p>
+<p>有了快照，只是给出了比「女性」、「25-30岁」、「白领」更具体、实用的用户描述，但这仅仅是第一步，对用户的描述只是真实世界的一个映射。在瑞典军队中，有一条广为流传的原则：</p>
+<blockquote>
+<p>当地图（映射图）和实际地形不同的时候，永远要相信实际地形。</p>
+</blockquote>
+<p>所以，在有了用户快照之后，我们需要做更多的事情：</p>
+<ul>
+<li>在接触到较完整的用户信息时，看看如何将其归类，验证快照是否合理</li>
+<li>尽可能接触不同类型的用户，提取他们的目标，修正用户分类</li>
+<li>做完整的 Persona，将快照作为假设，进行定量数据聚类检验</li>
+<li>……</li>
+</ul>
+<p>如何分类和描述用户的经验，就分享到这里。</p>
+<p>下一篇我们讨论需求，模糊的需求，折磨人的需求。</p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article2-titu.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="产品经理" scheme="http://uegeek.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+      <category term="用户研究" scheme="http://uegeek.com/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/"/>
+    
+      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
+    
+      <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[产品经理的用研手册01 - 朦胧的用户，懵懂的你]]></title>
+    <link href="http://uegeek.com/pm-ur-handbook1.html"/>
+    <id>http://uegeek.com/pm-ur-handbook1.html</id>
+    <published>2016-11-29T02:34:19.000Z</published>
+    <updated>2016-12-05T02:45:49.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/confused_dog_dribbble.jpg" alt=""></p>
+<a id="more"></a> 
+<p>一入产品深似海，无奈苦逼无处说。</p>
+<p>产品经理都是操心的命，背锅的主。一个成功的产品经理，需要搞砸过多少项目，坑害过多少设计师和工程师，还得练就在失败后活埋自己再自掘坟墓原地满血复活的 bug 招。</p>
+<p>产品经理的苦，来自理想与现实的差距，来自决策的压力，来自未明的模式，来自资源瓶颈和死线，来自跟设计和开发的鸿沟……在各种不确定和不明朗当中，有一种痛，无声而绵长，杀人于无形，它叫做：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01-PMUserSM.jpg" alt=""></p>
+<p>这种互联网式的 SM 故事每天都在上演。</p>
+<p>每每我们被自己的这种初恋斯德哥尔摩综合症感动时，真该有人来当头棒喝：被虐三遍还不知悔改，活该天天初恋……面向对象做产品，如果这个「对象」一直是朦胧的，我们也只好像包办婚姻中的小媳妇一样懵懂。</p>
+<p><strong>从情窦初开到阅人无数，「搞懂对象」是必修课。「搞懂对象」的其中一个办法，叫做「用户研究」。</strong></p>
+<p>曾经遇到过不少产品经理（包括我），在分析需求时一筹莫展，在决策时苦于缺少依据，在给老板汇报时捉襟见肘。时常因为拿不出令人信服的理据，缺乏高情商和煽动性，在推进项目时不免感到阻力重重。</p>
+<p>这些苦头，我都尝过。我是创业团队的产品经理，曾经是微信的设计师、网易和腾讯的产品经理、也在网易担任过用户研究员。这个系列，写给想进一步了解用户研究的产品经理，尝试解答以下问题：</p>
+<ul>
+<li>用研可以帮助产品经理解决哪些问题？为什么产品经理要做用研？</li>
+<li>怎么更有效地分析用户和需求？</li>
+<li>有哪些简单实用的用研思路和方法？</li>
+<li>团队没有研究员，产品经理如何低成本地做用研？</li>
+</ul>
+<h2 id="u4EA7_u54C1_u7ECF_u7406_u7ED5_u4E0D_u5F00_u7684_u69DB"><a href="#u4EA7_u54C1_u7ECF_u7406_u7ED5_u4E0D_u5F00_u7684_u69DB" class="headerlink" title="产品经理绕不开的槛"></a>产品经理绕不开的槛</h2><p>不论处在产品发展的哪一个周期，<strong>产品经理最重要的工作，是为了达成产品目标所做的各种「决策」和「沟通」</strong>。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01-WhatPMDo.jpg" alt=""></p>
+<p>从战略、业务方向，到产品概念、细节设计，每天都需要做出数不清的大小决策，并且把这些决策同步给团队其他成员，推动产品目标实现。</p>
+<p>残酷的现实是，在各种决策过程中，产品经理经常被诟病「拍脑袋」、「想不清楚」、「智商下线」，自己很多时候也会觉得底气不足：</p>
+<blockquote>
+<p>到底做这个决策的依据是什么？</p>
+</blockquote>
+<p>有时候能说出个所以然，有时候简直抓瞎。</p>
+<p>在商业产品的语境中，想要达成诸如流量、收入、市场占有率等目标，总也绕不开<strong>「持续为用户创造价值」</strong>这个命题。于是，很多决策都会围绕用户需求和用户价值展开。比如</p>
+<blockquote>
+<p>我们为一群什么样的用户服务？<br>从哪里触达到这些用户？<br>为他们提供了什么价值？<br>这些人为什么会选择我们的产品？<br>什么样的功能和服务能满足他们的需要？<br>他们在使用产品的过程中会遇到什么问题？<br>……</p>
+</blockquote>
+<p><strong>产品经理是用户需求和价值生产过程之间的桥梁。所以，能深入理解用户是对产品经理的基本要求。</strong></p>
+<p>怎样理解用户？如果没有乔帮主式的天赋，只能通过大量的练习，通过频繁地接触和研究，不断加深对用户的理解。好消息是，练习的机会很多，它们其实就是产品经理每天被拷问的种种问题，比如：</p>
+<blockquote>
+<p>目前对购买转化率影响最大的环节是哪个？如何优化？<br>新上线的评论功能使用量很低，问题出在哪里？<br>如何吸引更多的讲师来到内容平台发布课程？<br>……</p>
+</blockquote>
+<p>除了大量的决策，产品经理的另一个工作核心是对内和对外的「沟通」。</p>
+<p>在团队内部，产品经理发起和推进项目，并且向团队各种角色同步关键信息，比如，告诉设计师需要设计什么样的流程和界面，告诉工程师要实现什么样的功能、获取哪些数据。</p>
+<p>但是在这个过程中，很容易因为沟通不充分产生各种误解和摩擦。设计师认为产品经理没有仔细分析用户需求，工程师认为产品经理提出了冗余的功能——应不应该做、怎样做、什么时候做好，团队花费大量时间站在各自的角度去辩论，而不是想办法一起提高效率、解决问题。</p>
+<p>如果有适当的用户研究，可以帮助大家聚焦到问题和解决方案上，减少无目的、反复的需求论证。</p>
+<p>同时，在对外沟通中，如果产品经理更了解用户，就能更好地跟用户互动。在外部合作时，结合双方用户群体的重合度、用户需求的特点，更容易找到合作点，实现利益最大化。</p>
+<h2 id="u4E3A_u4EC0_u4E48_u7528_u6237_u8C03_u7814_u6CA1_u6709_u7528_uFF1F"><a href="#u4E3A_u4EC0_u4E48_u7528_u6237_u8C03_u7814_u6CA1_u6709_u7528_uFF1F" class="headerlink" title="为什么用户调研没有用？"></a>为什么用户调研没有用？</h2><p>可是，广告不等于疗效。</p>
+<p>在现实中，风风火火立了项，找了不少用户热热闹闹做了一通调研，可是最后好像只留下一个并没有什么新鲜结论的调研报告。渐渐地，大家开始觉得用户研究货不对板，食之无味，弃之可惜。</p>
+<p>为什么？</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01-WhyURdontWork.jpg" alt=""></p>
+<p>首先当然是成本太高。</p>
+<p>互联网产品的更新迭代速度以周、甚至以天计，可是用户研究项目从立项、方案设计、执行、分析到结果，动辄数周，这种节奏难以匹配需求。为了快，大家更倾向于用「试错」的办法，而不是充分论证再行动。</p>
+<p>用户研究之所以耗时长，分工过细和缺乏研究训练也是很重要的原因。产品经理与用户研究员之间要经过反复的沟通，确定研究需求、研究目的。<strong>执行过程中，产品经理和相关人员没有参与，导致研究员要花费大量时间解释和重现过程，以及说明结果的推导。</strong>如果产品经理更了解用研的方法，参与重要过程和结果的讨论，就能大大缩短研究周期，也可以迅速运用研究结果。</p>
+<p>用研无用的第二个原因，是缺少对决策有直接帮助的结果。目的不明确的用研项目，很容易流于形式，只给出一些表面的描述，但是无法辅助决策。而产品经理更清楚需要做出什么决策，以及需要哪些信息、数据支持。由产品经理去发起用研项目，更容易得出可以实际运用的结果。</p>
+<p>第三个原因，是研究的初衷本身就不对。用户研究的目的，主要是发现「未知」，从而获得新的理解、做决策的新证据。但是在很多情况下，用户研究被用作「证明」已知，比如「证明」改版后的效果，「证明」某个功能是有需求的。</p>
+<p>李明远曾经写道：</p>
+<blockquote>
+<p>大部分公司，在做产品和决策以前都会安排调研，不论是模仿还是原创，这很正常。但不少是带着潜在的预期假设去调研，这就麻烦了：如果你已知结果、去选择缔造该结果的调研对象去研究分析，然后通过解读一些已经成为事实的局部现象，那你的调研结果一定就是你已经知道的、之前想要的，几乎不会有例外，很多人是带着自己知道的结果去证明自己想的应该是对的，这不是调研，调研是对已知事实部分有未知结果和发展的（是帮助形成思路、启发而不是具体决定的），是用于防止决策错误和片面思维，而不是单纯以此形成决策的。</p>
+</blockquote>
+<p>正是因为存在种种问题，产品经理更加应该亲自参与用户研究。因为做用研的本质是：解答问题。不是说不需要用户研究员，产品经理自己上就得了。关键在于，产品经理是对问题最「痛」的人，必需参与到问题求解的过程中。或者用一套比以前更系统的办法寻找答案，或者跟用研同学一起更高效地完成。</p>
+<h2 id="u4EA7_u54C1_u7ECF_u7406_u505A_u7528_u6237_u7814_u7A76_u5982_u4F55_u907F_u5751"><a href="#u4EA7_u54C1_u7ECF_u7406_u505A_u7528_u6237_u7814_u7A76_u5982_u4F55_u907F_u5751" class="headerlink" title="产品经理做用户研究如何避坑"></a>产品经理做用户研究如何避坑</h2><p>没错，广告不等于疗效，但是说葡萄酸可能只是因为姿势不对。</p>
+<p>既然用户这道坎无法绕开，那我们就试着用更正确的姿势去做好。</p>
+<p>当然，产品经理最重要的工作不是做出专业的研究，入坑之前不妨参考如下建议：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01-IfPMDoUR.jpg" alt=""></p>
+<ul>
+<li>谨记目标：获得辅助决策的一手信息</li>
+<li>理清问题，识别自己的基本假设，是最重要的步骤</li>
+<li>过程可能比结果更重要</li>
+<li>尽量逻辑严谨，但不要事无巨细</li>
+</ul>
+<p>无论团队中有没有专职的用户研究员，产品经理都应该参与其中。这个过程中，可以外包交给用研同学的部分：</p>
+<ul>
+<li>研究设计</li>
+<li>研究对象筛选和招募</li>
+<li>研究执行</li>
+<li>数据收集</li>
+<li>结果统计</li>
+</ul>
+<p>更多精力要投入在无法外包的部分：</p>
+<ul>
+<li>确定研究目标</li>
+<li>直接接触用户，获得综合的情境信息</li>
+<li>解读结果</li>
+<li>思考如何将结果用于决策</li>
+</ul>
+<h2 id="u5199_u7ED9_u4EA7_u54C1_u7ECF_u7406_u7684_u7528_u7814_u624B_u518C_u7CFB_u5217"><a href="#u5199_u7ED9_u4EA7_u54C1_u7ECF_u7406_u7684_u7528_u7814_u624B_u518C_u7CFB_u5217" class="headerlink" title="写给产品经理的用研手册系列"></a>写给产品经理的用研手册系列</h2><p>作为一个产品经理，很容易找到介绍用户研究的内容。但是，那些内容要么是研究员写给研究员的，产品经理看得云里雾里。要么就是比较零散，不成体系，对一个问题产生兴趣后没有下文了。要么干脆是在简单地罗列各种方法，比如搜一下「用研方法」，一定能找到这种让人兴奋的图，感觉像发现了新大陆：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/ur-method-cat.png" alt=""></p>
+<p>可是，对着图盯了十分钟，然后呢？一个一个方法去学习？学完以后，发现还是无从下手。以及，跟实际工作到底有什么关联？</p>
+<p>产品经理和用户研究员的困惑，我都深深体会过。所以，这个系列不会按照「用研方法分类-用研方法讲解-案例」的方式写。让我们从产品经理的难题入手，去看看用户研究到底如何帮助产品经理解答问题：</p>
+<ul>
+<li>怎样算了解用户？如何对用户进行分类和描述？</li>
+<li>如何更有效地针对人群进行需求分析？</li>
+<li>哪些用研手段能解答什么类型的问题？</li>
+<li>用户研究最常用有效的「招式」有哪些？</li>
+<li>用户研究思维的本质是什么，如何配合快速迭代的节奏？</li>
+<li>用户研究结果如何促进沟通？</li>
+</ul>
+<p>欢迎关注</p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
+<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><a href="http://cdc.tencent.com/2010/10/12/%E7%94%A8%E7%A0%94%E6%97%A0%E7%94%A8%EF%BC%9F%E2%80%94%E2%80%94%E5%AF%B9%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6%E5%AE%9E%E8%B7%B5%E7%9A%84%E6%80%9D%E8%80%83/" target="_blank" rel="external">用研无用？——对用户研究实践的思考 – 腾讯CDC</a></li>
+<li><a href="https://www.zhihu.com/question/19741459" target="_blank" rel="external">用户研究如何做才能为产品设计提供实质性的帮助？ - 知乎</a></li>
+<li><a href="https://www.zhihu.com/question/19641772" target="_blank" rel="external">用户研究需要注意哪些问题呢？怎样做好用户研究呢？ - 知乎</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/confused_dog_dribbble.jpg" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="产品经理" scheme="http://uegeek.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+      <category term="用户研究" scheme="http://uegeek.com/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/"/>
+    
+      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
+    
+      <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[最好的时代，最坏的时代：一个互联网职业迷茫症患者的问题清单]]></title>
+    <link href="http://uegeek.com/best-worst-era.html"/>
+    <id>http://uegeek.com/best-worst-era.html</id>
+    <published>2016-11-27T02:35:55.000Z</published>
+    <updated>2016-12-05T02:42:47.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/titile5-bestworsttime.png" alt=""></p>
+<a id="more"></a> 
+<p>不久前，有一些关注了 HackYourself 的朋友问，你怎么不写产品设计相关的文章？</p>
+<p>并不是不想写，有时候身陷其中，反而不知道该从何下笔。HackYourself 解答我自己对成长和长时程问题的困惑。而对于我所在的这个行业，这个瞬息万变、野蛮生长的行业，这个日日起高楼、宴宾客、楼塌了的行业，这个不在乎你穿什么只在乎你有多少热情的行业，这个如磁石一般吸引着像你像我这些年轻人的行业，它带给我的困惑多得简直就像空气一样稀松平常。</p>
+<p>我在互联网高速发展之初加入了这个行业。当时，产品有限，同行不多，可以找到的资料就那些，成功案例更是稀少——不是大家都做砸了，而是根本没有做过。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/confused_dog_dribbble.jpg" alt=""></p>
+<p>每天，都带着很多困惑去工作：关于岗位、关于工作内容、关于种种新知、关于人际、关于缥缈未卜的前途。因为有很多疑问找不到人解答，我甚至通过多次换岗的方式，来到问题跟前，让它近得可以看清脸上的纹路，然后去接受它的猛击，然后趴在地上去找答案。</p>
+<p>结果是，部分困惑渐渐有了答案，而新的疑问还是源源不断。当迷茫症发作时，也有萌生过离开这个行业的念头。当然这些念头都被迷茫症的并发症所打消：越被虐，越喜欢被虐。于是，迷茫症+斯德哥尔摩综合症抖 M 患者，选择继续见证这个最好的时代、最坏的时代。</p>
+<p>也许现在的你，同样有满脑子的不解，一肚子的不确定。何况今天的行业资讯，已经百倍于几年前 —— 你的迷茫症，一定不轻吧？</p>
+<h2 id="u4F60_u662F_u4EA7_u54C1_u7ECF_u7406_u5417_uFF1F"><a href="#u4F60_u662F_u4EA7_u54C1_u7ECF_u7406_u5417_uFF1F" class="headerlink" title="你是产品经理吗？"></a>你是产品经理吗？</h2><p>我曾经是产品经理。是创业团队轻松冥想的产品经理，是 QQ 空间数据挖掘的产品经理，是网易邮箱的产品经理。</p>
+<p>在刚入行时，怎么也找不到产品经理的准确定义，还有接踵而来的各种问题：</p>
+<blockquote>
+<p>产品经理的职责有哪些？<br>产品经理到底需要具备什么能力？怎么培养？<br>到底什么是好的产品经理？真的人人都可以是产品经理吗？<br>新手产品经理怎样快速熟悉每一个业务细节？<br>需求是什么？要怎么确定一个需求要不要做？<br>怎样跟设计师和开发沟通？他们做的东西我都不太懂<br>需求评审要怎么准备？<br>怎样写需求文档？为什么没有模板？<br>用户反馈好多，该怎么办？<br>……</p>
+</blockquote>
+<p>好不容易熬完几个项目，有了一些感觉，新的问题又袭来：</p>
+<blockquote>
+<p>项目的效果怎么评估？<br>数据怎么统计？数据变化了怎么解读？<br>数据没有达到预期怎么办？<br>为了达成某个目标需要增加什么功能？<br>团队资源很紧张，怎么安排优先级？<br>项目怎么按进度完成？<br>产品有哪些体验问题？<br>怎么做用户调研？<br>设计细节有很多问题，怎么提升？<br>项目涉及的技术我不懂，怎么办？<br>跟推广运营内容的同学怎么配合？<br>需要跟外部合作引入资源，该怎么合作？<br>怎样分解 kpi？还有两个月怎么让数据达标？<br>……</p>
+</blockquote>
+<p>好不容易把常见的坑都趟过一遍，但是面对 0 到 1 的问题，还是手忙脚乱：</p>
+<blockquote>
+<p>什么决定了一款产品的成功？<br>产品的核心到底是什么？<br>商业模式如何设计？如何验证？<br>如何定义核心用户？如何定义最小产品？<br>精益创业和 growth hack 都是怎么玩的？<br>最小产品出来了，如何验证模式？<br>迭代速度和版本节奏如何控制？<br>怎么解决冷启动和流量获取问题？<br>有限的资源怎么最大化利用？<br>如何向市场和投资人讲故事？<br>……</p>
+</blockquote>
+<p>产品经理都是操心的命，背锅的主。</p>
+<p>一个成功的产品经理，需要搞砸过多少项目，坑害过多少设计师和工程师，还得练就在失败后活埋自己再自掘坟墓原地满血复活的 bug 招。</p>
+<p>毕竟，产品经理都是被委屈撑大、被失败养胖的。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/about_800x600.png" alt=""></p>
+<h2 id="u4F60_u662F_u8BBE_u8BA1_u5E08_u5417_uFF1F"><a href="#u4F60_u662F_u8BBE_u8BA1_u5E08_u5417_uFF1F" class="headerlink" title="你是设计师吗？"></a>你是设计师吗？</h2><p>我曾经是交互设计师。是微信支付的设计师，负责智慧生活行业方案和 O2O 设计；是酷狗音乐交互团队负责人；是网易邮箱的交互设计师。</p>
+<p>这是我最热爱的岗位。所以你有的困惑，我一定都有过：</p>
+<blockquote>
+<p>交互设计是做什么的？怎么用一句话解释？<br>交互设计有什么价值？<br>交互设计师到底有没有前途？<br>交互设计需要具备什么技能？怎么培养？<br>为什么交互设计会沦为画线框图的？<br>优秀的交互设计作品是怎样的？需要交付什么？<br>交互设计师如何跟其他岗位合作？<br>如何体现岗位价值？如何在项目前期参与？<br>项目时间紧，没有时间做分析和调研怎么办？<br>怎么进行项目评审？怎么能一次通过？<br>如何分析用户需求、业务需求、设计需求？<br>如何主导设计过程？如何引入其他角色参与设计？<br>网页设计怎么做？客户端设计怎么做？移动端设计怎么做？后台怎么做？<br>如何制定规范？如何推广和使用规范？<br>……</p>
+</blockquote>
+<p>等到有能力设计复杂产品的交互、设计多个终端产品的体验时，发现更大的挑战正等着你：</p>
+<blockquote>
+<p>如何组建设计团队？<br>如何跟产品、视觉、用研、开发、测试团队配合？<br>如何规范设计流程？如何推广用户体验理念？<br>当体验超出屏幕，如何设计整体的服务体验？<br>当使用场景发生在真实环境时，如何引导用户完成复杂流程？<br>线下的体验如何设计和评估？<br>如果无法控制线下体验的细节，怎么办？<br>大到一个行业的服务解决方案要如何设计？<br>跟多个团队、多种角色合作时，如何更好地发挥交互设计的价值？<br>如何跟不同行业的合作方迅速建立深入合作关系？如何推广设计方案？<br>新的交互平台出现了，新的交互范式会是什么？提供了什么样的可能性？<br>……</p>
+</blockquote>
+<p>人+设计+技术，多么有趣而梦幻的组合！问题？再来一打！</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/titile5-bestworsttime.png" alt=""></p>
+<h2 id="u4F60_u662F_u7528_u6237_u7814_u7A76_u5458_u5417_uFF1F"><a href="#u4F60_u662F_u7528_u6237_u7814_u7A76_u5458_u5417_uFF1F" class="headerlink" title="你是用户研究员吗？"></a>你是用户研究员吗？</h2><p>我曾经是用户研究员。在网易用户体验设计中心，服务过网易门户、有道云笔记、有道词典、网易邮箱、网易云阅读、网易微博等产品。</p>
+<p>在那个年代，极少公司有用户研究的职位。不但要在稀少的前人经验上独自摸索、快速学习，还得肩负起普及用户研究和用户体验的责任。</p>
+<blockquote>
+<p>用研能解决哪些问题，不能解决哪些？<br>什么是定性研究，什么是定量研究？<br>常用的用研方法有哪些？可用性测试怎么做？访谈怎么做？焦点小组怎么做？卡片分类呢？情绪版呢？入户调研呢？<br>如何针对问题设计调研方案？<br>怎样快速招募到符合条件的用户来做调研？<br>什么是聚类分析、方差分析、统计检验？<br>如何让人信服研究过程和结果？<br>……</p>
+</blockquote>
+<p>相比起本职工作，更多的困惑来自这个岗位的特殊性：</p>
+<blockquote>
+<p>项目迭代速度太快了，但是用研项目周期都很长，怎么办？<br>研究结论提不出产品、设计马上可以执行的建议，怎么办？<br>用研跟产品、设计的关系是什么？他们需要什么？应该如何配合？<br>如何让团队其他角色参与到用研过程中？<br>如何向没有相关知识的同事快速解释清楚用研的思路和方法？<br>……</p>
+</blockquote>
+<p>作为弱势群体，用研的同学们一直都在求解行业的巨大难题：<strong>如何既靠谱又快速地解答问题</strong>？一旦注入科研思维，建立起更严谨方法体系，这个行业的发展一定会成倍加速。</p>
+<h2 id="u4F60_u662F_u4E3A_u4E86_u6BD5_u4E1A_u548C_u5DE5_u4F5C_u8FF7_u832B_u7684_u5B66_u751F_u515A_u5417_uFF1F"><a href="#u4F60_u662F_u4E3A_u4E86_u6BD5_u4E1A_u548C_u5DE5_u4F5C_u8FF7_u832B_u7684_u5B66_u751F_u515A_u5417_uFF1F" class="headerlink" title="你是为了毕业和工作迷茫的学生党吗？"></a>你是为了毕业和工作迷茫的学生党吗？</h2><p>感谢毕业时那场金融危机，让我选择了这个行业。</p>
+<p>求职时的忐忑，今天仍记忆犹新：</p>
+<blockquote>
+<p>我的简历怎样才能让 HR 感兴趣？<br>校招要么错过，要么笔试就挂，怎么办？<br>听说这个岗位竞争很激烈，我有什么优势呢？<br>每一次面试都超级紧张，怎么办？<br>怎么找到实习机会？<br>该选择外企/私企/国企/公务员？大公司/小公司？<br>应该去哪个城市？<br>……</p>
+</blockquote>
+<p>当年，主流手机系统还是塞班，Wikipedia 被墙，开心网红极一时，微信远没有诞生。</p>
+<p>当我跟研究生导师说要去互联网公司工作时，他不解地问：一个网站有什么好做的？当时我答不上来，因为我不知道这个行业到底有没有前途，只知道我喜欢它，一天到晚泡在上面，虽然我并没有听过用户体验、交互设计这些名词。</p>
+<p>剩下的，也都只是迷茫：</p>
+<blockquote>
+<p>这个行业有前途吗？我能做什么？<br>还会经历类似上一轮的泡沫然后失业吗？<br>这个工作跟专业完全不对口，这 6 年岂不是白读了？<br>产品经理是一个什么样的职位？我能做好吗？<br>我这性格适不适合做产品经理？<br>这个行业成功的前辈他们都是怎么做的？<br>需不需要出国再深造一段时间？<br>……</p>
+</blockquote>
+<p>别怕，今天我们有更多的同路人。</p>
+<p>改不改变潮水的方向，并不重要。重要的是，真的身处其中，感受身上跳动着这个时代真切而紊乱的脉搏。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/storyshack-136_drbbb.jpg" alt=""></p>
+<hr>
+<p>今天的这个行业，比以往任何时候都聚集了更多年轻而有抱负的头脑。</p>
+<p>作为一个过来人，我没有成功的经验，何况经验每天都在快速贬值。但可以肯定的是，我们遇到过类似的困惑。部分有了解答，部分有了思路，部分仍然折磨着我。未来有更多的难题，需要我们一起去探讨。</p>
+<p>当我苦思不得其解，当我迷茫不知道明天会怎样的时候，也希望有个人来拍拍肩膀，告诉我一个大概的方向，好把精力节省下来去对付真正的难题。</p>
+<p>我已经没有机会对过去的我这么做，但可以尝试把曾经的困惑和现在的思考共享出来，递给未来的你。</p>
+<p>欢迎你，迷茫症病友</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/magic_hat.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/titile5-bestworsttime.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="产品经理" scheme="http://uegeek.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+      <category term="用户研究" scheme="http://uegeek.com/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/"/>
+    
+      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
+    
+      <category term="叽歪" scheme="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[心智乐高 05 - 科学星球的入场券：双盲实验]]></title>
@@ -1906,514 +2426,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week18.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[第十八周：发明，专利和收入[FabNotes035]]]></title>
-    <link href="http://uegeek.com/fabnotes035.html"/>
-    <id>http://uegeek.com/fabnotes035.html</id>
-    <published>2016-08-08T13:09:14.000Z</published>
-    <updated>2016-08-08T13:09:56.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week18.png" alt=""></p>
-<a id="more"></a> 
-<p>This week is about <a href="http://academy.cba.mit.edu/classes/invention_IP_business/index.html" target="_blank" rel="external">Invention, Intellectual Property, and Income</a>.</p>
-<h2 id="Invention"><a href="#Invention" class="headerlink" title="Invention"></a>Invention</h2><p>   research, development<br>   ready, fire, aim<br>   traffic, pain<br>   ecosystems</p>
-<h2 id="Intellectual_property"><a href="#Intellectual_property" class="headerlink" title="Intellectual property"></a>Intellectual property</h2><p>patents</p>
-<ul>
-<li>types<ul>
-<li>utility (20 years from filing)</li>
-<li>design (15 years from grant)</li>
-</ul>
-</li>
-<li>search</li>
-<li>disclosure<ul>
-<li>private</li>
-<li>public<pre><code>US: 1 year to file
-most international: can&apos;t file
-</code></pre></li>
-<li>defensive</li>
-</ul>
-</li>
-<li>provisional<ul>
-<li>1 year to convert</li>
-<li>included in term</li>
-</ul>
-</li>
-<li>full<ul>
-<li>teaching</li>
-<li>specification, claims</li>
-<li>types:<pre><code>composition,
-method,
-apparatus,
-manufacture
-</code></pre></li>
-</ul>
-</li>
-<li>examination<ul>
-<li>novel, non-obvious, useful</li>
-<li>(im)possibility</li>
-<li>genes, business processes, software</li>
-</ul>
-</li>
-<li>Patent Cooperation Treaty (PCT)<ul>
-<li>nationalization</li>
-<li>EPO</li>
-</ul>
-</li>
-<li>precedence:<br>   first to file vs first to invent </li>
-<li>maintenance</li>
-<li>litigation<ul>
-<li>defense</li>
-<li>identify infringement</li>
-<li>barriers to infringement</li>
-<li>troll, NPE</li>
-<li>~ $100, $1k, $10k, $100k</li>
-</ul>
-</li>
-</ul>
-<p>copyrights</p>
-<ul>
-<li>original works of authorship</li>
-<li>designs, software, circuits, mask works</li>
-<li>reproduce, modify, distribute, perform, display</li>
-<li>secured on creation</li>
-<li>notice of copyright</li>
-<li>registration</li>
-<li>lifetime + 70 years</li>
-<li>licenses: <pre><code>open-source vs free,
-Creative Commons,
-GPL,
-LGPL,
-BSD,
-MIT/X11,
-Apache,
-fab lab
-</code></pre></li>
-</ul>
-<p>trademarks</p>
-<ul>
-<li>establishment</li>
-<li>registration</li>
-<li>protection</li>
-</ul>
-<h2 id="Income"><a href="#Income" class="headerlink" title="Income"></a>Income</h2><ul>
-<li>motivations:<pre><code>financial,
-cultural,
-social
-</code></pre></li>
-<li>sources<pre><code>products,
-consumables,
-licenses,
-advertising,
-platforms,
-infrastructure,
-services:
-   operation,
-   customization,
-   education,
-   research,
-   impact
-</code></pre></li>
-<li>types<ul>
-<li>for-profit:<pre><code>sole proprietor,
-partnership,
-limited liability company (LLC),
-corporation
-</code></pre></li>
-<li>non-profit<pre><code>501(c)(3)
-</code></pre></li>
-<li>hybrid</li>
-</ul>
-</li>
-<li>funding:<pre><code>VC,
-incubator,
-angel,
-friends &amp; family,
-crowdsource,
-loan,
-purchase commitment,
-bootstrap
-</code></pre></li>
-<li>lifecycle<ul>
-<li>(failure of) business plan</li>
-<li>(need for) management team</li>
-<li>(problems in) scaling</li>
-<li>(pressure for) exit</li>
-</ul>
-</li>
-</ul>
-<h2 id="accelerator/incubator/manufacturer"><a href="#accelerator/incubator/manufacturer" class="headerlink" title="accelerator/incubator/manufacturer"></a>accelerator/incubator/manufacturer</h2><ul>
-<li>PCH, Highway 1</li>
-<li>Flextronics, Flex</li>
-<li>Dragon, Bolt</li>
-<li>SEEED, HAX</li>
-<li>Factory For All</li>
-<li>Fab Lab Made</li>
-</ul>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/167147349" target="_blank" rel="external">Week18 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/invention_IP_business/index.html" target="_blank" rel="external">Week18 课程大纲</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week18.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[作业17：应用[FabNotes034]]]></title>
-    <link href="http://uegeek.com/fabnotes034.html"/>
-    <id>http://uegeek.com/fabnotes034.html</id>
-    <published>2016-08-08T13:07:49.000Z</published>
-    <updated>2016-08-08T13:09:01.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week17.png" alt=""></p>
-<a id="more"></a> 
-<blockquote>
-<p>propose a final project<br> that integrates the range of units covered, answering:</p>
-<ul>
-<li>what will it do?</li>
-<li>who’s done what beforehand?</li>
-<li>what materials and components will be required?</li>
-<li>where will they come from?</li>
-<li>how much will it cost?</li>
-<li>what parts and systems will be made?</li>
-<li>what processes will be used?</li>
-<li>what tasks need to be completed?</li>
-<li>what questions need to be answered?</li>
-<li>what is the schedule?</li>
-<li><p>how will it be evaluated?</p>
-<p>projects can be separate or joint, but need to show individual mastery<br>  of the skills covered</p>
-<p>where possible, you should make rather than buy the parts of your project</p>
-</li>
-</ul>
-</blockquote>
-<h3 id="Final_project_proposal"><a href="#Final_project_proposal" class="headerlink" title="Final project proposal"></a>Final project proposal</h3><p>My final project is making a theremin-like instrument.</p>
-<h4 id="what_will_it_do_3F"><a href="#what_will_it_do_3F" class="headerlink" title="what will it do?"></a>what will it do?</h4><p>You can play a song with your hand but without touching anything. It’s like touchless instrument.</p>
-<h4 id="who_u2019s_done_what_beforehand_3F"><a href="#who_u2019s_done_what_beforehand_3F" class="headerlink" title="who’s done what beforehand?"></a>who’s done what beforehand?</h4><p>Many electronics and maker have made theremin. Gaudilab even made a opensource library <a href="http://www.gaudi.ch/OpenTheremin/" target="_blank" rel="external">Open.Theremin</a>. I’d like to make a simple version. And also some simplier projects <a href="http://www.instructables.com/id/Ultrasonic-Theremin/" target="_blank" rel="external">like this</a>.</p>
-<h4 id="what_materials_and_components_will_be_required_3F"><a href="#what_materials_and_components_will_be_required_3F" class="headerlink" title="what materials and components will be required?"></a>what materials and components will be required?</h4><p>Hardware</p>
-<ul>
-<li>ATTiny 45 chip</li>
-<li>Ultrasonic sensor HC-SR04</li>
-<li>AVRISPSMD</li>
-<li>FTDI-SMD-HEADER</li>
-<li>RES 10.0K OHM 1206 SMD</li>
-<li>CAP CER 1UF 1206</li>
-<li>Dupont Line</li>
-</ul>
-<p>Software</p>
-<ul>
-<li>Arduino IDE</li>
-<li>New Ping Library for Arduino IDE</li>
-<li><a href="http://openframeworks.cc/" target="_blank" rel="external">OpenFrameworks</a> </li>
-<li><a href="/github.com/micknoise/Maximilian">Maximillian / ofxMaxim</a> addon for OpenFrameworks</li>
-</ul>
-<p>Housing</p>
-<ul>
-<li>basswood</li>
-<li>3D Printing PLA connection parts</li>
-</ul>
-<h4 id="where_will_they_come_from_3F"><a href="#where_will_they_come_from_3F" class="headerlink" title="where will they come from?"></a>where will they come from?</h4><ul>
-<li>Local electronic vender</li>
-<li>Taobao</li>
-<li>wood suply</li>
-<li>Inventory from our fablab</li>
-</ul>
-<h4 id="how_much_will_it_cost_3F"><a href="#how_much_will_it_cost_3F" class="headerlink" title="how much will it cost?"></a>how much will it cost?</h4><table>
-<thead>
-<tr>
-<th>item</th>
-<th>quantity</th>
-<th>cost</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Attiny 45</td>
-<td>1</td>
-<td>$ 2</td>
-</tr>
-<tr>
-<td>HC-SR04</td>
-<td>1</td>
-<td>$ 1</td>
-</tr>
-<tr>
-<td>AVRISPSMD</td>
-<td>1</td>
-<td>$ 1</td>
-</tr>
-<tr>
-<td>FTDI-SMD-HEADER</td>
-<td>1</td>
-<td>$ 1</td>
-</tr>
-<tr>
-<td>RES 10.0K OHM 1206 SMD</td>
-<td>2</td>
-<td>$ 0.1</td>
-</tr>
-<tr>
-<td>CAP CER 1UF 1206</td>
-<td>1</td>
-<td>$ 0.1</td>
-</tr>
-<tr>
-<td>Dupont Line</td>
-<td>5</td>
-<td>$ 0.1</td>
-</tr>
-<tr>
-<td>basswood</td>
-<td>2</td>
-<td>$ 10</td>
-</tr>
-<tr>
-<td>3D Printing PLA</td>
-<td>1</td>
-<td>$1</td>
-</tr>
-<tr>
-<td>glue</td>
-<td>1</td>
-<td>$ 1</td>
-</tr>
-<tr>
-<td><strong>TOTAL</strong></td>
-<td></td>
-<td><strong>$ 17</strong></td>
-</tr>
-</tbody>
-</table>
-<h4 id="what_parts_and_systems_will_be_made_3F"><a href="#what_parts_and_systems_will_be_made_3F" class="headerlink" title="what parts and systems will be made?"></a>what parts and systems will be made?</h4><ul>
-<li>the circut</li>
-<li>the program</li>
-<li>the box</li>
-</ul>
-<h4 id="what_processes_will_be_used_3F"><a href="#what_processes_will_be_used_3F" class="headerlink" title="what processes will be used?"></a>what processes will be used?</h4><ul>
-<li>Project plan (Week1, Week17)</li>
-<li>Design the circut (Week6 - Electronics Design)</li>
-<li>Make the PCB (Week4 - Electronic Production)</li>
-<li>Make the circut (Week8 - Embedded Programming, Week11 - Input Devices, Week13 - Output Devices, Week15 - Networking and Communications)</li>
-<li>Test the instrument (Week16 - Interface and Application Programming)</li>
-<li>Design the housing (Week2 - CAD, Week9 - Mechanical Design, Week10 - Machine Design)</li>
-<li>Make the housing (Week3 - Computer-controlled cutting, Week7 - Computer-controlled machining)</li>
-<li>Design and make other components (Week5 - 3D scanning and printing, Week12 - Casting and Molding, Week14 - Composites)</li>
-<li>Assembly and test</li>
-</ul>
-<h4 id="what_tasks_need_to_be_completed_3F"><a href="#what_tasks_need_to_be_completed_3F" class="headerlink" title="what tasks need to be completed?"></a>what tasks need to be completed?</h4><ul>
-<li>study theremin principls</li>
-<li>design schematic in eagle</li>
-<li>design board in eagle</li>
-<li>buy components</li>
-<li>mill the borad</li>
-<li>soldering</li>
-<li>coding</li>
-<li>test input &amp; output part</li>
-<li>design housing parts</li>
-<li>making housing parts</li>
-<li>assemble</li>
-<li>test</li>
-</ul>
-<h4 id="what_questions_need_to_be_answered_3F"><a href="#what_questions_need_to_be_answered_3F" class="headerlink" title="what questions need to be answered?"></a>what questions need to be answered?</h4><ul>
-<li>theremin’s principl</li>
-<li>how the circut works</li>
-<li>how to program input and output</li>
-<li>…</li>
-</ul>
-<h4 id="what_is_the_schedule_3F"><a href="#what_is_the_schedule_3F" class="headerlink" title="what is the schedule?"></a>what is the schedule?</h4><ul>
-<li>study theremin principls (6.9-6.11)</li>
-<li>design schematic in eagle (6.12)</li>
-<li>design board in eagle (6.13)</li>
-<li>buy components (6.15)</li>
-<li>mill the borad (6.18)</li>
-<li>soldering (6.18)</li>
-<li>coding (6.12-6.18)</li>
-<li>test input &amp; output part (6.19)</li>
-<li>design housing parts (6.13-6.15)</li>
-<li>making housing parts (6.18-6.19)</li>
-<li>assemble (6.19)</li>
-<li>test (6.20-6.21)</li>
-</ul>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/168070090" target="_blank" rel="external">Week17 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/applications_implications/index.html" target="_blank" rel="external">Week17 课程大纲</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week17.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[作业16：界面和应用编程[FabNotes033]]]></title>
-    <link href="http://uegeek.com/fabnotes033.html"/>
-    <id>http://uegeek.com/fabnotes033.html</id>
-    <published>2016-08-08T13:06:38.000Z</published>
-    <updated>2016-08-08T13:07:37.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week16.png" alt=""></p>
-<a id="more"></a> 
-<p>这周的作业是</p>
-<blockquote>
-<p>为输入/输出设备写一个应用程序</p>
-</blockquote>
-<p>为之前做的这个检测光线的板子做个小应用好了。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week11mylightboard.jpeg" alt=""></p>
-<p>先试着让板子跟串口通讯，看看元件是不是正常传送检测值。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#include &#34;SoftwareSerial.h&#34;&#10; &#10;const int analogInPin =  A3;  // Analog input pin that the potentiometer is attached to&#10;int sensorValue = 0;        // value read from the pot&#10; &#10;const int Rx = 2; // this is physical pin 7&#10;const int Tx = 7; // this is physical pin 6&#10;SoftwareSerial mySerial(Rx, Tx);&#10; &#10;void setup() &#123;&#10;  pinMode(Rx, INPUT);&#10;  pinMode(Tx, OUTPUT);&#10;  mySerial.begin(9600); // send serial data at 9600 bits/sec&#10;&#125;&#10;&#10;void loop()&#123;&#10;  sensorValue = analogRead(analogInPin);&#10;  mySerial.println(sensorValue);&#10;  delay(500);&#10;&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1465544599.jpeg" alt=""></p>
-<p>光电晶体管工作正常。 </p>
-<p><a href="https://youtu.be/IOLJht_QtZU" target="_blank" rel="external">Video</a></p>
-<p>下一步，在 processing 里面写界面的程序。当检测到光线变暗时，界面提示 “-_- It’s dark!” ，如果光线变亮，提示 “it’s getting light ”：<br><img src="http://7xjpra.com1.z0.glb.clouddn.com/WeChat_1465547042.jpeg" alt=""></p>
-<p>The code:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import processing.serial.*;&#10;Serial myPort;&#10;int lf = 10;&#10; &#10;void setup()&#123;&#10;  size(300,300);&#10;  myPort = new Serial(this,&#34;/dev/tty.usbserial-A400gwhT&#34;,9600);&#10;  textAlign(CENTER, CENTER);&#10;  fill(255);&#10;  textSize(20);&#10;&#125;&#10; &#10;void draw()&#123;&#10;  while(myPort.available() &#62; 0)&#123;&#10;    String str = myPort.readStringUntil(lf);&#10;&#10;    if(str!=null)&#123;&#10;      int value = Integer.parseInt(trim(str));&#10; &#10;       if (value &#62;900) &#123;&#10;        print(&#34;it&#39;s dark &#34;);&#10;        println(value);&#10;        background(0,0,0);&#10;        text(&#34;-_- It&#39;s dark! &#34;,150,120);&#10;        text(value,150,200);&#10;       &#125; &#10;       else&#123;&#10;        print(&#34;it&#39;s getting light &#34;);&#10;        println(value);&#10;        background(204,153,0);&#10;        text(&#34;:P It&#39;s getting light &#34;,150,120);&#10;        text(value,150,200);&#10;       &#125;&#10;    &#125;&#10;  &#125;&#10;&#125;</span><br></pre></td></tr></table></figure>
-<div class="video-container"><iframe src="//www.youtube.com/embed/O1mLcUZq9NM" frameborder="0" allowfullscreen></iframe></div>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/167147349" target="_blank" rel="external">Week16 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/interface_application_programming/index.html" target="_blank" rel="external">Week16 课程大纲</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week16.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="Arduino" scheme="http://uegeek.com/tags/Arduino/"/>
-    
-      <category term="Fab" scheme="http://uegeek.com/tags/Fab/"/>
-    
-      <category term="Maker" scheme="http://uegeek.com/tags/Maker/"/>
-    
-      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[第十六周：界面和应用编程[FabNotes032]]]></title>
-    <link href="http://uegeek.com/fabnotes032.html"/>
-    <id>http://uegeek.com/fabnotes032.html</id>
-    <published>2016-08-08T13:05:32.000Z</published>
-    <updated>2016-08-08T13:06:32.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week16.png" alt=""></p>
-<a id="more"></a> 
-<p>这周学习<a href="http://academy.cba.mit.edu/classes/interface_application_programming/index.html" target="_blank" rel="external">界面和应用编程</a>.</p>
-<h2 id="u7F16_u7A0B_u8BED_u8A00"><a href="#u7F16_u7A0B_u8BED_u8A00" class="headerlink" title="编程语言"></a>编程语言</h2><ul>
-<li><a href="http://helloworldcollection.de/" target="_blank" rel="external">hello world</a></li>
-<li><a href="http://publications.gbdirect.co.uk/c_book/" target="_blank" rel="external">C</a>, <a href="http://gcc.gnu.org/" target="_blank" rel="external">GCC</a>, <a href="http://gcc.gnu.org/projects/cxx0x.html" target="_blank" rel="external">C++</a>, <a href="http://www.gnu.org/software/gdb/" target="_blank" rel="external">GDB (debugger)</a>, <a href="http://www.gnu.org/software/ddd/" target="_blank" rel="external">DDD (graphical viewer)</a></li>
-<li><a href="http://www.java.com/" target="_blank" rel="external">Java</a>, <a href="http://openjdk.java.net/" target="_blank" rel="external">OpenJDK</a>, <a href="http://icedtea.classpath.org/wiki/Main_Page" target="_blank" rel="external">IcedTea</a>, <a href="http://www.scala-lang.org/" target="_blank" rel="external">Scala</a>, <a href="http://developer.android.com/index.html" target="_blank" rel="external">Android</a></li>
-<li><a href="https://www.haskell.org/" target="_blank" rel="external">Haskell</a></li>
-<li><a href="http://processing.org/" target="_blank" rel="external">Processing</a>, <a href="http://www.wiring.org.co/" target="_blank" rel="external">Wiring</a>, <a href="http://www.arduino.cc/" target="_blank" rel="external">Arduino</a></li>
-<li>data flow: <a href="http://www.ni.com/labview/" target="_blank" rel="external">LabVIEW</a>, <a href="http://www.mathworks.com/products/simulink/" target="_blank" rel="external">Simulink</a>, <a href="http://cycling74.com/" target="_blank" rel="external">Max (for music)</a>, <a href="http://puredata.info/" target="_blank" rel="external">Pd</a>, <a href="http://scratch.mit.edu/" target="_blank" rel="external">Scratch (for kids)</a>, <a href="http://appinventor.mit.edu/" target="_blank" rel="external">App Inventor</a>, <a href="http://www.grasshopper3d.com/" target="_blank" rel="external">Grasshopper</a>, <a href="http://www.fireflyexperiments.com/" target="_blank" rel="external">Firefly</a></li>
-<li><a href="http://www.gnu.org/s/bash/" target="_blank" rel="external">Bash</a>, <a href="http://www.tcl.tk/" target="_blank" rel="external">Tcl</a></li>
-<li>Interpretive language: <a href="http://www.python.org/" target="_blank" rel="external">Python</a>, <a href="http://docs.python.org/tutorial/" target="_blank" rel="external">tutorial</a>, <a href="http://www.perl.org/" target="_blank" rel="external">Perl</a>, <a href="http://www.ruby-lang.org/en/" target="_blank" rel="external">Ruby</a></li>
-<li><a href="http://www.ecmascript.org/" target="_blank" rel="external">JavaScript</a>, <a href="http://www.ecmascript.org/" target="_blank" rel="external">JavaScript</a>, <a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a>, <a href="https://developers.google.com/v8/" target="_blank" rel="external">V8 (Google Chrome)</a>, <a href="https://www.npmjs.org/" target="_blank" rel="external">npm (package manager for node)</a>, <a href="https://www.npmjs.org/" target="_blank" rel="external">npm</a>, <a href="https://webassembly.github.io/" target="_blank" rel="external">WebAssembly (compile js)</a></li>
-<li><a href="http://tryapl.org/" target="_blank" rel="external">APL</a></li>
-</ul>
-<h2 id="u8BBE_u5907_u63A5_u53E3"><a href="#u8BBE_u5907_u63A5_u53E3" class="headerlink" title="设备接口"></a>设备接口</h2><ul>
-<li>for serial communication: <a href="http://www.camiresearch.com/Data_Com_Basics/RS232_standard.html" target="_blank" rel="external">RS/EIA/TIA 232/422/485</a>, <a href="https://github.com/pyserial/pyserial" target="_blank" rel="external">pySerial</a>, <a href="https://www.npmjs.org/package/serialport" target="_blank" rel="external">serialport</a>, <a href="https://www.npmjs.org/package/serialport" target="_blank" rel="external">serialport</a></li>
-<li>USB - serial:<a href="http://www.ftdichip.com/" target="_blank" rel="external">FTDI</a>, <a href="http://www.intra2net.com/en/developer/libftdi/" target="_blank" rel="external">libFTDI</a>, <a href="http://packages.ubuntu.com/python-ftdi" target="_blank" rel="external">python-ftdi</a>, <a href="https://www.npmjs.com/package/ftdi" target="_blank" rel="external">node ftdi lib</a></li>
-<li><a href="http://www.usb.org/" target="_blank" rel="external">USB</a>, <a href="http://sourceforge.net/apps/trac/pyusb/" target="_blank" rel="external">PyUSB</a>, <a href="https://www.npmjs.com/package/usb" target="_blank" rel="external">node usb lib</a> </li>
-<li><a href="http://www.irda.org/" target="_blank" rel="external">IrDA</a>, <a href="https://pypi.python.org/pypi/irda" target="_blank" rel="external">python-irda</a></li>
-<li><a href="http://www.ni.com/gpib/" target="_blank" rel="external">GPIB</a>, <a href="http://www.ni.com/visa/" target="_blank" rel="external">VISA</a>, <a href="https://pyvisa.readthedocs.io/en/stable/" target="_blank" rel="external">PyVISA: Control your instruments with Python — PyVISA 1.8 documentation</a></li>
-<li>IOT: <a href="http://mqtt.org/" target="_blank" rel="external">MQTT</a>, <a href="http://xmpp.org/about-xmpp/" target="_blank" rel="external">XMPP</a></li>
-<li>Native netwrok interface: <a href="http://docs.python.org/2/library/socket.html" target="_blank" rel="external">socket</a>, <a href="https://nodejs.org/api/dgram.html" target="_blank" rel="external">dgram</a>, <a href="https://nodejs.org/api/net.html" target="_blank" rel="external">net</a>, <a href="https://www.npmjs.org/package/ws" target="_blank" rel="external">node websocket package</a></li>
-</ul>
-<h2 id="u6570_u636E_u63A5_u53E3"><a href="#u6570_u636E_u63A5_u53E3" class="headerlink" title="数据接口"></a>数据接口</h2><ul>
-<li>sheet: <a href="https://www.libreoffice.org/discover/calc/" target="_blank" rel="external">Calc</a>, <a href="https://www.google.com/sheets/about/" target="_blank" rel="external">Sheets</a></li>
-<li>py sheet: <a href="http://manns.github.io/pyspread/" target="_blank" rel="external">Pyspread</a>, <a href="http://pandas.pydata.org/" target="_blank" rel="external">Pandas</a></li>
-<li><a href="https://www.mysql.com/" target="_blank" rel="external">MySQL</a>, <a href="https://www.mongodb.org/" target="_blank" rel="external">MongoDB</a></li>
-</ul>
-<h2 id="u7528_u6237_u754C_u9762"><a href="#u7528_u6237_u754C_u9762" class="headerlink" title="用户界面"></a>用户界面</h2><ul>
-<li><a href="http://www.tcl.tk/" target="_blank" rel="external">Tk</a>, <a href="http://www.pythonware.com/library/tkinter/introduction/index.htm" target="_blank" rel="external">Tkinter</a>: <a href="http://academy.cba.mit.edu/classes/input_devices/step/hello.load.45.py" target="_blank" rel="external">hello.load.45.py</a></li>
-<li><a href="http://wxwidgets.org/" target="_blank" rel="external">wxWidgets</a>, <a href="http://www.wxpython.org/" target="_blank" rel="external">wxPython</a>: <a href="http://kokompe.cba.mit.edu/index.html" target="_blank" rel="external">panel_png_path.py</a></li>
-<li><a href="http://qt.digia.com/" target="_blank" rel="external">Qt (antimony)</a>, <a href="http://wiki.python.org/moin/PyQt" target="_blank" rel="external">PyQt</a></li>
-<li><a href="http://www.gtk.org/" target="_blank" rel="external">GTK</a>, <a href="http://www.pygtk.org/" target="_blank" rel="external">PyGTK</a></li>
-<li><a href="http://www.pygtk.org/" target="_blank" rel="external">PyGTK</a>, <a href="http://www.modrana.org/pyclutter_tutorial/tutorial/html/sec-pyclutter.html" target="_blank" rel="external">PyClutter</a></li>
-<li><a href="http://kivy.org/" target="_blank" rel="external">Kivy</a>(cross platform)</li>
-<li><a href="http://www.w3.org/TR/html5/forms.html" target="_blank" rel="external">forms</a>, <a href="http://www.w3.org/TR/html5/forms.html" target="_blank" rel="external">forms</a></li>
-<li>Framworks: <a href="http://requirejs.org/" target="_blank" rel="external">Require</a>, <a href="http://requirejs.org/" target="_blank" rel="external">Require</a>, <a href="https://angularjs.org/" target="_blank" rel="external">Angular</a>, <a href="https://angularjs.org/" target="_blank" rel="external">Angular</a>, <a href="http://emberjs.com/" target="_blank" rel="external">Ember</a>, <a href="http://emberjs.com/" target="_blank" rel="external">Ember</a>, <a href="https://www.meteor.com/" target="_blank" rel="external">Meteor</a>, <a href="https://babeljs.io/" target="_blank" rel="external">Babel</a></li>
-</ul>
-<h2 id="u56FE_u5F62"><a href="#u56FE_u5F62" class="headerlink" title="图形"></a>图形</h2><ul>
-<li>low level: <a href="http://www.x.org/" target="_blank" rel="external">X Windows</a></li>
-<li>java: <a href="http://www.oracle.com/technetwork/java/index.html" target="_blank" rel="external">AWT, JFC, Swing</a></li>
-<li><a href="http://www.w3.org/TR/2dcontext/" target="_blank" rel="external">Canvas</a></li>
-<li><a href="http://www.w3.org/TR/SVG/" target="_blank" rel="external">SVG</a></li>
-<li>3D graphics: <a href="http://www.khronos.org/webgl/" target="_blank" rel="external">WebGL</a>, <a href="http://threejs.org/" target="_blank" rel="external">Three.js</a></li>
-<li><a href="http://www.opengl.org/" target="_blank" rel="external">OpenGL</a>, <a href="http://www.opengl.org/resources/libraries/glut/" target="_blank" rel="external">GLUT</a>, <a href="http://www.opengl.org/resources/libraries/glut/" target="_blank" rel="external">GLUT</a></li>
-<li>CG: <a href="http://renderman.pixar.com/view/non-commercial-renderman" target="_blank" rel="external">RenderMan</a>, <a href="http://renderman.pixar.com/view/non-commercial-renderman" target="_blank" rel="external">RenderMan</a>, <a href="http://www.renderpixie.com/" target="_blank" rel="external">Pixie</a></li>
-<li>complex data: <a href="http://www.vtk.org/" target="_blank" rel="external">VTK</a>, <a href="http://www.vtk.org/Wiki/VTK/Writing_VTK_files_using_python" target="_blank" rel="external">pyvtk</a>, <a href="http://www.vtk.org/Wiki/VTK/Writing_VTK_files_using_python" target="_blank" rel="external">pyvtk</a></li>
-<li>3D BIO data: <a href="http://www.openvdb.org/" target="_blank" rel="external">OpenVDB</a></li>
-<li>Game engine: <a href="https://unity3d.com/webplayer" target="_blank" rel="external">Unity</a></li>
-<li>GPU: <a href="https://developer.nvidia.com/cuda-zone" target="_blank" rel="external">CUDA</a>, <a href="https://www.khronos.org/opencl/" target="_blank" rel="external">OpenCL</a></li>
-</ul>
-<h2 id="u591A_u5A92_u4F53"><a href="#u591A_u5A92_u4F53" class="headerlink" title="多媒体"></a>多媒体</h2><ul>
-<li><a href="http://www.libsdl.org/" target="_blank" rel="external">SDL</a>, <a href="http://www.pygame.org/" target="_blank" rel="external">Pygame</a></li>
-<li><a href="http://www.openframeworks.cc/" target="_blank" rel="external">openFrameworks</a>, <a href="http://code.google.com/p/openframeworks-python-bindings/downloads/list" target="_blank" rel="external">ofpython</a></li>
-<li><a href="http://www.html5rocks.com/en/features/multimedia" target="_blank" rel="external">HTML5</a>, <a href="http://www.webrtc.org/" target="_blank" rel="external">WebRTC (realtime audio &amp; video)</a></li>
-</ul>
-<h2 id="u6570_u5B66"><a href="#u6570_u5B66" class="headerlink" title="数学"></a>数学</h2><ul>
-<li><a href="http://www.scipy.org/" target="_blank" rel="external">SciPy</a>, <a href="http://www.numpy.org/" target="_blank" rel="external">NumPy</a>, <a href="http://ipython.org/" target="_blank" rel="external">IPython</a>, <a href="http://jupyter.org/" target="_blank" rel="external">Jupyter</a></li>
-<li>low level lib: <a href="http://www.netlib.org/" target="_blank" rel="external">Netlib</a>, <a href="http://www.netlib.org/blas/" target="_blank" rel="external">BLAS</a>, <a href="http://www.netlib.org/linpack/" target="_blank" rel="external">LINPACK</a>, <a href="http://www.netlib.org/lapack/" target="_blank" rel="external">LAPACK</a></li>
-<li><a href="http://www.mathworks.com/" target="_blank" rel="external">MATLAB</a>, <a href="http://www.gnu.org/software/octave/" target="_blank" rel="external">Octave</a></li>
-<li><a href="http://matplotlib.org/" target="_blank" rel="external">matplotlib</a>, <a href="http://stanford.edu/~mwaskom/software/seaborn/" target="_blank" rel="external">Seaborn</a></li>
-<li><a href="http://www.r-project.org/" target="_blank" rel="external">R</a>, <a href="http://rpy.sourceforge.net/" target="_blank" rel="external">RPy</a>, <a href="http://ggplot2.org/" target="_blank" rel="external">ggplot2</a></li>
-<li>symbolic: <a href="http://www.wolfram.com/" target="_blank" rel="external">Mathematica</a>, <a href="http://www.wolfram.com/" target="_blank" rel="external">Mathematica</a>, <a href="http://docs.sympy.org/" target="_blank" rel="external">SymPy</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays" target="_blank" rel="external">typed arrays</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Performance/Using_web_workers" target="_blank" rel="external">web workers</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader" target="_blank" rel="external">file reader</a></li>
-<li><a href="http://mathjs.org/" target="_blank" rel="external">Math.js</a>, <a href="http://mathjs.org/" target="_blank" rel="external">Math.js</a>, <a href="https://www.npmjs.org/package/science" target="_blank" rel="external">Science.js</a></li>
-<li><a href="http://www.jqplot.com/" target="_blank" rel="external">jqPlot</a>, <a href="http://d3js.org/" target="_blank" rel="external">D3</a>, <a href="http://www.highcharts.com/" target="_blank" rel="external">Highcharts</a></li>
-<li><a href="http://www.rle.mit.edu/dspg/pub_books.html" target="_blank" rel="external">signal processing</a>, <a href="http://www.cambridge.org/us/academic/subjects/physics/computational-science-and-modelling/nature-mathematical-modeling" target="_blank" rel="external">modeling</a></li>
-</ul>
-<h3 id="u8BFE_u7A0B_u8D44_u6E90"><a href="#u8BFE_u7A0B_u8D44_u6E90" class="headerlink" title="课程资源"></a>课程资源</h3><ul>
-<li><a href="http://fabacademy.org/class-schedule-2016/" target="_blank" rel="external">Fab Academy 2016 课表</a></li>
-<li><a href="https://vimeo.com/167147349" target="_blank" rel="external">Week16 课程视频</a></li>
-<li><a href="http://academy.cba.mit.edu/classes/interface_application_programming/index.html" target="_blank" rel="external">Week16 课程大纲</a></li>
-<li><a href="https://www.gitbook.com/read/book/kidult00/00fabnotes" target="_blank" rel="external">我的英文笔记 Gitbook</a></li>
-<li><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxNDE2NzAxOQ==&amp;hid=3&amp;sn=c37847b5d6e0f007c88dbc5e9e0c0199#wechat_redirect" target="_blank" rel="external">公众号文章列表</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week16.png" alt=""></p>]]>
     
     </summary>
     
