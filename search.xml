@@ -4,6 +4,517 @@
   
     
     <entry>
+      <title><![CDATA[这儿有一份严肃的设计书单，2017，要不要一起读？]]></title>
+      <url>http://uegeek.com/161218-designer-reading-list.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/2017designread.png" alt=""></p>
+<a id="more"></a> 
+<p>这几天，在翻看<a href="https://book.douban.com/people/qop/" target="_blank" rel="external">过往的读书记录</a>。转做设计已经快 5 年，虽然也陆续读了一些书，但总是有想读而没读的，有读过觉得不如不读的，也有读过来不及回味的 —— 可是，为什么没有在第一年就认真筛选最好的书，把它们都看了呢？明明一年可以做到的事，为什么花了五年仍然没有做好？</p>
+<p>如果现在给当初的自己开一个书单，会是什么样？</p>
+<h2 id="u9009_u4E66_u6807_u51C6"><a href="#u9009_u4E66_u6807_u51C6" class="headerlink" title="选书标准"></a>选书标准</h2><p>这个书单的出发点，是想用工作多年后的反省和经验，选出在前 3 年就该看的<strong>设计类书籍</strong>。<strong>目的不是解决工作中的实操性问题，而是建立对设计的系统理解，当遇到实际问题时，知道要去哪里找答案。</strong></p>
+<p>选书的主要标准：</p>
+<ul>
+<li>领域经典，常看常新</li>
+<li>探索领域中的「大问题」</li>
+<li>广度优先，尽量涉及体验设计的各方面</li>
+<li>未绝版/有电子版，中英文版都有的优先</li>
+</ul>
+<p>不会包括哪些书：</p>
+<ul>
+<li>3 年内一定会过时的书</li>
+<li>讨论的主题比较狭窄</li>
+<li>讲工具的书（去看视频吧）</li>
+<li>半天可以翻完的书</li>
+</ul>
+<p>顺便介绍一下，00 是哪根葱？</p>
+<ul>
+<li>互联网老腊肉，前微信设计师，互联网早读课最早发起人之一</li>
+<li>豆瓣忠实用户，读过 327 本书， 书评 26 篇， 笔记 313 篇</li>
+<li>主题学习者，运营公众号 HackYourself/你丫全栈，受欢迎的读书笔记包括：<ul>
+<li><a href="http://www.uegeek.com/learning-about-learn.html" target="_blank" rel="external">重启学习系统，做个知识炼金术士</a></li>
+<li><a href="http://www.uegeek.com/geb-note.html" target="_blank" rel="external">GEB —— 一次关于有序与无序的探寻之旅</a></li>
+<li><a href="http://www.uegeek.com/selfish-gene-1.html" target="_blank" rel="external">报告：前方没有上帝出没——读自私的基因[上]</a></li>
+<li><a href="http://www.uegeek.com/brief-history-of-humankind.html" target="_blank" rel="external">给自恋物种的三副猛药——读「人类简史」</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="u4E66_u5355"><a href="#u4E66_u5355" class="headerlink" title="书单"></a>书单</h2><p>这份书单分为设计观、设计理论、互联网体验与界面设计、面向未来的设计四个部分。</p>
+<p>设计观部分，帮助我们在思考设计问题之前，寻找到自己看待设计、求解设计问题的立足点。怎么找到这个立足点呢？需要先回答「设计是什么」、「为谁设计」、「设计如何发展」这三个根本问题，从而形成对设计的底层理解。</p>
+<p>接着，设计理论部分，从早期的平面设计、装饰艺术溯源，导出基本的设计法则，然后探讨人的认知和心理如何影响设计。</p>
+<p>然后再到互联网体验设计，从认知原理开始，在设计过程、信息架构、体验度量、情感化设计这几个领域，选择最有代表性的一本书，并且代入精益的视角去整体看待互联网产品的体验设计。</p>
+<p>最后一部分，设计的反思，以及去探索正在兴起的设计领域和设计话题。</p>
+<h3 id="u8BBE_u8BA1_u89C2"><a href="#u8BBE_u8BA1_u89C2" class="headerlink" title="设计观"></a>设计观</h3><p>1.<a href="https://book.douban.com/subject/4257259/" target="_blank" rel="external">设计是什么 - Michael Kroeger</a> + <a href="https://book.douban.com/subject/2248907/" target="_blank" rel="external">Paul Rand: A Designer’s Art</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s4153181.jpg" alt=""></p>
+<p><img src="https://img1.doubanio.com/lpic/s8913259.jpg" alt=""></p>
+<p>首先，由平面设计大师 Paul Rand 出场，借着他与设计学生的对话集，开始去思考设计的元问题：设计是什么？1995年2月，亚利桑那大学杰出学人计划邀请保罗．兰德客座讲学，带领学生思考设计前该知道的所有事。这本书的内容便是这段讲学期间的摘录。从平面设计初学者该懂的事、该看的书，电脑对设计的帮助，与客户的沟通，到设计是什麽，透过精辟的问答，道出最一针见血、最直指核心的答案，机锋处处却有深富教育性与启发性。</p>
+<p>有余力的顺便再读一读 Paul Rand 谈设计和设计师的经典之作「A Designers’s Art」。</p>
+<p>2.<a href="https://book.douban.com/subject/4230237/" target="_blank" rel="external">设计中的设计 - 原研哉</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s2165932.jpg" alt=""></p>
+<p>了解过西方设计大师的设计观，再来看看东方的设计大师怎么谈设计。</p>
+<p>在原研哉看来，设计不是一种技能，而是捕捉事物本质的感觉能力和洞察能力。所以，设计师要时刻保持对社会的敏感度。在「设计中的设计」一书中，他正是以这一想法为中心展开论述。</p>
+<p>3.<a href="https://book.douban.com/subject/19912141/" target="_blank" rel="external">为真实的世界设计 - Victor Papanek</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s25807191.jpg" alt=""></p>
+<p>「为谁而设计」？</p>
+<p>以正三观的一本经典。推荐给自认为在做设计的人。很难想象这是一本写于 1970 年的书，而且直到今天，书中提及的那么多问题依然存在，甚至更为严重。什么更值得去做？设计师应该具有怎样的神经、视野和能力？世界那么大，问题那么多，请永远心存敬畏，关心他人，意识到我们的责任和能力，在纷繁的表象中，去尽力回答那些可能只在夜深人静时候才会浮现的、可以不断自我拷问的问题。</p>
+<p>4.<a href="https://book.douban.com/subject/20562604/" target="_blank" rel="external">现代设计史 - David Raizman</a> </p>
+<p><img src="https://img3.doubanio.com/lpic/s24961200.jpg" alt=""></p>
+<p>想要去到未来？那么先回一趟过去吧！</p>
+<p>通过这本设计史中的经典，了解设计的前世今生，才能明白这是一门什么学科、什么手艺、什么生意。</p>
+<h3 id="u8BBE_u8BA1_u7406_u8BBA"><a href="#u8BBE_u8BA1_u7406_u8BBA" class="headerlink" title="设计理论"></a>设计理论</h3><p>5.<a href="https://book.douban.com/subject/26882272/" target="_blank" rel="external">设计的准则 - Massimo Vignelli</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s29068132.jpg" alt=""></p>
+<blockquote>
+<p>如果你会设计一样东西，你就能设计任何东西</p>
+</blockquote>
+<p>由设计大师马西莫·维涅里带领开始设计理论的入门，再适合不过了。</p>
+<p>这本书分为两部分。「无形」部分讲解了基本的设计概念和理念。「有形」部分则涵盖了设计师工具包中许多可见的设计部分，例如标准纸张尺寸，网格，边距，基本字体，类型大小关系，比例，纹理，颜色，装订等。</p>
+<p>6.<a href="https://book.douban.com/subject/25925874/" target="_blank" rel="external">秩序感——装饰艺术的心理学研究 - E.H. Gombrich</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s27322894.jpg" alt=""></p>
+<p>设计理论，不能不读贡布里希。</p>
+<p>这本书是对人类探求时间与空间中秩序与节奏的广泛研究。本书所列举的各种文化背景中装饰艺术的代表作，表现了人类的一种意趣，这种意趣可在人类创作的戏剧、诗歌、舞蹈、音乐及建筑中找到。这种人类的基本特性需要从我们自身的生物遗传中才能找到解释。贡布里希以其特有的清晰、学识的深度，以及对各种学科的广泛兴趣，解决了美学最基本的问题。</p>
+<p>7.<a href="https://book.douban.com/subject/6743317/" target="_blank" rel="external">点线面 - Wassily Kandinsky </a> or <a href="https://book.douban.com/subject/3247976/" target="_blank" rel="external">艺术与视知觉 - Rudolf Arnheim </a></p>
+<p><img src="https://img3.doubanio.com/lpic/s6795081.jpg" alt=""></p>
+<p>设计理论，也不能不读康定斯基。</p>
+<p>康定斯基是现代抽象表现主义艺术的实践和理论先驱，既是伟大的艺术家，也是杰出的理论家。「点线面」一书，最早作为包豪斯学校的形式课程讲义出版，是现代主义艺术的经典文献。如果觉得太过抽象，可以配合「艺术与视知觉」找点感觉。</p>
+<p><img src="https://img3.doubanio.com/lpic/s26721081.jpg" alt=""></p>
+<p>书中阐述了视觉所具有的倾向于最简洁结构的趋势、视觉图式细分的发展阶段、知觉的动力特性及其他各种适用于所有视觉现象的基本原则，以使读者能够更清楚地看到形状、颜色、空间和运动等要素都可以作为一个统一的媒介呈现在艺术作品中。</p>
+<p>8.<a href="https://book.douban.com/subject/1466932/" target="_blank" rel="external">The Elements of Typographic Style - Robert Bringhurst </a> or <a href="https://book.douban.com/subject/5412951/" target="_blank" rel="external">Thinking with Type - Ellen Lupton - thinkingwithtype.com</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s4230265.jpg" alt=""><br><img src="https://img3.doubanio.com/lpic/s6920531.jpg" alt=""></p>
+<p>这两本书是排版中的经典（当然，是英文排版），平面设计师案头必备之工具书。不仅可以了解 Typography 相关的一切基础概念，还能学会从文字中看到空间，星系，宇宙。</p>
+<p>9.<a href="https://book.douban.com/subject/4845129/" target="_blank" rel="external">设计的法则 -  William Lidwell</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s11186035.jpg" alt=""></p>
+<p>从经典中稍微回归现实，用更加全局的视角整理已经看过的理论基础，归纳实践中可用的准则。</p>
+<p>这本书采用字典式编排，左页包括法则简短的定义、进一步的描述、范例，以及法则使用的指导方针。注解列在文本的右侧，提供细节与参考资料。右页包括图例与相关图解，使读者对法则有更直观的进一步了解。</p>
+<p>10.<a href="https://book.douban.com/subject/26102860/" target="_blank" rel="external">设计心理学1 / The Design of Everyday Things</a></p>
+<p>接下来的四本「畅销书」就不过多介绍了。</p>
+<p><img src="https://img1.doubanio.com/lpic/s28072517.jpg" alt=""></p>
+<p>11.<a href="https://book.douban.com/subject/26424608/" target="_blank" rel="external">设计心理学2 / Living With Complexity</a></p>
+<p><img src="https://img1.doubanio.com/lpic/s28109547.jpg" alt=""></p>
+<p>12.<a href="https://book.douban.com/subject/26424688/" target="_blank" rel="external">设计心理学3 / Emotional Design: Why We Love (Or Hate) Everyday Things </a></p>
+<p><img src="https://img3.doubanio.com/lpic/s28109620.jpg" alt=""></p>
+<p>13.<a href="https://book.douban.com/subject/26647363/" target="_blank" rel="external">设计心理学4 / The Design of Future Things</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s28322883.jpg" alt=""></p>
+<p>14.<a href="https://book.douban.com/subject/5397784/" target="_blank" rel="external">This is Service Design Thinking : Basics - Tools - Cases</a></p>
+<p><img src="https://img1.doubanio.com/lpic/s4565959.jpg" alt=""></p>
+<p>设计师面对的问题（或者说系统）越来越复杂，只需要处理一个平面上元素关系问题的日子一去不复返。是时候用系统的视角、用服务的视角去重新审视设计的理念和方法了。</p>
+<h3 id="u4E92_u8054_u7F51_u4F53_u9A8C_u4E0E_u754C_u9762_u8BBE_u8BA1"><a href="#u4E92_u8054_u7F51_u4F53_u9A8C_u4E0E_u754C_u9762_u8BBE_u8BA1" class="headerlink" title="互联网体验与界面设计"></a>互联网体验与界面设计</h3><p>15.<a href="https://book.douban.com/subject/25932290/" target="_blank" rel="external">认知与设计 - Jeff Johnson </a></p>
+<p><img src="https://img1.doubanio.com/lpic/s27338939.jpg" alt=""></p>
+<p>设计始终围绕人，而「人」的局限（主要是认知局限），是求解设计问题的「钥匙」。</p>
+<p>看再多的设计经验分享，你都无法推测出「经验」是怎么来的，以及有没有理据。不如看一看这本书，界面设计中 80% 的具体问题和困惑，都可以从中找到一些线索和启发。</p>
+<p>在开始实践之前，或者在实践中遇到的各种界面设计细节、可用性问题，都可以回来翻一翻这本书。</p>
+<p>16.<a href="https://book.douban.com/subject/26642302/" target="_blank" rel="external">About Face 4: 交互设计精髓 - Alan Cooper</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s29011584.jpg" alt=""></p>
+<p>交互设计经典。不仅全面系统地讲述了交互设计的过程、原理和方法，讲解了人与界面的关系，更重要的是详细剖析了「完整」的设计过程，以用户为中心的设计到底怎样一步一步开展。</p>
+<p>17.<a href="https://book.douban.com/subject/26809374/" target="_blank" rel="external">信息架构：超越Web设计（第4版）- Louis Rosenfeld</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s28779851.jpg" alt=""></p>
+<p>在没看这本书之前，人人都以为自己知道「信息架构」。</p>
+<p>这是一本严谨又热情的书，严谨的部分很实在地介绍了信息架构的基本概念、方法、案例等；热情的部分简直是本书的bonus，作为一个新兴的、跨学科的、价值待证明的领域，作者用自己丰富的经验，用絮叨又幽默的语气，向我们述说着这个行当面临着哪些挑战，哪些组织的哪些层级的哪些人，会提出怎样的挑战和疑问，作为一名靠谱的信息架构师，应该以什么样的态度去面对和回答这些问题。——真的，没事别乱提信息架构。</p>
+<p>18.<a href="https://book.douban.com/subject/26710486/" target="_blank" rel="external">用户体验度量：收集、分析与呈现（第2版）</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s28385241.jpg" alt=""></p>
+<p>有时候觉得，「用户体验」真是个大而无当的词。做体验设计，怎么也回避不了一个问题：你的设计到底有什么作用/价值？如何量化用户体验对有效提高产品的使用质量至关重要。</p>
+<p>这本书详尽地介绍了如何有效且可靠地收集、分析和呈现典型的用户体验度量数据：操作绩效（正确率等）、用户体验问题（频率和严重程度）、自我报告式的满意度及生理/行为数据（眼动追踪等）。同时对「综合性量化度量数据」等问题进行了专门介绍，而且结合案例等形式对当前与用户体验相关的新内容（如用户体验对NPS 的影响）进行了说明。</p>
+<p>19.<a href="https://book.douban.com/subject/26340963/" target="_blank" rel="external">怦然心动——情感化交互设计指南（修订版）- Stephen P. Anderson</a></p>
+<p><img src="https://img1.doubanio.com/lpic/s28023067.jpg" alt=""></p>
+<p>业界对设计的要求，早已超越了简单的可用性。当界面可用已经是标配时，如何进一步满足并超越用户的预期？这需要我们进一步深挖情绪和情感的宝库，成为引导用户积极情绪的魔术师。</p>
+<p>本书阐述出了当人们访问网站，打开软件，购买实体产品和被某人吸引时的心理状态，并且非常深入地用心理学的方法解释了刺激和触发人类行为的因素。书中提供的众多方法，让我们可以创造出更加持久和深刻的用户体验。</p>
+<p>20.<a href="https://book.douban.com/subject/24896848/" target="_blank" rel="external">精益设计 - Jeff Gothelf </a></p>
+<p><img src="https://img3.doubanio.com/lpic/s27081165.jpg" alt=""></p>
+<p>设计如何适应越来越快的互联网开发节奏？</p>
+<p>本书作者根据精益创业法的理念归纳出了行之有效的精益设计方法，让设计团队可以用更低的成本、更高的效率设计出更好的用户体验。本书重点介绍了如何利用精益设计来改善用户体验，让团队摈弃为设计而设计的心态，通过迭代来增进认识，提高效率，并以成果为基础进行设计。</p>
+<h3 id="u9762_u5411_u672A_u6765_u7684_u8BBE_u8BA1"><a href="#u9762_u5411_u672A_u6765_u7684_u8BBE_u8BA1" class="headerlink" title="面向未来的设计"></a>面向未来的设计</h3><p>21.<a href="https://book.douban.com/subject/24536946/" target="_blank" rel="external">Speculative Everything -  Dunne Anthony</a></p>
+<p><img src="https://img1.doubanio.com/lpic/s27091049.jpg" alt=""></p>
+<p>Dunne &amp; Raby是 Critical Design 批判性设计大师，著名的 <a href="http://www.dunneandraby.co.uk/content/projects/476/0" target="_blank" rel="external">A/B 宣言</a>就出自这对设计夫妇之手，而这本书正是「A/B宣言」全面的叙述。</p>
+<p>到底什么是设计？到底什么是设计师？设计师对自己和对社会的责任有什么不同？设计是否依然重演着每个时代设计都要走过的变迁？如何看待设计的「幼稚病」？设计师该何去何从？</p>
+<p>通过这本书，设计师将打开一扇新的大门。</p>
+<p>22.<a href="https://book.douban.com/subject/26712707/" target="_blank" rel="external">设计未来 : 基于物联网、机器人与基因技术的UX - Jonathan Follett</a></p>
+<p><img src="https://img1.doubanio.com/lpic/s29105087.jpg" alt=""></p>
+<p>未来已经到来。</p>
+<p>从集群机器人到嵌入表皮的计算机，再到可生物打印的器官，这一切都会在未来几年开始出现。在这一文集中，设计师、工程师和研究人员分别探讨了他们为突破性技术进行体验设计的不同方法。设计不仅为如何运行和利用技术提供了框架，也把技术置入了一个更广阔的背景，这个背景包含与技术相互作用的整个生态系统，以及非预期后果的可能性。</p>
+<p>重新出发吧，设计师们！</p>
+<h2 id="Q_26amp_3BA"><a href="#Q_26amp_3BA" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><p>为什么没有「用户体验要素」、「别让我思考」这么经典的书？</p>
+<blockquote>
+<p>它们不太符合「探索领域中的大问题」的标准，或者差不多用半天可以翻完，而且你很可能也看过了。</p>
+</blockquote>
+<p>为什么没有中文作者著作？</p>
+<blockquote>
+<p>比较难挑出 3 年后一定不会过时的书。</p>
+</blockquote>
+<p>为什么 xxx 和 xxx 那么经典的书没有入选？</p>
+<blockquote>
+<p>这个书单不是「最优」书单，它的目的是，在 1 年内让你打好坚实的基础。很多书可以根据自己的需求替换。</p>
+</blockquote>
+<p>有些书很厚，怎么读得过来？</p>
+<blockquote>
+<p>设想一下，如果只给 2 个小时，你会怎么读？    </p>
+<p>你会找出重点去读。什么才是重点？你关心的问题、想要回答的问题就是重点。用问题去牵引自己读书，而不是从第一页翻到最后一页，怎么会读不过来？</p>
+</blockquote>
+<p>英文不好怎么办？</p>
+<blockquote>
+<p>逼自己读，或者买中文版，又或者今年先去提高英语。</p>
+</blockquote>
+<p>你推荐的书怎么都这么不接地气？</p>
+<blockquote>
+<p>因为这样比较能抵御时间的侵蚀，毕竟目的是想打下能用 10 年的基础，而不是救 10 天的急。</p>
+</blockquote>
+<h2 id="u4E3A_u4EC0_u4E48_u4F60_u603B_u662F_u8BFB_u4E0D_u5B8C_u4E66_u5355_uFF1F"><a href="#u4E3A_u4EC0_u4E48_u4F60_u603B_u662F_u8BFB_u4E0D_u5B8C_u4E66_u5355_uFF1F" class="headerlink" title="为什么你总是读不完书单？"></a>为什么你总是读不完书单？</h2><p>看着上面的书单，会有一点激动吧？这么多好书等着我们呐！</p>
+<p>不过，作为过来人，00 很清楚这个书单的下场：收藏以后，不会再打开。更好一些的结果是，下单买回了书，但是翻完目录以后就再也没有打开。</p>
+<p>这些坑，我都踩过。不然，上面列的书早该读完了（只读了 60%，时间浪费在另外一些不那么值得读的书上面）。</p>
+<p>大概有三点原因。</p>
+<p>动机不足。为什么要读这些书呢？隔壁老王一本不读，不是也过得好好的？如果我们不会对问题好奇、被问题困扰，也就没有必要读这些书了。过去的经验告诉我们，困扰我们的问题早就有人遇到过，而且极有可能给出了漂亮完整的答案，为什么我们只是干坐着呢？</p>
+<p>能力不足。看书多累人呀，看英文书更是要命，何况一年还要看 20+ 本！可是总有人能每周看完一本书，每看一本书都有收获。这不是书的问题，是阅读方法和习惯的问题。</p>
+<p>缺少提醒器。大多数时候，我们愿意看书，也能看懂，只是是缺少一个「诱导」，提醒「现在该去看书了」。想想看，<strong>跟书一起竞争我们注意力的，可是永不停息的微信朋友圈和勤奋过人的大 V 们呀</strong>！</p>
+<h2 id="u8FD9_u91CC_u6709_u4ED8_u8D39_u7684_u89E3_u836F"><a href="#u8FD9_u91CC_u6709_u4ED8_u8D39_u7684_u89E3_u836F" class="headerlink" title="这里有付费的解药"></a>这里有付费的解药</h2><p>以下是广告<br>以下是广告<br>以下是广告    </p>
+<p>只是来拿书单同学们请闭眼（或离开）。</p>
+<p>00 想召集对书单感兴趣的小伙伴，一起实践花了一年改造的阅读和学习方法，在 2017 年把上面的书单读完。如果你也想用 1 年的时间，回炉重造，打下能用 10 年的设计基础，欢迎参加 「17 涉毒」设计读书群，一起攻克那些让人半途而废的老问题：</p>
+<table>
+<thead>
+<tr>
+<th>老问题</th>
+<th>怎么破</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不知道该读什么</td>
+<td>按主题精选经典设计书籍</td>
+</tr>
+<tr>
+<td>选书买书浪费时间</td>
+<td>帮你全部挑选/下载好</td>
+</tr>
+<tr>
+<td>读了没用</td>
+<td>用问题和输出倒逼阅读</td>
+</tr>
+<tr>
+<td>坚持不下来</td>
+<td>老司机和小伙伴陪你一起读</td>
+</tr>
+</tbody>
+</table>
+<h3 id="u600E_u4E48_u8BFB"><a href="#u600E_u4E48_u8BFB" class="headerlink" title="怎么读"></a>怎么读</h3><p>加入到社群中，大家一起读书。两周读一本，一年共 24 本。</p>
+<p>如果总说读书没有收获，原因大都是「为了读而读」。如果总说读书读得慢，原因大都是「无法区分重点」。如果总说读书读不懂，原因大都是「不知道问题是什么」。</p>
+<p>我们用「为解答问题而读」来打破这个死循环：</p>
+<ul>
+<li>读书前，列出想通过阅读回答的问题（如果列不出问题，00 会帮你）</li>
+<li>读书时，针对这些问题记笔记、在群里讨论（集体学习，同侪压力）</li>
+<li>读书后，输出对问题的思考和回答（重要的不是逐页读完，而是能在过程中开始思考、寻找答案）</li>
+</ul>
+<p><strong>如果对每一本书能认真地回答 1~2 个好问题，一年能回答 20 ~ 50 个好问题，难道还会说没有收获吗？</strong></p>
+<p>在这个过程中，我们会用 Worktile 进行集体协作（书籍共享、进度跟踪、wiki、讨论），用简书输出各自的笔记。</p>
+<h3 id="u62B1_u6B49_uFF0C_u8FD9_u662F_u6536_u8D39_u7684"><a href="#u62B1_u6B49_uFF0C_u8FD9_u662F_u6536_u8D39_u7684" class="headerlink" title="抱歉，这是收费的"></a>抱歉，这是收费的</h3><p>你可以获得：</p>
+<ul>
+<li>书单中 25 本书的电子版，帮你节省原书总价约 3000 元，以及四处找书、买书的时间（英文原版书籍美元汇率按 7.0 ，英镑汇率按 8.8 计算）</li>
+<li>一年良好的读书氛围和讨论氛围</li>
+<li>00 一年的读书笔记</li>
+<li>如果你愿意，帮你养成高效的读书习惯</li>
+</ul>
+<h3 id="u8D39_u7528_uFF1A_599__u5143/_u4EBA"><a href="#u8D39_u7528_uFF1A_599__u5143/_u4EBA" class="headerlink" title="费用： 599 元/人"></a>费用： 599 元/人</h3><p>在校学生两人一起报名可半价，即两人费用总共为 599 元（只要证明两人都是在校生）。</p>
+<p><strong>声明：本活动不设体验环节，不提供退款服务，不开发票，报名前请务必考虑清楚。</strong></p>
+<p>报名方式：添加 00 的微信 kidut，注明「读书报名」。</p>
+<h3 id="u6700_u540E"><a href="#u6700_u540E" class="headerlink" title="最后"></a>最后</h3><p>每一年，真正能够跟好书相处的时光其实非常短暂。</p>
+<p>标记想读的书越来越多，收藏的书单一个接一个，每次下单后发誓要好好读，结果拿到书以后兴奋地翻完第一章，书签就一直停留在那里，迎接着又一个新年。</p>
+<p>明明知道书里的某个角落，藏着自己苦思而不得其解的答案。明明很想安静下来，专注在文字和思考之中。可是需要花费多少心力，才能从奔流不息的微信和微博中挣脱出来，静静坐下，进入另一个世界。</p>
+<p>多说无益，坐言起行。</p>
+<p>2017，17 读。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[产品经理的用研手册06 - 用研四式之「闻」]]></title>
+      <url>http://uegeek.com/pm-ur-handbook6.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article6-titu.jpg" alt=""></p>
+<a id="more"></a> 
+<p>产品经理的用研第二式：「闻」。换个说法，就是努力倾听。</p>
+<p>很多产品的成功，其实并不来自于产品经理的灵光一现，也不是所谓的市场壁垒、技术壁垒，反而是最笨、最慢的方法，比如说，长期认真地根据用户反馈打磨产品。</p>
+<p>关于倾听用户，流传最广的故事，是张小龙在打磨 QQ 邮箱和微信产品时总结出来的 10/100/1000 法则：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/06-10-100-100.jpg" alt=""></p>
+<p>当我们询问用户之前，用户就主动地反馈对产品的看法，是特别珍贵的机会，让我们接触到真实的声音，从而发现改进机会。</p>
+<p>当然，反馈的用户往往只占少数，如何利用这部分的反馈找到产品开发资源的投放点，也是产品经理功力的体现。</p>
+<h3 id="u7528_u6237_u4E3A_u4EC0_u4E48_u4F1A_u4E3B_u52A8_u53CD_u9988_uFF1F"><a href="#u7528_u6237_u4E3A_u4EC0_u4E48_u4F1A_u4E3B_u52A8_u53CD_u9988_uFF1F" class="headerlink" title="用户为什么会主动反馈？"></a>用户为什么会主动反馈？</h3><h4 id="u9047_u5230_u95EE_u9898"><a href="#u9047_u5230_u95EE_u9898" class="headerlink" title="遇到问题"></a>遇到问题</h4><p>一般来说，90% 的用户反馈涉及的都是使用过程中的种种问题。他们都是真实的用户，恼火的用户。这些反馈最直接地反映出产品没做好的地方，或者是跟用户预期不相符的地方。针对这些反馈，产品经理需要马上行动起来，去解决问题，以及去改善和用户的关系。</p>
+<h4 id="u8BA4_u540C_u548C_u53C2_u4E0E"><a href="#u8BA4_u540C_u548C_u53C2_u4E0E" class="headerlink" title="认同和参与"></a>认同和参与</h4><p>除了 90% 的问题反馈，还有一部分特别宝贵的活跃用户，他们因为对产品和社群的认同，主动参与到产品建设中，提想法，提忧虑，提建议。这样一部分用户就像提供了一个快捷入口，让我们有机会去观察他们的生活状态，从他们身上验证产品的价值点，并且找到提升用户参与感的办法。</p>
+<h4 id="u611F_u60F3_u548C_u611F_u8C22"><a href="#u611F_u60F3_u548C_u611F_u8C22" class="headerlink" title="感想和感谢"></a>感想和感谢</h4><p>最让人欣慰的，来自那 1% 的用户，他们表达了对产品的感谢，会说出曾经的困境，与产品相识的过程，和关于改变的故事。他们是产品最忠实的用户，如果能给他们超出预期的回应，就能建立起最牢固的关系。</p>
+<p>在看反馈的时候，不要被直白甚至难听的词语吓到。仔细地体会抱怨的点，去感受他们的情绪，想象他们的处境，与他们共情。这样更容易发现产品现存的明显问题并解决。当然，别忘记通过用户的反应，去验证当初设计时的预判。</p>
+<h3 id="u5982_u4F55_u6536_u96C6_u548C_u5904_u7406_u7528_u6237_u53CD_u9988"><a href="#u5982_u4F55_u6536_u96C6_u548C_u5904_u7406_u7528_u6237_u53CD_u9988" class="headerlink" title="如何收集和处理用户反馈"></a>如何收集和处理用户反馈</h3><p>收集用户反馈，只有一个方法——到他们会出现的地方去：</p>
+<ul>
+<li>自有渠道：网站、App、客服、邮箱、社区、产品论坛</li>
+<li>社交媒体：微信、微博、贴吧等</li>
+<li>舆情监控工具</li>
+<li>线下的真实场景</li>
+</ul>
+<p>（除了收集自己产品的反馈，还可以看看竞品的反馈）</p>
+<p>如果可能，尽量亲自回复反馈。尤其注意对言辞激烈的负面反馈的处理。比如，我们来看印象笔记在微博上回复用户抱怨的例子：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/06-evernoteweibo.png" alt=""></p>
+<p>从时间上可以看到，印象笔记的客服团队响应还是很快速的，马上摆出了解决问题的姿态，随后也跟进并安抚了用户。在跟用户之间沟通的时候，可以用非暴力沟通的技巧去回应：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/06-Non-violent-communication.jpg" alt=""></p>
+<p>回复了用户之后，我们改做什么？有 bug 改之，这是自然。但是对于问题类、需求类的反馈呢？比如</p>
+<blockquote>
+<p>我不知道怎么提现</p>
+<p>为什么数据账单不可以下载？</p>
+<p>我想要 xx 功能</p>
+</blockquote>
+<p>我们来看看某理财 App 内「不知道怎么提现」这个问题。用户并没有留下更具体的信息，这时就要根据经验，尽量把各种可能都罗列出来：</p>
+<ul>
+<li>是没有找到操作入口吗？ —— 在任务节点的信息和引导设计需要改进</li>
+<li>是误解了产品规则吗？ —— 比如需要先赎回到个人账户再体现，用户不清楚这个规则</li>
+<li>是因为提现过程不符合预期吗？ —— 比如已经操作了，但是没有马上到账</li>
+</ul>
+<p>然后去仔细走一遍用户可能经过的路径，代入他们的视角，去看看是否真的存在问题。</p>
+<p>当遇到直接提出了解决方案的用户反馈时，也可以回顾一下本系列第三篇「产品经理的需求观」中把解决方案还原成需求的方法：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-Solution&amp;Requirement.jpg" alt=""></p>
+<p>并且用需求评估的方法，来判断这个需求的重要程度：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-ValueFormula.jpg" alt=""></p>
+<p>不过，很多时候，仅凭用户反馈的只言片语，并不能很好地还原问题。比如，通过反馈是否可以获得以下信息？</p>
+<ul>
+<li>具体的使用场景</li>
+<li>问题是如何产生的？跟哪些行为和操作有关？</li>
+<li>是什么使用户不爽？</li>
+<li>用户的目的是什么？他提出了什么样的解决方案，或者预期？</li>
+</ul>
+<p>如果无法回答，也许就需要准备好希望用户进一步提供的信息清单，然后做一次用户回访，向用户进一步询问。</p>
+<p>下一篇，我们介绍关于如何询问的用研招式，最重要的第三式：问。</p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<hr>
+<ul>
+<li><a href="http://www.uegeek.com/pm-ur-handbook1.html" target="_blank" rel="external">产品经理的用研手册01 - 朦胧的用户，懵懂的你</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook2.html" target="_blank" rel="external">产品经理的用研手册02 - 你真的懂用户吗？</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook3.html" target="_blank" rel="external">产品经理的用研手册03 - 成也需求，败也需求</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook4.html" target="_blank" rel="external">产品经理的用研手册04 - 做问题求解者，先对症后下药</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook4.html" target="_blank" rel="external">产品经理的用研手册05 - 用研四式之「望」</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[产品经理的用研手册05 - 用研四式之「望」]]></title>
+      <url>http://uegeek.com/pm-ur-handbook5.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article5-titu.png" alt=""></p>
+<a id="more"></a> 
+<p>接下来的四篇文章，给产品经理们介绍四个最有效的用户研究招式：望-闻-问-切。</p>
+<blockquote>
+<p>望，指观气色；闻，指听声息；问；指询问症状；切；指摸脉象。合称四诊</p>
+</blockquote>
+<p>望对应的是观察用户行为，闻对应的是倾听用户反馈，问指的是主动询问或挖掘，而切的意思是做试验。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/05-wangwenwenqie.jpg" alt=""></p>
+<p>今天先来介绍第一式 —— 望。</p>
+<p>让我们重温一个经典的故事：</p>
+<blockquote>
+<p>当 Sony 引入 Boom Box 概念的时候，他们召集了一些潜在的消费者，组成焦点小组来讨论这个新产品应该是什么颜色的：黑色或黄色。经过这一组潜在购买者的讨论之后，每个人都认为消费者应该更倾向于黄色。这次会议以后，组织者对小组成员表示了感谢，并告诉他们在离开前每个人可以免费带走一个 Boom Box 作为回报。那里有两堆Boom Box：黄色和黑色。</p>
+<p>结果是，每个人拿走的都是黑色！</p>
+</blockquote>
+<p>这是一个「身体很诚实」的忧桑故事。 </p>
+<p>人们时常言行不一。在调研时，用户可能会跟你说，「我觉得这个功能挺好的」，但是实际操作时就是不用。当「言」和「行」同时出现时，行动往往比语言更能反映人们的真实想法。所以，<strong>观察，或者更准确一些说，观察行为，是理解用户最基本的「招式」。</strong></p>
+<p>观察的目的主要有以下几个：</p>
+<ul>
+<li>了解用户真实的行为</li>
+<li>获得更丰富的场景信息</li>
+<li>发现之前假设/预判不合理的地方</li>
+<li>知道用户在使用过程中的表现，遇到哪些障碍，真实反应是怎样，有哪些应对策略</li>
+</ul>
+<p>行为观察又可以分为到现场观察和通过数据观察。</p>
+<h2 id="u89C2_u5BDF_u73B0_u573A_u884C_u4E3A"><a href="#u89C2_u5BDF_u73B0_u573A_u884C_u4E3A" class="headerlink" title="观察现场行为"></a>观察现场行为</h2><h3 id="1-__u73B0_u573A_u89C2_u5BDF"><a href="#1-__u73B0_u573A_u89C2_u5BDF" class="headerlink" title="1. 现场观察"></a>1. 现场观察</h3><p>真实的行为一定是发生在某个具体的场景之中的。到现场去观察人的行为，可以获得最真实、最直观的感受。</p>
+<p>比如，因为要做移动支付相关的设计，需要观察用户去便利店充值交通卡的过程。</p>
+<p>当我们带着这个目的来到便利店，选好一个便于观察的位置。这时候，推门进来一个人，应该注意看哪些东西呢？</p>
+<p><img src="http://www.adquan.com/upload/20150211/1423634438770996.jpg" alt=""></p>
+<h4 id="u4F7F_u7528_u8005_u7684_u80CC_u666F"><a href="#u4F7F_u7528_u8005_u7684_u80CC_u666F" class="headerlink" title="使用者的背景"></a>使用者的背景</h4><p>被观察的使用者可能的年龄、职业，通过着装打扮推断大概的生活状况，从面部表情和肢体语言感受 ta 当前的情绪。</p>
+<h4 id="u884C_u52A8_u6B65_u9AA4"><a href="#u884C_u52A8_u6B65_u9AA4" class="headerlink" title="行动步骤"></a>行动步骤</h4><p>被观察的使用者做了一系列什么动作？哪些行为引发了后续行为？</p>
+<p>比如，顾客进门以后，先观察店内环境（在哪里充值、人多不多），然后排队，排队时会做什么事情，接着是询问充值事宜，然后掏卡，放卡，付款，确认，拿卡，离开。</p>
+<p>在这个过程中顾客和周围发生了哪些互动？</p>
+<ul>
+<li>与店员的互动：如询问是否能充值，回答充值金额，确认卡的摆放放置</li>
+<li>与充值机的互动：寻找充值机，摆放卡片</li>
+<li>与付款方式的互动：店员收现金，或者拿出手机使用微信支付</li>
+</ul>
+<h4 id="u884C_u52A8_u7EC6_u8282"><a href="#u884C_u52A8_u7EC6_u8282" class="headerlink" title="行动细节"></a>行动细节</h4><p>比如，在使用微信支付时，用户和店员各自的操作：</p>
+<ul>
+<li>用户：询问是否可以使用微信支付，掏出手机，寻找并打开支付界面，递手机被扫，付款确认，收起手机</li>
+<li>店员：回答关于支付界面的问题，收银系统操作，准备扫码枪，收回扫码枪，收款确认，告知顾客</li>
+</ul>
+<h4 id="u884C_u52A8_u65F6_u7684_u60C5_u7EEA_u548C_u6001_u5EA6"><a href="#u884C_u52A8_u65F6_u7684_u60C5_u7EEA_u548C_u6001_u5EA6" class="headerlink" title="行动时的情绪和态度"></a>行动时的情绪和态度</h4><p>除了具体的行为之外，还需要注意伴随行为的情绪和态度。比如，被观察者有什么表情，反应了什么情绪；说了什么话，语气语调如何；提了什么问题，为什么产生困惑；整个过程出现了什么样的情绪变化，进店和离店时的情绪对比。</p>
+<h4 id="u89C2_u5BDF_u7684_u7ED3_u679C"><a href="#u89C2_u5BDF_u7684_u7ED3_u679C" class="headerlink" title="观察的结果"></a>观察的结果</h4><p>观察结束后，记录下核心的发现：</p>
+<ul>
+<li>用户都做了什么事情</li>
+<li>操作中会遇到哪些障碍</li>
+<li>哪些因素对行为和体验有影响：如店员的帮助，店内手机信号是否良好，光线对扫码识别的影响等</li>
+<li>还存在哪些未被很好满足的需求</li>
+<li>观察了多个个体后，尝试总结他们的特点、行为共性</li>
+</ul>
+<p>在现场观察中，我们容易观察到用户在实体空间内的行为、服务体验等，但是如果涉及到比较复杂、长时间的屏幕操作，就难以深入观察，需要用到类似可用性测试的方法。</p>
+<h3 id="2-_u6D4B_u8BD5_u73AF_u5883_u4E0B_u89C2_u5BDF_uFF1A_u53EF_u7528_u6027_u6D4B_u8BD5"><a href="#2-_u6D4B_u8BD5_u73AF_u5883_u4E0B_u89C2_u5BDF_uFF1A_u53EF_u7528_u6027_u6D4B_u8BD5" class="headerlink" title="2.测试环境下观察：可用性测试"></a>2.测试环境下观察：可用性测试</h3><p>可用性测试是一套成熟的方法，帮助我们找出现有设计中的可用性问题，以便对症下药，提升使用体验。</p>
+<p>ISO 标准中对可用性的定义：</p>
+<blockquote>
+<p>The extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use.</p>
+</blockquote>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/05-UsabilityDefinition.jpg" alt=""></p>
+<p>可用性测试跟完全没有干扰的现场观察不同，一般会在人为安排好的环境下，让使用者操作一系列任务，然后评估有效性（任务完成率）、效率（完成时间）、满意度（自我评估问卷）。</p>
+<p>跟现场观察相比，可用性测试有很多优点：</p>
+<ul>
+<li>能观察到我们感兴趣的用户行为，而不是随机的行为</li>
+<li>测试过程不被干扰</li>
+<li>可以详细记录整个过程</li>
+<li>有一系列标准衡量可用性的程度</li>
+<li>可以与用户有深入的互动</li>
+</ul>
+<p>完整而严谨的可用性测试大概需要 1~2 周时间，整个过程大概包括以下的主要步骤：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/05-UsabilityTestSteps.jpg" alt=""></p>
+<p>关于具体操作，这一篇就不再展开了，感兴趣的同学可以翻看「妙手回春-网站可用性测试及优化指南」和「Handbook of Usability Testing」两本书。</p>
+<p>刚开始接触可用性测试，会觉得很复杂。好消息是，并非所有的测试都要按照完整的步骤进行。实际上，不同的步骤背后有不同的目的。如果我们只是想快速看看用户（没有任何限定条件）在某个界面使用某个功能的时候会不会遇到明显问题，那直接找两个朋友，给他们一个任务，试着操作一下，基本上也能达到快速测试的目的。</p>
+<p>但是如果要得到较严格的可用性测试的结果，必需要精心控制以下环节：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/05-UsabilityTestKey.jpg" alt=""></p>
+<p>如果想得到更靠谱的测试结果，召唤身边的用户研究员吧！</p>
+<h2 id="u89C2_u5BDF_u884C_u4E3A_u6570_u636E"><a href="#u89C2_u5BDF_u884C_u4E3A_u6570_u636E" class="headerlink" title="观察行为数据"></a>观察行为数据</h2><p>除了观察行为本身，还可以观察行为的结果——数据表现。</p>
+<p>在我们日常收集的用户数据中，有一部分是关于行为的数据，比如访问、浏览、点击、停留、中断、离开，这些行为会产生可观的数据，如果仔细观察，能发现不少问题。</p>
+<p>通过数据观察行为的关键是，「你的问题是什么？」「你对什么感兴趣？」</p>
+<p>比如说，我们最常关注点击量，用户对某个功能或界面元素的点击次数。这个时候，我们想知道的其实是什么呢？</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/05-ClickStream.jpg" alt=""></p>
+<ul>
+<li>首先是行为密集度。点击代表了使用频次，这反映用户了兴趣或者关注点。当然，点击越多，不一定代表用户一定喜欢，也有可能是设计不合理造成的结果。</li>
+<li>其次是行为变化趋势。某个核心行为，比如播放音频的次数，是否如我们预期的那样持续增长？增长多快？增长来自于哪里？意味着下一步需要采取哪些行动？</li>
+<li>再次是行为序列转化率。某个核心行为，前置的步骤有哪些？如何转化？转化比例如何？存在什么问题？</li>
+</ul>
+<p>不过，统计数字会撒谎，在相信数据之前，还应该尽量搞清楚数据的「底细」，比如：</p>
+<ul>
+<li>数据反映的是什么</li>
+<li>这个数据如何收集，有哪些组成成分，是否有遗漏</li>
+<li>基准比率是什么，样本规模是否 ok</li>
+<li>总数或平均值之类的数据，会损失非常多的情境信息</li>
+</ul>
+<p>总而言之，数据会留下很多疑点，比如某个数据为什么完全不符合预期，某个数据为什么产生这样的变化。数据只能反映客观结果，但是需要结合其他方法去解读。</p>
+<p>下一篇，我们介绍用研四式的第二式：闻。</p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<hr>
+<ul>
+<li><a href="http://www.uegeek.com/pm-ur-handbook1.html" target="_blank" rel="external">产品经理的用研手册01 - 朦胧的用户，懵懂的你</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook2.html" target="_blank" rel="external">产品经理的用研手册02 - 你真的懂用户吗？</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook3.html" target="_blank" rel="external">产品经理的用研手册03 - 成也需求，败也需求</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook4.html" target="_blank" rel="external">产品经理的用研手册04 - 做问题求解者，先对症后下药</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[产品经理的用研手册04 - 做问题求解者，先对症后下药]]></title>
+      <url>http://uegeek.com/pm-ur-handbook4.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article4-titu.jpg" alt=""></p>
+<a id="more"></a> 
+<p>产品开发和运营过程中，每天都会遇到各种各样的问题。</p>
+<p>有些问题，可以借助用户研究来帮助解答，有的则不行。先搞清楚病症和药方，才好对症下药，不然狂吃感冒药，也是治不好抑郁症的。</p>
+<blockquote>
+<p>提示1：本文不涉及「如何解答」</p>
+<p>提示2：用户研究不「直接」解答，而是「帮助」找到答案</p>
+</blockquote>
+<h2 id="u4E0D_u540C_u9636_u6BB5_u7684_u95EE_u9898"><a href="#u4E0D_u540C_u9636_u6BB5_u7684_u95EE_u9898" class="headerlink" title="不同阶段的问题"></a>不同阶段的问题</h2><p>产品的生命周期，无非「生、老、病、死」几个阶段。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/04-ProductLifeCycle.jpg" alt=""></p>
+<h3 id="u751F"><a href="#u751F" class="headerlink" title="生"></a>生</h3><p>产品从 0 到 1 的过程。</p>
+<p>对初创公司而言，这是生死攸关的过程。大公司是在执行已被验证的商业模式，初创公司是在探索未经验证的商业模式。这个阶段的未知和不确定性太多，其中有几个重要问题，可以通过用户研究得到辅助决策信息。</p>
+<h4 id="1-_u7528_u6237_u5B9A_u4E49"><a href="#1-_u7528_u6237_u5B9A_u4E49" class="headerlink" title="1.用户定义"></a>1.用户定义</h4><p>你的产品为什么样的用户提供服务？第一步，需要给出核心用户的假设。</p>
+<p>回顾「产品经理的用研手册02 - 你真的懂用户吗」一文，我们知道，用目标和行为划分用户类型最为有效。然后，可以通过拆解用户不同层次的目标以及典型场景，来描述目标用户群体。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserSnapshotTemp.jpg" alt=""></p>
+<h4 id="2-_u6838_u5FC3_u4EF7_u503C_u548C_u89E3_u51B3_u65B9_u6848"><a href="#2-_u6838_u5FC3_u4EF7_u503C_u548C_u89E3_u51B3_u65B9_u6848" class="headerlink" title="2.核心价值和解决方案"></a>2.核心价值和解决方案</h4><p>产品能否成功，核心中的核心就是：为用户提供了什么样的价值？</p>
+<p>微信为什么成功？因为在移动场景快速普及的时候，它提供了联系人、信息、服务的 <strong>即时可得性</strong>。</p>
+<p>初创产品，最需要打磨的就是这个核心价值点，而不是品牌、不是界面。需要从有产品想法的开始，就去思考什么样的人是你的目标人群。下面来看一个视频：</p>
+<p><a href="https://v.qq.com/x/cover/nxt4o3duekhvmhv.html?vid=d017770o4vm" target="_blank" rel="external">中欧教授龚焱：初创公司为什么会失败</a></p>
+<p>视频中反复强调的一点，<strong>不要假设用户痛点已知；不要假设产品解决方案是正确的</strong>。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-SudoValue%20Copy.jpg" alt=""></p>
+<p>通过自己的圈子、社交网络，以及去到所假设的目标用户集中的地方，找到对产品原型感兴趣的人，了解他们被哪些点所打动，他们的目标、困惑，他们的生活状态。然后判断这个价值是大是小，你能多好地提供这种价值。</p>
+<p>在产品初期，人群越明确，提供的解决方案越具体，资源越容易集中。</p>
+<p>下面进入栗子时间。</p>
+<p>假设我们要做一个产品，帮助大家解决这个问题：</p>
+<blockquote>
+<p>减压放松</p>
+</blockquote>
+<p>听起来这是个不错的价值点，谁不需要减压放松呢？不过，减压放松的方式有千万种，听音乐、蹦极、发呆、看书、泡澡、买买买…… 人在不工作的时候，可能做的 80% 的事情都是为了放松减压。所以，只是说放松减压，这不是真正提供给用户的独特价值。</p>
+<p>那回到现实，我们不太可能承包一个公园去做蹦极，做个 App 还是可能的，于是解决方案变成：</p>
+<blockquote>
+<p>放松减压 App</p>
+</blockquote>
+<p>抱歉，并没有什么改进，只不过承认自己做的是一个 App。</p>
+<p>这时候，我们尝试把人群假设、需求假设、使用场景假设、解决方案假设（产品形态和平台限制等）、体验假设加入进来，就可以这样描述：</p>
+<blockquote>
+<p>针对工作、生活节奏快，容易产生心理不适和问题的人，提供一个遇到高压场景前缓解压力的手机工具，帮助他们快速放松，更放松而专注地面对挑战。</p>
+</blockquote>
+<p>又或者是</p>
+<blockquote>
+<p>针对压力大、身体不好而有睡眠障碍的人，提供一个睡前自助式的催眠音乐播放工具，帮助他们更快更容易进入睡眠状态。</p>
+</blockquote>
+<p>是不是清楚多了？找到符合这些描述的用户，跟他们深入聊一聊，让他们看看产品原型。</p>
+<p>不过你可能有点担心，这样会不会局限了产品的规模？别贪心，在前期，先做好最有把握、定语最多的这个细分市场。站稳脚跟后，再慢慢地通过丰富产品线，把定语们一个一个去掉。</p>
+<h4 id="3-_u4EA7_u54C1_u5E02_u573A_u524D_u666F_u7684_u8BC4_u4F30"><a href="#3-_u4EA7_u54C1_u5E02_u573A_u524D_u666F_u7684_u8BC4_u4F30" class="headerlink" title="3.产品市场前景的评估"></a>3.产品市场前景的评估</h4><p>这一步很难做，不确定因素太多了。有一些可供参考的思路：</p>
+<ul>
+<li>找到对初始产品最热心、付费意愿最高的人，分析他们的目标是独特的还是普遍的；</li>
+<li>找到对初始产品态度冷淡的人，问问他们为什么不感兴趣，分析这些原因是否普遍，改变成本有多大；</li>
+<li>聚合和总结最典型的使用场景，频率多高，是否是一种未来的趋势，是否容易受其他因素影响而变化；</li>
+<li>如果想要触达一定规模的用户，主要方式有哪些，成本如何。</li>
+</ul>
+<h3 id="u8001"><a href="#u8001" class="headerlink" title="老"></a>老</h3><p>「老」在这里的含义是成长，growth。这是一个产品经理职业生涯中最常处在的阶段。产品成长，意味着用户数量、影响力、收益的增长。如何帮助产品成长，是产品经理最重要的职责。</p>
+<ul>
+<li><p>满意度</p>
+<p>在提供核心价值的前提下，不断提高用户满意度、扩大影响力，是产品增长的正道。</p>
+<p>测量用户满意度，研究影响满意度的因素并持续改进，是用户研究的核心课题之一。</p>
+</li>
+<li><p>活跃度</p>
+<p>光满意还不够，得常来呀！什么样的产品让人流连忘返，爱不释手？什么是用户参与产品共建、内容贡献的最优方式？这些都是用户研究关心的问题。不同类型的产品，活跃因子都不一样：</p>
+<ul>
+<li>工具性产品，可能是在使用时的快感，达成目标的成就感</li>
+<li>内容型产品，可能是能让人发现更大的世界，或者更好地了解自己</li>
+<li>电商平台，多快好省，挑花眼才是乐趣</li>
+<li>社交产品，不论多独特，都能找到臭味相投的一群，不再孤单</li>
+</ul>
+<p>不同产品，基因不一样，脸面自然也不一样。没有一招鲜吃遍天的绝技，必需根据行业和产品形态，深入到一线场景中去。</p>
+</li>
+</ul>
+<h3 id="u75C5_u548C_u6B7B"><a href="#u75C5_u548C_u6B7B" class="headerlink" title="病和死"></a>病和死</h3><p>「病」是指产品遇到了生死攸关的问题。最明显的例子莫过于用户大批流失、收入等核心指标持续下降。这个时候就要认认真真地研究「为什么」了。</p>
+<p>人总有一死，产品也是。数码相机取代了胶卷，智能手机取代了功能机。或趁早转型，或理性地对待沉没成本，也是产品经理可能会遇到的课题。</p>
+<h2 id="u6536_u655B_u578B_u95EE_u9898_u548C_u53D1_u6563_u578B_u95EE_u9898"><a href="#u6536_u655B_u578B_u95EE_u9898_u548C_u53D1_u6563_u578B_u95EE_u9898" class="headerlink" title="收敛型问题和发散型问题"></a>收敛型问题和发散型问题</h2><p>用研为解答问题提供两种类型的信息：诊断类信息和理解类信息。</p>
+<h3 id="u6536_u655B_u578B_u95EE_u9898"><a href="#u6536_u655B_u578B_u95EE_u9898" class="headerlink" title="收敛型问题"></a>收敛型问题</h3><p>这种问题一般可以客观地描述出来，有唯一的答案，常用「是什么」的方式表述，比如：</p>
+<ul>
+<li>用户的行为路径是什么</li>
+<li>有两个选择，喜欢 A 还是 B</li>
+<li>某个数据怎么样，比如下载量</li>
+<li>竞品的表现如何</li>
+</ul>
+<p>用研可以为收敛型问题提供诊断类信息。常用的方法包括：数据统计，问卷，竞品分析等。</p>
+<p>收敛型的问题，需要有足够的定量数据支撑。如果现阶段团队不具备一些技术实现能力，比如</p>
+<ul>
+<li>数据埋点和统计的能力</li>
+<li>发放和回收网络问卷的能力</li>
+<li>上线不同测试版本并且比对数据</li>
+</ul>
+<p>那么期望通过用研回答这些问题，是不现实的。</p>
+<h3 id="u53D1_u6563_u578B_u95EE_u9898"><a href="#u53D1_u6563_u578B_u95EE_u9898" class="headerlink" title="发散型问题"></a>发散型问题</h3><p>发散型的问题一般没有唯一确定的答案，需要通过丰富的上下文情境信息，启发对问题的思考，获得洞察。这类问题常用「为什么」和「如何」的方式表述，比如：</p>
+<ul>
+<li>如何定义需求</li>
+<li>如何定义目标用户</li>
+<li>为什么数据没有达到预期？</li>
+<li>为什么用户在这里遇到问题？</li>
+<li>为什么对产品不感兴趣？</li>
+</ul>
+<p>用研为发散型问题提供理解类信息。常用方法包括：深度访谈，焦点小组，其他的特定活动如卡片分类等。</p>
+<p>对于发散型问题，最好留有充足的时间，用来收集丰富的定性数据，因为定性数据必需深入接触到个人才能获取。如果你期望</p>
+<ul>
+<li>两天内获得充足的定性数据</li>
+<li>通过样本有限的定量数据，做出确凿的诊断</li>
+<li>自己不参与分析，通过执行研究的人给出答案</li>
+</ul>
+<p>那都是不现实的。因为定性研究的周期天然较长，目的是在充分的理解中产生洞察，而不是客观诊断。</p>
+<p>很多人会质疑用研的有效性：一场 8 个人的焦点小组就能决定产品决策吗？</p>
+<p>当然不能，因为这种形式收集的是情境信息，让决策者了解问题的方方面面，帮助他们产生洞察，最终做出合理决策。<strong>洞察来自于人的解读，而不是对数据的呈现。</strong></p>
+<h2 id="u5C0F_u7ED3"><a href="#u5C0F_u7ED3" class="headerlink" title="小结"></a>小结</h2><p><img src="http://7xjpra.com1.z0.glb.clouddn.com/04-ProductLifeCycle.jpg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/04-ProblemType.jpg" alt=""></p>
+<p>在求解问题之前，先问问自己，这是什么类型的问题？属于产品发展的哪个阶段？是发散的还是收敛的？需要什么样的信息辅助决策？适合用什么方法收集数据？</p>
+<p>下一篇开始，我们介绍最常用的四个用研「招式」。</p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<hr>
+<ul>
+<li><a href="http://www.uegeek.com/pm-ur-handbook1.html" target="_blank" rel="external">产品经理的用研手册01 - 朦胧的用户，懵懂的你</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook2.html" target="_blank" rel="external">产品经理的用研手册02 - 你真的懂用户吗？</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook3.html" target="_blank" rel="external">产品经理的用研手册03 - 成也需求，败也需求</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[产品经理的用研手册03 - 成也需求，败也需求]]></title>
       <url>http://uegeek.com/pm-ur-handbook3.html</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article3-titu.jpg" alt=""></p>
