@@ -4,6 +4,354 @@
   
     
     <entry>
+      <title><![CDATA[产品经理的用研手册09 - 精益的本质：一切皆假设]]></title>
+      <url>http://uegeek.com/pm-ur-handbook9.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article8-titu.jpg" alt=""></p>
+<a id="more"></a> 
+<p>在本系列的开篇<a href="/(http://www.uegeek.com/pm-ur-handbook1.html">「朦胧的用户，懵懂的你」</a>)中，我们讨论过用研为什么无用。其中一个重要原因是，互联网产品的更新迭代速度以周、甚至以天计，可是用户研究项目从立项、方案设计、执行、分析到结果，动辄数周，这种节奏难以匹配需求。为了快，大家更倾向于用「试错」的办法，而不是充分论证再行动。</p>
+<p>这种「试错」的方法，最近几年越来越流行，它有一个新名称，叫「精益」。这么看来，用户研究难以适应互联网的节奏，跟「精益」的思路背道而驰。是这样吗？</p>
+<h2 id="u7528_u6237_u7814_u7A76_u4E0E_u7CBE_u76CA_u521B_u4E1A"><a href="#u7528_u6237_u7814_u7A76_u4E0E_u7CBE_u76CA_u521B_u4E1A" class="headerlink" title="用户研究与精益创业"></a>用户研究与精益创业</h2><p>表面上，用户研究和互联网快速迭代、精益式的做法相互矛盾，但是 00 的观点却相反：它们的核心思路是一致的。</p>
+<h3 id="u5BF9_u7528_u7814_u7684_u8BEF_u89E3"><a href="#u5BF9_u7528_u7814_u7684_u8BEF_u89E3" class="headerlink" title="对用研的误解"></a>对用研的误解</h3><p>用户研究最核心的并不是各种眼花缭乱的方法，而是研究的内核、解决问题的根本思路：先「假设」后「验证」。</p>
+<p>为什么那么多人觉得用研难而无用？因为难的不是操作，而是面对一切问题首先承认自己无知、需要从头去验证的根本态度。有了这种态度，才会严肃对待「假设」、「试验」、「信度和效度」。只不过，严谨的代价是时间和精力等各项成本投入。</p>
+<h3 id="u5BF9_u7CBE_u76CA_u7684_u8BEF_u89E3"><a href="#u5BF9_u7CBE_u76CA_u7684_u8BEF_u89E3" class="headerlink" title="对精益的误解"></a>对精益的误解</h3><p>在「精益」快速普及流行过后，不少人打着「精益」的旗号继续在低效试错，给原本盲目的做法披上了一件光鲜的外衣。于是有不少人开始批评精益的思路。这依然是对精益的误解。</p>
+<p>精益的本质，也是「假设」-「验证」的循环。</p>
+<p><img src="http://cdn4.infoqstatic.com/statics_s1_20161122-0331/resource/articles/twitter-ab-test-practise-part01/zh/resources/002.png" alt=""></p>
+<p>快速试错只是精益的表象，缩短「假设」-「验证」的循环才是精益的精髓。因为盲目试错的过程中，我们其实不知道自己在试验的到底是什么，缺乏「假设」的「验证」，等于没有验证，最终无助于找到对的方向。</p>
+<h3 id="u4E00_u5207_u90FD_u7686_u5047_u8BBE"><a href="#u4E00_u5207_u90FD_u7686_u5047_u8BBE" class="headerlink" title="一切都皆假设"></a>一切都皆假设</h3><p>对创业团队而言，对从 0 到 1 的产品而言，用户群、需求、解决方案、体验目标，一切都只是未经验证的假设。</p>
+<p>比如，有这样一个产品定义：</p>
+<blockquote>
+<p>对希望提升睡眠质量、获得深度放松体验的用户，在睡前及放松场景，提供一个手机 APP，播放舒缓的音乐和催眠引导语，帮助用户深度放松，提高休息质量。</p>
+</blockquote>
+<p>一旦仔细拆分开来，可以发现，其实每一部分都不是「事实」，而是待验证的假设：</p>
+<blockquote>
+<p>对希望提升睡眠质量，获得深度放松体验的用户 —— 用户需求假设</p>
+<p>在睡前及放松场景，—— 场景假设</p>
+<p>提供一个手机 APP，播放舒缓的音乐和催眠引导语， —— 解决方案假设</p>
+<p>帮助用户深度放松，提高休息质量。—— 体验目标假设</p>
+</blockquote>
+<p>我们太容易把假设当成了洞察。作为一个猜想，全心全意期待的，就是被验证，不论结果是被证明还是被反驳。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/09-URandLean.jpg" alt=""></p>
+<h2 id="u7528_u6237_u7814_u7A76_u5982_u4F55_u52A9_u529B_u7CBE_u76CA_u521B_u4E1A_uFF1F"><a href="#u7528_u6237_u7814_u7A76_u5982_u4F55_u52A9_u529B_u7CBE_u76CA_u521B_u4E1A_uFF1F" class="headerlink" title="用户研究如何助力精益创业？"></a>用户研究如何助力精益创业？</h2><p>在价值观层面，只要突破对「研究」所抱有的冗长、龟毛、小题大做的刻板印象，回归到研究的本质，就能更深入地理解「精益」的内涵。</p>
+<p>在方法论层面，只要明确了「一切皆假设」「一切待验证」，「望闻问切」的用研四式全部都可以指向实际问题求解，不再为了「严谨」而用研，而是为了「解答和验证」去做用研。</p>
+<p>假设和验证总是成对出现，不可分离。有了假设，我们才知道待验证的是什么，在观察时才有重点、在收集反馈时才知道轻重缓急、在主动询问时更容易直切主题、在试验时能少一些认知偏差。</p>
+<p>亲爱的产品经理们，请每天都问一问自己：</p>
+<blockquote>
+<p>我的假设是什么？</p>
+<p>哪些重要问题其实仍待验证？</p>
+<p>如何用最小行动去验证？</p>
+</blockquote>
+<h3 id="u7528_u6237_u9700_u6C42_u5047_u8BBE_u5982_u4F55_u9A8C_u8BC1"><a href="#u7528_u6237_u9700_u6C42_u5047_u8BBE_u5982_u4F55_u9A8C_u8BC1" class="headerlink" title="用户需求假设如何验证"></a>用户需求假设如何验证</h3><p>可验证的东西，首先必需得是可以准确描述的。</p>
+<p>你可以清楚地描述产品的用户群体如何分类，每一类有什么特征吗？在哪里可以找到一定规模的用户？请回顾本系列第二篇文章<a href="http://www.uegeek.com/pm-ur-handbook2.html" target="_blank" rel="external">你真的懂用户吗？</a>。通过目标区分用户，通过对场景的描述建立用户快照。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-HowtoBetterCategories.jpg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserScenario.jpg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserSnapshotTemp.jpg" alt=""></p>
+<p>在建立了初步的用户快照的基础上，我们反复对用户进行「望闻问切」，即观察、倾听反馈、主动询问、做试验，来验证和修正用户快照，最终得到更接近真实的用户角色和用户画像。</p>
+<p>接着，你可以清楚描述用户的需求吗？在用户提供的场景故事中，反复提炼需求，尤其是真正有价值的需求。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-ValueFormula.jpg" alt=""></p>
+<p>相比需求是否存在，更加难以判断的是需求的市场规模。我们可以尝试通过一些侧面信息来辅助分析。</p>
+<ul>
+<li>需求有多迫切？对整个生活的影响有多大？</li>
+<li>异质人群（不同社会阶层、年龄、生活状态）是否都反映出类似的诉求</li>
+<li>搜索指数和关键词热度，流量的上下游来源和去向</li>
+<li>国内外已有的解决方案，数量和程度</li>
+<li>类似行业成熟市场的规模，或其他区域同类市场的规模</li>
+</ul>
+<p>欢迎大家多补充这一部分的经验。</p>
+<p>判断了市场规模之后，还需要估计触达用户的成本、建设渠道的成本。在触达用户之后，还得考虑说服用户接受、购买解决方案的成本。</p>
+<h3 id="u573A_u666F_u5047_u8BBE_u5982_u4F55_u9A8C_u8BC1"><a href="#u573A_u666F_u5047_u8BBE_u5982_u4F55_u9A8C_u8BC1" class="headerlink" title="场景假设如何验证"></a>场景假设如何验证</h3><p>相比用户和需求假设，场景则容易验证得多：去现场观察，直接向用户询问。</p>
+<p>请回顾本系列<a href="http://www.uegeek.com/pm-ur-handbook4.html" target="_blank" rel="external">第 5 篇</a>和<a href="http://www.uegeek.com/pm-ur-handbook7.html" target="_blank" rel="external">第 7 篇</a>，用研四式中的「望」和「问」，每次实际接触用户时，都收集具体的使用场景、抽取出共性，并且结合用户快照中的场景假设，去做对比。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/07-InterviewTech.jpg" alt=""></p>
+<h3 id="u89E3_u51B3_u65B9_u6848_u5047_u8BBE_u5982_u4F55_u9A8C_u8BC1"><a href="#u89E3_u51B3_u65B9_u6848_u5047_u8BBE_u5982_u4F55_u9A8C_u8BC1" class="headerlink" title="解决方案假设如何验证"></a>解决方案假设如何验证</h3><p>解决方案真的能解决问题吗？通过观察（望）和做实验（切），能很好回答这个问题。尤其注意观察那些能反映出解决方案是否有效的数据指标，是否符合预期？</p>
+<p>如果发现了现实和预期不符的疑点，进一步倾听用户怎么说（闻），以及向用户询问（问）他们的感受和态度。</p>
+<p>有时候，我们提供的解决方案也许是有效的，但是不具备独特性，容易被取代。</p>
+<p>还有的情况是，解决方案是有效的，但是用户并没有直接付费的意愿，那就需要调整商业模式，找出「羊毛出在猪身上」的可行通路。</p>
+<p>更进一步，商业模式可行，还需要把生产成本控制在收益之下，或者能够找到进一步降低成本的路径。</p>
+<h3 id="u4F53_u9A8C_u76EE_u6807_u5047_u8BBE_u5982_u4F55_u9A8C_u8BC1"><a href="#u4F53_u9A8C_u76EE_u6807_u5047_u8BBE_u5982_u4F55_u9A8C_u8BC1" class="headerlink" title="体验目标假设如何验证"></a>体验目标假设如何验证</h3><p>这是最难验证的假设。</p>
+<p>体验很重要，但是到底有多重要？跟实用性目的相比，孰轻孰重？它会怎样影响用户的认知和传播？</p>
+<p>也许，这就是产品经理工作中真正艺术的部分。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-DifPMDifGoal.jpg" alt=""></p>
+<p>让自己文艺起来吧，让自己成为洞察人性的高手吧，产品经理们！</p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
+<ul>
+<li><a href="http://www.uegeek.com/pm-ur-handbook1.html" target="_blank" rel="external">产品经理的用研手册01 - 朦胧的用户，懵懂的你</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook2.html" target="_blank" rel="external">产品经理的用研手册02 - 你真的懂用户吗？</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook3.html" target="_blank" rel="external">产品经理的用研手册03 - 成也需求，败也需求</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook4.html" target="_blank" rel="external">产品经理的用研手册04 - 做问题求解者，先对症后下药</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook5.html" target="_blank" rel="external">产品经理的用研手册05 - 用研四式之「望」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook6.html" target="_blank" rel="external">产品经理的用研手册06 - 用研四式之「闻」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook7.html" target="_blank" rel="external">产品经理的用研手册07 - 用研四式之「问」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook8.html" target="_blank" rel="external">产品经理的用研手册08 - 用研四式之「切」</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[产品经理的用研手册08 - 用研四式之「切」]]></title>
+      <url>http://uegeek.com/pm-ur-handbook8.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article8-titu.jpg" alt=""></p>
+<a id="more"></a> 
+<p>今天我们来介绍用户研究「望闻问切」第四式，也是最好玩的招式：做试验。</p>
+<p>如果说用户研究的目的无非是解答疑惑、辅助决策，那么是不是也可以跳出「假设-验证-判断」的循环，直接测试用户的反应和行为，直接获得判断？</p>
+<p>答案是肯定的。</p>
+<p>做试验的目的，是用较低的成本去测试想法的可行性和接受度，以及从中发现可能会遇到的问题。</p>
+<p>人心难测。互联网变化如此之快，有时候我们可以通过逻辑和分析得出结论，但是更多时候需要把手伸到水中一探深浅。前面花了那么多时间望、闻、问，这回终于可以来真的了。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/08-TestForWhat.jpg" alt=""></p>
+<h2 id="u6D4B_u8BD5_u6001_u5EA6_u548C_u6982_u5FF5"><a href="#u6D4B_u8BD5_u6001_u5EA6_u548C_u6982_u5FF5" class="headerlink" title="测试态度和概念"></a>测试态度和概念</h2><p>当我们有一些新的想法，尤其是一些比较具体的点子，不知道用户会如何看待，想在开始做之前快速收集一些想法。这时候除了去找用户聊，还可以直接在产品或者用户论坛中拟造一些信息，吸引用户的注意，获取他们的反馈。</p>
+<p>第一招，以假乱真的泄露版。</p>
+<p>2004 年愚人节，Google 对外发布了拥有 1GB 存储空间的免费邮箱 Gmail，被大家当做笑话，也引发了无数讨论。到了第二天，大家才发现只是来真的，Gmail 一炮而红。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/08-2014Gmail.png" alt=""></p>
+<p>第二招，先建城门后建城。</p>
+<p>功能太复杂来不及开发？但是又想提前收集反馈？没问题，入口先摆出来。但是注意不要玩火自焚，承诺最终还是要以某种方式兑现的。</p>
+<p>比如 2015年火起来的计步 App Walk up ，记录每天的步数，然后可以在虚拟的世界地图内前进，抵达不同的城市。因为挤牙膏般的开发进度，不得不先放出入口，再慢慢开发。这个过程中可以收集大量的反馈。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/08-WalkupUpdate.jpeg" alt=""></p>
+<h2 id="u6D4B_u8BD5_u65B0_u7248_u672C_u7684_u4F7F_u7528_u4F53_u9A8C"><a href="#u6D4B_u8BD5_u65B0_u7248_u672C_u7684_u4F7F_u7528_u4F53_u9A8C" class="headerlink" title="测试新版本的使用体验"></a>测试新版本的使用体验</h2><p>每当产品有较大改动时，产品经理都免不了神经紧绷：如果上线后效果不好怎么办？如果骂声一片怎么办？</p>
+<p>那么就尽早做用户测试，尽早反馈。</p>
+<p>这里所说的测试，跟前面介绍过的可用性测试基本类似，只是不必等到开发完成才开始找用户测试，而是在概念阶段、设计阶段、开发阶段，就可以用一些「假」的原型或者半成品给用户试用，只要能够让用户明白这只是初步一些想法，希望了解他对这些想法的意见。</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>展示</th>
+<th>测试什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>雏形</td>
+<td>线框图</td>
+<td>用户对产品的理解和需求，主要模块的设计和衔接是否合理</td>
+</tr>
+<tr>
+<td>设计</td>
+<td>界面原型</td>
+<td>用户对流程和界面的理解，界面可用性</td>
+</tr>
+<tr>
+<td>开发</td>
+<td>Demo 版本</td>
+<td>真实的使用体验，有哪些 bug</td>
+</tr>
+<tr>
+<td>测试</td>
+<td>可上线版本</td>
+<td>产品上线后的效果，整体可用性</td>
+</tr>
+</tbody>
+</table>
+<p>在设计开发阶段，还不需要完整、严谨的测试，只需要快速了解用户意见、找到明显问题的「迷你测试」：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/05-MiniTestSteps.jpg" alt=""></p>
+<h2 id="u6D4B_u8BD5_u4E0D_u540C_u65B9_u6848_u7684_u771F_u5B9E_u6548_u679C"><a href="#u6D4B_u8BD5_u4E0D_u540C_u65B9_u6848_u7684_u771F_u5B9E_u6548_u679C" class="headerlink" title="测试不同方案的真实效果"></a>测试不同方案的真实效果</h2><p>在产品设计开发过程中，总是有各种各样的纠结，特别是两个方案摆在一起，不相伯仲，改选哪一个？说到这里，A/B test 终于要出场了。</p>
+<p>大家对 A/B test 的直观印象是：有 A、B 两个方案，分别放在线上，测试看哪个效果好，最终就采用哪个。</p>
+<p><img src="https://vwo.com/images/page_ab_testing/02.png.pagespeed.ce.BmWcShEZAM.png" alt=""></p>
+<p>每当有重要页面的修改和流程上的优化，通过灰度发布到 1% 或者 5% 的用户，看实际数据的变化（访问时间增加、留存提高、下单率提高等），决定此修改到底是 100% 发布还是被砍掉。听起来简直是完美的解决方案，对不？</p>
+<p>但是事情远没有这么简单。A/B test 的本质，是受控的对照组科学实验。通过严谨的实验设计、采样样本代表性、流量分割与小流量测试等方式来获得具有代表性的实验结论，并确信该结论推广到全体样本仍然可信。</p>
+<p>什么是「可控」？变量是定义清晰、完全受人为控的。</p>
+<p>假设有一个因变量 Y（比如购物车结算率），它的变化会受到 A、B、C、D、E、F、G 等 7 个自变量的影响（如何确定只有这些影响因素？），且这种影响无法通过确定的函数来表示。我们现在设计了两个方案，想提高 Y，怎么通过实验验证哪个方案更有效呢？可以接受的做法是，进行若干组试验，让 A 的值变化，而其他自变量全部不变，若 Y 也产生变化，说明 A 的改变起到了效果。</p>
+<p>但是如果现在有两个方案，一个改动了 A、C、D，一个改动了 B、D、G，就无法证明是哪些因素影响了 Y 的变化，也就无法判断到底哪个方案更优。</p>
+<p>A/B test，难就难在识别所有自变量，并且控制单一自变量的变化。数据不全、脏数据、随机事件、建模人为因素等等影响，都会影响 A/B test 的结果。要解决这个问题，对采样、聚类、流量分割等要求非常的高，而且要检验统计结果的有效性。</p>
+<p>所以在现实应用中，A/B test 多用于测试界面元素/控件变化对结果的影响，因为这些因素容易分离和控制。大部分实验只能带来个位数百分比的改进，或者甚至是分数百分比。</p>
+<p>A/B test 是好东西，但是要真正用好，需要特别注意实验设计和数据统计：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/08-ABTest.jpg" alt=""></p>
+<h2 id="u6D4B_u8BD5_u4E0D_u662F_u4E07_u80FD"><a href="#u6D4B_u8BD5_u4E0D_u662F_u4E07_u80FD" class="headerlink" title="测试不是万能"></a>测试不是万能</h2><p>不论是用户测试还是 A/B test，都无法完全反应客观现实。即便通过 A/B test 提升了某个按钮的点击率，但是它依然不能解决产品的深层次问题。通过测试，我们也许可以知道哪个方案更受欢迎，但却无法解释反常识的结果。测试只能让我们「知其然」，想要「知其所以然」，还是需要配合其他的招式，用心解读。</p>
+<p>那么，什么时候该「问」，什么时候该「切」？</p>
+<p>如果重在探究背景和原因，用「问」；如果需要快速测试行动结果，用「切」。当然，另外一个重要的考量因素是执行的成本，面对面调研要花费较多的时间获取和分析数据，灰度试验需要把多个方案都实现出来，选择哪一种，投入产出比会更高？最终还是要靠经验去做成判断。</p>
+<hr>
+<p>产品经理的用户用研四式「望闻问切」就介绍完了。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/05-wangwenwenqie.jpg" alt=""></p>
+<p>下一篇探讨用户研究与精益方法的关系。</p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
+<ul>
+<li><a href="http://www.uegeek.com/pm-ur-handbook1.html" target="_blank" rel="external">产品经理的用研手册01 - 朦胧的用户，懵懂的你</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook2.html" target="_blank" rel="external">产品经理的用研手册02 - 你真的懂用户吗？</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook3.html" target="_blank" rel="external">产品经理的用研手册03 - 成也需求，败也需求</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook4.html" target="_blank" rel="external">产品经理的用研手册04 - 做问题求解者，先对症后下药</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook5.html" target="_blank" rel="external">产品经理的用研手册05 - 用研四式之「望」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook6.html" target="_blank" rel="external">产品经理的用研手册06 - 用研四式之「闻」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook7.html" target="_blank" rel="external">产品经理的用研手册07 - 用研四式之「问」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook8.html" target="_blank" rel="external">产品经理的用研手册08 - 用研四式之「切」</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[产品经理的用研手册07 - 用研四式之「问」]]></title>
+      <url>http://uegeek.com/pm-ur-handbook7.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article7-titu.png" alt=""></p>
+<a id="more"></a> 
+<p>在用研四式的前两式「望」和「闻」中，我们还没有实际接触用户。今天介绍最经典的第三式「问」，我们要主动出击，获得丰富的一手信息。这也是绝大多数人对用户研究工作的直观印象：做面对面的调研。</p>
+<p>我们先回顾一个老段子，感受一下用研第三式「问」的威力：</p>
+<blockquote>
+<p>某日，老师在课堂上想考考学生们的智商，就问一个男孩：“树上有十只鸟，开枪打死一只，还剩几只？”</p>
+</blockquote>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/07-8c7ffef4fb20dfe160ac0dc8244c741a.jpg" alt=""></p>
+<blockquote>
+<p>男孩反问：“是无声枪么？”<br>“不是。”</p>
+<p>“枪声有多大？”<br>“80~100分贝。”</p>
+<p>“那就是说会震得耳朵疼？”<br>“是。”</p>
+<p>“在这个城市里打鸟犯不犯法？”<br>“不犯。”</p>
+<p>“您确定那只鸟真的被打死啦？”<br>“确定。”</p>
+<p>老师已经不耐烦了，“拜托，你告诉我还剩几只就行了，OK？”</p>
+<p>“OK。鸟里有没有聋子？”<br>“没有。”</p>
+<p>“有没有关在笼子里的？”<br>“没有。”</p>
+<p>“边上还有没有其他的树，树上还有没有其他鸟？”<br>“没有。”</p>
+<p>“方圆十里呢？”<br>“就这么一棵树。”</p>
+<p>“有没有残疾或饿得飞不动的鸟？”<br>“没有，都身体倍棒。”</p>
+<p>“算不算怀孕肚子里的小鸟？”<br>“都是公的。”</p>
+<p>“都不可能怀孕？”<br>“……，决不可能。”</p>
+<p>“打鸟人的眼有没有花？保证是十只？”<br>“没有花，就十只。”</p>
+<p>老师脑门上的汗已经流下来了，下课铃响起，但男孩仍继续问:“有没有傻的不怕死的？”<br>“都怕死。”</p>
+<p>“有没有因为情侣被打中，自己留下来的？”<br>“笨蛋，之前不是说都是公的嘛！”</p>
+<p>“同志可不可以啊！”<br>“……，性取向都很正常!”</p>
+<p>“会不会一枪打死两只？”<br>“不会。”</p>
+<p>“一枪打死三只呢？”<br>“不会。”</p>
+<p>“四只呢？”<br>“更不会!”</p>
+<p>“五只呢？”<br>“绝对不会！！！”</p>
+<p>“那六只总有可能吧？”<br>“不可能！”</p>
+<p>“好吧，那么所有的鸟都可以自由活动么？”<br>“完全可以。”</p>
+<p>“它们受到惊吓起飞时会不会惊慌失措而互相撞上？”<br>“不会，每只鸟都装有卫星导航系统，而且可以自动飞行。”</p>
+<p>“恩，如果您的回答没有骗人，”学生满怀信心地回答，“打死的鸟要是挂在树上没掉下来，那么就剩一只，如果掉下来，就一只不剩。”</p>
+<p>老师，卒。</p>
+</blockquote>
+<p>通过提问，几乎可以得到任何想知道的信息。</p>
+<p>当遇到一个具体问题，如</p>
+<blockquote>
+<p>xx 现有的用户有哪几个典型类别，他们对产品的满意度如何，近期我们要做哪些改进?</p>
+<p>现在内容的分类有点乱，用户不容易快速找到想要的内容，怎么优化？</p>
+</blockquote>
+<p>根据已有的经验和数据，也许无法解答这些问题，这时可以考虑进行一次用户调研。</p>
+<p>其实用户调研的形式、有没有按照严谨的操作执行，都是次要的。真正重要的是，<strong>有没有用较真的态度去对待困扰我们的问题，认真地尝试解答问题，然后在此基础上去规划下一步的行动</strong>，而不是盲目地一边看似解决问题，实则一边制造新问题。</p>
+<h2 id="u5982_u4F55_u5236_u5B9A_u8C03_u7814_u8BA1_u5212"><a href="#u5982_u4F55_u5236_u5B9A_u8C03_u7814_u8BA1_u5212" class="headerlink" title="如何制定调研计划"></a>如何制定调研计划</h2><p>所谓调研计划，就是思考问题如何求解，需要哪些步骤。</p>
+<h3 id="1-_u95EE_u9898_u662F_u4EC0_u4E48"><a href="#1-_u95EE_u9898_u662F_u4EC0_u4E48" class="headerlink" title="1.问题是什么"></a>1.问题是什么</h3><p>开始的开始，得先搞清楚我们要尝试解答的问题到底是什么。这一步的重要性怎么强调都不为过。提出清晰、具体的问题，是产品经理的职责。</p>
+<p>清晰地定义问题，问题也就解决了一半。</p>
+<blockquote>
+<p>这是属于哪种类型的问题？</p>
+</blockquote>
+<p>在本系列第四篇文章「做问题求解者，先对症后下药」中，我们介绍了两种问题分类维度：产品所处的生命周期，以及问题的收敛/发散属性。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/04-ProductLifeCycle.jpg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/04-ProblemType.jpg" alt=""></p>
+<p>那么，现在想要解答的问题，属于哪个类型？是新产品定义过程中，用户价值验证的问题？还是产品增长过程中，用户在使用过程中遇到困惑从而影响转化率问题？如果要诊断收敛型问题，就不能只收集定性数据。如果需要更丰富的一手资料帮助理解发散型问题，就要留有充足的调研时间。</p>
+<h3 id="2-_u5047_u8BBE_u662F_u4EC0_u4E48_uFF0C_u5F85_u9A8C_u8BC1_u7684_u662F_u4EC0_u4E48"><a href="#2-_u5047_u8BBE_u662F_u4EC0_u4E48_uFF0C_u5F85_u9A8C_u8BC1_u7684_u662F_u4EC0_u4E48" class="headerlink" title="2.假设是什么，待验证的是什么"></a>2.假设是什么，待验证的是什么</h3><p>问题提出来以后，进一步写下已有的假设，以及待验证的部分。</p>
+<p>比如，如果问题是「对已有用户进行分类」，那么你假设的用户分类是什么？为什么？划分维度有哪些？哪些方面是明确已知的，哪些是待验证的？</p>
+<p>如果问题是「用户需不需要专辑评论功能」，你的假设是什么？是「通过一定的内容发布机制，可以培养活跃用户的参与感」？是「获取用户主观评价才能帮助专辑质量的改进」？还是「可以从文字内容提取用户的喜好」？为什么？不确定的因素有哪些？如何通过调研给出进一步的数据以验证？</p>
+<h3 id="3-_u5982_u4F55_u89E3_u7B54"><a href="#3-_u5982_u4F55_u89E3_u7B54" class="headerlink" title="3.如何解答"></a>3.如何解答</h3><p>已有资料、相关理论有哪些?</p>
+<p>需要收集哪些数据，从哪里收集，怎么收集?</p>
+<p>会用什么方法处理和分析数据，用到什么理论框架?</p>
+<h3 id="4-_u5B9E_u65BD_u8FC7_u7A0B"><a href="#4-_u5B9E_u65BD_u8FC7_u7A0B" class="headerlink" title="4.实施过程"></a>4.实施过程</h3><p>准备阶段：比如，设计问卷、访谈提纲、用户招募等，由谁负责，时间安排如何。</p>
+<p>数据获取阶段：比如，主持活动、入户调研、问卷发放和回收等，都需要做哪些具体的事情，由谁完成，什么时候完成。</p>
+<p>分析阶段：比如，哪些人应该参与，计划有哪些输出，何时完成。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/07-ResearchPlan.jpg" alt=""></p>
+<h2 id="u7406_u89E3_u6027/_u5B9A_u6027_u6570_u636E_u6536_u96C6"><a href="#u7406_u89E3_u6027/_u5B9A_u6027_u6570_u636E_u6536_u96C6" class="headerlink" title="理解性/定性数据收集"></a>理解性/定性数据收集</h2><p>虽然这种方法总被冠以「定性研究」、「质性研究」等不明觉厉的名称，但是来到用户跟前进行面对面调研，本质就是<strong>通过跟用户愉快地聊天，获取我们感兴趣的信息</strong>。换句话说，就是让用户讲出自己的「故事」，从中获得洞察。然后，再通过故事里面出现的场景和细节，去分用户析动机、需求、痛点等，从而推导解决方案。</p>
+<h3 id="u627E_u4EC0_u4E48_u6837_u7684_u7528_u6237_uFF1F_u5982_u4F55_u627E_u5230_uFF1F"><a href="#u627E_u4EC0_u4E48_u6837_u7684_u7528_u6237_uFF1F_u5982_u4F55_u627E_u5230_uFF1F" class="headerlink" title="找什么样的用户？如何找到？"></a>找什么样的用户？如何找到？</h3><p>又到了复习建立用户快照的时间~ 请翻出卡片模板，结合要解答的问题，去描述调研的目标用户：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserSnapshotTemp.jpg" alt=""></p>
+<p>在招募用户之前，你可能需要一个甄别问题列表或者问卷，把符合条件的用户筛选出来。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/07-UserRecruitQuestionare.png" alt=""></p>
+<p>至于如何找到用户，就要靠之前的积累了：用户的联系方式、微信群、用户池、社交平台，等等。</p>
+<h3 id="u5982_u4F55_u8DDF_u7528_u6237_u804A_u5929_uFF1F"><a href="#u5982_u4F55_u8DDF_u7528_u6237_u804A_u5929_uFF1F" class="headerlink" title="如何跟用户聊天？"></a>如何跟用户聊天？</h3><p>首先，需要准备好一个问题列表，把需要询问的问题，按一定的逻辑组织好。</p>
+<p>比如，我们想了解用户通过听音频来放松的场景，那么可以把问题列下来：</p>
+<blockquote>
+<p>睡前场景 </p>
+<ul>
+<li>晚上一般几点回家？回到家后会做些什么？ </li>
+<li>一般几点睡觉？睡前会做些什么？大概多长时间？有没有一个“标志/仪式”代表准备要睡觉了？ </li>
+<li>上床之前会做些什么？会使用哪些东西？怎么使用？心情如何？ </li>
+<li>在手机上做什么？会打开哪些app？做些什么？多久？ </li>
+<li>睡眠质量如何？如果好有什么秘诀？如果不好遇到什么问题？具体情形是怎样的？有哪些感受？ </li>
+</ul>
+<p>其他场景 </p>
+<ul>
+<li>一天中还有什么时候比较劳累、疲惫，需要放松？ </li>
+<li>都是在做什么的时候/之前之后？在什么地方？跟什么人一起？什么状态？ </li>
+<li>一般用什么方式去放松？效果如何？ </li>
+<li>印象中很放松的体验是怎样的？什么时候体验到的？ </li>
+</ul>
+<p>音频需求 </p>
+<ul>
+<li>平时会有哪些听音频的场景？ </li>
+<li>为什么需要听音频？用什么听？整个过程是怎样的？持续多久？ </li>
+<li>听什么内容？怎么找这些内容？喜欢什么样的内容和形式？ </li>
+<li>可以详细介绍一两个听得最多的电台/节目/歌单/谈话吗？ </li>
+<li>最常使用什么app 听音频？怎么使用的？有些什么习惯？最喜欢什么内容/功能？ </li>
+<li>有睡前听音频的习惯吗？怎么听？听多久？有没有不满意的地方？ </li>
+</ul>
+</blockquote>
+<p>然后找到符合条件的用户，邀约到见面的地方。这个地点最好是安静、舒适、私密的空间。</p>
+<p>在开始聊天前，向对方说明来意，介绍过程和时间，如果需要录音，需要征求对方同意。</p>
+<h4 id="u8BE2_u95EE_u7684_u6280_u5DE7"><a href="#u8BE2_u95EE_u7684_u6280_u5DE7" class="headerlink" title="询问的技巧"></a>询问的技巧</h4><p><strong>以用户感觉舒服的方式提问</strong></p>
+<p>尽量以适合讨论的问题形式抛出话题，保持讨论流畅地进行。不一定完全按照大纲顺序提问，可以根据讨论灵活调整，根据用户的叙述，自然地引出相关问题。例如询问到多平台使用习惯，用户开始提到手机上使用的一些情况，可以顺势引导到手机方面的问题。</p>
+<p><strong>不评价，以引导为主</strong></p>
+<ul>
+<li>让用户完整表达其观点和看法，不要急于打断用户的话；</li>
+<li>不要对用户的描述做太多评价或者「挑战」用户；</li>
+<li>不过多发表自己的观点，鼓励用户多表达自己的看法；</li>
+<li>不要急于提问，尽量不打乱用户讨论的节奏。</li>
+</ul>
+<p><strong>追问行为、细节、原因、感受</strong></p>
+<ul>
+<li>鼓励细节。比如用户提到「我每天都登录」，这时可以追问「一般会在什么时间登录？通过什么方式、什么入口登录？」</li>
+<li>多问为什么，探究行为和态度的原因。比如，「我一般忽略这个选项」，可以追问「为什么呢？是……还是……原因呢？」。用户说「这个功能应该有」，可以追问「你觉得这个功能是必需的对吗？如果没有……如果有……」</li>
+<li>从描述中挖掘问题。比如用户认为「我觉得它不够智能」，可以追问「那在你看来，什么样是比较’智能’的呢？」</li>
+</ul>
+<p><strong>适时回应和总结</strong></p>
+<p>对用户的描述，可以适当进行回应和总结，将主要意思复述一下，帮助用户更清晰、完整地表达，也减少理解的偏差。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/07-InterviewTech.jpg" alt=""></p>
+<p>在访谈结束后，注意及时整理访谈记录和小结。</p>
+<h2 id="u8BCA_u65AD_u6027/_u5B9A_u91CF_u6570_u636E_u6536_u96C6"><a href="#u8BCA_u65AD_u6027/_u5B9A_u91CF_u6570_u636E_u6536_u96C6" class="headerlink" title="诊断性/定量数据收集"></a>诊断性/定量数据收集</h2><p>收集定量数据，主要有统计数据和问卷两种方式。</p>
+<h3 id="u7EDF_u8BA1_u6570_u636E_u4E0A_u62A5"><a href="#u7EDF_u8BA1_u6570_u636E_u4E0A_u62A5" class="headerlink" title="统计数据上报"></a>统计数据上报</h3><p>在产品中埋点统计数据，最能反映全体用户的实际行为和表现。</p>
+<p>在提出统计需求之前，先尝试回答两个问题：</p>
+<blockquote>
+<p>什么样的数据能反映什么问题？</p>
+<p>有什么例外？</p>
+</blockquote>
+<p>如果没有经验，产品经理容易提出让工程师无法下手的统计需求。什么是合格的统计需求呢？边界明确，没有含糊，能让工程师明确要如何取数据。注意提供四个方面的描述：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/07-StatisticsRequirement.jpg" alt=""></p>
+<p>人群边界</p>
+<ul>
+<li>统计哪些渠道？网站 or App or 其他？需要限定地域吗？或是使用过某个功能的用户？需要去重吗？</li>
+<li>如何抽样？全部用户，or 随机抽样 or 分层抽样？</li>
+<li>具体数量？需要多少用户的数据？</li>
+</ul>
+<p>时间边界</p>
+<ul>
+<li>抽取数据的开始和结束时间？</li>
+<li>是否需要按时间周期划分？</li>
+</ul>
+<p>行为边界</p>
+<ul>
+<li>需要抽取什么样的行为数据？如何精确定义这个行为？</li>
+<li>是否存在重复的数据？如何去重？</li>
+</ul>
+<p>如何呈现</p>
+<ul>
+<li>用什么格式？要怎么划分数据？</li>
+<li>存放在哪里？</li>
+</ul>
+<h3 id="u95EE_u5377"><a href="#u95EE_u5377" class="headerlink" title="问卷"></a>问卷</h3><p>问卷的设计、投放、统计分析，又是一门学科。召唤身边的用户研究员吧！或者继续关注你丫全栈后续的文章 :P</p>
+<hr>
+<p>用研最重要的招式「问」就介绍到这里。下一篇是望闻问切的最后一式：「切」。</p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
+<ul>
+<li><a href="http://www.uegeek.com/pm-ur-handbook1.html" target="_blank" rel="external">产品经理的用研手册01 - 朦胧的用户，懵懂的你</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook2.html" target="_blank" rel="external">产品经理的用研手册02 - 你真的懂用户吗？</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook3.html" target="_blank" rel="external">产品经理的用研手册03 - 成也需求，败也需求</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook4.html" target="_blank" rel="external">产品经理的用研手册04 - 做问题求解者，先对症后下药</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook5.html" target="_blank" rel="external">产品经理的用研手册05 - 用研四式之「望」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook6.html" target="_blank" rel="external">产品经理的用研手册06 - 用研四式之「闻」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook7.html" target="_blank" rel="external">产品经理的用研手册07 - 用研四式之「问」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook8.html" target="_blank" rel="external">产品经理的用研手册08 - 用研四式之「切」</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[这儿有一份严肃的设计书单，2017，要不要一起读？]]></title>
       <url>http://uegeek.com/161218-designer-reading-list.html</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/2017designread.png" alt=""></p>
@@ -279,7 +627,7 @@
 <li><a href="http://www.uegeek.com/pm-ur-handbook2.html" target="_blank" rel="external">产品经理的用研手册02 - 你真的懂用户吗？</a></li>
 <li><a href="http://www.uegeek.com/pm-ur-handbook3.html" target="_blank" rel="external">产品经理的用研手册03 - 成也需求，败也需求</a></li>
 <li><a href="http://www.uegeek.com/pm-ur-handbook4.html" target="_blank" rel="external">产品经理的用研手册04 - 做问题求解者，先对症后下药</a></li>
-<li><a href="http://www.uegeek.com/pm-ur-handbook4.html" target="_blank" rel="external">产品经理的用研手册05 - 用研四式之「望」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook5.html" target="_blank" rel="external">产品经理的用研手册05 - 用研四式之「望」</a></li>
 </ul>
 ]]></content>
     </entry>
