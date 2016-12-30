@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://uegeek.com/"/>
-  <updated>2016-12-29T10:10:42.000Z</updated>
+  <updated>2016-12-30T12:49:08.000Z</updated>
   <id>http://uegeek.com/</id>
   
   <author>
@@ -13,6 +13,147 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[产品经理的用研手册10 - 沟通的秘密武器]]></title>
+    <link href="http://uegeek.com/pm-ur-handbook10.html"/>
+    <id>http://uegeek.com/pm-ur-handbook10.html</id>
+    <published>2016-12-30T12:46:13.000Z</published>
+    <updated>2016-12-30T12:49:08.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article10-titu.jpg" alt=""></p>
+<a id="more"></a> 
+<p>在本系列开篇时，我们提到产品经理的两大核心工作：决策和沟通。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01-WhatPMDo.jpg" alt=""></p>
+<p>在详细讲解了用户研究如何帮助产品经理做决策、应该具有什么样的理念、有什么具体的方法之后，我们来聊聊用户研究如何帮助产品经理进行沟通。</p>
+<p>产品经理的日常沟通包括：</p>
+<ul>
+<li>向上沟通：沟通战略、目标、决策，汇报进度、效果等</li>
+<li>项目团队沟通：规划和实施解决方案，调配资源，解决问题，推进进度</li>
+<li>与用户沟通：获得反馈，提供服务，维护关系</li>
+<li>与合作方沟通：合作，谈判，互通有无</li>
+</ul>
+<p>如果这些沟通中涉及到「用户」，可以怎样做？</p>
+<h2 id="u5411_u4E0A_u6C9F_u901A"><a href="#u5411_u4E0A_u6C9F_u901A" class="headerlink" title="向上沟通"></a>向上沟通</h2><p>如果跟老板沟通用户相关的话题时，需要注意什么？先来看两个（令老板）忧桑的对话：</p>
+<p>1</p>
+<blockquote>
+<p>老板：项目进度如何？这个月底可以完成吗？</p>
+<p>小白：在进行中。（兴奋地）上周我跟 4 个用户聊了聊，有很多收获，第 1 个用户说 xxxxxxxx ……</p>
+<p>老板：……</p>
+</blockquote>
+<p>2</p>
+<blockquote>
+<p>老板：为什么要做这个功能，有什么数据支持吗？</p>
+<p>小白：用户反馈里有很多用户提到，而且开发起来也不难</p>
+<p>老板：……</p>
+</blockquote>
+<p>这两个对话中，老板都没有得到他想要的信息。</p>
+<p>其实，老板们一般都对用户了如指掌，或者认为自己了如指掌，你最好确保自己的理解尽量接近老板的水平，并且掌握一些他没有了解到的信息。另外，老板们不会浪费过多时间在定性数据上，除非形式特别容易打动人（如精心制作的视频）。先让我们来想想，老板们关心什么？需要什么？他为什么会关心用户的问题？</p>
+<ul>
+<li>因为能够辅助决策，对生意、业务有实际帮助</li>
+<li>因为能获得对人的深刻洞察</li>
+<li>发现反常识但是重要的信息</li>
+</ul>
+<p>想想看，在关于用户的问题上，你能不能为老板提供这些情报？</p>
+<p>另外，在跟老板沟通用户相关的问题时，可以试着按老板的思路去逐步提供信息：</p>
+<table>
+<thead>
+<tr>
+<th>老板需要什么</th>
+<th>你怎么说</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>做决策</td>
+<td>先给出结论，再根据对方的反馈进一步展示更具体的信息</td>
+</tr>
+<tr>
+<td>优质信息</td>
+<td>抽取出模型，比如清晰合理的用户分类，并且辅以客观数据</td>
+</tr>
+<tr>
+<td>思路</td>
+<td>说明你如何通过试验（假设验证是什么）解决问题</td>
+</tr>
+</tbody>
+</table>
+<h2 id="u56E2_u961F_u5185_u90E8_u6C9F_u901A"><a href="#u56E2_u961F_u5185_u90E8_u6C9F_u901A" class="headerlink" title="团队内部沟通"></a>团队内部沟通</h2><p>团队内部沟通是产品经理日常工作的重头戏，也是盛产段子的地方…… 关于用户的争论，几乎会出现在大大小小的会议和讨论中，出现在产品经理和设计师的争执中。观点和感受，每个人都有，每个人都不一样，但是只有形成共识，才能推动问题解决、项目前进。</p>
+<h3 id="u4E0E_u56E2_u961F_u5171_u4EAB_u5BF9_u7528_u6237_u7684_u7406_u89E3"><a href="#u4E0E_u56E2_u961F_u5171_u4EAB_u5BF9_u7528_u6237_u7684_u7406_u89E3" class="headerlink" title="与团队共享对用户的理解"></a>与团队共享对用户的理解</h3><p>产品经理在日常工作中通过「望闻问切」积累的用户理解，有助于团队提高沟通效率、打造出更出色产品。但是前提必需是让团队的其他人了解这些工作，并且对关键信息形成共识。</p>
+<p>比如，产品的核心用户群是谁。如果仅用几个泛泛的词汇去概括，什么「高端」、「小白」、「屌丝」，那么每个人只能凭自己的理解随意解读，表面上大家在讨论同一个问题，实际上各说各话，团队只会陷入到混乱的循环中。如果能够将用户的关键特征具体地描述出来，让大家可见、可讨论，逐渐将分歧变为共识，那么团队的沟通效率可以成倍提高。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserSnapshotTemp.jpg" alt=""></p>
+<p>共享对用户的理解，还可以有各种不同的方式，用户故事视频、用户反馈卡片、工作坊、观察活动等等，都可以多尝试，找到最适合团队的形式。</p>
+<h3 id="u5982_u4F55_u4E0E_u8BBE_u8BA1_u5E08_u6C9F_u901A"><a href="#u5982_u4F55_u4E0E_u8BBE_u8BA1_u5E08_u6C9F_u901A" class="headerlink" title="如何与设计师沟通"></a>如何与设计师沟通</h3><p>跟老板不同，设计师喜欢了解用户使用的情境信息和具体的行为细节，让他们在理解人的基础上做出设计决策。如果是经验尚浅的产品经理和经验尚浅的设计师，容易因为局限于各自对用户的浅显理解，以说服对方采纳自己的做法为目标。</p>
+<p>看看下面这个对话，是不是有些熟悉？</p>
+<blockquote>
+<p>P：这个设计不好，用户不理解</p>
+<p>D：为什么会不理解？进来的用户就是要干这个的呀</p>
+<p>P：反正我看不太懂，如果我都不懂，那用户肯定更迷茫了</p>
+<p>D：你现在都不在真实使用的场景，只看一眼自然理解不了</p>
+<p>……</p>
+</blockquote>
+<p>在上面的对话中出现的，基本都是一些个人的理解，缺少相关场景和细节的描述，双方也没有寻找共识、解决问题的态度和实际提议，这样的对话几乎只能无限循环下去。</p>
+<p>实际上，一切皆假设，即便是以前有效的经验，也未必适用当前的情境和眼前的问题。成熟的产品经理和设计师，会更多从用户分类、具体场景、目标和行为偏好出发，去考虑合适的方案。</p>
+<blockquote>
+<p>D：这个版本没有设计单曲循环功能，因为用户主要都是白天零散时间使用，估计这个需求不大</p>
+<p>P：嗯，这个假设合理。不过 A 类用户的使用场景还需要进一步确定，晚上睡前使用的用户似乎比例越来越大</p>
+<p>D：有没有具体的数据呢？以后哪种场景会更重要？</p>
+<p>P：我们准备安排一次调研，这个版本我们先加一个反馈入口吧</p>
+<p>D：可以考虑。这个反馈入口的主要目的是？……</p>
+</blockquote>
+<p><strong>在团队中的讨论，「寻找共识」和「解决问题」永远都是最重要的</strong>，为团队穿针引线的产品经理，要承担起为团队提供「锚点」的重任。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/10-TeamDiscuss.jpg" alt=""></p>
+<h3 id="u5982_u4F55_u4E0E_u7528_u6237_u7814_u7A76_u5458_u914D_u5408"><a href="#u5982_u4F55_u4E0E_u7528_u6237_u7814_u7A76_u5458_u914D_u5408" class="headerlink" title="如何与用户研究员配合"></a>如何与用户研究员配合</h3><p>如果团队中有专职的用户研究员，那真是一件值得庆幸的事情。毕竟，严谨、有效的用户研究，需要花费大量的时间精力，产品经理自己做用研，可能会缺乏以下经验：</p>
+<ul>
+<li>研究设计，选择合适的研究方法</li>
+<li>执行系统、完整用研活动</li>
+<li>现场主持和引导</li>
+<li>定性数据的整理和深入分析</li>
+<li>数据统计分析，有效性检验</li>
+</ul>
+<p>产品经理应该充分跟用研同事合作，一起寻找问题的答案。尤其要参与问题定义、研究设计、结论讨论的过程，还应该尽量参与一部分直接跟用户互动的活动。</p>
+<p>向用研同学提需求的时候，应该注意些什么呢？</p>
+<ul>
+<li>清楚定义想解答的问题</li>
+<li>给出较具体的背景信息，为什么问题很重要</li>
+<li>跟用研同学一起确定研究范围：可以解决哪些问题，无法直接回答哪些问题，对预期的研究结果有共识</li>
+<li>提供自己对问题和用户的理解，应该重点对什么样的用户进行调研</li>
+</ul>
+<p>如果产品经理并没有参与调研，而是直接拿到一份用户研究的报告，如何判断里面的观点和结论是否靠谱呢？</p>
+<p>比较简单的办法，是看「问题」、「假设」和「验证」三者的逻辑和表述是否合乎逻辑，尤其是对问题的界定是否清晰。一次好的用户调研，首先是能达到研究目标，解答问题，或者给出充分的决策信息。其次是有清晰的问题解决思路和执行步骤，比如研究设计是怎么做的，样本如何选择，执行中采取哪些措施避免常见问题，数据统计方法是什么，等等。</p>
+<h2 id="u4E0E_u7528_u6237_u6C9F_u901A"><a href="#u4E0E_u7528_u6237_u6C9F_u901A" class="headerlink" title="与用户沟通"></a>与用户沟通</h2><p>不论是有用户分类快照，还是有完整的用户角色，都帮助产品经理在解决疑问时，更有针对性地找到目标用户，然后深入了解他们的目标、生活形态、偏好，帮助做出更好的产品。</p>
+<p>与用户沟通时，应该注意哪些信息，如何更好地引导用户表达出我们感兴趣的信息，可以复习产品经理的用研手册07 - 用研四式之「问」中提到的询问技巧：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/07-InterviewTech.jpg" alt=""></p>
+<p>产品经理的用研手册系列到此完结，感谢阅读！</p>
+<hr>
+<p>如需转载本文，请联系 uegeek@gmail.com</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
+<ul>
+<li><a href="http://www.uegeek.com/pm-ur-handbook1.html" target="_blank" rel="external">产品经理的用研手册01 - 朦胧的用户，懵懂的你</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook2.html" target="_blank" rel="external">产品经理的用研手册02 - 你真的懂用户吗？</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook3.html" target="_blank" rel="external">产品经理的用研手册03 - 成也需求，败也需求</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook4.html" target="_blank" rel="external">产品经理的用研手册04 - 做问题求解者，先对症后下药</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook5.html" target="_blank" rel="external">产品经理的用研手册05 - 用研四式之「望」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook6.html" target="_blank" rel="external">产品经理的用研手册06 - 用研四式之「闻」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook7.html" target="_blank" rel="external">产品经理的用研手册07 - 用研四式之「问」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook8.html" target="_blank" rel="external">产品经理的用研手册08 - 用研四式之「切」</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook9.html" target="_blank" rel="external">产品经理的用研手册09 - 精益的本质：一切皆假设</a></li>
+<li><a href="http://www.uegeek.com/pm-ur-handbook10.html" target="_blank" rel="external">产品经理的用研手册10 - 沟通的秘密武器</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article10-titu.jpg" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="产品经理" scheme="http://uegeek.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+      <category term="用户研究" scheme="http://uegeek.com/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/"/>
+    
+      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
+    
+      <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[产品经理的用研手册09 - 精益的本质：一切皆假设]]></title>
@@ -2512,56 +2653,6 @@
       <category term="Learning" scheme="http://uegeek.com/tags/Learning/"/>
     
       <category term="读书" scheme="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[VR 中的体验要素]]></title>
-    <link href="http://uegeek.com/ux-in-vr.html"/>
-    <id>http://uegeek.com/ux-in-vr.html</id>
-    <published>2016-09-08T23:24:11.000Z</published>
-    <updated>2016-09-25T23:53:02.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/UXinVR.png" alt=""></p>
-<a id="more"></a> 
-<p>对大部分设计师来说，VR 是一个全新的领域。VR 中关于 UX (User Experience) 的研究并不多。这个时候要提出类似 Web 时代的用户体验要素，还为时尚早。不过我们可以试着总结一下，影响 VR 中用户体验的要素可能会有哪些。</p>
-<p>先想想这样一个问题：</p>
-<blockquote>
-<p>什么样的体验，是好的 VR 体验？</p>
-<p>可以从哪几个维度去评估呢？</p>
-</blockquote>
-<p>00 试着先用两个维度来概括：舒适度和沉浸感。不一定正确、全面，只是作为梳理的线索，欢迎大家补充。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/UX-dimension.png" alt=""></p>
-<h3 id="u8212_u9002_u5EA6"><a href="#u8212_u9002_u5EA6" class="headerlink" title="舒适度"></a>舒适度</h3><h4 id="u51CF_u5C11_u7729_u6655"><a href="#u51CF_u5C11_u7729_u6655" class="headerlink" title="减少眩晕"></a>减少眩晕</h4><p>体验过 VR ，特别是早期设备的人，除了惊异于沉浸的体验之余，多少会感到不舒服 —— 有点眩晕，头盔挺沉的，手臂僵硬……</p>
-<p><img src="http://i-cdn.phonearena.com/images/article/82273-image/A-new-research-deals-with-VR-motion-sickness-in-an-innovative-way.jpg" alt=""></p>
-<p>舒适度是 VR 用户体验的第一要素（因为实在还说不上舒适）。“晕 VR” 目前还是普遍现象，相信随着对晕动症 (Motion sickness) 研究的深入和技术进步，在 VR 中的舒适感会持续提升。可以想象，VR 中的应用尤其是游戏，需要提供关于 3D、运动等舒适度的选项，帮助那些生理反应更敏感的用户调整到最优的个性化体验：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/maxresdefault.jpg" alt=""><br>游戏 Smash Hit Plunder 中的 VR 舒适度选项</p>
-<p>比如，在迷宫类的 VR 游戏中，可以提供运动时的 “关灯” 模式，降低运动时画面的亮度，甚至隐藏空间画面，只提供必要的指引信息，这样可以最大程度减少因为动画带来的眩晕感。 </p>
-<h4 id="u964D_u4F4E_u5EF6_u8FDF"><a href="#u964D_u4F4E_u5EF6_u8FDF" class="headerlink" title="降低延迟"></a>降低延迟</h4><p>延迟一直是 VR 中的技术难题。延迟来自信号传递、屏幕刷新和计算机读取延迟。主要指标是延迟率： VR 头盔显示设备的视觉观测与头部运动的匹配程度。分为帧间延迟和帧内延迟。帧间延迟指头部转动经过的画面中每一帧之间的处理与显示时间。而帧内延迟是指人头转的时候，构成画面帧的像素点在每一帧结束时会跳回原点，这时候，人眼的视觉暂留现象会保留上一帧和这一帧的图像，产生拖影现象。</p>
-<p>在头显设备中，图像都来自即时渲染，所以延迟很容易被感知。从下图可以看到，VR 应用中，运动检测需要大约 200 毫秒，传输需要约 200 毫秒，渲染成像需要约 200 毫秒。如何降低延迟率，将是 VR 体验的关键。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/VRlatency.png" alt=""></p>
-<h3 id="u6C89_u6D78_u611F"><a href="#u6C89_u6D78_u611F" class="headerlink" title="沉浸感"></a>沉浸感</h3><h4 id="u7269_u4F53_u7EC6_u8282"><a href="#u7269_u4F53_u7EC6_u8282" class="headerlink" title="物体细节"></a>物体细节</h4><p><img src="http://pop.h-cdn.co/assets/16/19/640x716/gallery-1462890237-vrvoid2.jpg" alt=""></p>
-<p>VR 不是真实世界的镜子，但是用户在虚拟世界中的预期，绝不会低于真实世界。简单到一张桌子，一级阶梯，都应该具备相应细节，让人形成（至少是被建构的）“真实”的感觉。在 VR 场景中，不再能够像过去 2D 界面一样，通过“进入二级页面和返回”的方式，来限定画面展示和互动层级 —— 用户拥有更大的自由探索空间，向着任意方向移动，预期着看到所有可见物体的细节。</p>
-<h3 id="u754C_u9762_u5143_u7D20"><a href="#u754C_u9762_u5143_u7D20" class="headerlink" title="界面元素"></a>界面元素</h3><p>VR 中的界面元素，比如人物属性、按钮等，应该融入在 VR 场景中，或者集中展示在某个区域，而不能像桌面/移动端游戏中那样跟随着人或物品移动。</p>
-<p>在 2D 世界中，界面元素是平面化的，但是在 VR 中，用户视野和视角很多样，所以菜单、按钮这些界面元素，也应该跟随视角变化，而不是生硬地把一块 2D 补丁甩在 3D 场景里。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Vrideo-Gear-VR-Video.png" alt=""></p>
-<p>目前，VR 设备的分辨率还不理想，菜单、按钮等界面元素需要适当放大，变得更显眼。</p>
-<h3 id="u97F3_u6548"><a href="#u97F3_u6548" class="headerlink" title="音效"></a>音效</h3><p>让人感觉身临其境的音效和音乐，是沉浸式体验的助推器。打造优质的 VR 体验，需要更专业的音乐人、音效师和技术（例如<a href="https://www.audiokinetic.com/products/wwise/" target="_blank" rel="external">Wwise</a>）参与进来。Oculus 也放出了<a href="https://developer3.oculus.com/documentation/audiosdk/latest/" target="_blank" rel="external">音频的 SDK</a>。后续的文章我们再深入讨论 VR 中的音效。</p>
-<h3 id="u8FD0_u52A8"><a href="#u8FD0_u52A8" class="headerlink" title="运动"></a>运动</h3><p>在 VR 的世界里，用户和环境之间障碍已扫除，界面的边界被完全打破，移动也就变得复杂起来。</p>
-<p>不同场景下的运动方式不同，应该让用户坐着还是站立？应该让场景环境移动，还是让用户移动？运动空间如何设计？运动范围如何限制？怎么样的运动路径和范围，对人体尺度而言最舒适？这些都是需要仔细考虑的问题。</p>
-<p><img src="http://static1.squarespace.com/static/54a39ca2e4b01ff9ee486c1d/t/561fbcb6e4b0aac55322c0fc/1444920531434/?format=2500w" alt=""></p>
-<h3 id="u4EA4_u4E92"><a href="#u4EA4_u4E92" class="headerlink" title="交互"></a>交互</h3><p>在 VR 时代，鼠标和点击操作对象都已成为过去。新的交互方式层出不穷：手柄、手套、光学追踪隔空手势、座椅、……大浪淘沙后，哪些方式会最终沉淀下来成为行业标准呢？现在下结论还为时过早，我们需要不断地尝试和测试。</p>
-<p><img src="http://forum.unity3d.com/attachments/notouchguiscreenshot-png.123221/" alt=""></p>
-<hr>
-<p>这篇文章从舒适度和沉浸感两个维度出发，整理了 VR 中影响用户体验的要素：眩晕，延迟；物体细节，界面元素，音效，运动，交互等。当然，这只是一篇粗糙的整理和思考，希望大家一起讨论和完善！</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/UXinVR.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="VR" scheme="http://uegeek.com/tags/VR/"/>
-    
-      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
