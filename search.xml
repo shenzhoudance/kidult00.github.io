@@ -4,6 +4,263 @@
   
     
     <entry>
+      <title><![CDATA[IPython 基础]]></title>
+      <url>http://uegeek.com/170103-ipython-basic.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170103IPython_basic_title.png" alt=""></p>
+<a id="more"></a> 
+<h2 id="u4E00_u3001_u4E3A_u4EC0_u4E48_u8981_u7528_IPython_uFF1F"><a href="#u4E00_u3001_u4E3A_u4EC0_u4E48_u8981_u7528_IPython_uFF1F" class="headerlink" title="一、为什么要用 IPython？"></a>一、为什么要用 IPython？</h2><p><a href="http://ipython.org/" target="_blank" rel="external">IPython</a> (Interactive Python 的简写) 是一个强大的交互式 Python Shell，由 Fernando Perez 在 2001 发起。它的目标是提供 “Tools for the entire life cycle of research computing.” 如果说 Python 是数据科学操作的引擎，那么 IPython 就是交互式的控制面板。</p>
+<p>IPython 的优点：</p>
+<ul>
+<li>交互式功能</li>
+<li>立即看到执行结果，方便调试</li>
+<li>可重复性的互动科学计算</li>
+<li>丰富的数据可视化工具</li>
+</ul>
+<h2 id="u4E8C_u3001Shell_or_Notebook_3F"><a href="#u4E8C_u3001Shell_or_Notebook_3F" class="headerlink" title="二、Shell or Notebook?"></a>二、Shell or Notebook?</h2><p>使用 IPython 有两种方式（前提是已经<a href="http://jupyter.readthedocs.io/en/latest/install.html" target="_blank" rel="external">安装好 IPython</a>）。</p>
+<h3 id="u5728_u547D_u4EE4_u884C_u4E2D_u4F7F_u7528"><a href="#u5728_u547D_u4EE4_u884C_u4E2D_u4F7F_u7528" class="headerlink" title="在命令行中使用"></a>在命令行中使用</h3><p>在命令行中输入 <code>ipython</code>，进入 IPython 环境：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Python 2.7.10 (default, Jul 30 2016, 19:40:32)&#10;Type &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information.&#10;&#10;IPython 5.1.0 -- An enhanced Interactive Python.&#10;?         -&#62; Introduction and overview of IPython&#39;s features.&#10;%quickref -&#62; Quick reference.&#10;help      -&#62; Python&#39;s own help system.&#10;object?   -&#62; Details about &#39;object&#39;, use &#39;object??&#39; for extra details.&#10;&#10;In [1]:</span><br></pre></td></tr></table></figure>
+<h3 id="u5728_Jupyter_Notebook__u4E2D_u4F7F_u7528"><a href="#u5728_Jupyter_Notebook__u4E2D_u4F7F_u7528" class="headerlink" title="在 Jupyter Notebook 中使用"></a>在 Jupyter Notebook 中使用</h3><p><a href="http://jupyter.org/" target="_blank" rel="external">Jupyter Notebook</a> 是基于浏览器的 IPython shell 图形界面，非常适合用于开发、协同、分享甚至是发布数据科学研究成果。Notebook 以 JSON 格式保存整个交互式会话，可以兼容 Python 代码，文本标记语言如 Markdown，图片，视频，媒体内容等。 IPython Notebook 在 Python 社区中越来越普遍，特别是在科学研究与教育领域，很多课程/博客/书籍都是用 Notebook 写的。</p>
+<p><a href="http://jupyter.org/install.html" target="_blank" rel="external">安装 Jupyter</a> 后，在命令行输入 <code>jupyter notebook</code>，进入 IPython 环境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[I 15:28:38.305 NotebookApp] Serving notebooks from local directory: /Users/kidult/Workspace/PresentWrok/OpenMind/2016.OM.DS/my_venv&#10;[I 15:28:38.305 NotebookApp] 0 active kernels&#10;[I 15:28:38.305 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/&#10;[I 15:28:38.305 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).</span><br></pre></td></tr></table></figure>
+<p>浏览器会打开本地的 Jupyter 控制台，新建或选择 .ipynb 后缀文件打开，就可以看到 Notebook 的页面了：</p>
+<p><img src="http://jupyter.org/assets/jupyterpreview.png" alt=""></p>
+<h2 id="u4E09_u3001Notebook__u57FA_u672C_u7ED3_u6784_u548C_u64CD_u4F5C"><a href="#u4E09_u3001Notebook__u57FA_u672C_u7ED3_u6784_u548C_u64CD_u4F5C" class="headerlink" title="三、Notebook 基本结构和操作"></a>三、Notebook 基本结构和操作</h2><p>在 Jupyter Notebook 中，基本的操作单元是 cell：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IP.SS.cell.jpg" alt=""></p>
+<p>每个 cell 由 <code>In</code>和<code>Out</code>，即输入和输出部分组成。在这里，IPython 实际上生成了名叫 <code>In</code>和<code>Out</code> 的 Python 变量，把操作历史存储起来，以便随时调用。<code>_</code>可调用上一个输出，<code>_X</code>可调用 <code>Out[X]</code> 的输出。</p>
+<p>IPython 中的 cell 支持 Markdown 格式，所以很适合用来生成带源码和运行结果的文档。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IP.SS.celltype.jpg" alt=""></p>
+<p>Notebook 中常用操作</p>
+<p>命令模式 (按 <code>Esc</code> 键进入)</p>
+<table>
+<thead>
+<tr>
+<th>键盘</th>
+<th>命令</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>↩</td>
+<td>回车</td>
+<td>进入编辑模式</td>
+</tr>
+<tr>
+<td>⇧↩</td>
+<td>shift+回车</td>
+<td>运行 cell，选择下一个 cell</td>
+</tr>
+<tr>
+<td>M</td>
+<td>M 键</td>
+<td>切换为 Markdown 格式</td>
+</tr>
+<tr>
+<td>A</td>
+<td>A 键</td>
+<td>在上方插入 cell </td>
+</tr>
+<tr>
+<td>B</td>
+<td>B 键</td>
+<td>在下方插入 cell </td>
+</tr>
+<tr>
+<td>D,D</td>
+<td>按两次 D 键</td>
+<td>删除所选 cell</td>
+</tr>
+<tr>
+<td>H</td>
+<td>H 键</td>
+<td>显示快捷键</td>
+</tr>
+</tbody>
+</table>
+<p>编辑模式 (按 <code>Enter</code> 键进入)</p>
+<table>
+<thead>
+<tr>
+<th>键盘</th>
+<th>命令</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⌘]</td>
+<td>command + ]</td>
+<td>缩进</td>
+</tr>
+<tr>
+<td>⌘[</td>
+<td>command + ]</td>
+<td>取消缩进</td>
+</tr>
+<tr>
+<td>⌘Z</td>
+<td>command + Z</td>
+<td>撤销</td>
+</tr>
+<tr>
+<td>⌘⇧Z</td>
+<td>command + shift + Z</td>
+<td>重做</td>
+</tr>
+<tr>
+<td>⌘↑</td>
+<td>command + up 键</td>
+<td>跳到 cell 开头</td>
+</tr>
+<tr>
+<td>⌘↓</td>
+<td>command + down 键</td>
+<td>跳到 cell 结尾</td>
+</tr>
+</tbody>
+</table>
+<h2 id="u56DB_u3001_u5B9E_u7528_u529F_u80FD"><a href="#u56DB_u3001_u5B9E_u7528_u529F_u80FD" class="headerlink" title="四、实用功能"></a>四、实用功能</h2><h3 id="Tab_u81EA_u52A8_u8865_u5168"><a href="#Tab_u81EA_u52A8_u8865_u5168" class="headerlink" title="Tab自动补全"></a>Tab自动补全</h3><p>在输入命令时按下 tab 键，可以查看补全选项：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IP.SS.tab.jpg" alt=""></p>
+<h3 id="u7528__3F__u67E5_u8BE2_u6587_u6863"><a href="#u7528__3F__u67E5_u8BE2_u6587_u6863" class="headerlink" title="用 ? 查询文档"></a>用 <code>?</code> 查询文档</h3><p>比如，要查询 <code>len</code> 的用法，只需要输入 <code>len?</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">In [2]: len?&#10;&#10;Type:        builtin_function_or_method&#10;String form: &#60;built-in function len&#62;&#10;Namespace:   Python builtin&#10;Docstring:&#10;len(object) -&#62; integer&#10;&#10;Return the number of items of a sequence or mapping.</span><br></pre></td></tr></table></figure>
+<p>另外，用 <code>??</code> 可以查看源代码，比如输入<code>square??</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">In [8]: square??&#10;&#10;Type:        function&#10;String form: &#60;function square at 0x103713cb0&#62;&#10;Definition:  square(a)&#10;Source:&#10;def square(a):&#10;    &#34;Return the square of a&#34;&#10;    return a ** 2</span><br></pre></td></tr></table></figure>
+<h3 id="u9B54_u6CD5_u547D_u4EE4"><a href="#u9B54_u6CD5_u547D_u4EE4" class="headerlink" title="魔法命令"></a>魔法命令</h3><p>通过<code>%lsmagic</code>即可查看，以下为部分命令：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>命令说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%hist</td>
+<td>查询输入的历史</td>
+</tr>
+<tr>
+<td>%reset</td>
+<td>清空 namespace</td>
+</tr>
+<tr>
+<td>%time</td>
+<td>显示 Python语句的执行时间，包括 cpu time 和 wall clock time</td>
+</tr>
+<tr>
+<td>%timeit</td>
+<td>显示 Python语句的执行时间，但是这个命令会多次执行相应的语句（可以指定次数）<code>%timeit</code>  </td>
+</tr>
+<tr>
+<td>%bookmark</td>
+<td>用于存储常用路径</td>
+</tr>
+<tr>
+<td>%cd</td>
+<td>进入目录命令</td>
+</tr>
+<tr>
+<td>%env</td>
+<td>显示系统环境变量</td>
+</tr>
+<tr>
+<td>%pushd dir</td>
+<td>将当前目录入栈，并进入dir指定的目录</td>
+</tr>
+</tbody>
+</table>
+<h3 id="u53C2_u8003_u8D44_u6599"><a href="#u53C2_u8003_u8D44_u6599" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="http://nbviewer.jupyter.org/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb" target="_blank" rel="external">Python Data Science Handbook</a></li>
+<li><a href="http://ipython.org/" target="_blank" rel="external">IPython.org</a></li>
+<li><a href="https://www.gitbook.com/book/itacey/learning_ipython" target="_blank" rel="external">学习IPython进行交互式编程和数据可视化</a></li>
+<li><a href="https://www.zhihu.com/question/51467397" target="_blank" rel="external">使用IPython有哪些好处？ - 知乎</a></li>
+<li><a href="http://www.jianshu.com/p/61f8f7a68bbe" target="_blank" rel="external">为什么要使用IPython？ - 简书</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[17°读书会笔记[1]-设计是什么]]></title>
+      <url>http://uegeek.com/170102-read-what-is-design.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>
+<a id="more"></a> 
+<p><a href="http://www.uegeek.com/161218-designer-reading-list.html" target="_blank" rel="external">17° 读书会</a>第一本书：<a href="https://book.douban.com/subject/4257259/" target="_blank" rel="external">设计是什么 - Michael Kroeger</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s4153181.jpg" alt=""></p>
+<p>阅读时间：2017-01-01  </p>
+<h2 id="u8BFB_u524D_u95EE_u9898"><a href="#u8BFB_u524D_u95EE_u9898" class="headerlink" title="读前问题"></a>读前问题</h2><ul>
+<li>Paul Rand 是怎么理解设计的？ <ul>
+<li>他为什么会这样理解设计？</li>
+<li>这对他的作品和经历可能产生了什么样的影响？</li>
+<li>对比自己之前对设计的理解，跟他差在哪里？</li>
+</ul>
+</li>
+<li>他对设计新人提出了哪些建议？为什么？ <ul>
+<li>哪些建议对我来说很有启发？</li>
+<li>改变了过去什么样的观点？可以怎么应用？</li>
+</ul>
+</li>
+<li>从刻意练习的角度出发，如何从 Paul Rand 身上学习？</li>
+</ul>
+<h2 id="u8BFB_u540E_u601D_u8003"><a href="#u8BFB_u540E_u601D_u8003" class="headerlink" title="读后思考"></a>读后思考</h2><p>Paul Rand 保罗·兰德（1914-1996），美国最杰出的商标设计师、思想家及设计教育家，他为 IBM、ABC、UPS 所设计的商标无人不识，堪称经典，乔布斯称他为史上最伟大的平面设计师。</p>
+<h3 id="u8BBE_u8BA1_u662F_u4EC0_u4E48_uFF1F"><a href="#u8BBE_u8BA1_u662F_u4EC0_u4E48_uFF1F" class="headerlink" title="设计是什么？"></a>设计是什么？</h3><p>Paul Rand 在多次与同行、学生的交谈中，阐述了他对设计的理解。</p>
+<blockquote>
+<p>Design is a relationship between form and content. </p>
+</blockquote>
+<p><strong>设计是形式和内容的关系表达。内容就是想法，形式就是你如何处理想法</strong>，你怎么做它。该用颜色？或用黑白？大一点？小一点？三维还是平面？用时髦流行或是严肃的素材？</p>
+<p>设计就是关系 （Design is relationships）。设计是一个关系系统。这里的关系涵盖了一个问题的所有面向，包括你和画布间的关系，你和美工刀、橡皮擦或绘图笔的关系，还有设计元素之间的关系。设计也是一种比例系统，指的是尺度大小之间的关系。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/587.jpg" alt=""></p>
+<p>这就是做设计的起点。你得去建立一种关系，必须以某种方式和某件事情产生关联，好让你从中得到某个线索。每样东西都有关联，这永远是问题所在。<strong>在你把某样东西摆下去的那一刻，你就创造了一种关系。</strong>这类关系没有止境，这正是设计很难臻于完美的原因之一。因为你做的每一项动作，都有无穷无尽的犯错可能。</p>
+<p>Paul 对设计的定义体现了一位平面设计师的特质。作为一名平面设计师，内容总是设计的核心对象。平面设计重在处理平面系统内多种要素的关系：属性关系、比例关系、距离关系等等。出现在平面内的任何要素之间，会衍生出交错的关系，如何处理这些关系，是优秀作品的关键。</p>
+<p>这种思路，如果迁移到其他设计领域，是否适用？</p>
+<p>如果把平面这个载体换成用户界面，会发现平面增多了，在不同场景和时间点上，有不同的「平面」，需要处理更多元素之间的「关系」，而且，还要处理使用者和元素之间的关系 —— 因为元素不再是静止不变的，它们很可能由使用者的行为触发，根据使用者的行为和选择呈现不同的形式。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/160101layer.png" alt=""></p>
+<p>在这个前提下，设计是关系的定义依然起作用。但是，它更为复杂了，既需要应对随时变化的情境，又需要处理更多维、更多元素之间复杂交错的关系。按照 Paul 的定义，设计师越来越难应对问题的复杂程度，或者说，难以满足交互的特性。</p>
+<h3 id="u597D_u7684_u5B9A_u4E49_u4E3A_u4EC0_u4E48_u91CD_u8981"><a href="#u597D_u7684_u5B9A_u4E49_u4E3A_u4EC0_u4E48_u91CD_u8981" class="headerlink" title="好的定义为什么重要"></a>好的定义为什么重要</h3><p>回想以前自己对设计的定义，跟书中提到的「设计是一项计划」类似。Paul 批评这种定义缺乏行动的指向性。<strong>定义必需可以把你带向某处</strong>，它必需能激发某种东西。</p>
+<p>得到定义并不难，我们可以使用很多种不同的描述。不过，每件事情都是相对的，某人觉得湿的东西，对其他人来说或许是干的。如果仅仅阐述，或者做一些同义反复的文字游戏，意义何在？<strong>真正有意义的定义，是提供一个新的框架，赋予系统内的要素一种有机、有意义的关系，并且能够触发行动 —— 不仅提供理解，而且知道下一步应该往哪个方向做点什么。</strong></p>
+<p>设计不止是一种态度，它应该创造出一些新的秩序。在 Paul 看来，甚至艺术也不仅仅是表达。他很认同 John Dewey 对艺术即体验的理解，我们不应该把艺术从它应该在（或产生）的地方隔离开来，艺术应该在卧室里、厨房里，而不是只在美术馆里。</p>
+<p><img src="https://img3.doubanio.com/lpic/s4253402.jpg" alt=""></p>
+<p>美学和设计是同样的东西。美学是设计的研究，是关系的研究。</p>
+<blockquote>
+<p>让自己有所作为，去解释和理解你正在做的事，而不是光读书。</p>
+</blockquote>
+<p>在 Paul 的基础上，我尝试把「行为」也纳入到设计需要处理的要素当中。更进一步，在更为宏观或者说模糊的设计语境下，我认为设计不仅是关系的表达，而且是一种求解过程。面对越来越复杂的系统，我们之所以要提前做出设计，是因为想找出在当前情境，也就是在各种要素的关系和限制之下，问题的最优解是什么，并且把它呈现出来。</p>
+<p>基于以上，这个阶段我对设计的理解是：</p>
+<blockquote>
+<p>设计表达内容、形式、行为之间的关系，解决它们之间的冲突，是找到和实施当前最优解的过程。</p>
+</blockquote>
+<p>于是，对我而言，设计是问题的求解过程。</p>
+<h3 id="u7ED9_u521D_u5B66_u8005_u7684_u5EFA_u8BAE"><a href="#u7ED9_u521D_u5B66_u8005_u7684_u5EFA_u8BAE" class="headerlink" title="给初学者的建议"></a>给初学者的建议</h3><p>Paul 给设计新人最重要的建议是：思考。</p>
+<p>在谈话录中，他提出一个又一个犀利的问题，把回答者步步推向更接近问题核心的地方。</p>
+<blockquote>
+<p>思考是设计过程中的第一要务。去思考要解决的问题，而不是设计本身。设计是思维的产物。</p>
+</blockquote>
+<p>Paul 对当时的设计教育表示不满，因为教育者并没有引导学生思考更为本质的问题。学生必须知道他们到底在做什么。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170102.read.paul-rand-conversation-with-students-20-638.jpg" alt=""></p>
+<p>提及工具问题，Paul 认为，会用电脑，会操作所有系统和软件，这和你身为设计师，了解自己正在做什么这个问题比起来，根本微不足道。<strong>学设计时，最需要的是清晰的头脑和清晰的思路。</strong></p>
+<p>从问题开始，忘了问题，让问题自己浮现或让解决方案自己浮现，然后重新加以评估。这就是设计的过程，或者说，创意的过程。</p>
+<p>一旦真正思考到问题的本质，我们就会发现，设计没有过时的问题。</p>
+<h3 id="u5982_u4F55_u6301_u7EED_u7EC3_u4E60_uFF0C_u505A_u51FA_u6539_u53D8"><a href="#u5982_u4F55_u6301_u7EED_u7EC3_u4E60_uFF0C_u505A_u51FA_u6539_u53D8" class="headerlink" title="如何持续练习，做出改变"></a>如何持续练习，做出改变</h3><p>Paul 的这些建议，我们可以怎样运用呢？</p>
+<p>关于学习和思考</p>
+<ul>
+<li>学习任何一个领域，先思考本质问题，找到一个可以指向行动的定义</li>
+<li>用步步逼近的问题引导自己思考</li>
+</ul>
+<p>关于做出好的设计</p>
+<ul>
+<li>一开始就把设计看成系统，不仅包括设计的对象和元素，还包括使用者、载体和设计工具</li>
+<li>抽象出系统的要素，仔细思考它们之间的关系，识别冲突和矛盾</li>
+<li>要逐渐形成自己对「最优」关系的理解和判断</li>
+<li>不要沉迷于工具，先搞清楚自己在做什么，问题是什么</li>
+<li>多多实践 Paul 提到的设计过程：提问-酝酿-解答-评估</li>
+<li>多多思考那些不会因为时间和空间而改变的问题，因为那才是设计的本质问题</li>
+</ul>
+<p>最后，用 Paul 的一句警示作为结尾，提醒自己，作为一名设计师应该有的责任和追求：</p>
+<blockquote>
+<p>重点不是离开，重点是待在里面而且把事情做对。人会想要离开，是因为他们待在里面的时候不知道自己在做什么。</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hack myself @ 2016]]></title>
       <url>http://uegeek.com/2016summary.html</url>
       <content type="html"><![CDATA[<p><img src="https://d13yacurqjgara.cloudfront.net/users/175166/screenshots/2432119/2016dribbb.jpg" alt=""></p>
