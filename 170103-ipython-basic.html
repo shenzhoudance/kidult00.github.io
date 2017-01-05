@@ -95,11 +95,12 @@
 <meta property="og:site_name" content="00's Adventure">
 <meta property="og:description">
 <meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/170103IPython_basic_title.png">
+<meta property="og:image" content="http://image.slidesharecdn.com/1idanielrodriguez-160614230356/95/connecting-python-to-the-spark-ecosystem-3-638.jpg?cb=1465945555">
 <meta property="og:image" content="http://jupyter.org/assets/jupyterpreview.png">
 <meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/IP.SS.cell.jpg">
 <meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/IP.SS.celltype.jpg">
 <meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/IP.SS.tab.jpg">
-<meta property="og:updated_time" content="2017-01-02T10:16:48.000Z">
+<meta property="og:updated_time" content="2017-01-05T02:44:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IPython 基础">
 <meta name="twitter:description">
@@ -412,11 +413,16 @@
 <h2 id="u4E00_u3001_u4E3A_u4EC0_u4E48_u8981_u7528_IPython_uFF1F"><a href="#u4E00_u3001_u4E3A_u4EC0_u4E48_u8981_u7528_IPython_uFF1F" class="headerlink" title="一、为什么要用 IPython？"></a>一、为什么要用 IPython？</h2><p><a href="http://ipython.org/" target="_blank" rel="external">IPython</a> (Interactive Python 的简写) 是一个强大的交互式 Python Shell，由 Fernando Perez 在 2001 发起。它的目标是提供 “Tools for the entire life cycle of research computing.” 如果说 Python 是数据科学操作的引擎，那么 IPython 就是交互式的控制面板。</p>
 <p>IPython 的优点：</p>
 <ul>
-<li>交互式功能</li>
-<li>立即看到执行结果，方便调试</li>
-<li>可重复性的互动科学计算</li>
+<li>交互式和批处理功能</li>
+<li>提高编写、测试速度，执行结果立即可见，方便调试</li>
+<li>同时保存脚本和计算过程，可重复可互动</li>
 <li>丰富的数据可视化工具</li>
+<li>能在本地计算机上对远程服务器中的数据进行分析</li>
+<li>兼容 markdown 语法，满足数据分析、课程教学、博客写作等需求</li>
 </ul>
+<p>Python Scientific Ecosystem</p>
+<p><img src="http://image.slidesharecdn.com/1idanielrodriguez-160614230356/95/connecting-python-to-the-spark-ecosystem-3-638.jpg?cb=1465945555" alt=""></p>
+<p>IPython 只是为 NumPy、Scipy、Pandas、Matplotlib 等包提供一个交互式接口。其本身并不提供科学计算的功能。这些工具组合在一起，形成了可以匹敌如 Matlab、Mathmatic 这些复杂工具的科学计算框架。</p>
 <h2 id="u4E8C_u3001Shell_or_Notebook_3F"><a href="#u4E8C_u3001Shell_or_Notebook_3F" class="headerlink" title="二、Shell or Notebook?"></a>二、Shell or Notebook?</h2><p>使用 IPython 有两种方式（前提是已经<a href="http://jupyter.readthedocs.io/en/latest/install.html" target="_blank" rel="external">安装好 IPython</a>）。</p>
 <h3 id="u5728_u547D_u4EE4_u884C_u4E2D_u4F7F_u7528"><a href="#u5728_u547D_u4EE4_u884C_u4E2D_u4F7F_u7528" class="headerlink" title="在命令行中使用"></a>在命令行中使用</h3><p>在命令行中输入 <code>ipython</code>，进入 IPython 环境：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Python 2.7.10 (default, Jul 30 2016, 19:40:32)&#10;Type &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information.&#10;&#10;IPython 5.1.0 -- An enhanced Interactive Python.&#10;?         -&#62; Introduction and overview of IPython&#39;s features.&#10;%quickref -&#62; Quick reference.&#10;help      -&#62; Python&#39;s own help system.&#10;object?   -&#62; Details about &#39;object&#39;, use &#39;object??&#39; for extra details.&#10;&#10;In [1]:</span><br></pre></td></tr></table></figure>
@@ -739,7 +745,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">183</span>
+              <span class="site-state-item-count">184</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -756,7 +762,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">140</span>
+                <span class="site-state-item-count">141</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

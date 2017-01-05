@@ -4,6 +4,58 @@
 
     
   <url>
+    <loc>http://uegeek.com/170101-data-science-toolkit.html</loc>
+    <lastmod>2017-01-05T02:44:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>数据科学工具包简介</title>
+        <pubTime>2017-01-01T02:32:44.000Z</pubTime>
+        
+        <tag>Data Science</tag>
+         
+        <tag>Design</tag>
+         
+        <tag>Python</tag>
+         
+        <tag>Visualization</tag>
+         
+        <tag>可视化</tag>
+         
+         
+           
+             
+              <breadCrumb title="动手" url="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://uegeek.com/170103-ipython-basic.html</loc>
+    <lastmod>2017-01-05T02:44:23.000Z</lastmod>
+    <data>
+        <display>
+        <title>IPython 基础</title>
+        <pubTime>2017-01-03T10:07:48.000Z</pubTime>
+        
+        <tag>Data Science</tag>
+         
+        <tag>IPython</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="动手" url="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://uegeek.com/161218-designer-reading-list.html</loc>
     <lastmod>2017-01-05T01:24:50.000Z</lastmod>
     <data>
@@ -23,30 +75,6 @@
            
              
               <breadCrumb title="读书" url="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/170103-ipython-basic.html</loc>
-    <lastmod>2017-01-02T10:16:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>IPython 基础</title>
-        <pubTime>2017-01-03T10:07:48.000Z</pubTime>
-        
-        <tag>Data Science</tag>
-         
-        <tag>IPython</tag>
-         
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="动手" url="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
           
         </display>
     </data>

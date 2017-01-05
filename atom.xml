@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://uegeek.com/"/>
-  <updated>2017-01-02T10:16:48.000Z</updated>
+  <updated>2017-01-05T02:44:23.000Z</updated>
   <id>http://uegeek.com/</id>
   
   <author>
@@ -19,17 +19,22 @@
     <link href="http://uegeek.com/170103-ipython-basic.html"/>
     <id>http://uegeek.com/170103-ipython-basic.html</id>
     <published>2017-01-03T10:07:48.000Z</published>
-    <updated>2017-01-02T10:16:48.000Z</updated>
+    <updated>2017-01-05T02:44:23.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170103IPython_basic_title.png" alt=""></p>
 <a id="more"></a> 
 <h2 id="u4E00_u3001_u4E3A_u4EC0_u4E48_u8981_u7528_IPython_uFF1F"><a href="#u4E00_u3001_u4E3A_u4EC0_u4E48_u8981_u7528_IPython_uFF1F" class="headerlink" title="一、为什么要用 IPython？"></a>一、为什么要用 IPython？</h2><p><a href="http://ipython.org/" target="_blank" rel="external">IPython</a> (Interactive Python 的简写) 是一个强大的交互式 Python Shell，由 Fernando Perez 在 2001 发起。它的目标是提供 “Tools for the entire life cycle of research computing.” 如果说 Python 是数据科学操作的引擎，那么 IPython 就是交互式的控制面板。</p>
 <p>IPython 的优点：</p>
 <ul>
-<li>交互式功能</li>
-<li>立即看到执行结果，方便调试</li>
-<li>可重复性的互动科学计算</li>
+<li>交互式和批处理功能</li>
+<li>提高编写、测试速度，执行结果立即可见，方便调试</li>
+<li>同时保存脚本和计算过程，可重复可互动</li>
 <li>丰富的数据可视化工具</li>
+<li>能在本地计算机上对远程服务器中的数据进行分析</li>
+<li>兼容 markdown 语法，满足数据分析、课程教学、博客写作等需求</li>
 </ul>
+<p>Python Scientific Ecosystem</p>
+<p><img src="http://image.slidesharecdn.com/1idanielrodriguez-160614230356/95/connecting-python-to-the-spark-ecosystem-3-638.jpg?cb=1465945555" alt=""></p>
+<p>IPython 只是为 NumPy、Scipy、Pandas、Matplotlib 等包提供一个交互式接口。其本身并不提供科学计算的功能。这些工具组合在一起，形成了可以匹敌如 Matlab、Mathmatic 这些复杂工具的科学计算框架。</p>
 <h2 id="u4E8C_u3001Shell_or_Notebook_3F"><a href="#u4E8C_u3001Shell_or_Notebook_3F" class="headerlink" title="二、Shell or Notebook?"></a>二、Shell or Notebook?</h2><p>使用 IPython 有两种方式（前提是已经<a href="http://jupyter.readthedocs.io/en/latest/install.html" target="_blank" rel="external">安装好 IPython</a>）。</p>
 <h3 id="u5728_u547D_u4EE4_u884C_u4E2D_u4F7F_u7528"><a href="#u5728_u547D_u4EE4_u884C_u4E2D_u4F7F_u7528" class="headerlink" title="在命令行中使用"></a>在命令行中使用</h3><p>在命令行中输入 <code>ipython</code>，进入 IPython 环境：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Python 2.7.10 (default, Jul 30 2016, 19:40:32)&#10;Type &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information.&#10;&#10;IPython 5.1.0 -- An enhanced Interactive Python.&#10;?         -&#62; Introduction and overview of IPython&#39;s features.&#10;%quickref -&#62; Quick reference.&#10;help      -&#62; Python&#39;s own help system.&#10;object?   -&#62; Details about &#39;object&#39;, use &#39;object??&#39; for extra details.&#10;&#10;In [1]:</span><br></pre></td></tr></table></figure>
@@ -300,6 +305,94 @@
       <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
     
       <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[数据科学工具包简介]]></title>
+    <link href="http://uegeek.com/170101-data-science-toolkit.html"/>
+    <id>http://uegeek.com/170101-data-science-toolkit.html</id>
+    <published>2017-01-01T02:32:44.000Z</published>
+    <updated>2017-01-05T02:44:31.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170101data_science_toolkit.jpg" alt=""></p>
+<a id="more"></a> 
+<h3 id="Python_Scientific_Ecosystem"><a href="#Python_Scientific_Ecosystem" class="headerlink" title="Python Scientific Ecosystem"></a>Python Scientific Ecosystem</h3><p><img src="http://image.slidesharecdn.com/1idanielrodriguez-160614230356/95/connecting-python-to-the-spark-ecosystem-3-638.jpg?cb=1465945555" alt=""></p>
+<p>IPython 只是为 <a href="http://www.numpy.org/" target="_blank" rel="external">NumPy.org</a>、<a href="https://www.scipy.org/" target="_blank" rel="external">SciPy</a>、<a href="http://pandas.pydata.org/" target="_blank" rel="external">Pandas</a>、<a href="http://matplotlib.org/" target="_blank" rel="external">Matplotlib</a> 等包提供一个交互式接口。其本身并不提供科学计算的功能。这些工具组合在一起，形成了可以匹敌如 Matlab、Mathmatic 这些复杂工具的科学计算框架。</p>
+<p>不同的工具包，在数据分析的不同阶段各显神通：    </p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/python-in-analysis.jpeg" alt=""></p>
+<ul>
+<li><p><a href="http://www.numpy.org/" target="_blank" rel="external">NumPy.org</a>：数组数据结构和矩阵运算</p>
+<ul>
+<li>快速高效的多维数组对象</li>
+<li>可执行向量化计算</li>
+<li>提供线性代数等矩阵</li>
+<li>可集成 C 代码</li>
+</ul>
+</li>
+<li><p><a href="https://www.scipy.org/" target="_blank" rel="external">SciPy</a>：基于 NumPy 提供了大量的科学计算算法（信号处理、最优化求解等等），解决标准问题</p>
+<ul>
+<li>数值积分和微分方程求解</li>
+<li>扩展的矩阵计算功能</li>
+<li>最优化工具</li>
+<li>概率分布计算和统计函数</li>
+<li>信号处理函数</li>
+</ul>
+</li>
+<li><p><a href="http://pandas.pydata.org/" target="_blank" rel="external">Pandas</a>：提供 data frames 数据结构，便于处理真实数据集</p>
+<ul>
+<li>易用、高效的数据操作函数库</li>
+<li>执行 join 以及其他 SQL 类似的功能来重塑数据</li>
+<li>提供包括 dataframe 在内的数据结构</li>
+<li>支持各种格式（包括数据库）输入输出</li>
+<li>支持时间序列</li>
+</ul>
+</li>
+<li><p><a href="http://matplotlib.org/" target="_blank" rel="external">Matplotlib</a>：数据绘图，绘制交互式可视化图像</p>
+<ul>
+<li>提供一套和 matlab 相似的命令 API</li>
+<li>十分适合交互式绘图</li>
+<li>可以作为绘图控件嵌入 GUI</li>
+</ul>
+</li>
+<li><p><a href="http://seaborn.pydata.org/" target="_blank" rel="external">Seaborn</a>：统计绘图</p>
+</li>
+<li><a href="http://statsmodels.sourceforge.net/" target="_blank" rel="external">StatsModels</a>：统计模型</li>
+<li><p><a href="http://scikit-learn.org/" target="_blank" rel="external">scikit-learn</a>：机器学习</p>
+<ul>
+<li>建立在 NumPy，SciPy 基础上</li>
+<li>通过统一接口来使用，可以迅速在数据集上实现流行的算法</li>
+<li>包含许多用于标准机器学习任务的工具，如：聚类、分类和回归等</li>
+</ul>
+</li>
+</ul>
+<p>其他相关模块包括：</p>
+<ul>
+<li>Requests：网页数据抓取</li>
+<li>Beautiful Soup：解析网页数据</li>
+<li>Flask：轻量级的 web 框架</li>
+<li>sqlite3：轻量级数据库接口</li>
+<li>Pyspark： Spark 的 Python 接口</li>
+<li>nltk：自然语言处理</li>
+<li>networkx：社交网络分析</li>
+<li>theano：深度学习</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170101data_science_toolkit.jpg" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Data Science" scheme="http://uegeek.com/tags/Data-Science/"/>
+    
+      <category term="Design" scheme="http://uegeek.com/tags/Design/"/>
+    
+      <category term="Python" scheme="http://uegeek.com/tags/Python/"/>
+    
+      <category term="Visualization" scheme="http://uegeek.com/tags/Visualization/"/>
+    
+      <category term="可视化" scheme="http://uegeek.com/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
     
   </entry>
   
@@ -2407,63 +2500,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/LeogofMentalModel03.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="HackYourself" scheme="http://uegeek.com/tags/HackYourself/"/>
-    
-      <category term="心智" scheme="http://uegeek.com/tags/%E5%BF%83%E6%99%BA/"/>
-    
-      <category term="读书" scheme="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[心智乐高02 - 可得性偏差]]></title>
-    <link href="http://uegeek.com/mindlego2-availability.html"/>
-    <id>http://uegeek.com/mindlego2-availability.html</id>
-    <published>2016-10-11T00:42:04.000Z</published>
-    <updated>2016-10-24T00:55:43.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/LeogofMentalModel02.png" alt=""></p>
-<a id="more"></a> 
-<blockquote>
-<p>I soon learned that one wins awards mainly for winning awards: an example of what Bob Merton calls the Matthew Effect. It is akin also to the phenomenon known in politics as “availability,” or name recognition. Once one becomes sufficiently well known, one’s name surfaces automatically as soon as an award committee assembles. </p>
-<p>—— 诺贝尔奖得主、人工智能之父 Herbert Simon</p>
-</blockquote>
-<p>可得性偏差 (Availability Heuristic）指人们会根据认知上易得的程度来判断事件的可能性。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/timetraecl08.jpg" alt=""></p>
-<p>由于受记忆力或知识的局限，人们在进行预测和决策时，大多利用自己熟悉的或能够凭想象构造而得到的信息，导致那些易见的、容易记起的信息所占比重过大，而忽略其他有助于形成正确评估的重要信息。例如，你会通过想象某个企业可能会遇到的各种难题来估测其倒闭的概率。</p>
-<p>“会哭的孩子有奶吃”，我们那捉襟见肘的认知资源也是这么对待客观事件的。那些“浓妆艳抹”的事件、那些更容易提取的信息，总是更能捕获我们的注意力，从而导致概率误判。</p>
-<h2 id="u8BA4_u8BC6_u53EF_u5F97_u6027_u504F_u5DEE"><a href="#u8BA4_u8BC6_u53EF_u5F97_u6027_u504F_u5DEE" class="headerlink" title="认识可得性偏差"></a>认识可得性偏差</h2><p>可得性偏差最常见的 3 个来源是：近期事件，个人经历，生动的记忆。</p>
-<h3 id="u56E0_u4F8B_u5B50_u7684_u53EF_u63D0_u53D6_u6027_u5BFC_u81F4_u504F_u5DEE__uFF08Ease_of_Recall_uFF09"><a href="#u56E0_u4F8B_u5B50_u7684_u53EF_u63D0_u53D6_u6027_u5BFC_u81F4_u504F_u5DEE__uFF08Ease_of_Recall_uFF09" class="headerlink" title="因例子的可提取性导致偏差 （Ease of Recall）"></a>因例子的可提取性导致偏差 （Ease of Recall）</h3><p>例子很容易提取的类别，会比频率相同但例子较难想到的类别显得更重要。熟悉度和显著程度会影响例子的可提取性。最近发生的事情可能会比之前发生的事更容易获得。例如，对交通事故的主观概率，会在你见到一辆翻到在路边的车后暂时升高。又比如，人们总是在刚刚经历了意外之后，才为自己买保险，但保险本应该为预见和抵御风险而准备，而不是事后诸葛亮。</p>
-<h3 id="u56E0_u641C_u7D22_u96C6_u5408_u7684_u6709_u6548_u6027_u5BFC_u81F4_u504F_u5DEE__uFF08Retrievability_uFF09"><a href="#u56E0_u641C_u7D22_u96C6_u5408_u7684_u6709_u6548_u6027_u5BFC_u81F4_u504F_u5DEE__uFF08Retrievability_uFF09" class="headerlink" title="因搜索集合的有效性导致偏差 （Retrievability）"></a>因搜索集合的有效性导致偏差 （Retrievability）</h3><p>假设从某个英文文本中随机抽取一个词（含有3个或更多字母的词）。这个词更有可能是以 r 开头还是以 r 作为第三个字母？人们在回答这个问题时，会回忆首字母为 r 的单词（例如road）以及第三个字母为 r 的单词（例如car），然后通过想到这两个词的容易程度来评估相对频率。因为从记忆中搜寻单词的首字母要比搜寻其第三个字母更为容易，所以大多数人都判断以某个辅音开头的单词要比第三个字母为该辅音的单词多。但实际上，例如 r 或 k 的辅音字母，出现在第三个字母的频率都要比出现在开头的频率高。</p>
-<h3 id="u60F3_u8C61_u529B_u7684_u504F_u5DEE"><a href="#u60F3_u8C61_u529B_u7684_u504F_u5DEE" class="headerlink" title="想象力的偏差"></a>想象力的偏差</h3><p>评估某类事件发生的频率，这类事件的实例没有储存在你的大脑中，但可以通过一定的规则构建一些实例。你通常会构建几个实例，并通过构建这些实例的容易程度来评估其频率或概率。</p>
-<p>例如，通过想象某次探险中无法应对的意外事件来评估风险。如果能想到许多这样生动的意外事件，这次探险就会显得尤其危险，尽管想到这些灾难的容易程度并不能反映出它们实际发生的可能性。相反，如果没能想到某些可能的危险，那将要承担的风险就会被低估。</p>
-<p>另一个有趣的例子，是鲨鱼和游泳者。圣地亚哥附近海域的死亡情况表明，平均来说，鲨鱼杀死一个游泳者，也会拯救十个人的生命。每次有游泳者死亡，溺水死亡的人数也会下降了几年，然后恢复到正常水平。但人们只会注意到鲨鱼攻击造成的死亡，因为它更为生动。</p>
-<h3 id="u53EF_u5F97_u6027_u504F_u5DEE_u5BFC_u81F4_u76F8_u5173_u6027_u9519_u89C9"><a href="#u53EF_u5F97_u6027_u504F_u5DEE_u5BFC_u81F4_u76F8_u5173_u6027_u9519_u89C9" class="headerlink" title="可得性偏差导致相关性错觉"></a>可得性偏差导致相关性错觉</h3><p>根据两个事件相互关联的强度，可以判断出它们同时发生的频率。当两个事件关联性强的时候，你可能会认为它们经常同时发生。当事件频繁地同时发生时，这两个事件之间的关联性会得以增强。所以，人们常常使用可得性（提取、构建和联想等）去估测类别的数量、事件的可能性或是事件同时发生的频率，但是这些判断往往并不准确。</p>
-<h2 id="u8BC6_u522B_u548C_u9884_u9632"><a href="#u8BC6_u522B_u548C_u9884_u9632" class="headerlink" title="识别和预防"></a>识别和预防</h2><p>可得性造成的偏误，会导致我们做出不合理的判断。那么应该怎么识别出自己有没有可得性偏差呢？</p>
-<p>00 做了一套简单的提示卡片，可以时不时拿出来复习，或者在思考和决策时作为参考。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/BiasCard01.png" alt=""></p>
-<p>如需下载可得性偏差提示卡片的 PDF 版本，请关注公众号 HackYourself，输入“卡片1”，即可获得。</p>
-<ul>
-<li>我的观点有哪些证据？我马上想到这些证据，是不是仅仅因为它容易获得？</li>
-<li>我做这个判断是不是因为最近发生了某些事件/意外？我对这些事件/意外产生了什么情绪？</li>
-<li>这个问题是否需要“记忆”和“个人经验”之外的更多证据？哪里可以找到这一类的证据？</li>
-<li>这件事情需要评估风险吗（比如飞机失事，投资，换工作）？我的判断依据中有哪些“画面感”很强的想象、记忆、媒体报道？哪里可以找到更多经过统计检验的客观数据？</li>
-<li>我之前的想法是根据零星的经验去推断吗？是否有自上而下可以覆盖问题全貌的框架？</li>
-</ul>
-<h3 id="u53C2_u8003_u8D44_u6599"><a href="#u53C2_u8003_u8D44_u6599" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
-<li>Pohl, R. F. (2012). Cognitive Illusions: A Handbook on Fallacies and Biases in Thinking, Judgement and Memory. Psychology Press.</li>
-<li>Simon, H. A. (1996). Models of My Life (First Edition edition). Cambridge, Mass.: The MIT Press.</li>
-<li>Tversky, A., &amp; Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185, 1124-1131., 185, 1124–1131.</li>
-<li>丹尼尔·卡尼曼. (2012). 思考，快与慢. (胡晓姣, 李爱民, &amp; 何梦莹, Trans.). 中信出版社. </li>
-<li>Availability heuristic. (2016, September 26). In <a href="https://en.wikipedia.org/w/index.php?title=Availability_heuristic&amp;oldid=741281488" target="_blank" rel="external">Wikipedia</a>.</li>
-<li>List of cognitive biases. (2016, September 28). In <a href="https://en.wikipedia.org/w/index.php?title=List_of_cognitive_biases&amp;oldid=741652912" target="_blank" rel="external">Wikipedia</a>. </li>
-<li>List of fallacies. (2016, September 24). In <a href="https://en.wikipedia.org/w/index.php?title=List_of_fallacies&amp;oldid=740960832" target="_blank" rel="external">Wikipedia</a>. </li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/LeogofMentalModel02.png" alt=""></p>]]>
     
     </summary>
     
