@@ -113,11 +113,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[IPython 基础]]></title>
+    <title><![CDATA[菜鸟数据科学入门02 - IPython 基础]]></title>
     <link href="http://uegeek.com/170103-ipython-basic.html"/>
     <id>http://uegeek.com/170103-ipython-basic.html</id>
     <published>2017-01-03T10:07:48.000Z</published>
-    <updated>2017-01-05T02:44:23.000Z</updated>
+    <updated>2017-01-07T09:41:39.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170103IPython_basic_title.png" alt=""></p>
 <a id="more"></a> 
 <h2 id="u4E00_u3001_u4E3A_u4EC0_u4E48_u8981_u7528_IPython_uFF1F"><a href="#u4E00_u3001_u4E3A_u4EC0_u4E48_u8981_u7528_IPython_uFF1F" class="headerlink" title="一、为什么要用 IPython？"></a>一、为什么要用 IPython？</h2><p><a href="http://ipython.org/" target="_blank" rel="external">IPython</a> (Interactive Python 的简写) 是一个强大的交互式 Python Shell，由 Fernando Perez 在 2001 发起。它的目标是提供 “Tools for the entire life cycle of research computing.” 如果说 Python 是数据科学操作的引擎，那么 IPython 就是交互式的控制面板。</p>
@@ -309,11 +309,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[数据科学工具包简介]]></title>
+    <title><![CDATA[菜鸟数据科学入门01 - 工具包概略]]></title>
     <link href="http://uegeek.com/170101-data-science-toolkit.html"/>
     <id>http://uegeek.com/170101-data-science-toolkit.html</id>
     <published>2017-01-01T02:32:44.000Z</published>
-    <updated>2017-01-07T09:37:46.000Z</updated>
+    <updated>2017-01-07T09:40:40.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170101data_science_toolkit.jpg" alt=""></p>
 <a id="more"></a> 
 <blockquote>
