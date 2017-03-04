@@ -4,6 +4,320 @@
   
     
     <entry>
+      <title><![CDATA[DeepLearning-1：神经网络和 Docker 入门]]></title>
+      <url>http://uegeek.com/170304-deeplearning-week0.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dl-week0-title.png" alt=""></p>
+<a id="more"></a> 
+<h2 id="u4E00_u3001_u795E_u7ECF_u7F51_u7EDC_u7B80_u4ECB"><a href="#u4E00_u3001_u795E_u7ECF_u7F51_u7EDC_u7B80_u4ECB" class="headerlink" title="一、神经网络简介"></a>一、神经网络简介</h2><p>人工神经网络：在输入层和输出层中间加入多个隐层。</p>
+<ul>
+<li>Top-down approach to AI ：西蒙为代表的符号学派<ul>
+<li>形式化方法，将知识表示为符号</li>
+<li>运用逻辑进行推理</li>
+<li>对自然语言、图像问题基本毫无办法</li>
+</ul>
+</li>
+<li>Bottom-up approach to AI：神经网络，从最底层（神经元）开始构建</li>
+</ul>
+<p>神经网络的历史</p>
+<ul>
+<li>40年代：概念雏形（没有学习算法）</li>
+<li>50年代：可用的学习算法 - 感知机</li>
+<li>1969年：Minsky 泼冷水</li>
+<li>70年代：BP 算法，训练多层神经网络</li>
+<li>90年代：SVM 支持向量机「打败」神经网络</li>
+<li>2006：深层网络理论、实验上有所突破</li>
+<li>2012：ImageNet，大幅提升结果（错误率 15.3%）</li>
+</ul>
+<p>深度学习框架很多，不需要纠结使用哪种框架：</p>
+<ul>
+<li>Tensorflow：Google 开源主推，是最流行的框架，文档齐全。底层是 C++ ，如果对性能要求不高，用 Python 开发的效率更高</li>
+<li>MXNet：亚马逊主推</li>
+<li>Caffe：图形领域，自然语言处理稍弱</li>
+<li>Torch：Facebook 主推</li>
+</ul>
+<h2 id="u4E8C_u3001Docker__u73AF_u5883_u5B89_u88C5_u548C_u914D_u7F6E"><a href="#u4E8C_u3001Docker__u73AF_u5883_u5B89_u88C5_u548C_u914D_u7F6E" class="headerlink" title="二、Docker 环境安装和配置"></a>二、Docker 环境安装和配置</h2><p>Docker 是什么？容器化技术的实现，可以理解为一个轻量级的虚拟环境。</p>
+<p>之前 00 被 Python 的版本和各种包虐过，所以折腾了 <a href="https://virtualenv.pypa.io/en/stable/" target="_blank" rel="external">Virtualenv</a> 的方法，一个项目新建一个 Python 环境。那么 Docker 跟 Virtualenv 的区别是什么呢？</p>
+<blockquote>
+<p>Docker completely isolates the TensorFlow installation from pre-existing packages on your machine. The Docker container contains TensorFlow and all its dependencies. </p>
+</blockquote>
+<p>Docker 有一个 Image 的概念，可以理解为别人已经制作好的环境（类似安卓手机装机软件），把 Python + TensorFlow + Jupyter Notebook 打包好。</p>
+<h3 id="Docker__u5B89_u88C5_u548C_u914D_u7F6E_u6B65_u9AA4"><a href="#Docker__u5B89_u88C5_u548C_u914D_u7F6E_u6B65_u9AA4" class="headerlink" title="Docker 安装和配置步骤"></a>Docker 安装和配置步骤</h3><p>第一步：下载 <a href="https://store.docker.com/editions/community/docker-ce-desktop-mac?tab=description" target="_blank" rel="external">Docker Community Edition for Mac</a>安装。</p>
+<p>用 <code>docker version</code> 可以查看版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kidults-NMB:~ kidult$ docker version&#10;Client:&#10; Version:      17.03.0-ce&#10; API version:  1.26&#10; Go version:   go1.7.5&#10; Git commit:   60ccb22&#10; Built:        Thu Feb 23 10:40:59 2017&#10; OS/Arch:      darwin/amd64&#10;&#10;Server:&#10; Version:      17.03.0-ce&#10; API version:  1.26 (minimum version 1.12)&#10; Go version:   go1.7.5&#10; Git commit:   3a232c8&#10; Built:        Tue Feb 28 07:52:04 2017&#10; OS/Arch:      linux/amd64&#10; Experimental: true</span><br></pre></td></tr></table></figure>
+<p>使用 Docker 时，命令行相当于客户端，服务器端在安装完成后需要启动。</p>
+<p>第二步：到 <a href="https://hub.docker.com/" target="_blank" rel="external">Docker hub</a> 找到 TensorFlow Image ，以此为模板构建自己的容器。参考 <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/README.md" target="_blank" rel="external">Using TensorFlow via Docker</a>，用 <code>run</code> 命令加载 TensorFlow image：</p>
+<p><code>docker run -it -p 8888:8888 tensorflow/tensorflow</code></p>
+<p>开始下载后，发现速度非常慢：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/download_tensorflow_image.png" alt=""></p>
+<p>参考小伙伴的 <a href="http://www.jianshu.com/p/d896ec46db66" target="_blank" rel="external">Docker Hub Mirror加速Docker官方镜像下载</a> 笔记，使用镜像下载。在 Mac 上配置<a href="https://www.daocloud.io/mirror#accelerator-doc" target="_blank" rel="external">加速器</a>很简单，右键点击桌面顶栏的 docker 图标，选择 Preferences ，在 Advanced 标签下的 Registry mirrors 列表中加入镜像地址: <code>http://d43d99f5.m.daocloud.io Copy</code>，点击 Apply &amp; Restart 按钮使设置生效。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/docker_mirror.png" alt=""></p>
+<p>再次运行<code>docker run -it -p 8888:8888 tensorflow/tensorflow</code>，速度飞了起来~</p>
+<p>下载成功后，可以在浏览器看到 Jupyter Notebook 界面：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/docker-image-loaded.png" alt=""></p>
+<h3 id="Docker__u5E38_u7528_u547D_u4EE4"><a href="#Docker__u5E38_u7528_u547D_u4EE4" class="headerlink" title="Docker 常用命令"></a>Docker 常用命令</h3><ul>
+<li>关闭 docker：control+c</li>
+<li>查看运行状态：<code>docker ps</code> </li>
+<li>把本地目录映射到容器：<code>docker run -it -p 8888:8888 -v 原路径:目标路径 tensorflow/tensorflow</code></li>
+<li><p>查看历史容器：<code>docker ps -a</code> </p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kidults-NMB:my_venv kidult$ docker ps -a&#10;CONTAINER ID        IMAGE                   COMMAND             CREATED             STATUS                      PORTS                              NAMES&#10;f4eaa7828ac5        tensorflow/tensorflow   &#34;/run_jupyter.sh&#34;   7 minutes ago       Up About a minute           6006/tcp, 0.0.0.0:8888-&#62;8888/tcp   priceless_mccarthy&#10;b09563e0479b        tensorflow/tensorflow   &#34;/run_jupyter.sh&#34;   52 minutes ago      Exited (0) 7 minutes ago                                       silly_chandrasekhar&#10;d669d764de48        tensorflow/tensorflow   &#34;/run_jupyter.sh&#34;   About an hour ago   Exited (0) 52 minutes ago                                      relaxed_davinci</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>恢复历史容器：<code>docker start -i id</code> (ID只需要写前几位)</p>
+</li>
+<li>删除容器：<code>docker rm id</code> </li>
+<li>重命名容器：<code>docker rename CONTAINER ID XXX</code>(重命名为 dl)</li>
+<li>在容器里安装包：<code>!pip install xxx</code></li>
+</ul>
+<p>参考 <a href="https://github.com/junjielizero/DeepLearning101/blob/master/ch0/note/README.md" target="_blank" rel="external">junjielizero 同学的笔记</a>，优化了几个步骤：</p>
+<ol>
+<li><p>创建跟 github 同步的容器：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -p 8888:8888 -v ~/Workspace/DeepLearning101/:/Workspace/DeepLearning101 -w /Workspace/DeepLearning101 tensorflow/tensorflow</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>给 docker 启动命令起别名</p>
+<p> 把课程容器改名为<code>dl</code>，然后新建别名 <code>alias dsdl=&quot;docker start -i dl&quot;</code></p>
+</li>
+<li><p>在 iTerm2 运行 <code>dsdl</code>，按着 Command 点击链接 localhost:8888 即可打开项目</p>
+</li>
+</ol>
+<h2 id="u4E09_u3001_u8BCD_u9891_u7EDF_u8BA1_u4F5C_u4E1A"><a href="#u4E09_u3001_u8BCD_u9891_u7EDF_u8BA1_u4F5C_u4E1A" class="headerlink" title="三、词频统计作业"></a>三、词频统计作业</h2><blockquote>
+<p>统计 <a href="https://github.com/AIMinder/DeepLearning101/blob/master/ch0/code/happiness.txt" target="_blank" rel="external">happiness.txt</a> 的词频</p>
+</blockquote>
+<p>思路：读取文件 → 用 jieba 分词 → 清除非中文字符 → 用 counter 计数 → 用 sorted 排序</p>
+<ol>
+<li><p>读取文件</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">loadfile = open(<span class="string">'happiness.txt'</span>, <span class="string">'r'</span>)</span><br><span class="line">text = loadfile.read().decode(<span class="string">'utf-8'</span>)</span><br><span class="line">loadfile.close()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用 jieba 分词</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">words = jieba.cut(text)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>清除非中文字符</p>
+<blockquote>
+<p>re.match(pattern, string, flags=0)</p>
+<p>If zero or more characters at the beginning of string match the regular expression pattern, return a corresponding MatchObject instance. Return None if the string does not match the pattern.</p>
+</blockquote>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> word <span class="keyword">in</span> words:</span><br><span class="line">   	<span class="keyword">if</span> re.match(<span class="string">u'([\u4e00-\u9fff]+)'</span>, word):</span><br><span class="line">  		     segments.append(word)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用 Counter 计数，用 sorted 排序</p>
+<p> Counter 用法</p>
+<blockquote>
+<p>collections.Counter([iterable-or-mapping])</p>
+<p>A Counter is a dict subclass for counting hashable objects. It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values.</p>
+</blockquote>
+<p> sorted 用法</p>
+<blockquote>
+<p>sorted(iterable[, cmp[, key[, reverse]]])<br> Return a new sorted list from the items in iterable.</p>
+<p>cmp specifies a custom comparison function of two arguments which should return a negative, zero or positive number depending on whether the first argument is considered smaller than, equal to, or larger than the second argument: cmp=lambda x,y: cmp(x.lower(), y.lower()). The default value is None.</p>
+</blockquote>
+<p> lambda 表达式用法</p>
+<blockquote>
+<p>通常在需要一个函数但是又不想命名一个函数时使用，即匿名函数。比如实现一个可以求list中所有元素和的函数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from functools import reduce &#10;l = [1,2,3,5,-9,0,45,-99] &#10;reduce(lambda x,y:x+y,l)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p> 在这里，用 Counter 统计字典中词的出现次数，以 lambda 取字典中的 value 值（key 是 x[0]，value 就是 x[1]）用 sorted 方法按降序排序：</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sorted_list = sorted(Counter(dict).items(), key=<span class="keyword">lambda</span> x:x[<span class="number">1</span>], reverse=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>最后，完整的代码和结果如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> jieba <span class="comment"># for spliting</span></span><br><span class="line"><span class="keyword">import</span> re <span class="comment"># for regular expression</span></span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Counter <span class="comment"># for stat</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read file</span></span><br><span class="line">loadfile = open(<span class="string">'happiness.txt'</span>, <span class="string">'r'</span>)</span><br><span class="line">text = loadfile.read().decode(<span class="string">'utf-8'</span>)</span><br><span class="line">loadfile.close()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Split words into a dict</span></span><br><span class="line">dict = []</span><br><span class="line">words = jieba.cut(text)</span><br><span class="line"><span class="keyword">for</span> word <span class="keyword">in</span> words:</span><br><span class="line">    <span class="keyword">if</span> re.match(<span class="string">u'([\u4e00-\u9fff]+)'</span>, word):</span><br><span class="line">        dict.append(word)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sort the list</span></span><br><span class="line">sorted_list = sorted(Counter(dict).items(), key=<span class="keyword">lambda</span> x:x[<span class="number">1</span>], reverse=<span class="keyword">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Print result</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> sorted_list[:<span class="number">10</span>]:</span><br><span class="line">    <span class="keyword">print</span> <span class="string">" '%s' : %d "</span> % (i[<span class="number">0</span>], i[<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<pre><code>&apos;的&apos; : 22848 
+&apos;是&apos; : 4123 
+&apos;在&apos; : 3538 
+&apos;他&apos; : 2522 
+&apos;了&apos; : 2288 
+&apos;人&apos; : 2089 
+&apos;他们&apos; : 1811 
+&apos;和&apos; : 1746 
+&apos;有&apos; : 1478 
+&apos;我&apos; : 1433 
+</code></pre><h3 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h3><ul>
+<li><a href="https://github.com/dccrazyboy/pyeco/blob/master/pyeco.rst" target="_blank" rel="external">Python开发生态环境简介</a></li>
+<li><a href="https://www.tensorflow.org/install/install_mac" target="_blank" rel="external">Installing TensorFlow on Mac OS X </a></li>
+<li><a href="https://hub.docker.com/r/tensorflow/tensorflow/" target="_blank" rel="external">tensorflow/tensorflow - Docker Hub</a></li>
+<li><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/README.md" target="_blank" rel="external">Using TensorFlow via Docker</a></li>
+<li><a href="http://www.jianshu.com/p/d896ec46db66" target="_blank" rel="external">Docker学习笔记(2)–使用Docker Hub Mirror加速Docker官方镜像下载</a></li>
+<li><a href="https://www.daocloud.io/mirror#accelerator-doc" target="_blank" rel="external">配置 Docker 加速器</a></li>
+<li><a href="https://computers.tutsplus.com/tutorials/speed-up-your-terminal-workflow-with-command-aliases-and-profile--mac-30515" target="_blank" rel="external">Speed Up Your Terminal Workflow with Command Aliases and .profile</a></li>
+<li><a href="https://github.com/fxsjy/jieba" target="_blank" rel="external">fxsjy/jieba: 结巴中文分词</a></li>
+<li><a href="https://www.zhihu.com/question/20125256" target="_blank" rel="external">Lambda 表达式有何用处？如何使用？</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[17°读书会笔记[4]- 为真实的世界设计]]></title>
+      <url>http://uegeek.com/170225-design-for-real-world.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>
+<a id="more"></a> 
+<blockquote>
+<p>如果所有的医生都抛弃了外科的普通实践，而专注于皮肤病、整形手术和美容，后果会怎样呢？设计职业的行为与此好有一比。</p>
+</blockquote>
+<p>17° 读书会第 4 本书：<a href="https://book.douban.com/subject/19912141/" target="_blank" rel="external">为真实的世界设计 - Victor Papanek</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s25807191.jpg" alt=""></p>
+<p>阅读时间：2017-02-16 ~ 2017-02-25 </p>
+<h2 id="u8BFB_u524D_u95EE_u9898"><a href="#u8BFB_u524D_u95EE_u9898" class="headerlink" title="读前问题"></a>读前问题</h2><ul>
+<li>作者为什么要写这样一本书？</li>
+<li>设计观是什么？</li>
+<li>什么是设计的社会和道德责任？</li>
+<li>设计师应该更多关注什么问题？</li>
+<li>想为真实世界设计，怎么做？</li>
+</ul>
+<h2 id="u8BFB_u540E_u601D_u8003"><a href="#u8BFB_u540E_u601D_u8003" class="headerlink" title="读后思考"></a>读后思考</h2><p>「为真实的世界设计」是帮助我塑造设计观的一本书。什么是设计观？我的理解是起码要回答四个基本问题：</p>
+<blockquote>
+<p>什么是设计？为什么设计？为谁设计？什么是好设计？</p>
+</blockquote>
+<p>17°读书会的前三本书都在探讨设计的定义：</p>
+<blockquote>
+<p>Design is a relationship between form and content. —— Paul Rand</p>
+<p>所谓设计，就是将人类生活或生存的意义，通过制作的过程予以解释。—— 原研哉</p>
+</blockquote>
+<p>而我最喜欢 Papanek 在这本书中的定义：</p>
+<blockquote>
+<p>设计是为了达成有意义的秩序而进行的有意识而又富于直觉的努力。</p>
+<p>有意识意味着理智、思考、研究和分析。设计最根本的工作是改造人类的环境和工具，大而言之，就是改造人类自身。一个设计师能够带给其作品最重要的能力就是辨别、剖析、定义和解决问题的能力。</p>
+</blockquote>
+<p><img src="https://s-media-cache-ak0.pinimg.com/564x/82/71/d2/8271d299d219d7a8b82810924a256cdc.jpg" alt=""></p>
+<p>「有意义的秩序」比 Paul Rand 的「关系」更进一步，阐明了什么是理想的关系；相比原研哉多少有点艺术化的定义，更聚焦于设计的本质。为了认识那些总是在变化而又高度复杂的存在，我们常常试着通过寻找其内在的秩序解决。</p>
+<p>除了设计的定义，这本书还讨论了为什么设计、为什么设计、什么是好的设计。书的主旨是，倡导设计师应该为世界上的大多数人设计，而不是为一个相对较小的国内市场设计。要为人的「需求」（needs）而不是「欲求」（wants）设计。作者立场鲜明地批判为了操纵视觉刺激而进行的设计。</p>
+<p>虽然这本书写于上世纪 70 年代，但是在今天看来，令作者痛心疾首的问题依然存在甚至愈演愈烈，这本书也值得我们一再回顾。</p>
+<h3 id="u4EC0_u4E48_u662F_u8BBE_u8BA1_u7684_u793E_u4F1A_u548C_u9053_u5FB7_u8D23_u4EFB_uFF1F"><a href="#u4EC0_u4E48_u662F_u8BBE_u8BA1_u7684_u793E_u4F1A_u548C_u9053_u5FB7_u8D23_u4EFB_uFF1F" class="headerlink" title="什么是设计的社会和道德责任？"></a>什么是设计的社会和道德责任？</h3><p>通过设计，人类可以塑造产品、环境甚至是人类自身，所以设计师必需了解自己的行为对未来所产生的后果。</p>
+<p>大多数工业设计师的哲学都建立在五个 Myth 的基础上：</p>
+<ul>
+<li>大批量生产</li>
+<li>废弃</li>
+<li>大众「需要」</li>
+<li>设计师没有支配权</li>
+<li>质量不再重要</li>
+</ul>
+<p>然而这些都是未经审视、作茧自缚的习得性现象。</p>
+<p>这个时代，我们面对的问题是什么？每天的活动是什么，跟什么互动最多，受什么困扰？如果设计还停留在古典主义或者包豪斯或者 xx，那么当下的问题如何解决？工业设计起源于商品的大批量生产，它过去的理念和方法未必适应于今天。</p>
+<p>为真实世界设计，也是为时代设计。</p>
+<p>年迈的老人需要什么样的设计？孕妇和胖纸需要怎样的设计？全世界那些觉得被社会疏远而倍感孤独的年轻人需要什么？公路运输又需要什么样的设计呢？治病救人的医疗器械需要什么的设计？从事高级研究项目的人需要什么样精巧的装置？</p>
+<p><img src="https://s-media-cache-ak0.pinimg.com/564x/46/de/86/46de86c068eb73bd34ab3e0156dfe7c3.jpg" alt=""></p>
+<p>如果我们意识到设计师有足够的能力（通过影响人类所有的工具和环境）在大规模生产的基础上进行谋杀，我们也就会明白设计师身上巨大的道德和社会责任。所有的设计都是某种教育，设计师试图教育他的制造商客户和市场上的人。</p>
+<blockquote>
+<p>一些新兴国家的设计师并没有像我们那样，把设计才能都用在为富人追求个人满足、为企业追求利润上，我们作为设计师的责任正在于此。</p>
+</blockquote>
+<h3 id="u8BBE_u8BA1_u5E08_u5E94_u8BE5_u66F4_u591A_u5173_u6CE8_u4EC0_u4E48_u95EE_u9898_uFF1F"><a href="#u8BBE_u8BA1_u5E08_u5E94_u8BE5_u66F4_u591A_u5173_u6CE8_u4EC0_u4E48_u95EE_u9898_uFF1F" class="headerlink" title="设计师应该更多关注什么问题？"></a>设计师应该更多关注什么问题？</h3><p>Papanek 从一个特别宏观的角度分析了人的根本「需求」：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170218-WX20170225-175747@2x.png" alt=""></p>
+<p>人类探究自身的终结，意味着人类实现了其存在的所有潜能，意味着他们征服了人生的「局限三角」：一边是人类必须生存于其中的外部环境；其次是人类拥有的素质，或其适应能力，也就是借以存活之物；其三就是死亡的事实。所有的努力和抗争都是要解除这几点对我们的包围。</p>
+<p>但是反观我们日常在做的设计，都在做些什么呢？</p>
+<p>我们已经生活在「用完即走」的即抛型消费文化中许多年，为了促使人们反复购买，消费品不再以历久弥新、设计精良为目标，反而越来越迎合更短的生命周期，设计出很多会迅速抛弃到垃圾箱里的用品。</p>
+<p>想要解决这个问题，需要设计师们在设计过程中反复考虑，物品的价格是否体现了其短命的特征，以及这些物品被丢弃后会发生什么？</p>
+<p>从另外一个角度去思考，废弃的一个源头是不是「私有」？如果用「租借」替代「拥有」，废弃将大大减少。（作者在上世纪七十年代就看到了「共享经济」的未来~）</p>
+<p>人的注意力都是极其有限的，设计师的注意力也是。设计师的工作一般已经被一种以市场为导向、为利润所驱使的体制规定好了。当我们为已经很富足的商品继续打磨它们宜人的外型、贴心的使用流程，也就少了一份精力去关注那些困扰更多人却没有人考虑、没有人动手去尝试的问题。很多问题虽然看起来很难，但真正的问题不是不可解决，而是没有人关注和开始思考。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170218-WechatIMG136.jpeg" alt=""></p>
+<p>当然，并不是所有问题都能通过设计解决。很多问题会因为设计的干预而变得简单一些。对设计师来说，这意味着一种新的角色，他不再是企业掌握的工具，而成为使用者的支持者。</p>
+<p>作者提出一些被忽略的设计领域：</p>
+<ul>
+<li>为第三世界设计</li>
+<li>为智障者和残疾人设计教学和训练设备</li>
+<li>为药品、外科、牙科和医院设备设计</li>
+<li>为实验研究设计</li>
+<li>为维持边缘状况下的人类生活而进行系统的设计（南极/海底/小行星）</li>
+<li>为打破陈规而设计</li>
+</ul>
+<p>那么，想为真实世界设计，怎么做？</p>
+<p>面包和理想都很重要。</p>
+<p>设计师既不能完全被商业组织圈养，也不能幻想着改变世界。但是可以时常反思自己在设计中立场、思考的角度、解决的问题，是在为什么样的人群提供帮助。然后，抽出一定的时间和精力，动手去设计真实世界需要的解决方案。</p>
+<blockquote>
+<p>1970 年，我倡议开展一场新的斗争。就像雷蒙德·罗维和其他设计师在 20 世纪 20~30 年代拜访潜在客户，向他们展示工业设计师能做什么意义。年轻的设计师可以到发展中国家，到门诊部和医院去跟人们说他能做什么。拿出自己 1/10 的时间或者 1/10 的收入，去解决一些因贫穷所需要解决的问题，去帮助那 75% 的需要它的人，在这段时间里不为钱而设计。</p>
+</blockquote>
+<p>也许到医院去推销设计师能力不一定现实，但是每周用 1~2 个小时去思考和改进给老年人使用的工具，比如眼镜、厨具、药瓶，是我们可以开始尝试的事情。</p>
+<p>你还想到哪些为真实世界设计的倡议呢？欢迎留言~</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[17°读书会笔记[3]-设计中的设计]]></title>
+      <url>http://uegeek.com/170127-design-in-design.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>
+<a id="more"></a> 
+<p>17° 读书会第 3 本书：<a href="https://book.douban.com/subject/4230237/" target="_blank" rel="external">设计中的设计 - 原研哉</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s2165932.jpg" alt=""></p>
+<p>阅读时间：2017-01-15 ~ 2017-01-26</p>
+<h3 id="u8BFB_u524D_u95EE_u9898"><a href="#u8BFB_u524D_u95EE_u9898" class="headerlink" title="读前问题"></a>读前问题</h3><ul>
+<li>原研哉对设计的理解是什么？跟 Paul Rand 的定义有什么异同？</li>
+<li>「信息建筑」的思维方式是什么？</li>
+<li>无印良品的设计哲学是什么？设计和生活的关系是什么？</li>
+<li>东西方对设计的理解有什么异同？日本的设计理念有什么独特之处？</li>
+<li>设计师如何培养感觉能力和洞察力？</li>
+</ul>
+<hr>
+<p><img src="http://s7.sinaimg.cn/middle/80f1b377ta5fd8854b6a6&amp;690" alt=""></p>
+<h3 id="u8BBE_u8BA1_u7684_u5143_u95EE_u9898"><a href="#u8BBE_u8BA1_u7684_u5143_u95EE_u9898" class="headerlink" title="设计的元问题"></a>设计的元问题</h3><p>原研哉是日本中生代国际级平面设计大师、日本设计中心的董事、无印良品艺术总监。作为从业二十多年并且具有世界影响力的设计师，原研哉一直在尝试回答「设计到底是什么」这个问题，又或者说：如何设计「设计」？</p>
+<p><img src="http://www.mottimes.com/image/character/4120150610181853.jpg" alt=""></p>
+<p>要回答「设计是什么」，可以先尝试从设计的起源和发展过程中寻找答案。</p>
+<p>设计产生于二十世纪初工业化这个大时代背景，并且很好地融入到商品生产过程中。为了补偿机器生产粗制滥造对传统美感的践踏、对生活品质的侵袭，人们呼唤适应时代的审美和物品。现代设计的概念由此诞生。包豪斯引发的设计运动，在工业化大生产的基础上，以实现功能为目的，努力寻求设计的造型，可以视为现代设计的发端。</p>
+<p><img src="http://99percentinvisible.org/app/uploads/2016/08/bauhaus-building-dessau.jpg" alt=""></p>
+<p>日本、美国、欧洲各自历史背景不同，经济发展轨迹不同，因此设计在社会中所产生的机能也很不一样。但是二十世纪后半叶，主要动力来源都是经济。设计在产业社会中不可或缺。当技术取得进步，为生产和交流提供出新的可能性时，设计总会担当起探索最佳答案的角色。</p>
+<p>谈及艺术与设计的区别，原研哉认为区分它们并没有多大的实际意义。艺术是艺术家在面对社会时的意志表达，其发生的根本立足点是作为个体的个人。而设计基本上没有自我表现的动机，其落脚点更侧重于社会。<strong>解决社会上多数人共同面临的问题，是设计的本质。</strong>在问题解决过程——也是设计过程中产生的那种人类能够共同感受到的价值观或精神，以及由此引发的感动，就是设计最有魅力的地方。</p>
+<p>在原研哉的设计世界中，设计跟生活紧密关联。他认为设计绝不仅仅是制造技术，<strong>设计是从生活中发现新问题的行为</strong>。创意并不是要让人惊异它崭新的形式和素材，而应该让人惊异于它居然来自看似平凡的日常生活。不断开发出这些创意才是真正的设计。</p>
+<blockquote>
+<p>所谓设计，就是将人类生活或生存的意义，通过制作的过程予以解释。</p>
+</blockquote>
+<p><img src="http://img.sj33.cn/uploads/allimg/200604/20060412013828524.jpg" alt=""></p>
+<p>这个定义回归到设计的意义，敦促设计师们去思考更为底层的问题，并且反应在设计的过程和结果之中。</p>
+<p>17°的第一本书是 Paul Rand 的「设计是什么」，他对设计展现出一种<strong>「思辨」式的思考</strong>：应该是什么，不应该是什么。而日本的设计大师们更多是在进行<strong>「探询和阐释」</strong>，比如原研哉用设计解释生活的意义，比如黑川雅之用设计「提问和告白」（见「设计修辞法」一书）。Paul Rand 认为设计的定义应该指向行动，设计是「处理关系」，原研哉则劝诫设计师们把设计指向生活意义的阐释，从看似平凡之处深思出新意，动态地去回答「人与生活」的关系的问题。</p>
+<p><img src="http://s2.sinaimg.cn/middle/600ffe4dh77a196c867a1&amp;690" alt=""></p>
+<p>反思我们的工作，大部分时间并没有真正在做「设计」。我们不愿花时间多想问题到底是什么，处理这个问题的意义何在，只是急匆匆地把常见的样式搬过来搬过去，拼凑出一个自欺自人的样子，然后继续心安理得地戴着「设计师」的帽子自鸣得意。</p>
+<h3 id="u7528_u6784_u5EFA_u4FE1_u606F_u5EFA_u7B51_u7684_u601D_u7EF4_u65B9_u5F0F_u505A_u8BBE_u8BA1"><a href="#u7528_u6784_u5EFA_u4FE1_u606F_u5EFA_u7B51_u7684_u601D_u7EF4_u65B9_u5F0F_u505A_u8BBE_u8BA1" class="headerlink" title="用构建信息建筑的思维方式做设计"></a>用构建信息建筑的思维方式做设计</h3><p>在设计实践中，原研哉试图建立一种信息建筑的思维方式，让平面设计不仅能作用于人的视觉，而且能够触动人的所有感官。</p>
+<p>设计传达并非仅发生在一个二维平面中，而应该像一个建筑，有不同的层次和功能区划，叠加在一起形成有机的空间，对人的感受和行为形成影响。设计师在设计中要组合各种信息，建筑一个信息集合体。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/design_in_design_IA.jpg" alt=""></p>
+<blockquote>
+<p>所谓印象，就是通过感觉器官接受外部刺激，并把这些刺激和人脑中原有的记忆组合、联系而生成的结果。<strong>设计行为，则是以这种组合而成的印象为前提，并且有意识地干预这一组合过程的行为</strong>。我们把这一过程称为「信息的构筑」—— 有目的、有计划地去干预印象的生成过程。</p>
+</blockquote>
+<p>日本文化向来对「感觉」异常重视。通过营造纯粹而富有仪式感的环境，释放感官的潜力，敏感地捕捉到纤细甚至稍纵即逝的感觉，从而完成与生命的对话。在文学修辞领域，佐藤信夫提出「修辞立其感」的理念，如何用文字唤起人们的「感觉」。在设计领域，原研哉则提到用综合的感官刺激构筑人们的「印象」。</p>
+<h3 id="u54C1_u724C_u7684_u7075_u9B42_u4ECE_u4F55_u800C_u6765_uFF1F"><a href="#u54C1_u724C_u7684_u7075_u9B42_u4ECE_u4F55_u800C_u6765_uFF1F" class="headerlink" title="品牌的灵魂从何而来？"></a>品牌的灵魂从何而来？</h3><p>原研哉是无印良品艺术总监，书中用了一个完整的章节介绍他对无印良品品牌的思考和实践。</p>
+<p>无印良品品牌创立于 1980 年，受极简主义审美意识的影响，商品造型简单、朴素且价格适中，给人感觉新鲜而且纯粹。它的商品群就是一个优雅而质朴的生活提案，提出了一种符合都市新生代人群的生活方式。</p>
+<p><img src="http://www.gzhphb.com/gpPic/600/0/mmbiz.qpic.cn/mmbiz_jpg/POulfdmHaaKUfKfbHTbSyqA1RpCNp0Ljur2U85qhO6GqUE79vx9z80HtFJBOicnDPF5LQa63w1yJvypKMpN9JXA/0?wx_fmt=jpeg" alt=""></p>
+<p>相比无印良品的品牌发展，我更好奇的是，一个品牌的灵魂如何形成？从原研哉对无印良品理念的阐释，我们可以看到，仅仅给出「极简」、「干净凝练」这种感官层面、结果层面的词汇，无法让物品拥有一种集体的灵魂。</p>
+<p>品牌感觉需要「生长」，而不是披上一件另外制作的外套。给出这个核心生长点也许就是最难的「设计」。一个有生命力的生长点，应该源自一个更为宏大的问题，是时代和环境对人的发问，这个问题埋藏在很多人的内心却不自知。对于一个生活物品的品牌而言，这个问题可能是「我对生活的向往是什么？」「这个时代需要什么样的生活态度？」「什么样的物品是人和生活环境互动时最好的载体？」</p>
+<blockquote>
+<p>无印良品的理想，是生产出来的商品一旦被消费者接触到，就能触发出一种新的生活意识，这种生活意识最终启发人们去追求更为完美的生活样式。</p>
+</blockquote>
+<p>在回答这些问题时，无印良品洞察到，大部分的商品都在引导消费者形成「这个就好」「非它不可」的观念，不断激发人们追寻一些其实并不必要的东西：更多、更物化、更有存在感、更狭隘的忠诚…… 所以无印良品提出要给消费者一种「这样就好」的满足感，看似弱化了自我意识，但也许更接近真正的自由。</p>
+<p><img src="https://s-media-cache-ak0.pinimg.com/originals/bb/58/29/bb58294d21dae457d04421bc92096c6f.jpg" alt=""></p>
+<p>原研哉对无印良品的概念提案是「虚无」（Emptiness）。但是虚无并不意味着空无一物，而是再提升了一个层次，用虚无的包容，呈现出一个看似空无一物，却能容纳百川的容器。商品不是生活的主角，它更加应该扮演承载人与生活意义的载体这种角色。</p>
+<p><img src="http://www.mottimes.com/image/mottimes_images/mottimes_images_1520150610180958.jpeg" alt=""></p>
+<h3 id="u5F62_u5F0F_u8FFD_u968F_u54F2_u5B66"><a href="#u5F62_u5F0F_u8FFD_u968F_u54F2_u5B66" class="headerlink" title="形式追随哲学"></a>形式追随哲学</h3><p>看「设计中的设计」，跟看「A Designer’s Art」的感受完全不一样。</p>
+<p>西方的设计，问题发端来自社会变革，人与时代的矛盾。设计更偏理性，规律和真理永远是题中之意。</p>
+<p>东方的设计师，则用非常纤细的感受，去捕捉那些隐藏生活日常背后的宏大问题。在日本文化中，相比自然，人是渺小的存在。问题发端来自人与环境的矛盾。因此更需要回归人的尺度，去不断思考人和周遭环境的关系，短暂而变幻莫测的人生以及它在生活中种种映射的关系。</p>
+<p>也许，从某种程度而言，形式追随的并不是内容，不是功能，而是对核心问题的探索和回答。有什么样的价值观，就会思考什么样的问题，得出什么样的哲学理念，最终反映在人的言行中，凝练在物品和容器的塑造中。</p>
+<h3 id="u8BBE_u8BA1_u5E08_u5982_u4F55_u57F9_u517B_u611F_u89C9_u80FD_u529B_u548C_u6D1E_u5BDF_u529B_uFF1F"><a href="#u8BBE_u8BA1_u5E08_u5982_u4F55_u57F9_u517B_u611F_u89C9_u80FD_u529B_u548C_u6D1E_u5BDF_u529B_uFF1F" class="headerlink" title="设计师如何培养感觉能力和洞察力？"></a>设计师如何培养感觉能力和洞察力？</h3><p>在原研哉看来，设计不是一种技能，而是捕捉事物本质的感觉能力和洞察力。</p>
+<blockquote>
+<p>给一件事物下定义或用文字记述下来并不见得就是对其有所了解。如果能够先将已知的事物<strong>陌生化</strong>，然后再尝试挑战其真实性，才有可能深入了解它。</p>
+<p>我们观看世界的视角与感受世界的方法可能有千万种，只要能够下意识地将这些角度和感受方法运用到日常生活中，就是设计。</p>
+</blockquote>
+<p>设计师的核心能力，首先不是视觉表达能力，而是<strong>发现事物间原本已经存在、但是被视而不见的「新」关系</strong>。</p>
+<p><img src="http://www.ida-a.org/ueditor/php/upload/image/20160526/1464234884430317.jpg" alt=""></p>
+<p>2000 年，原研哉策划了一个叫做「 Re-design 二十一世纪的日常用品再设计」的展览，收集了三十二名来自日本的设计者，对日常用品比如卫生纸或火柴进行重新设计的提案。原研哉希望通过这个展览，为大家展示设计的魅力，唤起对生活的重新思考。设计师们从生活日常的一个小小物品，回溯到原点，重新审视我们周围的设计，以最平易近人的方式来探索设计的本质。从无到有，当然是创造；但将已知的事物陌生化，更是一种创造。</p>
+<p>佐藤雅彦与出入境章</p>
+<p><img src="http://www.ndc.co.jp/hara/books/RE-DESIGN20-21.jpg" alt=""></p>
+<p>面出薰与火柴</p>
+<p><img src="http://www.dearid.com/pss/2012/12/15/b/6173241351877169.jpg" alt=""></p>
+<p>深泽直人与茶包</p>
+<p><img src="http://rethinked.org/wp-content/uploads/2012/10/Naoto-Fukasawa.jpeg" alt=""></p>
+<p>展览中的作品不但从创意上让人拍案叫绝，更令人感动的是，设计师把对平凡物品的细致入微的观察，转换为一次对人的需要的深刻体察，对人和环境、人和物品关系之间的一次重构。</p>
+<p>怎样培养这种敏锐的感觉和洞察？书里并没有太多着墨，不过原研哉已经阐述了很多他对设计的理解，我尝试归纳为以下几点：</p>
+<h4 id="u505A_u751F_u6D3B_u7684_u89C2_u5BDF_u8005_u548C_u63D0_u95EE_u8005"><a href="#u505A_u751F_u6D3B_u7684_u89C2_u5BDF_u8005_u548C_u63D0_u95EE_u8005" class="headerlink" title="做生活的观察者和提问者"></a>做生活的观察者和提问者</h4><p>人与生活的关系，几乎体现在每一个物品上。每时每刻我们都有数不清的机会去感受、发现和思考。开门时门把手的触感和握感，起居室透过窗帘形成的光影，饭碗捧在手里传递的温度，打扫卫生时抹布够不着角落的费力感觉…… 每当我们意识到应该重新思考人与物品的关系，能够问出一个又一个被当做理所当然的问题，也许就能更清楚了解自己向往一种怎样的生活状态。</p>
+<p><img src="https://cdn0.vox-cdn.com/thumbor/ASX_XWjzzXbVWg2bJbIGuV811Rc=/cdn0.vox-cdn.com/uploads/chorus_asset/file/6363053/muji_cleaning_system.0.gif" alt=""></p>
+<h4 id="u53D1_u73B0_u90A3_u4E9B_u89C6_u800C_u4E0D_u89C1_u7684_u8FDE_u63A5"><a href="#u53D1_u73B0_u90A3_u4E9B_u89C6_u800C_u4E0D_u89C1_u7684_u8FDE_u63A5" class="headerlink" title="发现那些视而不见的连接"></a>发现那些视而不见的连接</h4><p>宋代禅宗大师青原行思提出参禅的三重境界：</p>
+<blockquote>
+<p>参禅之初，看山是山，看水是水；禅有悟时，看山不是山，看水不是水；禅中彻悟，看山仍然山，看水仍然是水。</p>
+</blockquote>
+<p>设计的思考和实践，大概也是这么一个过程吧。在 Re-design 展中，很多日常物品在设计师的手中「互换灵魂」，带给我们新的感动。设计师如果能解析出不同物品的灵魂，并且富有诗意地促成它们的交错、融合，生活该是多有乐趣和惊喜的游乐园。</p>
+<p><img src="http://www.muji.com/xmas2009/shared/wall/toys.jpg" alt=""></p>
+<h4 id="u4ECE_u4FE1_u606F_u5E73_u9762_u5230_u4FE1_u606F_u5EFA_u7B51"><a href="#u4ECE_u4FE1_u606F_u5E73_u9762_u5230_u4FE1_u606F_u5EFA_u7B51" class="headerlink" title="从信息平面到信息建筑"></a>从信息平面到信息建筑</h4><p>如果设计总是局限在一个狭小平面，设计师的目光也会越来越狭窄。让我们回到「干预印象的生成过程」这一本质，将设计活动的隐喻变为「构筑信息和行为空间」，从人的「五感」出发，思考应该如何构建一个丰富的「建筑空间」，能够充分调动人的感官，实现信息和意义的传达。</p>
+<p><img src="http://www.holycool.net/wp-content/uploads/2013/03/MUJI-Bluetooth-Speaker-1024x1024.jpg" alt=""></p>
+<h3 id="u6700_u540E"><a href="#u6700_u540E" class="headerlink" title="最后"></a>最后</h3><p>17°读书会第一个月的主题是「重新思考设计」。读完东西方两位设计大师对设计的解读，深感自己对设计理解依然浅薄。</p>
+<blockquote>
+<p>设计是什么？</p>
+</blockquote>
+<p>路途遥远，希望大家带着这个问题一路前行。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[17°读书会笔记[2]-A Designer's Art]]></title>
       <url>http://uegeek.com/170119-a-designers-art.html</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>
@@ -1454,7 +1768,6 @@
 <p>如果你根本不知道自己在讨论什么，那么对其强求精确是毫无意义的。 —— 冯·诺依曼</p>
 </blockquote>
 <p>我们用「产品」这个词来表示那些试图满足一系列复合期望的产物。复合意味着它们来自许多人。找到谁是这些「人」，是明确需求的一个主要部分。上一篇，00 分享了一些如何分类和描述用户的经验：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article2-qr.png" alt=""></p>
 <p>接下来，我们将要走进需求的沼泽，深入产品开发险恶的腹地，看看需求这个妖孽如何把众多产品经理拖入泥潭之中。</p>
 <p>需求很关键，可现实往往是，人们不知道自己想要什么；而且，产品经理不知道人们想要什么；雪上加霜的是，产品经理不知道人们不知道他们想要什么……产品开发再高效也好，都是一种浪费。认真探索需求，我们才不会做出然并卵的产品。</p>
 <p>关于万恶的需求，有两个最最关键的问题：</p>

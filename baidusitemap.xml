@@ -4,6 +4,104 @@
 
     
   <url>
+    <loc>http://uegeek.com/170304-deeplearning-week0.html</loc>
+    <lastmod>2017-03-04T14:04:44.000Z</lastmod>
+    <data>
+        <display>
+        <title>DeepLearning-1：神经网络和 Docker 入门</title>
+        <pubTime>2017-03-04T13:58:23.000Z</pubTime>
+        
+        <tag>AI</tag>
+         
+        <tag>Deep learning</tag>
+         
+        <tag>Docker</tag>
+         
+        <tag>深度学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="动手" url="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://uegeek.com/170225-design-for-real-world.html</loc>
+    <lastmod>2017-03-04T13:57:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>17°读书会笔记[4]- 为真实的世界设计</title>
+        <pubTime>2017-02-25T13:56:28.000Z</pubTime>
+        
+        <tag>Design</tag>
+         
+        <tag>Reading</tag>
+         
+        <tag>设计师</tag>
+         
+         
+           
+             
+              <breadCrumb title="设计" url="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://uegeek.com/170127-design-in-design.html</loc>
+    <lastmod>2017-03-04T13:55:44.000Z</lastmod>
+    <data>
+        <display>
+        <title>17°读书会笔记[3]-设计中的设计</title>
+        <pubTime>2017-01-27T13:54:06.000Z</pubTime>
+        
+        <tag>Design</tag>
+         
+        <tag>Reading</tag>
+         
+        <tag>设计师</tag>
+         
+         
+           
+             
+              <breadCrumb title="设计" url="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://uegeek.com/pm-ur-handbook3.html</loc>
+    <lastmod>2017-02-08T06:18:25.000Z</lastmod>
+    <data>
+        <display>
+        <title>产品经理的用研手册03 - 成也需求，败也需求</title>
+        <pubTime>2016-12-05T02:33:47.000Z</pubTime>
+        
+        <tag>产品经理</tag>
+         
+        <tag>用户研究</tag>
+         
+        <tag>设计师</tag>
+         
+         
+           
+             
+              <breadCrumb title="设计" url="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://uegeek.com/170119-a-designers-art.html</loc>
     <lastmod>2017-01-19T14:03:56.000Z</lastmod>
     <data>
@@ -302,30 +400,6 @@
         <display>
         <title>产品经理的用研手册04 - 做问题求解者，先对症后下药</title>
         <pubTime>2016-12-08T07:56:49.000Z</pubTime>
-        
-        <tag>产品经理</tag>
-         
-        <tag>用户研究</tag>
-         
-        <tag>设计师</tag>
-         
-         
-           
-             
-              <breadCrumb title="设计" url="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/pm-ur-handbook3.html</loc>
-    <lastmod>2016-12-05T02:51:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>产品经理的用研手册03 - 成也需求，败也需求</title>
-        <pubTime>2016-12-05T02:33:47.000Z</pubTime>
         
         <tag>产品经理</tag>
          

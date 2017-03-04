@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://uegeek.com/"/>
-  <updated>2017-01-19T14:03:56.000Z</updated>
+  <updated>2017-03-04T14:04:44.000Z</updated>
   <id>http://uegeek.com/</id>
   
   <author>
@@ -13,6 +13,370 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[DeepLearning-1：神经网络和 Docker 入门]]></title>
+    <link href="http://uegeek.com/170304-deeplearning-week0.html"/>
+    <id>http://uegeek.com/170304-deeplearning-week0.html</id>
+    <published>2017-03-04T13:58:23.000Z</published>
+    <updated>2017-03-04T14:04:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dl-week0-title.png" alt=""></p>
+<a id="more"></a> 
+<h2 id="u4E00_u3001_u795E_u7ECF_u7F51_u7EDC_u7B80_u4ECB"><a href="#u4E00_u3001_u795E_u7ECF_u7F51_u7EDC_u7B80_u4ECB" class="headerlink" title="一、神经网络简介"></a>一、神经网络简介</h2><p>人工神经网络：在输入层和输出层中间加入多个隐层。</p>
+<ul>
+<li>Top-down approach to AI ：西蒙为代表的符号学派<ul>
+<li>形式化方法，将知识表示为符号</li>
+<li>运用逻辑进行推理</li>
+<li>对自然语言、图像问题基本毫无办法</li>
+</ul>
+</li>
+<li>Bottom-up approach to AI：神经网络，从最底层（神经元）开始构建</li>
+</ul>
+<p>神经网络的历史</p>
+<ul>
+<li>40年代：概念雏形（没有学习算法）</li>
+<li>50年代：可用的学习算法 - 感知机</li>
+<li>1969年：Minsky 泼冷水</li>
+<li>70年代：BP 算法，训练多层神经网络</li>
+<li>90年代：SVM 支持向量机「打败」神经网络</li>
+<li>2006：深层网络理论、实验上有所突破</li>
+<li>2012：ImageNet，大幅提升结果（错误率 15.3%）</li>
+</ul>
+<p>深度学习框架很多，不需要纠结使用哪种框架：</p>
+<ul>
+<li>Tensorflow：Google 开源主推，是最流行的框架，文档齐全。底层是 C++ ，如果对性能要求不高，用 Python 开发的效率更高</li>
+<li>MXNet：亚马逊主推</li>
+<li>Caffe：图形领域，自然语言处理稍弱</li>
+<li>Torch：Facebook 主推</li>
+</ul>
+<h2 id="u4E8C_u3001Docker__u73AF_u5883_u5B89_u88C5_u548C_u914D_u7F6E"><a href="#u4E8C_u3001Docker__u73AF_u5883_u5B89_u88C5_u548C_u914D_u7F6E" class="headerlink" title="二、Docker 环境安装和配置"></a>二、Docker 环境安装和配置</h2><p>Docker 是什么？容器化技术的实现，可以理解为一个轻量级的虚拟环境。</p>
+<p>之前 00 被 Python 的版本和各种包虐过，所以折腾了 <a href="https://virtualenv.pypa.io/en/stable/" target="_blank" rel="external">Virtualenv</a> 的方法，一个项目新建一个 Python 环境。那么 Docker 跟 Virtualenv 的区别是什么呢？</p>
+<blockquote>
+<p>Docker completely isolates the TensorFlow installation from pre-existing packages on your machine. The Docker container contains TensorFlow and all its dependencies. </p>
+</blockquote>
+<p>Docker 有一个 Image 的概念，可以理解为别人已经制作好的环境（类似安卓手机装机软件），把 Python + TensorFlow + Jupyter Notebook 打包好。</p>
+<h3 id="Docker__u5B89_u88C5_u548C_u914D_u7F6E_u6B65_u9AA4"><a href="#Docker__u5B89_u88C5_u548C_u914D_u7F6E_u6B65_u9AA4" class="headerlink" title="Docker 安装和配置步骤"></a>Docker 安装和配置步骤</h3><p>第一步：下载 <a href="https://store.docker.com/editions/community/docker-ce-desktop-mac?tab=description" target="_blank" rel="external">Docker Community Edition for Mac</a>安装。</p>
+<p>用 <code>docker version</code> 可以查看版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kidults-NMB:~ kidult$ docker version&#10;Client:&#10; Version:      17.03.0-ce&#10; API version:  1.26&#10; Go version:   go1.7.5&#10; Git commit:   60ccb22&#10; Built:        Thu Feb 23 10:40:59 2017&#10; OS/Arch:      darwin/amd64&#10;&#10;Server:&#10; Version:      17.03.0-ce&#10; API version:  1.26 (minimum version 1.12)&#10; Go version:   go1.7.5&#10; Git commit:   3a232c8&#10; Built:        Tue Feb 28 07:52:04 2017&#10; OS/Arch:      linux/amd64&#10; Experimental: true</span><br></pre></td></tr></table></figure>
+<p>使用 Docker 时，命令行相当于客户端，服务器端在安装完成后需要启动。</p>
+<p>第二步：到 <a href="https://hub.docker.com/" target="_blank" rel="external">Docker hub</a> 找到 TensorFlow Image ，以此为模板构建自己的容器。参考 <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/README.md" target="_blank" rel="external">Using TensorFlow via Docker</a>，用 <code>run</code> 命令加载 TensorFlow image：</p>
+<p><code>docker run -it -p 8888:8888 tensorflow/tensorflow</code></p>
+<p>开始下载后，发现速度非常慢：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/download_tensorflow_image.png" alt=""></p>
+<p>参考小伙伴的 <a href="http://www.jianshu.com/p/d896ec46db66" target="_blank" rel="external">Docker Hub Mirror加速Docker官方镜像下载</a> 笔记，使用镜像下载。在 Mac 上配置<a href="https://www.daocloud.io/mirror#accelerator-doc" target="_blank" rel="external">加速器</a>很简单，右键点击桌面顶栏的 docker 图标，选择 Preferences ，在 Advanced 标签下的 Registry mirrors 列表中加入镜像地址: <code>http://d43d99f5.m.daocloud.io Copy</code>，点击 Apply &amp; Restart 按钮使设置生效。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/docker_mirror.png" alt=""></p>
+<p>再次运行<code>docker run -it -p 8888:8888 tensorflow/tensorflow</code>，速度飞了起来~</p>
+<p>下载成功后，可以在浏览器看到 Jupyter Notebook 界面：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/docker-image-loaded.png" alt=""></p>
+<h3 id="Docker__u5E38_u7528_u547D_u4EE4"><a href="#Docker__u5E38_u7528_u547D_u4EE4" class="headerlink" title="Docker 常用命令"></a>Docker 常用命令</h3><ul>
+<li>关闭 docker：control+c</li>
+<li>查看运行状态：<code>docker ps</code> </li>
+<li>把本地目录映射到容器：<code>docker run -it -p 8888:8888 -v 原路径:目标路径 tensorflow/tensorflow</code></li>
+<li><p>查看历史容器：<code>docker ps -a</code> </p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kidults-NMB:my_venv kidult$ docker ps -a&#10;CONTAINER ID        IMAGE                   COMMAND             CREATED             STATUS                      PORTS                              NAMES&#10;f4eaa7828ac5        tensorflow/tensorflow   &#34;/run_jupyter.sh&#34;   7 minutes ago       Up About a minute           6006/tcp, 0.0.0.0:8888-&#62;8888/tcp   priceless_mccarthy&#10;b09563e0479b        tensorflow/tensorflow   &#34;/run_jupyter.sh&#34;   52 minutes ago      Exited (0) 7 minutes ago                                       silly_chandrasekhar&#10;d669d764de48        tensorflow/tensorflow   &#34;/run_jupyter.sh&#34;   About an hour ago   Exited (0) 52 minutes ago                                      relaxed_davinci</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>恢复历史容器：<code>docker start -i id</code> (ID只需要写前几位)</p>
+</li>
+<li>删除容器：<code>docker rm id</code> </li>
+<li>重命名容器：<code>docker rename CONTAINER ID XXX</code>(重命名为 dl)</li>
+<li>在容器里安装包：<code>!pip install xxx</code></li>
+</ul>
+<p>参考 <a href="https://github.com/junjielizero/DeepLearning101/blob/master/ch0/note/README.md" target="_blank" rel="external">junjielizero 同学的笔记</a>，优化了几个步骤：</p>
+<ol>
+<li><p>创建跟 github 同步的容器：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -p 8888:8888 -v ~/Workspace/DeepLearning101/:/Workspace/DeepLearning101 -w /Workspace/DeepLearning101 tensorflow/tensorflow</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>给 docker 启动命令起别名</p>
+<p> 把课程容器改名为<code>dl</code>，然后新建别名 <code>alias dsdl=&quot;docker start -i dl&quot;</code></p>
+</li>
+<li><p>在 iTerm2 运行 <code>dsdl</code>，按着 Command 点击链接 localhost:8888 即可打开项目</p>
+</li>
+</ol>
+<h2 id="u4E09_u3001_u8BCD_u9891_u7EDF_u8BA1_u4F5C_u4E1A"><a href="#u4E09_u3001_u8BCD_u9891_u7EDF_u8BA1_u4F5C_u4E1A" class="headerlink" title="三、词频统计作业"></a>三、词频统计作业</h2><blockquote>
+<p>统计 <a href="https://github.com/AIMinder/DeepLearning101/blob/master/ch0/code/happiness.txt" target="_blank" rel="external">happiness.txt</a> 的词频</p>
+</blockquote>
+<p>思路：读取文件 → 用 jieba 分词 → 清除非中文字符 → 用 counter 计数 → 用 sorted 排序</p>
+<ol>
+<li><p>读取文件</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">loadfile = open(<span class="string">'happiness.txt'</span>, <span class="string">'r'</span>)</span><br><span class="line">text = loadfile.read().decode(<span class="string">'utf-8'</span>)</span><br><span class="line">loadfile.close()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用 jieba 分词</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">words = jieba.cut(text)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>清除非中文字符</p>
+<blockquote>
+<p>re.match(pattern, string, flags=0)</p>
+<p>If zero or more characters at the beginning of string match the regular expression pattern, return a corresponding MatchObject instance. Return None if the string does not match the pattern.</p>
+</blockquote>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> word <span class="keyword">in</span> words:</span><br><span class="line">   	<span class="keyword">if</span> re.match(<span class="string">u'([\u4e00-\u9fff]+)'</span>, word):</span><br><span class="line">  		     segments.append(word)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用 Counter 计数，用 sorted 排序</p>
+<p> Counter 用法</p>
+<blockquote>
+<p>collections.Counter([iterable-or-mapping])</p>
+<p>A Counter is a dict subclass for counting hashable objects. It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values.</p>
+</blockquote>
+<p> sorted 用法</p>
+<blockquote>
+<p>sorted(iterable[, cmp[, key[, reverse]]])<br> Return a new sorted list from the items in iterable.</p>
+<p>cmp specifies a custom comparison function of two arguments which should return a negative, zero or positive number depending on whether the first argument is considered smaller than, equal to, or larger than the second argument: cmp=lambda x,y: cmp(x.lower(), y.lower()). The default value is None.</p>
+</blockquote>
+<p> lambda 表达式用法</p>
+<blockquote>
+<p>通常在需要一个函数但是又不想命名一个函数时使用，即匿名函数。比如实现一个可以求list中所有元素和的函数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from functools import reduce &#10;l = [1,2,3,5,-9,0,45,-99] &#10;reduce(lambda x,y:x+y,l)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p> 在这里，用 Counter 统计字典中词的出现次数，以 lambda 取字典中的 value 值（key 是 x[0]，value 就是 x[1]）用 sorted 方法按降序排序：</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sorted_list = sorted(Counter(dict).items(), key=<span class="keyword">lambda</span> x:x[<span class="number">1</span>], reverse=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>最后，完整的代码和结果如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> jieba <span class="comment"># for spliting</span></span><br><span class="line"><span class="keyword">import</span> re <span class="comment"># for regular expression</span></span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Counter <span class="comment"># for stat</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read file</span></span><br><span class="line">loadfile = open(<span class="string">'happiness.txt'</span>, <span class="string">'r'</span>)</span><br><span class="line">text = loadfile.read().decode(<span class="string">'utf-8'</span>)</span><br><span class="line">loadfile.close()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Split words into a dict</span></span><br><span class="line">dict = []</span><br><span class="line">words = jieba.cut(text)</span><br><span class="line"><span class="keyword">for</span> word <span class="keyword">in</span> words:</span><br><span class="line">    <span class="keyword">if</span> re.match(<span class="string">u'([\u4e00-\u9fff]+)'</span>, word):</span><br><span class="line">        dict.append(word)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sort the list</span></span><br><span class="line">sorted_list = sorted(Counter(dict).items(), key=<span class="keyword">lambda</span> x:x[<span class="number">1</span>], reverse=<span class="keyword">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Print result</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> sorted_list[:<span class="number">10</span>]:</span><br><span class="line">    <span class="keyword">print</span> <span class="string">" '%s' : %d "</span> % (i[<span class="number">0</span>], i[<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<pre><code>&apos;的&apos; : 22848 
+&apos;是&apos; : 4123 
+&apos;在&apos; : 3538 
+&apos;他&apos; : 2522 
+&apos;了&apos; : 2288 
+&apos;人&apos; : 2089 
+&apos;他们&apos; : 1811 
+&apos;和&apos; : 1746 
+&apos;有&apos; : 1478 
+&apos;我&apos; : 1433 
+</code></pre><h3 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h3><ul>
+<li><a href="https://github.com/dccrazyboy/pyeco/blob/master/pyeco.rst" target="_blank" rel="external">Python开发生态环境简介</a></li>
+<li><a href="https://www.tensorflow.org/install/install_mac" target="_blank" rel="external">Installing TensorFlow on Mac OS X </a></li>
+<li><a href="https://hub.docker.com/r/tensorflow/tensorflow/" target="_blank" rel="external">tensorflow/tensorflow - Docker Hub</a></li>
+<li><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/README.md" target="_blank" rel="external">Using TensorFlow via Docker</a></li>
+<li><a href="http://www.jianshu.com/p/d896ec46db66" target="_blank" rel="external">Docker学习笔记(2)–使用Docker Hub Mirror加速Docker官方镜像下载</a></li>
+<li><a href="https://www.daocloud.io/mirror#accelerator-doc" target="_blank" rel="external">配置 Docker 加速器</a></li>
+<li><a href="https://computers.tutsplus.com/tutorials/speed-up-your-terminal-workflow-with-command-aliases-and-profile--mac-30515" target="_blank" rel="external">Speed Up Your Terminal Workflow with Command Aliases and .profile</a></li>
+<li><a href="https://github.com/fxsjy/jieba" target="_blank" rel="external">fxsjy/jieba: 结巴中文分词</a></li>
+<li><a href="https://www.zhihu.com/question/20125256" target="_blank" rel="external">Lambda 表达式有何用处？如何使用？</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dl-week0-title.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="AI" scheme="http://uegeek.com/tags/AI/"/>
+    
+      <category term="Deep learning" scheme="http://uegeek.com/tags/Deep-learning/"/>
+    
+      <category term="Docker" scheme="http://uegeek.com/tags/Docker/"/>
+    
+      <category term="深度学习" scheme="http://uegeek.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[17°读书会笔记[4]- 为真实的世界设计]]></title>
+    <link href="http://uegeek.com/170225-design-for-real-world.html"/>
+    <id>http://uegeek.com/170225-design-for-real-world.html</id>
+    <published>2017-02-25T13:56:28.000Z</published>
+    <updated>2017-03-04T13:57:41.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>
+<a id="more"></a> 
+<blockquote>
+<p>如果所有的医生都抛弃了外科的普通实践，而专注于皮肤病、整形手术和美容，后果会怎样呢？设计职业的行为与此好有一比。</p>
+</blockquote>
+<p>17° 读书会第 4 本书：<a href="https://book.douban.com/subject/19912141/" target="_blank" rel="external">为真实的世界设计 - Victor Papanek</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s25807191.jpg" alt=""></p>
+<p>阅读时间：2017-02-16 ~ 2017-02-25 </p>
+<h2 id="u8BFB_u524D_u95EE_u9898"><a href="#u8BFB_u524D_u95EE_u9898" class="headerlink" title="读前问题"></a>读前问题</h2><ul>
+<li>作者为什么要写这样一本书？</li>
+<li>设计观是什么？</li>
+<li>什么是设计的社会和道德责任？</li>
+<li>设计师应该更多关注什么问题？</li>
+<li>想为真实世界设计，怎么做？</li>
+</ul>
+<h2 id="u8BFB_u540E_u601D_u8003"><a href="#u8BFB_u540E_u601D_u8003" class="headerlink" title="读后思考"></a>读后思考</h2><p>「为真实的世界设计」是帮助我塑造设计观的一本书。什么是设计观？我的理解是起码要回答四个基本问题：</p>
+<blockquote>
+<p>什么是设计？为什么设计？为谁设计？什么是好设计？</p>
+</blockquote>
+<p>17°读书会的前三本书都在探讨设计的定义：</p>
+<blockquote>
+<p>Design is a relationship between form and content. —— Paul Rand</p>
+<p>所谓设计，就是将人类生活或生存的意义，通过制作的过程予以解释。—— 原研哉</p>
+</blockquote>
+<p>而我最喜欢 Papanek 在这本书中的定义：</p>
+<blockquote>
+<p>设计是为了达成有意义的秩序而进行的有意识而又富于直觉的努力。</p>
+<p>有意识意味着理智、思考、研究和分析。设计最根本的工作是改造人类的环境和工具，大而言之，就是改造人类自身。一个设计师能够带给其作品最重要的能力就是辨别、剖析、定义和解决问题的能力。</p>
+</blockquote>
+<p><img src="https://s-media-cache-ak0.pinimg.com/564x/82/71/d2/8271d299d219d7a8b82810924a256cdc.jpg" alt=""></p>
+<p>「有意义的秩序」比 Paul Rand 的「关系」更进一步，阐明了什么是理想的关系；相比原研哉多少有点艺术化的定义，更聚焦于设计的本质。为了认识那些总是在变化而又高度复杂的存在，我们常常试着通过寻找其内在的秩序解决。</p>
+<p>除了设计的定义，这本书还讨论了为什么设计、为什么设计、什么是好的设计。书的主旨是，倡导设计师应该为世界上的大多数人设计，而不是为一个相对较小的国内市场设计。要为人的「需求」（needs）而不是「欲求」（wants）设计。作者立场鲜明地批判为了操纵视觉刺激而进行的设计。</p>
+<p>虽然这本书写于上世纪 70 年代，但是在今天看来，令作者痛心疾首的问题依然存在甚至愈演愈烈，这本书也值得我们一再回顾。</p>
+<h3 id="u4EC0_u4E48_u662F_u8BBE_u8BA1_u7684_u793E_u4F1A_u548C_u9053_u5FB7_u8D23_u4EFB_uFF1F"><a href="#u4EC0_u4E48_u662F_u8BBE_u8BA1_u7684_u793E_u4F1A_u548C_u9053_u5FB7_u8D23_u4EFB_uFF1F" class="headerlink" title="什么是设计的社会和道德责任？"></a>什么是设计的社会和道德责任？</h3><p>通过设计，人类可以塑造产品、环境甚至是人类自身，所以设计师必需了解自己的行为对未来所产生的后果。</p>
+<p>大多数工业设计师的哲学都建立在五个 Myth 的基础上：</p>
+<ul>
+<li>大批量生产</li>
+<li>废弃</li>
+<li>大众「需要」</li>
+<li>设计师没有支配权</li>
+<li>质量不再重要</li>
+</ul>
+<p>然而这些都是未经审视、作茧自缚的习得性现象。</p>
+<p>这个时代，我们面对的问题是什么？每天的活动是什么，跟什么互动最多，受什么困扰？如果设计还停留在古典主义或者包豪斯或者 xx，那么当下的问题如何解决？工业设计起源于商品的大批量生产，它过去的理念和方法未必适应于今天。</p>
+<p>为真实世界设计，也是为时代设计。</p>
+<p>年迈的老人需要什么样的设计？孕妇和胖纸需要怎样的设计？全世界那些觉得被社会疏远而倍感孤独的年轻人需要什么？公路运输又需要什么样的设计呢？治病救人的医疗器械需要什么的设计？从事高级研究项目的人需要什么样精巧的装置？</p>
+<p><img src="https://s-media-cache-ak0.pinimg.com/564x/46/de/86/46de86c068eb73bd34ab3e0156dfe7c3.jpg" alt=""></p>
+<p>如果我们意识到设计师有足够的能力（通过影响人类所有的工具和环境）在大规模生产的基础上进行谋杀，我们也就会明白设计师身上巨大的道德和社会责任。所有的设计都是某种教育，设计师试图教育他的制造商客户和市场上的人。</p>
+<blockquote>
+<p>一些新兴国家的设计师并没有像我们那样，把设计才能都用在为富人追求个人满足、为企业追求利润上，我们作为设计师的责任正在于此。</p>
+</blockquote>
+<h3 id="u8BBE_u8BA1_u5E08_u5E94_u8BE5_u66F4_u591A_u5173_u6CE8_u4EC0_u4E48_u95EE_u9898_uFF1F"><a href="#u8BBE_u8BA1_u5E08_u5E94_u8BE5_u66F4_u591A_u5173_u6CE8_u4EC0_u4E48_u95EE_u9898_uFF1F" class="headerlink" title="设计师应该更多关注什么问题？"></a>设计师应该更多关注什么问题？</h3><p>Papanek 从一个特别宏观的角度分析了人的根本「需求」：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170218-WX20170225-175747@2x.png" alt=""></p>
+<p>人类探究自身的终结，意味着人类实现了其存在的所有潜能，意味着他们征服了人生的「局限三角」：一边是人类必须生存于其中的外部环境；其次是人类拥有的素质，或其适应能力，也就是借以存活之物；其三就是死亡的事实。所有的努力和抗争都是要解除这几点对我们的包围。</p>
+<p>但是反观我们日常在做的设计，都在做些什么呢？</p>
+<p>我们已经生活在「用完即走」的即抛型消费文化中许多年，为了促使人们反复购买，消费品不再以历久弥新、设计精良为目标，反而越来越迎合更短的生命周期，设计出很多会迅速抛弃到垃圾箱里的用品。</p>
+<p>想要解决这个问题，需要设计师们在设计过程中反复考虑，物品的价格是否体现了其短命的特征，以及这些物品被丢弃后会发生什么？</p>
+<p>从另外一个角度去思考，废弃的一个源头是不是「私有」？如果用「租借」替代「拥有」，废弃将大大减少。（作者在上世纪七十年代就看到了「共享经济」的未来~）</p>
+<p>人的注意力都是极其有限的，设计师的注意力也是。设计师的工作一般已经被一种以市场为导向、为利润所驱使的体制规定好了。当我们为已经很富足的商品继续打磨它们宜人的外型、贴心的使用流程，也就少了一份精力去关注那些困扰更多人却没有人考虑、没有人动手去尝试的问题。很多问题虽然看起来很难，但真正的问题不是不可解决，而是没有人关注和开始思考。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/170218-WechatIMG136.jpeg" alt=""></p>
+<p>当然，并不是所有问题都能通过设计解决。很多问题会因为设计的干预而变得简单一些。对设计师来说，这意味着一种新的角色，他不再是企业掌握的工具，而成为使用者的支持者。</p>
+<p>作者提出一些被忽略的设计领域：</p>
+<ul>
+<li>为第三世界设计</li>
+<li>为智障者和残疾人设计教学和训练设备</li>
+<li>为药品、外科、牙科和医院设备设计</li>
+<li>为实验研究设计</li>
+<li>为维持边缘状况下的人类生活而进行系统的设计（南极/海底/小行星）</li>
+<li>为打破陈规而设计</li>
+</ul>
+<p>那么，想为真实世界设计，怎么做？</p>
+<p>面包和理想都很重要。</p>
+<p>设计师既不能完全被商业组织圈养，也不能幻想着改变世界。但是可以时常反思自己在设计中立场、思考的角度、解决的问题，是在为什么样的人群提供帮助。然后，抽出一定的时间和精力，动手去设计真实世界需要的解决方案。</p>
+<blockquote>
+<p>1970 年，我倡议开展一场新的斗争。就像雷蒙德·罗维和其他设计师在 20 世纪 20~30 年代拜访潜在客户，向他们展示工业设计师能做什么意义。年轻的设计师可以到发展中国家，到门诊部和医院去跟人们说他能做什么。拿出自己 1/10 的时间或者 1/10 的收入，去解决一些因贫穷所需要解决的问题，去帮助那 75% 的需要它的人，在这段时间里不为钱而设计。</p>
+</blockquote>
+<p>也许到医院去推销设计师能力不一定现实，但是每周用 1~2 个小时去思考和改进给老年人使用的工具，比如眼镜、厨具、药瓶，是我们可以开始尝试的事情。</p>
+<p>你还想到哪些为真实世界设计的倡议呢？欢迎留言~</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Design" scheme="http://uegeek.com/tags/Design/"/>
+    
+      <category term="Reading" scheme="http://uegeek.com/tags/Reading/"/>
+    
+      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
+    
+      <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[17°读书会笔记[3]-设计中的设计]]></title>
+    <link href="http://uegeek.com/170127-design-in-design.html"/>
+    <id>http://uegeek.com/170127-design-in-design.html</id>
+    <published>2017-01-27T13:54:06.000Z</published>
+    <updated>2017-03-04T13:55:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>
+<a id="more"></a> 
+<p>17° 读书会第 3 本书：<a href="https://book.douban.com/subject/4230237/" target="_blank" rel="external">设计中的设计 - 原研哉</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s2165932.jpg" alt=""></p>
+<p>阅读时间：2017-01-15 ~ 2017-01-26</p>
+<h3 id="u8BFB_u524D_u95EE_u9898"><a href="#u8BFB_u524D_u95EE_u9898" class="headerlink" title="读前问题"></a>读前问题</h3><ul>
+<li>原研哉对设计的理解是什么？跟 Paul Rand 的定义有什么异同？</li>
+<li>「信息建筑」的思维方式是什么？</li>
+<li>无印良品的设计哲学是什么？设计和生活的关系是什么？</li>
+<li>东西方对设计的理解有什么异同？日本的设计理念有什么独特之处？</li>
+<li>设计师如何培养感觉能力和洞察力？</li>
+</ul>
+<hr>
+<p><img src="http://s7.sinaimg.cn/middle/80f1b377ta5fd8854b6a6&amp;690" alt=""></p>
+<h3 id="u8BBE_u8BA1_u7684_u5143_u95EE_u9898"><a href="#u8BBE_u8BA1_u7684_u5143_u95EE_u9898" class="headerlink" title="设计的元问题"></a>设计的元问题</h3><p>原研哉是日本中生代国际级平面设计大师、日本设计中心的董事、无印良品艺术总监。作为从业二十多年并且具有世界影响力的设计师，原研哉一直在尝试回答「设计到底是什么」这个问题，又或者说：如何设计「设计」？</p>
+<p><img src="http://www.mottimes.com/image/character/4120150610181853.jpg" alt=""></p>
+<p>要回答「设计是什么」，可以先尝试从设计的起源和发展过程中寻找答案。</p>
+<p>设计产生于二十世纪初工业化这个大时代背景，并且很好地融入到商品生产过程中。为了补偿机器生产粗制滥造对传统美感的践踏、对生活品质的侵袭，人们呼唤适应时代的审美和物品。现代设计的概念由此诞生。包豪斯引发的设计运动，在工业化大生产的基础上，以实现功能为目的，努力寻求设计的造型，可以视为现代设计的发端。</p>
+<p><img src="http://99percentinvisible.org/app/uploads/2016/08/bauhaus-building-dessau.jpg" alt=""></p>
+<p>日本、美国、欧洲各自历史背景不同，经济发展轨迹不同，因此设计在社会中所产生的机能也很不一样。但是二十世纪后半叶，主要动力来源都是经济。设计在产业社会中不可或缺。当技术取得进步，为生产和交流提供出新的可能性时，设计总会担当起探索最佳答案的角色。</p>
+<p>谈及艺术与设计的区别，原研哉认为区分它们并没有多大的实际意义。艺术是艺术家在面对社会时的意志表达，其发生的根本立足点是作为个体的个人。而设计基本上没有自我表现的动机，其落脚点更侧重于社会。<strong>解决社会上多数人共同面临的问题，是设计的本质。</strong>在问题解决过程——也是设计过程中产生的那种人类能够共同感受到的价值观或精神，以及由此引发的感动，就是设计最有魅力的地方。</p>
+<p>在原研哉的设计世界中，设计跟生活紧密关联。他认为设计绝不仅仅是制造技术，<strong>设计是从生活中发现新问题的行为</strong>。创意并不是要让人惊异它崭新的形式和素材，而应该让人惊异于它居然来自看似平凡的日常生活。不断开发出这些创意才是真正的设计。</p>
+<blockquote>
+<p>所谓设计，就是将人类生活或生存的意义，通过制作的过程予以解释。</p>
+</blockquote>
+<p><img src="http://img.sj33.cn/uploads/allimg/200604/20060412013828524.jpg" alt=""></p>
+<p>这个定义回归到设计的意义，敦促设计师们去思考更为底层的问题，并且反应在设计的过程和结果之中。</p>
+<p>17°的第一本书是 Paul Rand 的「设计是什么」，他对设计展现出一种<strong>「思辨」式的思考</strong>：应该是什么，不应该是什么。而日本的设计大师们更多是在进行<strong>「探询和阐释」</strong>，比如原研哉用设计解释生活的意义，比如黑川雅之用设计「提问和告白」（见「设计修辞法」一书）。Paul Rand 认为设计的定义应该指向行动，设计是「处理关系」，原研哉则劝诫设计师们把设计指向生活意义的阐释，从看似平凡之处深思出新意，动态地去回答「人与生活」的关系的问题。</p>
+<p><img src="http://s2.sinaimg.cn/middle/600ffe4dh77a196c867a1&amp;690" alt=""></p>
+<p>反思我们的工作，大部分时间并没有真正在做「设计」。我们不愿花时间多想问题到底是什么，处理这个问题的意义何在，只是急匆匆地把常见的样式搬过来搬过去，拼凑出一个自欺自人的样子，然后继续心安理得地戴着「设计师」的帽子自鸣得意。</p>
+<h3 id="u7528_u6784_u5EFA_u4FE1_u606F_u5EFA_u7B51_u7684_u601D_u7EF4_u65B9_u5F0F_u505A_u8BBE_u8BA1"><a href="#u7528_u6784_u5EFA_u4FE1_u606F_u5EFA_u7B51_u7684_u601D_u7EF4_u65B9_u5F0F_u505A_u8BBE_u8BA1" class="headerlink" title="用构建信息建筑的思维方式做设计"></a>用构建信息建筑的思维方式做设计</h3><p>在设计实践中，原研哉试图建立一种信息建筑的思维方式，让平面设计不仅能作用于人的视觉，而且能够触动人的所有感官。</p>
+<p>设计传达并非仅发生在一个二维平面中，而应该像一个建筑，有不同的层次和功能区划，叠加在一起形成有机的空间，对人的感受和行为形成影响。设计师在设计中要组合各种信息，建筑一个信息集合体。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/design_in_design_IA.jpg" alt=""></p>
+<blockquote>
+<p>所谓印象，就是通过感觉器官接受外部刺激，并把这些刺激和人脑中原有的记忆组合、联系而生成的结果。<strong>设计行为，则是以这种组合而成的印象为前提，并且有意识地干预这一组合过程的行为</strong>。我们把这一过程称为「信息的构筑」—— 有目的、有计划地去干预印象的生成过程。</p>
+</blockquote>
+<p>日本文化向来对「感觉」异常重视。通过营造纯粹而富有仪式感的环境，释放感官的潜力，敏感地捕捉到纤细甚至稍纵即逝的感觉，从而完成与生命的对话。在文学修辞领域，佐藤信夫提出「修辞立其感」的理念，如何用文字唤起人们的「感觉」。在设计领域，原研哉则提到用综合的感官刺激构筑人们的「印象」。</p>
+<h3 id="u54C1_u724C_u7684_u7075_u9B42_u4ECE_u4F55_u800C_u6765_uFF1F"><a href="#u54C1_u724C_u7684_u7075_u9B42_u4ECE_u4F55_u800C_u6765_uFF1F" class="headerlink" title="品牌的灵魂从何而来？"></a>品牌的灵魂从何而来？</h3><p>原研哉是无印良品艺术总监，书中用了一个完整的章节介绍他对无印良品品牌的思考和实践。</p>
+<p>无印良品品牌创立于 1980 年，受极简主义审美意识的影响，商品造型简单、朴素且价格适中，给人感觉新鲜而且纯粹。它的商品群就是一个优雅而质朴的生活提案，提出了一种符合都市新生代人群的生活方式。</p>
+<p><img src="http://www.gzhphb.com/gpPic/600/0/mmbiz.qpic.cn/mmbiz_jpg/POulfdmHaaKUfKfbHTbSyqA1RpCNp0Ljur2U85qhO6GqUE79vx9z80HtFJBOicnDPF5LQa63w1yJvypKMpN9JXA/0?wx_fmt=jpeg" alt=""></p>
+<p>相比无印良品的品牌发展，我更好奇的是，一个品牌的灵魂如何形成？从原研哉对无印良品理念的阐释，我们可以看到，仅仅给出「极简」、「干净凝练」这种感官层面、结果层面的词汇，无法让物品拥有一种集体的灵魂。</p>
+<p>品牌感觉需要「生长」，而不是披上一件另外制作的外套。给出这个核心生长点也许就是最难的「设计」。一个有生命力的生长点，应该源自一个更为宏大的问题，是时代和环境对人的发问，这个问题埋藏在很多人的内心却不自知。对于一个生活物品的品牌而言，这个问题可能是「我对生活的向往是什么？」「这个时代需要什么样的生活态度？」「什么样的物品是人和生活环境互动时最好的载体？」</p>
+<blockquote>
+<p>无印良品的理想，是生产出来的商品一旦被消费者接触到，就能触发出一种新的生活意识，这种生活意识最终启发人们去追求更为完美的生活样式。</p>
+</blockquote>
+<p>在回答这些问题时，无印良品洞察到，大部分的商品都在引导消费者形成「这个就好」「非它不可」的观念，不断激发人们追寻一些其实并不必要的东西：更多、更物化、更有存在感、更狭隘的忠诚…… 所以无印良品提出要给消费者一种「这样就好」的满足感，看似弱化了自我意识，但也许更接近真正的自由。</p>
+<p><img src="https://s-media-cache-ak0.pinimg.com/originals/bb/58/29/bb58294d21dae457d04421bc92096c6f.jpg" alt=""></p>
+<p>原研哉对无印良品的概念提案是「虚无」（Emptiness）。但是虚无并不意味着空无一物，而是再提升了一个层次，用虚无的包容，呈现出一个看似空无一物，却能容纳百川的容器。商品不是生活的主角，它更加应该扮演承载人与生活意义的载体这种角色。</p>
+<p><img src="http://www.mottimes.com/image/mottimes_images/mottimes_images_1520150610180958.jpeg" alt=""></p>
+<h3 id="u5F62_u5F0F_u8FFD_u968F_u54F2_u5B66"><a href="#u5F62_u5F0F_u8FFD_u968F_u54F2_u5B66" class="headerlink" title="形式追随哲学"></a>形式追随哲学</h3><p>看「设计中的设计」，跟看「A Designer’s Art」的感受完全不一样。</p>
+<p>西方的设计，问题发端来自社会变革，人与时代的矛盾。设计更偏理性，规律和真理永远是题中之意。</p>
+<p>东方的设计师，则用非常纤细的感受，去捕捉那些隐藏生活日常背后的宏大问题。在日本文化中，相比自然，人是渺小的存在。问题发端来自人与环境的矛盾。因此更需要回归人的尺度，去不断思考人和周遭环境的关系，短暂而变幻莫测的人生以及它在生活中种种映射的关系。</p>
+<p>也许，从某种程度而言，形式追随的并不是内容，不是功能，而是对核心问题的探索和回答。有什么样的价值观，就会思考什么样的问题，得出什么样的哲学理念，最终反映在人的言行中，凝练在物品和容器的塑造中。</p>
+<h3 id="u8BBE_u8BA1_u5E08_u5982_u4F55_u57F9_u517B_u611F_u89C9_u80FD_u529B_u548C_u6D1E_u5BDF_u529B_uFF1F"><a href="#u8BBE_u8BA1_u5E08_u5982_u4F55_u57F9_u517B_u611F_u89C9_u80FD_u529B_u548C_u6D1E_u5BDF_u529B_uFF1F" class="headerlink" title="设计师如何培养感觉能力和洞察力？"></a>设计师如何培养感觉能力和洞察力？</h3><p>在原研哉看来，设计不是一种技能，而是捕捉事物本质的感觉能力和洞察力。</p>
+<blockquote>
+<p>给一件事物下定义或用文字记述下来并不见得就是对其有所了解。如果能够先将已知的事物<strong>陌生化</strong>，然后再尝试挑战其真实性，才有可能深入了解它。</p>
+<p>我们观看世界的视角与感受世界的方法可能有千万种，只要能够下意识地将这些角度和感受方法运用到日常生活中，就是设计。</p>
+</blockquote>
+<p>设计师的核心能力，首先不是视觉表达能力，而是<strong>发现事物间原本已经存在、但是被视而不见的「新」关系</strong>。</p>
+<p><img src="http://www.ida-a.org/ueditor/php/upload/image/20160526/1464234884430317.jpg" alt=""></p>
+<p>2000 年，原研哉策划了一个叫做「 Re-design 二十一世纪的日常用品再设计」的展览，收集了三十二名来自日本的设计者，对日常用品比如卫生纸或火柴进行重新设计的提案。原研哉希望通过这个展览，为大家展示设计的魅力，唤起对生活的重新思考。设计师们从生活日常的一个小小物品，回溯到原点，重新审视我们周围的设计，以最平易近人的方式来探索设计的本质。从无到有，当然是创造；但将已知的事物陌生化，更是一种创造。</p>
+<p>佐藤雅彦与出入境章</p>
+<p><img src="http://www.ndc.co.jp/hara/books/RE-DESIGN20-21.jpg" alt=""></p>
+<p>面出薰与火柴</p>
+<p><img src="http://www.dearid.com/pss/2012/12/15/b/6173241351877169.jpg" alt=""></p>
+<p>深泽直人与茶包</p>
+<p><img src="http://rethinked.org/wp-content/uploads/2012/10/Naoto-Fukasawa.jpeg" alt=""></p>
+<p>展览中的作品不但从创意上让人拍案叫绝，更令人感动的是，设计师把对平凡物品的细致入微的观察，转换为一次对人的需要的深刻体察，对人和环境、人和物品关系之间的一次重构。</p>
+<p>怎样培养这种敏锐的感觉和洞察？书里并没有太多着墨，不过原研哉已经阐述了很多他对设计的理解，我尝试归纳为以下几点：</p>
+<h4 id="u505A_u751F_u6D3B_u7684_u89C2_u5BDF_u8005_u548C_u63D0_u95EE_u8005"><a href="#u505A_u751F_u6D3B_u7684_u89C2_u5BDF_u8005_u548C_u63D0_u95EE_u8005" class="headerlink" title="做生活的观察者和提问者"></a>做生活的观察者和提问者</h4><p>人与生活的关系，几乎体现在每一个物品上。每时每刻我们都有数不清的机会去感受、发现和思考。开门时门把手的触感和握感，起居室透过窗帘形成的光影，饭碗捧在手里传递的温度，打扫卫生时抹布够不着角落的费力感觉…… 每当我们意识到应该重新思考人与物品的关系，能够问出一个又一个被当做理所当然的问题，也许就能更清楚了解自己向往一种怎样的生活状态。</p>
+<p><img src="https://cdn0.vox-cdn.com/thumbor/ASX_XWjzzXbVWg2bJbIGuV811Rc=/cdn0.vox-cdn.com/uploads/chorus_asset/file/6363053/muji_cleaning_system.0.gif" alt=""></p>
+<h4 id="u53D1_u73B0_u90A3_u4E9B_u89C6_u800C_u4E0D_u89C1_u7684_u8FDE_u63A5"><a href="#u53D1_u73B0_u90A3_u4E9B_u89C6_u800C_u4E0D_u89C1_u7684_u8FDE_u63A5" class="headerlink" title="发现那些视而不见的连接"></a>发现那些视而不见的连接</h4><p>宋代禅宗大师青原行思提出参禅的三重境界：</p>
+<blockquote>
+<p>参禅之初，看山是山，看水是水；禅有悟时，看山不是山，看水不是水；禅中彻悟，看山仍然山，看水仍然是水。</p>
+</blockquote>
+<p>设计的思考和实践，大概也是这么一个过程吧。在 Re-design 展中，很多日常物品在设计师的手中「互换灵魂」，带给我们新的感动。设计师如果能解析出不同物品的灵魂，并且富有诗意地促成它们的交错、融合，生活该是多有乐趣和惊喜的游乐园。</p>
+<p><img src="http://www.muji.com/xmas2009/shared/wall/toys.jpg" alt=""></p>
+<h4 id="u4ECE_u4FE1_u606F_u5E73_u9762_u5230_u4FE1_u606F_u5EFA_u7B51"><a href="#u4ECE_u4FE1_u606F_u5E73_u9762_u5230_u4FE1_u606F_u5EFA_u7B51" class="headerlink" title="从信息平面到信息建筑"></a>从信息平面到信息建筑</h4><p>如果设计总是局限在一个狭小平面，设计师的目光也会越来越狭窄。让我们回到「干预印象的生成过程」这一本质，将设计活动的隐喻变为「构筑信息和行为空间」，从人的「五感」出发，思考应该如何构建一个丰富的「建筑空间」，能够充分调动人的感官，实现信息和意义的传达。</p>
+<p><img src="http://www.holycool.net/wp-content/uploads/2013/03/MUJI-Bluetooth-Speaker-1024x1024.jpg" alt=""></p>
+<h3 id="u6700_u540E"><a href="#u6700_u540E" class="headerlink" title="最后"></a>最后</h3><p>17°读书会第一个月的主题是「重新思考设计」。读完东西方两位设计大师对设计的解读，深感自己对设计理解依然浅薄。</p>
+<blockquote>
+<p>设计是什么？</p>
+</blockquote>
+<p>路途遥远，希望大家带着这个问题一路前行。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Design" scheme="http://uegeek.com/tags/Design/"/>
+    
+      <category term="Reading" scheme="http://uegeek.com/tags/Reading/"/>
+    
+      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
+    
+      <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[17°读书会笔记[2]-A Designer's Art]]></title>
@@ -1673,14 +2037,13 @@
     <link href="http://uegeek.com/pm-ur-handbook3.html"/>
     <id>http://uegeek.com/pm-ur-handbook3.html</id>
     <published>2016-12-05T02:33:47.000Z</published>
-    <updated>2016-12-05T02:51:43.000Z</updated>
+    <updated>2017-02-08T06:18:25.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article3-titu.jpg" alt=""></p>
 <a id="more"></a> 
 <blockquote>
 <p>如果你根本不知道自己在讨论什么，那么对其强求精确是毫无意义的。 —— 冯·诺依曼</p>
 </blockquote>
 <p>我们用「产品」这个词来表示那些试图满足一系列复合期望的产物。复合意味着它们来自许多人。找到谁是这些「人」，是明确需求的一个主要部分。上一篇，00 分享了一些如何分类和描述用户的经验：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article2-qr.png" alt=""></p>
 <p>接下来，我们将要走进需求的沼泽，深入产品开发险恶的腹地，看看需求这个妖孽如何把众多产品经理拖入泥潭之中。</p>
 <p>需求很关键，可现实往往是，人们不知道自己想要什么；而且，产品经理不知道人们想要什么；雪上加霜的是，产品经理不知道人们不知道他们想要什么……产品开发再高效也好，都是一种浪费。认真探索需求，我们才不会做出然并卵的产品。</p>
 <p>关于万恶的需求，有两个最最关键的问题：</p>
@@ -2183,318 +2546,6 @@
       <category term="用户研究" scheme="http://uegeek.com/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/"/>
     
       <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
-    
-      <category term="叽歪" scheme="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[心智乐高 05 - 科学星球的入场券：双盲实验]]></title>
-    <link href="http://uegeek.com/mindlego5-doubleblind.html"/>
-    <id>http://uegeek.com/mindlego5-doubleblind.html</id>
-    <published>2016-11-16T13:26:11.000Z</published>
-    <updated>2016-11-16T13:29:42.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/doubleblind-scientists.jpg" alt=""></p>
-<a id="more"></a> 
-<p>从前，有一个星球。最初，它荒芜人烟，满是牛鬼蛇神。不知道从哪一天开始，星球上出现一些极具好奇心又不怕死的人。因为好奇，因为想解答心中那些挥之不去的疑问，他们开始冒天下之大不韪——撕破谎言，搞破坏，提出离经叛道的想法，自己试验和批评这些想法……渐渐地，这群好奇宝宝越来越多，赶跑了一批牛鬼蛇神，把星球建设地强大而富足。这个星球，就是科学星球。</p>
-<p>因为科学星球的繁盛，吸引了不少移民。可是很多人都被拒绝了。也有一些人伪装成星球的居民混进去，但是很快就会暴露身份。黑市中开始流传各种消息，出售可以蒙混过关的假证件。其实，在信息公开透明的科学星球，有厚厚的一本移民指南，但是大家都看不懂。在外来移民的呼吁之下，星球发行了一批入场券，帮助大家准备移居。现在，我们来介绍其中备受欢迎的一张：双盲实验。</p>
-<h2 id="u4EC0_u4E48_u662F_u53CC_u76F2_u5B9E_u9A8C"><a href="#u4EC0_u4E48_u662F_u53CC_u76F2_u5B9E_u9A8C" class="headerlink" title="什么是双盲实验"></a>什么是双盲实验</h2><blockquote>
-<p>A blind — or blinded — experiment is an experiment in which information about the test is masked (kept) from the participant, to reduce or eliminate bias, until after a trial outcome is known. If both tester and subject are blinded, the trial is called a double-blind experiment.<br>– <a href="https://en.wikipedia.org/wiki/Blind_experiment" target="_blank" rel="external">Blind experiment - Wikipedia</a></p>
-<p>双盲是科学方法的一种，目的是避免研究结果受安慰剂效应或观察者偏向所影响。<a href="https://zh.wikipedia.org/wiki/%E9%9B%99%E7%9B%B2" target="_blank" rel="external">双盲 - 维基百科</a></p>
-</blockquote>
-<p>在科学实验中，设计良好的实验一般会有两个相互比较的组别：</p>
-<ul>
-<li>试验组：接受某种待验证的试验（如某种药物治疗）方案</li>
-<li>对照组：除了待验证的变量以外，其他变量都与实验组相同</li>
-</ul>
-<p>双盲试验中：</p>
-<ul>
-<li>被试者不知道自己属于实验组还是对照组</li>
-<li>试验者不知道哪一组是试验组，哪一组是对照组</li>
-</ul>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week0.assignment3.jpeg" alt=""></p>
-<h2 id="u53CC_u76F2_u5B9E_u9A8C_u4E3A_u4EC0_u4E48_u91CD_u8981"><a href="#u53CC_u76F2_u5B9E_u9A8C_u4E3A_u4EC0_u4E48_u91CD_u8981" class="headerlink" title="双盲实验为什么重要"></a>双盲实验为什么重要</h2><p>双盲实验的设计，目的是尽量规避人的认知偏差。即便在最严谨的科学实验中，研究结果常常会受到诸如<a href="https://zh.wikipedia.org/wiki/%E5%AE%89%E6%85%B0%E5%8A%91%E6%95%88%E6%87%89" target="_blank" rel="external">安慰剂效应</a>或<a href="https://zh.wikipedia.org/wiki/%E8%A7%80%E5%AF%9F%E8%80%85%E6%9C%9F%E6%9C%9B%E6%95%88%E6%87%89" target="_blank" rel="external">观察者期望效应</a>的影响。</p>
-<blockquote>
-<p>安慰剂效应（placebo effect），指病人虽然获得无效的治疗，但却“预料”或“相信”治疗有效，而让病患症状得到舒缓的现象。安慰剂效应于1955年由 Henry K. Beecher 提出，亦理解为“非特定效应”（non-specific effects）或受试者期望效应（subject-expectancy effect）。</p>
-<p>观察者期望效应是认知偏差的一种。在科学实验中，由于观察者预期某些测试结果，于是无意识地以某种形式操纵了实验步骤，或错误解释实验结果以达至他们希望得到的结论。观察者期望效应能严重歪曲实验结果。</p>
-</blockquote>
-<p>如果科学实验一直受认知偏差的影响，无法突破原有的认知边界，实验结果就无法起到拓展知识、变革现状的作用。从这个意义上讲，双盲实验是保证科学实验结果有效性的一套机制，也是激励科学实验自我优化和革新的一种推动剂。</p>
-<p>Edge.org 网站每年都会提出一个 Big question，激发知识界的集体思维碰撞。 <a href="https://www.edge.org/response-detail/11969" target="_blank" rel="external">2011 的年度问题是</a> ：</p>
-<blockquote>
-<p>What Scientific Concept Would Improve Everybody’s Ccgnitive Toolkit?</p>
-</blockquote>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/51jEIzplVGL._SX330_BO1,204,203,200_.jpg" alt=""></p>
-<p>进化生物学家，科普作家，「自私的基因」一书作者道金斯的回答是：双盲实验。他认为，如果民众缺乏独立思考的训练，容易被个人观点、偏见、奇闻异事所影响，而不是去寻找确凿的证据。如果掌握双盲实验的原理，即便不去实施真正的双盲实验，也能在以下方面提高个人的独立思考能力和判断：</p>
-<ul>
-<li>我们不会期望从奇闻异事中得出严肃结论</li>
-<li>我们将学会评估，一个重要的结论有多大可能性只是产生于偶然</li>
-<li>我们会知道消除主观偏见有多么困难，而且它并不意味着不诚实或任何形式的静默。它让人们不再迷信权威和个人</li>
-<li>我们将学会看穿<a href="https://zh.wikipedia.org/wiki/%E9%A1%BA%E5%8A%BF%E7%96%97%E6%B3%95" target="_blank" rel="external">顺势疗法</a>和其他江湖郎中的把戏</li>
-<li>我们将更全面地学习批判性思维习惯，这不仅将改善我们的认知工具包，而且可能拯救世界</li>
-</ul>
-<h2 id="u5982_u4F55_u7528_u53CC_u76F2_u5B9E_u9A8C_u6539_u8FDB_u601D_u7EF4_u4E60_u60EF_uFF1F"><a href="#u5982_u4F55_u7528_u53CC_u76F2_u5B9E_u9A8C_u6539_u8FDB_u601D_u7EF4_u4E60_u60EF_uFF1F" class="headerlink" title="如何用双盲实验改进思维习惯？"></a>如何用双盲实验改进思维习惯？</h2><p>阳志平老师在 「好思想，坏思想」系列中一再强调，好思想的首要判断标准是<strong>证据</strong>。最有力的证据来自设计良好的实验，而双盲实验就是最好的实验设计（之一）。</p>
-<p>在区分「事实」和「观点」时，只要拿出双盲实验的标准一对照，就能发现绝大部分的「结论」、「研究」其实经不起推敲，很难判断研究者的认知偏差是否影响了研究结果。比如当看到一个数据时</p>
-<blockquote>
-<p>保健品 X 令 45% 的使用者改善了睡眠质量</p>
-</blockquote>
-<p>我们可以提出「数据五问」：</p>
-<ul>
-<li>一问关键概念：使用了哪些关键概念，如「使用者」，「改善」，「睡眠质量」，都是如何定义的？</li>
-<li>二问关键指标：如何定义和衡量，如「改善睡眠质量」？</li>
-<li>三问效用范围：<code>时-空-人</code>三个维度 —— 多长时间范围内有效，是否受地域限制，适用于哪些人群？</li>
-<li>四问数据来源：是一手实验所得，还是二手数据，甚至出处不明？</li>
-<li>五问实验过程：如何设计的？如何取样的？是否有对照组？是否双盲？结果是否进行了统计检验？是否有类似实验佐证了结果？</li>
-</ul>
-<h3 id="u8865_u5145_u6750_u6599_uFF1ASimposon_u2019s_Paradox"><a href="#u8865_u5145_u6750_u6599_uFF1ASimposon_u2019s_Paradox" class="headerlink" title="补充材料：Simposon’s Paradox"></a>补充材料：Simposon’s Paradox</h3><p>分组和取样是双盲实验中关键的步骤。但是在这些步骤中很容易产生偏差，Simposon’s Paradox 就是其中的一种。</p>
-<blockquote>
-<p>Simpson’s paradox, or the Yule–Simpson effect, is a paradox in probability and statistics, in which a trend appears in different groups of data but disappears or reverses when these groups are combined. It is sometimes given the descriptive title reversal paradox or amalgamation paradox. ——<a href="https://en.wikipedia.org/wiki/Simpson%27s_paradox" target="_blank" rel="external">Simpson’s paradox - Wikipedia</a></p>
-<p>当人们尝试探究两种变量是否具有相关性的时候，会分别对之进行分组研究。然而，在分组比较中都占优势的一方，在总评中有时反而是失势的一方。——<a href="https://zh.wikipedia.org/wiki/%E8%BE%9B%E6%99%AE%E6%A3%AE%E6%82%96%E8%AE%BA" target="_blank" rel="external">辛普森悖论 - 维基百科，自由的百科全书</a></p>
-</blockquote>
-<p>比如公司 A 和公司 B 都生产同一类药物。公司 A 的药物，在两组测试中分别得到 70% 和 40% 的有效性，公司 B 的药物则是 80% 和 50%。乍看之下，公司 B 在两轮中都胜出，但是实际上，公司 A 的有效总人数更多。<br><img src="http://7xjpra.com1.z0.glb.clouddn.com/week0.assignment5.jpeg" alt=""></p>
-<p>为了避免辛普森悖论的出现，就需要斟酌<strong>各分组的权重</strong>，并乘以一定的系数去消除以分组数据基数差异而造成的影响。</p>
-<p>下面两张图片可以更直观地看到分组取样和整体取样对结果的影响：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week0.assignment6.jpeg" alt=""></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week0.assignment7.jpeg" alt=""></p>
-<h3 id="u53C2_u8003_u8D44_u6599"><a href="#u53C2_u8003_u8D44_u6599" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
-<li><a href="https://en.wikipedia.org/wiki/Blind_experiment" target="_blank" rel="external">Blind experiment - Wikipedia</a></li>
-<li><a href="https://www.edge.org/response-detail/11969" target="_blank" rel="external">Edge.org-2011 : WHAT SCIENTIFIC CONCEPT WOULD IMPROVE EVERYBODY’S COGNITIVE TOOLKIT?</a></li>
-<li><a href="https://www.youtube.com/watch?v=GMqrOdCx4Yg" target="_blank" rel="external">Placebo Effect, Control Groups, and the Double Blind Experiment (3.2) - YouTube</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E5%AE%89%E6%85%B0%E5%8A%91%E6%95%88%E6%87%89" target="_blank" rel="external">安慰剂效应</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E8%A7%80%E5%AF%9F%E8%80%85%E6%9C%9F%E6%9C%9B%E6%95%88%E6%87%89" target="_blank" rel="external">观察者期望效应</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E9%A1%BA%E5%8A%BF%E7%96%97%E6%B3%95" target="_blank" rel="external">顺势疗法</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Simpson%27s_paradox" target="_blank" rel="external">Simpson’s paradox - Wikipedia</a></li>
-<li><a href="https://www.youtube.com/watch?v=hURWC05Iu74" target="_blank" rel="external">Simpson’s Paradox - YouTube</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/doubleblind-scientists.jpg" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="HackYourself" scheme="http://uegeek.com/tags/HackYourself/"/>
-    
-      <category term="心智" scheme="http://uegeek.com/tags/%E5%BF%83%E6%99%BA/"/>
-    
-      <category term="科学" scheme="http://uegeek.com/tags/%E7%A7%91%E5%AD%A6/"/>
-    
-      <category term="读书" scheme="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[心智乐高04 很傻很天真的贝叶斯定理]]></title>
-    <link href="http://uegeek.com/mindlego4-bayes.html"/>
-    <id>http://uegeek.com/mindlego4-bayes.html</id>
-    <published>2016-10-30T13:25:57.000Z</published>
-    <updated>2016-11-16T13:36:51.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Bayes&#39;_Theorem_MMB_01.jpg" alt=""></p>
-<a id="more"></a> 
-<p>感谢大家对标题党 00 的宽容，这篇文章的完整标题应该是：很傻很天真 - 但是拥有迷妹万千 - 不黄很暴力 - 十分钟提高智商的贝叶斯定理。</p>
-<p>上一篇心智乐高探讨了基本比率谬误（base rate fallacy），有盆友在留言中提到了贝叶斯。懵懂的 00 一时回答不出来，于是心智乐高第四篇，我们严肃正经地来八卦一下特别重要的贝叶斯定理。</p>
-<p>等等，为什么我们要去了解一个数学定理……还是统计学定理？</p>
-<p>在你点返回、骂辣鸡、愤而取关之前，再看几条对贝叶斯的安利：</p>
-<ul>
-<li>一个看上去很傻很天真的定理，却在学术和生活中意外的很强大很好用</li>
-<li>你看不见它，它却无处不在，几乎所有需要作出概率预测的地方，它都阴魂不散</li>
-<li>是机器学习的核心方法之一</li>
-<li>关键时刻可以令你智商上线，用来保命，或者挣得巨额财富</li>
-</ul>
-<p>（啊，简直 POI 根妹即视感！)</p>
-<p>贝叶斯在生活中真的有用嘛？别着急，00 先代表广大宅男/宅女提一个问题：</p>
-<blockquote>
-<p>我发给女神/男神的微信，只有一半会收到回复，她/他是喜欢我还是讨厌我？我们有发展的可能吗……</p>
-</blockquote>
-<p>然后我们来慢慢解答。</p>
-<h2 id="u8D1D_u53F6_u65AF_u5B9A_u7406_u7684_u7531_u6765"><a href="#u8D1D_u53F6_u65AF_u5B9A_u7406_u7684_u7531_u6765" class="headerlink" title="贝叶斯定理的由来"></a>贝叶斯定理的由来</h2><p>话说 18 世纪 70 年代，有个一个牧师叫 Thomas Bayes，为解决一个「逆向概率」问题写了一篇文章。尝试解答在没有太多可靠证据的情况下，怎样做出更符合数学逻辑的推测。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/TomasBayes.jpeg" alt=""></p>
-<p>所谓「逆向概率」是相对「正向概率」而言。正向概率的问题很容易理解，如“假设袋子里面有 N 个白球，M 个黑球，你伸手进去摸一把，摸出黑球的概率是多大”。但是实际场景中，这个问题往往是反过来的：“如果事先并不知道袋子里面黑白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色，我们可以对袋子里面黑白球的比例作出什么样的推测”。</p>
-<p>贝叶斯推断与其他统计学推断方法截然不同。它建立在主观判断的基础上，也就是说，你可以不需要客观证据，先估计一个值，然后根据实际结果不断修正。</p>
-<p>贝叶斯生前并没有发表他的文章，他的“朋友” Richard Price 在他死后去他的住处揩油，发现了这篇文章，并发表出来。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WechatIMG2.jpeg" alt=""></p>
-<p>1812 年，法国人 Pierre Simona 将贝叶斯的理论进一步发展为条件概率，帮助人们在概率相关的决策过程中，通过新获得的观察结果来更正对概率的判断。</p>
-<p>贝叶斯定理（Bayes’ theorem）告知我们如何利用新证据修改已有的看法。在事件 B 出现的前提下，事件 A 出现的概率，等于 A 和 B 都出现的概率，除以 B 出现的概率。用公式表示就是：</p>
-<p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/71d8066a406fb22ce08eec25dd04870779345cd3" alt=""></p>
-<p>几个相关概念：</p>
-<ul>
-<li><a href="https://zh.wikipedia.org/wiki/%E5%85%88%E9%AA%8C%E6%A6%82%E7%8E%87" target="_blank" rel="external">先验概率</a>：在考虑观测数据前，能表达不确定量 p 的概率分布</li>
-<li><a href="https://zh.wikipedia.org/wiki/%E5%90%8E%E9%AA%8C%E6%A6%82%E7%8E%87" target="_blank" rel="external">后验概率</a>：在考虑和给出相关证据或数据后所得到的条件概率</li>
-<li><a href="https://zh.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87" target="_blank" rel="external">条件概率</a>：事件 A 在另外一个事件 B 已经发生条件下的发生概率，表示为 P(A|B)</li>
-<li><a href="https://zh.wikipedia.org/wiki/%E4%BC%BC%E7%84%B6%E5%87%BD%E6%95%B0" target="_blank" rel="external">可能性函数/似然函数</a>：一种关于统计模型中参数的函数，用于在已知某些观测所得到的结果时，对有关事物的性质的参数进行估计</li>
-</ul>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayesformula-r.png" alt=""></p>
-<p>这就是贝叶斯定理的含义：我们先预估一个「先验概率」，然后加入实验结果，看这个实验到底是增强还是削弱了「先验概率」，由此得到更接近事实的「后验概率」。</p>
-<h2 id="u300CAM_I_SICK_uFF1F_u300D_u8D1D_u53F6_u65AF_u5B9A_u7406_u7684_u7ECF_u5178_u7528_u6CD5"><a href="#u300CAM_I_SICK_uFF1F_u300D_u8D1D_u53F6_u65AF_u5B9A_u7406_u7684_u7ECF_u5178_u7528_u6CD5" class="headerlink" title="「AM I SICK？」贝叶斯定理的经典用法"></a>「AM I SICK？」贝叶斯定理的经典用法</h2><p>假设，有一种叫做「叶贝死」的病，人群中得病概率是万分之一，即 0.0001。然后，有一种测试可以检测你是否患有「叶贝死」病，准确率为 99.9%。你做了一次测试，结果被告知得病了！</p>
-<p>然后你的世界坍塌了，把这个不幸的消息告诉家人，开始准备遗嘱，甚至皈依了一个莫名其妙的宗教，好走完最后的日子……</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayesexample.jpeg" alt=""></p>
-<p>这个时候，你的智商不知道被谁通知上线了，让我们再找回检测报告，看看遗漏了些什么。</p>
-<h3 id="u9003_u51FA_u751F_u5929_u4E4B_u56FE_u89E3_u7248"><a href="#u9003_u51FA_u751F_u5929_u4E4B_u56FE_u89E3_u7248" class="headerlink" title="逃出生天之图解版"></a>逃出生天之图解版</h3><p>我们知道，每当 1 万人中会有 1 个人患病，这也意味着另外 9999 个人没病。</p>
-<p>再来看看检测的准确率。如果真正患病的人去做检查，那么 99.9% 的概率会被诊断出来。如果实际上没有患病的人，会有 0.1% 的概率会被误诊断。于是这 1 万人中，9989 人相安无事，总共有 11 人被诊断为「叶贝死」，但只有 1 人真正患病。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayesexample-1.png" alt=""></p>
-<p>所以，你虽然被告知患病，但实际上真正患病的概率是：1/11 ，约 9%。</p>
-<h3 id="u9003_u51FA_u751F_u5929_u4E4B_u516C_u5F0F_u7248"><a href="#u9003_u51FA_u751F_u5929_u4E4B_u516C_u5F0F_u7248" class="headerlink" title="逃出生天之公式版"></a>逃出生天之公式版</h3><p>把题目正经描述一下：</p>
-<blockquote>
-<p>已知「叶贝死」的发病率是0.0001，即10000人中会有1个人得病。现有一种测试可以检验患者是否得病，的准确率是0.999，即在患者确实得病的情况下，它有 99.9% 的可能呈现阳性。它的误报率是 0.1%，即在没有得病的情况下，它有 0.1% 的可能呈现阳性。 现在张三的检验结果为阳性，请问他确实得病的可能性有多大？</p>
-</blockquote>
-<p>用贝叶斯定理进行计算，步骤是这样的：</p>
-<p>令 <code>S</code> 表示患病事件，<code>N</code>表示未患病事件，<code>Y</code>表示检验结果为阳性事件。</p>
-<p>我们想要计算的是，在检验结果为阳性的条件下，张三确实「叶贝死」的概率： </p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-fomula2.jpeg" alt=""></p>
-<p>从题目中找到公式右边的三个变量：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-table1.jpeg" alt=""></p>
-<p>将表格中的值代入上面公式可得</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-fomula3.jpeg" alt=""></p>
-<p>结果为：9%</p>
-<h2 id="u5973/_u7537_u795E_u5230_u5E95_u7231_u4E0D_u7231_u6211"><a href="#u5973/_u7537_u795E_u5230_u5E95_u7231_u4E0D_u7231_u6211" class="headerlink" title="女/男神到底爱不爱我"></a>女/男神到底爱不爱我</h2><p>正襟危坐这么久，终于可以回到正题胡说八道了。</p>
-<blockquote>
-<p>我发给女神/男神的微信，只有一半会收到回复，她/他是喜欢我还是讨厌我？我们有发展的可能吗……</p>
-</blockquote>
-<p>世界上不知道有多少痴汉，每天在痴痴地等着某个微信好友头像出现新消息提示。每发出一条消息，心中就有一群问题如羊驼般呼啸而过：ta 在忙吗？会不会看不到我的消息？一分钟过去了他还是没有回我的消息，我要不要再等等？刚才那条消息会不会太无聊了啊我自己可能都懒得回我怎么这么蠢啊？不过说不定 ta 今天心情好或者正在无聊地等车呢？不知道其他人给他发消息他会秒回呢还是要等高冷的一小时？哎呀如果 ta 回复了我该说些什么呢？啊啊啊什么时候可以见到 ta？我们都认识这么久了 ta 对我到底有没有意思呢？…………</p>
-<p>生活在这些问题中，实在是太可怕了。</p>
-<p>自黑党的痴汉们，做痴汉也要做得有极客范。用贝叶斯定理来帮助我们 YY 吧！把羊驼们哄回羊圈，沐浴斋戒，摊开纸笔，写下通往未知和答案的神奇公式：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-fomula6.jpeg" alt=""></p>
-<ul>
-<li>P(喜欢一个人|回微信)：回复微信的情况下喜欢一个人的概率</li>
-<li>P(回微信|喜欢一个人)：喜欢一个人时会回复微信的概率</li>
-<li>P(喜欢一个人)：女/男神喜欢一个人的概率</li>
-<li>P(回微信)：女/男神正常情况下回复微信的概率</li>
-</ul>
-<p>假设你通过八卦、潜伏、收买人心、纯粹臆想等花式调研，获得了以下情报：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-table2.jpeg" alt=""></p>
-<p>那么计算的结果是：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-fomula4.jpeg" alt=""></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes-fomula5.jpeg" alt=""></p>
-<p>结论1：女神真难追啊！</p>
-<p>结论2：少年你想多了，这概率比 P2P 的投资回报率还低，还是乖乖回家提升自己吧！</p>
-<p>结论3：愚蠢的人类，用微信就想推断女/男神的心？有本事约去旅行看看？</p>
-<blockquote>
-<p>注：这部分纯属胡说八道，请勿作为指引！如路遇女/男神，还请勇敢壁咚</p>
-</blockquote>
-<h2 id="u4F60_u8D1D_u53F6_u65AF_u4E86_u5417_uFF1F"><a href="#u4F60_u8D1D_u53F6_u65AF_u4E86_u5417_uFF1F" class="headerlink" title="你贝叶斯了吗？"></a>你贝叶斯了吗？</h2><p>贝叶斯定理，其实体现了一种概率观，它利用过往信息来逐渐逼近事件发生概率，这是一种启发式的统计学思考方式。</p>
-<p>具有贝叶斯思维的人，并不试图刻画事件本身，甚至也不去假设那类事件是随机的，或者有一个逼近极限的总体概率。而只是从观察者信息补全的角度出发，先从以往经验中总结一个大致结果，再基于这个结果判断下次出现这类事件的概率，每次的结果会不断修正之前的判断，如此往复。这个过程反应的是我们知识状态的情况，而并非试图描述客观世界中事件发生的概率。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/bayes_in_the_head.jpeg" alt=""></p>
-<p>人类基因里可以给予我们的直觉只能指导我们如何觅食，躲避天敌，在危险的世界活下来。而一旦涉及到科学范畴，那些原始的直觉就不起作用了。想用更理性的思维分析周遭，就要摒弃固有的直觉，不断通过理解与学习建立新的直觉。</p>
-<p>今天，你贝叶斯了吗？</p>
-<h2 id="u53C2_u8003_u8D44_u6599"><a href="#u53C2_u8003_u8D44_u6599" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
-<li><a href="https://en.wikipedia.org/wiki/Bayes%27_theorem" target="_blank" rel="external">Bayes’ theorem - Wikipedia</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86" target="_blank" rel="external">贝叶斯定理 - 维基百科，自由的百科全书</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E5%85%88%E9%AA%8C%E6%A6%82%E7%8E%87" target="_blank" rel="external">先验概率 - 维基百科，自由的百科全书</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E5%90%8E%E9%AA%8C%E6%A6%82%E7%8E%87" target="_blank" rel="external">后验概率 - 维基百科，自由的百科全书</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87" target="_blank" rel="external">条件概率 - 维基百科，自由的百科全书</a></li>
-<li><a href="http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/" target="_blank" rel="external">数学之美番外篇：平凡而又神奇的贝叶斯方法</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_one.html" target="_blank" rel="external">贝叶斯推断及其互联网应用（一）：定理简介 - 阮一峰的网络日志</a></li>
-<li><a href="https://www.youtube.com/watch?v=BcvLAw-JRss" target="_blank" rel="external">Everything You Ever Wanted to Know About Bayes’ Theorem But Were Afraid To Ask. - YouTube</a></li>
-<li><a href="http://www.bilibili.com/video/av4412031/" target="_blank" rel="external">医生说你得病、你就真的得病了吗？</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Bayes&#39;_Theorem_MMB_01.jpg" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="HackYourself" scheme="http://uegeek.com/tags/HackYourself/"/>
-    
-      <category term="心智" scheme="http://uegeek.com/tags/%E5%BF%83%E6%99%BA/"/>
-    
-      <category term="统计" scheme="http://uegeek.com/tags/%E7%BB%9F%E8%AE%A1/"/>
-    
-      <category term="读书" scheme="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[拖延这件小事，讨论一次就够了]]></title>
-    <link href="http://uegeek.com/woop-for-procrastination.html"/>
-    <id>http://uegeek.com/woop-for-procrastination.html</id>
-    <published>2016-10-22T00:43:58.000Z</published>
-    <updated>2016-10-24T00:58:24.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dribbble-maybe-tomorrow.jpg" alt=""></p>
-<a id="more"></a> 
-<p>最近，你有没有尝试第 N 次发起一个计划？ 跑步、健身、学英语、画画、看慕课、冥想 ……</p>
-<p>然后，妈妈说</p>
-<blockquote>
-<p>你就是懒，每一次都是雷声大雨点小</p>
-</blockquote>
-<p>韩岳父说</p>
-<blockquote>
-<p>听过很多道理，仍然过不好这一生</p>
-</blockquote>
-<p>心理学家说</p>
-<blockquote>
-<p>当你写下「我要减肥十斤」计划瞬间时，大脑会自动脑补，既然你没有指定谁在什么时候以什么方式完成减肥任务，那么大脑干脆以为已经完成了。</p>
-</blockquote>
-<p>今天，拖延症已经促成了一个产业的诞生。</p>
-<p>每个人忙不迭往自己身上贴“拖延症”的标签，举起堂吉诃德的长矛，重复着西西佛斯式的路径：做，还是不做？</p>
-<p>GTD、番茄钟、21 天习惯养成、人生整理法、清单法、收纳法…… 为了做到“做”这件事，我们把事情搞得多么复杂！不知不觉成了自己的“事儿妈”，追逐着五花八门的工具，在“如何管理自己”上面，消耗原本就稀缺的认知资源和心力，真正花在要做的事情上面的时间和精力反而变少，离“做到”渐行渐远。</p>
-<p>到底怎么了？</p>
-<h2 id="u62D6_u5EF6_u662F_u600E_u4E48_u56DE_u4E8B_uFF1F"><a href="#u62D6_u5EF6_u662F_u600E_u4E48_u56DE_u4E8B_uFF1F" class="headerlink" title="拖延是怎么回事？"></a>拖延是怎么回事？</h2><p>理解拖延，真的不需要从理论层面抽丝剥茧。回到客观的行为层面，拖延就是 6 个字：</p>
-<blockquote>
-<p>积压待办事项</p>
-</blockquote>
-<p>开始的开始，出现了一件需要做的事情，于是我们把它记下来，加入到待办事项中。完成这件重要的事情后，又来了一件事，把它加入到队列中：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Procrastination-ideal.png" alt=""></p>
-<p>不过，现实往往是，一不留神就往队列中塞满了事项：看朋友圈里推荐的视频，去淘宝买个东西，给朋友打个电话，换个床单，浇浇花……新事项添加的速度，远远大于事项完成的速度，更要命的是，重要的事情并没有开始去做：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/Procrastination-reality.png" alt=""></p>
-<p>宽进严出，事项就这么积压了。</p>
-<p>还记得豆瓣的“想读-在读-已读”吗？想读一本书的成本，只需要用半分钟搜索出来并标记。已读的成本，往往是几天、几周，甚至还得写读书笔记和书评。标记想读的快感，来得多么容易！虽然没有开始读，但是大脑几乎觉得已经读过这一本书了。</p>
-<p><strong>廉价的欲望 + 薄弱的行动力，联手打造了拖延症。</strong></p>
-<h2 id="u89E3_u6551_u62D6_u5EF6_u75C7_u7684_u516B_u5B57_u771F_u8A00"><a href="#u89E3_u6551_u62D6_u5EF6_u75C7_u7684_u516B_u5B57_u771F_u8A00" class="headerlink" title="解救拖延症的八字真言"></a>解救拖延症的八字真言</h2><p>明白拖延的起因，对策就很好理解了，无非是“节源开流”，具体来说就是两点：</p>
-<blockquote>
-<p>精简欲望</p>
-<p>坐言起行</p>
-</blockquote>
-<p>欲望因每个人的价值观而不同。想要成功的欲望强烈，就要接受自己拼了命往 to do 里面添加事项。精简欲望，只需要认真透彻地回答一个问题：</p>
-<blockquote>
-<p>到底什么更重要？</p>
-</blockquote>
-<p>接下来我们讨论怎样成为“坐言起行”的行动派。</p>
-<h2 id="u600E_u4E48_u884C_u52A8_uFF1F_u4ECE_u6267_u884C_u610F_u56FE_u5230_WOOP"><a href="#u600E_u4E48_u884C_u52A8_uFF1F_u4ECE_u6267_u884C_u610F_u56FE_u5230_WOOP" class="headerlink" title="怎么行动？从执行意图到 WOOP"></a>怎么行动？从执行意图到 WOOP</h2><p>行动科学的源头著作「改变」一书里，有一个核心观点：<strong>行为的改变，不需要以理解因果为基础</strong>。编写出可运行的程序，不需要知道硬件工作原理；去健身，不需要知道身体如何消耗能量。</p>
-<p>心理学家 Peter Gollwitzer 注意到心理学理论从概念到应用这条难以逾越的鸿沟，但是心理学家仍然跟这条鸿沟死磕，试图用各种理论说服你，你懂了，你用了，你就自然能够提高行动力。但是，为什么一定要从正面交锋呢？Gollwitzer 1999 年发表论文 Implementation intentions: Strong effects of simple plans，提出执行意图方法。</p>
-<p>相比仅仅说明了人们想做、实现什么事情的“目标意图”（例如“我打算减肥”），“执行意图”指的是<strong>如果预想的情景出现了，应该怎么做以实现目标</strong>。执行意图使用if…then…的句式。比如，“如果到晚上 11 点，我就回到卧室，坐到上床阅读 20 分钟，然后睡觉”。</p>
-<p>要去开始行动，不必反复论证为什么要行动，只需要给大脑一个明确的指令 —— 用熟悉、生动的场景去触发行动。这就是执行意图的核心。</p>
-<p>不过，执行意图也有一定的缺陷：乐观地预测行动，大脑会认为已经完成了行动，反而导致行动拖延。于是 Gollwitzer 的妻子 Gabriele Oettingen 写了一本 Rethinking Positive Thinking 来填坑。WOOP 便是整合了两人理论的行动工具，为拖延重症患者指了一条明路。</p>
-<p>可以把 WOOP 理解为一套行动规则触发器：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/WOOP4steps.png" alt=""></p>
-<p>用法很简单：在开启一个事项之前，把 WOOP 四步列下来，尤其把第四步的触发场景生动地想象出来。</p>
-<p>可以用 <a href="https://itunes.apple.com/us/app/woop-app/id790247988?mt=8" target="_blank" rel="external">WOOP app</a> 帮助自己实践 WOOP 大法。</p>
-<p>下面进入栗子时间~</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/00eg.png" alt=""></p>
-<h3 id="u6817_u5B50_uFF1A_u5B66_u7F16_u7A0B"><a href="#u6817_u5B50_uFF1A_u5B66_u7F16_u7A0B" class="headerlink" title="栗子：学编程"></a>栗子：学编程</h3><p>学编程毕竟是一件相对复杂的任务，在第四步最好根据之前的进度，拆分出今天可以做的事情。</p>
-<h4 id="W_-_wish"><a href="#W_-_wish" class="headerlink" title="W - wish"></a>W - wish</h4><p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_2299.PNG" alt=""></p>
-<blockquote>
-<p>我希望可以用 python 实现一些实用的功能</p>
-</blockquote>
-<h4 id="O_-_outcome"><a href="#O_-_outcome" class="headerlink" title="O - outcome"></a>O - outcome</h4><p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_2300.PNG" alt=""></p>
-<blockquote>
-<p>想象一下学会 python 后，我的同事遇到一个问题，想把一个网站上面关于“失眠“的用户评论抓取出来。我分析了一下，觉得并不难，用半天的时间帮 ta 写了一个脚本，完成原来需要人肉花 3 天时间才能做完的事情，而且以后还能再用上。</p>
-</blockquote>
-<h4 id="O_-_obstacles"><a href="#O_-_obstacles" class="headerlink" title="O - obstacles"></a>O - obstacles</h4><p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_2302.PNG" alt=""></p>
-<p>我可能会遇到这些障碍</p>
-<ul>
-<li>没有时间去练习</li>
-<li>总是在看书，而不是动手写代码</li>
-<li>有空写代码的时候，脑子已经很累了，难以集中注意力</li>
-<li>没有持续练习</li>
-</ul>
-<h4 id="P_-_plan"><a href="#P_-_plan" class="headerlink" title="P - plan"></a>P - plan</h4><p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_2304.PNG" alt=""></p>
-<ul>
-<li><code>IF</code> 早上起来，洗漱完打开电脑，看到浏览器界面 <code>THEN</code> 就去 Coursera <a href="https://www.coursera.org/learn/interactive-python-1" target="_blank" rel="external">An Introduction to Interactive Programming in Python (Part 1) Rice University</a> 开始做第二周的 mini project</li>
-<li><code>IF</code> 晚上吃完饭，先洗澡让自己清醒一点， <code>THEN</code> 去完成 Learn Python the Hard Way 的练习 38~40</li>
-</ul>
-<h4 id="u590D_u4E60_WOOP"><a href="#u590D_u4E60_WOOP" class="headerlink" title="复习 WOOP"></a>复习 WOOP</h4><p>每天起床和睡前都复习一下 WOOP</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/IMG_2307.PNG" alt=""></p>
-<h2 id="u6B22_u8FCE_u52A0_u5165_u884C_u52A8_u6D3E"><a href="#u6B22_u8FCE_u52A0_u5165_u884C_u52A8_u6D3E" class="headerlink" title="欢迎加入行动派"></a>欢迎加入行动派</h2><p>简单的道理往往容易被忽视。WOOP 也是，因为它太简单了，你甚至都不屑于去试一试。</p>
-<p>你也可以选择继续跟拖延症死磕，买回一大堆讨论拖延症的书，看上百篇解析、诊断、指引、计划的微信文章，第 101 回制定完美的学习计划 —— 但是依然不去行动。</p>
-<p>别再对讨论拖延症上瘾，别再迷恋那些加重认知负担的工具了。拖延症并不复杂，在熟练使用 WOOP 大法之前，不需要再浪费时间刨根问底。</p>
-<p>从今天开始，改变“我要 xxxx”的口头禅，开始用 If…… then…… 造句，做个行动派吧！</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dribbble-maybe-tomorrow.jpg" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="HackYourself" scheme="http://uegeek.com/tags/HackYourself/"/>
-    
-      <category term="拖延" scheme="http://uegeek.com/tags/%E6%8B%96%E5%BB%B6/"/>
     
       <category term="叽歪" scheme="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
     
