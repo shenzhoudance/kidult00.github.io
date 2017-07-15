@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Why join the navy if you can be a pirate]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://uegeek.com/"/>
-  <updated>2017-03-04T14:04:44.000Z</updated>
+  <updated>2017-07-15T01:20:29.000Z</updated>
   <id>http://uegeek.com/</id>
   
   <author>
@@ -13,6 +13,425 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[算法作曲历险记01-简史]]></title>
+    <link href="http://uegeek.com/170713-algorithmic-composition-1.html"/>
+    <id>http://uegeek.com/170713-algorithmic-composition-1.html</id>
+    <published>2017-07-13T01:03:19.000Z</published>
+    <updated>2017-07-15T01:20:29.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/technocombat_ilu_800x600.jpg" alt=""></p>
+<a id="more"></a> 
+<h3 id="AC__u548C_AC"><a href="#AC__u548C_AC" class="headerlink" title="AC 和 AC"></a>AC 和 AC</h3><p>Art &amp; Code （AC）是 00 新开的坑，记录对一个陌生但好玩的领域的学习历程。算法作曲(Algorithmic Composition) 是 AC 中的 1 号 AC 坑……欢迎围观我在大雾中摸索、游荡。也欢迎老司机帮我带带路~</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/ACACAC-illustrate.jpg" alt=""></p>
+<p>算法作曲 顾名思义，不是由人来作曲，而是经由设定好的算法，通过机器自动生成乐曲。</p>
+<p>先别震惊，也别反感。我并不觉得机器会威胁人在音乐、艺术创造领域的优势。之所以研究算法作曲，纯粹出于对这两个领域的兴趣 —— 尤其是两个看似矛盾、对立的领域，碰撞在一起，一定有很嗨的火花吧！</p>
+<blockquote>
+<p>音乐虽然在表象上是流动音响的时间艺术，然而，从其基础理论设计与数学逻辑同构并进行符号化组织的角度来看，似乎没有任何一门艺术，天生能比音乐拥有更强的可计算性。 ​​​​<br>——黄雷基 <a href="https://mp.weixin.qq.com/s?__biz=MzA3Mjk0MTcyNg==&amp;mid=2649683495&amp;idx=1&amp;sn=18d9af0062b25b6f090bd291d2b4ffc7&amp;mpshare=1&amp;scene=1&amp;srcid=0624qKxE2leEZXU59q4k3vku&amp;key=51ed750aa8560dbf88c430bde4d013799282dbe39aca0f765f6ea94e75f43f04e7f3d2939f531de5d7e753b15c619173871930a2d3ce47bcf41660187643f6b1fe9b8aff79371fd8a771f3d1fa3693dd&amp;ascene=0&amp;uin=MTMyNjgw&amp;devicetype=iMac+MacBook8%2C1+OSX+OSX+10.12.5+build(16F73" target="_blank" rel="external">算法作曲的前世、今生和未来——回溯</a>&amp;version=12020810&amp;nettype=WIFI&amp;fontScale=100&amp;pass_ticket=AgL1ayNVo9yBHkSvsXEEIpezr71WhaJxZNTnnW17MoI%3D)</p>
+</blockquote>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/robot_rock_dribbble.jpg" alt=""></p>
+<p>站在坑口大概往里看了一眼，真是深不见底啊！基础乐理得学吧，作曲知识得学吧， DSP 得略懂一些吧，算法大概得了解吧，机器学习/深度学习得看看吧，工具和软件得试着用吧，前沿的项目得研究下吧……</p>
+<p>一把年纪了怎么这么想不开？大概是年纪大了，更加觉得应该多花些时间在（起码看起来）好玩的事情上面呢！</p>
+<p>系列第一篇，一起来回顾一下算法作曲并不长的历史。</p>
+<h3 id="u7B97_u6CD5_u4F5C_u66F2_u7B80_u53F2"><a href="#u7B97_u6CD5_u4F5C_u66F2_u7B80_u53F2" class="headerlink" title="算法作曲简史"></a>算法作曲简史</h3><p>1952 年，28 岁的列哈伦•希勒（Lejaren Hiller􏶃）告别了杜邦公司，怀揣一大笔奖金重返校园。在美国伊利诺伊大学，这位 23 岁就拿到博士学位的化学家，开始了对合成橡胶的研究。</p>
+<p><img src="http://www.musicainformatica.it/wp-content/uploads/2013/06/Lejaren_Arthur_Hiller_composer_holding_score.jpg" alt=""></p>
+<p>也正是在同一年，第一台完全由美国大学研发的冯•诺伊曼式计算机 Illiac 正式亮相伊利诺伊大学。</p>
+<p><img src="http://2.bp.blogspot.com/-a8PLqfvNuLQ/UKHtOgivzRI/AAAAAAAAAE4/PYUGVS7mV68/s1600/illiac1.png" alt=""></p>
+<p>得天独厚的希勒得以接触到电子计算机，并用它来计算统计意义上理想聚合分子的大小。他无意中发现，如果将控制变量由几何数变为音符，同样的计算机代码可以用于对位法谱曲。一向对音乐颇有兴趣的希勒开始不务正业，试着利用计算机来谱曲，他不仅在闲暇时间开始攻读音乐硕士学位，还把自己的助手——化学师里奥纳德•艾撒克逊（􏹴􏹵􏰉􏻺􏹛Leonard Isaacson）一同拉下了水。</p>
+<p><img src="http://s7.computerhistory.org/is/image/CHM/500004127-03-01?$re-medium$" alt=""></p>
+<p>1956年，在美国计算机协会（ACM）的一次会议上，希勒做了一场关于计算机创作音乐的报告。听众的反应不一，有趣的是，计算机专家们大多对此持非常开放的态度，音乐家们则显得更为谨慎，而很多其他领域的学者们却认为他完全是在胡说八道。</p>
+<p>不管怎样，希勒的第一个作品在 1957 年诞生。</p>
+<p>为了纪念用来作曲的计算机 Illiac，他为这支弦乐四重奏取名「依利亚克组曲」（Illiac Suite），这也是历史上第一支完全由计算机生成的音乐作品。他们基于产生——测试的方法创作，首先使用 Markov 链模型来产生有限控制的随机音符，之后利用和声与复调的规则测试这些音符，最后选择符合规则的材料，修改、组合成传统音乐记谱的弦乐四重奏。</p>
+<p><img src="http://blogs.diariovasco.com/bigbang/files/IlliacSuiteexperimento1br.jpg" alt=""></p>
+<p>【找乐曲】</p>
+<p><a href="http://www.musicainformatica.org/topics/illiac-suite.php" target="_blank" rel="external">该作品分为四个乐章</a>：</p>
+<ul>
+<li>第一乐章：计算机生成的不同长度的固定主题旋律</li>
+<li>第二乐章：使用变奏的规则生成的四声部音乐</li>
+<li>第三乐章：通过计算机对节奏、动态和演奏法的不同处理生成的音乐</li>
+<li>第四乐章：通过衍生算法和马尔科夫链的不同模型及概率生成的音乐</li>
+</ul>
+<p>希勒从此彻底投入计算机音乐创作的怀抱，他转入音乐系任教，成立实验性的音乐工作室。</p>
+<p>随后希勒又开拓了他的很多个「第一次」，如最先进行乐谱打印，最早使用物理模型合成技术等，创作了「算法」系列，「计算机康塔塔」，「HPSCHD」等一系列计算机作曲的音乐作品。</p>
+<p>从此之后，在计算机快速发展的黄金年代，算法作曲也在世界各地的领域先驱们推动下快速发展。</p>
+<p>1960 年，俄罗斯研究者 R.Kh.Zaripov 发行了全世界第一篇关于用「Ural-1」计算机进行算法音乐作曲的论文 <a href="http://adsabs.harvard.edu/abs/1960SPhD....5..479Z" target="_blank" rel="external">An Algorithmic Description of a Process of Musical Composition</a>。</p>
+<p>1960 年，法国工程师、作曲家 Pierre Barbaud 成为欧洲第一个使用计算机作曲的作曲家。</p>
+<p><img src="http://www.associationpierrebarbaud.fr/barbaud_portrait_AClaass.jpg" alt=""></p>
+<p>他创作了「7!」，在有限状态机 (Finite State Automata) 和随机矩阵 (Stochastic Matrices) 的帮助下，将一系列规则运用到 12 音体系中，以此为调性和序列音乐风格建模。</p>
+<p>1965年，发明家 Ray Kurzweil 首次公演了一首用计算机来创作的钢琴作品，这台计算机能够对各种不同的乐曲进行模式识别，并且可以分析和使用这些模式去创造新的旋律。</p>
+<p>1974年，第一次国际计算机音乐会议召开（ICMC）。</p>
+<p>随着计算机相关技术的发展和普及，越来越多的人关注到这个科技与艺术奇妙结合的领域，于是在那个新生流派争奇斗艳的先锋实验年代，各式各样的作曲算法涌现出来。</p>
+<p>然而直到美国作曲家大卫·科普(David  Cope) 开发的「音乐智能实验」系统(Experiments in Musical Intelligence，简称 EMI，1981 年开始研究) ，1987 年在国际计算机音乐年会上第一次公开展示初期成果那时起，计算机音乐与传统音乐之间的桥梁才逐渐架设起来。</p>
+<p><img src="http://50years.ucsc.edu/css/assets/images/posts/fourth-decade/1995-david-cope.jpg" alt=""></p>
+<p><img src="http://www.computerhistory.org/atchm/wp-content/uploads/2015/04/MI0000985908-BachByDesign.jpg" alt=""></p>
+<p>Cope 最初只想编写一个能够描述自己作曲风格的计算机程序，并用来记录自己作品的发展轨迹，不过很快他将目标转向了那些已故大师们，希望能用软件创造出带有不同大师风格的音乐作品。该系统所采取的方法涉及音乐文法和建立风格数据库等， Cope 将这样的工作称为 recombinancy —— 在现存的音乐上加入新的、符合原有逻辑的演绎，从而创造出新的作品。</p>
+<p>比如 David Cope 用 EMI 创作的维瓦尔第风格的十二首管弦乐作品：「星座」。下面将要听到的这首是 「金牛座」（视频也是用算法自动生成的）</p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/2kuY3BrmTfQ" frameborder="0" allowfullscreen></iframe></div>
+<p>1993年，美国科学家 John Al Biles 运用交互式遗传算法，设计了名为 GenJam 的交互式创作演奏系统。该系统能在现场演奏者的 4 或 8 小节演奏后单独生成一个类似风格的新旋律，也能与演奏者进行合奏，在演奏者演奏的同时生成并演奏一个新旋律。</p>
+<p><img src="http://2.bp.blogspot.com/-naDY6-Sc_hU/Upgx1HgAJMI/AAAAAAAAAHg/ihtsVmHgkp0/s1600/genjam.png" alt=""></p>
+<p>随着计算机制谱、乐器数字接口、信号处理、声音分析等技术的研究和应用逐渐兴起和深入，计算机音乐已经成为一个跨学科、跨媒介、跨文化的艺术形式和科学领域。</p>
+<p>这么好玩的坑，要入吗？</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul>
+<li>倪朝晖. (2015). 算法作曲理论与实践. 西南师范大学出版社</li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzA3Mjk0MTcyNg==&amp;mid=2649683495&amp;idx=1&amp;sn=18d9af0062b25b6f090bd291d2b4ffc7&amp;mpshare=1&amp;scene=1&amp;srcid=0624qKxE2leEZXU59q4k3vku&amp;key=51ed750aa8560dbf88c430bde4d013799282dbe39aca0f765f6ea94e75f43f04e7f3d2939f531de5d7e753b15c619173871930a2d3ce47bcf41660187643f6b1fe9b8aff79371fd8a771f3d1fa3693dd&amp;ascene=0&amp;uin=MTMyNjgw&amp;devicetype=iMac+MacBook8%2C1+OSX+OSX+10.12.5+build(16F73" target="_blank" rel="external">算法作曲的前世、今生和未来——回溯</a>&amp;version=12020810&amp;nettype=WIFI&amp;fontScale=100&amp;pass_ticket=AgL1ayNVo9yBHkSvsXEEIpezr71WhaJxZNTnnW17MoI%3D)</li>
+<li><a href="http://www.musicainformatica.org/topics/illiac-suite.php" target="_blank" rel="external">Illiac Suite | musicainformatica.org</a></li>
+<li>Hoffmann, P. (2009). Music Out of Nothing? A Rigorous Approach to Algorithmic Composition by Iannis Xenakis. <a href="https://doi.org/http://dx.doi.org/10.14279/depositonce-2292" target="_blank" rel="external">https://doi.org/http://dx.doi.org/10.14279/depositonce-2292</a></li>
+<li><a href="https://ccrma.stanford.edu/~blackrse/algorithm.html" target="_blank" rel="external">The History of Algorithmic Composition</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/technocombat_ilu_800x600.jpg" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="AlgorithmicComposition" scheme="http://uegeek.com/tags/AlgorithmicComposition/"/>
+    
+      <category term="Art" scheme="http://uegeek.com/tags/Art/"/>
+    
+      <category term="Code" scheme="http://uegeek.com/tags/Code/"/>
+    
+      <category term="算法作曲" scheme="http://uegeek.com/tags/%E7%AE%97%E6%B3%95%E4%BD%9C%E6%9B%B2/"/>
+    
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[警惕信念的苛捐杂税 —— HackYourself 避税指南之一]]></title>
+    <link href="http://uegeek.com/170624-hackyourself-cbt1.html"/>
+    <id>http://uegeek.com/170624-hackyourself-cbt1.html</id>
+    <published>2017-06-24T01:03:19.000Z</published>
+    <updated>2017-07-15T01:15:58.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dailythoughts.png" alt=""></p>
+<a id="more"></a> 
+<p>人每天会产生多少想法？</p>
+<p>别着急回答。</p>
+<p>试着闭上眼睛 30 秒，什么都不干，「观察」一下脑子里会出现些什么念头。</p>
+<p>准备好了，闭上眼睛。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/30secondscountdown.gif" alt=""></p>
+<p>留意到自己的念头了吗？</p>
+<p>大部分人会惊诧于这 30 秒内产生的念头竟然有那么多，而且杂乱无章。</p>
+<p>没错，在醒着的大部分时间里，我们持续产生着各式各样的念头。据未确切考证的<a href="http://blogs.discovermagazine.com/neuroskeptic/2012/05/09/the-70000-thoughts-per-day-myth/#.WU2hihOGOHo" target="_blank" rel="external">说法</a> <sup>[1]</sup>，人一天中产生的念头多达六七万个。这些念头闪过，却基本不会觉察它们的存在。</p>
+<p>想想看，假设你开了一家大公司，有六七万人给你打工，但是你根本不知道他们都从哪里来。幽灵一般的员工们快速地来回穿梭，看似在工作，实际上只是机械地做着动作，你搞不清他们在做什么、公司是如何运作的。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/assembly-800-x-600.gif" alt=""></p>
+<p>够可怕吧？这恰恰就是我们的常态——每分每秒都在产生念头，看似我们在「制造」和「控制」它们，实际上却被它们「影响」然后「不自觉地行动」。而且，念头也有「阶级」之分。有些念头催生了其他念头，属于坐享权力和影响力的「源头信念」。</p>
+<p>也许我们没有意识到，每天都在为一些念头（尤其是源头信念）付出巨大的代价。某些信念让我们反复做出类似的决策，导致类似的结果，甚至形成一再重复的模式，反复上演相似的历史。比如从来没法坚持做好一件事，比如每个月都刷爆信用卡，比如感情上一直遇到渣男……</p>
+<p>如果总是把结果轻描淡写归结为「一时糊涂」、「运气不好」等等，可能没有想过、也不愿意承认，这些结果往往源于一些未经审视的信念。不会有任何提醒，也没有半张收据，就像税赋一样，吸血于无形之中，然而你每天每月每年都在交，甚至要交上一辈子。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/giveandtake.jpg" alt=""></p>
+<p>时隔半年，HackYourself 回归的第一个系列，00 想跟大家聊聊信念的苛捐杂税——我们在为哪些念头付出沉重代价，如何合理避税以便早日实现「精神的财务自由」。</p>
+<h3 id="u5C0F_u7A0E_u53EF_u9003_uFF0C_u5927_u7A0E_u96BE_u514D"><a href="#u5C0F_u7A0E_u53EF_u9003_uFF0C_u5927_u7A0E_u96BE_u514D" class="headerlink" title="小税可逃，大税难免"></a>小税可逃，大税难免</h3><p>想逃税也需要界定一个范围，毕竟小税可逃，大税难免。</p>
+<p>什么是「大税」呢？比如属于时代的信念税——历史局限性，这可是连重构学科体系的大佬们都无法突破的的框架：</p>
+<p><img src="https://image.slidesharecdn.com/earthyquotesrev-12824374135542-phpapp02/95/paradigms-14-728.jpg?cb=1282419576" alt=""></p>
+<p>时代信念税，往往一交就交大发了，世界商业版图都从此改变：</p>
+<p><img src="http://img.picturequotes.com/2/587/586733/i-think-there-is-a-world-market-for-maybe-five-computers-quote-1.jpg" alt=""></p>
+<p>错过一个时代不说，还会被后人耻笑：</p>
+<p><img src="https://lukasdaalder.files.wordpress.com/2014/02/screenshot-2014-02-11-06-33-04.png?w=440&amp;h=230&amp;crop=1" alt=""></p>
+<p>如果说「大税」交的是历史周期的税，那么「小税」又包含什么呢？让我们从群体历史周期回到个体历史周期。</p>
+<p>从童年开始，我们已经对自己、他人以及世界形成了一定的看法，其中一些最核心的信念被认为是绝对真实和正确的。这些影响个体价值观、判断和行为的观念，关于自我最核心的观念，是避税指南系列想要探讨的重点。</p>
+<p>认知语言学家莱考夫在「我们赖以生存的隐喻」一书中，语重心长地指出，我们的概念体系基于隐喻构建，抽象思维很大程度上是隐喻的，我们通过隐喻派生的推论为基础来生活。这些隐喻如此根深蒂固，我们根本都察觉不出它们的深刻影响。比如，「争论是战争」这一隐喻，贯穿在日常对「争论/讨论/辩论」等概念的理解和行动中：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/goodargument.jpg" alt=""></p>
+<blockquote>
+<p>他<strong>攻击</strong>我观点中的每一个弱点</p>
+<p>我<strong>粉碎</strong>了他的论点</p>
+<p>和他争论，我从来没<strong>赢</strong>过</p>
+<p>你不同意？好吧，<strong>反击</strong>啊！</p>
+<p>他<strong>击破</strong>了我的所有观点</p>
+<p>……</p>
+</blockquote>
+<p>我们对每一句话都习以为常，用起来自然得根本意识不到争论也许有其他的形式和比喻，比如像跳双人舞，比如像打乒乓球。</p>
+<p>我的一位朋友在婚姻中被婆媳关系折磨得发疯，一家人的无数冲突，可能都源于婆婆一直灌输给她丈夫的「信念」：一定要制服媳妇，让她听话、服服帖帖，不会骑在自己头上。多么经典的战争和控制权争夺的隐喻啊！生活在这种隐喻构建的观念和场景中，亲密关系从何构建？</p>
+<h3 id="u5E38_u89C1_u7684_u4E2A_u4EBA_u4FE1_u5FF5_u7A0E"><a href="#u5E38_u89C1_u7684_u4E2A_u4EBA_u4FE1_u5FF5_u7A0E" class="headerlink" title="常见的个人信念税"></a>常见的个人信念税</h3><p>我们倾向于认为，大多数人持有相对正面和现实的核心信念，比如「大多数事情我能够胜任」、「我是有价值的人」，负面的核心信念只在遭遇一些应激事件导致内心痛苦时才表现出来。但只要稍微认真审视一下，或多或少会发现，一些隐蔽的信念在持续发挥着影响。即便优秀富有成效的人，也可能是受类似「我不被接受」之类的负面核心信念所驱动。</p>
+<p>认知疗法之父 Aaron Beck 将核心信念分为三类<sup>[2]</sup>：</p>
+<ol>
+<li><p>无能类核心信念（Helpless Core Beliefs）</p>
+<blockquote>
+<p>我不能胜任<br>我做事毫无效率<br>任何事我都做不好<br>我很无助<br>我易受伤害<br>我贫苦<br>我失控<br>我是有缺陷的人 （例如，我比不上其他人）<br>我不够好 （成就方面）<br>我是失败者<br>……</p>
+</blockquote>
+</li>
+</ol>
+<ol>
+<li><p>不可爱类核心信念（Unlovable Core Beliefs）</p>
+<blockquote>
+<p>我不可爱/不讨人喜欢/不受欢迎/没有吸引力<br>我是多余的<br>我被人忽视<br>我与人不同<br>我真坏（所以其他人不爱我）<br>我不够好（所以其他人不爱我）<br>我必定被拒绝<br>我必定孤独<br>……</p>
+</blockquote>
+</li>
+</ol>
+<ol>
+<li><p>无价值类核心信念（Worthless Core Beliefs）</p>
+<blockquote>
+<p>我毫无价值<br>我不被接受<br>我是废物<br>我不道德<br>我很危险<br>我有罪<br>……</p>
+</blockquote>
+</li>
+</ol>
+<p>一眼看上去，大部分的核心信念好像都跟我们关系不大。</p>
+<p>真的是这样吗？</p>
+<p>想想，你为什么会把工作上的一件小事做得比别人好？</p>
+<p>是真正乐于其中吗？还是害怕做不好会有后果？还是别人的称赞会让自己觉得有价值？为什么别人的称赞如此重要？为什么别人实际上没有做出的称赞成为了动力？……继续追问下去，有没有出现上面提到的核心信念？</p>
+<p>想想，你为什么会把工作上的一件小事做得不如别人？</p>
+<p>是不知道该怎么做吗？是觉得无聊不想做吗？是做得比别人慢吗？……继续追问下去，有没有出现上面提到的核心信念？</p>
+<p>再想想，你为什么会在意跟别人比较工作成果？</p>
+<p>是因为薪水吗？是因为不想被批评吗？是因为能获得成就感吗？……继续追问下去，有没有出现上面提到的核心信念？</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/beg-23.png" alt=""></p>
+<p>也许我们从来没有追问过核心信念，所以也不知道它们会造成怎样的影响和损失。</p>
+<p>比如，在「我不够好（成就方面）」这样一个核心信念下，会有怎样的想法和行动？可能会将某种成就作为人生准绳而忽视其他重要的东西，可能会容易迷信权威，可能不敢表达自己的观点，可能很功利，可能容易半途而废……</p>
+<p>这些信念导致的损失，就像名目繁多的税费，看似不存在，实则难以估量，说不定就是贫富差距的罪魁祸首。</p>
+<p>当然，还有数不清的非核心信念（假设）也在慢慢氧化我们，比如：</p>
+<ul>
+<li>读过的书越多，掌握的知识就越多</li>
+<li>道理懂得越多，人的判断力越好</li>
+<li>房子应该存够首期再买</li>
+<li>东西越便宜越好/越贵越好</li>
+<li>朋友多说明人缘好，人缘好说明人好</li>
+<li>做完的东西越多越好代表效率越高</li>
+<li>……</li>
+</ul>
+<p>真的真的是这样吗？我也不知道。</p>
+<p>欢迎留言，分享你交过的信念税。</p>
+<p>下一篇开始，我们探讨如何识别出潜在信念，找到合理避税的突破口。</p>
+<h3 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h3><ul>
+<li>[1]. <a href="https://book.douban.com/subject/26298597/" target="_blank" rel="external">我们赖以生存的隐喻</a></li>
+<li>[2]. Beck, A. T., Freeman, A., &amp; Davis, D. D. (2015). Cognitive Therapy of Personality Disorders. Guilford Publications.</li>
+<li>[3]. <a href="http://blogs.discovermagazine.com/neuroskeptic/2012/05/09/the-70000-thoughts-per-day-myth/#.WU2hihOGOHo" target="_blank" rel="external">The 70,000 Thoughts Per Day Myth? - Neuroskeptic</a></li>
+<li>[4]. <a href="http://list25.com/25-famous-predictions-that-were-proven-to-be-horribly-wrong/" target="_blank" rel="external">25 Famous Predictions That Were Proven To Be Horribly Wrong</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dailythoughts.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="HackYourself" scheme="http://uegeek.com/tags/HackYourself/"/>
+    
+      <category term="Mind" scheme="http://uegeek.com/tags/Mind/"/>
+    
+      <category term="Psychology" scheme="http://uegeek.com/tags/Psychology/"/>
+    
+      <category term="叽歪" scheme="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[17° 读书会笔记[6] - 设计的准则]]></title>
+    <link href="http://uegeek.com/170415-design-principle.html"/>
+    <id>http://uegeek.com/170415-design-principle.html</id>
+    <published>2017-04-15T01:03:19.000Z</published>
+    <updated>2017-07-15T01:06:36.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>
+<a id="more"></a> 
+<p>17° 读书会第 6 本书：<a href="https://book.douban.com/subject/26882272/" target="_blank" rel="external">设计的准则</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s29068132.jpg" alt=""></p>
+<p>阅读时间：2017-03-19 ~ 2017-03-25</p>
+<blockquote>
+<p>这本小书不是要扼杀创造力，也不是要将其简化为一堆原则，它并非妨碍好设计发生的方程式，而是希望制止对设计专业复杂性缺乏了解的状况。大脑应该负责运用合适的方程式去实现预期的结果。</p>
+</blockquote>
+<h2 id="u8BFB_u524D_u95EE_u9898"><a href="#u8BFB_u524D_u95EE_u9898" class="headerlink" title="读前问题"></a>读前问题</h2><ul>
+<li>设计中的「准则」起到什么作用？</li>
+<li>作者认为无形因素和有形因素如何怎样影响设计？</li>
+<li>设计的语义、句法和语用分别指什么？</li>
+<li>哪些准则对我的启发最大？</li>
+</ul>
+<h2 id="u8BFB_u540E_u601D_u8003"><a href="#u8BFB_u540E_u601D_u8003" class="headerlink" title="读后思考"></a>读后思考</h2><p>马西莫·维涅里（Massimo Vignelli，1931—2014）是意大利国宝级设计师，现代主义设计的开拓中坚，二十世纪下半叶视觉传达发展进程中具有深远影响的人物之一。他的设计领域涵盖了包装、产品、家具、展示设计到公共标识。</p>
+<p>1966年，维涅里同其他设计师共同创办了 Unimark International，这家设计所很快便成为了世界上最大的设计公司之一，并为众多世界知名企业设计了身份标识，如美国航空、美国布鲁明代尔百货公司、福特、IBM等。这一时期，维涅里最著名的设计作品是纽约地铁线路图。1971年，维涅里离开 Unimark，与妻子莱拉一起在纽约创办了维涅里设计事务所，被视为设计界的全能常青树。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/17032504bf6e7e140fe72a14841816405ec424.jpg" alt=""></p>
+<p>这本书提供了对平面设计中「标准」的思考，有助于更好地理解版式设计的基本原理。</p>
+<blockquote>
+<p>设计是一种规则，是带有其自身规定法则的创造性的过程，围绕其目标，以最直接且最具有表现力的方式控制着结果的统一性。</p>
+</blockquote>
+<p>跟前面几本书一样，维涅里也提出了他对设计的定义。Paul Rand 认为设计是处理关系，原研哉认为设计是对生活意义的表达，Papanek 认为设计是为了达成有意义的秩序而进行的有意识而又富于直觉的努力。维涅里的定义更加带有「原教旨主义」的意味，认为设计是创造（严肃的）规则。</p>
+<blockquote>
+<p>规则是一组自我设定的准则，规范着我们的实践。混乱、复杂的设计揭露同样混乱、复杂的头脑。</p>
+</blockquote>
+<p>维涅里将设计作品中凝练的规律视为最高准绳，厌恶多余、粗鄙、杂质、混乱。他认为设计如果没有规则，将是混乱的，是一种没有责任心的活动，这就是「无规矩不成方圆」吧~</p>
+<p>准则反应了设计师在长期的设计实践中，对「如何做出更好的设计」的种种试验和反思：哪些问题重复出现？哪些因素影响效果？哪些做法总是奏效？当设计师在「经验」和「理想的设计效果」中建立起强关联，就会将「经验」升级为「准则」。</p>
+<p><img src="http://s3files.core77.com/blog/images/Massimo_Vignelli_Canon.jpg" alt=""></p>
+<p>维涅里把设计的准则分成无形因素和有形因素。</p>
+<table>
+<thead>
+<tr>
+<th>无形因素</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>语义学</td>
+<td>设计追寻意义。全方位多角度地理解设计主体，并且在设计主体与发送端和接收端之间，以对双方都有意义的方式建立联系。</td>
+</tr>
+<tr>
+<td>句法学</td>
+<td>在遣词造句和设计语言表达中控制语法的正确使用的准则。</td>
+</tr>
+<tr>
+<td>语用学</td>
+<td>设计所传达的意义应该被理解</td>
+</tr>
+<tr>
+<td>规则</td>
+<td>规则是一组自我设定的准则，规范着我们的实践。</td>
+</tr>
+<tr>
+<td>适度性</td>
+<td>在适当的范围内进行探索，指导我们选择正确的媒介、正确的材料、正确的比例、正确的表达方式和色彩与肌理</td>
+</tr>
+<tr>
+<td>模糊性</td>
+<td>多元，物体以不同方式真实存在的可能性</td>
+</tr>
+<tr>
+<td>历史、理论与批评</td>
+<td>从时代-运动-表现方式-设计师-设计作品中寻找「为什么」和洞察</td>
+</tr>
+<tr>
+<td>现代主义</td>
+<td>对于生产过程以及产品最终目的的认识，是一种意识形态的反应</td>
+</tr>
+<tr>
+<td>设计为一</td>
+<td>设计的规则是唯一的，可以被运用于许多不同的设计主题中，它高于并超越任何风格</td>
+</tr>
+<tr>
+<td>视觉的力量</td>
+<td>就一件设计作品而言，至关重要的是它应该充满了视觉张力，并以其独特的呈现来实现设计意图</td>
+</tr>
+<tr>
+<td>智慧的优雅</td>
+<td>引导我们走向一切创造性活动最佳解决方案的线索，是思维的终极目标</td>
+</tr>
+<tr>
+<td>永恒性</td>
+<td>探索客观价值，不追逐潮流，以恰当的方式反映内容</td>
+</tr>
+<tr>
+<td>责任感</td>
+<td>设计的结果应该能够独立存在，并且无需借口、解释、致歉</td>
+</tr>
+<tr>
+<td>光</td>
+<td>光塑造了一切「表现」</td>
+</tr>
+<tr>
+<td>任意性</td>
+<td>为了追求自由，以任意性抵制规则是错误的，而自由是有条件与界限的，反之则是混沌、任性、朝生暮死与肤浅的</td>
+</tr>
+<tr>
+<td>语境</td>
+<td>设计与被设计对象的终结目标之间的相互关系</td>
+</tr>
+<tr>
+<td>影响</td>
+<td>“影响”以深入且形成性的方式作用于思维，而“灵感”则偏向具有朝生暮死的本质</td>
+</tr>
+<tr>
+<td>营销</td>
+<td>获得市场成功需要愿景、勇气与决心，而不是市场调研与焦点族群的掣肘，好设计需要勇气</td>
+</tr>
+</tbody>
+</table>
+<p>在有形因素部分，维涅里仔细阐述了平面设计和版式设计中的一些黄金规则，包括书籍网格的使用、字体尺寸、色彩、装订等等。他极力主张简化设计元素的复杂性，通过少量的样式传达出意义、平衡、优雅。</p>
+<blockquote>
+<p>在人人喧嚣当中，沉默反而是会被关注的。空白空间提供了宁静——那就是我们版式设计的精髓。</p>
+</blockquote>
+<p>相比无形部分，有形部分的规则多少让人觉得枯燥而没有新意。正是这种近似刻板的准则，让我们感受到维涅里对设计的「混乱」充满担忧。他将「随意」导致的复杂和混乱作为设计的大敌，热爱那些大道至简的底层规律。</p>
+<p><img src="http://monotypecom.s3.amazonaws.com/images/4ad38be7244043d8/MV_6.jpg" alt=""></p>
+<p>对于「规则」，受限于历史、环境、载体、目的等，规则可能不再适用。但是对「什么是优雅的设计」规律的追求，所有设计师都应该永不停歇。</p>
+<p>最后，用书中最后一段话作为结尾：</p>
+<blockquote>
+<p>我爱系统，而藐视偶然的巧合。</p>
+<p>我爱模糊性，因为在我看来模糊性意味着多重的含义；我爱矛盾，因为它使事物保持发展，能避免预设某种僵化的含义，也避免停滞与压迫。</p>
+<p>正如同我爱处于变化中的事物那样，我也乐于看它们存在于一个参照系之中——这种关照方式始终如一地保证了我自始至终是负责每一处细节的那个人。</p>
+<p>我爱设计，这就是原因。</p>
+</blockquote>
+<p><img src="http://monotypecom.s3.amazonaws.com/images/972e2e2eb2dc5094/MV_1.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="Design" scheme="http://uegeek.com/tags/Design/"/>
+    
+      <category term="Note" scheme="http://uegeek.com/tags/Note/"/>
+    
+      <category term="设计" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[DeepLearning-2 语言模型和 N-gram]]></title>
+    <link href="http://uegeek.com/170312-deeplearning-week1.html"/>
+    <id>http://uegeek.com/170312-deeplearning-week1.html</id>
+    <published>2017-03-12T13:58:23.000Z</published>
+    <updated>2017-07-15T01:21:09.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dl-week0-title.png" alt=""></p>
+<a id="more"></a> 
+<p>语言模式是自然语言处理的一个基础概念。我们可以从语料中得到「语言模型」—— 即句子的概率，可用于：</p>
+<ul>
+<li>发现错别句子</li>
+<li>发现新短语</li>
+<li>生成句子（如<a href="https://github.com/phunterlau/wangfeng-rnn" target="_blank" rel="external">模仿汪峰写歌</a>）</li>
+</ul>
+<p>机器怎样理解自然语言呢？有两种思路：</p>
+<ul>
+<li>学习语法：词性、句子成分，但不能保证语义，如，火星追杀绿色的梦</li>
+<li>概率统计：<a href="https://www.wikiwand.com/zh-cn/%E9%BD%8A%E5%A4%AB%E5%AE%9A%E5%BE%8B" target="_blank" rel="external">齐夫定律</a>（词频 $\propto \frac{1}{rank}$ ：频率最高的单词出现的频率大约是出现频率第二位的单词的2倍，而出现频率第二位的单词则是出现频率第四位的单词的2倍），香农的信息论</li>
+</ul>
+<h3 id="u6982_u7387_u8BBA_u57FA_u672C_u539F_u7406"><a href="#u6982_u7387_u8BBA_u57FA_u672C_u539F_u7406" class="headerlink" title="概率论基本原理"></a>概率论基本原理</h3><p>概率空间：所有可能的结果。概率中的原子结构是基本事件，不可分割，不重叠；分子结构是事件（基本事件的集合）。事件的概率，可以理解为所选取的基本事件在整个空间里占的面积比例。</p>
+<ul>
+<li>联合概率 P(A,B)：两个事件同时发生，比如掷两次筛子，可能有 $6^2$ 种结果。</li>
+<li>条件概率 P(B|A)：A 条件下 B 发生的概率。从一个大的空间进入到一个子空间（切片），计算在子空间中的占比。$P(B|A) = \frac{P(A,B)}{P(A)}$</li>
+</ul>
+<h3 id="u6982_u7387_u8BED_u8A00_u6A21_u578B"><a href="#u6982_u7387_u8BED_u8A00_u6A21_u578B" class="headerlink" title="概率语言模型"></a>概率语言模型</h3><ul>
+<li>计算句子的概率： $P(S) = P(w_1,w_2,w_3,…,w_n)$</li>
+<li>用处：句子错误检查、输入法候选、生成有用的句子等等</li>
+<li>统计：随着空间膨胀，数据变稀疏，样本有效性降低</li>
+</ul>
+<p>对句子做最简化的处理，先考虑只有两个词的句子，根据条件概率公式，它的概率等于第一个词的空间占比，乘以第一个词的概率空间中第二个词的占比：$P(w_1,w_2) = P(w_2|w_1)*P(w_1)$</p>
+<p>最初级的语言模型（Unigram），可以人为地假设词之间是独立的： $P(w_2|w_1) \approx P(w_2)$，于是这个句子的概率约等于两个词的频率相乘： $P(w_2,w_1) \approx P(w_1)*P(w_2)$ </p>
+<p>如果把两个词的句子扩展为三个词：$P(w_1,w_2,w_3) = p(w_1,w_2)<em>p(w_3|w_1,w_2) = p(w_1)</em>p(w_2|w_1)*p(w_3|w_1,w_2)$</p>
+<p>以此类推：</p>
+<p>$P(w_1,w_2,…w<em>n) = \prod</em>{i} P(w_i|w_1w<em>2…w</em>{i-1})$</p>
+<p>这样做的话，对每个词要考虑它前面的所有词，这在实际中意义不大。可以做些简化吗？</p>
+<p>我们可以基于马尔科夫假设来做简化。</p>
+<blockquote>
+<p>马尔科夫假设是指，每个词出现的概率只跟它前面的少数几个词有关。比如，二阶马尔科夫假设只考虑前面两个词，相应的语言模型是三元模型。引入了马尔科夫假设的语言模型，也可以叫做马尔科夫模型。</p>
+<p>马尔可夫链（Markov chain）为狀態空間中经过从一个状态到另一个状态的转换的随机过程。该过程要求具备“无记忆”的性质：下一状态的概率分布只能由当前状态决定，在时间序列中它前面的事件均与之无关。</p>
+</blockquote>
+<p>比如对上面公式做一个 i-k 的简化：</p>
+<p>$P(w_1,w_2,…w<em>n) \approx \prod</em>{i} P(w<em>i|w</em>{i-k}…w_{i-1})$</p>
+<p>物理意义上说，上面的公式意味着每次看到 i 时，只要关注 i 前面的 k 个词，这就是 N-gram 模型的思路。</p>
+<h3 id="u4F5C_u4E1A"><a href="#u4F5C_u4E1A" class="headerlink" title="作业"></a>作业</h3><p>作业 1：$P(w_1,w_2) = P(w_2|w_1)*P(w_1)$ 没有减少参数个数，为什么？</p>
+<p>作业 2：在自己选取的数据集合上建立 Bigram 模型，并使用该建立好的模型生成句子。</p>
+<h3 id="u5176_u4ED6"><a href="#u5176_u4ED6" class="headerlink" title="其他"></a>其他</h3><p>技巧：进入 docker 容器的 shell 环境</p>
+<p><code>docker exec -it container_id /bin/bash</code></p>
+<h3 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h3><ul>
+<li><a href="https://www.wikiwand.com/zh-cn/%E9%BD%8A%E5%A4%AB%E5%AE%9A%E5%BE%8B" target="_blank" rel="external">齐夫定律</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2015/07/monte-carlo-method.html" target="_blank" rel="external">蒙特卡罗方法入门 - 阮一峰的网络日志</a></li>
+<li><a href="http://www.cs.columbia.edu/~mcollins/lm-spring2013.pdf" target="_blank" rel="external">Language Modeling - Course notes for NLP by Michael Collins, Columbia University</a></li>
+<li><a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf" target="_blank" rel="external">Language Modeling with Ngrams</a></li>
+<li><a href="https://www.youtube.com/watch?v=s3kKlUBa3b0" target="_blank" rel="external">4 - 1 - Introduction to N-grams- Stanford NLP - Professor Dan Jurafsky &amp; Chris Manning - YouTube</a></li>
+<li><a href="https://www.wikiwand.com/zh/%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E9%93%BE" target="_blank" rel="external">马尔可夫链 - Wikiwand</a></li>
+<li><a href="https://github.com/sunoonlee/DeepLearning101/issues/2" target="_blank" rel="external">sunoonlee 同学的笔记</a></li>
+<li><a href="https://github.com/zhatrix/DeepLearning101/blob/master/ch1/project/assignmentch1.ipynb" target="_blank" rel="external">DeepLearning101/zhatrix/DeepLearning101</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dl-week0-title.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="AI" scheme="http://uegeek.com/tags/AI/"/>
+    
+      <category term="Deep learning" scheme="http://uegeek.com/tags/Deep-learning/"/>
+    
+      <category term="Docker" scheme="http://uegeek.com/tags/Docker/"/>
+    
+      <category term="深度学习" scheme="http://uegeek.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="动手" scheme="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[DeepLearning-1：神经网络和 Docker 入门]]></title>
@@ -2029,525 +2448,6 @@
       <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
     
       <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[产品经理的用研手册03 - 成也需求，败也需求]]></title>
-    <link href="http://uegeek.com/pm-ur-handbook3.html"/>
-    <id>http://uegeek.com/pm-ur-handbook3.html</id>
-    <published>2016-12-05T02:33:47.000Z</published>
-    <updated>2017-02-08T06:18:25.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article3-titu.jpg" alt=""></p>
-<a id="more"></a> 
-<blockquote>
-<p>如果你根本不知道自己在讨论什么，那么对其强求精确是毫无意义的。 —— 冯·诺依曼</p>
-</blockquote>
-<p>我们用「产品」这个词来表示那些试图满足一系列复合期望的产物。复合意味着它们来自许多人。找到谁是这些「人」，是明确需求的一个主要部分。上一篇，00 分享了一些如何分类和描述用户的经验：</p>
-<p>接下来，我们将要走进需求的沼泽，深入产品开发险恶的腹地，看看需求这个妖孽如何把众多产品经理拖入泥潭之中。</p>
-<p>需求很关键，可现实往往是，人们不知道自己想要什么；而且，产品经理不知道人们想要什么；雪上加霜的是，产品经理不知道人们不知道他们想要什么……产品开发再高效也好，都是一种浪费。认真探索需求，我们才不会做出然并卵的产品。</p>
-<p>关于万恶的需求，有两个最最关键的问题：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-MostImportAboutRequirement.jpg" alt=""></p>
-<p>能清楚回答第一个问题，是合格的产品经理，能正确回答第二个问题，才是好的产品经理。</p>
-<h2 id="u9700_u6C42_u662F_u4EC0_u4E48"><a href="#u9700_u6C42_u662F_u4EC0_u4E48" class="headerlink" title="需求是什么"></a>需求是什么</h2><p>从前，有一只狡猾的妖孽，叫做「需求」。</p>
-<p>它长着一张模糊的脸，而且是一张会千变万化的脸，最善于迷惑那些苦苦寻找它的人。不同的人看到这个妖孽，描述出来的样貌都不一样，似乎从来没有人能识别它的真面目 —— 还是说，它就没有真面目？（摊手）</p>
-<h3 id="u533A_u5206_u9700_u6C42_u548C_u89E3_u51B3_u65B9_u6848"><a href="#u533A_u5206_u9700_u6C42_u548C_u89E3_u51B3_u65B9_u6848" class="headerlink" title="区分需求和解决方案"></a>区分需求和解决方案</h3><p>人们之所以经常被需求妖孽所迷惑，还因为他/她/它经常跟另外一个妖孽「解决方案」互换躯壳，所以懵圈的人们经常追着「解决方案」喊「需求」。为了早日让需求妖孽现身，我们需要练就一双区分它俩的废眼，哦不，慧眼。</p>
-<p>举个栗子</p>
-<blockquote>
-<p>在编辑模块中，用户需要一个预览页面</p>
-</blockquote>
-<p>在抓需求妖孽的时候，一不留神，我们会在急忙之中抓过来一只解决方案妖孽，睁眼瞎地指着它说：呔！这就是需求，快给我拿下~ 这个例子中，预览页面就是被误捉的解决方案妖孽，而需求妖孽还在附近不知道哪个角落悠闲地游荡着。</p>
-<p>捉错妖孽，会给我们制造很多麻烦：</p>
-<ul>
-<li>误解实际的需求</li>
-<li>带着过多假设和预判去思考</li>
-<li>错过更佳的解决方案</li>
-</ul>
-<p>在这里，00 介绍一个识别两只妖孽的简便方法。</p>
-<p>需求妖孽往往这样长着这样的嘴脸：</p>
-<blockquote>
-<p>我想【达到什么目的】</p>
-</blockquote>
-<p>需求一般应该带有更多关于状态、行为、态度的描述。</p>
-<p>解决方案则往往可以这样描述：</p>
-<blockquote>
-<p>我要【有什么特点的东西】</p>
-</blockquote>
-<p>它已经开始描述对象是什么样子。</p>
-<p>来来来，下面进入栗子时间。我们活捉一只妖孽，听听它说了些什么。</p>
-<blockquote>
-<p>我想要一个循环播放的按钮</p>
-</blockquote>
-<p>嗯哼？</p>
-<p>开始描述对象了。这厮是解决方案妖孽！</p>
-<p>别着急把它推开，每当我们发现又捉错了妖孽时，不妨对它进行逼问，它会老实告诉你需求妖孽的藏身之处。逼问的方法很简单，只有三个字 ——「为什么」：</p>
-<blockquote>
-<p>S 妖：我想要一个循环播放的按钮</p>
-<p>你：为什么？</p>
-<p>S 妖：我想循环播放歌曲</p>
-<p>你：为什么？</p>
-<p>S 妖：我想连续播放喜欢的歌曲</p>
-<p>你：为什么？</p>
-<p>S 妖：你是复读机么？…… 我想在睡前连续播放喜欢的歌曲</p>
-<p>你：为什么？</p>
-<p>W 妖：妈呀救命这是复读机妖……我希望在不能/不想人为操作重复播放时，我喜欢的歌曲能够连续播放</p>
-</blockquote>
-<p>逼问过程中，需求妖孽自动现形了！这就是歪歪歪复读机大法。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-Solution&amp;Requirement.jpg" alt=""></p>
-<p>在更具体的需求描述中，类似场景信息如「睡前」、体验预期如「不想人为操作」、隐含需求「播放喜欢的歌曲」等，都会浮现，这对具体的方案设计提供了更多决策信息。</p>
-<p>更多关于用户需求的挖掘和分析，请留意本系列后续的文章。</p>
-<h3 id="u533A_u5206_u7528_u6237_u9700_u6C42_u548C_u4E1A_u52A1_u9700_u6C42"><a href="#u533A_u5206_u7528_u6237_u9700_u6C42_u548C_u4E1A_u52A1_u9700_u6C42" class="headerlink" title="区分用户需求和业务需求"></a>区分用户需求和业务需求</h3><p>好了，需求妖孽总算抓到了。</p>
-<p>不过这厮可不是省油的灯，一不留神，它又使出分身术，变成两个妖孽：一个叫用户需求妖，一个叫业务需求妖。用人间的话来说，用户需求是「用户想要什么」，业务需求是「我们应该怎么做」。</p>
-<p>难道用户想要的不就是我们应该做的吗？是，也不是。</p>
-<p>用户想要的是结果，我们应该做的是保证得到这个结果的所有环节，包括用户看到的每一个界面、从他们那里得到的输入数据、帐户生成和标识、数据存储和传输、计算、请求、加密等等等等，全部都是业务需求。</p>
-<p>业务需要达到一定的使用量、访问量、购买量、转化率，这些需求都跟用户需求有关，但实际要做的远不止用户所表述的需求。用户并不需要注册，但是业务需要获取和保存用户信息；用户不需要统计上报自己的数据，但是业务需要数据辅助分析和决策，等等。</p>
-<p>你的团队，如何处理业务需求和用户需求的关系？</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-2kindsorequirement.jpg" alt=""></p>
-<h2 id="u9700_u6C42_u503C_u4E0D_u503C_u5F97_u505A"><a href="#u9700_u6C42_u503C_u4E0D_u503C_u5F97_u505A" class="headerlink" title="需求值不值得做"></a>需求值不值得做</h2><p>需求捉妖过程对产品经理来说，已经足够有挑战了，但真正的好(da)戏(keng)还在后面。</p>
-<p>产品开发的资源永远有限，哪些该做？哪些该先做？</p>
-<p>关于值得不值得的问题，实质是 ROI （投入产出比）的问题。如果能算清「用多大成本实现了多大价值」这笔账，做出合理的判断应该不难。</p>
-<p>困难的是，这笔账似乎永远都是一笔糊涂账。</p>
-<p>我们来尝试理理思路。</p>
-<p>帮助用户实现价值，业务和产品就有价值，从而获得收益。假设这个推论成立，那么问题可以描述成：哪些需求可以放大用户价值？想一想平时我们离不开的产品，它们带来了哪些价值，为什么离不开？00 总结了一个判断用户价值的简易公式：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-ValueFormula.jpg" alt=""></p>
-<h3 id="u9700_u6C42_u5F3A_u5EA6"><a href="#u9700_u6C42_u5F3A_u5EA6" class="headerlink" title="需求强度"></a>需求强度</h3><p>人们有多需要一个东西，由两个问题决定：</p>
-<ul>
-<li>有多痛/痒？</li>
-<li>有多稀缺？</li>
-</ul>
-<p>痛痒的问题，其实就是我们常说的是否「刚需」。但是刚需也因人而异，比如说，VPN 对我来说是刚需，对我妈则不是。那么怎么可以更好判断出痛点/痒点呢？</p>
-<p>一个角度，是从使用者自身出发，分析这个需求的四个特性：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-ValueMatrix.jpg" alt=""></p>
-<ul>
-<li>价值：比如，多大程度上帮我省钱省时间，实现人生目标</li>
-<li>预期：比如，买个旅行机票，帮我把签证都办了</li>
-<li>可陈述程度：比如，美颜只是显性的，万人迷是隐性的</li>
-<li>已满足程度：这个就不用距离了</li>
-</ul>
-<p>另外一个角度，则是从外部同类产品的比较来看，著名的 Kano 模型：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-ValueKano.jpg" alt=""></p>
-<p>根据满意程度和重要程度划分功能需求：</p>
-<ul>
-<li>及格线：大家都有的你没有，就会被骂辣鸡</li>
-<li>备胎线：恰好达到行业平均水平，也只是个可以当备胎的良民</li>
-<li>粉丝线：人无我优，远超期望，用户一接触就会内心惊呼「卧槽」，然后路转粉，粉转脑残粉</li>
-</ul>
-<p>以上是痛/痒问题。稀缺问题则比较好理解。市场上有哪些同类或类似的解决方案？你的产品有多独特？用户通过什么渠道接触到？这些渠道你有多大的份额、影响力、把控能力？物以稀为贵，稀少的东西，总是能加强痛点和痒点。</p>
-<h3 id="u4F7F_u7528_u9891_u7387"><a href="#u4F7F_u7528_u9891_u7387" class="headerlink" title="使用频率"></a>使用频率</h3><p>判断出需求强度以后，还需要考虑使用频率。典型的例子是旅行市场，需求巨大，但就是频率太低，活跃度和留存率都不好做。考虑使用频率，可以从用户比例和场景频率两个维度出发。</p>
-<ul>
-<li>多大比例用户想要？</li>
-<li>需求场景的频率如何？</li>
-</ul>
-<p>这两个问题虽然很难得到准确的数据，但是仍然要想办法估算。上一篇文章介绍的用户快照这个时候就能够派上用场。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserSnapshotTemp.jpg" alt=""></p>
-<ul>
-<li>如果与实现用户的行为目标强相关，使用频率应该较高。比如，电商平台的购物车功能</li>
-<li>如果最重要的用户类型需要它，使用频率相对较高。比如，某直播平台最重要的用户类型是游戏玩家，那么主播的游戏等级可能就变得重要</li>
-<li>典型场景的客观发生频率较高，使用频率应该较高。比如，用来 p 朋友圈图片的工具</li>
-<li>典型场景在用户生活中地位重要，使用频率相对较高。比如，每天上下班要在地铁里呆上两小时，看书听歌看视频的频率就会更高。</li>
-</ul>
-<p>花了这么长的篇幅分析了如何判断用户价值，这只是 ROI 的 R （Return）部分，至于 I （Investment）的分析又是另一门学问。毕竟这个系列写的是用研手册，产品经理专职范畴内的难题，就不继续展开了。</p>
-<h2 id="u8B66_u60D5_u4F2A_u9700_u6C42"><a href="#u8B66_u60D5_u4F2A_u9700_u6C42" class="headerlink" title="警惕伪需求"></a>警惕伪需求</h2><p>需求妖孽之所以是妖孽，不但因为行踪诡秘，而且容易被冒名顶替。伪需求们是资源的黑洞，怎么填都填不满。如何识别伪需求呢？它们一般会以这些面目出现：</p>
-<p>伪装成解决方案。这个上文已经仔细分析过。</p>
-<p>伪装成常见场景。作为果粉 + watch 黑，00 一直觉得 Apple Watch 把边缘场景成功伪装成常见场景。在一个手机不离身的时代，手表真正能替代手机的场景有多少呢？</p>
-<p>伪装成大部分人的需求，实际上只是枝节需求。如果不清楚自己产品的用户类型，不清楚哪类用户是最重要的，这种伪装就容易蒙混过关。比如当年已经做出来但没有最终上线的微信朋友圈滤镜功能。滤镜多好啊，大家都需要，Instagram 是成功案例，新浪微博有，QQ 空间也有，为什么不做呢？微信一定能做出强大好用的滤镜，但是，微信为什么要提供一款滤镜功能呢？大家发朋友圈的动机到底是什么呢？如果没有好友关系的沉淀，丰富有趣的互动方式和氛围，就算在微信里面再造一个 Instagram 又有什么意义呢？</p>
-<p>伪装成可以脱离商业模式而存在。这是最可怕的伪装。没人不喜欢 Kano 模型中远超预期的功能，但是这些功能为什么往往大家都没有提供？原因多半是：不经济，不可持续。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03-SudoValue.jpg" alt=""></p>
-<p>关于折磨人的需求，就讨论到这里。</p>
-<p>下一篇我们介绍用户研究主要能解答什么类型的问题。</p>
-<hr>
-<p>如需转载本文，请联系 uegeek@gmail.com</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article3-titu.jpg" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="产品经理" scheme="http://uegeek.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
-    
-      <category term="用户研究" scheme="http://uegeek.com/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/"/>
-    
-      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
-    
-      <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[产品经理的用研手册02 - 你真的懂用户吗？]]></title>
-    <link href="http://uegeek.com/pm-ur-handbook2.html"/>
-    <id>http://uegeek.com/pm-ur-handbook2.html</id>
-    <published>2016-12-02T02:34:12.000Z</published>
-    <updated>2016-12-05T02:49:11.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article2-titu.png" alt=""></p>
-<a id="more"></a> 
-<p>​如果你错过了本系列的第一篇，请戳：<br>​<br>​<img src="http://7xjpra.com1.z0.glb.clouddn.com/article1-qr.png" alt=""><br>​</p>
-<p>产品经理经常会被问起一个问题：</p>
-<blockquote>
-<p>你们产品都是哪些人在用？</p>
-</blockquote>
-<p>这时候，很多产品经理只能支支吾吾的挤出类似「女性」、「25-30岁」、「白领」几个无力的词汇，发现自己其实描述不清楚谁是目标用户。</p>
-<p>不同产品的用户，少则几百，多则数亿，每个人看起来都不太一样，应该怎么理解和描述他们呢？</p>
-<p>先抛开产品和用户不谈，想一想我们是如何认识世界的。</p>
-<p>为了认识植物和动物，把它们分成不同的种、属、科；为了更深入品尝天朝的美食，分成八大菜系；为了理解不同的音乐，分成摇滚、民谣、爵士等不同风格；为了在电商网站更容易找到商品，出现了庞杂的分类……</p>
-<p>为了增进理解，我们最常干的一件事情是：分类。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-AppGroupByColor.jpg" alt=""></p>
-<h2 id="u7528_u6237_u5982_u4F55_u5206_u7C7B_uFF1F"><a href="#u7528_u6237_u5982_u4F55_u5206_u7C7B_uFF1F" class="headerlink" title="用户如何分类？"></a>用户如何分类？</h2><p>那么，接下来的问题是：如何有效分类？</p>
-<p>答案是：找到<strong>合适的维度</strong>。</p>
-<p>八大菜系有地缘和饮食文化传统作为区分，那么用户应该按什么维度划分呢？</p>
-<p>最容易想到的，当然是人口统计学信息：性别、年龄、职业、收入、地域等。这些信息容易获取，容易描述。</p>
-<p>可是容易获得不代表容易使用。比如，一款健康饮料的主要用户群是 25-30 岁之间的女性，然后呢？意味着什么？写公众号推送的时候，要多用粉红色的图片吗？……</p>
-<p>那么，用「高端」、「低端」划分呢？问题是，怎么准确定义「高端」呢？高端是收入高、什么都懂、喜欢高逼格的设计吗？即便条件都满足，如果你做的是一款功能强大的 VPN 客户端，是根本没需要也没时间钻研的「高端」人士需要呢，还是一群为了追踪麻豆 twitter 更新的疯狂高中生更需要？</p>
-<p>再想想，还有哪些用户属性对产品决策有帮助？</p>
-<table>
-<thead>
-<tr>
-<th>分类维度</th>
-<th>用户属性</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>人口统计学信息</td>
-<td>性别、年龄、职业、地域</td>
-</tr>
-<tr>
-<td>接触产品的渠道</td>
-<td>设备、操作系统、平台、网站、App</td>
-</tr>
-<tr>
-<td>需求动机</td>
-<td>需求、使用动机、留存原因、产品选择偏好</td>
-</tr>
-<tr>
-<td>使用行为</td>
-<td>使用场景、操作习惯、使用频率、付费意愿</td>
-</tr>
-<tr>
-<td>操作经验</td>
-<td>使用功能的广度和深度、同类产品使用时长</td>
-</tr>
-</tbody>
-</table>
-<p>在互联网产品设计中，更加关注用户如何看待、使用产品，如何与产品互动，这是一个相对连续的过程，人口属性特征并不是影响用户行为的主要因素。<strong>真正区分用户如何使用和看待产品的，是目标和行为。</strong></p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-HowtoBetterCategories.jpg" alt=""></p>
-<h3 id="u76EE_u6807"><a href="#u76EE_u6807" class="headerlink" title="目标"></a>目标</h3><p>我们最关心用户产生的各种行为，比如会不会购买、用多长时间浏览、是否能顺利使用某些功能，等等。而驱动行为的，是目标。毕竟，行为只是手段，目标才是终点。</p>
-<p>比如，知识型工作者，每天会遇到相对独立的信息片段，需要快速记录、存储起来，方便日后查找。那么他们会需要一个记录工具，会在常用的设备上有类似的使用行为。</p>
-<p>如果我们能首先关注用户的目标，就能够更好地解读用户需求，以及不同用户群体之间的差异。</p>
-<p>不过，目标有时候也很容易让人困惑，比如：</p>
-<blockquote>
-<p>我想买到最便宜的站立办公台</p>
-<p>我想有人帮忙打扫卫生，而我只要舒服地躺在沙发上</p>
-<p>我想迎娶白富美，走上人生巅峰</p>
-</blockquote>
-<p>你会发现，这些目标的层次不同。有些目标，我们知道该怎么有针对性地提供解决方案。但是类似走上人生巅峰的目标，我们则不知所措。</p>
-<p>那么，如何更清晰地描述目标？</p>
-<p>诺曼在「情感化设计」中，将设计目的分为本能、行为、反思三个层次。Alan Cooper 据此划分出用户目标的三个层次：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-HowtoBetterCategories%20Copy.jpg" alt=""></p>
-<h4 id="1-_u884C_u4E3A_u76EE_u6807"><a href="#1-_u884C_u4E3A_u76EE_u6807" class="headerlink" title="1.行为目标"></a>1.行为目标</h4><p>用户在使用某个具体产品时进行操作的动机，在他们心目中期望的结果。因为行为的处理过程，会影响本能和反思的反应，因此，<strong>行为目标是决定产品整体体验最为显著的因素之一</strong>。比如，以下这些可以称为行为目标：</p>
-<ul>
-<li>在回家之前清理办公桌</li>
-<li>基于数据做出明智的商业决策</li>
-<li>买到想要的东西然后离开 </li>
-<li>发朋友圈之前修饰照片</li>
-</ul>
-<p>行为目标是产品行为、任务、外观和感觉的基础。</p>
-<h4 id="2-_u4F53_u9A8C_u76EE_u6807"><a href="#2-_u4F53_u9A8C_u76EE_u6807" class="headerlink" title="2.体验目标"></a>2.体验目标</h4><p>体验目标表达了人们在使用产品或者与产品交互时所期望的感受。它让人们关注于产品的视觉和听觉特性，以及互动过程中的感受。比如：</p>
-<ul>
-<li>有乐趣</li>
-<li>感觉酷、时髦或者放松</li>
-<li>保持注意力集中，很清醒</li>
-<li>一切尽在掌控之中，感觉棒棒哒</li>
-</ul>
-<h4 id="3-_u957F_u671F_u76EE_u6807"><a href="#3-_u957F_u671F_u76EE_u6807" class="headerlink" title="3.长期目标"></a>3.长期目标</h4><p>长期目标描述用户的长期期望、动机和自我形象的特征，表达了用户的个人渴望甚至是人生目标，是深层的驱动力和动机。它通常超越了产品设计的情境，能够解释为什么用户要尽力完成各种行为目标。比如：</p>
-<ul>
-<li>过美好的生活</li>
-<li>成就一番事业</li>
-<li>成为某个方面的行家</li>
-<li>让周围的人喜欢并尊敬我</li>
-</ul>
-<p>现在，我们可以区分这些目标的层次了</p>
-<blockquote>
-<p>我想买到最便宜的站立办公台 —— 行为目标</p>
-<p>我想有人帮我打扫卫生，而我只要舒服地躺在沙发上 —— 体验目标</p>
-<p>我想迎娶白富美，走上人生巅峰 —— 长期目标</p>
-</blockquote>
-<p>在对待目标这件事情上：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-DifPMDifGoal-1.jpg" alt=""></p>
-<ul>
-<li>不合格的产品经理直接无视，已经在画交互图；        </li>
-<li>普通产品经理首先关注行为目标，能否帮助用户达成行为目标，直接决定了产品的基础价值；</li>
-<li>文艺产品经理关注体验目标，比如上面打扫卫生的例子，用户在意的并不是打扫得多干净，而是躺在沙发上啃啃薯片就能看着家里变干净的快感；</li>
-<li>神级产品经理直抵人生目标。什么样的产品用起来时尚时尚最时尚？</li>
-</ul>
-<h3 id="u5178_u578B_u4F7F_u7528_u573A_u666F"><a href="#u5178_u578B_u4F7F_u7528_u573A_u666F" class="headerlink" title="典型使用场景"></a>典型使用场景</h3><p>通过行为目标、体验目标和长期目标，我们能基本区分出不同的用户。但是这还不够，目标相同的人，一定有类似的行为吗？也不一定，因为具体行为由场景触发，而场景包含了更丰富的信息：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserScenario.jpg" alt=""></p>
-<ul>
-<li>时间：用户一般在什么时间段，或者什么事情的前后使用产品？</li>
-<li>地点：用户在什么场合、通过什么设备和什么渠道接触和使用产品？</li>
-<li>目标：用户的行为目标、体验目标和长期目标分别是什么？</li>
-<li>行为：为了达成目标，最核心的行动步骤有哪些？</li>
-<li>痛点：这个过程中，有哪些让人难受、不符合预期的地方？</li>
-<li>策略：为了达成目标，用户会采取什么样的做法提升效率和效果？</li>
-</ul>
-<h2 id="u7528_u6237_u5FEB_u7167_u5361_u7247_u6A21_u677F"><a href="#u7528_u6237_u5FEB_u7167_u5361_u7247_u6A21_u677F" class="headerlink" title="用户快照卡片模板"></a>用户快照卡片模板</h2><p>我们把用户目标和典型使用场景的要素串联起来，拼成描述用户快照的模板：</p>
-<p>典型用户小 P</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#23567; P &#20351;&#29992;&#20135;&#21697;&#30340;&#20027;&#35201;&#30446;&#30340;&#26159;&#12304;&#34892;&#20026;&#30446;&#26631;&#12305;&#12290;&#9;&#9;&#10;&#10;&#20182;&#19968;&#33324;&#20250;&#22312;&#12304;&#22330;&#26223;1&#26102;&#38388;&#12305;&#12304;&#22330;&#26223;1&#22320;&#28857;&#12305;&#35775;&#38382;&#20135;&#21697;&#65292;&#9;&#9;&#10;&#36827;&#34892;&#12304;&#34892;&#20026;&#12305;&#12290;&#9;&#9;&#10;&#36825;&#20010;&#36807;&#31243;&#65292;&#20182;&#24076;&#26395;&#12304;&#20307;&#39564;&#30446;&#26631;&#12305;&#65292;&#9;&#9;&#10;&#20294;&#26159;&#20182;&#21457;&#29616;&#12304;&#30171;&#28857;&#12305;&#65292;&#9;&#9;&#10;&#19968;&#33324;&#20182;&#20250;&#12304;&#31574;&#30053;&#12305;&#12290;&#9;&#9;&#10;&#10;&#23567; P &#21487;&#33021;&#36824;&#20250;&#22312;&#12304;&#22330;&#26223;2&#26102;&#38388;&#12305;&#12304;&#22330;&#26223;2&#22320;&#28857;&#12305;&#35775;&#38382;&#20135;&#21697;&#65292;&#9;&#9;&#10;&#36827;&#34892;&#12304;&#34892;&#20026;&#12305;&#12290;&#9;&#9;&#10;&#36825;&#20010;&#36807;&#31243;&#65292;&#20182;&#24076;&#26395;&#12304;&#20307;&#39564;&#30446;&#26631;&#12305;&#65292;&#9;&#9;&#10;&#20294;&#26159;&#20182;&#21457;&#29616;&#12304;&#30171;&#28857;&#12305;&#65292;&#9;&#9;&#10;&#19968;&#33324;&#20182;&#20250;&#12304;&#31574;&#30053;&#12305;&#12290;&#9;&#9;&#9;&#10;&#10;&#32463;&#24120;&#20351;&#29992;&#20135;&#21697;&#65292;&#33021;&#35753;&#23567; P &#24863;&#35273;&#12304;&#38271;&#26399;&#30446;&#26631;&#12305;</span><br></pre></td></tr></table></figure>
-<p>典型用户小 D</p>
-<p>典型用户小 E</p>
-<p>……</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/02-UserSnapshotTemp.jpg" alt=""></p>
-<p>练习：假设我们根据目标和行为模式，把某电商的用户分成三种类型：</p>
-<ul>
-<li>完成任务型（老公被委派买日常用品的任务）</li>
-<li>体验乐趣型（经常淘出好东西的购物推荐达人）</li>
-<li>明智决策型（为买到性价比高的跑步机的发烧友）</li>
-</ul>
-<p>试着用卡片模板，写出更详细的用户快照。</p>
-<h2 id="u4E3A_u4EC0_u4E48_u662F_u5FEB_u7167_u800C_u4E0D_u662F_u6A21_u578B_u3001_u89D2_u8272_u6216_u5176_u4ED6_uFF1F"><a href="#u4E3A_u4EC0_u4E48_u662F_u5FEB_u7167_u800C_u4E0D_u662F_u6A21_u578B_u3001_u89D2_u8272_u6216_u5176_u4ED6_uFF1F" class="headerlink" title="为什么是快照而不是模型、角色或其他？"></a>为什么是快照而不是模型、角色或其他？</h2><p>这样的用户描述，我把它称作用户快照。</p>
-<p>快照得来成本低，包含较丰富的信息但可能不全面，甚至有失偏颇 —— 毕竟只是一瞬间的捕捉。</p>
-<p>它可能有偏差，甚至是错误的。这个快照只是一个假设，有待验证。所以它不能成为用户模型、用户角色、用户画像，因为，这个过程并没有加入真实的用户信息，很多理解和描述还有待验证。</p>
-<p>有了快照，只是给出了比「女性」、「25-30岁」、「白领」更具体、实用的用户描述，但这仅仅是第一步，对用户的描述只是真实世界的一个映射。在瑞典军队中，有一条广为流传的原则：</p>
-<blockquote>
-<p>当地图（映射图）和实际地形不同的时候，永远要相信实际地形。</p>
-</blockquote>
-<p>所以，在有了用户快照之后，我们需要做更多的事情：</p>
-<ul>
-<li>在接触到较完整的用户信息时，看看如何将其归类，验证快照是否合理</li>
-<li>尽可能接触不同类型的用户，提取他们的目标，修正用户分类</li>
-<li>做完整的 Persona，将快照作为假设，进行定量数据聚类检验</li>
-<li>……</li>
-</ul>
-<p>如何分类和描述用户的经验，就分享到这里。</p>
-<p>下一篇我们讨论需求，模糊的需求，折磨人的需求。</p>
-<hr>
-<p>如需转载本文，请联系 uegeek@gmail.com</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/article2-titu.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="产品经理" scheme="http://uegeek.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
-    
-      <category term="用户研究" scheme="http://uegeek.com/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/"/>
-    
-      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
-    
-      <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[产品经理的用研手册01 - 朦胧的用户，懵懂的你]]></title>
-    <link href="http://uegeek.com/pm-ur-handbook1.html"/>
-    <id>http://uegeek.com/pm-ur-handbook1.html</id>
-    <published>2016-11-29T02:34:19.000Z</published>
-    <updated>2016-12-05T02:45:49.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/confused_dog_dribbble.jpg" alt=""></p>
-<a id="more"></a> 
-<p>一入产品深似海，无奈苦逼无处说。</p>
-<p>产品经理都是操心的命，背锅的主。一个成功的产品经理，需要搞砸过多少项目，坑害过多少设计师和工程师，还得练就在失败后活埋自己再自掘坟墓原地满血复活的 bug 招。</p>
-<p>产品经理的苦，来自理想与现实的差距，来自决策的压力，来自未明的模式，来自资源瓶颈和死线，来自跟设计和开发的鸿沟……在各种不确定和不明朗当中，有一种痛，无声而绵长，杀人于无形，它叫做：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01-PMUserSM.jpg" alt=""></p>
-<p>这种互联网式的 SM 故事每天都在上演。</p>
-<p>每每我们被自己的这种初恋斯德哥尔摩综合症感动时，真该有人来当头棒喝：被虐三遍还不知悔改，活该天天初恋……面向对象做产品，如果这个「对象」一直是朦胧的，我们也只好像包办婚姻中的小媳妇一样懵懂。</p>
-<p><strong>从情窦初开到阅人无数，「搞懂对象」是必修课。「搞懂对象」的其中一个办法，叫做「用户研究」。</strong></p>
-<p>曾经遇到过不少产品经理（包括我），在分析需求时一筹莫展，在决策时苦于缺少依据，在给老板汇报时捉襟见肘。时常因为拿不出令人信服的理据，缺乏高情商和煽动性，在推进项目时不免感到阻力重重。</p>
-<p>这些苦头，我都尝过。我是创业团队的产品经理，曾经是微信的设计师、网易和腾讯的产品经理、也在网易担任过用户研究员。这个系列，写给想进一步了解用户研究的产品经理，尝试解答以下问题：</p>
-<ul>
-<li>用研可以帮助产品经理解决哪些问题？为什么产品经理要做用研？</li>
-<li>怎么更有效地分析用户和需求？</li>
-<li>有哪些简单实用的用研思路和方法？</li>
-<li>团队没有研究员，产品经理如何低成本地做用研？</li>
-</ul>
-<h2 id="u4EA7_u54C1_u7ECF_u7406_u7ED5_u4E0D_u5F00_u7684_u69DB"><a href="#u4EA7_u54C1_u7ECF_u7406_u7ED5_u4E0D_u5F00_u7684_u69DB" class="headerlink" title="产品经理绕不开的槛"></a>产品经理绕不开的槛</h2><p>不论处在产品发展的哪一个周期，<strong>产品经理最重要的工作，是为了达成产品目标所做的各种「决策」和「沟通」</strong>。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01-WhatPMDo.jpg" alt=""></p>
-<p>从战略、业务方向，到产品概念、细节设计，每天都需要做出数不清的大小决策，并且把这些决策同步给团队其他成员，推动产品目标实现。</p>
-<p>残酷的现实是，在各种决策过程中，产品经理经常被诟病「拍脑袋」、「想不清楚」、「智商下线」，自己很多时候也会觉得底气不足：</p>
-<blockquote>
-<p>到底做这个决策的依据是什么？</p>
-</blockquote>
-<p>有时候能说出个所以然，有时候简直抓瞎。</p>
-<p>在商业产品的语境中，想要达成诸如流量、收入、市场占有率等目标，总也绕不开<strong>「持续为用户创造价值」</strong>这个命题。于是，很多决策都会围绕用户需求和用户价值展开。比如</p>
-<blockquote>
-<p>我们为一群什么样的用户服务？<br>从哪里触达到这些用户？<br>为他们提供了什么价值？<br>这些人为什么会选择我们的产品？<br>什么样的功能和服务能满足他们的需要？<br>他们在使用产品的过程中会遇到什么问题？<br>……</p>
-</blockquote>
-<p><strong>产品经理是用户需求和价值生产过程之间的桥梁。所以，能深入理解用户是对产品经理的基本要求。</strong></p>
-<p>怎样理解用户？如果没有乔帮主式的天赋，只能通过大量的练习，通过频繁地接触和研究，不断加深对用户的理解。好消息是，练习的机会很多，它们其实就是产品经理每天被拷问的种种问题，比如：</p>
-<blockquote>
-<p>目前对购买转化率影响最大的环节是哪个？如何优化？<br>新上线的评论功能使用量很低，问题出在哪里？<br>如何吸引更多的讲师来到内容平台发布课程？<br>……</p>
-</blockquote>
-<p>除了大量的决策，产品经理的另一个工作核心是对内和对外的「沟通」。</p>
-<p>在团队内部，产品经理发起和推进项目，并且向团队各种角色同步关键信息，比如，告诉设计师需要设计什么样的流程和界面，告诉工程师要实现什么样的功能、获取哪些数据。</p>
-<p>但是在这个过程中，很容易因为沟通不充分产生各种误解和摩擦。设计师认为产品经理没有仔细分析用户需求，工程师认为产品经理提出了冗余的功能——应不应该做、怎样做、什么时候做好，团队花费大量时间站在各自的角度去辩论，而不是想办法一起提高效率、解决问题。</p>
-<p>如果有适当的用户研究，可以帮助大家聚焦到问题和解决方案上，减少无目的、反复的需求论证。</p>
-<p>同时，在对外沟通中，如果产品经理更了解用户，就能更好地跟用户互动。在外部合作时，结合双方用户群体的重合度、用户需求的特点，更容易找到合作点，实现利益最大化。</p>
-<h2 id="u4E3A_u4EC0_u4E48_u7528_u6237_u8C03_u7814_u6CA1_u6709_u7528_uFF1F"><a href="#u4E3A_u4EC0_u4E48_u7528_u6237_u8C03_u7814_u6CA1_u6709_u7528_uFF1F" class="headerlink" title="为什么用户调研没有用？"></a>为什么用户调研没有用？</h2><p>可是，广告不等于疗效。</p>
-<p>在现实中，风风火火立了项，找了不少用户热热闹闹做了一通调研，可是最后好像只留下一个并没有什么新鲜结论的调研报告。渐渐地，大家开始觉得用户研究货不对板，食之无味，弃之可惜。</p>
-<p>为什么？</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01-WhyURdontWork.jpg" alt=""></p>
-<p>首先当然是成本太高。</p>
-<p>互联网产品的更新迭代速度以周、甚至以天计，可是用户研究项目从立项、方案设计、执行、分析到结果，动辄数周，这种节奏难以匹配需求。为了快，大家更倾向于用「试错」的办法，而不是充分论证再行动。</p>
-<p>用户研究之所以耗时长，分工过细和缺乏研究训练也是很重要的原因。产品经理与用户研究员之间要经过反复的沟通，确定研究需求、研究目的。<strong>执行过程中，产品经理和相关人员没有参与，导致研究员要花费大量时间解释和重现过程，以及说明结果的推导。</strong>如果产品经理更了解用研的方法，参与重要过程和结果的讨论，就能大大缩短研究周期，也可以迅速运用研究结果。</p>
-<p>用研无用的第二个原因，是缺少对决策有直接帮助的结果。目的不明确的用研项目，很容易流于形式，只给出一些表面的描述，但是无法辅助决策。而产品经理更清楚需要做出什么决策，以及需要哪些信息、数据支持。由产品经理去发起用研项目，更容易得出可以实际运用的结果。</p>
-<p>第三个原因，是研究的初衷本身就不对。用户研究的目的，主要是发现「未知」，从而获得新的理解、做决策的新证据。但是在很多情况下，用户研究被用作「证明」已知，比如「证明」改版后的效果，「证明」某个功能是有需求的。</p>
-<p>李明远曾经写道：</p>
-<blockquote>
-<p>大部分公司，在做产品和决策以前都会安排调研，不论是模仿还是原创，这很正常。但不少是带着潜在的预期假设去调研，这就麻烦了：如果你已知结果、去选择缔造该结果的调研对象去研究分析，然后通过解读一些已经成为事实的局部现象，那你的调研结果一定就是你已经知道的、之前想要的，几乎不会有例外，很多人是带着自己知道的结果去证明自己想的应该是对的，这不是调研，调研是对已知事实部分有未知结果和发展的（是帮助形成思路、启发而不是具体决定的），是用于防止决策错误和片面思维，而不是单纯以此形成决策的。</p>
-</blockquote>
-<p>正是因为存在种种问题，产品经理更加应该亲自参与用户研究。因为做用研的本质是：解答问题。不是说不需要用户研究员，产品经理自己上就得了。关键在于，产品经理是对问题最「痛」的人，必需参与到问题求解的过程中。或者用一套比以前更系统的办法寻找答案，或者跟用研同学一起更高效地完成。</p>
-<h2 id="u4EA7_u54C1_u7ECF_u7406_u505A_u7528_u6237_u7814_u7A76_u5982_u4F55_u907F_u5751"><a href="#u4EA7_u54C1_u7ECF_u7406_u505A_u7528_u6237_u7814_u7A76_u5982_u4F55_u907F_u5751" class="headerlink" title="产品经理做用户研究如何避坑"></a>产品经理做用户研究如何避坑</h2><p>没错，广告不等于疗效，但是说葡萄酸可能只是因为姿势不对。</p>
-<p>既然用户这道坎无法绕开，那我们就试着用更正确的姿势去做好。</p>
-<p>当然，产品经理最重要的工作不是做出专业的研究，入坑之前不妨参考如下建议：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01-IfPMDoUR.jpg" alt=""></p>
-<ul>
-<li>谨记目标：获得辅助决策的一手信息</li>
-<li>理清问题，识别自己的基本假设，是最重要的步骤</li>
-<li>过程可能比结果更重要</li>
-<li>尽量逻辑严谨，但不要事无巨细</li>
-</ul>
-<p>无论团队中有没有专职的用户研究员，产品经理都应该参与其中。这个过程中，可以外包交给用研同学的部分：</p>
-<ul>
-<li>研究设计</li>
-<li>研究对象筛选和招募</li>
-<li>研究执行</li>
-<li>数据收集</li>
-<li>结果统计</li>
-</ul>
-<p>更多精力要投入在无法外包的部分：</p>
-<ul>
-<li>确定研究目标</li>
-<li>直接接触用户，获得综合的情境信息</li>
-<li>解读结果</li>
-<li>思考如何将结果用于决策</li>
-</ul>
-<h2 id="u5199_u7ED9_u4EA7_u54C1_u7ECF_u7406_u7684_u7528_u7814_u624B_u518C_u7CFB_u5217"><a href="#u5199_u7ED9_u4EA7_u54C1_u7ECF_u7406_u7684_u7528_u7814_u624B_u518C_u7CFB_u5217" class="headerlink" title="写给产品经理的用研手册系列"></a>写给产品经理的用研手册系列</h2><p>作为一个产品经理，很容易找到介绍用户研究的内容。但是，那些内容要么是研究员写给研究员的，产品经理看得云里雾里。要么就是比较零散，不成体系，对一个问题产生兴趣后没有下文了。要么干脆是在简单地罗列各种方法，比如搜一下「用研方法」，一定能找到这种让人兴奋的图，感觉像发现了新大陆：</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/ur-method-cat.png" alt=""></p>
-<p>可是，对着图盯了十分钟，然后呢？一个一个方法去学习？学完以后，发现还是无从下手。以及，跟实际工作到底有什么关联？</p>
-<p>产品经理和用户研究员的困惑，我都深深体会过。所以，这个系列不会按照「用研方法分类-用研方法讲解-案例」的方式写。让我们从产品经理的难题入手，去看看用户研究到底如何帮助产品经理解答问题：</p>
-<ul>
-<li>怎样算了解用户？如何对用户进行分类和描述？</li>
-<li>如何更有效地针对人群进行需求分析？</li>
-<li>哪些用研手段能解答什么类型的问题？</li>
-<li>用户研究最常用有效的「招式」有哪些？</li>
-<li>用户研究思维的本质是什么，如何配合快速迭代的节奏？</li>
-<li>用户研究结果如何促进沟通？</li>
-</ul>
-<p>欢迎关注</p>
-<hr>
-<p>如需转载本文，请联系 uegeek@gmail.com</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/PDE.IMG.QR.png" alt=""></p>
-<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><ul>
-<li><a href="http://cdc.tencent.com/2010/10/12/%E7%94%A8%E7%A0%94%E6%97%A0%E7%94%A8%EF%BC%9F%E2%80%94%E2%80%94%E5%AF%B9%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6%E5%AE%9E%E8%B7%B5%E7%9A%84%E6%80%9D%E8%80%83/" target="_blank" rel="external">用研无用？——对用户研究实践的思考 – 腾讯CDC</a></li>
-<li><a href="https://www.zhihu.com/question/19741459" target="_blank" rel="external">用户研究如何做才能为产品设计提供实质性的帮助？ - 知乎</a></li>
-<li><a href="https://www.zhihu.com/question/19641772" target="_blank" rel="external">用户研究需要注意哪些问题呢？怎样做好用户研究呢？ - 知乎</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/confused_dog_dribbble.jpg" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="产品经理" scheme="http://uegeek.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
-    
-      <category term="用户研究" scheme="http://uegeek.com/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/"/>
-    
-      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
-    
-      <category term="设计" scheme="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[最好的时代，最坏的时代：一个互联网职业迷茫症患者的问题清单]]></title>
-    <link href="http://uegeek.com/best-worst-era.html"/>
-    <id>http://uegeek.com/best-worst-era.html</id>
-    <published>2016-11-27T02:35:55.000Z</published>
-    <updated>2016-12-05T02:42:47.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/titile5-bestworsttime.png" alt=""></p>
-<a id="more"></a> 
-<p>不久前，有一些关注了 HackYourself 的朋友问，你怎么不写产品设计相关的文章？</p>
-<p>并不是不想写，有时候身陷其中，反而不知道该从何下笔。HackYourself 解答我自己对成长和长时程问题的困惑。而对于我所在的这个行业，这个瞬息万变、野蛮生长的行业，这个日日起高楼、宴宾客、楼塌了的行业，这个不在乎你穿什么只在乎你有多少热情的行业，这个如磁石一般吸引着像你像我这些年轻人的行业，它带给我的困惑多得简直就像空气一样稀松平常。</p>
-<p>我在互联网高速发展之初加入了这个行业。当时，产品有限，同行不多，可以找到的资料就那些，成功案例更是稀少——不是大家都做砸了，而是根本没有做过。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/confused_dog_dribbble.jpg" alt=""></p>
-<p>每天，都带着很多困惑去工作：关于岗位、关于工作内容、关于种种新知、关于人际、关于缥缈未卜的前途。因为有很多疑问找不到人解答，我甚至通过多次换岗的方式，来到问题跟前，让它近得可以看清脸上的纹路，然后去接受它的猛击，然后趴在地上去找答案。</p>
-<p>结果是，部分困惑渐渐有了答案，而新的疑问还是源源不断。当迷茫症发作时，也有萌生过离开这个行业的念头。当然这些念头都被迷茫症的并发症所打消：越被虐，越喜欢被虐。于是，迷茫症+斯德哥尔摩综合症抖 M 患者，选择继续见证这个最好的时代、最坏的时代。</p>
-<p>也许现在的你，同样有满脑子的不解，一肚子的不确定。何况今天的行业资讯，已经百倍于几年前 —— 你的迷茫症，一定不轻吧？</p>
-<h2 id="u4F60_u662F_u4EA7_u54C1_u7ECF_u7406_u5417_uFF1F"><a href="#u4F60_u662F_u4EA7_u54C1_u7ECF_u7406_u5417_uFF1F" class="headerlink" title="你是产品经理吗？"></a>你是产品经理吗？</h2><p>我曾经是产品经理。是创业团队轻松冥想的产品经理，是 QQ 空间数据挖掘的产品经理，是网易邮箱的产品经理。</p>
-<p>在刚入行时，怎么也找不到产品经理的准确定义，还有接踵而来的各种问题：</p>
-<blockquote>
-<p>产品经理的职责有哪些？<br>产品经理到底需要具备什么能力？怎么培养？<br>到底什么是好的产品经理？真的人人都可以是产品经理吗？<br>新手产品经理怎样快速熟悉每一个业务细节？<br>需求是什么？要怎么确定一个需求要不要做？<br>怎样跟设计师和开发沟通？他们做的东西我都不太懂<br>需求评审要怎么准备？<br>怎样写需求文档？为什么没有模板？<br>用户反馈好多，该怎么办？<br>……</p>
-</blockquote>
-<p>好不容易熬完几个项目，有了一些感觉，新的问题又袭来：</p>
-<blockquote>
-<p>项目的效果怎么评估？<br>数据怎么统计？数据变化了怎么解读？<br>数据没有达到预期怎么办？<br>为了达成某个目标需要增加什么功能？<br>团队资源很紧张，怎么安排优先级？<br>项目怎么按进度完成？<br>产品有哪些体验问题？<br>怎么做用户调研？<br>设计细节有很多问题，怎么提升？<br>项目涉及的技术我不懂，怎么办？<br>跟推广运营内容的同学怎么配合？<br>需要跟外部合作引入资源，该怎么合作？<br>怎样分解 kpi？还有两个月怎么让数据达标？<br>……</p>
-</blockquote>
-<p>好不容易把常见的坑都趟过一遍，但是面对 0 到 1 的问题，还是手忙脚乱：</p>
-<blockquote>
-<p>什么决定了一款产品的成功？<br>产品的核心到底是什么？<br>商业模式如何设计？如何验证？<br>如何定义核心用户？如何定义最小产品？<br>精益创业和 growth hack 都是怎么玩的？<br>最小产品出来了，如何验证模式？<br>迭代速度和版本节奏如何控制？<br>怎么解决冷启动和流量获取问题？<br>有限的资源怎么最大化利用？<br>如何向市场和投资人讲故事？<br>……</p>
-</blockquote>
-<p>产品经理都是操心的命，背锅的主。</p>
-<p>一个成功的产品经理，需要搞砸过多少项目，坑害过多少设计师和工程师，还得练就在失败后活埋自己再自掘坟墓原地满血复活的 bug 招。</p>
-<p>毕竟，产品经理都是被委屈撑大、被失败养胖的。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/about_800x600.png" alt=""></p>
-<h2 id="u4F60_u662F_u8BBE_u8BA1_u5E08_u5417_uFF1F"><a href="#u4F60_u662F_u8BBE_u8BA1_u5E08_u5417_uFF1F" class="headerlink" title="你是设计师吗？"></a>你是设计师吗？</h2><p>我曾经是交互设计师。是微信支付的设计师，负责智慧生活行业方案和 O2O 设计；是酷狗音乐交互团队负责人；是网易邮箱的交互设计师。</p>
-<p>这是我最热爱的岗位。所以你有的困惑，我一定都有过：</p>
-<blockquote>
-<p>交互设计是做什么的？怎么用一句话解释？<br>交互设计有什么价值？<br>交互设计师到底有没有前途？<br>交互设计需要具备什么技能？怎么培养？<br>为什么交互设计会沦为画线框图的？<br>优秀的交互设计作品是怎样的？需要交付什么？<br>交互设计师如何跟其他岗位合作？<br>如何体现岗位价值？如何在项目前期参与？<br>项目时间紧，没有时间做分析和调研怎么办？<br>怎么进行项目评审？怎么能一次通过？<br>如何分析用户需求、业务需求、设计需求？<br>如何主导设计过程？如何引入其他角色参与设计？<br>网页设计怎么做？客户端设计怎么做？移动端设计怎么做？后台怎么做？<br>如何制定规范？如何推广和使用规范？<br>……</p>
-</blockquote>
-<p>等到有能力设计复杂产品的交互、设计多个终端产品的体验时，发现更大的挑战正等着你：</p>
-<blockquote>
-<p>如何组建设计团队？<br>如何跟产品、视觉、用研、开发、测试团队配合？<br>如何规范设计流程？如何推广用户体验理念？<br>当体验超出屏幕，如何设计整体的服务体验？<br>当使用场景发生在真实环境时，如何引导用户完成复杂流程？<br>线下的体验如何设计和评估？<br>如果无法控制线下体验的细节，怎么办？<br>大到一个行业的服务解决方案要如何设计？<br>跟多个团队、多种角色合作时，如何更好地发挥交互设计的价值？<br>如何跟不同行业的合作方迅速建立深入合作关系？如何推广设计方案？<br>新的交互平台出现了，新的交互范式会是什么？提供了什么样的可能性？<br>……</p>
-</blockquote>
-<p>人+设计+技术，多么有趣而梦幻的组合！问题？再来一打！</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/titile5-bestworsttime.png" alt=""></p>
-<h2 id="u4F60_u662F_u7528_u6237_u7814_u7A76_u5458_u5417_uFF1F"><a href="#u4F60_u662F_u7528_u6237_u7814_u7A76_u5458_u5417_uFF1F" class="headerlink" title="你是用户研究员吗？"></a>你是用户研究员吗？</h2><p>我曾经是用户研究员。在网易用户体验设计中心，服务过网易门户、有道云笔记、有道词典、网易邮箱、网易云阅读、网易微博等产品。</p>
-<p>在那个年代，极少公司有用户研究的职位。不但要在稀少的前人经验上独自摸索、快速学习，还得肩负起普及用户研究和用户体验的责任。</p>
-<blockquote>
-<p>用研能解决哪些问题，不能解决哪些？<br>什么是定性研究，什么是定量研究？<br>常用的用研方法有哪些？可用性测试怎么做？访谈怎么做？焦点小组怎么做？卡片分类呢？情绪版呢？入户调研呢？<br>如何针对问题设计调研方案？<br>怎样快速招募到符合条件的用户来做调研？<br>什么是聚类分析、方差分析、统计检验？<br>如何让人信服研究过程和结果？<br>……</p>
-</blockquote>
-<p>相比起本职工作，更多的困惑来自这个岗位的特殊性：</p>
-<blockquote>
-<p>项目迭代速度太快了，但是用研项目周期都很长，怎么办？<br>研究结论提不出产品、设计马上可以执行的建议，怎么办？<br>用研跟产品、设计的关系是什么？他们需要什么？应该如何配合？<br>如何让团队其他角色参与到用研过程中？<br>如何向没有相关知识的同事快速解释清楚用研的思路和方法？<br>……</p>
-</blockquote>
-<p>作为弱势群体，用研的同学们一直都在求解行业的巨大难题：<strong>如何既靠谱又快速地解答问题</strong>？一旦注入科研思维，建立起更严谨方法体系，这个行业的发展一定会成倍加速。</p>
-<h2 id="u4F60_u662F_u4E3A_u4E86_u6BD5_u4E1A_u548C_u5DE5_u4F5C_u8FF7_u832B_u7684_u5B66_u751F_u515A_u5417_uFF1F"><a href="#u4F60_u662F_u4E3A_u4E86_u6BD5_u4E1A_u548C_u5DE5_u4F5C_u8FF7_u832B_u7684_u5B66_u751F_u515A_u5417_uFF1F" class="headerlink" title="你是为了毕业和工作迷茫的学生党吗？"></a>你是为了毕业和工作迷茫的学生党吗？</h2><p>感谢毕业时那场金融危机，让我选择了这个行业。</p>
-<p>求职时的忐忑，今天仍记忆犹新：</p>
-<blockquote>
-<p>我的简历怎样才能让 HR 感兴趣？<br>校招要么错过，要么笔试就挂，怎么办？<br>听说这个岗位竞争很激烈，我有什么优势呢？<br>每一次面试都超级紧张，怎么办？<br>怎么找到实习机会？<br>该选择外企/私企/国企/公务员？大公司/小公司？<br>应该去哪个城市？<br>……</p>
-</blockquote>
-<p>当年，主流手机系统还是塞班，Wikipedia 被墙，开心网红极一时，微信远没有诞生。</p>
-<p>当我跟研究生导师说要去互联网公司工作时，他不解地问：一个网站有什么好做的？当时我答不上来，因为我不知道这个行业到底有没有前途，只知道我喜欢它，一天到晚泡在上面，虽然我并没有听过用户体验、交互设计这些名词。</p>
-<p>剩下的，也都只是迷茫：</p>
-<blockquote>
-<p>这个行业有前途吗？我能做什么？<br>还会经历类似上一轮的泡沫然后失业吗？<br>这个工作跟专业完全不对口，这 6 年岂不是白读了？<br>产品经理是一个什么样的职位？我能做好吗？<br>我这性格适不适合做产品经理？<br>这个行业成功的前辈他们都是怎么做的？<br>需不需要出国再深造一段时间？<br>……</p>
-</blockquote>
-<p>别怕，今天我们有更多的同路人。</p>
-<p>改不改变潮水的方向，并不重要。重要的是，真的身处其中，感受身上跳动着这个时代真切而紊乱的脉搏。</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/storyshack-136_drbbb.jpg" alt=""></p>
-<hr>
-<p>今天的这个行业，比以往任何时候都聚集了更多年轻而有抱负的头脑。</p>
-<p>作为一个过来人，我没有成功的经验，何况经验每天都在快速贬值。但可以肯定的是，我们遇到过类似的困惑。部分有了解答，部分有了思路，部分仍然折磨着我。未来有更多的难题，需要我们一起去探讨。</p>
-<p>当我苦思不得其解，当我迷茫不知道明天会怎样的时候，也希望有个人来拍拍肩膀，告诉我一个大概的方向，好把精力节省下来去对付真正的难题。</p>
-<p>我已经没有机会对过去的我这么做，但可以尝试把曾经的困惑和现在的思考共享出来，递给未来的你。</p>
-<p>欢迎你，迷茫症病友</p>
-<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/magic_hat.jpg" alt=""></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/titile5-bestworsttime.png" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="产品经理" scheme="http://uegeek.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
-    
-      <category term="用户研究" scheme="http://uegeek.com/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/"/>
-    
-      <category term="设计师" scheme="http://uegeek.com/tags/%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
-    
-      <category term="叽歪" scheme="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
     
   </entry>
   

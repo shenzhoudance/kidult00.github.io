@@ -4,6 +4,357 @@
   
     
     <entry>
+      <title><![CDATA[算法作曲历险记01-简史]]></title>
+      <url>http://uegeek.com/170713-algorithmic-composition-1.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/technocombat_ilu_800x600.jpg" alt=""></p>
+<a id="more"></a> 
+<h3 id="AC__u548C_AC"><a href="#AC__u548C_AC" class="headerlink" title="AC 和 AC"></a>AC 和 AC</h3><p>Art &amp; Code （AC）是 00 新开的坑，记录对一个陌生但好玩的领域的学习历程。算法作曲(Algorithmic Composition) 是 AC 中的 1 号 AC 坑……欢迎围观我在大雾中摸索、游荡。也欢迎老司机帮我带带路~</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/ACACAC-illustrate.jpg" alt=""></p>
+<p>算法作曲 顾名思义，不是由人来作曲，而是经由设定好的算法，通过机器自动生成乐曲。</p>
+<p>先别震惊，也别反感。我并不觉得机器会威胁人在音乐、艺术创造领域的优势。之所以研究算法作曲，纯粹出于对这两个领域的兴趣 —— 尤其是两个看似矛盾、对立的领域，碰撞在一起，一定有很嗨的火花吧！</p>
+<blockquote>
+<p>音乐虽然在表象上是流动音响的时间艺术，然而，从其基础理论设计与数学逻辑同构并进行符号化组织的角度来看，似乎没有任何一门艺术，天生能比音乐拥有更强的可计算性。 ​​​​<br>——黄雷基 <a href="https://mp.weixin.qq.com/s?__biz=MzA3Mjk0MTcyNg==&amp;mid=2649683495&amp;idx=1&amp;sn=18d9af0062b25b6f090bd291d2b4ffc7&amp;mpshare=1&amp;scene=1&amp;srcid=0624qKxE2leEZXU59q4k3vku&amp;key=51ed750aa8560dbf88c430bde4d013799282dbe39aca0f765f6ea94e75f43f04e7f3d2939f531de5d7e753b15c619173871930a2d3ce47bcf41660187643f6b1fe9b8aff79371fd8a771f3d1fa3693dd&amp;ascene=0&amp;uin=MTMyNjgw&amp;devicetype=iMac+MacBook8%2C1+OSX+OSX+10.12.5+build(16F73" target="_blank" rel="external">算法作曲的前世、今生和未来——回溯</a>&amp;version=12020810&amp;nettype=WIFI&amp;fontScale=100&amp;pass_ticket=AgL1ayNVo9yBHkSvsXEEIpezr71WhaJxZNTnnW17MoI%3D)</p>
+</blockquote>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/robot_rock_dribbble.jpg" alt=""></p>
+<p>站在坑口大概往里看了一眼，真是深不见底啊！基础乐理得学吧，作曲知识得学吧， DSP 得略懂一些吧，算法大概得了解吧，机器学习/深度学习得看看吧，工具和软件得试着用吧，前沿的项目得研究下吧……</p>
+<p>一把年纪了怎么这么想不开？大概是年纪大了，更加觉得应该多花些时间在（起码看起来）好玩的事情上面呢！</p>
+<p>系列第一篇，一起来回顾一下算法作曲并不长的历史。</p>
+<h3 id="u7B97_u6CD5_u4F5C_u66F2_u7B80_u53F2"><a href="#u7B97_u6CD5_u4F5C_u66F2_u7B80_u53F2" class="headerlink" title="算法作曲简史"></a>算法作曲简史</h3><p>1952 年，28 岁的列哈伦•希勒（Lejaren Hiller􏶃）告别了杜邦公司，怀揣一大笔奖金重返校园。在美国伊利诺伊大学，这位 23 岁就拿到博士学位的化学家，开始了对合成橡胶的研究。</p>
+<p><img src="http://www.musicainformatica.it/wp-content/uploads/2013/06/Lejaren_Arthur_Hiller_composer_holding_score.jpg" alt=""></p>
+<p>也正是在同一年，第一台完全由美国大学研发的冯•诺伊曼式计算机 Illiac 正式亮相伊利诺伊大学。</p>
+<p><img src="http://2.bp.blogspot.com/-a8PLqfvNuLQ/UKHtOgivzRI/AAAAAAAAAE4/PYUGVS7mV68/s1600/illiac1.png" alt=""></p>
+<p>得天独厚的希勒得以接触到电子计算机，并用它来计算统计意义上理想聚合分子的大小。他无意中发现，如果将控制变量由几何数变为音符，同样的计算机代码可以用于对位法谱曲。一向对音乐颇有兴趣的希勒开始不务正业，试着利用计算机来谱曲，他不仅在闲暇时间开始攻读音乐硕士学位，还把自己的助手——化学师里奥纳德•艾撒克逊（􏹴􏹵􏰉􏻺􏹛Leonard Isaacson）一同拉下了水。</p>
+<p><img src="http://s7.computerhistory.org/is/image/CHM/500004127-03-01?$re-medium$" alt=""></p>
+<p>1956年，在美国计算机协会（ACM）的一次会议上，希勒做了一场关于计算机创作音乐的报告。听众的反应不一，有趣的是，计算机专家们大多对此持非常开放的态度，音乐家们则显得更为谨慎，而很多其他领域的学者们却认为他完全是在胡说八道。</p>
+<p>不管怎样，希勒的第一个作品在 1957 年诞生。</p>
+<p>为了纪念用来作曲的计算机 Illiac，他为这支弦乐四重奏取名「依利亚克组曲」（Illiac Suite），这也是历史上第一支完全由计算机生成的音乐作品。他们基于产生——测试的方法创作，首先使用 Markov 链模型来产生有限控制的随机音符，之后利用和声与复调的规则测试这些音符，最后选择符合规则的材料，修改、组合成传统音乐记谱的弦乐四重奏。</p>
+<p><img src="http://blogs.diariovasco.com/bigbang/files/IlliacSuiteexperimento1br.jpg" alt=""></p>
+<p>【找乐曲】</p>
+<p><a href="http://www.musicainformatica.org/topics/illiac-suite.php" target="_blank" rel="external">该作品分为四个乐章</a>：</p>
+<ul>
+<li>第一乐章：计算机生成的不同长度的固定主题旋律</li>
+<li>第二乐章：使用变奏的规则生成的四声部音乐</li>
+<li>第三乐章：通过计算机对节奏、动态和演奏法的不同处理生成的音乐</li>
+<li>第四乐章：通过衍生算法和马尔科夫链的不同模型及概率生成的音乐</li>
+</ul>
+<p>希勒从此彻底投入计算机音乐创作的怀抱，他转入音乐系任教，成立实验性的音乐工作室。</p>
+<p>随后希勒又开拓了他的很多个「第一次」，如最先进行乐谱打印，最早使用物理模型合成技术等，创作了「算法」系列，「计算机康塔塔」，「HPSCHD」等一系列计算机作曲的音乐作品。</p>
+<p>从此之后，在计算机快速发展的黄金年代，算法作曲也在世界各地的领域先驱们推动下快速发展。</p>
+<p>1960 年，俄罗斯研究者 R.Kh.Zaripov 发行了全世界第一篇关于用「Ural-1」计算机进行算法音乐作曲的论文 <a href="http://adsabs.harvard.edu/abs/1960SPhD....5..479Z" target="_blank" rel="external">An Algorithmic Description of a Process of Musical Composition</a>。</p>
+<p>1960 年，法国工程师、作曲家 Pierre Barbaud 成为欧洲第一个使用计算机作曲的作曲家。</p>
+<p><img src="http://www.associationpierrebarbaud.fr/barbaud_portrait_AClaass.jpg" alt=""></p>
+<p>他创作了「7!」，在有限状态机 (Finite State Automata) 和随机矩阵 (Stochastic Matrices) 的帮助下，将一系列规则运用到 12 音体系中，以此为调性和序列音乐风格建模。</p>
+<p>1965年，发明家 Ray Kurzweil 首次公演了一首用计算机来创作的钢琴作品，这台计算机能够对各种不同的乐曲进行模式识别，并且可以分析和使用这些模式去创造新的旋律。</p>
+<p>1974年，第一次国际计算机音乐会议召开（ICMC）。</p>
+<p>随着计算机相关技术的发展和普及，越来越多的人关注到这个科技与艺术奇妙结合的领域，于是在那个新生流派争奇斗艳的先锋实验年代，各式各样的作曲算法涌现出来。</p>
+<p>然而直到美国作曲家大卫·科普(David  Cope) 开发的「音乐智能实验」系统(Experiments in Musical Intelligence，简称 EMI，1981 年开始研究) ，1987 年在国际计算机音乐年会上第一次公开展示初期成果那时起，计算机音乐与传统音乐之间的桥梁才逐渐架设起来。</p>
+<p><img src="http://50years.ucsc.edu/css/assets/images/posts/fourth-decade/1995-david-cope.jpg" alt=""></p>
+<p><img src="http://www.computerhistory.org/atchm/wp-content/uploads/2015/04/MI0000985908-BachByDesign.jpg" alt=""></p>
+<p>Cope 最初只想编写一个能够描述自己作曲风格的计算机程序，并用来记录自己作品的发展轨迹，不过很快他将目标转向了那些已故大师们，希望能用软件创造出带有不同大师风格的音乐作品。该系统所采取的方法涉及音乐文法和建立风格数据库等， Cope 将这样的工作称为 recombinancy —— 在现存的音乐上加入新的、符合原有逻辑的演绎，从而创造出新的作品。</p>
+<p>比如 David Cope 用 EMI 创作的维瓦尔第风格的十二首管弦乐作品：「星座」。下面将要听到的这首是 「金牛座」（视频也是用算法自动生成的）</p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/2kuY3BrmTfQ" frameborder="0" allowfullscreen></iframe></div>
+<p>1993年，美国科学家 John Al Biles 运用交互式遗传算法，设计了名为 GenJam 的交互式创作演奏系统。该系统能在现场演奏者的 4 或 8 小节演奏后单独生成一个类似风格的新旋律，也能与演奏者进行合奏，在演奏者演奏的同时生成并演奏一个新旋律。</p>
+<p><img src="http://2.bp.blogspot.com/-naDY6-Sc_hU/Upgx1HgAJMI/AAAAAAAAAHg/ihtsVmHgkp0/s1600/genjam.png" alt=""></p>
+<p>随着计算机制谱、乐器数字接口、信号处理、声音分析等技术的研究和应用逐渐兴起和深入，计算机音乐已经成为一个跨学科、跨媒介、跨文化的艺术形式和科学领域。</p>
+<p>这么好玩的坑，要入吗？</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul>
+<li>倪朝晖. (2015). 算法作曲理论与实践. 西南师范大学出版社</li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzA3Mjk0MTcyNg==&amp;mid=2649683495&amp;idx=1&amp;sn=18d9af0062b25b6f090bd291d2b4ffc7&amp;mpshare=1&amp;scene=1&amp;srcid=0624qKxE2leEZXU59q4k3vku&amp;key=51ed750aa8560dbf88c430bde4d013799282dbe39aca0f765f6ea94e75f43f04e7f3d2939f531de5d7e753b15c619173871930a2d3ce47bcf41660187643f6b1fe9b8aff79371fd8a771f3d1fa3693dd&amp;ascene=0&amp;uin=MTMyNjgw&amp;devicetype=iMac+MacBook8%2C1+OSX+OSX+10.12.5+build(16F73" target="_blank" rel="external">算法作曲的前世、今生和未来——回溯</a>&amp;version=12020810&amp;nettype=WIFI&amp;fontScale=100&amp;pass_ticket=AgL1ayNVo9yBHkSvsXEEIpezr71WhaJxZNTnnW17MoI%3D)</li>
+<li><a href="http://www.musicainformatica.org/topics/illiac-suite.php" target="_blank" rel="external">Illiac Suite | musicainformatica.org</a></li>
+<li>Hoffmann, P. (2009). Music Out of Nothing? A Rigorous Approach to Algorithmic Composition by Iannis Xenakis. <a href="https://doi.org/http://dx.doi.org/10.14279/depositonce-2292" target="_blank" rel="external">https://doi.org/http://dx.doi.org/10.14279/depositonce-2292</a></li>
+<li><a href="https://ccrma.stanford.edu/~blackrse/algorithm.html" target="_blank" rel="external">The History of Algorithmic Composition</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[警惕信念的苛捐杂税 —— HackYourself 避税指南之一]]></title>
+      <url>http://uegeek.com/170624-hackyourself-cbt1.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dailythoughts.png" alt=""></p>
+<a id="more"></a> 
+<p>人每天会产生多少想法？</p>
+<p>别着急回答。</p>
+<p>试着闭上眼睛 30 秒，什么都不干，「观察」一下脑子里会出现些什么念头。</p>
+<p>准备好了，闭上眼睛。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/30secondscountdown.gif" alt=""></p>
+<p>留意到自己的念头了吗？</p>
+<p>大部分人会惊诧于这 30 秒内产生的念头竟然有那么多，而且杂乱无章。</p>
+<p>没错，在醒着的大部分时间里，我们持续产生着各式各样的念头。据未确切考证的<a href="http://blogs.discovermagazine.com/neuroskeptic/2012/05/09/the-70000-thoughts-per-day-myth/#.WU2hihOGOHo" target="_blank" rel="external">说法</a> <sup>[1]</sup>，人一天中产生的念头多达六七万个。这些念头闪过，却基本不会觉察它们的存在。</p>
+<p>想想看，假设你开了一家大公司，有六七万人给你打工，但是你根本不知道他们都从哪里来。幽灵一般的员工们快速地来回穿梭，看似在工作，实际上只是机械地做着动作，你搞不清他们在做什么、公司是如何运作的。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/assembly-800-x-600.gif" alt=""></p>
+<p>够可怕吧？这恰恰就是我们的常态——每分每秒都在产生念头，看似我们在「制造」和「控制」它们，实际上却被它们「影响」然后「不自觉地行动」。而且，念头也有「阶级」之分。有些念头催生了其他念头，属于坐享权力和影响力的「源头信念」。</p>
+<p>也许我们没有意识到，每天都在为一些念头（尤其是源头信念）付出巨大的代价。某些信念让我们反复做出类似的决策，导致类似的结果，甚至形成一再重复的模式，反复上演相似的历史。比如从来没法坚持做好一件事，比如每个月都刷爆信用卡，比如感情上一直遇到渣男……</p>
+<p>如果总是把结果轻描淡写归结为「一时糊涂」、「运气不好」等等，可能没有想过、也不愿意承认，这些结果往往源于一些未经审视的信念。不会有任何提醒，也没有半张收据，就像税赋一样，吸血于无形之中，然而你每天每月每年都在交，甚至要交上一辈子。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/giveandtake.jpg" alt=""></p>
+<p>时隔半年，HackYourself 回归的第一个系列，00 想跟大家聊聊信念的苛捐杂税——我们在为哪些念头付出沉重代价，如何合理避税以便早日实现「精神的财务自由」。</p>
+<h3 id="u5C0F_u7A0E_u53EF_u9003_uFF0C_u5927_u7A0E_u96BE_u514D"><a href="#u5C0F_u7A0E_u53EF_u9003_uFF0C_u5927_u7A0E_u96BE_u514D" class="headerlink" title="小税可逃，大税难免"></a>小税可逃，大税难免</h3><p>想逃税也需要界定一个范围，毕竟小税可逃，大税难免。</p>
+<p>什么是「大税」呢？比如属于时代的信念税——历史局限性，这可是连重构学科体系的大佬们都无法突破的的框架：</p>
+<p><img src="https://image.slidesharecdn.com/earthyquotesrev-12824374135542-phpapp02/95/paradigms-14-728.jpg?cb=1282419576" alt=""></p>
+<p>时代信念税，往往一交就交大发了，世界商业版图都从此改变：</p>
+<p><img src="http://img.picturequotes.com/2/587/586733/i-think-there-is-a-world-market-for-maybe-five-computers-quote-1.jpg" alt=""></p>
+<p>错过一个时代不说，还会被后人耻笑：</p>
+<p><img src="https://lukasdaalder.files.wordpress.com/2014/02/screenshot-2014-02-11-06-33-04.png?w=440&amp;h=230&amp;crop=1" alt=""></p>
+<p>如果说「大税」交的是历史周期的税，那么「小税」又包含什么呢？让我们从群体历史周期回到个体历史周期。</p>
+<p>从童年开始，我们已经对自己、他人以及世界形成了一定的看法，其中一些最核心的信念被认为是绝对真实和正确的。这些影响个体价值观、判断和行为的观念，关于自我最核心的观念，是避税指南系列想要探讨的重点。</p>
+<p>认知语言学家莱考夫在「我们赖以生存的隐喻」一书中，语重心长地指出，我们的概念体系基于隐喻构建，抽象思维很大程度上是隐喻的，我们通过隐喻派生的推论为基础来生活。这些隐喻如此根深蒂固，我们根本都察觉不出它们的深刻影响。比如，「争论是战争」这一隐喻，贯穿在日常对「争论/讨论/辩论」等概念的理解和行动中：</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/goodargument.jpg" alt=""></p>
+<blockquote>
+<p>他<strong>攻击</strong>我观点中的每一个弱点</p>
+<p>我<strong>粉碎</strong>了他的论点</p>
+<p>和他争论，我从来没<strong>赢</strong>过</p>
+<p>你不同意？好吧，<strong>反击</strong>啊！</p>
+<p>他<strong>击破</strong>了我的所有观点</p>
+<p>……</p>
+</blockquote>
+<p>我们对每一句话都习以为常，用起来自然得根本意识不到争论也许有其他的形式和比喻，比如像跳双人舞，比如像打乒乓球。</p>
+<p>我的一位朋友在婚姻中被婆媳关系折磨得发疯，一家人的无数冲突，可能都源于婆婆一直灌输给她丈夫的「信念」：一定要制服媳妇，让她听话、服服帖帖，不会骑在自己头上。多么经典的战争和控制权争夺的隐喻啊！生活在这种隐喻构建的观念和场景中，亲密关系从何构建？</p>
+<h3 id="u5E38_u89C1_u7684_u4E2A_u4EBA_u4FE1_u5FF5_u7A0E"><a href="#u5E38_u89C1_u7684_u4E2A_u4EBA_u4FE1_u5FF5_u7A0E" class="headerlink" title="常见的个人信念税"></a>常见的个人信念税</h3><p>我们倾向于认为，大多数人持有相对正面和现实的核心信念，比如「大多数事情我能够胜任」、「我是有价值的人」，负面的核心信念只在遭遇一些应激事件导致内心痛苦时才表现出来。但只要稍微认真审视一下，或多或少会发现，一些隐蔽的信念在持续发挥着影响。即便优秀富有成效的人，也可能是受类似「我不被接受」之类的负面核心信念所驱动。</p>
+<p>认知疗法之父 Aaron Beck 将核心信念分为三类<sup>[2]</sup>：</p>
+<ol>
+<li><p>无能类核心信念（Helpless Core Beliefs）</p>
+<blockquote>
+<p>我不能胜任<br>我做事毫无效率<br>任何事我都做不好<br>我很无助<br>我易受伤害<br>我贫苦<br>我失控<br>我是有缺陷的人 （例如，我比不上其他人）<br>我不够好 （成就方面）<br>我是失败者<br>……</p>
+</blockquote>
+</li>
+</ol>
+<ol>
+<li><p>不可爱类核心信念（Unlovable Core Beliefs）</p>
+<blockquote>
+<p>我不可爱/不讨人喜欢/不受欢迎/没有吸引力<br>我是多余的<br>我被人忽视<br>我与人不同<br>我真坏（所以其他人不爱我）<br>我不够好（所以其他人不爱我）<br>我必定被拒绝<br>我必定孤独<br>……</p>
+</blockquote>
+</li>
+</ol>
+<ol>
+<li><p>无价值类核心信念（Worthless Core Beliefs）</p>
+<blockquote>
+<p>我毫无价值<br>我不被接受<br>我是废物<br>我不道德<br>我很危险<br>我有罪<br>……</p>
+</blockquote>
+</li>
+</ol>
+<p>一眼看上去，大部分的核心信念好像都跟我们关系不大。</p>
+<p>真的是这样吗？</p>
+<p>想想，你为什么会把工作上的一件小事做得比别人好？</p>
+<p>是真正乐于其中吗？还是害怕做不好会有后果？还是别人的称赞会让自己觉得有价值？为什么别人的称赞如此重要？为什么别人实际上没有做出的称赞成为了动力？……继续追问下去，有没有出现上面提到的核心信念？</p>
+<p>想想，你为什么会把工作上的一件小事做得不如别人？</p>
+<p>是不知道该怎么做吗？是觉得无聊不想做吗？是做得比别人慢吗？……继续追问下去，有没有出现上面提到的核心信念？</p>
+<p>再想想，你为什么会在意跟别人比较工作成果？</p>
+<p>是因为薪水吗？是因为不想被批评吗？是因为能获得成就感吗？……继续追问下去，有没有出现上面提到的核心信念？</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/beg-23.png" alt=""></p>
+<p>也许我们从来没有追问过核心信念，所以也不知道它们会造成怎样的影响和损失。</p>
+<p>比如，在「我不够好（成就方面）」这样一个核心信念下，会有怎样的想法和行动？可能会将某种成就作为人生准绳而忽视其他重要的东西，可能会容易迷信权威，可能不敢表达自己的观点，可能很功利，可能容易半途而废……</p>
+<p>这些信念导致的损失，就像名目繁多的税费，看似不存在，实则难以估量，说不定就是贫富差距的罪魁祸首。</p>
+<p>当然，还有数不清的非核心信念（假设）也在慢慢氧化我们，比如：</p>
+<ul>
+<li>读过的书越多，掌握的知识就越多</li>
+<li>道理懂得越多，人的判断力越好</li>
+<li>房子应该存够首期再买</li>
+<li>东西越便宜越好/越贵越好</li>
+<li>朋友多说明人缘好，人缘好说明人好</li>
+<li>做完的东西越多越好代表效率越高</li>
+<li>……</li>
+</ul>
+<p>真的真的是这样吗？我也不知道。</p>
+<p>欢迎留言，分享你交过的信念税。</p>
+<p>下一篇开始，我们探讨如何识别出潜在信念，找到合理避税的突破口。</p>
+<h3 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h3><ul>
+<li>[1]. <a href="https://book.douban.com/subject/26298597/" target="_blank" rel="external">我们赖以生存的隐喻</a></li>
+<li>[2]. Beck, A. T., Freeman, A., &amp; Davis, D. D. (2015). Cognitive Therapy of Personality Disorders. Guilford Publications.</li>
+<li>[3]. <a href="http://blogs.discovermagazine.com/neuroskeptic/2012/05/09/the-70000-thoughts-per-day-myth/#.WU2hihOGOHo" target="_blank" rel="external">The 70,000 Thoughts Per Day Myth? - Neuroskeptic</a></li>
+<li>[4]. <a href="http://list25.com/25-famous-predictions-that-were-proven-to-be-horribly-wrong/" target="_blank" rel="external">25 Famous Predictions That Were Proven To Be Horribly Wrong</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[17° 读书会笔记[6] - 设计的准则]]></title>
+      <url>http://uegeek.com/170415-design-principle.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/161218readingtitle.png" alt=""></p>
+<a id="more"></a> 
+<p>17° 读书会第 6 本书：<a href="https://book.douban.com/subject/26882272/" target="_blank" rel="external">设计的准则</a></p>
+<p><img src="https://img3.doubanio.com/lpic/s29068132.jpg" alt=""></p>
+<p>阅读时间：2017-03-19 ~ 2017-03-25</p>
+<blockquote>
+<p>这本小书不是要扼杀创造力，也不是要将其简化为一堆原则，它并非妨碍好设计发生的方程式，而是希望制止对设计专业复杂性缺乏了解的状况。大脑应该负责运用合适的方程式去实现预期的结果。</p>
+</blockquote>
+<h2 id="u8BFB_u524D_u95EE_u9898"><a href="#u8BFB_u524D_u95EE_u9898" class="headerlink" title="读前问题"></a>读前问题</h2><ul>
+<li>设计中的「准则」起到什么作用？</li>
+<li>作者认为无形因素和有形因素如何怎样影响设计？</li>
+<li>设计的语义、句法和语用分别指什么？</li>
+<li>哪些准则对我的启发最大？</li>
+</ul>
+<h2 id="u8BFB_u540E_u601D_u8003"><a href="#u8BFB_u540E_u601D_u8003" class="headerlink" title="读后思考"></a>读后思考</h2><p>马西莫·维涅里（Massimo Vignelli，1931—2014）是意大利国宝级设计师，现代主义设计的开拓中坚，二十世纪下半叶视觉传达发展进程中具有深远影响的人物之一。他的设计领域涵盖了包装、产品、家具、展示设计到公共标识。</p>
+<p>1966年，维涅里同其他设计师共同创办了 Unimark International，这家设计所很快便成为了世界上最大的设计公司之一，并为众多世界知名企业设计了身份标识，如美国航空、美国布鲁明代尔百货公司、福特、IBM等。这一时期，维涅里最著名的设计作品是纽约地铁线路图。1971年，维涅里离开 Unimark，与妻子莱拉一起在纽约创办了维涅里设计事务所，被视为设计界的全能常青树。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/17032504bf6e7e140fe72a14841816405ec424.jpg" alt=""></p>
+<p>这本书提供了对平面设计中「标准」的思考，有助于更好地理解版式设计的基本原理。</p>
+<blockquote>
+<p>设计是一种规则，是带有其自身规定法则的创造性的过程，围绕其目标，以最直接且最具有表现力的方式控制着结果的统一性。</p>
+</blockquote>
+<p>跟前面几本书一样，维涅里也提出了他对设计的定义。Paul Rand 认为设计是处理关系，原研哉认为设计是对生活意义的表达，Papanek 认为设计是为了达成有意义的秩序而进行的有意识而又富于直觉的努力。维涅里的定义更加带有「原教旨主义」的意味，认为设计是创造（严肃的）规则。</p>
+<blockquote>
+<p>规则是一组自我设定的准则，规范着我们的实践。混乱、复杂的设计揭露同样混乱、复杂的头脑。</p>
+</blockquote>
+<p>维涅里将设计作品中凝练的规律视为最高准绳，厌恶多余、粗鄙、杂质、混乱。他认为设计如果没有规则，将是混乱的，是一种没有责任心的活动，这就是「无规矩不成方圆」吧~</p>
+<p>准则反应了设计师在长期的设计实践中，对「如何做出更好的设计」的种种试验和反思：哪些问题重复出现？哪些因素影响效果？哪些做法总是奏效？当设计师在「经验」和「理想的设计效果」中建立起强关联，就会将「经验」升级为「准则」。</p>
+<p><img src="http://s3files.core77.com/blog/images/Massimo_Vignelli_Canon.jpg" alt=""></p>
+<p>维涅里把设计的准则分成无形因素和有形因素。</p>
+<table>
+<thead>
+<tr>
+<th>无形因素</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>语义学</td>
+<td>设计追寻意义。全方位多角度地理解设计主体，并且在设计主体与发送端和接收端之间，以对双方都有意义的方式建立联系。</td>
+</tr>
+<tr>
+<td>句法学</td>
+<td>在遣词造句和设计语言表达中控制语法的正确使用的准则。</td>
+</tr>
+<tr>
+<td>语用学</td>
+<td>设计所传达的意义应该被理解</td>
+</tr>
+<tr>
+<td>规则</td>
+<td>规则是一组自我设定的准则，规范着我们的实践。</td>
+</tr>
+<tr>
+<td>适度性</td>
+<td>在适当的范围内进行探索，指导我们选择正确的媒介、正确的材料、正确的比例、正确的表达方式和色彩与肌理</td>
+</tr>
+<tr>
+<td>模糊性</td>
+<td>多元，物体以不同方式真实存在的可能性</td>
+</tr>
+<tr>
+<td>历史、理论与批评</td>
+<td>从时代-运动-表现方式-设计师-设计作品中寻找「为什么」和洞察</td>
+</tr>
+<tr>
+<td>现代主义</td>
+<td>对于生产过程以及产品最终目的的认识，是一种意识形态的反应</td>
+</tr>
+<tr>
+<td>设计为一</td>
+<td>设计的规则是唯一的，可以被运用于许多不同的设计主题中，它高于并超越任何风格</td>
+</tr>
+<tr>
+<td>视觉的力量</td>
+<td>就一件设计作品而言，至关重要的是它应该充满了视觉张力，并以其独特的呈现来实现设计意图</td>
+</tr>
+<tr>
+<td>智慧的优雅</td>
+<td>引导我们走向一切创造性活动最佳解决方案的线索，是思维的终极目标</td>
+</tr>
+<tr>
+<td>永恒性</td>
+<td>探索客观价值，不追逐潮流，以恰当的方式反映内容</td>
+</tr>
+<tr>
+<td>责任感</td>
+<td>设计的结果应该能够独立存在，并且无需借口、解释、致歉</td>
+</tr>
+<tr>
+<td>光</td>
+<td>光塑造了一切「表现」</td>
+</tr>
+<tr>
+<td>任意性</td>
+<td>为了追求自由，以任意性抵制规则是错误的，而自由是有条件与界限的，反之则是混沌、任性、朝生暮死与肤浅的</td>
+</tr>
+<tr>
+<td>语境</td>
+<td>设计与被设计对象的终结目标之间的相互关系</td>
+</tr>
+<tr>
+<td>影响</td>
+<td>“影响”以深入且形成性的方式作用于思维，而“灵感”则偏向具有朝生暮死的本质</td>
+</tr>
+<tr>
+<td>营销</td>
+<td>获得市场成功需要愿景、勇气与决心，而不是市场调研与焦点族群的掣肘，好设计需要勇气</td>
+</tr>
+</tbody>
+</table>
+<p>在有形因素部分，维涅里仔细阐述了平面设计和版式设计中的一些黄金规则，包括书籍网格的使用、字体尺寸、色彩、装订等等。他极力主张简化设计元素的复杂性，通过少量的样式传达出意义、平衡、优雅。</p>
+<blockquote>
+<p>在人人喧嚣当中，沉默反而是会被关注的。空白空间提供了宁静——那就是我们版式设计的精髓。</p>
+</blockquote>
+<p>相比无形部分，有形部分的规则多少让人觉得枯燥而没有新意。正是这种近似刻板的准则，让我们感受到维涅里对设计的「混乱」充满担忧。他将「随意」导致的复杂和混乱作为设计的大敌，热爱那些大道至简的底层规律。</p>
+<p><img src="http://monotypecom.s3.amazonaws.com/images/4ad38be7244043d8/MV_6.jpg" alt=""></p>
+<p>对于「规则」，受限于历史、环境、载体、目的等，规则可能不再适用。但是对「什么是优雅的设计」规律的追求，所有设计师都应该永不停歇。</p>
+<p>最后，用书中最后一段话作为结尾：</p>
+<blockquote>
+<p>我爱系统，而藐视偶然的巧合。</p>
+<p>我爱模糊性，因为在我看来模糊性意味着多重的含义；我爱矛盾，因为它使事物保持发展，能避免预设某种僵化的含义，也避免停滞与压迫。</p>
+<p>正如同我爱处于变化中的事物那样，我也乐于看它们存在于一个参照系之中——这种关照方式始终如一地保证了我自始至终是负责每一处细节的那个人。</p>
+<p>我爱设计，这就是原因。</p>
+</blockquote>
+<p><img src="http://monotypecom.s3.amazonaws.com/images/972e2e2eb2dc5094/MV_1.jpg" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[DeepLearning-2 语言模型和 N-gram]]></title>
+      <url>http://uegeek.com/170312-deeplearning-week1.html</url>
+      <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dl-week0-title.png" alt=""></p>
+<a id="more"></a> 
+<p>语言模式是自然语言处理的一个基础概念。我们可以从语料中得到「语言模型」—— 即句子的概率，可用于：</p>
+<ul>
+<li>发现错别句子</li>
+<li>发现新短语</li>
+<li>生成句子（如<a href="https://github.com/phunterlau/wangfeng-rnn" target="_blank" rel="external">模仿汪峰写歌</a>）</li>
+</ul>
+<p>机器怎样理解自然语言呢？有两种思路：</p>
+<ul>
+<li>学习语法：词性、句子成分，但不能保证语义，如，火星追杀绿色的梦</li>
+<li>概率统计：<a href="https://www.wikiwand.com/zh-cn/%E9%BD%8A%E5%A4%AB%E5%AE%9A%E5%BE%8B" target="_blank" rel="external">齐夫定律</a>（词频 $\propto \frac{1}{rank}$ ：频率最高的单词出现的频率大约是出现频率第二位的单词的2倍，而出现频率第二位的单词则是出现频率第四位的单词的2倍），香农的信息论</li>
+</ul>
+<h3 id="u6982_u7387_u8BBA_u57FA_u672C_u539F_u7406"><a href="#u6982_u7387_u8BBA_u57FA_u672C_u539F_u7406" class="headerlink" title="概率论基本原理"></a>概率论基本原理</h3><p>概率空间：所有可能的结果。概率中的原子结构是基本事件，不可分割，不重叠；分子结构是事件（基本事件的集合）。事件的概率，可以理解为所选取的基本事件在整个空间里占的面积比例。</p>
+<ul>
+<li>联合概率 P(A,B)：两个事件同时发生，比如掷两次筛子，可能有 $6^2$ 种结果。</li>
+<li>条件概率 P(B|A)：A 条件下 B 发生的概率。从一个大的空间进入到一个子空间（切片），计算在子空间中的占比。$P(B|A) = \frac{P(A,B)}{P(A)}$</li>
+</ul>
+<h3 id="u6982_u7387_u8BED_u8A00_u6A21_u578B"><a href="#u6982_u7387_u8BED_u8A00_u6A21_u578B" class="headerlink" title="概率语言模型"></a>概率语言模型</h3><ul>
+<li>计算句子的概率： $P(S) = P(w_1,w_2,w_3,…,w_n)$</li>
+<li>用处：句子错误检查、输入法候选、生成有用的句子等等</li>
+<li>统计：随着空间膨胀，数据变稀疏，样本有效性降低</li>
+</ul>
+<p>对句子做最简化的处理，先考虑只有两个词的句子，根据条件概率公式，它的概率等于第一个词的空间占比，乘以第一个词的概率空间中第二个词的占比：$P(w_1,w_2) = P(w_2|w_1)*P(w_1)$</p>
+<p>最初级的语言模型（Unigram），可以人为地假设词之间是独立的： $P(w_2|w_1) \approx P(w_2)$，于是这个句子的概率约等于两个词的频率相乘： $P(w_2,w_1) \approx P(w_1)*P(w_2)$ </p>
+<p>如果把两个词的句子扩展为三个词：$P(w_1,w_2,w_3) = p(w_1,w_2)<em>p(w_3|w_1,w_2) = p(w_1)</em>p(w_2|w_1)*p(w_3|w_1,w_2)$</p>
+<p>以此类推：</p>
+<p>$P(w_1,w_2,…w<em>n) = \prod</em>{i} P(w_i|w_1w<em>2…w</em>{i-1})$</p>
+<p>这样做的话，对每个词要考虑它前面的所有词，这在实际中意义不大。可以做些简化吗？</p>
+<p>我们可以基于马尔科夫假设来做简化。</p>
+<blockquote>
+<p>马尔科夫假设是指，每个词出现的概率只跟它前面的少数几个词有关。比如，二阶马尔科夫假设只考虑前面两个词，相应的语言模型是三元模型。引入了马尔科夫假设的语言模型，也可以叫做马尔科夫模型。</p>
+<p>马尔可夫链（Markov chain）为狀態空間中经过从一个状态到另一个状态的转换的随机过程。该过程要求具备“无记忆”的性质：下一状态的概率分布只能由当前状态决定，在时间序列中它前面的事件均与之无关。</p>
+</blockquote>
+<p>比如对上面公式做一个 i-k 的简化：</p>
+<p>$P(w_1,w_2,…w<em>n) \approx \prod</em>{i} P(w<em>i|w</em>{i-k}…w_{i-1})$</p>
+<p>物理意义上说，上面的公式意味着每次看到 i 时，只要关注 i 前面的 k 个词，这就是 N-gram 模型的思路。</p>
+<h3 id="u4F5C_u4E1A"><a href="#u4F5C_u4E1A" class="headerlink" title="作业"></a>作业</h3><p>作业 1：$P(w_1,w_2) = P(w_2|w_1)*P(w_1)$ 没有减少参数个数，为什么？</p>
+<p>作业 2：在自己选取的数据集合上建立 Bigram 模型，并使用该建立好的模型生成句子。</p>
+<h3 id="u5176_u4ED6"><a href="#u5176_u4ED6" class="headerlink" title="其他"></a>其他</h3><p>技巧：进入 docker 容器的 shell 环境</p>
+<p><code>docker exec -it container_id /bin/bash</code></p>
+<h3 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h3><ul>
+<li><a href="https://www.wikiwand.com/zh-cn/%E9%BD%8A%E5%A4%AB%E5%AE%9A%E5%BE%8B" target="_blank" rel="external">齐夫定律</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2015/07/monte-carlo-method.html" target="_blank" rel="external">蒙特卡罗方法入门 - 阮一峰的网络日志</a></li>
+<li><a href="http://www.cs.columbia.edu/~mcollins/lm-spring2013.pdf" target="_blank" rel="external">Language Modeling - Course notes for NLP by Michael Collins, Columbia University</a></li>
+<li><a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf" target="_blank" rel="external">Language Modeling with Ngrams</a></li>
+<li><a href="https://www.youtube.com/watch?v=s3kKlUBa3b0" target="_blank" rel="external">4 - 1 - Introduction to N-grams- Stanford NLP - Professor Dan Jurafsky &amp; Chris Manning - YouTube</a></li>
+<li><a href="https://www.wikiwand.com/zh/%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E9%93%BE" target="_blank" rel="external">马尔可夫链 - Wikiwand</a></li>
+<li><a href="https://github.com/sunoonlee/DeepLearning101/issues/2" target="_blank" rel="external">sunoonlee 同学的笔记</a></li>
+<li><a href="https://github.com/zhatrix/DeepLearning101/blob/master/ch1/project/assignmentch1.ipynb" target="_blank" rel="external">DeepLearning101/zhatrix/DeepLearning101</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[DeepLearning-1：神经网络和 Docker 入门]]></title>
       <url>http://uegeek.com/170304-deeplearning-week0.html</url>
       <content type="html"><![CDATA[<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/dl-week0-title.png" alt=""></p>
