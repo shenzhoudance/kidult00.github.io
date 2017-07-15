@@ -4,6 +4,96 @@
 
     
   <url>
+    <loc>http://uegeek.com/10year-check.html</loc>
+    <lastmod>2017-07-15T02:15:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>给自己开一张十年的支票</title>
+        <pubTime>2015-09-14T07:51:06.000Z</pubTime>
+        
+        <tag>00</tag>
+         
+         
+           
+             
+              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://uegeek.com/selfish-gene-2.html</loc>
+    <lastmod>2017-07-15T02:13:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>带着镣铐跳舞的生存机器——读自私的基因[下]</title>
+        <pubTime>2015-08-20T13:04:11.000Z</pubTime>
+        
+        <tag>Note</tag>
+         
+        <tag>进化</tag>
+         
+         
+           
+             
+              <breadCrumb title="读书" url="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://uegeek.com/selfish-gene-1.html</loc>
+    <lastmod>2017-07-15T02:13:36.000Z</lastmod>
+    <data>
+        <display>
+        <title>报告：前方没有上帝出没——读自私的基因[上]</title>
+        <pubTime>2015-08-20T12:58:24.000Z</pubTime>
+        
+        <tag>Note</tag>
+         
+        <tag>进化</tag>
+         
+         
+           
+             
+              <breadCrumb title="读书" url="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://uegeek.com/170713-algorithmic-composition-1.html</loc>
+    <lastmod>2017-07-15T01:25:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>算法作曲历险记01-简史</title>
+        <pubTime>2017-07-13T01:03:19.000Z</pubTime>
+        
+        <tag>AlgorithmicComposition</tag>
+         
+        <tag>Art</tag>
+         
+        <tag>Code</tag>
+         
+        <tag>算法作曲</tag>
+         
+         
+           
+             
+              <breadCrumb title="动手" url="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://uegeek.com/170312-deeplearning-week1.html</loc>
     <lastmod>2017-07-15T01:21:09.000Z</lastmod>
     <data>
@@ -18,32 +108,6 @@
         <tag>Docker</tag>
          
         <tag>深度学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="动手" url="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/170713-algorithmic-composition-1.html</loc>
-    <lastmod>2017-07-15T01:20:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>算法作曲历险记01-简史</title>
-        <pubTime>2017-07-13T01:03:19.000Z</pubTime>
-        
-        <tag>AlgorithmicComposition</tag>
-         
-        <tag>Art</tag>
-         
-        <tag>Code</tag>
-         
-        <tag>算法作曲</tag>
          
          
            
@@ -1427,28 +1491,6 @@
 
     
   <url>
-    <loc>http://uegeek.com/vensim.html</loc>
-    <lastmod>2016-08-06T02:17:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>Vensim V5.4a 系统动力学_系统思考软件 下载及基础教程</title>
-        <pubTime>2008-04-15T14:35:32.000Z</pubTime>
-        
-        <tag>教程</tag>
-         
-        <tag>模型</tag>
-         
-         
-           
-             
-              <breadCrumb title="动手" url="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://uegeek.com/ixd-controls-buttons.html</loc>
     <lastmod>2016-08-06T02:16:11.000Z</lastmod>
     <data>
@@ -2168,28 +2210,6 @@
 
     
   <url>
-    <loc>http://uegeek.com/to-sysu-03gisers.html</loc>
-    <lastmod>2016-01-06T12:34:04.000Z</lastmod>
-    <data>
-        <display>
-        <title>To SYSU 03GISers</title>
-        <pubTime>2007-07-02T17:34:25.000Z</pubTime>
-        
-        <tag>GIS</tag>
-         
-        <tag>SYSU</tag>
-         
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://uegeek.com/travel-in-hosi-corridor.html</loc>
     <lastmod>2016-01-06T12:31:35.000Z</lastmod>
     <data>
@@ -2212,24 +2232,6 @@
 
     
   <url>
-    <loc>http://uegeek.com/the-moment.html</loc>
-    <lastmod>2016-01-06T12:27:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>THE MOMENT</title>
-        <pubTime>2007-10-09T09:39:26.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://uegeek.com/import-cnki-into-endnote.html</loc>
     <lastmod>2016-01-06T12:26:51.000Z</lastmod>
     <data>
@@ -2245,30 +2247,6 @@
            
              
               <breadCrumb title="动手" url="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/2007-e2-94-80-e2-94-80.html</loc>
-    <lastmod>2016-01-06T12:25:13.000Z</lastmod>
-    <data>
-        <display>
-        <title>2007这一年</title>
-        <pubTime>2007-12-31T13:15:43.000Z</pubTime>
-        
-        <tag>2007</tag>
-         
-        <tag>2008</tag>
-         
-        <tag>总结</tag>
-         
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
           
         </display>
     </data>
@@ -2340,52 +2318,12 @@
 
     
   <url>
-    <loc>http://uegeek.com/2008all.html</loc>
-    <lastmod>2016-01-06T00:43:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>2008这一年</title>
-        <pubTime>2008-12-31T15:00:28.000Z</pubTime>
-        
-        <tag>2008</tag>
-         
-        <tag>总结</tag>
-         
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://uegeek.com/toughday.html</loc>
     <lastmod>2016-01-06T00:41:27.000Z</lastmod>
     <data>
         <display>
         <title>人是这样变傻的....</title>
         <pubTime>2009-04-25T13:09:00.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/self-examination.html</loc>
-    <lastmod>2016-01-06T00:39:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>抓住青春的尾巴, 恶补年少的无知</title>
-        <pubTime>2009-09-14T14:25:36.000Z</pubTime>
         
          
            
@@ -2496,26 +2434,6 @@
         <pubTime>2009-12-12T13:25:20.000Z</pubTime>
         
         <tag>OpenID</tag>
-         
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/2009review.html</loc>
-    <lastmod>2016-01-06T00:23:40.000Z</lastmod>
-    <data>
-        <display>
-        <title>2010，来得更猛烈些吧</title>
-        <pubTime>2009-12-31T15:53:31.000Z</pubTime>
-        
-        <tag>总结</tag>
          
          
            
@@ -2868,24 +2786,6 @@
 
     
   <url>
-    <loc>http://uegeek.com/2010review.html</loc>
-    <lastmod>2016-01-05T14:19:16.000Z</lastmod>
-    <data>
-        <display>
-        <title>2011，不纠结</title>
-        <pubTime>2011-01-01T08:03:14.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://uegeek.com/ixd-quick-checklist.html</loc>
     <lastmod>2016-01-05T14:17:36.000Z</lastmod>
     <data>
@@ -2905,42 +2805,6 @@
            
              
               <breadCrumb title="设计" url="http://uegeek.com/categories/%E8%AE%BE%E8%AE%A1/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/think-about-love2.html</loc>
-    <lastmod>2016-01-05T14:06:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>不要轻易说爱[下]</title>
-        <pubTime>2011-02-09T06:26:26.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/think-about-love1.html</loc>
-    <lastmod>2016-01-05T14:03:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>不要轻易说爱[上]</title>
-        <pubTime>2011-02-09T06:25:58.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
           
         </display>
     </data>
@@ -3126,24 +2990,6 @@
 
     
   <url>
-    <loc>http://uegeek.com/hello-ef-bc-8c2012.html</loc>
-    <lastmod>2016-01-05T13:12:09.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello，2012</title>
-        <pubTime>2012-01-01T06:35:47.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://uegeek.com/writing-for-better-thinking.html</loc>
     <lastmod>2016-01-05T13:01:23.000Z</lastmod>
     <data>
@@ -3227,24 +3073,6 @@
          
         <tag>设计</tag>
          
-         
-           
-             
-              <breadCrumb title="读书" url="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/about-fear.html</loc>
-    <lastmod>2016-01-05T12:50:04.000Z</lastmod>
-    <data>
-        <display>
-        <title>关于恐惧的自白</title>
-        <pubTime>2012-08-08T17:40:34.000Z</pubTime>
-        
          
            
              
@@ -4060,7 +3888,7 @@
 
     
   <url>
-    <loc>http://uegeek.com/644782.html</loc>
+    <loc>http://uegeek.com/150816readingnote.html</loc>
     <lastmod>2016-01-03T15:09:34.000Z</lastmod>
     <data>
         <display>
@@ -4073,70 +3901,6 @@
            
              
               <breadCrumb title="读书" url="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/selfish-gene-1.html</loc>
-    <lastmod>2016-01-03T15:03:13.000Z</lastmod>
-    <data>
-        <display>
-        <title>报告：前方没有上帝出没——读自私的基因[上]</title>
-        <pubTime>2015-08-20T12:58:24.000Z</pubTime>
-        
-        <tag>Note</tag>
-         
-        <tag>进化</tag>
-         
-         
-           
-             
-              <breadCrumb title="读书" url="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/selfish-gene-2.html</loc>
-    <lastmod>2016-01-03T15:00:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>带着镣铐跳舞的生存机器——读自私的基因[下]</title>
-        <pubTime>2015-08-20T13:04:11.000Z</pubTime>
-        
-        <tag>Note</tag>
-         
-        <tag>进化</tag>
-         
-         
-           
-             
-              <breadCrumb title="读书" url="http://uegeek.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uegeek.com/10year-check.html</loc>
-    <lastmod>2016-01-03T14:54:12.000Z</lastmod>
-    <data>
-        <display>
-        <title>给自己开一张十年的支票</title>
-        <pubTime>2015-09-14T07:51:06.000Z</pubTime>
-        
-        <tag>00</tag>
-         
-         
-           
-             
-              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
           
         </display>
     </data>
