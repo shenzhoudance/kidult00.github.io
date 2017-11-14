@@ -4,6 +4,80 @@
 
     
   <url>
+    <loc>http://uegeek.com/171112-HowToAskGoodQuestion.html</loc>
+    <lastmod>2017-11-14T02:56:15.542Z</lastmod>
+    <data>
+        <display>
+        <title>用问题对话虚无 —— HackYourself 大哉问系列</title>
+        <pubTime>2017-11-12T02:52:24.000Z</pubTime>
+        
+        <tag>CriticalThinking</tag>
+         
+        <tag>HackYourself</tag>
+         
+        <tag>大哉问</tag>
+         
+         
+           
+             
+              <breadCrumb title="叽歪" url="http://uegeek.com/categories/%E5%8F%BD%E6%AD%AA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://uegeek.com/171021-DL3-How2UsePy3InDocker.html</loc>
+    <lastmod>2017-11-14T02:51:30.908Z</lastmod>
+    <data>
+        <display>
+        <title>DeepLearning-3：如何在 Docker 里切换 Python 版本</title>
+        <pubTime>2017-10-21T02:48:57.000Z</pubTime>
+        
+        <tag>AI</tag>
+         
+        <tag>Deep learning</tag>
+         
+        <tag>Docker</tag>
+         
+        <tag>深度学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="动手" url="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://uegeek.com/170929-DSNote3-NumPy-basic.html</loc>
+    <lastmod>2017-11-14T02:44:37.635Z</lastmod>
+    <data>
+        <display>
+        <title>菜鸟数据科学入门03 - NumPy 数组基础和基本操作</title>
+        <pubTime>2017-09-29T02:36:45.000Z</pubTime>
+        
+        <tag>Data Science</tag>
+         
+        <tag>NumPy</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="动手" url="http://uegeek.com/categories/%E5%8A%A8%E6%89%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://uegeek.com/170910-hackyourself-cbt2.html</loc>
     <lastmod>2017-09-10T09:51:01.000Z</lastmod>
     <data>
